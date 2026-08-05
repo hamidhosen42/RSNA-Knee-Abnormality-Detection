@@ -13,8 +13,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "rsna-knee-abnormality-detection-cv1.ipynb"
-DEST = ROOT / "rsna-knee-abnormality-detection-cv2.ipynb"
+SOURCE = ROOT / "rsna-knee-abnormality-detection-v1.ipynb"
+DEST = ROOT / "rsna-knee-abnormality-detection-v2.ipynb"
 
 
 def clean(source: str) -> str:
@@ -96,8 +96,8 @@ set_cell(2, r'''
 ## 0. Configuration
 
 Run one stage at a time. The submission stage must have internet disabled and must receive model
-weights and decoder dependencies through attached Kaggle Datasets. Training all folds is deliberate;
-set `TRAIN_FOLDS=[0]` only for a smoke test, never for the final ensemble.
+weights and decoder dependencies through attached Kaggle Datasets. Train one fold per Kaggle training
+run (`TRAIN_FOLDS=[0]`, then `[1]`, …) and attach all five checkpoints to final inference.
 ''', "markdown")
 
 
@@ -133,6 +133,7 @@ class CFG:
     extra_teacher_dirs = []  # e.g. [Path('/kaggle/input/rsna-teacher-v2')]
     extra_cache_dirs = []    # e.g. [Path('/kaggle/input/rsna-cache-v2-shard00'), ...]
     extra_ckpt_dirs = []     # e.g. [Path('/kaggle/input/rsna-models-v2')]
+    decoder_wheel_dir = None # e.g. Path('/kaggle/input/pylibjpeg-offline-wheels')
 
     # ------------------------------ preprocessing
     CACHE_VERSION = 'cv2-orient-roi-letterbox-256-12-v1'
@@ -158,12 +159,12 @@ class CFG:
 
     # ------------------------------ training
     folds = 5
-    TRAIN_FOLDS = None       # None = all folds; [0] = smoke test
+    TRAIN_FOLDS = [0]        # run separate versions for [0], [1], [2], [3], [4]
     mixed_epochs = 6         # hard + report-derived targets
     hard_epochs = 2          # final hard-label-only fine-tuning
-    batch_size = 2
+    batch_size = 1           # 5*12 slices at 256 px; safe on common 16 GB Kaggle GPUs
     infer_batch_size = 4
-    accum = 4
+    accum = 8                # effective study batch = 8
     lr = 3e-4
     backbone_lr = 8e-5
     wd = 1e-2
@@ -232,13 +233,20 @@ def seed_everything(seed=42):
 
 
 def find_artifact(name, primary, extras):
-    hits = [Path(primary) / name] + [Path(d) / name for d in extras]
-    hits = [p for p in hits if p.exists()]
+    hits = []
+    for root in [Path(primary)] + [Path(d) for d in extras]:
+        if not root.exists():
+            continue
+        direct = root / name
+        if direct.exists():
+            hits.append(direct)
+        hits.extend(root.rglob(name))
+    hits = sorted(set(p.resolve() for p in hits))
     if not hits:
         raise FileNotFoundError(
             f'{name} not found. Attach the preceding-stage dataset and list its directory in CFG.')
     if len(hits) > 1:
-        print(f'[artifact] multiple copies of {name}; using {hits[0]}')
+        raise RuntimeError(f'Ambiguous artifact {name}; configure one exact dataset root: {hits}')
     return hits[0]
 
 
@@ -246,6 +254,11 @@ seed_everything(CFG.seed)
 if not CFG.comp_dir.exists():
     candidates = list(Path('/kaggle/input').glob('*knee*')) + \
                  list(Path('/kaggle/input/competitions').glob('*knee*'))
+    # Attached cache/model datasets can also contain "knee" in their names.
+    # Select only a directory that actually has the competition CSV schema.
+    candidates = [p for p in candidates
+                  if (p / 'train.csv').exists() and (p / 'train_series.csv').exists()
+                  and (p / 'test.csv').exists() and (p / 'test_series.csv').exists()]
     if candidates:
         CFG.comp_dir = candidates[0]
 print('stage:', CFG.STAGE, '| comp_dir:', CFG.comp_dir, '| exists:', CFG.comp_dir.exists())
@@ -262,6 +275,17 @@ preprocess/inference if no compressed-pixel decoder is available; silent missing
 
 
 set_cell(5, r'''
+if (CFG.RUN_PREPROCESS or CFG.RUN_INFER) and CFG.decoder_wheel_dir is not None:
+    import subprocess
+    wheel_dir = Path(CFG.decoder_wheel_dir)
+    if not wheel_dir.exists():
+        raise FileNotFoundError(f'decoder_wheel_dir does not exist: {wheel_dir}')
+    subprocess.check_call([
+        sys.executable, '-m', 'pip', 'install', '--no-index',
+        '--find-links', str(wheel_dir),
+        'pylibjpeg', 'pylibjpeg-openjpeg', 'pylibjpeg-libjpeg',
+    ])
+
 import pydicom
 
 print('pydicom:', pydicom.__version__)
@@ -275,10 +299,12 @@ for mod in ['pylibjpeg', 'openjpeg', 'libjpeg', 'gdcm', 'PIL']:
 for k, v in decoders.items():
     print(f'  {k:<10}: {v}')
 
-compressed_decoder_ok = any(decoders[k] == 'ok' for k in ['openjpeg', 'libjpeg', 'gdcm'])
+compressed_decoder_ok = (decoders['gdcm'] == 'ok' or
+                         (decoders['pylibjpeg'] == 'ok' and decoders['openjpeg'] == 'ok'
+                          and decoders['libjpeg'] == 'ok'))
 if (CFG.RUN_PREPROCESS or CFG.RUN_INFER) and not compressed_decoder_ok:
     raise RuntimeError(
-        'No JPEG/JPEG-2000 DICOM decoder. Attach offline wheels for pylibjpeg, '
+        'Full JPEG Lossless + JPEG-2000 decoding is unavailable. Attach offline wheels for pylibjpeg, '
         'pylibjpeg-openjpeg and pylibjpeg-libjpeg (or python-gdcm).')
 
 try:
@@ -365,6 +391,67 @@ set_cell(17, r'''
 - Compare CSV series identifiers to directories and count physical/unique slices before selecting a series.
 - Inspect canonical coronal/axial/sagittal montages on both left and right knees before a long cache run.
 ''', "markdown")
+
+
+set_cell(21, r'''
+## 1.7 Raw DICOM visual/decode audit
+
+This preview is intentionally raw: it sorts slices geometrically and tests pixel decoding, but the
+canonical laterality/physical-space transform is previewed in the preprocessing smoke stage. Limit the
+figure to six series so a study with many acquisitions cannot create an enormous notebook output.
+''', "markdown")
+
+
+set_cell(22, r'''
+if CFG.RUN_EDA:
+    def read_pixels(path):
+        ds = pydicom.dcmread(str(path))
+        img = ds.pixel_array.astype(np.float32)
+        if img.ndim == 3:
+            img = img[..., 0] if img.shape[-1] <= 4 else img[0]
+        img = img * float(getattr(ds, 'RescaleSlope', 1) or 1) + \
+              float(getattr(ds, 'RescaleIntercept', 0) or 0)
+        if str(getattr(ds, 'PhotometricInterpretation', '')) == 'MONOCHROME1':
+            img = img.max() - img
+        lo, hi = np.percentile(img, [0.5, 99.5])
+        return np.clip((img - lo) / (hi - lo + 1e-6), 0, 1), ds
+
+    demo_study = train_series['StudyInstanceUID'].iloc[0]
+    sers = train_series[train_series.StudyInstanceUID == demo_study].head(6)
+    fig, axes = plt.subplots(len(sers), 5, figsize=(15, 3 * len(sers)), squeeze=False)
+    for row_i, (_, s) in enumerate(sers.iterrows()):
+        folder = CFG.comp_dir / 'train_series' / str(demo_study) / str(s.SeriesInstanceUID)
+        headers = []
+        for p in folder.glob('*.dcm'):
+            try:
+                ds = pydicom.dcmread(str(p), stop_before_pixels=True)
+                iop = np.asarray(ds.ImageOrientationPatient, float)
+                normal = np.cross(iop[:3], iop[3:])
+                position = float(np.dot(np.asarray(ds.ImagePositionPatient, float), normal))
+            except Exception:
+                try:
+                    ds = pydicom.dcmread(str(p), stop_before_pixels=True)
+                    position = float(getattr(ds, 'InstanceNumber', 0) or 0)
+                except Exception:
+                    continue
+            headers.append((position, str(p), p))
+        headers.sort(key=lambda x: (x[0], x[1]))
+        pick = np.linspace(0, len(headers) - 1, 5).round().astype(int) if headers else []
+        for col_i, j in enumerate(pick):
+            try:
+                img, ds = read_pixels(headers[j][2])
+                axes[row_i, col_i].imshow(img, cmap='gray')
+                if col_i == 0:
+                    side = getattr(ds, 'Laterality', None) or getattr(ds, 'ImageLaterality', '?')
+                    axes[row_i, col_i].set_title(
+                        f'{s.Anatomical_Plane} | fluid={s.Fluid_Sensitive} '
+                        f'| fat={s.Fat_Suppression} | side={side}',
+                        fontsize=8, loc='left', color=FIRE)
+            except Exception as e:
+                axes[row_i, col_i].text(.5, .5, str(e)[:40], ha='center', fontsize=6)
+            axes[row_i, col_i].axis('off'); axes[row_i, col_i].grid(False)
+    plt.tight_layout(); plt.show()
+''')
 
 
 set_cell(23, r'''
@@ -733,7 +820,7 @@ set_cell(28, r'''
 if CFG.RUN_PREPROCESS and CFG.PREPROCESS_SMOKE_ONLY:
     assert manifest is not None and len(manifest)
     _row = manifest.iloc[0]
-    _out = CFG.cache_dir / f'shard{CFG.SHARD_ID:02d}'
+    _out = CFG.work_dir / 'rsna_cache_smoke'  # inspect only; do not publish as a shard
     _t0 = time.time()
     _ok, _why = cache_study(str(_row.StudyInstanceUID), _row,
                             CFG.comp_dir / 'train_series', _out)
@@ -1144,7 +1231,7 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
     import torch
     import torch.nn as nn
     import torch.nn.functional as F
-    from torch.utils.data import Dataset, DataLoader, WeightedRandomSampler
+    from torch.utils.data import Dataset, DataLoader
     import timm
 
     DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -1231,8 +1318,8 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
             if invalid:
                 raise RuntimeError(f'{len(invalid)} stale/corrupt cache files; first: {invalid[:5]}')
             if hard_only:
-                w = self.df[WEIGHT_COLS].values
-                self.df = self.df[(w >= .999).any(1)].reset_index(drop=True)
+                obs = self.df[OBS_COLS].values.astype(bool)
+                self.df = self.df[obs.any(1)].reset_index(drop=True)
             print(f'dataset: {len(self.df):,} rows | hard_only={hard_only} | cache={len(self.index):,}')
 
         def __len__(self):
@@ -1273,14 +1360,16 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
             x = self._augment(vol, view_mask) if self.train_mode else vol.astype(np.float32) / 255.0
             y = r[TARGETS].values.astype(np.float32)
             w = r[WEIGHT_COLS].values.astype(np.float32)
+            obs = r[OBS_COLS].values.astype(np.float32)
             if self.hard_only:
-                w = w * (w >= .999)
+                w = w * obs
             return {
                 'x': torch.from_numpy(np.ascontiguousarray(x)),
                 'view_mask': torch.from_numpy(view_mask),
                 'slice_mask': torch.from_numpy(slice_mask),
                 'y': torch.from_numpy(y),
                 'w': torch.from_numpy(w),
+                'obs': torch.from_numpy(obs),
                 'idx': i,
             }
 
@@ -1363,7 +1452,12 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
             valid_idx = valid.nonzero(as_tuple=False).squeeze(1)
             if not len(valid_idx):
                 raise RuntimeError('A batch contains no valid DICOM slices')
-            encoded = self.enc(x.index_select(0, valid_idx))
+            enc_input = x.index_select(0, valid_idx)
+            if self.training and CFG.grad_ckpt:
+                # Older timm/torch re-entrant checkpoint paths require one input
+                # with gradients enabled or the encoder can be silently frozen.
+                enc_input.requires_grad_(True)
+            encoded = self.enc(enc_input)
             flat = encoded.new_zeros((B * V * D, self.enc.num_features))
             flat.index_copy_(0, valid_idx, encoded)
             f = flat.reshape(B, V, D, -1)
@@ -1373,8 +1467,7 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
 
             # Target-specific attention over depth: B,V,T,D.
             s = torch.einsum('bvdc,tc->bvtd', f, self.slice_query) / math.sqrt(f.shape[-1])
-            a_slice = masked_softmax(s.permute(0, 1, 3, 2),
-                                     slice_mask[:, :, None, :], dim=-1)
+            a_slice = masked_softmax(s, slice_mask[:, :, None, :], dim=-1)
             fv = torch.einsum('bvtd,bvdc->bvtc', a_slice, f)
 
             # Target-specific attention over sequence slots: B,T,V.
@@ -1401,27 +1494,47 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
                 value.copy_(src)
 
 
-    def masked_multitask_loss(logits, aux, y, weight, view_mask, pos_weight):
-        """Macro target reduction; pseudo reliability is not renormalized away."""
-        valid = weight > 0
-        raw = F.binary_cross_entropy_with_logits(logits, y, reduction='none',
-                                                 pos_weight=pos_weight)
-        denom = valid.sum(0)
-        main_per_target = (raw * weight).sum(0) / denom.clamp_min(1)
-        present = denom > 0
-        main = main_per_target[present].mean() if present.any() else logits.sum() * 0
+    def _hard_pseudo_macro(raw, weight, observed_mask, hard_count,
+                           pseudo_count, dataset_size):
+        """Unbiased minibatch estimate of fold-level equal-target means."""
+        hard = observed_mask.bool() & (weight > 0)
+        pseudo = (~observed_mask.bool()) & (weight > 0)
+        hard_mean = (raw * hard).sum(0) / hard_count.clamp_min(1)
+        # Divide by fold-level pseudo count (not weight sum): confidence remains
+        # a real coefficient while aggregate pseudo mass is capped per target.
+        pseudo_mean = (raw * weight * pseudo).sum(0) / pseudo_count.clamp_min(1)
+        per_target = hard_mean + pseudo_mean
+        present = (hard_count + pseudo_count) > 0
+        if not present.any():
+            return raw.sum() * 0
+        # Uniform shuffled rows: N/B converts the minibatch sums into an
+        # unbiased estimate of the complete fold objective.
+        return (dataset_size / max(1, raw.shape[0])) * per_target[present].mean()
 
-        aux_raw = F.binary_cross_entropy_with_logits(aux, y[:, None, :].expand_as(aux),
-                                                     reduction='none', pos_weight=pos_weight)
+
+    def masked_multitask_loss(logits, aux, y, weight, observed_mask,
+                              view_mask, pos_weight, hard_count,
+                              pseudo_count, dataset_size):
+        # Class weighting is valid for binary hard labels but would shift a soft
+        # target y to pw*y/(1-y+pw*y), corrupting pseudo probabilities.
+        raw_plain = F.binary_cross_entropy_with_logits(logits, y, reduction='none')
+        raw_hard = F.binary_cross_entropy_with_logits(logits, y, reduction='none',
+                                                      pos_weight=pos_weight)
+        raw = torch.where(observed_mask.bool(), raw_hard, raw_plain)
+        main = _hard_pseudo_macro(raw, weight, observed_mask, hard_count,
+                                  pseudo_count, dataset_size)
+
+        aux_y = y[:, None, :].expand_as(aux)
+        aux_plain = F.binary_cross_entropy_with_logits(aux, aux_y, reduction='none')
+        aux_hard = F.binary_cross_entropy_with_logits(aux, aux_y, reduction='none',
+                                                      pos_weight=pos_weight)
+        aux_raw = torch.where(observed_mask[:, None, :].bool(), aux_hard, aux_plain)
         route = TARGET_VIEW_ROUTE.T.to(aux.device)[None]
         routed_view = view_mask[:, :, None] * route
         per_study_aux = (aux_raw * routed_view).sum(1) / routed_view.sum(1).clamp_min(1)
-        aux_valid = valid & (routed_view.sum(1) > 0)
-        aux_denom = aux_valid.sum(0)
-        aux_per_target = (per_study_aux * weight * aux_valid).sum(0) / aux_denom.clamp_min(1)
-        aux_present = aux_denom > 0
-        aux_loss = (aux_per_target[aux_present].mean() if aux_present.any()
-                    else logits.sum() * 0)
+        aux_weight = weight * (routed_view.sum(1) > 0)
+        aux_loss = _hard_pseudo_macro(per_study_aux, aux_weight, observed_mask,
+                                      hard_count, pseudo_count, dataset_size)
         return main + CFG.aux_w * aux_loss, main.detach(), aux_loss.detach()
 
 
@@ -1449,20 +1562,26 @@ if CFG.RUN_TRAIN or CFG.RUN_INFER:
     _sm[:, 0, -2:] = 0
     _y = (torch.rand(_B, len(TARGETS), device=DEVICE) > .7).float()
     _w = torch.ones_like(_y)
+    _obs = torch.ones_like(_y)
     with autocast():
         _logit, _aux, _av, _as = _m(_x, _vm, _sm)
-        _loss, _, _ = masked_multitask_loss(_logit, _aux, _y, _w, _vm,
+        _loss, _, _ = masked_multitask_loss(_logit, _aux, _y, _w, _obs, _vm,
                                             torch.ones(len(TARGETS), device=DEVICE))
-    _loss.backward()
+    if CFG.RUN_TRAIN:
+        _loss.backward()
     assert _logit.shape == (_B, len(TARGETS))
     assert _aux.shape == (_B, CFG.N_VIEWS, len(TARGETS))
     assert _av.shape == (_B, len(TARGETS), CFG.N_VIEWS)
+    assert _as.shape == (_B, CFG.N_VIEWS, len(TARGETS), CFG.N_SLICES)
     assert torch.isfinite(_loss)
     assert float(_av[:, :, -1].abs().max()) < 1e-5
     assert float(_as[:, -1].abs().max()) < 1e-5
+    assert float(_as[:, 0, :, -2:].abs().max()) < 1e-5
+    if CFG.RUN_TRAIN:
+        assert any(p.grad is not None for p in _m.enc.parameters()), 'encoder received no gradients'
     print(f'smoke ok | params={sum(p.numel() for p in _m.parameters())/1e6:.1f}M '
           f'| loss={float(_loss):.4f} | peak={torch.cuda.max_memory_allocated()/2**30:.2f} GiB')
-    del _m, _x, _vm, _sm, _y, _w, _logit, _aux, _av, _as, _loss
+    del _m, _x, _vm, _sm, _y, _w, _obs, _logit, _aux, _av, _as, _loss
     gc.collect(); torch.cuda.empty_cache()
 ''')
 
@@ -1492,24 +1611,10 @@ if CFG.RUN_TRAIN:
             raise RuntimeError(f'Invalid per-target validation AUC: {per}')
         return float(np.mean(list(per.values()))), per
 
-    def make_sampler(df, hard_only):
-        y = df[TARGETS].values
-        w = df[WEIGHT_COLS].values
-        if hard_only:
-            active = w >= .999
-        else:
-            active = w > 0
-        positive = (y > .6) & active
-        prevalence = positive.sum(0) / np.maximum(active.sum(0), 1)
-        rarity = np.sqrt(1 / np.maximum(prevalence, .01))
-        sw = 1 + (positive * rarity[None]).max(1)
-        sw = np.clip(sw, 1, 6)
-        return WeightedRandomSampler(torch.as_tensor(sw, dtype=torch.double),
-                                     num_samples=len(sw), replacement=True)
-
     def make_loader(ds, batch_size, train_mode):
-        sampler = make_sampler(ds.df, ds.hard_only) if train_mode else None
-        return DataLoader(ds, batch_size=batch_size, sampler=sampler, shuffle=False,
+        # A replacement sampler sees only ~63% unique rows even before weighting.
+        # Full-coverage shuffling plus capped hard-label pos_weight is more stable.
+        return DataLoader(ds, batch_size=batch_size, shuffle=train_mode,
                           num_workers=CFG.num_workers, pin_memory=True, drop_last=False,
                           persistent_workers=CFG.num_workers > 0)
 
@@ -1523,7 +1628,7 @@ if CFG.RUN_TRAIN:
                                             b['slice_mask'].to(DEVICE, non_blocking=True))
                 P.append(logits.float().sigmoid().cpu().numpy())
                 Y.append(b['y'].numpy())
-                O.append((b['w'].numpy() >= .999).astype(np.uint8))
+                O.append(b['obs'].numpy().astype(np.uint8))
         return macro_auc(np.concatenate(Y), np.concatenate(P), np.concatenate(O))
 
     def train_fold(fold):
@@ -1540,7 +1645,7 @@ if CFG.RUN_TRAIN:
         dl_hard = make_loader(ds_hard, CFG.batch_size, True)
         dl_val = make_loader(ds_val, CFG.batch_size, False)
 
-        hard = tr[WEIGHT_COLS].values >= .999
+        hard = tr[OBS_COLS].values.astype(bool)
         y = tr[TARGETS].values
         pos = ((y > .5) & hard).sum(0)
         neg = ((y <= .5) & hard).sum(0)
@@ -1555,19 +1660,41 @@ if CFG.RUN_TRAIN:
             p.requires_grad_(False)
         bb = [p for n, p in model.named_parameters() if n.startswith('enc.')]
         hd = [p for n, p in model.named_parameters() if not n.startswith('enc.')]
-        opt = torch.optim.AdamW([{'params': bb, 'lr': CFG.backbone_lr},
-                                 {'params': hd, 'lr': CFG.lr}], weight_decay=CFG.wd)
-
         loaders = [dl_mix] * CFG.mixed_epochs + [dl_hard] * CFG.hard_epochs
-        updates_per_epoch = [math.ceil(len(dl) / CFG.accum) for dl in loaders]
-        total_updates = sum(updates_per_epoch)
-        sched = torch.optim.lr_scheduler.OneCycleLR(
-            opt, max_lr=[CFG.backbone_lr, CFG.lr], total_steps=total_updates,
-            pct_start=.10, div_factor=10, final_div_factor=100)
+        assert CFG.mixed_epochs > 0 and len(dl_mix) > 0
+
+        def make_phase_optimizer(total_updates, lr_scale):
+            opt = torch.optim.AdamW(
+                [{'params': bb, 'lr': CFG.backbone_lr * lr_scale},
+                 {'params': hd, 'lr': CFG.lr * lr_scale}], weight_decay=CFG.wd)
+            sched = torch.optim.lr_scheduler.OneCycleLR(
+                opt, max_lr=[CFG.backbone_lr * lr_scale, CFG.lr * lr_scale],
+                total_steps=max(1, total_updates), pct_start=.10,
+                div_factor=10, final_div_factor=100)
+            return opt, sched
+
+        mixed_updates = math.ceil(len(dl_mix) / CFG.accum) * CFG.mixed_epochs
+        opt, sched = make_phase_optimizer(mixed_updates, 1.0)
         scaler = make_scaler()
         history, best, update_count = [], -np.inf, 0
+        best_path = CFG.ckpt_dir / f'knee_cv2_f{fold}.pt'
 
         for epoch, dl in enumerate(loaders):
+            if epoch == CFG.mixed_epochs and CFG.hard_epochs > 0:
+                # Start hard-only fine-tuning from the best mixed EMA, with a
+                # fresh lower-LR optimizer/schedule and a fresh EMA.
+                try:
+                    phase_ck = torch.load(best_path, map_location='cpu', weights_only=False)
+                except TypeError:
+                    phase_ck = torch.load(best_path, map_location='cpu')
+                model.load_state_dict(phase_ck['state_dict'], strict=True)
+                ema = copy.deepcopy(model).eval()
+                for p in ema.parameters():
+                    p.requires_grad_(False)
+                hard_updates = math.ceil(len(dl_hard) / CFG.accum) * CFG.hard_epochs
+                opt, sched = make_phase_optimizer(hard_updates, 0.30)
+                scaler = make_scaler(); update_count = 0
+                print('restarted from best mixed EMA for hard-only fine-tuning')
             model.train(); opt.zero_grad(set_to_none=True)
             running, n_batches, t0 = 0.0, 0, time.time()
             group_start = 0
@@ -1580,10 +1707,11 @@ if CFG.RUN_TRAIN:
                 sm = b['slice_mask'].to(DEVICE, non_blocking=True)
                 yy = b['y'].to(DEVICE, non_blocking=True)
                 ww = b['w'].to(DEVICE, non_blocking=True)
+                oo = b['obs'].to(DEVICE, non_blocking=True)
                 with autocast():
                     logits, aux, _, _ = model(x, vm, sm)
                     loss, main_loss, aux_loss = masked_multitask_loss(
-                        logits, aux, yy, ww, vm, pos_weight)
+                        logits, aux, yy, ww, oo, vm, pos_weight)
                     scaled_loss = loss / group_size
                 scaler.scale(scaled_loss).backward()
                 running += float(loss.detach()); n_batches += 1
@@ -1612,7 +1740,7 @@ if CFG.RUN_TRAIN:
                     'cache_version': CFG.CACHE_VERSION, 'fold': fold,
                     'epoch': epoch, 'val_auc': auc, 'per_target_auc': per,
                 }
-                torch.save(payload, CFG.ckpt_dir / f'knee_cv2_f{fold}.pt')
+                torch.save(payload, best_path)
 
         hist = pd.DataFrame(history)
         hist.to_csv(CFG.ckpt_dir / f'history_f{fold}.csv', index=False)
@@ -1684,6 +1812,7 @@ if CFG.RUN_INFER:
     print('checkpoints:', [str(x) for x in ckpt_paths])
 
     models = []
+    seen_folds = set()
     for path in ckpt_paths:
         try:
             ck = torch.load(path, map_location='cpu', weights_only=False)
@@ -1694,10 +1823,15 @@ if CFG.RUN_INFER:
         mismatch = {k: (ck.get(k), v) for k, v in expected.items() if ck.get(k) != v}
         if mismatch:
             raise ValueError(f'Checkpoint/preprocessing mismatch in {path}: {mismatch}')
+        if ck.get('fold') in seen_folds:
+            raise ValueError(f'Duplicate checkpoint for fold {ck.get("fold")}: {path}')
+        seen_folds.add(ck.get('fold'))
         model = KneeNet(backbone=ck['backbone'], pretrained=False).to(DEVICE)
         model.load_state_dict(ck['state_dict'], strict=True)
         model.eval()
         models.append(model)
+    if len(models) < CFG.folds:
+        print(f'[warning] loaded {len(models)}/{CFG.folds} folds; train all folds for the final entry')
     print(f'loaded {len(models)} models | GPU weights: '
           f'{torch.cuda.memory_allocated()/2**30:.2f} GiB')
 
