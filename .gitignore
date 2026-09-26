@@ -1,0 +1,7 @@
+# secrets
+token.txt
+kaggle.json
+
+# misc
+.DS_Store
+__pycache__/
