@@ -1,6 +1,9 @@
 # secrets
 token.txt
+*.token
+access_token
 kaggle.json
+.env
 
 # misc
 .DS_Store

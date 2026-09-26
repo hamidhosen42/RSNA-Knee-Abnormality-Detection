@@ -1,0 +1,137 @@
+{
+ "forumTopic": {
+  "authorId": 3018791,
+  "authorThumbnailName": "3018791-kg.jpg?t=2026-08-23-16-24-43",
+  "authorUserDisplayName": "Fabian Friedland - xBrain",
+  "authorUserName": "fabotelli",
+  "comments": [
+   {
+    "id": 3517995,
+    "postDate": "2026-08-28T22:24:55.857Z",
+    "rawMarkdown": "I fine-tuned YalaLab's Pillar-0 BreastMRI foundation model on this competition's knee MRIs and I'm sharing the weights + full recipe as a public model: pillar0-knee-finetune (https://www.kaggle.com/models/fabotelli/pillar0-knee-finetune) (loader demo notebook attached to the comp).\n\n TL;DR of the transfer study: frozen-probe macro 0.697 → 0.797 after a 2-epoch full fine-tune on a 58-study expert holdout. It's strong on Effusion (0.965) and Medial OA (0.941) but ~0.10 below task-specific 2.5D CNNs overall — the breast→knee domain gap concentrates in ligament/meniscus fine structure (MCL 0.630). Full per-target table, adapter details, and split-LR recipe in the model card. ECL-2.0, full attribution to the Pillar-0 authors.\n\nSharing since it might save someone GPU hours...and maybe someone else might have better insight. Pillar looks like it should do better.",
+    "content": "<p>I fine-tuned YalaLab's Pillar-0 BreastMRI foundation model on this competition's knee MRIs and I'm sharing the weights + full recipe as a public model: pillar0-knee-finetune (<a href=\"https://www.kaggle.com/models/fabotelli/pillar0-knee-finetune\" target=\"_blank\">https://www.kaggle.com/models/fabotelli/pillar0-knee-finetune</a>) (loader demo notebook attached to the comp).</p>\n<p>TL;DR of the transfer study: frozen-probe macro 0.697 → 0.797 after a 2-epoch full fine-tune on a 58-study expert holdout. It's strong on Effusion (0.965) and Medial OA (0.941) but ~0.10 below task-specific 2.5D CNNs overall — the breast→knee domain gap concentrates in ligament/meniscus fine structure (MCL 0.630). Full per-target table, adapter details, and split-LR recipe in the model card. ECL-2.0, full attribution to the Pillar-0 authors.</p>\n<p>Sharing since it might save someone GPU hours…and maybe someone else might have better insight. Pillar looks like it should do better.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Fabian Friedland - xBrain",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+     "url": "/fabotelli",
+     "tier": "CONTRIBUTOR",
+     "id": 3018791,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 172,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Fabian Friedland - xBrain",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+      "url": "/fabotelli",
+      "userName": "fabotelli",
+      "tier": "CONTRIBUTOR",
+      "id": 3018791,
+      "profileUrl": "/fabotelli",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 3018791,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517983,
+   "postDate": "2026-08-28T20:25:25.847Z",
+   "rawMarkdown": "Has anyone taken a look at Pillar-0, the new model from UCF?\nIt seems to specialize in volumetric analysis of MRIs, but I'm having the same problem I had with dinov3 - in that it's not fine-tuned to our speciality.",
+   "content": "<p>Has anyone taken a look at Pillar-0, the new model from UCF?\nIt seems to specialize in volumetric analysis of MRIs, but I'm having the same problem I had with dinov3 - in that it's not fine-tuned to our speciality.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Fabian Friedland - xBrain",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+    "url": "/fabotelli",
+    "tier": "CONTRIBUTOR",
+    "id": 3018791,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 172,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Fabian Friedland - xBrain",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+     "url": "/fabotelli",
+     "userName": "fabotelli",
+     "tier": "CONTRIBUTOR",
+     "id": 3018791,
+     "profileUrl": "/fabotelli",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 3018791,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517983,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738036,
+  "name": "Has anyone looked at Pillar-0?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-28T20:25:25.845315100Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738036",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Fabian Friedland - xBrain",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+   "url": "/fabotelli",
+   "tier": "CONTRIBUTOR",
+   "id": 3018791,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3517983,
+  "id": 738036,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Fabian Friedland - xBrain",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738036#3517995",
+  "lastCommentPostDate": "2026-08-28T22:24:55.856666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-28T20:25:25.845315100Z",
+  "title": "Has anyone looked at Pillar-0?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738036",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Fabian Friedland - xBrain",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+    "url": "/fabotelli",
+    "userName": "fabotelli",
+    "tier": "CONTRIBUTOR",
+    "id": 3018791,
+    "profileUrl": "/fabotelli",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 3018791,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,771 @@
+{
+ "forumTopic": {
+  "authorId": 25538440,
+  "authorThumbnailName": "25538440-kg.png?t=2026-01-08-14-54-49",
+  "authorUserDisplayName": "Ryuhki Kimura",
+  "authorUserName": "kimura0415",
+  "comments": [
+   {
+    "id": 3512556,
+    "postDate": "2026-08-13T19:08:38.357Z",
+    "rawMarkdown": "@javaduke95 I think a verdict on this would be great. It was offered for CSIRo Biomass (https://www.kaggle.com/competitions/csiro-biomass/discussion/617603#3377219) as the DinoV3 license is not a trivial yes or no here. \n\nThe linked thread goes into the details, specifically here: https://www.kaggle.com/competitions/csiro-biomass/discussion/617603#3377219\n\nAs a disclaimer, I would like to use DinoV3.",
+    "content": "<p><a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> I think a verdict on this would be great. It was offered for CSIRo Biomass (<a href=\"https://www.kaggle.com/competitions/csiro-biomass/discussion/617603#3377219\" target=\"_blank\">https://www.kaggle.com/competitions/csiro-biomass/discussion/617603#3377219</a>) as the DinoV3 license is not a trivial yes or no here. </p>\n<p>The linked thread goes into the details, specifically here: <a href=\"https://www.kaggle.com/competitions/csiro-biomass/discussion/617603#3377219\" target=\"_blank\">https://www.kaggle.com/competitions/csiro-biomass/discussion/617603#3377219</a></p>\n<p>As a disclaimer, I would like to use DinoV3.</p>",
+    "replies": [
+     {
+      "id": 3513517,
+      "postDate": "2026-08-16T20:08:18.210Z",
+      "rawMarkdown": "I got rejected while applying for dinov3 soooo",
+      "content": "<p>I got rejected while applying for dinov3 soooo</p>",
+      "replies": [
+       {
+        "id": 3513522,
+        "postDate": "2026-08-16T20:50:04.563Z",
+        "rawMarkdown": "So it might not be available to the world?   \n\n\nDid you try using the one that is currently in the Models tab?\n",
+        "content": "<p>So it might not be available to the world?   </p>\n<p>Did you try using the one that is currently in the Models tab?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3513536,
+        "postDate": "2026-08-16T22:33:57.687Z",
+        "rawMarkdown": "ngl this works but its still slick bc license is form meta",
+        "content": "<p>ngl this works but its still slick bc license is form meta</p>",
+        "parent": {},
+        "author": {
+         "displayName": "kumachl",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35242754-kg.jpeg?t=2026-06-22-23-33-25",
+         "url": "/kumachl",
+         "tier": "CONTRIBUTOR",
+         "id": 35242754,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3033,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "kumachl",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35242754-kg.jpeg?t=2026-06-22-23-33-25",
+          "url": "/kumachl",
+          "userName": "kumachl",
+          "tier": "CONTRIBUTOR",
+          "id": 35242754,
+          "profileUrl": "/kumachl",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 35242754,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "kumachl",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35242754-kg.jpeg?t=2026-06-22-23-33-25",
+       "url": "/kumachl",
+       "tier": "CONTRIBUTOR",
+       "id": 35242754,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3033,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "kumachl",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35242754-kg.jpeg?t=2026-06-22-23-33-25",
+        "url": "/kumachl",
+        "userName": "kumachl",
+        "tier": "CONTRIBUTOR",
+        "id": 35242754,
+        "profileUrl": "/kumachl",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 35242754,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tim Krige",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+     "url": "/timkrige",
+     "tier": "EXPERT",
+     "id": 3326547,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1206,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "komilparmar"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tim Krige",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+      "url": "/timkrige",
+      "userName": "timkrige",
+      "tier": "EXPERT",
+      "id": 3326547,
+      "profileUrl": "/timkrige",
+      "performanceTier": "EXPERT",
+      "userId": 3326547,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3509530,
+    "postDate": "2026-08-06T15:15:03.160Z",
+    "rawMarkdown": "Dino v3 has been used in other competitions this year - so I think its good !",
+    "content": "<p>Dino v3 has been used in other competitions this year - so I think its good !</p>",
+    "replies": [
+     {
+      "id": 3509769,
+      "postDate": "2026-08-07T02:28:41.870Z",
+      "rawMarkdown": "The [attached](https://www.kaggle.com/competitions/csiro-biomass/writeups/41st-place-solution-self-prompt-tuning-with-di) solution shows a write-up from a person who used Dino V3 - it was NOT one of the models in the models tab however.  You might find code in that competition on how folks handled getting v3.\n\nI am using it now for this competition, but training local and including the files in my dataset so I have no need to get to the model on kaggle.\n\nI mention the solution as he had nice things to say about me :)",
+      "content": "<p>The <a href=\"https://www.kaggle.com/competitions/csiro-biomass/writeups/41st-place-solution-self-prompt-tuning-with-di\" target=\"_blank\">attached</a> solution shows a write-up from a person who used Dino V3 - it was NOT one of the models in the models tab however.  You might find code in that competition on how folks handled getting v3.</p>\n<p>I am using it now for this competition, but training local and including the files in my dataset so I have no need to get to the model on kaggle.</p>\n<p>I mention the solution as he had nice things to say about me :)</p>",
+      "replies": [
+       {
+        "id": 3509804,
+        "postDate": "2026-08-07T04:55:32.857Z",
+        "rawMarkdown": "My V2 model scored 0.775 while pretty much the same V3 scored 0.763 - I was expecting some gain, for sure not a small loss.",
+        "content": "<p>My V2 model scored 0.775 while pretty much the same V3 scored 0.763 - I was expecting some gain, for sure not a small loss.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3509897,
+        "postDate": "2026-08-07T09:49:55.497Z",
+        "rawMarkdown": "Thank you for your valuable feedback. I’m also going to experiment with DINOv2 and DINOv3, and I’ll share the results once they’re available.",
+        "content": "<p>Thank you for your valuable feedback. I’m also going to experiment with DINOv2 and DINOv3, and I’ll share the results once they’re available.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ryuhki Kimura",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+         "url": "/kimura0415",
+         "tier": "EXPERT",
+         "id": 25538440,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 670,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ryuhki Kimura",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+          "url": "/kimura0415",
+          "userName": "kimura0415",
+          "tier": "EXPERT",
+          "id": 25538440,
+          "profileUrl": "/kimura0415",
+          "performanceTier": "EXPERT",
+          "userId": 25538440,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3509898,
+        "postDate": "2026-08-07T09:50:40.083Z",
+        "rawMarkdown": "I didn’t expect the performance to drop with DINOv3. This is a very puzzling result.\n\n\n",
+        "content": "<p>I didn’t expect the performance to drop with DINOv3. This is a very puzzling result.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ryuhki Kimura",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+         "url": "/kimura0415",
+         "tier": "EXPERT",
+         "id": 25538440,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 670,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ryuhki Kimura",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+          "url": "/kimura0415",
+          "userName": "kimura0415",
+          "tier": "EXPERT",
+          "id": 25538440,
+          "profileUrl": "/kimura0415",
+          "performanceTier": "EXPERT",
+          "userId": 25538440,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3510182,
+        "postDate": "2026-08-07T21:54:32.383Z",
+        "rawMarkdown": "quite surprised that the performance to drop with DINOv3.",
+        "content": "<p>quite surprised that the performance to drop with DINOv3.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "OverfitOracle",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26014514-kg.jpg?t=2026-07-08-10-03-35",
+         "url": "/alisalmanrana",
+         "tier": "MASTER",
+         "id": 26014514,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 670,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ryuhki Kimura",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+          "url": "/kimura0415",
+          "userName": "kimura0415",
+          "tier": "EXPERT",
+          "id": 25538440,
+          "profileUrl": "/kimura0415",
+          "performanceTier": "EXPERT",
+          "userId": 25538440,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3510795,
+        "postDate": "2026-08-09T15:50:07.653Z",
+        "rawMarkdown": "Hi, did you guys train Dino on LLM-generated labels?",
+        "content": "<p>Hi, did you guys train Dino on LLM-generated labels?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dung Duong (Tony) Huynh",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/dungduongtonyhuynh",
+         "tier": "CONTRIBUTOR",
+         "id": 20400086,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dung Duong (Tony) Huynh",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/dungduongtonyhuynh",
+          "userName": "dungduongtonyhuynh",
+          "tier": "CONTRIBUTOR",
+          "id": 20400086,
+          "profileUrl": "/dungduongtonyhuynh",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 20400086,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3511154,
+        "postDate": "2026-08-10T14:56:55.263Z",
+        "rawMarkdown": "My v2 vs v3 test model had hard coded labeler.  I also attempted to use V3 in the plant competition that I referenced in the attached solution.  V3 did not perform as well there, but the training on v2 did sound like it had a lot more plant based input so the result made sense.   Gemini Pro tells me that V3 had a lot more medical images than v2 and that v3 should be the best choice.\n\nI do plan to repeat my evaluation when I get a model that is closer to 0.90. ",
+        "content": "<p>My v2 vs v3 test model had hard coded labeler.  I also attempted to use V3 in the plant competition that I referenced in the attached solution.  V3 did not perform as well there, but the training on v2 did sound like it had a lot more plant based input so the result made sense.   Gemini Pro tells me that V3 had a lot more medical images than v2 and that v3 should be the best choice.</p>\n<p>I do plan to repeat my evaluation when I get a model that is closer to 0.90. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3511933,
+        "postDate": "2026-08-12T10:54:21.033Z",
+        "rawMarkdown": "I had similar experience with the CSIRO Biomass competition... My hypothesis is that the gram anchoring that makes DinoV3 so powerful is only helpful with massive datasets and long training, which we do not have. The pretrained weights are also better from v3, but if finetuning is needed, these are lost.\n",
+        "content": "<p>I had similar experience with the CSIRO Biomass competition… My hypothesis is that the gram anchoring that makes DinoV3 so powerful is only helpful with massive datasets and long training, which we do not have. The pretrained weights are also better from v3, but if finetuning is needed, these are lost.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tim Krige",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+         "url": "/timkrige",
+         "tier": "EXPERT",
+         "id": 3326547,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1206,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tim Krige",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+          "url": "/timkrige",
+          "userName": "timkrige",
+          "tier": "EXPERT",
+          "id": 3326547,
+          "profileUrl": "/timkrige",
+          "performanceTier": "EXPERT",
+          "userId": 3326547,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3512446,
+        "postDate": "2026-08-13T14:05:19.617Z",
+        "rawMarkdown": "So good and nostalgic to see CSIRO people here 😄. @pcjimmmy @timkrige \nYes, as mentioned above, Dinov3 isn't allowed on its own, but during CSIRO the competition hosts made it explicitly clear that we can use Dinov3. Unless we get such a confirmation again during this competition, I don't believe we should be using it.\n\nAlso, the pattern seen for Dinov3 vs Dinov2 was very interesting in CSIRO. It was complicated actually. It wasn't that Dinov3 is clearly performing worse than Dinov2, or vice versa but Dinov3 actually generalized much more than Dinov2 especially when it came to private LB. \n\nI won't mention all the details but I highly recommend checking the solution writeups of CSIRO, especially for better leveraging these Dino models.  ",
+        "content": "<p>So good and nostalgic to see CSIRO people here 😄. <a href=\"https://www.kaggle.com/pcjimmmy\" target=\"_blank\">@pcjimmmy</a> <a href=\"https://www.kaggle.com/timkrige\" target=\"_blank\">@timkrige</a> \nYes, as mentioned above, Dinov3 isn't allowed on its own, but during CSIRO the competition hosts made it explicitly clear that we can use Dinov3. Unless we get such a confirmation again during this competition, I don't believe we should be using it.</p>\n<p>Also, the pattern seen for Dinov3 vs Dinov2 was very interesting in CSIRO. It was complicated actually. It wasn't that Dinov3 is clearly performing worse than Dinov2, or vice versa but Dinov3 actually generalized much more than Dinov2 especially when it came to private LB. </p>\n<p>I won't mention all the details but I highly recommend checking the solution writeups of CSIRO, especially for better leveraging these Dino models.  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Komil Parmar",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+         "url": "/komilparmar",
+         "tier": "EXPERT",
+         "id": 11351811,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 58,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "pcjimmmy"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Komil Parmar",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+          "url": "/komilparmar",
+          "userName": "komilparmar",
+          "tier": "EXPERT",
+          "id": 11351811,
+          "profileUrl": "/komilparmar",
+          "performanceTier": "EXPERT",
+          "userId": 11351811,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3512499,
+        "postDate": "2026-08-13T16:37:55.620Z",
+        "rawMarkdown": "[Komil Parmar](https://www.kaggle.com/komilparmar)\n\n\nNot sure I ever thanked you for your kind comments in your write-up in CSIRO.  Thanks!!!\n\nI do see that someone got a v3 loaded into the Models - not sure that means any approval but I am still a long way from trying V3 again.  Maybe in another month I will have labels I like and a need to improve the model that trains on them.",
+        "content": "<p><a href=\"https://www.kaggle.com/komilparmar\" target=\"_blank\">Komil Parmar</a></p>\n<p>Not sure I ever thanked you for your kind comments in your write-up in CSIRO.  Thanks!!!</p>\n<p>I do see that someone got a v3 loaded into the Models - not sure that means any approval but I am still a long way from trying V3 again.  Maybe in another month I will have labels I like and a need to improve the model that trains on them.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "komilparmar"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "PC Jimmmy",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+       "url": "/pcjimmmy",
+       "tier": "MASTER",
+       "id": 1062256,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 641,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "PC Jimmmy",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+        "url": "/pcjimmmy",
+        "userName": "pcjimmmy",
+        "tier": "MASTER",
+        "id": 1062256,
+        "profileUrl": "/pcjimmmy",
+        "performanceTier": "MASTER",
+        "userId": 1062256,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3523875,
+    "postDate": "2026-09-13T07:57:14.953Z",
+    "rawMarkdown": "@javaduke95 Following up since this thread never got an official ruling:\nseveral public notebooks now scoring 0.941-0.942 (e.g. \"Bend the Knee to the Dinosaurs\", \"rsna-knee-0941-restructured\") depend on a community-uploaded Kaggle dataset (mattiaangeli/knee-mri-fold-weights) containing 5 fold-checkpoints derived from the official Meta DINOv3 ViT-S/16 (LVD-1689M) backbone, relicensed CC0 by the uploader.",
+    "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> Following up since this thread never got an official ruling:\nseveral public notebooks now scoring 0.941-0.942 (e.g. \"Bend the Knee to the Dinosaurs\", \"rsna-knee-0941-restructured\") depend on a community-uploaded Kaggle dataset (mattiaangeli/knee-mri-fold-weights) containing 5 fold-checkpoints derived from the official Meta DINOv3 ViT-S/16 (LVD-1689M) backbone, relicensed CC0 by the uploader.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "phongtintruongg",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/phongtintruongg",
+     "tier": "CONTRIBUTOR",
+     "id": 18345020,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1164,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "phongtintruongg",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/phongtintruongg",
+      "userName": "phongtintruongg",
+      "tier": "CONTRIBUTOR",
+      "id": 18345020,
+      "profileUrl": "/phongtintruongg",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18345020,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509477,
+   "postDate": "2026-08-06T12:50:30.527Z",
+   "rawMarkdown": "From what I can tell, DINOv3 doesn’t seem to be registered. Am I correct in assuming that we can’t use it?",
+   "content": "<p>From what I can tell, DINOv3 doesn’t seem to be registered. Am I correct in assuming that we can’t use it?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Ryuhki Kimura",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+    "url": "/kimura0415",
+    "tier": "EXPERT",
+    "id": 25538440,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 9,
+    "canUpvote": true,
+    "totalUpvotes": 9
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 670,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Ryuhki Kimura",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+     "url": "/kimura0415",
+     "userName": "kimura0415",
+     "tier": "EXPERT",
+     "id": 25538440,
+     "profileUrl": "/kimura0415",
+     "performanceTier": "EXPERT",
+     "userId": 25538440,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509477,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733313,
+  "name": "Using Dino3",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-06T12:50:30.527314600Z",
+  "totalVotes": 9,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733313",
+  "totalMessages": 16,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Ryuhki Kimura",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+   "url": "/kimura0415",
+   "tier": "EXPERT",
+   "id": 25538440,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 16,
+  "firstForumMessageId": 3509477,
+  "id": 733313,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "phongtintruongg",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733313#3523875",
+  "lastCommentPostDate": "2026-09-13T07:57:14.953333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-06T12:50:30.527314600Z",
+  "title": "Using Dino3",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733313",
+  "votes": 9,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Ryuhki Kimura",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25538440-kg.png?t=2026-01-08-14-54-49",
+    "url": "/kimura0415",
+    "userName": "kimura0415",
+    "tier": "EXPERT",
+    "id": 25538440,
+    "profileUrl": "/kimura0415",
+    "performanceTier": "EXPERT",
+    "userId": 25538440,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

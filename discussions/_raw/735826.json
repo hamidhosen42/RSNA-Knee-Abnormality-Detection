@@ -1,0 +1,536 @@
+{
+ "forumTopic": {
+  "authorId": 16134786,
+  "authorThumbnailName": "16134786-kg.png?t=2024-12-01-22-46-34",
+  "authorUserDisplayName": "Oscar Yáñez Feijóo",
+  "authorUserName": "oscaryezfeijo",
+  "comments": [
+   {
+    "id": 3514085,
+    "postDate": "2026-08-18T13:20:43.847Z",
+    "rawMarkdown": "I think the labeling process is particularly interesting and will prove decisive in this competition. It's one thing to extract labels from the report, but another to faithfully reproduce the labels derived from the image. If you look over the gold set it's not hard to find instances where the image label clearly flouts the rules of diagnosis laid out in the introduction to the competition (e.g. the report says \"small effusion\" and the effusion label is set to 1, even though only a \"moderate or large\" is the heuristic. It's not surprising, as there is an element of subjectivity in such a judgement, and no doubt it's similar for many of the heuristics used: close to the decision boundary, there will often be disagreement between the report label and the image label; radiologists will just disagree - it's the nature of the beast.\n\nOne immediate thing this suggests: asking an LLM for it's confidence in a diagnosis might be misleading if what you're getting is an estimate of it's confidence in applying heuristics to reports. It may be very confident that effusion is not present after reading \"small effusion\", since the rule is easily applied and the words are clear; whereas in reality the process that generated the word \"small\" has a lot of noise and may just have easily produced the word \"moderate\". I will be very interested to read how everyone generated their labels at the end of this competition.",
+    "content": "<p>I think the labeling process is particularly interesting and will prove decisive in this competition. It's one thing to extract labels from the report, but another to faithfully reproduce the labels derived from the image. If you look over the gold set it's not hard to find instances where the image label clearly flouts the rules of diagnosis laid out in the introduction to the competition (e.g. the report says \"small effusion\" and the effusion label is set to 1, even though only a \"moderate or large\" is the heuristic. It's not surprising, as there is an element of subjectivity in such a judgement, and no doubt it's similar for many of the heuristics used: close to the decision boundary, there will often be disagreement between the report label and the image label; radiologists will just disagree - it's the nature of the beast.</p>\n<p>One immediate thing this suggests: asking an LLM for it's confidence in a diagnosis might be misleading if what you're getting is an estimate of it's confidence in applying heuristics to reports. It may be very confident that effusion is not present after reading \"small effusion\", since the rule is easily applied and the words are clear; whereas in reality the process that generated the word \"small\" has a lot of noise and may just have easily produced the word \"moderate\". I will be very interested to read how everyone generated their labels at the end of this competition.</p>",
+    "replies": [
+     {
+      "id": 3514611,
+      "postDate": "2026-08-19T18:10:39.387Z",
+      "rawMarkdown": "@taindow  I'm actually using this approach already:\n\n- Prompt Benchmark: Created a gold standard prompt using the 58 labeled samples and prescriptions, achieving 79% accuracy.\n- Dataset Auto-Labeling: Used that prompt to derive labels for the remaining unlabeled data. It was quite compute-heavy, taking about 14 hours of GPU time , but the entire batch completed successfully without any failures.\n- Now next task is on image",
+      "content": "<p><a href=\"https://www.kaggle.com/taindow\" target=\"_blank\">@taindow</a>  I'm actually using this approach already:</p>\n<ul>\n<li>Prompt Benchmark: Created a gold standard prompt using the 58 labeled samples and prescriptions, achieving 79% accuracy.</li>\n<li>Dataset Auto-Labeling: Used that prompt to derive labels for the remaining unlabeled data. It was quite compute-heavy, taking about 14 hours of GPU time , but the entire batch completed successfully without any failures.</li>\n<li>Now next task is on image</li>\n</ul>",
+      "parent": {},
+      "author": {
+       "displayName": "Neelkant Newra",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2907986-kg.png?t=2026-08-08-02-52-30",
+       "url": "/newra008",
+       "tier": "CONTRIBUTOR",
+       "id": 2907986,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "THANK_YOU",
+        "featuredUserNames": [
+         "enaimaan"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Neelkant Newra",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2907986-kg.png?t=2026-08-08-02-52-30",
+        "url": "/newra008",
+        "userName": "newra008",
+        "tier": "CONTRIBUTOR",
+        "id": 2907986,
+        "profileUrl": "/newra008",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 2907986,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tom Aindow",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+     "url": "/taindow",
+     "tier": "MASTER",
+     "id": 921947,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 81,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "enaimaan"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tom Aindow",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+      "url": "/taindow",
+      "userName": "taindow",
+      "tier": "MASTER",
+      "id": 921947,
+      "profileUrl": "/taindow",
+      "performanceTier": "MASTER",
+      "userId": 921947,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514226,
+    "postDate": "2026-08-18T18:26:13.197Z",
+    "rawMarkdown": "Check to see how your label extractor performs relative to the 58 provided labels. Then check how your image model performs on them. If your image model is not beating the label extractor \"teacher\", there is likely modeling headroom. If your image model is beating the label extractor by a large margin, the quality of the labels might be holding the image model back. There's a lot of cool things to try with the label extraction, but even the simple regex extraction shown in the public notebooks can take you pretty far.",
+    "content": "<p>Check to see how your label extractor performs relative to the 58 provided labels. Then check how your image model performs on them. If your image model is not beating the label extractor \"teacher\", there is likely modeling headroom. If your image model is beating the label extractor by a large margin, the quality of the labels might be holding the image model back. There's a lot of cool things to try with the label extraction, but even the simple regex extraction shown in the public notebooks can take you pretty far.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "taindow",
+       "deepernet",
+       "laymond",
+       "farshidamira",
+       "ennazzz"
+      ],
+      "userCount": 5
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514091,
+    "postDate": "2026-08-18T13:33:26.663Z",
+    "rawMarkdown": "The quality of the soft labels and not being overly influenced by the public code are important.",
+    "content": "<p>The quality of the soft labels and not being overly influenced by the public code are important.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chikuwabu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+     "url": "/prgckwb",
+     "tier": "MASTER",
+     "id": 9945255,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 28,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "taindow"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chikuwabu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+      "url": "/prgckwb",
+      "userName": "prgckwb",
+      "tier": "MASTER",
+      "id": 9945255,
+      "profileUrl": "/prgckwb",
+      "performanceTier": "MASTER",
+      "userId": 9945255,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514419,
+    "postDate": "2026-08-19T09:44:20.273Z",
+    "rawMarkdown": "I think the biggest bottleneck is A, although I also believe there is something in E.\n\nWe have confirmed that some of the labeled data contains cases where the label contradicts the content of the report. This suggests that even the labeled data itself may not be 100% reliable.\n\nIt is extremely difficult to know whether a given label represents the “true diagnosis” or a “false diagnosis.” The same issue may also exist in both the Public and Private Leaderboards.\n\nIn other words, some cases that are not actually correct may be treated as ground truth.\n\nFor example:\n1. Filter to reports whose effusion sentence contains a small-size qualifier\n   (\"small\", \"minimal\", \"trace\", or the equivalent in the other languages).\n   You will find this group contains **both** `Effusion = 0` and `Effusion = 1`.\n2. In my sample, two of these reports used the **same English template and the\n   same sentence**, and got opposite labels.\n3. Then look for a report stating a **moderate** effusion. At least one of those\n   is labeled `Effusion = 0`, so it is not a simple\n   \"small = negative, moderate = positive\" threshold either.",
+    "content": "<p>I think the biggest bottleneck is A, although I also believe there is something in E.</p>\n<p>We have confirmed that some of the labeled data contains cases where the label contradicts the content of the report. This suggests that even the labeled data itself may not be 100% reliable.</p>\n<p>It is extremely difficult to know whether a given label represents the “true diagnosis” or a “false diagnosis.” The same issue may also exist in both the Public and Private Leaderboards.</p>\n<p>In other words, some cases that are not actually correct may be treated as ground truth.</p>\n<p>For example:</p>\n<ol>\n<li>Filter to reports whose effusion sentence contains a small-size qualifier\n(\"small\", \"minimal\", \"trace\", or the equivalent in the other languages).\nYou will find this group contains <strong>both</strong> <code>Effusion = 0</code> and <code>Effusion = 1</code>.</li>\n<li>In my sample, two of these reports used the <strong>same English template and the\nsame sentence</strong>, and got opposite labels.</li>\n<li>Then look for a report stating a <strong>moderate</strong> effusion. At least one of those\nis labeled <code>Effusion = 0</code>, so it is not a simple\n\"small = negative, moderate = positive\" threshold either.</li>\n</ol>",
+    "replies": [
+     {
+      "id": 3514439,
+      "postDate": "2026-08-19T11:08:40.957Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     },
+     {
+      "id": 3516531,
+      "postDate": "2026-08-24T16:25:58.007Z",
+      "rawMarkdown": "```\nWe have confirmed that some of the labeled data contains cases where the label contradicts the content of the report. This suggests that even the labeled data itself may not be 100% reliable.\n```\n\nI think in this case we should prefere gold label not report content. I believe I saw it somewhere  by the Hosts.",
+      "content": "<pre><code>We have confirmed that some of the labeled data contains cases where the label contradicts the content of the report. This suggests that even the labeled data itself may not be 100% reliable.\n</code></pre>\n<p>I think in this case we should prefere gold label not report content. I believe I saw it somewhere  by the Hosts.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Enai",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+       "url": "/enaimaan",
+       "tier": "CONTRIBUTOR",
+       "id": 2630633,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3040,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Enai",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+        "url": "/enaimaan",
+        "userName": "enaimaan",
+        "tier": "CONTRIBUTOR",
+        "id": 2630633,
+        "profileUrl": "/enaimaan",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 2630633,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3518093,
+      "postDate": "2026-08-29T12:15:29.077Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1946,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514042,
+    "postDate": "2026-08-18T10:26:01.333Z",
+    "rawMarkdown": "Interesting question. I’m new to this competition, but I’ve spent the last few days approaching it mainly as a systems/optimization problem rather than assuming that a larger model will automatically give a better result.\n\nSo far, my experiments seem to support B, with A potentially being just as important.\n\nI first froze my CPU preprocessing pipeline as a control. It preprocesses all 4,407 studies into a fixed (4407, 6, 9, 224, 224) uint8 cache. I then kept that exact cache and label pipeline unchanged while testing the GPU side.\n\nWith a pretrained ResNet34 pipeline, my current control OOF BCE is about 0.664. I then replaced the representation/model side with pretrained DINOv2-Small, including diagnosis-specific slot attention, while keeping the same CPU data and labels.\n\nSurprisingly, simply moving to DINOv2 did not improve the result. My best 5-fold DINO candidate produced approximately 0.674 OOF BCE (rank correlation ~0.391), actually worse than the ResNet34 control on BCE. Increasing or changing model-side complexity therefore did not solve the problem by itself.\n\nThat result changed where I’m spending my compute.\n\nMy next controlled experiment keeps the successful ResNet34 GPU pipeline fixed and changes only the image preprocessing: physical slice ordering using DICOM orientation/position, removal of stack-end regions, anatomically better slice grouping, and fixed-mm physical cropping before resize. This should let me measure the contribution of the image pipeline independently from the backbone.\n\nAfter that, I want to isolate label quality in the same way. Most of my current training targets are report-derived soft labels, so I suspect there is also a point where better image representation cannot compensate for noisy supervision.\n\nOne practical lesson from these experiments has been that compute cost and model size are poor proxies for useful information. A more expensive model can simply process the same imperfect input more expensively.\n\nAt this stage my working hypothesis is:\n\nimage geometry / slice selection + label quality > backbone size.\n\nI don’t consider that conclusion proven yet, but the controlled experiments so far are pushing me strongly in that direction.",
+    "content": "<p>Interesting question. I’m new to this competition, but I’ve spent the last few days approaching it mainly as a systems/optimization problem rather than assuming that a larger model will automatically give a better result.</p>\n<p>So far, my experiments seem to support B, with A potentially being just as important.</p>\n<p>I first froze my CPU preprocessing pipeline as a control. It preprocesses all 4,407 studies into a fixed (4407, 6, 9, 224, 224) uint8 cache. I then kept that exact cache and label pipeline unchanged while testing the GPU side.</p>\n<p>With a pretrained ResNet34 pipeline, my current control OOF BCE is about 0.664. I then replaced the representation/model side with pretrained DINOv2-Small, including diagnosis-specific slot attention, while keeping the same CPU data and labels.</p>\n<p>Surprisingly, simply moving to DINOv2 did not improve the result. My best 5-fold DINO candidate produced approximately 0.674 OOF BCE (rank correlation ~0.391), actually worse than the ResNet34 control on BCE. Increasing or changing model-side complexity therefore did not solve the problem by itself.</p>\n<p>That result changed where I’m spending my compute.</p>\n<p>My next controlled experiment keeps the successful ResNet34 GPU pipeline fixed and changes only the image preprocessing: physical slice ordering using DICOM orientation/position, removal of stack-end regions, anatomically better slice grouping, and fixed-mm physical cropping before resize. This should let me measure the contribution of the image pipeline independently from the backbone.</p>\n<p>After that, I want to isolate label quality in the same way. Most of my current training targets are report-derived soft labels, so I suspect there is also a point where better image representation cannot compensate for noisy supervision.</p>\n<p>One practical lesson from these experiments has been that compute cost and model size are poor proxies for useful information. A more expensive model can simply process the same imperfect input more expensively.</p>\n<p>At this stage my working hypothesis is:</p>\n<p>image geometry / slice selection + label quality &gt; backbone size.</p>\n<p>I don’t consider that conclusion proven yet, but the controlled experiments so far are pushing me strongly in that direction.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Seung Sup Lee",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/seungsuplee",
+     "tier": "CONTRIBUTOR",
+     "id": 35714145,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2631,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "taindow",
+       "enaimaan",
+       "osakanateishoku"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Seung Sup Lee",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/seungsuplee",
+      "userName": "seungsuplee",
+      "tier": "CONTRIBUTOR",
+      "id": 35714145,
+      "profileUrl": "/seungsuplee",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35714145,
+      "progressionOptOut": false
+     },
+     "intro": "GNSS Antenna A-E Filter Inventor, SAR Image Processing\n\nhttps://www.linkedin.com/in/sean-lee-64434033/"
+    }
+   },
+   {
+    "id": 3514762,
+    "postDate": "2026-08-20T04:13:48.293Z",
+    "rawMarkdown": "IMO - the entire competition is the label making.\n\nAfter you get some decent labels - than matching the radiologists who created the test labels - this will create the shakeup.  According to comments from the hosts those folks did not use the reports as a starting point.\n\nI don't think we have enough reports to require a model size that's huge but I am still struggling with getting labels I like.\nSince we are creating our own labels the time honored tradition of trusting you CV is pretty suspect.",
+    "content": "<p>IMO - the entire competition is the label making.</p>\n<p>After you get some decent labels - than matching the radiologists who created the test labels - this will create the shakeup.  According to comments from the hosts those folks did not use the reports as a starting point.</p>\n<p>I don't think we have enough reports to require a model size that's huge but I am still struggling with getting labels I like.\nSince we are creating our own labels the time honored tradition of trusting you CV is pretty suspect.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 636,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3518094,
+    "postDate": "2026-08-29T12:15:40.967Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514029,
+   "postDate": "2026-08-18T09:38:04.703Z",
+   "rawMarkdown": "I’ve been following the recent discussions and there seems to be an interesting pattern:\n\n- Single DINO-based models can already reach around **0.91–0.92+**.\n- Increasing encoder size does not necessarily improve CV.\n- Several people report meaningful gains from **crop geometry, resolution and slice selection**.\n- At the same time, most of the training labels are derived from reports, and label quality may itself impose a ceiling.\n\nThis makes me wonder: **what do you currently think is the main bottleneck in this competition?**\n\nA. Report-derived label quality\n\nB. MRI preprocessing / physical crop / slice selection\n\nC. Model architecture or backbone capacity\n\nD. Validation strategy\n\nE. Something else entirely\n\nWithout revealing solution-specific details, I’d be interested to hear which category has produced the largest improvements in your own experiments.\n\nFor me, the emerging lesson is that improving what the model *sees* and what we *teach it* may be more important than simply using a larger backbone.\n",
+   "content": "<p>I’ve been following the recent discussions and there seems to be an interesting pattern:</p>\n<ul>\n<li>Single DINO-based models can already reach around <strong>0.91–0.92+</strong>.</li>\n<li>Increasing encoder size does not necessarily improve CV.</li>\n<li>Several people report meaningful gains from <strong>crop geometry, resolution and slice selection</strong>.</li>\n<li>At the same time, most of the training labels are derived from reports, and label quality may itself impose a ceiling.</li>\n</ul>\n<p>This makes me wonder: <strong>what do you currently think is the main bottleneck in this competition?</strong></p>\n<p>A. Report-derived label quality</p>\n<p>B. MRI preprocessing / physical crop / slice selection</p>\n<p>C. Model architecture or backbone capacity</p>\n<p>D. Validation strategy</p>\n<p>E. Something else entirely</p>\n<p>Without revealing solution-specific details, I’d be interested to hear which category has produced the largest improvements in your own experiments.</p>\n<p>For me, the emerging lesson is that improving what the model <em>sees</em> and what we <em>teach it</em> may be more important than simply using a larger backbone.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Oscar Yáñez Feijóo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+    "url": "/oscaryezfeijo",
+    "tier": "CONTRIBUTOR",
+    "id": 16134786,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 13,
+    "canUpvote": true,
+    "totalUpvotes": 13
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2335,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "SURPRISE",
+     "featuredUserNames": [
+      "osakanateishoku"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Oscar Yáñez Feijóo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+     "url": "/oscaryezfeijo",
+     "userName": "oscaryezfeijo",
+     "tier": "CONTRIBUTOR",
+     "id": 16134786,
+     "profileUrl": "/oscaryezfeijo",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 16134786,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514029,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735826,
+  "name": "What is the real bottleneck now: labels, image pipeline, or model capacity?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-18T09:38:04.704630200Z",
+  "totalVotes": 13,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735826",
+  "totalMessages": 11,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Oscar Yáñez Feijóo",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+   "url": "/oscaryezfeijo",
+   "tier": "CONTRIBUTOR",
+   "id": 16134786,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 11,
+  "firstForumMessageId": 3514029,
+  "id": 735826,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735826#3518094",
+  "lastCommentPostDate": "2026-08-29T12:15:40.966666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-18T09:38:04.704630200Z",
+  "title": "What is the real bottleneck now: labels, image pipeline, or model capacity?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735826",
+  "votes": 13,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Oscar Yáñez Feijóo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+    "url": "/oscaryezfeijo",
+    "userName": "oscaryezfeijo",
+    "tier": "CONTRIBUTOR",
+    "id": 16134786,
+    "profileUrl": "/oscaryezfeijo",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 16134786,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

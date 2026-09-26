@@ -1,0 +1,366 @@
+{
+ "forumTopic": {
+  "authorId": 36006511,
+  "authorThumbnailName": "36006511-kg.png?t=2026-08-08-21-08-47",
+  "authorUserDisplayName": "Fernando Faria",
+  "authorUserName": "fernandoadefaria",
+  "comments": [
+   {
+    "id": 3510405,
+    "postDate": "2026-08-08T11:54:15.400Z",
+    "rawMarkdown": "I believe that sending the report text to commercial LLMs (OpenAI, Anthropic, Google, etc.) is not permitted under the rules. For that reason, I believe labeling has to be done either with locally hosted LLMs (such as Qwen) or by human annotation.\n\nHowever, there is already a problem: label datasets derived using GPT have been publicly shared on the platform. Other public datasets may likewise have been labeled with commercial LLMs. If using such datasets is to be considered a rule violation, I don't see how the competition hosts or Kaggle staff could realistically make that determination for any given dataset. I would appreciate urgent, official guidance on how this will be handled.\n",
+    "content": "<p>I believe that sending the report text to commercial LLMs (OpenAI, Anthropic, Google, etc.) is not permitted under the rules. For that reason, I believe labeling has to be done either with locally hosted LLMs (such as Qwen) or by human annotation.</p>\n<p>However, there is already a problem: label datasets derived using GPT have been publicly shared on the platform. Other public datasets may likewise have been labeled with commercial LLMs. If using such datasets is to be considered a rule violation, I don't see how the competition hosts or Kaggle staff could realistically make that determination for any given dataset. I would appreciate urgent, official guidance on how this will be handled.</p>",
+    "replies": [
+     {
+      "id": 3510699,
+      "postDate": "2026-08-09T10:11:13.003Z",
+      "rawMarkdown": "The host just made an announcement to everyone.\n\nFor more details, please see https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965",
+      "content": "<p>The host just made an announcement to everyone.</p>\n<p>For more details, please see <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965</a></p>",
+      "parent": {},
+      "author": {
+       "displayName": "k256.dev",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+       "url": "/k256net",
+       "tier": "MASTER",
+       "id": 17784323,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1946,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "k256.dev",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+        "url": "/k256net",
+        "userName": "k256net",
+        "tier": "MASTER",
+        "id": 17784323,
+        "profileUrl": "/k256net",
+        "performanceTier": "MASTER",
+        "userId": 17784323,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1946,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510361,
+    "postDate": "2026-08-08T09:32:24.900Z",
+    "rawMarkdown": "> The use of external data and models is acceptable unless specifically prohibited by the Host. Because of the potential costs or restrictions (e.g., “geo restrictions”) associated with obtaining rights to use external data or certain software and associated tools, their use must be “reasonably accessible to all” and of “minimal cost”\n\nLLMs are indeed allowed as far as I can think of. You can get more info on the **6. EXTERNAL DATA AND TOOLS** section in the competition rules page\n\n\n\n> In the event that input data or pretrained models with an incompatible license are used to generate your winning solution, you do not need to grant an open source license in the preceding Section for that data and/or model(s). \n\nPublic datasets are always allowed in most of the kaggle competitions regardless of their license types unless the rules explicitly says so. If it doesn't allow commercial use but only research use, then you must mention that clearly in your writeup as the competition involves prize money which accounts to solutions being used for commercial purpose.",
+    "content": "<blockquote>\n  <p>The use of external data and models is acceptable unless specifically prohibited by the Host. Because of the potential costs or restrictions (e.g., “geo restrictions”) associated with obtaining rights to use external data or certain software and associated tools, their use must be “reasonably accessible to all” and of “minimal cost”</p>\n</blockquote>\n<p>LLMs are indeed allowed as far as I can think of. You can get more info on the <strong>6. EXTERNAL DATA AND TOOLS</strong> section in the competition rules page</p>\n<blockquote>\n  <p>In the event that input data or pretrained models with an incompatible license are used to generate your winning solution, you do not need to grant an open source license in the preceding Section for that data and/or model(s). </p>\n</blockquote>\n<p>Public datasets are always allowed in most of the kaggle competitions regardless of their license types unless the rules explicitly says so. If it doesn't allow commercial use but only research use, then you must mention that clearly in your writeup as the competition involves prize money which accounts to solutions being used for commercial purpose.</p>",
+    "replies": [
+     {
+      "id": 3510695,
+      "postDate": "2026-08-09T09:57:21.877Z",
+      "rawMarkdown": "This point is worth settling clearly.  Thank you for pointing it out. \n\n[This post](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965) was just added and hopefully adds clarity. ",
+      "content": "<p>This point is worth settling clearly.  Thank you for pointing it out. </p>\n<p><a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965\" target=\"_blank\">This post</a> was just added and hopefully adds clarity. </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Po-Hao \"Howard\" Chen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+       "url": "/javaduke95",
+       "tier": "CONTRIBUTOR",
+       "id": 413040,
+       "progressionOptOut": false
+      },
+      "authorType": "HOST",
+      "votes": {
+       "totalVotes": 3,
+       "canUpvote": true,
+       "totalUpvotes": 3
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "NNMax",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18148523-kg.jpg?t=2025-10-31-11-21-57",
+     "url": "/ashok205",
+     "tier": "EXPERT",
+     "id": 18148523,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "NNMax",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18148523-kg.jpg?t=2025-10-31-11-21-57",
+      "url": "/ashok205",
+      "userName": "ashok205",
+      "tier": "EXPERT",
+      "id": 18148523,
+      "profileUrl": "/ashok205",
+      "performanceTier": "EXPERT",
+      "userId": 18148523,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510153,
+    "postDate": "2026-08-07T20:22:55Z",
+    "rawMarkdown": "@fernandoadefaria Good questions, and I'd like hosts answers to both.  \n\n1. Same question here, I don't think a participant can settle it. The winners' obligation angle you raise makes it two questions: whether click-through datasets are usable at all, and whether using them complicates the CC-BY-NC grant. The rules do carve out incompatible licences on input data and pretrained models, which may cover it, but that's the host's call.\n\n2. My reading is that (a) is not permitted. In competition rules, Section 4.b \"Data Security\" says participants agree not to \"transmit, duplicate, publish, redistribute or otherwise provide or make available the Competition Data to any party not participating in the Competition.\" Obviously commercial API provider is such a party. That reading doesn't depend on what happens at submission time, since the transmission of reports data itself is the issue and violation of competition rules.\n\nI agree (b) looks fine and that was my initial plan to generate labels: with open weights run locally or in a Kaggle notebook the text never leaves your own environment, and internet-off only applies to the submission notebook, so offline label generation during development isn't restricted. Small multilingual models are great for this task.\n\nBut this is my reading of the clause, not a ruling, and I think it's a large enough decision that a host answer would be worth having in writing. I agree it matters for fairness either way. If (a) is allowed it advantages teams who can pay for API calls; if it isn't, teams should know before they build on it to not get DQ.\n@javaduke95 ",
+    "content": "<p><a href=\"https://www.kaggle.com/fernandoadefaria\" target=\"_blank\">@fernandoadefaria</a> Good questions, and I'd like hosts answers to both.  </p>\n<ol>\n<li><p>Same question here, I don't think a participant can settle it. The winners' obligation angle you raise makes it two questions: whether click-through datasets are usable at all, and whether using them complicates the CC-BY-NC grant. The rules do carve out incompatible licences on input data and pretrained models, which may cover it, but that's the host's call.</p></li>\n<li><p>My reading is that (a) is not permitted. In competition rules, Section 4.b \"Data Security\" says participants agree not to \"transmit, duplicate, publish, redistribute or otherwise provide or make available the Competition Data to any party not participating in the Competition.\" Obviously commercial API provider is such a party. That reading doesn't depend on what happens at submission time, since the transmission of reports data itself is the issue and violation of competition rules.</p></li>\n</ol>\n<p>I agree (b) looks fine and that was my initial plan to generate labels: with open weights run locally or in a Kaggle notebook the text never leaves your own environment, and internet-off only applies to the submission notebook, so offline label generation during development isn't restricted. Small multilingual models are great for this task.</p>\n<p>But this is my reading of the clause, not a ruling, and I think it's a large enough decision that a host answer would be worth having in writing. I agree it matters for fairness either way. If (a) is allowed it advantages teams who can pay for API calls; if it isn't, teams should know before they build on it to not get DQ.\n<a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Oleksii Zhukov",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6082025-kg.png?t=2026-08-01-19-49-46",
+     "url": "/zhukovoleksiy",
+     "tier": "MASTER",
+     "id": 6082025,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2850,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Oleksii Zhukov",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6082025-kg.png?t=2026-08-01-19-49-46",
+      "url": "/zhukovoleksiy",
+      "userName": "zhukovoleksiy",
+      "tier": "MASTER",
+      "id": 6082025,
+      "profileUrl": "/zhukovoleksiy",
+      "performanceTier": "MASTER",
+      "userId": 6082025,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514862,
+    "postDate": "2026-08-20T09:27:03.900Z",
+    "rawMarkdown": "I pulled the actual rule text, and I think this thread (and [#735497](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497), [#734109](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109), [#735121](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121)) may be asking about the wrong branch of 2.6(a).\n\n2.6(a) is a disjunction: External Data must be \"either publicly available and equally accessible ... at no cost to the other Participants, **or** satisfies the Reasonableness criteria as outlined in Section 2.6.b.\"\n\nAnd 2.6.b states that \"the use of external data and models is acceptable **unless specifically prohibited by the Host**,\" with the Reasonableness Standard aimed at excessive cost and geo restrictions.\n\nMRNet, fastMRI/fastMRI+, OAI, SKM-TEA and KneeCoT are free, not geo-restricted, and open to any researcher after a click-through agreement. On a plain reading they clear 2.6.b even if one thinks the click-through defeats the first branch\nof 2.6(a).\n\nSo the question I'd ask the Host is narrower:\n\n**1. Has the Host specifically prohibited any public knee-MRI corpus under 2.6.b?** If not, pretraining on that category is permitted and these four threads are settled.\n\n**2. Section 2.8(a)(1) requires winners to publish model weights as a public Kaggle dataset, and 2.8(a)(2) requires representing an \"unrestricted right to grant\" the winners licence.** Can weights whose training data carried a non-commercial or no-derivatives licence (CC BY-NC, CC BY-NC-ND) satisfy that representation? 2.6(a) explicitly says permission to use External Data \"does not limit your other obligations ... including Section 2.8.\"\n\nQuestion 2 is the one that actually gates decisions: permission to train and eligibility to win may differ, and teams are committing pretraining compute now against an October 22 deadline.",
+    "content": "<p>I pulled the actual rule text, and I think this thread (and <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497\" target=\"_blank\">#735497</a>, <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">#734109</a>, <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121\" target=\"_blank\">#735121</a>) may be asking about the wrong branch of 2.6(a).</p>\n<p>2.6(a) is a disjunction: External Data must be \"either publicly available and equally accessible … at no cost to the other Participants, <strong>or</strong> satisfies the Reasonableness criteria as outlined in Section 2.6.b.\"</p>\n<p>And 2.6.b states that \"the use of external data and models is acceptable <strong>unless specifically prohibited by the Host</strong>,\" with the Reasonableness Standard aimed at excessive cost and geo restrictions.</p>\n<p>MRNet, fastMRI/fastMRI+, OAI, SKM-TEA and KneeCoT are free, not geo-restricted, and open to any researcher after a click-through agreement. On a plain reading they clear 2.6.b even if one thinks the click-through defeats the first branch\nof 2.6(a).</p>\n<p>So the question I'd ask the Host is narrower:</p>\n<p><strong>1. Has the Host specifically prohibited any public knee-MRI corpus under 2.6.b?</strong> If not, pretraining on that category is permitted and these four threads are settled.</p>\n<p><strong>2. Section 2.8(a)(1) requires winners to publish model weights as a public Kaggle dataset, and 2.8(a)(2) requires representing an \"unrestricted right to grant\" the winners licence.</strong> Can weights whose training data carried a non-commercial or no-derivatives licence (CC BY-NC, CC BY-NC-ND) satisfy that representation? 2.6(a) explicitly says permission to use External Data \"does not limit your other obligations … including Section 2.8.\"</p>\n<p>Question 2 is the one that actually gates decisions: permission to train and eligibility to win may differ, and teams are committing pretraining compute now against an October 22 deadline.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Mazzutti",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35480944-kg.jpeg?t=2026-07-28-23-11-46",
+     "url": "/profmazzutti",
+     "tier": "CONTRIBUTOR",
+     "id": 35480944,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 18,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mazzutti",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35480944-kg.jpeg?t=2026-07-28-23-11-46",
+      "url": "/profmazzutti",
+      "userName": "profmazzutti",
+      "tier": "CONTRIBUTOR",
+      "id": 35480944,
+      "profileUrl": "/profmazzutti",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35480944,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510677,
+    "postDate": "2026-08-09T08:25:27.573Z",
+    "rawMarkdown": "any verdict on any of this? :)",
+    "content": "<p>any verdict on any of this? :)</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Nicolai Karcher",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/pejophylo",
+     "tier": "CONTRIBUTOR",
+     "id": 2084214,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 785,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nicolai Karcher",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/pejophylo",
+      "userName": "pejophylo",
+      "tier": "CONTRIBUTOR",
+      "id": 2084214,
+      "profileUrl": "/pejophylo",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2084214,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510118,
+   "postDate": "2026-08-07T18:25:02.787Z",
+   "rawMarkdown": "1. Do external knee-MRI datasets with free research-use agreements count as \"publicly available and equally accessible at no cost\"?\n\nThe rules permit external data that is freely and publicly available to all participants. The main public knee-MRI resources — MRNet (Stanford), fastMRI+ (NYU), the Osteoarthritis Initiative, and SKM-TEA — are all free of charge, but each requires registering and accepting a research-use agreement before download. None of them charge, and none restrict access to a particular institution, but the click-through step means they aren't anonymously downloadable.\n\nDoes that satisfy the \"equally accessible at no cost\" condition? A yes/no on the category would be more useful than a ruling on any single dataset, since the same access pattern covers essentially every public MSK-MRI resource.\n\nRelated: does the answer change for pretrained weights released under a research-use agreement rather than a permissive licence, given the winners' obligation to open-source code and weights under CC-BY-NC 4.0?\n\n2. Is it permitted to send the training reports to a commercial LLM API in order to derive labels from them?\n\nThe competition explicitly suggests deriving labels for the unlabeled studies from the report text, and the reports are in nine languages, so a multilingual LLM is the natural tool. But the data-security rule says competition data must not be provided to anyone who has not accepted the rules, and it isn't obvious to me whether sending report text to a third-party API for inference counts as \"providing data\" or simply as using a tool.\n\nConcretely, is either of these permitted?\n\n(a) Sending report text to a hosted LLM API (OpenAI, Anthropic, Google, etc.) during development, with the derived labels used purely as a training artifact — no report text and no API access at submission time.\n(b) Same, but with an open-weights model run locally or in a Kaggle notebook, so the text never leaves the participant's own environment.\nI assume (b) is fine and am mainly asking about (a). If (a) is not permitted, that's very much worth everyone knowing before they build on it — and if it is, saying so publicly puts teams without local GPU capacity on the same footing as those with it.\n\nThanks. Also thanks for the label-criteria post, which was unusually detailed and useful.",
+   "content": "<ol>\n<li>Do external knee-MRI datasets with free research-use agreements count as \"publicly available and equally accessible at no cost\"?</li>\n</ol>\n<p>The rules permit external data that is freely and publicly available to all participants. The main public knee-MRI resources — MRNet (Stanford), fastMRI+ (NYU), the Osteoarthritis Initiative, and SKM-TEA — are all free of charge, but each requires registering and accepting a research-use agreement before download. None of them charge, and none restrict access to a particular institution, but the click-through step means they aren't anonymously downloadable.</p>\n<p>Does that satisfy the \"equally accessible at no cost\" condition? A yes/no on the category would be more useful than a ruling on any single dataset, since the same access pattern covers essentially every public MSK-MRI resource.</p>\n<p>Related: does the answer change for pretrained weights released under a research-use agreement rather than a permissive licence, given the winners' obligation to open-source code and weights under CC-BY-NC 4.0?</p>\n<ol>\n<li>Is it permitted to send the training reports to a commercial LLM API in order to derive labels from them?</li>\n</ol>\n<p>The competition explicitly suggests deriving labels for the unlabeled studies from the report text, and the reports are in nine languages, so a multilingual LLM is the natural tool. But the data-security rule says competition data must not be provided to anyone who has not accepted the rules, and it isn't obvious to me whether sending report text to a third-party API for inference counts as \"providing data\" or simply as using a tool.</p>\n<p>Concretely, is either of these permitted?</p>\n<p>(a) Sending report text to a hosted LLM API (OpenAI, Anthropic, Google, etc.) during development, with the derived labels used purely as a training artifact — no report text and no API access at submission time.\n(b) Same, but with an open-weights model run locally or in a Kaggle notebook, so the text never leaves the participant's own environment.\nI assume (b) is fine and am mainly asking about (a). If (a) is not permitted, that's very much worth everyone knowing before they build on it — and if it is, saying so publicly puts teams without local GPU capacity on the same footing as those with it.</p>\n<p>Thanks. Also thanks for the label-criteria post, which was unusually detailed and useful.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Fernando Faria",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36006511-kg.png?t=2026-08-08-21-08-47",
+    "url": "/fernandoadefaria",
+    "tier": "CONTRIBUTOR",
+    "id": 36006511,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 21,
+    "canUpvote": true,
+    "totalUpvotes": 21
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1307,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Fernando Faria",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36006511-kg.png?t=2026-08-08-21-08-47",
+     "url": "/fernandoadefaria",
+     "userName": "fernandoadefaria",
+     "tier": "CONTRIBUTOR",
+     "id": 36006511,
+     "profileUrl": "/fernandoadefaria",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36006511,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510118,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733652,
+  "name": "Rules clarification: external knee-MRI datasets, and using an LLM API to derive labels from the reports",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T18:25:02.787271400Z",
+  "totalVotes": 21,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733652",
+  "totalMessages": 7,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Fernando Faria",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36006511-kg.png?t=2026-08-08-21-08-47",
+   "url": "/fernandoadefaria",
+   "tier": "CONTRIBUTOR",
+   "id": 36006511,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 7,
+  "firstForumMessageId": 3510118,
+  "id": 733652,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Mazzutti",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733652#3514862",
+  "lastCommentPostDate": "2026-08-20T09:27:03.900Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T18:25:02.787271400Z",
+  "title": "Rules clarification: external knee-MRI datasets, and using an LLM API to derive labels from the reports",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733652",
+  "votes": 21,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Fernando Faria",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36006511-kg.png?t=2026-08-08-21-08-47",
+    "url": "/fernandoadefaria",
+    "userName": "fernandoadefaria",
+    "tier": "CONTRIBUTOR",
+    "id": 36006511,
+    "profileUrl": "/fernandoadefaria",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36006511,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

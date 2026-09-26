@@ -1,0 +1,103 @@
+{
+ "forumTopic": {
+  "authorId": 35879816,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "hangglider5",
+  "authorUserName": "hangglider5",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510978,
+   "postDate": "2026-08-10T03:52:41.353Z",
+   "rawMarkdown": "Hi!\nSeparately from the hosted-LLM clarification, does MIRA §6’s prohibition on modification and derivative works apply to ordinary competition preprocessing and derived training artifacts?\nThank you.",
+   "content": "<p>Hi!\nSeparately from the hosted-LLM clarification, does MIRA §6’s prohibition on modification and derivative works apply to ordinary competition preprocessing and derived training artifacts?\nThank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "hangglider5",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/hangglider5",
+    "tier": "CONTRIBUTOR",
+    "id": 35879816,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "YAY",
+     "featuredUserNames": [
+      "makichutt"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "hangglider5",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/hangglider5",
+     "userName": "hangglider5",
+     "tier": "CONTRIBUTOR",
+     "id": 35879816,
+     "profileUrl": "/hangglider5",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 35879816,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510978,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734131,
+  "name": "Clarification on MIRA Section 6",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-10T03:52:41.353665200Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734131",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "hangglider5",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/hangglider5",
+   "tier": "CONTRIBUTOR",
+   "id": 35879816,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3510978,
+  "id": 734131,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "hangglider5",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734131#3510978",
+  "lastCommentPostDate": "2026-08-10T03:52:41.353333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-10T03:52:41.353665200Z",
+  "title": "Clarification on MIRA Section 6",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734131",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "hangglider5",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/hangglider5",
+    "userName": "hangglider5",
+    "tier": "CONTRIBUTOR",
+    "id": 35879816,
+    "profileUrl": "/hangglider5",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 35879816,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

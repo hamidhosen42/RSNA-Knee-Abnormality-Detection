@@ -1,0 +1,514 @@
+{
+  "kernel": {
+    "id": 133837092,
+    "title": "rsna-knee-rentafork",
+    "currentRunId": 348779293,
+    "mostRecentRunId": 348779293,
+    "url": "/code/vaihero/rsna-knee-rentafork",
+    "tags": [
+      {
+        "name": "gpu",
+        "slug": "gpu",
+        "url": "/tags/gpu"
+      }
+    ],
+    "upvoteCount": 20,
+    "viewCount": 247,
+    "forkCount": 19,
+    "bestPublicScore": 0.941,
+    "author": {
+      "id": 8223990,
+      "displayName": "Vaibhav Gupta",
+      "userName": "vaihero",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8223990-kg.jpeg?t=2026-08-06-18-08-25",
+      "profileUrl": "/vaihero",
+      "performanceTier": "CONTRIBUTOR",
+      "progressionOptOut": false
+    },
+    "updatedTime": "2026-09-10T12:23:42.220Z",
+    "selfLink": "/kernels/133837092",
+    "dockerImagePinningType": "DOCKER_IMAGE_PINNING_TYPE_ORIGINAL",
+    "medal": "BRONZE",
+    "slug": "rsna-knee-rentafork",
+    "hasLinkedSubmission": true,
+    "canToggleVisibility": true
+  },
+  "kernelRun": {
+    "id": 348779293,
+    "kernelId": 133837092,
+    "status": "COMPLETE",
+    "kernelVersionType": "BATCH",
+    "sourceType": "EDITOR_TYPE_NOTEBOOK",
+    "language": "LANGUAGE_PYTHON",
+    "title": "rsna-knee-rentafork",
+    "dateCreated": "2026-09-10T12:23:40.813Z",
+    "dateEvaluated": "2026-09-10T12:23:42.220Z",
+    "workerUptimeSeconds": 817,
+    "workerIpAddress": "172.21.78.29   ",
+    "workerIpAddressExternal": "34.61.103.240  ",
+    "scriptLanguageId": 9,
+    "scriptLanguageName": "IPython Notebook HTML",
+    "renderedOutputUrl": "https://www.kaggleusercontent.com/kf/348779293/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..AUmNbAeWx2t6NBOcTwmt_Q.s5NWl5bFt8KXd5Tu4i0gkJ8ORx8E8ilI4GFN7F5HmvOm2hVCbP4izozahFfR50cB4VBhNohMRfT_L6Y9WaieU0h3GouOQtTnJkKSX3tAfIphb9IFg5i5w82ZPLMu9nB4tnXiX8S0FX3JM6yppnzn3jPY7N0-K6dKuNMvxlURyC6Dyzx_srvVXc0vV0iAtZrVjjniaRZ48uzHSzXWRWCLoqIhW9EsChGFlgcIeFk0O_UQX0Z3n3FO83CAJ-KW24NLN0R4lNTCcgvkwnY4nUqwkjukfL7cSwvnJnljWNdh7WagmWGHdW3GcPmw2COSa1PnxtrbC9rC6aOh3yLwqhUjGsJ9LgcTV35cg93p5QDVQm_vn1-Cqnme3EB-GhYWGsFMDAnc30zhEUFT90LANR7bMLCICkBOfC87lGx3MpIgQafxhBn5pMpuekNdos1vwkFMfOV_mEyft9mYA9SUNbcwyASe7IBnXkhhGHibWP8_e5akRpcLO_KS-D8I9VKuPtA0FzYhXx4xBaU_fdSxzvt_5F733dbA3oBSaYxMH1zJbpTjuOclU1NxMESCLyQfIgRaCKZ4HUJqMDN4Zgsa1k9lda0mF0CG7yof-O29N7AVffloaTyKIXdKYmdoigoXWeG7.pZIabpSWIngFo7IGdmwPIQ/__results__.html?sharingControls=true",
+    "isolatorResults": "<results><dockerfile_url>gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</dockerfile_url><docker_image_digest>37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</docker_image_digest><docker_image_id>sha256:c72831376c5485ec652a6f4a771bf091ae0726310e1b9db3db064387e173e941</docker_image_id><docker_image_name>gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</docker_image_name><exit_code>0</exit_code><output_size_bytes>151189894</output_size_bytes><run_time_seconds>203.0264322</run_time_seconds><used_all_space>false</used_all_space><timeout_exceeded>false</timeout_exceeded><out_of_memory>false</out_of_memory><invalid_path_errors>false</invalid_path_errors><succeeded>true</succeeded><was_killed>false</was_killed><infra_container_error>false</infra_container_error></results>",
+    "runInfo": {
+      "dockerfileUrl": "https://github.com/Kaggle/docker-python/blob/main/Dockerfile.tmpl",
+      "dockerHubUrl": "https://gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "dockerImageDigest": "37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "dockerImageId": "sha256:c72831376c5485ec652a6f4a771bf091ae0726310e1b9db3db064387e173e941",
+      "dockerImageName": "gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "outputSizeBytes": 151189894,
+      "runTimeSeconds": 203.0264322,
+      "succeeded": true
+    },
+    "dockerImageVersionId": 31430,
+    "dataSources": [
+      {
+        "sourceId": 154281,
+        "databundleVersionId": 19681077,
+        "mountSlug": "competitions/rsna-knee-abnormality-detection"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18229736,
+        "datasetId": 11290369,
+        "mountSlug": "datasets/marwanmath/resnet-50-radimagenet-marwan"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18673450,
+        "datasetId": 11529209,
+        "mountSlug": "datasets/pilkwang/rsna-knee-llm-labels"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18716507,
+        "datasetId": 11552334,
+        "mountSlug": "datasets/pilkwang/rsna-knee-weights"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18839182,
+        "datasetId": 11608090,
+        "mountSlug": "datasets/antoinegg1/rsna-knee-e9-radimagenet-heads-v15"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18842180,
+        "datasetId": 11610725,
+        "mountSlug": "datasets/antoinegg1/rsna-knee-e11-diverse-heads-v20"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18879001,
+        "datasetId": 11628770,
+        "mountSlug": "datasets/prvsiyan/rsna-knee-v52-radimagenet-heads-20260812"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18956429,
+        "datasetId": 11611423,
+        "mountSlug": "datasets/mattiaangeli/knee-mri-fold-weights"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19120128,
+        "datasetId": 11745616,
+        "mountSlug": "datasets/dreaddevelopment/raptor-knee-maxspan"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19122845,
+        "datasetId": 11746763,
+        "mountSlug": "datasets/dreaddevelopment/raptor-knee-native384"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19134209,
+        "datasetId": 11752181,
+        "mountSlug": "datasets/dreaddevelopment/raptor-knee-native384dense"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19395055,
+        "datasetId": 11887453,
+        "mountSlug": "datasets/mattiaangeli/opencv-python-headless-4120088-x86"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19395706,
+        "datasetId": 11887000,
+        "mountSlug": "datasets/mattiaangeli/rsna-knee-coat-resgated-ep10-top3"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_KERNEL_VERSION",
+        "sourceId": 342671664,
+        "mountSlug": "notebooks/sofiaanjenje/rsna-knee-e11-train"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_KERNEL_VERSION",
+        "sourceId": 342849430,
+        "mountSlug": "notebooks/sofiaanjenje/rsna-knee-e13-train"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_MODEL_INSTANCE_VERSION",
+        "sourceId": 4533,
+        "mountSlug": "models/metaresearch/dinov2/pytorch/small/1",
+        "modelInstanceId": 3325,
+        "modelId": 986
+      }
+    ],
+    "useNewKernelsBackend": true,
+    "isGpuEnabled": true,
+    "acceleratorType": "NVIDIA_TESLA_T4",
+    "authorUserId": 8223990,
+    "kernelVersionNumber": 1
+  },
+  "author": {
+    "id": 8223990,
+    "displayName": "Vaibhav Gupta",
+    "userName": "vaihero",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8223990-kg.jpeg?t=2026-08-06-18-08-25",
+    "profileUrl": "/vaihero",
+    "performanceTier": "CONTRIBUTOR",
+    "progressionOptOut": false
+  },
+  "baseUrl": "/code/vaihero/rsna-knee-rentafork",
+  "collaborators": {
+    "owner": {
+      "userId": 8223990,
+      "profileUrl": "/vaihero",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8223990-kg.jpeg?t=2026-08-06-18-08-25",
+      "name": "Vaibhav Gupta",
+      "slug": "vaihero",
+      "userTier": "CONTRIBUTOR",
+      "type": "OWNER",
+      "progressionOptOut": false
+    }
+  },
+  "dataSources": [
+    {
+      "sourceId": 154281,
+      "databundleVersionId": 19681077,
+      "mountSlug": "competitions/rsna-knee-abnormality-detection"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18229736,
+      "datasetId": 11290369,
+      "mountSlug": "datasets/marwanmath/resnet-50-radimagenet-marwan"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18673450,
+      "datasetId": 11529209,
+      "mountSlug": "datasets/pilkwang/rsna-knee-llm-labels"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18716507,
+      "datasetId": 11552334,
+      "mountSlug": "datasets/pilkwang/rsna-knee-weights"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18839182,
+      "datasetId": 11608090,
+      "mountSlug": "datasets/antoinegg1/rsna-knee-e9-radimagenet-heads-v15"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18842180,
+      "datasetId": 11610725,
+      "mountSlug": "datasets/antoinegg1/rsna-knee-e11-diverse-heads-v20"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18879001,
+      "datasetId": 11628770,
+      "mountSlug": "datasets/prvsiyan/rsna-knee-v52-radimagenet-heads-20260812"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 18956429,
+      "datasetId": 11611423,
+      "mountSlug": "datasets/mattiaangeli/knee-mri-fold-weights"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19120128,
+      "datasetId": 11745616,
+      "mountSlug": "datasets/dreaddevelopment/raptor-knee-maxspan"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19122845,
+      "datasetId": 11746763,
+      "mountSlug": "datasets/dreaddevelopment/raptor-knee-native384"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19134209,
+      "datasetId": 11752181,
+      "mountSlug": "datasets/dreaddevelopment/raptor-knee-native384dense"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19395055,
+      "datasetId": 11887453,
+      "mountSlug": "datasets/mattiaangeli/opencv-python-headless-4120088-x86"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19395706,
+      "datasetId": 11887000,
+      "mountSlug": "datasets/mattiaangeli/rsna-knee-coat-resgated-ep10-top3"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_KERNEL_VERSION",
+      "sourceId": 342671664,
+      "mountSlug": "notebooks/sofiaanjenje/rsna-knee-e11-train"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_KERNEL_VERSION",
+      "sourceId": 342849430,
+      "mountSlug": "notebooks/sofiaanjenje/rsna-knee-e13-train"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_MODEL_INSTANCE_VERSION",
+      "sourceId": 4533,
+      "mountSlug": "models/metaresearch/dinov2/pytorch/small/1",
+      "modelInstanceId": 3325,
+      "modelId": 986
+    }
+  ],
+  "renderableDataSources": [
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18229736
+      },
+      "name": "resnet-50-RadImageNet-Marwan",
+      "dataSourceUrl": "/datasets/marwanmath/resnet-50-radimagenet-marwan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-82.png-18800101/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18673450
+      },
+      "name": "RSNA Knee LLM-read report labels",
+      "dataSourceUrl": "/datasets/pilkwang/rsna-knee-llm-labels",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11529209/18673450/c7004212f5acd212002f80f55b893c83/dataset-thumbnail.png?t=2026-08-06-10-38-31"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18716507
+      },
+      "name": "RSNA Knee weights",
+      "dataSourceUrl": "/datasets/pilkwang/rsna-knee-weights",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11552334/18716507/991be74c113defcd77c5d27b2246051c/dataset-thumbnail.png?t=2026-08-08-03-59-54"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18839182
+      },
+      "name": "RSNA Knee E9 RadImageNet Heads V15",
+      "dataSourceUrl": "/datasets/antoinegg1/rsna-knee-e9-radimagenet-heads-v15",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-66.png-34855200/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18842180
+      },
+      "name": "RSNA Knee E11 Diverse RadImageNet Heads V20",
+      "dataSourceUrl": "/datasets/antoinegg1/rsna-knee-e11-diverse-heads-v20",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-74.png-34855200/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18879001
+      },
+      "name": "RSNA Knee V52 RadImageNet Heads 20260812",
+      "dataSourceUrl": "/datasets/prvsiyan/rsna-knee-v52-radimagenet-heads-20260812",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-23.png-34659500/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 18956429
+      },
+      "name": "knee mri fold weights",
+      "dataSourceUrl": "/datasets/mattiaangeli/knee-mri-fold-weights",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-37.png-8955132/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19120128
+      },
+      "name": "Knee MRI - Max-Span Dense Corpus",
+      "dataSourceUrl": "/datasets/dreaddevelopment/raptor-knee-maxspan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11745616/19120128/cc223f1e84453683e79c7eadc05020ff/dataset-thumbnail.png?t=2026-08-23-17-26-52"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19122845
+      },
+      "name": "Knee MRI - Native 384 Corpus",
+      "dataSourceUrl": "/datasets/dreaddevelopment/raptor-knee-native384",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11746763/19122845/cc223f1e84453683e79c7eadc05020ff/dataset-thumbnail.png?t=2026-08-23-17-24-21"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19134209
+      },
+      "name": "Knee MRI - Native 384 Dense Corpus",
+      "dataSourceUrl": "/datasets/dreaddevelopment/raptor-knee-native384dense",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11752181/19134209/cc223f1e84453683e79c7eadc05020ff/dataset-thumbnail.png?t=2026-08-23-17-23-29"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19395055
+      },
+      "name": "OpenCV Python Headless 4.12.0.88 x86_64 wheel",
+      "dataSourceUrl": "/datasets/mattiaangeli/opencv-python-headless-4120088-x86",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-96.png-8955132/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19395706
+      },
+      "name": "RSNA Knee CoAt Residual Gated Epoch10 Top3",
+      "dataSourceUrl": "/datasets/mattiaangeli/rsna-knee-coat-resgated-ep10-top3",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-18.png-8955132/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceId": 154281
+      },
+      "name": "RSNA Knee Abnormality Detection",
+      "dataSourceUrl": "/competitions/rsna-knee-abnormality-detection",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-competitions/kaggle/154281/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1790498127&Signature=X8gWYev47H4AuDYjMS42LWH5aHxJrHTpmSa5fHFkgEa3BGHa3zO6BPwTxnlOOhO5Qtc6fvGXs7nC%2F4rlxabJjKK5z3bs0USJtyNJcSSa4JRReGBUbsORPXQKBQeovhjC%2FZcFUV5rgQlQriMBa35pjYemRDFDogqmzElHLtNoIXD9RCi1Ob1qE5cWelOVol05FL48R7eiTF5TAJQuNBpw95TiKKh1gMqBbkRfBnz1XPoA7JaIqW3bWnn1X1JFptjRE4AThZnP6R6I0yK%2BD4%2FTYVN96bYA0MpKzxo7%2BX%2BuXwFaLnWZpK6NHLUUpQvOGkeHcQ8T9JuJsZedV3EIVmiVOA%3D%3D&t=2026-07-14-02-42-13"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_MODEL_INSTANCE_VERSION",
+        "sourceId": 4533,
+        "modelInstanceId": 3325,
+        "modelId": 986
+      },
+      "name": "DINO v2",
+      "dataSourceUrl": "/models/metaresearch/dinov2/PyTorch/small/1",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-organizations/3837/thumbnail-2.png",
+      "variationSlug": "small"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_KERNEL_VERSION",
+        "sourceId": 342671664
+      },
+      "name": "RSNA Knee E11 train",
+      "dataSourceUrl": "/code/sofiaanjenje/rsna-knee-e11-train",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_KERNEL_VERSION",
+        "sourceId": 342849430
+      },
+      "name": "RSNA Knee E13 train",
+      "dataSourceUrl": "/code/sofiaanjenje/rsna-knee-e13-train",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png"
+    }
+  ],
+  "downloadAllFilesUrl": "/code/svzip/348779293",
+  "submission": {
+    "id": 56151088,
+    "sourceScriptVersionId": 348779293,
+    "scoreFormatted": "0.941"
+  },
+  "bestSubmissionScore": {
+    "scoreFormatted": "0.941",
+    "kernelVersionNumber": 1,
+    "kernelSessionUrl": "/code/vaihero/rsna-knee-rentafork?scriptVersionId=348779293"
+  },
+  "menuLinks": [
+    {
+      "href": "/code/vaihero/rsna-knee-rentafork/code",
+      "tab": "code",
+      "text": "Code",
+      "title": "Code"
+    },
+    {
+      "href": "/code/vaihero/rsna-knee-rentafork/notebook",
+      "tab": "notebook",
+      "text": "Notebook",
+      "title": "Notebook"
+    },
+    {
+      "href": "/code/vaihero/rsna-knee-rentafork/execution",
+      "showOnMobile": false,
+      "tab": "execution",
+      "text": "Execution Info",
+      "title": "Execution Info"
+    },
+    {
+      "href": "/code/vaihero/rsna-knee-rentafork/log",
+      "showOnMobile": false,
+      "tab": "log",
+      "text": "Log",
+      "title": "Log"
+    },
+    {
+      "count": 0,
+      "href": "/code/vaihero/rsna-knee-rentafork/data",
+      "tab": "data",
+      "text": "Input",
+      "title": "Input"
+    },
+    {
+      "href": "/code/vaihero/rsna-knee-rentafork/output",
+      "showOnMobile": false,
+      "tab": "output",
+      "text": "Output",
+      "title": "Output"
+    },
+    {
+      "count": 0,
+      "href": "/code/vaihero/rsna-knee-rentafork/comments",
+      "showZeroCountExplicitly": true,
+      "tab": "comments",
+      "text": "Comments",
+      "title": "Comments"
+    }
+  ],
+  "voteButton": {
+    "totalVotes": 20,
+    "medalVotes": 5,
+    "canUpvote": true,
+    "currentUserInfo": {
+      "id": 2374911,
+      "displayName": "scratchpad",
+      "userName": "scratchpad",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "profileUrl": "/scratchpad",
+      "performanceTier": "CONTRIBUTOR"
+    },
+    "showVoters": true,
+    "alwaysShowVoters": true,
+    "kernelId": 133837092
+  },
+  "showSharingControls": true,
+  "moderationStatus": "PRIVATED_MODERATION_STATUS_NO_ABUSE",
+  "description": "",
+  "totalVersionCount": 1,
+  "currentVersionNumber": 1
+}

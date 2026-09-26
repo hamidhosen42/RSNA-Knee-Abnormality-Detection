@@ -1,0 +1,148 @@
+{
+ "forumTopic": {
+  "authorId": 4874667,
+  "authorThumbnailName": "4874667-kg.png",
+  "authorUserDisplayName": "Sunil Krishnan",
+  "authorUserName": "sunilkrishnan",
+  "comments": [
+   {
+    "id": 3517012,
+    "postDate": "2026-08-25T20:58:11.007Z",
+    "rawMarkdown": "Found this too https://www.youtube.com/watch?v=70qKrMMsC5M",
+    "content": "<p>Found this too <a href=\"https://www.youtube.com/watch?v=70qKrMMsC5M\" target=\"_blank\">https://www.youtube.com/watch?v=70qKrMMsC5M</a></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3044,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513028,
+   "postDate": "2026-08-15T02:40:51.373Z",
+   "rawMarkdown": "Pretty useful\n\nhttps://www.youtube.com/watch?v=a9-SfVH2XeE",
+   "content": "<p>Pretty useful</p>\n<p><a href=\"https://www.youtube.com/watch?v=a9-SfVH2XeE\" target=\"_blank\">https://www.youtube.com/watch?v=a9-SfVH2XeE</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Sunil Krishnan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+    "url": "/sunilkrishnan",
+    "tier": "CONTRIBUTOR",
+    "id": 4874667,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "enaimaan"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Sunil Krishnan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+     "url": "/sunilkrishnan",
+     "userName": "sunilkrishnan",
+     "tier": "CONTRIBUTOR",
+     "id": 4874667,
+     "profileUrl": "/sunilkrishnan",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 4874667,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513028,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735323,
+  "name": "Knee Joint Anatomy ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-15T02:40:51.374550Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735323",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Sunil Krishnan",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+   "url": "/sunilkrishnan",
+   "tier": "CONTRIBUTOR",
+   "id": 4874667,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3513028,
+  "id": 735323,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735323#3517012",
+  "lastCommentPostDate": "2026-08-25T20:58:11.006666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-15T02:40:51.374550Z",
+  "title": "Knee Joint Anatomy ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735323",
+  "votes": -1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Sunil Krishnan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+    "url": "/sunilkrishnan",
+    "userName": "sunilkrishnan",
+    "tier": "CONTRIBUTOR",
+    "id": 4874667,
+    "profileUrl": "/sunilkrishnan",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 4874667,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

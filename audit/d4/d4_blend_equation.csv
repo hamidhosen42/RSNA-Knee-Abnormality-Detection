@@ -1,0 +1,26 @@
+level,node,input_term,coefficient,space,targets,applies_to,source_notebook_or_dataset,architecture,weights_provenance,same_family_flag,estimated_independence
+L0,BLEND_final,R(P_t),0.55,rank,all 12,Lite+Blend,jiweiliu/rsna-knee-fast-2xt4-inference v11 (+Fracture flip),multi-stage public ensemble,public datasets (see d4_dependencies.csv),PUBLIC-ECOSYSTEM,n/a (this is the anchor)
+L0,BLEND_final,R(F_t) private fleet,0.45,rank,all 12,Lite+Blend,[Private Datasource] pjmathematician eff6/ens14 assets,Lite: EffNetV2-S; Blend: EffNetV2-S + CoAtNet-rmlp-2-384 + ConvNeXt-L,UNKNOWN (private),Lite: different family; Blend adds a CoAtNet arm = same backbone family as public Raptor/CoAt,UNVERIFIABLE; author claims rank corr 0.75-0.89 vs public
+L1,F_blend,S_dist (4 ckpt),UNKNOWN (log: weight=1.0),UNKNOWN,all 12,Lite+Blend,private,tf_efficientnetv2_s.in21k_ft_in1k 384px 5 slots T=96,UNKNOWN; file names dist2_s0/s1 f13_s0/s1,different family,UNKNOWN
+L1,F_blend,S_coat (2 ckpt),UNKNOWN (log: weight=1.0),UNKNOWN,all 12,Blend only,private,coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k 384px,UNKNOWN,SAME backbone as public Raptor/CoAt,likely lower
+L1,F_blend,S_cnxl (2 ckpt),UNKNOWN (log: weight=1.0),UNKNOWN,all 12,Blend only,private,convnext_large.fb_in22k_ft_in1k_384 384px,UNKNOWN,different family,UNKNOWN
+L1,P_t,R(T_t) transformer stack,1-w_t (0.40 default; ACL .25; MedMen .20; LatMen 0.00; LatOA .25; Fracture .25),rank,per target,Lite+Blend,Jiwei v11,DINOv2-S/DINOv3-S/RadImageNet,public,PUBLIC-ECOSYSTEM,-
+L1,P_t,C_t CoAtNet stack,w_t (0.60 default; ACL .75; MedMen .80; LatMen 1.00; LatOA .75; Fracture .75),rank,per target,Lite+Blend,Jiwei v11,CoAtNet-rmlp-2-rw-384,public,PUBLIC-ECOSYSTEM,-
+L2,C_t,R(RAPTOR_t),0.60,rank,all 12,Lite+Blend,dreaddevelopment raptor-knee-*,CoAtNet MIL,public (CC0 per Tony notebook),PUBLIC-ECOSYSTEM,-
+L2,C_t,COAT_t = R(mean prob of 4 readers),0.40,rank of prob-mean,all 12,Lite+Blend,mattiaangeli coat datasets,CoAtNet variants,public; gold-58-selected checkpoints,PUBLIC-ECOSYSTEM,-
+L3,RAPTOR_t,maxspan-v5,0.60,prob,all 12,Lite+Blend,dreaddevelopment/raptor-knee-maxspan,CoAtNet-rmlp-2-rw-384 MIL 336->384,public,PUBLIC-ECOSYSTEM,-
+L3,RAPTOR_t,native384dense-v10,0.10,prob,all 12,Lite+Blend,dreaddevelopment/raptor-knee-native384dense,same,public,PUBLIC-ECOSYSTEM,-
+L3,RAPTOR_t,maxspan-v5-reverse (triplet channel flip),0.10,prob,all 12,Lite+Blend,dreaddevelopment/raptor-knee-maxspan,same ckpt as v5,public,PUBLIC-ECOSYSTEM (TTA view of v5),-
+L3,RAPTOR_t,native384-v8,0.20,prob,all 12,Lite+Blend,dreaddevelopment/raptor-knee-native384,same,public,PUBLIC-ECOSYSTEM,-
+L3,COAT_t,resgated top3 (ep 4/6/8),0.25,prob,all 12,Lite+Blend,mattiaangeli/rsna-knee-coat-resgated-ep10-top3,CoAtNet residual-gated,public; gold-58 selection field,PUBLIC-ECOSYSTEM,-
+L3,COAT_t,D4 depth-zone SWA3,0.25,prob,all 12,Lite+Blend,mattiaangeli/rsna-knee-coatnet-d4-depthzone-swa3-b2,CoAtNet rank-8 parent + depth-zone adapter,public,PUBLIC-ECOSYSTEM,-
+L3,COAT_t,Global96 top3 (ep 16/23/18),0.25,prob,all 12,Lite+Blend,mattiaangeli/rsna-knee-coatnet-global96-top3,CoAtNet Global96,public; "Gold Top3",PUBLIC-ECOSYSTEM,-
+L3,COAT_t,Repair-v1 top3 (ep 12/7/11),0.25,prob,all 12,Lite+Blend,inside mattiaangeli D4 dataset,CoAtNet,public,PUBLIC-ECOSYSTEM,-
+L2,T_t,R(T3_t),0.60,rank,ACL/MedOA/LatOA/PFOA/Effusion/Baker's/Contusion,Lite+Blend,Jiwei v11,-,-,PUBLIC-ECOSYSTEM,-
+L2,T_t,CAL_t 88-feature linear calibrator,0.40,rank,ACL/MedOA/LatOA/PFOA/Effusion/Baker's/Contusion,Lite+Blend,embedded _RAD_CAL_PAYLOAD,sparse linear,fit on N=4349 non-gold studies (report-derived targets),PUBLIC-ECOSYSTEM,-
+L3,T3_t,R(T2_t),0.80,rank,all 12,Lite+Blend,-,-,-,PUBLIC-ECOSYSTEM,-
+L3,T3_t,R(E13 heads on E11 layout),0.20,rank,all 12,Lite+Blend,sofiaanjenje/rsna-knee-e13-train,RadImageNet R50 frozen + attention head,public,PUBLIC-ECOSYSTEM,-
+L4,T2_t,R(T1_t),0.45,rank,all except Baker's (D4) / except Baker's+Fracture (Jiwei),Lite+Blend,-,-,-,PUBLIC-ECOSYSTEM,-
+L4,T2_t,RAD_t = R(0.5 R(E10)+0.5 R(E13)),0.55,rank,all except Baker's (D4) / except Baker's+Fracture (Jiwei),Lite+Blend,prvsiyan v52 heads + sofiaanjenje E13,RadImageNet R50 frozen + attention heads,public,PUBLIC-ECOSYSTEM,-
+L5,T1_t,R(DINO_t) 20 members,0.48,rank,all 12 (A5-eligible studies),Lite+Blend,pilkwang/rsna-knee-weights,DINOv2-S slot attention 336px,public; 1 config x 5 folds x 4 seeds,PUBLIC-ECOSYSTEM,-
+L5,T1_t,R(A5_t) 5 folds,0.52,rank,all 12 (A5-eligible studies),Lite+Blend,mattiaangeli/knee-mri-fold-weights,DINOv3-S/16 slot-token ViT 336px 16ch,public,PUBLIC-ECOSYSTEM,-

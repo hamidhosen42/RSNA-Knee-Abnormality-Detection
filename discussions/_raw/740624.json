@@ -1,0 +1,140 @@
+{
+ "forumTopic": {
+  "authorId": 23907552,
+  "authorThumbnailName": "23907552-kg.jpg?t=2025-09-25-14-56-20",
+  "authorUserDisplayName": "CavdadHun - VBECZ",
+  "authorUserName": "viktorbecz",
+  "comments": [
+   {
+    "id": 3528364,
+    "postDate": "2026-09-26T00:18:57.733Z",
+    "rawMarkdown": "Ensemble submissions are allowed. If you infer multiple models in a single notebook, be careful to free memory and avoid OOM errors.",
+    "content": "<p>Ensemble submissions are allowed. If you infer multiple models in a single notebook, be careful to free memory and avoid OOM errors.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 93,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3523073,
+   "postDate": "2026-09-10T14:27:27.663Z",
+   "rawMarkdown": "Guys, I would really appreciate some help....\nWhen I have a single pipeline, producing a submission, and submit for scoring ,that works.. scored on LB..\n\nHOWEVER.....\nIf  I try to ensemble - using multiple submissions to ensemble them into a single prediction submission - same output format, same saving etc, but it constantly getting a scoring error on LB..\n\nI would really appreciate some help, or at least a standpoint if only me a noob here - which is ok - or not working in this competition, unlike in other competitions where it was working just fine...\n\nthank you..",
+   "content": "<p>Guys, I would really appreciate some help….\nWhen I have a single pipeline, producing a submission, and submit for scoring ,that works.. scored on LB..</p>\n<p>HOWEVER…..\nIf  I try to ensemble - using multiple submissions to ensemble them into a single prediction submission - same output format, same saving etc, but it constantly getting a scoring error on LB..</p>\n<p>I would really appreciate some help, or at least a standpoint if only me a noob here - which is ok - or not working in this competition, unlike in other competitions where it was working just fine…</p>\n<p>thank you..</p>",
+   "parent": {},
+   "author": {
+    "displayName": "CavdadHun - VBECZ",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+    "url": "/viktorbecz",
+    "tier": "EXPERT",
+    "id": 23907552,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -6,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1200,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "CavdadHun - VBECZ",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+     "url": "/viktorbecz",
+     "userName": "viktorbecz",
+     "tier": "EXPERT",
+     "id": 23907552,
+     "profileUrl": "/viktorbecz",
+     "performanceTier": "EXPERT",
+     "userId": 23907552,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3523073,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740624,
+  "name": "DOES Ensemble allowed in RSNA?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-10T14:27:27.664593900Z",
+  "totalVotes": -6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740624",
+  "totalMessages": 1,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "CavdadHun - VBECZ",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+   "url": "/viktorbecz",
+   "tier": "EXPERT",
+   "id": 23907552,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3523073,
+  "id": 740624,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740624#3528364",
+  "lastCommentPostDate": "2026-09-26T00:18:57.733333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-10T14:27:27.664593900Z",
+  "title": "DOES Ensemble allowed in RSNA?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740624",
+  "votes": -6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "CavdadHun - VBECZ",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+    "url": "/viktorbecz",
+    "userName": "viktorbecz",
+    "tier": "EXPERT",
+    "id": 23907552,
+    "profileUrl": "/viktorbecz",
+    "performanceTier": "EXPERT",
+    "userId": 23907552,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

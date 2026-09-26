@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 215751,
+  "authorThumbnailName": "215751-gr.jpg",
+  "authorUserDisplayName": "SeaGoat",
+  "authorUserName": "vbandaru",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3512988,
+   "postDate": "2026-08-14T23:04:05.060Z",
+   "rawMarkdown": "What openly available datasets are you using ? I am stuck at .919",
+   "content": "<p>What openly available datasets are you using ? I am stuck at .919</p>",
+   "parent": {},
+   "author": {
+    "displayName": "SeaGoat",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+    "url": "/vbandaru",
+    "tier": "CONTRIBUTOR",
+    "id": 215751,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1515,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "SeaGoat",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+     "url": "/vbandaru",
+     "userName": "vbandaru",
+     "tier": "CONTRIBUTOR",
+     "id": 215751,
+     "profileUrl": "/vbandaru",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 215751,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3512988,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735296,
+  "name": "Openly available datasets",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-14T23:04:05.059459200Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735296",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "SeaGoat",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+   "url": "/vbandaru",
+   "tier": "CONTRIBUTOR",
+   "id": 215751,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3512988,
+  "id": 735296,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "SeaGoat",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735296#3512988",
+  "lastCommentPostDate": "2026-08-14T23:04:05.060Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-14T23:04:05.059459200Z",
+  "title": "Openly available datasets",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735296",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "SeaGoat",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+    "url": "/vbandaru",
+    "userName": "vbandaru",
+    "tier": "CONTRIBUTOR",
+    "id": 215751,
+    "profileUrl": "/vbandaru",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 215751,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

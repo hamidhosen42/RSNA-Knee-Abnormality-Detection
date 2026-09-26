@@ -1,0 +1,7 @@
+pair,metric,value,n_studies,status,source,interpretation
+public P vs private F (D4 Lite commit run),mean per-label Spearman,0.7500,3,MEANINGLESS,D4 Lite commit-run log line '[ours 3/3] mean per-label rank correlation',n=3 visible test studies: ranks of 3 items take few values; carries no information
+public P vs private F (D4 Blend commit run),mean per-label Spearman,0.7500,3,MEANINGLESS,D4 Blend commit-run log,same as above
+public legs vs 'our legs' (author offline),rank correlation range,0.75-0.89,UNKNOWN,UNVERIFIED AUTHOR CLAIM,D4 code comment 'Sec 8.147',if true: moderate decorrelation consistent with real blend gain
+D4 Lite vs D4 Blend (hidden test),Pearson/Spearman/decile disagreement,UNAVAILABLE,-,NOT COMPUTABLE,-,hidden-test predictions are never exposed; visible test has 3 studies
+older 0.942 anchor vs D4 Lite (hidden test),Pearson/Spearman,UNAVAILABLE,-,NOT COMPUTABLE,-,same reason
+Jiwei v11 vs D4 Lite vs D4 Blend (public part only; visible test),submission.csv SHA256 before private leg,identical (8f0c5e7b...),3,OBSERVED,commit-run logs,identical on 3 studies; does NOT imply identical on hidden test (Fracture flip)

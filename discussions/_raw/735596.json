@@ -1,0 +1,357 @@
+{
+ "forumTopic": {
+  "authorId": 7099306,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Kaustubh Ratna",
+  "authorUserName": "kaustubhratna",
+  "comments": [
+   {
+    "id": 3514766,
+    "postDate": "2026-08-20T04:20:01.047Z",
+    "rawMarkdown": "Recommendation (its still on my to do list).\n\nTranslate all reports to English.  (got that done - it takes a long time :) \nGenerate an EDA of the words.\n\nMy label maker is building columns for me of the evidence used for each target.  I am hoping I can see some of the phrasing differences, etc.  in the eventual EDA.",
+    "content": "<p>Recommendation (its still on my to do list).</p>\n<p>Translate all reports to English.  (got that done - it takes a long time :) \nGenerate an EDA of the words.</p>\n<p>My label maker is building columns for me of the evidence used for each target.  I am hoping I can see some of the phrasing differences, etc.  in the eventual EDA.</p>",
+    "replies": [
+     {
+      "id": 3515040,
+      "postDate": "2026-08-20T16:24:23.187Z",
+      "rawMarkdown": "Be careful because some of the reports in different languages  do not exactly match the classification criteria of radiology associations for the different types of knee abnormalities",
+      "content": "<p>Be careful because some of the reports in different languages  do not exactly match the classification criteria of radiology associations for the different types of knee abnormalities</p>",
+      "replies": [
+       {
+        "id": 3515084,
+        "postDate": "2026-08-20T18:40:57.820Z",
+        "rawMarkdown": "For sure an issue I have seen in every Medical competition over the 9 years I been on kaggle is what I think of as measurement error.  Most of them I would have always said, the winner is predicting the kaggle truth and not necessarily the real world truth.\n\nThe business I spent 45 years in used mostly humans to make classification judgments.  I spent more hours of my life than I care to think about as we attempted to improve those judgments.  It was mission impossible - the only real fix was to replace or augment those decisions with machines/vision systems, etc.\n\nTo expect that 4700 different radiology folks from all across the world to be in agreement with the limited folks who classified our 58 train and the full test would never cross my mind for sure.  My assumption and hopefully yours is that both random and systemic variation to the reports exist.\n\nThe power of what we are doing - helping make those judgments consistent is really a great thing.  Its one of the reasons that you will find me every day hollering at the folks on Facebook who want to not allow data centers to exist in their town.",
+        "content": "<p>For sure an issue I have seen in every Medical competition over the 9 years I been on kaggle is what I think of as measurement error.  Most of them I would have always said, the winner is predicting the kaggle truth and not necessarily the real world truth.</p>\n<p>The business I spent 45 years in used mostly humans to make classification judgments.  I spent more hours of my life than I care to think about as we attempted to improve those judgments.  It was mission impossible - the only real fix was to replace or augment those decisions with machines/vision systems, etc.</p>\n<p>To expect that 4700 different radiology folks from all across the world to be in agreement with the limited folks who classified our 58 train and the full test would never cross my mind for sure.  My assumption and hopefully yours is that both random and systemic variation to the reports exist.</p>\n<p>The power of what we are doing - helping make those judgments consistent is really a great thing.  Its one of the reasons that you will find me every day hollering at the folks on Facebook who want to not allow data centers to exist in their town.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 643,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3515093,
+        "postDate": "2026-08-20T18:58:40.353Z",
+        "rawMarkdown": "I completely agree with you. This is one of the ways to continue improving the quality of care and, given the competition we face, to seek greater accuracy in medical diagnoses related to knee injuries.",
+        "content": "<p>I completely agree with you. This is one of the ways to continue improving the quality of care and, given the competition we face, to seek greater accuracy in medical diagnoses related to knee injuries.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Jose Luis Sabogal",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/joseluissabogal",
+         "tier": "CONTRIBUTOR",
+         "id": 6810359,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2894,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Jose Luis Sabogal",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/joseluissabogal",
+          "userName": "joseluissabogal",
+          "tier": "CONTRIBUTOR",
+          "id": 6810359,
+          "profileUrl": "/joseluissabogal",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 6810359,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3516781,
+        "postDate": "2026-08-25T09:53:18.123Z",
+        "rawMarkdown": "Thank you for sharing this rich experience!\nBut I am even wondering if the folks who classified the 58 gold studies are the same folks who annotated the private/public test studies. Do we have any proof from the Hosts?",
+        "content": "<p>Thank you for sharing this rich experience!\nBut I am even wondering if the folks who classified the 58 gold studies are the same folks who annotated the private/public test studies. Do we have any proof from the Hosts?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Enai",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+         "url": "/enaimaan",
+         "tier": "CONTRIBUTOR",
+         "id": 2630633,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3044,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Enai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+          "url": "/enaimaan",
+          "userName": "enaimaan",
+          "tier": "CONTRIBUTOR",
+          "id": 2630633,
+          "profileUrl": "/enaimaan",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2630633,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Jose Luis Sabogal",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/joseluissabogal",
+       "tier": "CONTRIBUTOR",
+       "id": 6810359,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2894,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Jose Luis Sabogal",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/joseluissabogal",
+        "userName": "joseluissabogal",
+        "tier": "CONTRIBUTOR",
+        "id": 6810359,
+        "profileUrl": "/joseluissabogal",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 6810359,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 643,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "KAGGLE",
+      "featuredUserNames": [
+       "enaimaan"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514482,
+    "postDate": "2026-08-19T13:49:29.520Z",
+    "rawMarkdown": "Visit this site https://www.radiologymasterclass.co.uk/tutorials/mri/mri_system surely it will be useful",
+    "content": "<p>Visit this site <a href=\"https://www.radiologymasterclass.co.uk/tutorials/mri/mri_system\" target=\"_blank\">https://www.radiologymasterclass.co.uk/tutorials/mri/mri_system</a> surely it will be useful</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Jose Luis Sabogal",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/joseluissabogal",
+     "tier": "CONTRIBUTOR",
+     "id": 6810359,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2894,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Jose Luis Sabogal",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/joseluissabogal",
+      "userName": "joseluissabogal",
+      "tier": "CONTRIBUTOR",
+      "id": 6810359,
+      "profileUrl": "/joseluissabogal",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 6810359,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513605,
+   "postDate": "2026-08-17T05:08:54.517Z",
+   "rawMarkdown": "Hi everyone,\n\nI'm trying to better understand the terminology used in the MRI reports for the 12 target abnormalities in this competition.\n\nFor those with radiology/MRI experience, could you share some common keywords or phrases that are useful for identifying each of these?\n\nACL\nMCL\nMedial/Lateral Meniscus\nMedial/Lateral/PF OA\nEffusion\nSynovitis\nBaker's cyst\nContusion\nFracture\n\nI'm particularly interested in:\n\nCommon synonyms/alternative wording\nPhrases that strongly indicate a finding\nPhrases that indicate the finding is absent\nWording that can be misleading or ambiguous\nImportant distinctions between similar findings (e.g. degeneration vs tear)\n\nEven a few examples or general guidance would be really helpful.\n\nThanks!",
+   "content": "<p>Hi everyone,</p>\n<p>I'm trying to better understand the terminology used in the MRI reports for the 12 target abnormalities in this competition.</p>\n<p>For those with radiology/MRI experience, could you share some common keywords or phrases that are useful for identifying each of these?</p>\n<p>ACL\nMCL\nMedial/Lateral Meniscus\nMedial/Lateral/PF OA\nEffusion\nSynovitis\nBaker's cyst\nContusion\nFracture</p>\n<p>I'm particularly interested in:</p>\n<p>Common synonyms/alternative wording\nPhrases that strongly indicate a finding\nPhrases that indicate the finding is absent\nWording that can be misleading or ambiguous\nImportant distinctions between similar findings (e.g. degeneration vs tear)</p>\n<p>Even a few examples or general guidance would be really helpful.</p>\n<p>Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Kaustubh Ratna",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/kaustubhratna",
+    "tier": "CONTRIBUTOR",
+    "id": 7099306,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3642,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Kaustubh Ratna",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/kaustubhratna",
+     "userName": "kaustubhratna",
+     "tier": "CONTRIBUTOR",
+     "id": 7099306,
+     "profileUrl": "/kaustubhratna",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 7099306,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513605,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735596,
+  "name": "Looking for guidance on MRI report terminology for the 12 abnormalities",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-17T05:08:54.515222400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735596",
+  "totalMessages": 6,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Kaustubh Ratna",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/kaustubhratna",
+   "tier": "CONTRIBUTOR",
+   "id": 7099306,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 6,
+  "firstForumMessageId": 3513605,
+  "id": 735596,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735596#3516781",
+  "lastCommentPostDate": "2026-08-25T09:53:18.123333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-17T05:08:54.515222400Z",
+  "title": "Looking for guidance on MRI report terminology for the 12 abnormalities",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735596",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Kaustubh Ratna",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/kaustubhratna",
+    "userName": "kaustubhratna",
+    "tier": "CONTRIBUTOR",
+    "id": 7099306,
+    "profileUrl": "/kaustubhratna",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 7099306,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

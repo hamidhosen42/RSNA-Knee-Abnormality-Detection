@@ -1,0 +1,183 @@
+{
+ "forumTopic": {
+  "authorId": 35714145,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Seung Sup Lee",
+  "authorUserName": "seungsuplee",
+  "comments": [
+   {
+    "id": 3513739,
+    "postDate": "2026-08-17T13:52:20.997Z",
+    "rawMarkdown": "Welcome to Kaggle! A safe baseline is 1 hour CPU + 5-6 hours GPU + 2 hours safety buffer. Always keep a 2-hour buffer to prevent your notebook from timing out on the larger hidden test set during submission!",
+    "content": "<p>Welcome to Kaggle! A safe baseline is 1 hour CPU + 5-6 hours GPU + 2 hours safety buffer. Always keep a 2-hour buffer to prevent your notebook from timing out on the larger hidden test set during submission!</p>",
+    "replies": [
+     {
+      "id": 3513780,
+      "postDate": "2026-08-17T15:35:06.880Z",
+      "rawMarkdown": "😀thank you😀\n\nThank you for your advice. I incorporated some of your suggestions into my optimization process and managed to bring the CPU runtime down to 37 minutes and 22 seconds. I really appreciate your input.",
+      "content": "<p>😀thank you😀</p>\n<p>Thank you for your advice. I incorporated some of your suggestions into my optimization process and managed to bring the CPU runtime down to 37 minutes and 22 seconds. I really appreciate your input.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Seung Sup Lee",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/seungsuplee",
+       "tier": "CONTRIBUTOR",
+       "id": 35714145,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2635,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Seung Sup Lee",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/seungsuplee",
+        "userName": "seungsuplee",
+        "tier": "CONTRIBUTOR",
+        "id": 35714145,
+        "profileUrl": "/seungsuplee",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 35714145,
+        "progressionOptOut": false
+       },
+       "intro": "GNSS Antenna A-E Filter Inventor, SAR Image Processing\n\nhttps://www.linkedin.com/in/sean-lee-64434033/"
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Harmain Mughal",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/10901054-kg.png?t=2026-08-17-14-00-55",
+     "url": "/harmainmughal11",
+     "tier": "CONTRIBUTOR",
+     "id": 10901054,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Harmain Mughal",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/10901054-kg.png?t=2026-08-17-14-00-55",
+      "url": "/harmainmughal11",
+      "userName": "harmainmughal11",
+      "tier": "CONTRIBUTOR",
+      "id": 10901054,
+      "profileUrl": "/harmainmughal11",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 10901054,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513698,
+   "postDate": "2026-08-17T10:47:59.980Z",
+   "rawMarkdown": "Hi everyone, I’m new to Kaggle competitions, so I’d appreciate some guidance from more experienced participants.\n\nI’ve optimized the CPU preprocessing pipeline for the full dataset and can currently complete that stage in under 1 hour in the Kaggle environment.\n\nSince the total runtime limit is 9 hours, I’m trying to understand how much time I should realistically budget for the remaining GPU inference/model processing stage.\n\nFor those who have already tested an end-to-end pipeline, roughly how long does the GPU stage take, and which Kaggle GPU are you using?\n\nI’m not asking for anyone’s solution or model details — I’m simply trying to establish a realistic runtime budget for the competition.\n\nThanks for any practical experience you can share.",
+   "content": "<p>Hi everyone, I’m new to Kaggle competitions, so I’d appreciate some guidance from more experienced participants.</p>\n<p>I’ve optimized the CPU preprocessing pipeline for the full dataset and can currently complete that stage in under 1 hour in the Kaggle environment.</p>\n<p>Since the total runtime limit is 9 hours, I’m trying to understand how much time I should realistically budget for the remaining GPU inference/model processing stage.</p>\n<p>For those who have already tested an end-to-end pipeline, roughly how long does the GPU stage take, and which Kaggle GPU are you using?</p>\n<p>I’m not asking for anyone’s solution or model details — I’m simply trying to establish a realistic runtime budget for the competition.</p>\n<p>Thanks for any practical experience you can share.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Seung Sup Lee",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/seungsuplee",
+    "tier": "CONTRIBUTOR",
+    "id": 35714145,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2635,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Seung Sup Lee",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/seungsuplee",
+     "userName": "seungsuplee",
+     "tier": "CONTRIBUTOR",
+     "id": 35714145,
+     "profileUrl": "/seungsuplee",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 35714145,
+     "progressionOptOut": false
+    },
+    "intro": "GNSS Antenna A-E Filter Inventor, SAR Image Processing\n\nhttps://www.linkedin.com/in/sean-lee-64434033/"
+   }
+  },
+  "firstMessageId": 3513698,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735647,
+  "name": "Title: Expected GPU inference runtime after CPU preprocessing?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-17T10:47:59.980000600Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735647",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Seung Sup Lee",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/seungsuplee",
+   "tier": "CONTRIBUTOR",
+   "id": 35714145,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3513698,
+  "id": 735647,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Seung Sup Lee",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735647#3513780",
+  "lastCommentPostDate": "2026-08-17T15:35:06.880Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-17T10:47:59.980000600Z",
+  "title": "Title: Expected GPU inference runtime after CPU preprocessing?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735647",
+  "votes": 3,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Seung Sup Lee",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/seungsuplee",
+    "userName": "seungsuplee",
+    "tier": "CONTRIBUTOR",
+    "id": 35714145,
+    "profileUrl": "/seungsuplee",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 35714145,
+    "progressionOptOut": false
+   },
+   "intro": "GNSS Antenna A-E Filter Inventor, SAR Image Processing\n\nhttps://www.linkedin.com/in/sean-lee-64434033/"
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "forumTopic": {
+  "authorId": 24992652,
+  "authorThumbnailName": "24992652-kg.png?t=2025-02-09-13-48-19",
+  "authorUserDisplayName": "Y.",
+  "authorUserName": "xiongdaxiongmao",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514495,
+   "postDate": "2026-08-19T14:12:52.343Z",
+   "rawMarkdown": "The RSNA dataset was too large to download through Colab or my local PC due to disk space limitations.\n\nInstead, I used a Kaggle Notebook + rclone workflow. I connected rclone to Google Drive using OAuth, stored the authentication information securely in Kaggle Secrets, and then transferred the dataset directly from Kaggle’s /kaggle/input storage to Google Drive.\n\nThe overall workflow was:\n\nKaggle Dataset → Kaggle Notebook → rclone → Google Drive\n\nI first tested the transfer with a small file and a single study, then started the full dataset transfer. This approach avoids storing the entire dataset on Colab or a local machine and also allows the transfer to be resumed if the Kaggle session stops.",
+   "content": "<p>The RSNA dataset was too large to download through Colab or my local PC due to disk space limitations.</p>\n<p>Instead, I used a Kaggle Notebook + rclone workflow. I connected rclone to Google Drive using OAuth, stored the authentication information securely in Kaggle Secrets, and then transferred the dataset directly from Kaggle’s /kaggle/input storage to Google Drive.</p>\n<p>The overall workflow was:</p>\n<p>Kaggle Dataset → Kaggle Notebook → rclone → Google Drive</p>\n<p>I first tested the transfer with a small file and a single study, then started the full dataset transfer. This approach avoids storing the entire dataset on Colab or a local machine and also allows the transfer to be resumed if the Kaggle session stops.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Y.",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24992652-kg.png?t=2025-02-09-13-48-19",
+    "url": "/xiongdaxiongmao",
+    "tier": "CONTRIBUTOR",
+    "id": 24992652,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Y.",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24992652-kg.png?t=2025-02-09-13-48-19",
+     "url": "/xiongdaxiongmao",
+     "userName": "xiongdaxiongmao",
+     "tier": "CONTRIBUTOR",
+     "id": 24992652,
+     "profileUrl": "/xiongdaxiongmao",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 24992652,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514495,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736098,
+  "name": "How I Transferred the RSNA Dataset from Kaggle to Google Drive",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-19T14:12:52.343541200Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736098",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Y.",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24992652-kg.png?t=2025-02-09-13-48-19",
+   "url": "/xiongdaxiongmao",
+   "tier": "CONTRIBUTOR",
+   "id": 24992652,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3514495,
+  "id": 736098,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Y.",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736098#3514495",
+  "lastCommentPostDate": "2026-08-19T14:12:52.343333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-19T14:12:52.343541200Z",
+  "title": "How I Transferred the RSNA Dataset from Kaggle to Google Drive",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736098",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Y.",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24992652-kg.png?t=2025-02-09-13-48-19",
+    "url": "/xiongdaxiongmao",
+    "userName": "xiongdaxiongmao",
+    "tier": "CONTRIBUTOR",
+    "id": 24992652,
+    "profileUrl": "/xiongdaxiongmao",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 24992652,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

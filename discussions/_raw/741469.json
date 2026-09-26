@@ -1,0 +1,266 @@
+{
+ "forumTopic": {
+  "authorId": 27284910,
+  "authorThumbnailName": "27284910-kg.jpg?t=2026-09-14-09-46-56",
+  "authorUserDisplayName": "Lavin Wins",
+  "authorUserName": "lavinwins",
+  "comments": [
+   {
+    "id": 3524868,
+    "postDate": "2026-09-16T03:48:40.533Z",
+    "rawMarkdown": "[Read this book](https://www.amazon.com/Kaggle-Book-science-competitions-learning-ebook/dp/B0FDFXR8N9/ref=sr_1_1?crid=6NE9H4CX1A4Y&dib=eyJ2IjoiMSJ9.-698UbJMYd7Zbjqh2U8QUzSzifCZixMLKHC_NZBuwSWwycPL42aPcVwWQRFKYsxnq8R6gtJU16e93balhgp7koNLPb2j7UBu5hYxQT48yk94T5lXVD1TWxD7ciDsY5Pf3ukmyTRNvlREp7cZmNuowwmNsU1I1AFrPPrcNqmAFZALa6EXOyF3FpR0ZVB8T39DMf3HUBU0ihscxM0qdo4vuJozXyseBg2RrGBV-eqUjxU.9-ECwb-vXrA3ZmcKZcy8J2KDSIyF4ESyfjqS68Xu6xA&dib_tag=se&keywords=kaggle&qid=1789530455&s=books&sprefix=kaggle%2Cstripbooks%2C217&sr=1-1)",
+    "content": "<p><a href=\"https://www.amazon.com/Kaggle-Book-science-competitions-learning-ebook/dp/B0FDFXR8N9/ref=sr_1_1?crid=6NE9H4CX1A4Y&amp;dib=eyJ2IjoiMSJ9.-698UbJMYd7Zbjqh2U8QUzSzifCZixMLKHC_NZBuwSWwycPL42aPcVwWQRFKYsxnq8R6gtJU16e93balhgp7koNLPb2j7UBu5hYxQT48yk94T5lXVD1TWxD7ciDsY5Pf3ukmyTRNvlREp7cZmNuowwmNsU1I1AFrPPrcNqmAFZALa6EXOyF3FpR0ZVB8T39DMf3HUBU0ihscxM0qdo4vuJozXyseBg2RrGBV-eqUjxU.9-ECwb-vXrA3ZmcKZcy8J2KDSIyF4ESyfjqS68Xu6xA&amp;dib_tag=se&amp;keywords=kaggle&amp;qid=1789530455&amp;s=books&amp;sprefix=kaggle%2Cstripbooks%2C217&amp;sr=1-1\" target=\"_blank\">Read this book</a></p>",
+    "replies": [
+     {
+      "id": 3524950,
+      "postDate": "2026-09-16T10:17:44.170Z",
+      "rawMarkdown": "that is too costly any thing else you can help me win tho??\n",
+      "content": "<p>that is too costly any thing else you can help me win tho??</p>",
+      "replies": [
+       {
+        "id": 3525009,
+        "postDate": "2026-09-16T15:21:42.337Z",
+        "rawMarkdown": "[A bit cheaper with different focus](https://www.amazon.com/Winning-Kaggle-Reproducible-Way-Competitions-ebook/dp/B0H46J458K/ref=sr_1_1?crid=2IOJ42BVJQU8Z&dib=eyJ2IjoiMSJ9.LpKwfL9VEDHANFKs0nnaFAFCxii2LmlI_w_keM_VT7fSiTm3-2NAlGIRFeHvwsyGViqk6deqyXhqMsfSWOkPTOC6riKv_typlTlCgux3E7p5hLzXH-Tlr1JIIYbgWvD7cit7TQNg1_r-zIKixbLt0QmNsU1I1AFrPPrcNqmAFZCV3hC6ct-HNqgR8rJlhxpxtx_isNxIyaopeuFLRXIHTg8psSkL334lfzYAl83zKG0.oWpbwE9tWvX3BiziK3sDdKspvcLFQEmrzPpW8IT9HzA&dib_tag=se&keywords=kaggle&qid=1789571848&s=books&sprefix=%2Cstripbooks%2C210&sr=1-1)\n\nor take a step backwards and try to create your own single model above 0.90 - than add that to the ensemble.  It should be different (no Dino) enough that it's mistakes are not the same ones as all the other 0.941 shared notebooks.",
+        "content": "<p><a href=\"https://www.amazon.com/Winning-Kaggle-Reproducible-Way-Competitions-ebook/dp/B0H46J458K/ref=sr_1_1?crid=2IOJ42BVJQU8Z&amp;dib=eyJ2IjoiMSJ9.LpKwfL9VEDHANFKs0nnaFAFCxii2LmlI_w_keM_VT7fSiTm3-2NAlGIRFeHvwsyGViqk6deqyXhqMsfSWOkPTOC6riKv_typlTlCgux3E7p5hLzXH-Tlr1JIIYbgWvD7cit7TQNg1_r-zIKixbLt0QmNsU1I1AFrPPrcNqmAFZCV3hC6ct-HNqgR8rJlhxpxtx_isNxIyaopeuFLRXIHTg8psSkL334lfzYAl83zKG0.oWpbwE9tWvX3BiziK3sDdKspvcLFQEmrzPpW8IT9HzA&amp;dib_tag=se&amp;keywords=kaggle&amp;qid=1789571848&amp;s=books&amp;sprefix=%2Cstripbooks%2C210&amp;sr=1-1\" target=\"_blank\">A bit cheaper with different focus</a></p>\n<p>or take a step backwards and try to create your own single model above 0.90 - than add that to the ensemble.  It should be different (no Dino) enough that it's mistakes are not the same ones as all the other 0.941 shared notebooks.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525268,
+        "postDate": "2026-09-17T10:10:39.900Z",
+        "rawMarkdown": "Ahh.. Nah bro , I am not able to find it tbh\n",
+        "content": "<p>Ahh.. Nah bro , I am not able to find it tbh</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": -4,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 279,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": -6,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 279,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3524646,
+   "postDate": "2026-09-15T14:33:16.980Z",
+   "rawMarkdown": "Like I used bendkneestothedinosaur and secured 0.940 score however I am not able to move forward , like what next to do so I can move forward",
+   "content": "<p>Like I used bendkneestothedinosaur and secured 0.940 score however I am not able to move forward , like what next to do so I can move forward</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -16,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 279,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "userName": "lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "profileUrl": "/lavinwins",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27284910,
+     "progressionOptOut": false
+    },
+    "intro": "Someone who is rich "
+   }
+  },
+  "firstMessageId": 3524646,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 741469,
+  "name": "Stuck at the 0.940 Baseline , how to increase my score and what should be my next step ??",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-15T14:33:16.981010800Z",
+  "totalVotes": -16,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/741469",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Lavin Wins",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+   "url": "/lavinwins",
+   "tier": "CONTRIBUTOR",
+   "id": 27284910,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3524646,
+  "id": 741469,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741469#3525268",
+  "lastCommentPostDate": "2026-09-17T10:10:39.900Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-15T14:33:16.981010800Z",
+  "title": "Stuck at the 0.940 Baseline , how to increase my score and what should be my next step ??",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741469",
+  "votes": -16,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "userName": "lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "profileUrl": "/lavinwins",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27284910,
+    "progressionOptOut": false
+   },
+   "intro": "Someone who is rich "
+  }
+ }
+}

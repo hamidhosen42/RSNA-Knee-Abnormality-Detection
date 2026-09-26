@@ -1,0 +1,124 @@
+{
+ "forumTopic": {
+  "authorId": 34947886,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "FHZ982",
+  "authorUserName": "fhz982",
+  "comments": [
+   {
+    "id": 3510696,
+    "postDate": "2026-08-09T09:59:22.803Z",
+    "rawMarkdown": "This point is worth settling clearly.  Thank you for pointing it out. \n\n[This post](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965) was just added and hopefully adds clarity. ",
+    "content": "<p>This point is worth settling clearly.  Thank you for pointing it out. </p>\n<p><a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965\" target=\"_blank\">This post</a> was just added and hopefully adds clarity. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510522,
+   "postDate": "2026-08-08T19:04:32.927Z",
+   "rawMarkdown": "Only 58 of the 4,407 training studies carry per-condition labels, so a lot of us are deriving labels from the Report text, and most of those pipelines involve a large language model. I would like to get a clear answer on where the line is, because two clauses seem to point in different directions and I would rather ask than guess.\n\nSection 2.6 (External Data and Tools) treats external models as acceptable unless the Host prohibits them, and gives a commercial large language model as an example of a tool that meets the Reasonableness Standard. That reads as though using a hosted LLM is expected.\n\nSection 2.4.b (Data Security) says participants agree not to \"transmit, duplicate, publish, redistribute or otherwise provide or make available the Competition Data to any party not participating in the Competition.\" The RSNA MIRA Dataset Research Use Agreement, incorporated by reference in 2.4.a, is stricter still: §4 prohibits distributing or reproducing any portion of a dataset without prior written permission, and §5 prohibits sharing access.\n\nSending a report to a hosted model is, on a literal reading of 2.4.b, providing Competition Data to a party that is not participating. On the reading suggested by 2.6, it is ordinary tool use.\n\nFour specific questions:\n\nDoes passing Report text to a third-party hosted LLM API count as transmitting Competition Data to a non-participating party under 2.4.b?\nIf the answer depends on the provider's terms, does an enterprise or API configuration with zero data retention and no training on submitted data change it?\nAre locally-run open-weights models (nothing leaves the participant's machine) unambiguously acceptable? That is the conservative option, and it would be useful to have it confirmed.\nDoes the answer differ for the DICOM images versus the report text? The reports are free-text clinical documents, which feels like a different category from pixel data.\n\nIf the answer is that hosted APIs are not permitted, an early and visible statement would help a lot of people — several public notebooks already describe LLM-based label derivation, and I doubt anyone has read this as a restriction.\n\nThanks.",
+   "content": "<p>Only 58 of the 4,407 training studies carry per-condition labels, so a lot of us are deriving labels from the Report text, and most of those pipelines involve a large language model. I would like to get a clear answer on where the line is, because two clauses seem to point in different directions and I would rather ask than guess.</p>\n<p>Section 2.6 (External Data and Tools) treats external models as acceptable unless the Host prohibits them, and gives a commercial large language model as an example of a tool that meets the Reasonableness Standard. That reads as though using a hosted LLM is expected.</p>\n<p>Section 2.4.b (Data Security) says participants agree not to \"transmit, duplicate, publish, redistribute or otherwise provide or make available the Competition Data to any party not participating in the Competition.\" The RSNA MIRA Dataset Research Use Agreement, incorporated by reference in 2.4.a, is stricter still: §4 prohibits distributing or reproducing any portion of a dataset without prior written permission, and §5 prohibits sharing access.</p>\n<p>Sending a report to a hosted model is, on a literal reading of 2.4.b, providing Competition Data to a party that is not participating. On the reading suggested by 2.6, it is ordinary tool use.</p>\n<p>Four specific questions:</p>\n<p>Does passing Report text to a third-party hosted LLM API count as transmitting Competition Data to a non-participating party under 2.4.b?\nIf the answer depends on the provider's terms, does an enterprise or API configuration with zero data retention and no training on submitted data change it?\nAre locally-run open-weights models (nothing leaves the participant's machine) unambiguously acceptable? That is the conservative option, and it would be useful to have it confirmed.\nDoes the answer differ for the DICOM images versus the report text? The reports are free-text clinical documents, which feels like a different category from pixel data.</p>\n<p>If the answer is that hosted APIs are not permitted, an early and visible statement would help a lot of people — several public notebooks already describe LLM-based label derivation, and I doubt anyone has read this as a restriction.</p>\n<p>Thanks.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "FHZ982",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/fhz982",
+    "tier": "CONTRIBUTOR",
+    "id": 34947886,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "FHZ982",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/fhz982",
+     "userName": "fhz982",
+     "tier": "CONTRIBUTOR",
+     "id": 34947886,
+     "profileUrl": "/fhz982",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 34947886,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510522,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733873,
+  "name": "Rules clarification: may Competition Data be sent to third-party LLM APIs?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-08T19:04:32.926716300Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733873",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "FHZ982",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/fhz982",
+   "tier": "CONTRIBUTOR",
+   "id": 34947886,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3510522,
+  "id": 733873,
+  "lastCommenterType": "HOST",
+  "lastCommenterName": "Po-Hao \"Howard\" Chen",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733873#3510696",
+  "lastCommentPostDate": "2026-08-09T09:59:22.803333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-08T19:04:32.926716300Z",
+  "title": "Rules clarification: may Competition Data be sent to third-party LLM APIs?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733873",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "FHZ982",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/fhz982",
+    "userName": "fhz982",
+    "tier": "CONTRIBUTOR",
+    "id": 34947886,
+    "profileUrl": "/fhz982",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 34947886,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

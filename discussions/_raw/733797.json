@@ -1,0 +1,145 @@
+{
+ "forumTopic": {
+  "authorId": 35768881,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "ValkBlox",
+  "authorUserName": "valkblox",
+  "comments": [
+   {
+    "id": 3510974,
+    "postDate": "2026-08-10T03:40:04.363Z",
+    "rawMarkdown": "We welcome participation of competitors between 13-18 years of age after the following forms are submitted and approved.\n\nForm #1: Parent/Guardian Consent for Minor's Use of Kaggle.com\nSubmitted one time by a parent or guardian to authorize a minor child (between ages 13 and 16) to create and use a Kaggle account. [https://www.kaggle.com/guardian-consent-minor-use](url)\nForm #2: Parent/Guardian Consent for Minor's Participation in a Kaggle Competition\nSubmitted on a per-competition basis for the minor to enter and participate in a specific, eligible Kaggle competition .\n[https://www.kaggle.com/consent-minors-process ](url)\n\nThank you and good luck!",
+    "content": "<p>We welcome participation of competitors between 13-18 years of age after the following forms are submitted and approved.</p>\n<p>Form #1: Parent/Guardian Consent for Minor's Use of Kaggle.com\nSubmitted one time by a parent or guardian to authorize a minor child (between ages 13 and 16) to create and use a Kaggle account. <a href=\"url\" target=\"_blank\">https://www.kaggle.com/guardian-consent-minor-use</a>\nForm #2: Parent/Guardian Consent for Minor's Participation in a Kaggle Competition\nSubmitted on a per-competition basis for the minor to enter and participate in a specific, eligible Kaggle competition .\n<a href=\"url\" target=\"_blank\">https://www.kaggle.com/consent-minors-process (opens in a new tab)\"&gt;</a><a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">https://www.kaggle.com/consent-minors-process</a> </p>\n<p>Thank you and good luck!</p>",
+    "replies": [
+     {
+      "id": 3510977,
+      "postDate": "2026-08-10T03:52:24.593Z",
+      "rawMarkdown": "Form #1 - https://www.kaggle.com/guardian-consent-minor-use   \nForm #2 - https://www.kaggle.com/consent-minors-process",
+      "content": "<p>Form #1 - <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">https://www.kaggle.com/guardian-consent-minor-use</a><br>\nForm #2 - <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">https://www.kaggle.com/consent-minors-process</a></p>",
+      "parent": {},
+      "author": {
+       "displayName": "Michelle Riopel",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/michelleriopel",
+       "tier": "CONTRIBUTOR",
+       "id": 7441439,
+       "progressionOptOut": false
+      },
+      "authorType": "HOST",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Michelle Riopel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/michelleriopel",
+     "tier": "CONTRIBUTOR",
+     "id": 7441439,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510353,
+   "postDate": "2026-08-08T09:06:35.930Z",
+   "rawMarkdown": "Are participants under 18 eligible, with parental/guardian consent?\n\n§3.1.a permits participants below the age of majority \"unless otherwise agreed to by Competition Sponsor and appropriate parental/guardian consents have been obtained.\" Kaggle maintains a formal consent process for minors, but notes it applies only to competitions that allow minors, and the competition-specific rules don't address it either way.\n\nI mentor secondary-school students (ages 15–16, India) and would like to include them on a team. Could the host confirm whether minors are eligible for this competition with completed Kaggle consent forms, and whether any additional sponsor approval is needed?\n\nRelated: if minors are not eligible, I take it §2.4.b and §3.6.a mean I cannot show competition data or competition code to students who are not registered participants, even in a teaching context. A confirmation either way would be useful to others running student groups.\n",
+   "content": "<p>Are participants under 18 eligible, with parental/guardian consent?</p>\n<p>§3.1.a permits participants below the age of majority \"unless otherwise agreed to by Competition Sponsor and appropriate parental/guardian consents have been obtained.\" Kaggle maintains a formal consent process for minors, but notes it applies only to competitions that allow minors, and the competition-specific rules don't address it either way.</p>\n<p>I mentor secondary-school students (ages 15–16, India) and would like to include them on a team. Could the host confirm whether minors are eligible for this competition with completed Kaggle consent forms, and whether any additional sponsor approval is needed?</p>\n<p>Related: if minors are not eligible, I take it §2.4.b and §3.6.a mean I cannot show competition data or competition code to students who are not registered participants, even in a teaching context. A confirmation either way would be useful to others running student groups.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "ValkBlox",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/valkblox",
+    "tier": "CONTRIBUTOR",
+    "id": 35768881,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1360,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "ValkBlox",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/valkblox",
+     "userName": "valkblox",
+     "tier": "CONTRIBUTOR",
+     "id": 35768881,
+     "profileUrl": "/valkblox",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 35768881,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510353,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733797,
+  "name": "Eligibility under 18",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-08T09:06:35.930910400Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733797",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "ValkBlox",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/valkblox",
+   "tier": "CONTRIBUTOR",
+   "id": 35768881,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3510353,
+  "id": 733797,
+  "lastCommenterType": "HOST",
+  "lastCommenterName": "Michelle Riopel",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733797#3510977",
+  "lastCommentPostDate": "2026-08-10T03:52:24.593333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-08T09:06:35.930910400Z",
+  "title": "Eligibility under 18",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733797",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "ValkBlox",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/valkblox",
+    "userName": "valkblox",
+    "tier": "CONTRIBUTOR",
+    "id": 35768881,
+    "profileUrl": "/valkblox",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 35768881,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

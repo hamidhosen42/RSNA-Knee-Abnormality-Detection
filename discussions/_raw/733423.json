@@ -1,0 +1,204 @@
+{
+ "forumTopic": {
+  "authorId": 31948823,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "epicfangs",
+  "authorUserName": "epicfangs",
+  "comments": [
+   {
+    "id": 3509715,
+    "postDate": "2026-08-06T22:45:45.707Z",
+    "rawMarkdown": "Hello!\n\nYes we did intend to have PatientSex be available - at one point we indeed built it into the CSV but since patient sex is also in the DICOM header from image files directly, we felt it's redundant and removed the column from CSV.\n\nWe will update the data page to reflect this more accurately. Good call out to avoid confusion. \n\nThank you so much for the kind words.\n ",
+    "content": "<p>Hello!</p>\n<p>Yes we did intend to have PatientSex be available - at one point we indeed built it into the CSV but since patient sex is also in the DICOM header from image files directly, we felt it's redundant and removed the column from CSV.</p>\n<p>We will update the data page to reflect this more accurately. Good call out to avoid confusion. </p>\n<p>Thank you so much for the kind words.</p>",
+    "replies": [
+     {
+      "id": 3510018,
+      "postDate": "2026-08-07T14:54:37.353Z",
+      "rawMarkdown": "Are you going to modify the training data?",
+      "content": "<p>Are you going to modify the training data?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1073,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "SpeedSci",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+        "url": "/caoyupeng",
+        "userName": "caoyupeng",
+        "tier": "EXPERT",
+        "id": 26421714,
+        "profileUrl": "/caoyupeng",
+        "performanceTier": "EXPERT",
+        "userId": 26421714,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3509741,
+    "postDate": "2026-08-07T00:37:27.403Z",
+    "rawMarkdown": "The literature indicate a possible strong AUC between frequency and MCL.",
+    "content": "<p>The literature indicate a possible strong AUC between frequency and MCL.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Fabian Friedland - xBrain",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+     "url": "/fabotelli",
+     "tier": "CONTRIBUTOR",
+     "id": 3018791,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 172,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Fabian Friedland - xBrain",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3018791-kg.jpg?t=2026-08-23-16-24-43",
+      "url": "/fabotelli",
+      "userName": "fabotelli",
+      "tier": "CONTRIBUTOR",
+      "id": 3018791,
+      "profileUrl": "/fabotelli",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 3018791,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509678,
+   "postDate": "2026-08-06T20:26:54.100Z",
+   "rawMarkdown": "The Data page describes train.csv as containing StudyInstanceUID, PatientSex and Report alongside the twelve labels. The file itself has 14 columns: StudyInstanceUID, Report, and the 12 labels. There is no PatientSex column.\n\nCould the hosts confirm whether PatientSex was intended to be included and was dropped during export, or whether the data description should be updated instead?\n\nNot a blocker either way — just flagging it early so nobody writes ingest code against a column that isn't there.\n\nThanks for putting together an interesting dataset.",
+   "content": "<p>The Data page describes train.csv as containing StudyInstanceUID, PatientSex and Report alongside the twelve labels. The file itself has 14 columns: StudyInstanceUID, Report, and the 12 labels. There is no PatientSex column.</p>\n<p>Could the hosts confirm whether PatientSex was intended to be included and was dropped during export, or whether the data description should be updated instead?</p>\n<p>Not a blocker either way — just flagging it early so nobody writes ingest code against a column that isn't there.</p>\n<p>Thanks for putting together an interesting dataset.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "epicfangs",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/epicfangs",
+    "tier": "CONTRIBUTOR",
+    "id": 31948823,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "epicfangs",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/epicfangs",
+     "userName": "epicfangs",
+     "tier": "CONTRIBUTOR",
+     "id": 31948823,
+     "profileUrl": "/epicfangs",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 31948823,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509678,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733423,
+  "name": "train.csv: PatientSex is documented but not present in the file",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-06T20:26:54.098492500Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733423",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "epicfangs",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/epicfangs",
+   "tier": "CONTRIBUTOR",
+   "id": 31948823,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3509678,
+  "id": 733423,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "SpeedSci",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733423#3510018",
+  "lastCommentPostDate": "2026-08-07T14:54:37.353333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-06T20:26:54.098492500Z",
+  "title": "train.csv: PatientSex is documented but not present in the file",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733423",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "epicfangs",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/epicfangs",
+    "userName": "epicfangs",
+    "tier": "CONTRIBUTOR",
+    "id": 31948823,
+    "profileUrl": "/epicfangs",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 31948823,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

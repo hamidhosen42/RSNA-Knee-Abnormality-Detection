@@ -1,0 +1,180 @@
+{
+ "forumTopic": {
+  "authorId": 747159,
+  "authorThumbnailName": "747159-kg.jpg?t=2026-08-08-10-47-01",
+  "authorUserDisplayName": "Istiyak Amin Santo",
+  "authorUserName": "istiyakaminsanto",
+  "comments": [
+   {
+    "id": 3514111,
+    "postDate": "2026-08-18T14:24:19.590Z",
+    "rawMarkdown": "Downloading of libraries to a data set is a way to do it.  But kaggle eliminated that need some time ago.  You just pip what you need in the Add-Ons - Install Dependencies while in the notebook editor.  They even show you how to do it with a couple of examples.  \n",
+    "content": "<p>Downloading of libraries to a data set is a way to do it.  But kaggle eliminated that need some time ago.  You just pip what you need in the Add-Ons - Install Dependencies while in the notebook editor.  They even show you how to do it with a couple of examples.  </p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "enaimaan"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514078,
+   "postDate": "2026-08-18T13:04:13.883Z",
+   "rawMarkdown": "Saving others some debugging time, three environment issues that silently break a submission:\n\n**1. Default GPU (P100) is incompatible with pre-installed PyTorch**\nPyTorch 2.10.0+cu128 needs compute capability sm_70+; P100 is sm_60. `cuda.is_available()` still returns `True`, so it fails silently. Fix in `kernel-metadata.json`: \n\n```\"machine_shape\": \"NvidiaTeslaT4\"```\n\n**2. DICOM codec plugins (pylibjpeg/gdcm) aren't installed**, and scored runs have no internet, so you can't pip install them then. This dataset has JPEG Lossless/JPEG2000 series that need them.\nFix — download the matching wheels locally, upload as a Dataset, install offline in-kernel:\n\n```\npip download --only-binary=:all: --platform manylinux2014_x86_64 --python-version 312 \\\n  --no-deps -d ./wheels pylibjpeg pylibjpeg-libjpeg pylibjpeg-openjpeg python-gdcm\n\nsubprocess.run([sys.executable, \"-m\", \"pip\", \"install\", \"--no-index\",\n                 \"--find-links\", wheel_dir, \"pylibjpeg\", \"pylibjpeg-libjpeg\",\n                 \"pylibjpeg-openjpeg\", \"python-gdcm\"], check=True)\n```\n\n **3.`/kaggle/input/` paths aren't what you'd expect competition data** is under `/kaggle/input/competitions/<slug>/`, and attached Datasets can land at `/kaggle/input/datasets/<owner>/<dataset>/` rather than the flat path. Don't hardcode discover at runtime with a depth-bounded os.walk (unbounded recursion will crawl all of train_series/ looking for a shallow file).\n\n**Happy to answer questions if others hit the same walls.**\n\n\n",
+   "content": "<p>Saving others some debugging time, three environment issues that silently break a submission:</p>\n<p><strong>1. Default GPU (P100) is incompatible with pre-installed PyTorch</strong>\nPyTorch 2.10.0+cu128 needs compute capability sm_70+; P100 is sm_60. <code>cuda.is_available()</code> still returns <code>True</code>, so it fails silently. Fix in <code>kernel-metadata.json</code>: </p>\n<p><code>\"machine_shape\": \"NvidiaTeslaT4\"</code></p>\n<p><strong>2. DICOM codec plugins (pylibjpeg/gdcm) aren't installed</strong>, and scored runs have no internet, so you can't pip install them then. This dataset has JPEG Lossless/JPEG2000 series that need them.\nFix — download the matching wheels locally, upload as a Dataset, install offline in-kernel:</p>\n<pre><code>pip download --only-binary=:all: --platform manylinux2014_x86_64 --python-version 312 \\\n  --no-deps -d ./wheels pylibjpeg pylibjpeg-libjpeg pylibjpeg-openjpeg python-gdcm\n\nsubprocess.run([sys.executable, \"-m\", \"pip\", \"install\", \"--no-index\",\n                 \"--find-links\", wheel_dir, \"pylibjpeg\", \"pylibjpeg-libjpeg\",\n                 \"pylibjpeg-openjpeg\", \"python-gdcm\"], check=True)\n</code></pre>\n<p><strong>3.<code>/kaggle/input/</code> paths aren't what you'd expect competition data</strong> is under <code>/kaggle/input/competitions/&lt;slug&gt;/</code>, and attached Datasets can land at <code>/kaggle/input/datasets/&lt;owner&gt;/&lt;dataset&gt;/</code> rather than the flat path. Don't hardcode discover at runtime with a depth-bounded os.walk (unbounded recursion will crawl all of train_series/ looking for a shallow file).</p>\n<p><strong>Happy to answer questions if others hit the same walls.</strong></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Istiyak Amin Santo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+    "url": "/istiyakaminsanto",
+    "tier": "CONTRIBUTOR",
+    "id": 747159,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3209,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Istiyak Amin Santo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+     "url": "/istiyakaminsanto",
+     "userName": "istiyakaminsanto",
+     "tier": "CONTRIBUTOR",
+     "id": 747159,
+     "profileUrl": "/istiyakaminsanto",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 747159,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514078,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735854,
+  "name": "[PSA] 3 code-submission gotchas: GPU incompatibility, missing DICOM codecs, input path quirks",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-18T13:04:13.882483900Z",
+  "tags": [
+   {
+    "id": 16580,
+    "name": "gpu",
+    "listingUrl": "/search?q=gpu+tag%3A%22gpu%22",
+    "tagUrl": "/tags/gpu",
+    "displayName": "GPU"
+   },
+   {
+    "id": 16631,
+    "name": "pytorch",
+    "listingUrl": "/search?q=pytorch+tag%3A%22pytorch%22",
+    "tagUrl": "/tags/torch",
+    "displayName": "PyTorch"
+   }
+  ],
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735854",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Istiyak Amin Santo",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+   "url": "/istiyakaminsanto",
+   "tier": "CONTRIBUTOR",
+   "id": 747159,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3514078,
+  "id": 735854,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735854#3514111",
+  "lastCommentPostDate": "2026-08-18T14:24:19.590Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-18T13:04:13.882483900Z",
+  "tags": [
+   {
+    "id": 16580,
+    "name": "gpu",
+    "listingUrl": "/tags/gpu",
+    "displayName": "GPU"
+   },
+   {
+    "id": 16631,
+    "name": "pytorch",
+    "listingUrl": "/tags/torch",
+    "displayName": "PyTorch"
+   }
+  ],
+  "title": "[PSA] 3 code-submission gotchas: GPU incompatibility, missing DICOM codecs, input path quirks",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735854",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Istiyak Amin Santo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+    "url": "/istiyakaminsanto",
+    "userName": "istiyakaminsanto",
+    "tier": "CONTRIBUTOR",
+    "id": 747159,
+    "profileUrl": "/istiyakaminsanto",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 747159,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

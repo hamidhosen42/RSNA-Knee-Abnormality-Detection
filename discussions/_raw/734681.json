@@ -1,0 +1,219 @@
+{
+ "forumTopic": {
+  "authorId": 29973116,
+  "authorThumbnailName": "29973116-kg.jpg?t=2025-12-15-22-57-30",
+  "authorUserDisplayName": "Matteo Vitali",
+  "authorUserName": "matteovitali1004",
+  "comments": [
+   {
+    "id": 3512841,
+    "postDate": "2026-08-14T14:08:49.100Z",
+    "rawMarkdown": "Not my experience that the hosts will identify the site split.   \n\nYou might want to look at past RSNA competitions to see what kind of shakeup occurred.  Big shakeups always suggest non random public vs private test splits.  My recollection is that some level of shakeup has occurred in the RSNA's I have been a part of - #1 public leader seldom the private but not by huge drops.  I have been in a few where I moved 1000 places between public and private - do not recall RSNA every being one of those.\n\nAnd remember - to get a high final private score you need to predict the kaggle truth and not any generalization to the real world :)\n\nEDIT - looked at 6 past competitions.   Shakeup ranged from None to 1039 places for first.  Guess that tells me that non random might happen now and than?",
+    "content": "<p>Not my experience that the hosts will identify the site split.   </p>\n<p>You might want to look at past RSNA competitions to see what kind of shakeup occurred.  Big shakeups always suggest non random public vs private test splits.  My recollection is that some level of shakeup has occurred in the RSNA's I have been a part of - #1 public leader seldom the private but not by huge drops.  I have been in a few where I moved 1000 places between public and private - do not recall RSNA every being one of those.</p>\n<p>And remember - to get a high final private score you need to predict the kaggle truth and not any generalization to the real world :)</p>\n<p>EDIT - looked at 6 past competitions.   Shakeup ranged from None to 1039 places for first.  Guess that tells me that non random might happen now and than?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 636,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3512670,
+    "postDate": "2026-08-14T03:57:50.650Z",
+    "rawMarkdown": "Adding a concrete reason this matters beyond curiosity.\n\nThe answer changes how folds should be built. If entire sites are held out for the private set, then site-grouped cross-validation is measuring the right thing and the OOF score it costs is worth paying. If both splits are stratified across all 16 sites, that cost buys nothing, and a random-fold OOF is the better guide.\n\nThose two designs pull in opposite directions, so without an answer everyone is choosing one and hoping. A yes/no on the category, as originally asked, would settle it without revealing anything about which studies are where.\n\nThank you.",
+    "content": "<p>Adding a concrete reason this matters beyond curiosity.</p>\n<p>The answer changes how folds should be built. If entire sites are held out for the private set, then site-grouped cross-validation is measuring the right thing and the OOF score it costs is worth paying. If both splits are stratified across all 16 sites, that cost buys nothing, and a random-fold OOF is the better guide.</p>\n<p>Those two designs pull in opposite directions, so without an answer everyone is choosing one and hoping. A yes/no on the category, as originally asked, would settle it without revealing anything about which studies are where.</p>\n<p>Thank you.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "dk2lone",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36097973-gr.jpg",
+     "url": "/dk2lone",
+     "tier": "CONTRIBUTOR",
+     "id": 36097973,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2330,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "dk2lone",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36097973-gr.jpg",
+      "url": "/dk2lone",
+      "userName": "dk2lone",
+      "tier": "CONTRIBUTOR",
+      "id": 36097973,
+      "profileUrl": "/dk2lone",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36097973,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3512388,
+    "postDate": "2026-08-13T10:21:32.633Z",
+    "rawMarkdown": "I’m also very interested in this point. Generalization to unseen sites is crucial for real-world applications, and since the MRNet, it has remained one of the major challenges in this field. I therefore hope that the high leaderboard scores are not partly explained by overlap between sites in the different splits. But anyway, thank you to the organizers for this very interesting challenge and unique dataset.\n",
+    "content": "<p>I’m also very interested in this point. Generalization to unseen sites is crucial for real-world applications, and since the MRNet, it has remained one of the major challenges in this field. I therefore hope that the high leaderboard scores are not partly explained by overlap between sites in the different splits. But anyway, thank you to the organizers for this very interesting challenge and unique dataset.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "paul margain",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/paulmargain",
+     "tier": "CONTRIBUTOR",
+     "id": 14969518,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "paul margain",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/paulmargain",
+      "userName": "paulmargain",
+      "tier": "CONTRIBUTOR",
+      "id": 14969518,
+      "profileUrl": "/paulmargain",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 14969518,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3511950,
+   "postDate": "2026-08-12T11:50:21.857Z",
+   "rawMarkdown": "Could the hosts clarify whether the public and private test sets are stratified by site (each of the 16 sites present in both) or whether entire sites are held out for the private set?\n\nA yes/no on the category is all I'm after — no need to reveal which studies are where. \n\nThanks!",
+   "content": "<p>Could the hosts clarify whether the public and private test sets are stratified by site (each of the 16 sites present in both) or whether entire sites are held out for the private set?</p>\n<p>A yes/no on the category is all I'm after — no need to reveal which studies are where. </p>\n<p>Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Matteo Vitali",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29973116-kg.jpg?t=2025-12-15-22-57-30",
+    "url": "/matteovitali1004",
+    "tier": "CONTRIBUTOR",
+    "id": 29973116,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 7,
+    "canUpvote": true,
+    "totalUpvotes": 7
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 14,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Matteo Vitali",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29973116-kg.jpg?t=2025-12-15-22-57-30",
+     "url": "/matteovitali1004",
+     "userName": "matteovitali1004",
+     "tier": "CONTRIBUTOR",
+     "id": 29973116,
+     "profileUrl": "/matteovitali1004",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 29973116,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3511950,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734681,
+  "name": "Public/private test split — stratified by site, or entire sites held out?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-12T11:50:21.857768100Z",
+  "totalVotes": 7,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734681",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Matteo Vitali",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29973116-kg.jpg?t=2025-12-15-22-57-30",
+   "url": "/matteovitali1004",
+   "tier": "CONTRIBUTOR",
+   "id": 29973116,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3511950,
+  "id": 734681,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734681#3512841",
+  "lastCommentPostDate": "2026-08-14T14:08:49.100Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-12T11:50:21.857768100Z",
+  "title": "Public/private test split — stratified by site, or entire sites held out?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734681",
+  "votes": 7,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Matteo Vitali",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29973116-kg.jpg?t=2025-12-15-22-57-30",
+    "url": "/matteovitali1004",
+    "userName": "matteovitali1004",
+    "tier": "CONTRIBUTOR",
+    "id": 29973116,
+    "profileUrl": "/matteovitali1004",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 29973116,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

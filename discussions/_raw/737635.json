@@ -1,0 +1,407 @@
+{
+ "forumTopic": {
+  "authorId": 5336006,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "LavanBth99",
+  "authorUserName": "lavanbth99",
+  "comments": [
+   {
+    "id": 3517443,
+    "postDate": "2026-08-27T07:12:30.633Z",
+    "rawMarkdown": "I am unable to understand what concerns you here. \n\nYou should rather be focused on learning (just like you mentioned you are doing), rather than keeping a track of ranks and scores like this.\n\nEven if you don't work at all, at the end of the competition on the very final day if you simply copy the then best scoring public notebook, you should still be able to get into the top 500 or more. \n\nThe goal is to surpass the best available public notebook, showcase your own work. And that's where the real LB starts. People who understands Kaggle well, will credit you correctly.\n\nPeople who simply copied without even having any originality, self conducted work, would fail to answer when asked anything about this competition, you won't, and that's what you should be proud of.  ",
+    "content": "<p>I am unable to understand what concerns you here. </p>\n<p>You should rather be focused on learning (just like you mentioned you are doing), rather than keeping a track of ranks and scores like this.</p>\n<p>Even if you don't work at all, at the end of the competition on the very final day if you simply copy the then best scoring public notebook, you should still be able to get into the top 500 or more. </p>\n<p>The goal is to surpass the best available public notebook, showcase your own work. And that's where the real LB starts. People who understands Kaggle well, will credit you correctly.</p>\n<p>People who simply copied without even having any originality, self conducted work, would fail to answer when asked anything about this competition, you won't, and that's what you should be proud of.  </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Komil Parmar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+     "url": "/komilparmar",
+     "tier": "EXPERT",
+     "id": 11351811,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 59,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Komil Parmar",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+      "url": "/komilparmar",
+      "userName": "komilparmar",
+      "tier": "EXPERT",
+      "id": 11351811,
+      "profileUrl": "/komilparmar",
+      "performanceTier": "EXPERT",
+      "userId": 11351811,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517614,
+    "postDate": "2026-08-27T17:25:25.633Z",
+    "rawMarkdown": "Kaggle like most of the world often has competing goals and objectives.  They will tweak and modify the rules over time to stay aligned with their goals.\n\nFor sure, the host's don't get much benefit from 2000 copy and paste notebooks with very minor changes.  I am sure they would rather see a wide variety of approaches.\n\nThose of us on kaggle also have a wide range of goals.  If your only goal is to get a high kaggle ranking to fill your CV, than copy and paste at the last minute might work.\n\nIf your goal is too learn a skill set that might serve you for many years, copy and paste teaches you nothing.\n\nIt's your path to walk - kaggle might occasionally over time change some of the rules of that journey.",
+    "content": "<p>Kaggle like most of the world often has competing goals and objectives.  They will tweak and modify the rules over time to stay aligned with their goals.</p>\n<p>For sure, the host's don't get much benefit from 2000 copy and paste notebooks with very minor changes.  I am sure they would rather see a wide variety of approaches.</p>\n<p>Those of us on kaggle also have a wide range of goals.  If your only goal is to get a high kaggle ranking to fill your CV, than copy and paste at the last minute might work.</p>\n<p>If your goal is too learn a skill set that might serve you for many years, copy and paste teaches you nothing.</p>\n<p>It's your path to walk - kaggle might occasionally over time change some of the rules of that journey.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "rasoulmojtahedzadeh"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517355,
+    "postDate": "2026-08-26T23:47:45.800Z",
+    "rawMarkdown": "Hello! So, I initially released one dataset about a week ago that I myself trained scoring a 0.924 with that one model.\nIt did get a lot of traction and people asked if I planned on releasing the weights, so I did & I do plan on updating that notebook sometime this week with a stronger base.\n\nMy goal was 1 model not 19 packed together for the sole purpose of scoring high on that base while maintaining efficiency, needless to say a week later 150 forks & 1,900 downloads of those weights & I have watched the board sky rocket.\nTo be as transparent as one could be, I will update that notebook & I do see the same thing happening again, however anyone straight copying or mixing in 7 other models will only climb so high before hitting a wall.\n\nYou as well as everyone else, are more than welcome to fork or download my open weights & build on it which is what I recommend vs a straight copy for the score.\nI have tried my best to make my data as easy as possible to follow, however if you do run into any issues please feel free to reach out !",
+    "content": "<p>Hello! So, I initially released one dataset about a week ago that I myself trained scoring a 0.924 with that one model.\nIt did get a lot of traction and people asked if I planned on releasing the weights, so I did &amp; I do plan on updating that notebook sometime this week with a stronger base.</p>\n<p>My goal was 1 model not 19 packed together for the sole purpose of scoring high on that base while maintaining efficiency, needless to say a week later 150 forks &amp; 1,900 downloads of those weights &amp; I have watched the board sky rocket.\nTo be as transparent as one could be, I will update that notebook &amp; I do see the same thing happening again, however anyone straight copying or mixing in 7 other models will only climb so high before hitting a wall.</p>\n<p>You as well as everyone else, are more than welcome to fork or download my open weights &amp; build on it which is what I recommend vs a straight copy for the score.\nI have tried my best to make my data as easy as possible to follow, however if you do run into any issues please feel free to reach out !</p>",
+    "replies": [
+     {
+      "id": 3517394,
+      "postDate": "2026-08-27T02:44:08.390Z",
+      "rawMarkdown": "hello, thanks for your notebook. Is it possible for you to  publish also the source code on how you generate those datasets \"Knee MRI preprocessed slice stacks\"? ",
+      "content": "<p>hello, thanks for your notebook. Is it possible for you to  publish also the source code on how you generate those datasets \"Knee MRI preprocessed slice stacks\"? </p>",
+      "replies": [
+       {
+        "id": 3517406,
+        "postDate": "2026-08-27T03:49:37.833Z",
+        "rawMarkdown": "The preprocessing code isnt't published right now, but the dataset descriptions cover the substance: one series per plane & fluid sensitivity slot, slices sampled evenly across most of each series span, center cropped to a fixed physical size in mm using DICOM pixel spacing, & stacked in a fixed slot order per study.\nI am planning on releasing the full pipeline, preprocessing included.\nI will update the notebooks soon!\n",
+        "content": "<p>The preprocessing code isnt't published right now, but the dataset descriptions cover the substance: one series per plane &amp; fluid sensitivity slot, slices sampled evenly across most of each series span, center cropped to a fixed physical size in mm using DICOM pixel spacing, &amp; stacked in a fixed slot order per study.\nI am planning on releasing the full pipeline, preprocessing included.\nI will update the notebooks soon!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 145,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3526682,
+        "postDate": "2026-09-22T02:04:10.363Z",
+        "rawMarkdown": "Hi, do you still have a plan to publish the source code of your MRI preprocessed slice stacks?",
+        "content": "<p>Hi, do you still have a plan to publish the source code of your MRI preprocessed slice stacks?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "FGPC",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3015190-kg.jpg",
+         "url": "/projdev",
+         "tier": "EXPERT",
+         "id": 3015190,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "FGPC",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3015190-kg.jpg",
+          "url": "/projdev",
+          "userName": "projdev",
+          "tier": "EXPERT",
+          "id": 3015190,
+          "profileUrl": "/projdev",
+          "performanceTier": "EXPERT",
+          "userId": 3015190,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3527116,
+        "postDate": "2026-09-23T01:03:14.040Z",
+        "rawMarkdown": "Hey! So not right now however most of it is already on the datasets page!",
+        "content": "<p>Hey! So not right now however most of it is already on the datasets page!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 145,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "FGPC",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3015190-kg.jpg",
+       "url": "/projdev",
+       "tier": "EXPERT",
+       "id": 3015190,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "chikonzeroselemani",
+         "dreaddevelopment"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "FGPC",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3015190-kg.jpg",
+        "url": "/projdev",
+        "userName": "projdev",
+        "tier": "EXPERT",
+        "id": 3015190,
+        "profileUrl": "/projdev",
+        "performanceTier": "EXPERT",
+        "userId": 3015190,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 145,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dread Development",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+      "url": "/dreaddevelopment",
+      "userName": "dreaddevelopment",
+      "tier": "EXPERT",
+      "id": 35987882,
+      "profileUrl": "/dreaddevelopment",
+      "performanceTier": "EXPERT",
+      "userId": 35987882,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517231,
+   "postDate": "2026-08-26T14:15:43.323Z",
+   "rawMarkdown": "As someone who is looking to make progress with each submission attempt, I see that a lot of participants have just 'copied'/forked someone else's solution. As someone who is approaching this competition as a puzzle where each submission reveals something new or a new piece to the board, it doesn't feel correct by any means to 'lift' someones original work and label it as your own during submission. \n\nI am curious as to how the host would tackle this specifically? Like I can right now just go and ensemble models with slight tweaks and make a submission attempt and probably score a higher leaderboard (overfit or not) but that doesnt signify the originality of the work. ",
+   "content": "<p>As someone who is looking to make progress with each submission attempt, I see that a lot of participants have just 'copied'/forked someone else's solution. As someone who is approaching this competition as a puzzle where each submission reveals something new or a new piece to the board, it doesn't feel correct by any means to 'lift' someones original work and label it as your own during submission. </p>\n<p>I am curious as to how the host would tackle this specifically? Like I can right now just go and ensemble models with slight tweaks and make a submission attempt and probably score a higher leaderboard (overfit or not) but that doesnt signify the originality of the work. </p>",
+   "parent": {},
+   "author": {
+    "displayName": "LavanBth99",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/lavanbth99",
+    "tier": "CONTRIBUTOR",
+    "id": 5336006,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2487,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "dreaddevelopment"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "LavanBth99",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/lavanbth99",
+     "userName": "lavanbth99",
+     "tier": "CONTRIBUTOR",
+     "id": 5336006,
+     "profileUrl": "/lavanbth99",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 5336006,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517231,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737635,
+  "name": "A lot of submissions are just forks of someone's solution",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-26T14:15:43.322310100Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737635",
+  "totalMessages": 7,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "LavanBth99",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/lavanbth99",
+   "tier": "CONTRIBUTOR",
+   "id": 5336006,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 7,
+  "firstForumMessageId": 3517231,
+  "id": 737635,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Dread Development",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737635#3527116",
+  "lastCommentPostDate": "2026-09-23T01:03:14.040Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-26T14:15:43.322310100Z",
+  "title": "A lot of submissions are just forks of someone's solution",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737635",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "LavanBth99",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/lavanbth99",
+    "userName": "lavanbth99",
+    "tier": "CONTRIBUTOR",
+    "id": 5336006,
+    "profileUrl": "/lavanbth99",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 5336006,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

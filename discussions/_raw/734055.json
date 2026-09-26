@@ -1,0 +1,222 @@
+{
+ "forumTopic": {
+  "authorId": 22188656,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "maximo lorenzo y losada",
+  "authorUserName": "maximolorenzoylosada",
+  "comments": [
+   {
+    "id": 3510857,
+    "postDate": "2026-08-09T18:11:15.987Z",
+    "rawMarkdown": "Correction to my own post above, and credit where it is due.\n\nI said the reports were roughly 51% English-leaning, 16% Spanish-leaning and 34% ambiguous. That was a keyword heuristic testing only English and Spanish, so it was structurally incapable of identifying anything else, and the \"ambiguous\" third was hiding real languages rather than being genuinely undecidable.\n\nWhat tipped me off was the notebook \"RSNA Knee: read the report, then the knee\" by prvsiyan, which mentions Greek reports and a codepoint problem with mu. I had not considered Greek at all.\n\nSo I redid it by Unicode script rather than keywords. Over all 4,407 reports, and a report can contain more than one script:\n\nLatin 4,301 (97.6%)\nGreek 321 (7.3%)\nCyrillic 220 (5.0%)\n\nThe Greek is genuine prose, not stray symbols: 321 of 321 contain three or more consecutive Greek letters. One opening, for illustration:\n\nMRI ΑΡΙΣΤΕΡΟΥ ΓΟΝΑΤΟΣ ΤΕΧΝΙΚΗ Η εξέταση έγινε με ακολουθίες παλμών\n\nSo this is at least a multi-script corpus: Latin covering English and Spanish at minimum, plus Greek and Cyrillic. Roughly 12% of reports contain non-Latin script.\n\nWhy this matters more than a tidier statistic: a keyword or regex pipeline built on English or Spanish terms does not fail loudly on those reports. It extracts nothing and returns a confident negative for every finding. Same shape as the empty-versus-zero trap in my original post, a silent wrong answer rather than an error.\n\nOn the mu point in that notebook, worth checking whether your text uses U+03BC GREEK SMALL LETTER MU or U+00B5 MICRO SIGN. They render identically and do not match each other.\n\nOne caveat on my own numbers: this is a script check, not language identification. Latin covers English, Spanish and anything else in that alphabet, so treat 97.6% as an upper bound on what I have actually accounted for rather than a solved question.",
+    "content": "<p>Correction to my own post above, and credit where it is due.</p>\n<p>I said the reports were roughly 51% English-leaning, 16% Spanish-leaning and 34% ambiguous. That was a keyword heuristic testing only English and Spanish, so it was structurally incapable of identifying anything else, and the \"ambiguous\" third was hiding real languages rather than being genuinely undecidable.</p>\n<p>What tipped me off was the notebook \"RSNA Knee: read the report, then the knee\" by prvsiyan, which mentions Greek reports and a codepoint problem with mu. I had not considered Greek at all.</p>\n<p>So I redid it by Unicode script rather than keywords. Over all 4,407 reports, and a report can contain more than one script:</p>\n<p>Latin 4,301 (97.6%)\nGreek 321 (7.3%)\nCyrillic 220 (5.0%)</p>\n<p>The Greek is genuine prose, not stray symbols: 321 of 321 contain three or more consecutive Greek letters. One opening, for illustration:</p>\n<p>MRI ΑΡΙΣΤΕΡΟΥ ΓΟΝΑΤΟΣ ΤΕΧΝΙΚΗ Η εξέταση έγινε με ακολουθίες παλμών</p>\n<p>So this is at least a multi-script corpus: Latin covering English and Spanish at minimum, plus Greek and Cyrillic. Roughly 12% of reports contain non-Latin script.</p>\n<p>Why this matters more than a tidier statistic: a keyword or regex pipeline built on English or Spanish terms does not fail loudly on those reports. It extracts nothing and returns a confident negative for every finding. Same shape as the empty-versus-zero trap in my original post, a silent wrong answer rather than an error.</p>\n<p>On the mu point in that notebook, worth checking whether your text uses U+03BC GREEK SMALL LETTER MU or U+00B5 MICRO SIGN. They render identically and do not match each other.</p>\n<p>One caveat on my own numbers: this is a script check, not language identification. Latin covers English, Spanish and anything else in that alphabet, so treat 97.6% as an upper bound on what I have actually accounted for rather than a solved question.</p>",
+    "replies": [
+     {
+      "id": 3512854,
+      "postDate": "2026-08-14T14:37:21.607Z",
+      "rawMarkdown": "Hi, I spent a bit of time on this topic also till I found this post: [link to LLM work to label studies](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733932)",
+      "content": "<p>Hi, I spent a bit of time on this topic also till I found this post: <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733932\" target=\"_blank\">link to LLM work to label studies</a></p>",
+      "replies": [
+       {
+        "id": 3513103,
+        "postDate": "2026-08-15T08:36:44.323Z",
+        "rawMarkdown": "Thanks for the pointer — that post is the most useful thing in this forum, and it let me test something my post above implied and never checked.\n\nI warned that a text pipeline built on Latin-script terms fails silently on the Greek and Cyrillic reports: it extracts nothing and returns a confident negative rather than an error. stevenleehans' labeller has an explicit \"the report does not address this\" answer, published as 0.5, which makes that worry measurable for the first time. If it were quietly failing on the non-Latin reports, its refusals should pile up there.\n\nThey don't. It goes the other way, and I think that is worth having on the record.\n\nSetup: joined llm_labels_full.csv to train.csv, 4,407 of 4,407 studies matched. Both source numbers reproduce first — 13,438 of 52,884 cells sit at exactly 0.5, which is the 25.4% reported, and the script counts come back at Greek 321 and Cyrillic 220, for 541 studies containing non-Latin script (12.3%).\n\nRefusal rate on Latin-only reports: 25.9% of cells. On reports containing Greek or Cyrillic: 21.9%. Every study carries all twelve finding cells, so the finding mix is identical across the two groups by construction and the rates compare directly.\n\nThat is a ratio of 0.845 and a gap of 4.0 points. Shuffling the script label across the 4,407 studies 2,000 times gives a null sd of 0.96 points, and no shuffle reached the observed gap, so p < 0.0005.\n\nSplit out: Cyrillic 17.5%, Greek 24.9%.\n\nIt is not a length artefact, and length runs against the result rather than for it. The non-Latin reports are slightly shorter — median 932 characters against 988 — and a shorter report gives a labeller less to work with, not more.\n\nHere is the part I would not want taken the wrong way. A lower refusal rate is not evidence of a correct read. A labeller that reads Greek fluently and one that hallucinates fluently produce the identical signature here: fewer refusals. Refusal rate measures willingness to answer, not accuracy.\n\nAnd the accuracy question is not currently answerable. Of the 58 gold studies, 6 contain non-Latin script. That is the entire ruler available for it.\n\nSo the claim I would actually make: the specific failure mode I flagged — a pipeline going quiet on non-Latin reports — does not appear in this label set, and to that extent my post above was warning about a hazard this approach avoids. Whether the answers it gives on those 541 studies are right is a separate question, and 6 gold studies cannot settle it.\n\nOne thing in the per-finding split may matter more than the headline. Ten of the twelve findings are refused less often on non-Latin reports, but two move the other way: Synovitis +8.5 points (82.7% to 91.1%) and Baker's +7.8 (47.3% to 55.1%). Those are already the two most-refused columns, and section 4 of that post turns on how differently they behave when the report is silent. If the silence rate itself shifts by script, the silence ratio that section leans on is being measured across a mixed population — worth a look, since that section is the part of the post I would least want resting on an artefact.\n\nTo reproduce: classify a report as containing a script if it has three or more consecutive letters of it (the same rule as my correction above), then take the fraction of the twelve label cells equal to exactly 0.5 within each group. It is about ten lines.\n\nA correction to my own numbers while I am here: my Latin count comes out 4,266 here against the 4,301 I posted on 08-09, a 35-study difference down to the exact codepoint range used for \"Latin\". Greek and Cyrillic are unchanged, and nothing above depends on the Latin count.",
+        "content": "<p>Thanks for the pointer — that post is the most useful thing in this forum, and it let me test something my post above implied and never checked.</p>\n<p>I warned that a text pipeline built on Latin-script terms fails silently on the Greek and Cyrillic reports: it extracts nothing and returns a confident negative rather than an error. stevenleehans' labeller has an explicit \"the report does not address this\" answer, published as 0.5, which makes that worry measurable for the first time. If it were quietly failing on the non-Latin reports, its refusals should pile up there.</p>\n<p>They don't. It goes the other way, and I think that is worth having on the record.</p>\n<p>Setup: joined llm_labels_full.csv to train.csv, 4,407 of 4,407 studies matched. Both source numbers reproduce first — 13,438 of 52,884 cells sit at exactly 0.5, which is the 25.4% reported, and the script counts come back at Greek 321 and Cyrillic 220, for 541 studies containing non-Latin script (12.3%).</p>\n<p>Refusal rate on Latin-only reports: 25.9% of cells. On reports containing Greek or Cyrillic: 21.9%. Every study carries all twelve finding cells, so the finding mix is identical across the two groups by construction and the rates compare directly.</p>\n<p>That is a ratio of 0.845 and a gap of 4.0 points. Shuffling the script label across the 4,407 studies 2,000 times gives a null sd of 0.96 points, and no shuffle reached the observed gap, so p &lt; 0.0005.</p>\n<p>Split out: Cyrillic 17.5%, Greek 24.9%.</p>\n<p>It is not a length artefact, and length runs against the result rather than for it. The non-Latin reports are slightly shorter — median 932 characters against 988 — and a shorter report gives a labeller less to work with, not more.</p>\n<p>Here is the part I would not want taken the wrong way. A lower refusal rate is not evidence of a correct read. A labeller that reads Greek fluently and one that hallucinates fluently produce the identical signature here: fewer refusals. Refusal rate measures willingness to answer, not accuracy.</p>\n<p>And the accuracy question is not currently answerable. Of the 58 gold studies, 6 contain non-Latin script. That is the entire ruler available for it.</p>\n<p>So the claim I would actually make: the specific failure mode I flagged — a pipeline going quiet on non-Latin reports — does not appear in this label set, and to that extent my post above was warning about a hazard this approach avoids. Whether the answers it gives on those 541 studies are right is a separate question, and 6 gold studies cannot settle it.</p>\n<p>One thing in the per-finding split may matter more than the headline. Ten of the twelve findings are refused less often on non-Latin reports, but two move the other way: Synovitis +8.5 points (82.7% to 91.1%) and Baker's +7.8 (47.3% to 55.1%). Those are already the two most-refused columns, and section 4 of that post turns on how differently they behave when the report is silent. If the silence rate itself shifts by script, the silence ratio that section leans on is being measured across a mixed population — worth a look, since that section is the part of the post I would least want resting on an artefact.</p>\n<p>To reproduce: classify a report as containing a script if it has three or more consecutive letters of it (the same rule as my correction above), then take the fraction of the twelve label cells equal to exactly 0.5 within each group. It is about ten lines.</p>\n<p>A correction to my own numbers while I am here: my Latin count comes out 4,266 here against the 4,301 I posted on 08-09, a 35-study difference down to the exact codepoint range used for \"Latin\". Greek and Cyrillic are unchanged, and nothing above depends on the Latin count.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "maximo lorenzo y losada",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/maximolorenzoylosada",
+         "tier": "CONTRIBUTOR",
+         "id": 22188656,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2604,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "maximo lorenzo y losada",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/maximolorenzoylosada",
+          "userName": "maximolorenzoylosada",
+          "tier": "CONTRIBUTOR",
+          "id": 22188656,
+          "profileUrl": "/maximolorenzoylosada",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 22188656,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "OpPrime",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31234056-kg.jpg?t=2026-03-22-23-34-57",
+       "url": "/farshidamira",
+       "tier": "CONTRIBUTOR",
+       "id": 31234056,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 151,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OpPrime",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31234056-kg.jpg?t=2026-03-22-23-34-57",
+        "url": "/farshidamira",
+        "userName": "farshidamira",
+        "tier": "CONTRIBUTOR",
+        "id": 31234056,
+        "profileUrl": "/farshidamira",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 31234056,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "maximo lorenzo y losada",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/maximolorenzoylosada",
+     "tier": "CONTRIBUTOR",
+     "id": 22188656,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2604,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "maximo lorenzo y losada",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/maximolorenzoylosada",
+      "userName": "maximolorenzoylosada",
+      "tier": "CONTRIBUTOR",
+      "id": 22188656,
+      "profileUrl": "/maximolorenzoylosada",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 22188656,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510831,
+   "postDate": "2026-08-09T17:09:57.957Z",
+   "rawMarkdown": "Counting what is actually in train.csv turned up something I had not expected, so flagging it early.\n\nOf 4,407 studies, 58 carry labels. The other 4,349 have every label column empty.\n\nIt is all-or-nothing per study: the 58 labelled studies have all twelve findings filled, and the rest have none. There is no partial labelling.\n\nEvery one of the 4,407 studies has a Report, including all 4,349 unlabelled ones. So the diagnostic information is present for the whole training set, just as prose rather than in the label columns.\n\nTwo parsing traps in the same file that cost me a wrong answer first time round:\n\n1. The file is 58,556 lines but only 4,407 rows. Reports contain newlines, so wc -l overstates the dataset by about 13x. Use a real CSV reader.\n2. Empty is not zero. The unlabelled cells are empty strings, not 0. Filling them with 0 invents roughly 4,349 unasserted negatives per class — my first pass did exactly that and produced a nonsense prevalence of 0.5% per finding.\n\nPrevalence within the 58 labelled studies, which is emphatically not population prevalence — it looks like a deliberately enriched annotation set:\n\nEffusion 60.3%, Synovitis 46.6%, Medial Meniscus 44.8%, ACL 41.4%, Lateral Meniscus 39.7%, PF OA 36.2%, Contusion 32.8%, Fracture 31.0%, Medial OA 25.9%, Baker's 20.7%, Lateral OA 19.0%, MCL 15.5%\n\nMean 4.1 findings per labelled study, max 9 — heavily multi-label and co-occurring.\n\nOne more thing worth knowing before you write a text pipeline: the reports are not all in one language. A crude keyword heuristic over all 4,407 gives roughly 51% English-leaning, 16% Spanish-leaning, 34% ambiguous — and the very first report in the file is Spanish (\"Técnica: RMN de la rodilla. Resultados: Rotura de menisco interno...\"). That is a keyword count and not language ID, so treat the split as indicative, but assuming English throughout is clearly unsafe.\n\nWith 58 labelled studies across 12 correlated findings there is not much room to train or validate a twelve-class imaging model directly — a held-out split of 58 gives single-digit positives for the rarer findings.\n\nNotebook with all of it computed in-cell:\nhttps://www.kaggle.com/code/maximolorenzoylosada/4407-studies-and-58-labels\n\nDeliberately just a count, no method. If I have misparsed something I would like to be told — particularly if the empty cells are meant to be read as negatives rather than unknowns, since that changes the problem completely.",
+   "content": "<p>Counting what is actually in train.csv turned up something I had not expected, so flagging it early.</p>\n<p>Of 4,407 studies, 58 carry labels. The other 4,349 have every label column empty.</p>\n<p>It is all-or-nothing per study: the 58 labelled studies have all twelve findings filled, and the rest have none. There is no partial labelling.</p>\n<p>Every one of the 4,407 studies has a Report, including all 4,349 unlabelled ones. So the diagnostic information is present for the whole training set, just as prose rather than in the label columns.</p>\n<p>Two parsing traps in the same file that cost me a wrong answer first time round:</p>\n<ol>\n<li>The file is 58,556 lines but only 4,407 rows. Reports contain newlines, so wc -l overstates the dataset by about 13x. Use a real CSV reader.</li>\n<li>Empty is not zero. The unlabelled cells are empty strings, not 0. Filling them with 0 invents roughly 4,349 unasserted negatives per class — my first pass did exactly that and produced a nonsense prevalence of 0.5% per finding.</li>\n</ol>\n<p>Prevalence within the 58 labelled studies, which is emphatically not population prevalence — it looks like a deliberately enriched annotation set:</p>\n<p>Effusion 60.3%, Synovitis 46.6%, Medial Meniscus 44.8%, ACL 41.4%, Lateral Meniscus 39.7%, PF OA 36.2%, Contusion 32.8%, Fracture 31.0%, Medial OA 25.9%, Baker's 20.7%, Lateral OA 19.0%, MCL 15.5%</p>\n<p>Mean 4.1 findings per labelled study, max 9 — heavily multi-label and co-occurring.</p>\n<p>One more thing worth knowing before you write a text pipeline: the reports are not all in one language. A crude keyword heuristic over all 4,407 gives roughly 51% English-leaning, 16% Spanish-leaning, 34% ambiguous — and the very first report in the file is Spanish (\"Técnica: RMN de la rodilla. Resultados: Rotura de menisco interno…\"). That is a keyword count and not language ID, so treat the split as indicative, but assuming English throughout is clearly unsafe.</p>\n<p>With 58 labelled studies across 12 correlated findings there is not much room to train or validate a twelve-class imaging model directly — a held-out split of 58 gives single-digit positives for the rarer findings.</p>\n<p>Notebook with all of it computed in-cell:\n<a href=\"https://www.kaggle.com/code/maximolorenzoylosada/4407-studies-and-58-labels\" target=\"_blank\">https://www.kaggle.com/code/maximolorenzoylosada/4407-studies-and-58-labels</a></p>\n<p>Deliberately just a count, no method. If I have misparsed something I would like to be told — particularly if the empty cells are meant to be read as negatives rather than unknowns, since that changes the problem completely.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "maximo lorenzo y losada",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/maximolorenzoylosada",
+    "tier": "CONTRIBUTOR",
+    "id": 22188656,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2604,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "maximo lorenzo y losada",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/maximolorenzoylosada",
+     "userName": "maximolorenzoylosada",
+     "tier": "CONTRIBUTOR",
+     "id": 22188656,
+     "profileUrl": "/maximolorenzoylosada",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 22188656,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510831,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734055,
+  "name": "train.csv has 4,407 studies and 58 labels — the other 4,349 have reports",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T17:09:57.955976900Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734055",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "maximo lorenzo y losada",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/maximolorenzoylosada",
+   "tier": "CONTRIBUTOR",
+   "id": 22188656,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3510831,
+  "id": 734055,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "maximo lorenzo y losada",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734055#3513103",
+  "lastCommentPostDate": "2026-08-15T08:36:44.323333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T17:09:57.955976900Z",
+  "title": "train.csv has 4,407 studies and 58 labels — the other 4,349 have reports",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734055",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "maximo lorenzo y losada",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/maximolorenzoylosada",
+    "userName": "maximolorenzoylosada",
+    "tier": "CONTRIBUTOR",
+    "id": 22188656,
+    "profileUrl": "/maximolorenzoylosada",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 22188656,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

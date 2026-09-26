@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 31162503,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Ziad Ahmed",
+  "authorUserName": "ziadahmeddd",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3524091,
+   "postDate": "2026-09-13T22:13:57.487Z",
+   "rawMarkdown": "Section 2.8.a requires a winner to deliver \"training code, inference code, model weights\" and to publish the weights as a public Kaggle dataset. Section 2.6 separately permits freely and publicly available pretrained models, and the Code Requirements page states this explicitly.\nThose two are clear individually but not in combination. Consider a submission whose predictions come entirely from a publicly available checkpoint that another participant trained and released, used without modification. The participant's own contribution is the inference pipeline preprocessing, windowing, aggregation, runtime engineering not the weights.\n1. Can such a submission be eligible for a Leaderboard or Efficiency Prize?\n2. If so, what satisfies the training-code obligation pointing to the original author's published training code, or must the winner have trained the weights themselves?\nSection 2.8.a.a carves out commercially available software that the Sponsor can procure without undue expense, but says nothing about model weights, which is where the ambiguity sits.\nThis matters most for the Efficiency Track, where a single strong public checkpoint plus a fast inference pipeline is a natural approach, and asking now avoids discovering the answer at the Nov 5 deadline.",
+   "content": "<p>Section 2.8.a requires a winner to deliver \"training code, inference code, model weights\" and to publish the weights as a public Kaggle dataset. Section 2.6 separately permits freely and publicly available pretrained models, and the Code Requirements page states this explicitly.\nThose two are clear individually but not in combination. Consider a submission whose predictions come entirely from a publicly available checkpoint that another participant trained and released, used without modification. The participant's own contribution is the inference pipeline preprocessing, windowing, aggregation, runtime engineering not the weights.</p>\n<ol>\n<li>Can such a submission be eligible for a Leaderboard or Efficiency Prize?</li>\n<li>If so, what satisfies the training-code obligation pointing to the original author's published training code, or must the winner have trained the weights themselves?\nSection 2.8.a.a carves out commercially available software that the Sponsor can procure without undue expense, but says nothing about model weights, which is where the ambiguity sits.\nThis matters most for the Efficiency Track, where a single strong public checkpoint plus a fast inference pipeline is a natural approach, and asking now avoids discovering the answer at the Nov 5 deadline.</li>\n</ol>",
+   "parent": {},
+   "author": {
+    "displayName": "Ziad Ahmed",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/ziadahmeddd",
+    "tier": "CONTRIBUTOR",
+    "id": 31162503,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1258,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Ziad Ahmed",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/ziadahmeddd",
+     "userName": "ziadahmeddd",
+     "tier": "CONTRIBUTOR",
+     "id": 31162503,
+     "profileUrl": "/ziadahmeddd",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 31162503,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3524091,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 741212,
+  "name": "Winner's obligations when the submitted weights are a public checkpoint someone else trained",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-13T22:13:57.485298800Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/741212",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Ziad Ahmed",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/ziadahmeddd",
+   "tier": "CONTRIBUTOR",
+   "id": 31162503,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3524091,
+  "id": 741212,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Ziad Ahmed",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741212#3524091",
+  "lastCommentPostDate": "2026-09-13T22:13:57.486666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-13T22:13:57.485298800Z",
+  "title": "Winner's obligations when the submitted weights are a public checkpoint someone else trained",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741212",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Ziad Ahmed",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/ziadahmeddd",
+    "userName": "ziadahmeddd",
+    "tier": "CONTRIBUTOR",
+    "id": 31162503,
+    "profileUrl": "/ziadahmeddd",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 31162503,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

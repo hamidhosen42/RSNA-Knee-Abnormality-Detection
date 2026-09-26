@@ -1,0 +1,547 @@
+{
+ "forumTopic": {
+  "authorId": 413040,
+  "authorThumbnailName": "413040-gp.jpg",
+  "authorUserDisplayName": "Po-Hao \"Howard\" Chen",
+  "authorUserName": "javaduke95",
+  "comments": [
+   {
+    "id": 3511105,
+    "postDate": "2026-08-10T12:14:23.900Z",
+    "rawMarkdown": "For the train.csv. It contains only 58 flagged labels. Rest are NaN.\nThose flags do not reflect what is the report. \nDoes the reports are the GT?",
+    "content": "<p>For the train.csv. It contains only 58 flagged labels. Rest are NaN.\nThose flags do not reflect what is the report. \nDoes the reports are the GT?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Omar M Kamel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omarmkamel",
+     "tier": "CONTRIBUTOR",
+     "id": 8840240,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 7,
+     "canUpvote": true,
+     "totalUpvotes": 7
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Omar M Kamel",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/omarmkamel",
+      "userName": "omarmkamel",
+      "tier": "CONTRIBUTOR",
+      "id": 8840240,
+      "profileUrl": "/omarmkamel",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 8840240,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3511315,
+    "postDate": "2026-08-10T21:41:22.047Z",
+    "rawMarkdown": "Thanks for the overview! For anyone getting started, the key insight is that this is a multi-label classification problem — each study can have multiple abnormalities present simultaneously. The 12 abnormality categories each need their own probability prediction.",
+    "content": "<p>Thanks for the overview! For anyone getting started, the key insight is that this is a multi-label classification problem — each study can have multiple abnormalities present simultaneously. The 12 abnormality categories each need their own probability prediction.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ragheb haddara",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/l4r3nn",
+     "tier": "CONTRIBUTOR",
+     "id": 35670825,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4223,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ragheb haddara",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/l4r3nn",
+      "userName": "l4r3nn",
+      "tier": "CONTRIBUTOR",
+      "id": 35670825,
+      "profileUrl": "/l4r3nn",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35670825,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3520674,
+    "postDate": "2026-09-03T21:34:49.027Z",
+    "rawMarkdown": "this details are very important. Thank you",
+    "content": "<p>this details are very important. Thank you</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Marie Victoire IPOUK",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/marydata",
+     "tier": "CONTRIBUTOR",
+     "id": 14122706,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Naman Malik",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/namanmalik81714",
+      "userName": "namanmalik81714",
+      "tier": "CONTRIBUTOR",
+      "id": 35640164,
+      "profileUrl": "/namanmalik81714",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35640164,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3520341,
+    "postDate": "2026-09-03T06:53:18.723Z",
+    "rawMarkdown": "Hi @javaduke95 - thank you offering such clear explanation to competitors. can i clarify the below in the label description section: should \"the same criteria applied\" read medial meniscus rather than lateral meniscus?\n\n> Medial meniscus tear: Abnormal signal that definitely contacts the meniscal surface on at least two images, or a morphologic abnormality such as a truncated, diminutive, or displaced fragment, involving the medial meniscus. Intrasubstance degeneration that does not reach the surface is negative.\n>\n> Lateral meniscus tear: The same criteria applied to the lateral meniscus.",
+    "content": "<p>Hi <a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> - thank you offering such clear explanation to competitors. can i clarify the below in the label description section: should \"the same criteria applied\" read medial meniscus rather than lateral meniscus?</p>\n<blockquote>\n  <p>Medial meniscus tear: Abnormal signal that definitely contacts the meniscal surface on at least two images, or a morphologic abnormality such as a truncated, diminutive, or displaced fragment, involving the medial meniscus. Intrasubstance degeneration that does not reach the surface is negative.</p>\n  <p>Lateral meniscus tear: The same criteria applied to the lateral meniscus.</p>\n</blockquote>",
+    "parent": {},
+    "author": {
+     "displayName": "cm391",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18863083-kg.png?t=2024-07-23-10-32-28",
+     "url": "/mccocoful",
+     "tier": "MASTER",
+     "id": 18863083,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1965,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "ashishjd"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "cm391",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18863083-kg.png?t=2024-07-23-10-32-28",
+      "url": "/mccocoful",
+      "userName": "mccocoful",
+      "tier": "MASTER",
+      "id": 18863083,
+      "profileUrl": "/mccocoful",
+      "performanceTier": "MASTER",
+      "userId": 18863083,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514025,
+    "postDate": "2026-08-18T09:20:21.520Z",
+    "rawMarkdown": "Great overview. The combination of multi-label MRI classification, multilingual reports, and clinically adjudicated labels makes this a particularly interesting multimodal challenge. Has anyone found the report text to add a clear advantage over image-only models?",
+    "content": "<p>Great overview. The combination of multi-label MRI classification, multilingual reports, and clinically adjudicated labels makes this a particularly interesting multimodal challenge. Has anyone found the report text to add a clear advantage over image-only models?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Oscar Yáñez Feijóo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+     "url": "/oscaryezfeijo",
+     "tier": "CONTRIBUTOR",
+     "id": 16134786,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2334,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Oscar Yáñez Feijóo",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+      "url": "/oscaryezfeijo",
+      "userName": "oscaryezfeijo",
+      "tier": "CONTRIBUTOR",
+      "id": 16134786,
+      "profileUrl": "/oscaryezfeijo",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 16134786,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510901,
+    "postDate": "2026-08-09T20:03:03.927Z",
+    "rawMarkdown": "Gracias por los conocimientos!",
+    "content": "<p>Gracias por los conocimientos!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Nancy Nardelli",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mariale1906",
+     "tier": "CONTRIBUTOR",
+     "id": 16385530,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nancy Nardelli",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mariale1906",
+      "userName": "mariale1906",
+      "tier": "CONTRIBUTOR",
+      "id": 16385530,
+      "profileUrl": "/mariale1906",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 16385530,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510626,
+    "postDate": "2026-08-09T05:44:24.423Z",
+    "rawMarkdown": "many Thanks !",
+    "content": "<p>many Thanks !</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Suraj P. Patil",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/surajppatil",
+     "tier": "CONTRIBUTOR",
+     "id": 14262992,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3510554,
+    "postDate": "2026-08-08T21:26:43.573Z",
+    "rawMarkdown": "thank you so much for the detailed anatomical explanations!",
+    "content": "<p>thank you so much for the detailed anatomical explanations!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Pranav Jain",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24386726-kg.jpg?t=2026-08-23-15-54-02",
+     "url": "/pranavjain95",
+     "tier": "CONTRIBUTOR",
+     "id": 24386726,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Pranav Jain",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24386726-kg.jpg?t=2026-08-23-15-54-02",
+      "url": "/pranavjain95",
+      "userName": "pranavjain95",
+      "tier": "CONTRIBUTOR",
+      "id": 24386726,
+      "profileUrl": "/pranavjain95",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 24386726,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3523462,
+    "postDate": "2026-09-11T16:24:51.620Z",
+    "rawMarkdown": "many Thanks !\n\n\n",
+    "content": "<p>many Thanks !</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ahsan Bin Hasan Pasha",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3834923-kg.JPG",
+     "url": "/abhpasha",
+     "tier": "CONTRIBUTOR",
+     "id": 3834923,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true
+   },
+   {
+    "id": 3523356,
+    "postDate": "2026-09-11T09:10:34.307Z",
+    "rawMarkdown": "Thank you for the details.",
+    "content": "<p>Thank you for the details.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Bhargav",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1501966-kg.jpg",
+     "url": "/bhargavbhatt",
+     "tier": "CONTRIBUTOR",
+     "id": 1501966,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Bhargav",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1501966-kg.jpg",
+      "url": "/bhargavbhatt",
+      "userName": "bhargavbhatt",
+      "tier": "CONTRIBUTOR",
+      "id": 1501966,
+      "profileUrl": "/bhargavbhatt",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 1501966,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510882,
+    "postDate": "2026-08-09T18:36:30.903Z",
+    "rawMarkdown": "Thank you for sharing this knowledge.",
+    "content": "<p>Thank you for sharing this knowledge.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Hüseyin Yıldırım",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21454410-kg.png?t=2026-08-09-04-45-28",
+     "url": "/hsynyildirim",
+     "tier": "CONTRIBUTOR",
+     "id": 21454410,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Hüseyin Yıldırım",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21454410-kg.png?t=2026-08-09-04-45-28",
+      "url": "/hsynyildirim",
+      "userName": "hsynyildirim",
+      "tier": "CONTRIBUTOR",
+      "id": 21454410,
+      "profileUrl": "/hsynyildirim",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 21454410,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510482,
+    "postDate": "2026-08-08T16:36:50.503Z",
+    "rawMarkdown": "Many thanks",
+    "content": "<p>Many thanks</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Mohamed Samir",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15143699-kg.jpg?t=2024-06-01-06-58-15",
+     "url": "/midocloud",
+     "tier": "CONTRIBUTOR",
+     "id": 15143699,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mohamed Samir",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15143699-kg.jpg?t=2024-06-01-06-58-15",
+      "url": "/midocloud",
+      "userName": "midocloud",
+      "tier": "CONTRIBUTOR",
+      "id": 15143699,
+      "profileUrl": "/midocloud",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 15143699,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509546,
+   "postDate": "2026-08-06T15:54:27.877Z",
+   "rawMarkdown": "**Courtesy of Dr. Jacob Kazam**\n\n## Overview of the Clinical Problem\n\nThe 2026 RSNA Knee Abnormality Detection AI Challenge asks participants to build machine learning models that detect a defined set of clinically important abnormalities on knee MRI examinations. It is the first RSNA AI Challenge to pair every imaging study with the text of its original radiology report, and to do so across a large, multilingual, international dataset. Models may learn from both the images and the report text, reflecting how knee MRI is actually interpreted and communicated in clinical practice.\n\nThe knee is one of the most frequently injured and most frequently imaged joints in the body. Knee disorders are a major and growing cause of pain and disability worldwide, affecting athletes, manual workers, and older adults alike. The knee is the most common site of osteoarthritis, which affects nearly a quarter of adults aged 40 and older, an estimated 654 million people worldwide. Acute injuries are also common: knee injuries account for an estimated 15 to 40 percent of all sports-related injuries.\n\nSeveral structures are commonly involved. Anterior cruciate ligament (ACL) tears are among the most frequent sports injuries, often occurring during sudden pivots or changes of direction and leading to immediate instability. Medial collateral ligament (MCL) injuries typically result from outward (valgus) stress on the knee and frequently accompany other structural damage. Meniscal tears, which may be traumatic or degenerative, disrupt the joint’s shock absorption and mechanics, producing pain, locking, and functional limitation. Cartilage loss, joint effusion, synovitis, bone contusions, fractures, and Baker (popliteal) cysts are additional findings that cause symptoms and influence management.\n\nMRI is central to evaluating the knee because it depicts all of these structures, including ligaments, menisci, articular cartilage, and bone, without ionizing radiation, providing a comprehensive whole-joint assessment that other modalities cannot match. However, MRI interpretation varies across readers and practice settings, and access to subspecialty-trained musculoskeletal (MSK) radiologists is limited in many parts of the world. Reliable, consistent automated detection of knee abnormalities could help extend expert-level interpretation, reduce variability, and support more timely care.\n\nThe goal of this competition is to develop machine learning models that detect twelve clinically important knee abnormalities, learning from a large international dataset of knee MRI examinations paired with their original, multilingual radiology reports.\n\n## Anatomical Overview\n\nThe knee is a synovial hinge joint formed by three bones: the femur (thigh bone) above, the tibia (shin bone) below, and the patella (kneecap) in front. The ends of these bones are covered by articular cartilage, a smooth layer that allows near-frictionless motion and distributes load. The joint is enclosed by a capsule lined with synovium, which produces lubricating fluid; an abnormal excess of this fluid is termed a joint effusion, and inflammation of the synovium is termed synovitis.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fe6095eef091115d6f20f3d5c071dd72e%2Fimage1.jpg?generation=1786032010214772&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fc6429a733527b6dd080a84a472a6a34c%2Fimage2.jpg?generation=1786032025815728&alt=media)\n\n*Knee anatomy: anterior view (top) and lateral view (bottom), showing the femur, tibia, patella, cruciate ligaments, and meniscus. Illustrations by BruceBlaus, CC BY 3.0, via Wikimedia Commons.*\n\nFor the purposes of this challenge, the knee is considered in three compartments. The medial compartment lies between the medial femoral condyle and the medial tibial plateau, on the inner side of the knee. The lateral compartment lies between the lateral femoral condyle and the lateral tibial plateau, on the outer side. The patellofemoral compartment lies between the patella and the femoral trochlea, the groove on the front of the femur. Osteoarthritis, or cartilage loss, is assessed separately in each of these three compartments.\n\nFour ligaments stabilize the knee. The anterior cruciate ligament (ACL) and posterior cruciate ligament (PCL) lie within the joint, in the intercondylar notch, and control front-to-back stability and rotation. The medial collateral ligament (MCL) and lateral collateral ligament (LCL) run along the inner and outer sides of the knee and resist side-to-side stress. This challenge focuses on tears of the ACL and the MCL.\n\nBetween the femur and tibia sit two menisci, the medial meniscus and the lateral meniscus, C-shaped wedges of fibrocartilage that cushion the joint, absorb shock, and improve the fit between the rounded femur and the relatively flat tibia. Tears of the medial and lateral meniscus are evaluated separately.\n\nOther relevant structures include the bone marrow within the femur, tibia, and patella, where a bruise from impact is called a bone contusion (or bone marrow edema) and a break in the bone is a fracture; and the soft tissues behind the knee, where a fluid-filled outpouching of the joint lining is called a Baker, or popliteal, cyst.\n\n## Imaging Overview\n\nSeveral modalities can image the knee. Radiographs (X-rays) show bones and joint-space narrowing but cannot directly visualize ligaments, menisci, or cartilage. Ultrasound and CT have specific roles but offer limited soft-tissue contrast for the internal structures of the joint. Magnetic resonance imaging (MRI) is the reference standard for evaluating internal derangement of the knee because it provides excellent soft-tissue contrast, depicts ligaments, menisci, cartilage, and bone marrow simultaneously, and does not use ionizing radiation.\n\nA knee MRI examination is not a single image but a set of series, each acquired with a particular pulse sequence and in a particular imaging plane. The three standard planes are axial (cross-sectional, viewed as if looking up through the leg), coronal (a front-facing, side-to-side view), and sagittal (a side-profile, front-to-back view). Different structures are best seen in different planes; for example, the cruciate ligaments and menisci are well evaluated on sagittal and coronal images, and the patellofemoral cartilage on axial images.\n\nSequences differ in how they weight tissue signal. Fluid-sensitive sequences, such as proton-density or T2-weighted images, often with fat suppression, make edema, effusion, and tears appear bright and are central to detecting most abnormalities; a meniscal tear, for instance, appears as abnormally increased signal that reaches the surface of the meniscus on more than one image. Other sequences emphasize anatomy or cartilage detail. Interpreting a study therefore requires integrating information across multiple series, planes, and slices for the same knee, an inherently three-dimensional task.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F055d8dc92fe53e98325b81b9eae26dee%2Fimage3.jpg?generation=1786032046408361&alt=media)\n\n*Sagittal proton-density, fat-suppressed (fluid-sensitive) MRI of the knee, the type of sequence on which most abnormalities are detected. Image by Ptrump16, CC BY-SA 4.0, via Wikimedia Commons.*\n\nFor the purpose of the 2026 Knee Abnormality Challenge, a “fluid sensitive” sequence refers to one in which edema, hemorrhage, and other types of fluid appear bright and fat is suppressed in some way.\n\nBecause findings can be subtle and the criteria for what counts as clinically significant are nuanced, interpretation varies between readers. This variability, combined with limited access to subspecialty MSK radiologists, motivates the development of consistent automated tools.\n\n## Label Description\n\nModels are evaluated on twelve binary labels, each indicating the presence or absence of a specific finding in the imaged knee. The labels, and the criteria used by the annotating radiologists, are summarized below. In each case, ambiguous or borderline findings (“on the fence”) were graded as negative to favor specificity.\n\nACL tear: A high-grade partial or full-thickness tear of the anterior cruciate ligament, meaning complete discontinuity of the ligament, or more than 50 percent of fibers disrupted, with or without secondary signs such as characteristic pivot-shift bone contusions. Mild signal change, degeneration, or thickening without discontinuity is graded negative.\n\nMCL tear: A high-grade partial or complete acute tear of the medial collateral ligament, with disrupted fibers and edema within and adjacent to the ligament. Low-grade sprains and chronic or remote stress changes are graded negative.\n\nMedial meniscus tear: Abnormal signal that definitely contacts the meniscal surface on at least two images, or a morphologic abnormality such as a truncated, diminutive, or displaced fragment, involving the medial meniscus. Intrasubstance degeneration that does not reach the surface is negative.\n\nLateral meniscus tear: The same criteria applied to the lateral meniscus.\n\nMedial compartment osteoarthritis: A moderate or large area (roughly 1 cm or greater) of high-grade cartilage loss, defined as greater than 50 percent of cartilage thickness, in the medial compartment, with or without underlying subchondral marrow changes.\n\nLateral compartment osteoarthritis: The same criteria applied to the lateral compartment.\n\nPatellofemoral compartment osteoarthritis: The same criteria applied to the patellofemoral compartment.\n\nJoint effusion: A moderate or large amount of fluid distending the joint.\n\nSynovitis: Inflammation and thickening of the synovial lining of the joint.\n\nBaker (popliteal) cyst: A moderate or large fluid collection in the characteristic location behind the knee.\n\nContusion: A bone contusion, seen as bone marrow edema-like signal from impact, without a discrete fracture line.\n\nAcute fracture: An acute cortical break or fracture line.\n\nEach study in the annotated reference set was independently labeled by two subspecialty-trained MSK radiologists, with disagreements adjudicated by a third radiologist to produce a single consensus ground truth. Labels are assigned at the level of the whole examination, for a single knee.\n\n## Examples\n\nThe following annotated examples, drawn from the challenge’s image annotation guidelines, illustrate representative positive and negative cases for several of the labels. In each figure, yellow arrows and arrowheads mark the findings described in the caption.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fffa3eef262fb5e7d930af5977835e348%2F1n.png?generation=1786031398436425&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F72315329db3196042e507da265c5c5a0%2F1p.png?generation=1786031402755514&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F02e12a96962914c53a984278c8710bd1%2F2n.png?generation=1786031407998401&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F9b2477692c6cb65dfe412b0e84e4e54c%2F2n2.png?generation=1786031412122917&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F3ca890a0dd86b59acfaee1dfe80d1f42%2F2p.png?generation=1786031416545147&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fbc1bda64b7ddd42dca2c82e38a9ed688%2F2p2.png?generation=1786031421281409&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F064beb3b6c9c0fd333714640a8ea609b%2F3n%20(2).png?generation=1786031426950658&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F59aa2791484d8ea557310a7bd8cf06e6%2F3n.png?generation=1786031439268501&alt=media)\n\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F0ed8b17ee998a01621ccab7b386c27fa%2F3p.png?generation=1786031524108353&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F101f250c5b898b919f866d341d6a1520%2F4n.png?generation=1786031536699757&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fc0497ed5a69b2851731ed7652ee57e79%2F4n2.png?generation=1786031554221628&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Ffc254271a446b9c159539c24e07ae202%2F4p.png?generation=1786031624514519&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F826e3f821e06a4c58635339f4459c4ee%2F4p2.png?generation=1786031636743915&alt=media)\n",
+   "content": "<p><strong>Courtesy of Dr. Jacob Kazam</strong></p>\n<h2>Overview of the Clinical Problem</h2>\n<p>The 2026 RSNA Knee Abnormality Detection AI Challenge asks participants to build machine learning models that detect a defined set of clinically important abnormalities on knee MRI examinations. It is the first RSNA AI Challenge to pair every imaging study with the text of its original radiology report, and to do so across a large, multilingual, international dataset. Models may learn from both the images and the report text, reflecting how knee MRI is actually interpreted and communicated in clinical practice.</p>\n<p>The knee is one of the most frequently injured and most frequently imaged joints in the body. Knee disorders are a major and growing cause of pain and disability worldwide, affecting athletes, manual workers, and older adults alike. The knee is the most common site of osteoarthritis, which affects nearly a quarter of adults aged 40 and older, an estimated 654 million people worldwide. Acute injuries are also common: knee injuries account for an estimated 15 to 40 percent of all sports-related injuries.</p>\n<p>Several structures are commonly involved. Anterior cruciate ligament (ACL) tears are among the most frequent sports injuries, often occurring during sudden pivots or changes of direction and leading to immediate instability. Medial collateral ligament (MCL) injuries typically result from outward (valgus) stress on the knee and frequently accompany other structural damage. Meniscal tears, which may be traumatic or degenerative, disrupt the joint’s shock absorption and mechanics, producing pain, locking, and functional limitation. Cartilage loss, joint effusion, synovitis, bone contusions, fractures, and Baker (popliteal) cysts are additional findings that cause symptoms and influence management.</p>\n<p>MRI is central to evaluating the knee because it depicts all of these structures, including ligaments, menisci, articular cartilage, and bone, without ionizing radiation, providing a comprehensive whole-joint assessment that other modalities cannot match. However, MRI interpretation varies across readers and practice settings, and access to subspecialty-trained musculoskeletal (MSK) radiologists is limited in many parts of the world. Reliable, consistent automated detection of knee abnormalities could help extend expert-level interpretation, reduce variability, and support more timely care.</p>\n<p>The goal of this competition is to develop machine learning models that detect twelve clinically important knee abnormalities, learning from a large international dataset of knee MRI examinations paired with their original, multilingual radiology reports.</p>\n<h2>Anatomical Overview</h2>\n<p>The knee is a synovial hinge joint formed by three bones: the femur (thigh bone) above, the tibia (shin bone) below, and the patella (kneecap) in front. The ends of these bones are covered by articular cartilage, a smooth layer that allows near-frictionless motion and distributes load. The joint is enclosed by a capsule lined with synovium, which produces lubricating fluid; an abnormal excess of this fluid is termed a joint effusion, and inflammation of the synovium is termed synovitis.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fe6095eef091115d6f20f3d5c071dd72e%2Fimage1.jpg?generation=1786032010214772&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fc6429a733527b6dd080a84a472a6a34c%2Fimage2.jpg?generation=1786032025815728&amp;alt=media\" alt=\"\"></p>\n<p><em>Knee anatomy: anterior view (top) and lateral view (bottom), showing the femur, tibia, patella, cruciate ligaments, and meniscus. Illustrations by BruceBlaus, CC BY 3.0, via Wikimedia Commons.</em></p>\n<p>For the purposes of this challenge, the knee is considered in three compartments. The medial compartment lies between the medial femoral condyle and the medial tibial plateau, on the inner side of the knee. The lateral compartment lies between the lateral femoral condyle and the lateral tibial plateau, on the outer side. The patellofemoral compartment lies between the patella and the femoral trochlea, the groove on the front of the femur. Osteoarthritis, or cartilage loss, is assessed separately in each of these three compartments.</p>\n<p>Four ligaments stabilize the knee. The anterior cruciate ligament (ACL) and posterior cruciate ligament (PCL) lie within the joint, in the intercondylar notch, and control front-to-back stability and rotation. The medial collateral ligament (MCL) and lateral collateral ligament (LCL) run along the inner and outer sides of the knee and resist side-to-side stress. This challenge focuses on tears of the ACL and the MCL.</p>\n<p>Between the femur and tibia sit two menisci, the medial meniscus and the lateral meniscus, C-shaped wedges of fibrocartilage that cushion the joint, absorb shock, and improve the fit between the rounded femur and the relatively flat tibia. Tears of the medial and lateral meniscus are evaluated separately.</p>\n<p>Other relevant structures include the bone marrow within the femur, tibia, and patella, where a bruise from impact is called a bone contusion (or bone marrow edema) and a break in the bone is a fracture; and the soft tissues behind the knee, where a fluid-filled outpouching of the joint lining is called a Baker, or popliteal, cyst.</p>\n<h2>Imaging Overview</h2>\n<p>Several modalities can image the knee. Radiographs (X-rays) show bones and joint-space narrowing but cannot directly visualize ligaments, menisci, or cartilage. Ultrasound and CT have specific roles but offer limited soft-tissue contrast for the internal structures of the joint. Magnetic resonance imaging (MRI) is the reference standard for evaluating internal derangement of the knee because it provides excellent soft-tissue contrast, depicts ligaments, menisci, cartilage, and bone marrow simultaneously, and does not use ionizing radiation.</p>\n<p>A knee MRI examination is not a single image but a set of series, each acquired with a particular pulse sequence and in a particular imaging plane. The three standard planes are axial (cross-sectional, viewed as if looking up through the leg), coronal (a front-facing, side-to-side view), and sagittal (a side-profile, front-to-back view). Different structures are best seen in different planes; for example, the cruciate ligaments and menisci are well evaluated on sagittal and coronal images, and the patellofemoral cartilage on axial images.</p>\n<p>Sequences differ in how they weight tissue signal. Fluid-sensitive sequences, such as proton-density or T2-weighted images, often with fat suppression, make edema, effusion, and tears appear bright and are central to detecting most abnormalities; a meniscal tear, for instance, appears as abnormally increased signal that reaches the surface of the meniscus on more than one image. Other sequences emphasize anatomy or cartilage detail. Interpreting a study therefore requires integrating information across multiple series, planes, and slices for the same knee, an inherently three-dimensional task.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F055d8dc92fe53e98325b81b9eae26dee%2Fimage3.jpg?generation=1786032046408361&amp;alt=media\" alt=\"\"></p>\n<p><em>Sagittal proton-density, fat-suppressed (fluid-sensitive) MRI of the knee, the type of sequence on which most abnormalities are detected. Image by Ptrump16, CC BY-SA 4.0, via Wikimedia Commons.</em></p>\n<p>For the purpose of the 2026 Knee Abnormality Challenge, a “fluid sensitive” sequence refers to one in which edema, hemorrhage, and other types of fluid appear bright and fat is suppressed in some way.</p>\n<p>Because findings can be subtle and the criteria for what counts as clinically significant are nuanced, interpretation varies between readers. This variability, combined with limited access to subspecialty MSK radiologists, motivates the development of consistent automated tools.</p>\n<h2>Label Description</h2>\n<p>Models are evaluated on twelve binary labels, each indicating the presence or absence of a specific finding in the imaged knee. The labels, and the criteria used by the annotating radiologists, are summarized below. In each case, ambiguous or borderline findings (“on the fence”) were graded as negative to favor specificity.</p>\n<p>ACL tear: A high-grade partial or full-thickness tear of the anterior cruciate ligament, meaning complete discontinuity of the ligament, or more than 50 percent of fibers disrupted, with or without secondary signs such as characteristic pivot-shift bone contusions. Mild signal change, degeneration, or thickening without discontinuity is graded negative.</p>\n<p>MCL tear: A high-grade partial or complete acute tear of the medial collateral ligament, with disrupted fibers and edema within and adjacent to the ligament. Low-grade sprains and chronic or remote stress changes are graded negative.</p>\n<p>Medial meniscus tear: Abnormal signal that definitely contacts the meniscal surface on at least two images, or a morphologic abnormality such as a truncated, diminutive, or displaced fragment, involving the medial meniscus. Intrasubstance degeneration that does not reach the surface is negative.</p>\n<p>Lateral meniscus tear: The same criteria applied to the lateral meniscus.</p>\n<p>Medial compartment osteoarthritis: A moderate or large area (roughly 1 cm or greater) of high-grade cartilage loss, defined as greater than 50 percent of cartilage thickness, in the medial compartment, with or without underlying subchondral marrow changes.</p>\n<p>Lateral compartment osteoarthritis: The same criteria applied to the lateral compartment.</p>\n<p>Patellofemoral compartment osteoarthritis: The same criteria applied to the patellofemoral compartment.</p>\n<p>Joint effusion: A moderate or large amount of fluid distending the joint.</p>\n<p>Synovitis: Inflammation and thickening of the synovial lining of the joint.</p>\n<p>Baker (popliteal) cyst: A moderate or large fluid collection in the characteristic location behind the knee.</p>\n<p>Contusion: A bone contusion, seen as bone marrow edema-like signal from impact, without a discrete fracture line.</p>\n<p>Acute fracture: An acute cortical break or fracture line.</p>\n<p>Each study in the annotated reference set was independently labeled by two subspecialty-trained MSK radiologists, with disagreements adjudicated by a third radiologist to produce a single consensus ground truth. Labels are assigned at the level of the whole examination, for a single knee.</p>\n<h2>Examples</h2>\n<p>The following annotated examples, drawn from the challenge’s image annotation guidelines, illustrate representative positive and negative cases for several of the labels. In each figure, yellow arrows and arrowheads mark the findings described in the caption.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fffa3eef262fb5e7d930af5977835e348%2F1n.png?generation=1786031398436425&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F72315329db3196042e507da265c5c5a0%2F1p.png?generation=1786031402755514&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F02e12a96962914c53a984278c8710bd1%2F2n.png?generation=1786031407998401&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F9b2477692c6cb65dfe412b0e84e4e54c%2F2n2.png?generation=1786031412122917&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F3ca890a0dd86b59acfaee1dfe80d1f42%2F2p.png?generation=1786031416545147&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fbc1bda64b7ddd42dca2c82e38a9ed688%2F2p2.png?generation=1786031421281409&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F064beb3b6c9c0fd333714640a8ea609b%2F3n%20(2).png?generation=1786031426950658&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F59aa2791484d8ea557310a7bd8cf06e6%2F3n.png?generation=1786031439268501&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F0ed8b17ee998a01621ccab7b386c27fa%2F3p.png?generation=1786031524108353&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F101f250c5b898b919f866d341d6a1520%2F4n.png?generation=1786031536699757&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Fc0497ed5a69b2851731ed7652ee57e79%2F4n2.png?generation=1786031554221628&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2Ffc254271a446b9c159539c24e07ae202%2F4p.png?generation=1786031624514519&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F413040%2F826e3f821e06a4c58635339f4459c4ee%2F4p2.png?generation=1786031636743915&amp;alt=media\" alt=\"\"></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Po-Hao \"Howard\" Chen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+    "url": "/javaduke95",
+    "tier": "CONTRIBUTOR",
+    "id": 413040,
+    "progressionOptOut": false
+   },
+   "authorType": "HOST",
+   "votes": {
+    "totalVotes": 83,
+    "canUpvote": true,
+    "totalUpvotes": 83
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "shaikasad",
+      "d17129765",
+      "atharvsharma",
+      "zosamu",
+      "wahyurahmaniar",
+      "trishaanil",
+      "nitesh8527",
+      "oleksandrbilochenko",
+      "aneesuddin",
+      "yoshitown",
+      "philgear",
+      "thelastsmilodon",
+      "yosriketata",
+      "kokiando",
+      "doheon114",
+      "nathanaelrk",
+      "oscaryezfeijo",
+      "haseebkhandevlprkhan",
+      "rudrpratapsingh",
+      "snipergotyou",
+      "ishwarghoshrony",
+      "santopaul",
+      "pranavjain95",
+      "sergiobear",
+      "jamesmukoma",
+      "rijanjabhattarai",
+      "bajaj30",
+      "hajrupajuu",
+      "aurelius15",
+      "ilaydacan26",
+      "jmmmmy",
+      "thiagomoura333",
+      "amtsign",
+      "wasanaf",
+      "tabassumtoishe"
+     ],
+     "userCount": 35
+    }
+   ]
+  },
+  "firstMessageId": 3509546,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733343,
+  "isStickied": true,
+  "name": "Knee Abnormality Detection AI Challenge Overview",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-06T15:54:27.876255800Z",
+  "totalVotes": 83,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733343",
+  "totalMessages": 12,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Po-Hao \"Howard\" Chen",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+   "url": "/javaduke95",
+   "tier": "CONTRIBUTOR",
+   "id": 413040,
+   "progressionOptOut": false
+  },
+  "authorType": "HOST",
+  "commentCount": 12,
+  "firstForumMessageId": 3509546,
+  "id": 733343,
+  "isSticky": true,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Ahsan Bin Hasan Pasha",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343#3523462",
+  "lastCommentPostDate": "2026-09-11T16:24:51.620Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-06T15:54:27.876255800Z",
+  "title": "Knee Abnormality Detection AI Challenge Overview",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343",
+  "votes": 83
+ }
+}

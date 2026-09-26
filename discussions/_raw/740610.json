@@ -1,0 +1,706 @@
+{
+ "forumTopic": {
+  "authorId": 21681832,
+  "authorThumbnailName": "21681832-kg.jpg?t=2025-09-18-05-12-18",
+  "authorUserDisplayName": "Will",
+  "authorUserName": "pareru806",
+  "comments": [
+   {
+    "id": 3523148,
+    "postDate": "2026-09-10T17:19:45.997Z",
+    "rawMarkdown": "Some thoughts: take the best scoring single model public notebook (ignore the blends) and reproduce it locally. Use public LLM labels if you don't have your own, especially those that have documented extraction processes. Ideally you use your own so you know exactly where they succeed and where they fail. \n\nStart with 224px / 288px and a simple CNN encoder, like a ResNet34 or EffNetB0. No attention mechanisms, just use simple pooling operations. You can score in the 0.94+ range with this alone and it allows for efficient experiments at the lower resolutions.\n\nValidate against the report extracted labels, not the provided 58 labels and not against the LB - neither are large enough sample sizes to resolve 0.002-0.003 differences. You want to stack these small improvements. Set a CV threshold for what is a genuine improvement and what is noise. Mine is around 0.003. You can get this tighter running multiple seeds if you need. When you get a real improvement, submit to LB to establish a CV - LB correlation.\n\nThis is your baseline. Then ablate through the standard image augmentation stacks. Many of these are generic and many are MRI specific, which you can get from previous competitions. Change one thing at a time so you can isolate what helped and what did not.\n\nThen, you can try different backbones and resolutions, to see if the additional training time is really worth it.\n\nAfter all of that, you can start trying more \"experimental\" mechanisms like attention and/or newer image encoders. I have yet to try any DINO inits and based on some preliminary experiments, I have a low prior for it matching standard ImageNet init backbones, but I could be wrong.\n\nKaggle public code section has been sullied with AI slop as people medal farm. Be cautious of this. There are only a few useful notebooks out there ([like this one](https://www.kaggle.com/code/dreaddevelopment/knee-mri-training-the-twelve-finding-model)). I generally assume a contrarian position about public notebooks - they are likely overly complex and not properly \"built up\" from simple baselines, using a clean CV protocol. Use them as their own baselines, and prune them to see what is actually useful and what is uneeded. \"Prime\" your own LLM saying something like \"this code is probably over engineered, how can I simplify it?\"\n\nLast point - spend a lot of time just thinking about the problem. Have brainstorm sessions with your LLM of choice, without building anything. Stream of conciousness type chats. These \"vibe chatting\" sessions are where I get most of my ideas - LLMs may not be particularly creative in the context of Kaggle competitions, but they are great for organizing thoughts and finding ideas in that structure, that you might have otherwise not noticed yourself.",
+    "content": "<p>Some thoughts: take the best scoring single model public notebook (ignore the blends) and reproduce it locally. Use public LLM labels if you don't have your own, especially those that have documented extraction processes. Ideally you use your own so you know exactly where they succeed and where they fail. </p>\n<p>Start with 224px / 288px and a simple CNN encoder, like a ResNet34 or EffNetB0. No attention mechanisms, just use simple pooling operations. You can score in the 0.94+ range with this alone and it allows for efficient experiments at the lower resolutions.</p>\n<p>Validate against the report extracted labels, not the provided 58 labels and not against the LB - neither are large enough sample sizes to resolve 0.002-0.003 differences. You want to stack these small improvements. Set a CV threshold for what is a genuine improvement and what is noise. Mine is around 0.003. You can get this tighter running multiple seeds if you need. When you get a real improvement, submit to LB to establish a CV - LB correlation.</p>\n<p>This is your baseline. Then ablate through the standard image augmentation stacks. Many of these are generic and many are MRI specific, which you can get from previous competitions. Change one thing at a time so you can isolate what helped and what did not.</p>\n<p>Then, you can try different backbones and resolutions, to see if the additional training time is really worth it.</p>\n<p>After all of that, you can start trying more \"experimental\" mechanisms like attention and/or newer image encoders. I have yet to try any DINO inits and based on some preliminary experiments, I have a low prior for it matching standard ImageNet init backbones, but I could be wrong.</p>\n<p>Kaggle public code section has been sullied with AI slop as people medal farm. Be cautious of this. There are only a few useful notebooks out there (<a href=\"https://www.kaggle.com/code/dreaddevelopment/knee-mri-training-the-twelve-finding-model\" target=\"_blank\">like this one</a>). I generally assume a contrarian position about public notebooks - they are likely overly complex and not properly \"built up\" from simple baselines, using a clean CV protocol. Use them as their own baselines, and prune them to see what is actually useful and what is uneeded. \"Prime\" your own LLM saying something like \"this code is probably over engineered, how can I simplify it?\"</p>\n<p>Last point - spend a lot of time just thinking about the problem. Have brainstorm sessions with your LLM of choice, without building anything. Stream of conciousness type chats. These \"vibe chatting\" sessions are where I get most of my ideas - LLMs may not be particularly creative in the context of Kaggle competitions, but they are great for organizing thoughts and finding ideas in that structure, that you might have otherwise not noticed yourself.</p>",
+    "replies": [
+     {
+      "id": 3523257,
+      "postDate": "2026-09-10T23:21:14.010Z",
+      "rawMarkdown": "Excellent advice thank you for taking the time to share. I can also second that a simple baseline will take you far if done carefully OP (also have 0.94+ at 224px with small simple model). Follow this post and you'll get there!\n\nJust reflecting on your comments. It's a shame how polluted the kernel space has become on Kaggle. It used to be such a great resource to learn from one another. So many great and novel ideas. Now it's just overflowing with AI slop and needlessly complex brute forcing lb attempts. So much compute and so much noise. It's such a shame.",
+      "content": "<p>Excellent advice thank you for taking the time to share. I can also second that a simple baseline will take you far if done carefully OP (also have 0.94+ at 224px with small simple model). Follow this post and you'll get there!</p>\n<p>Just reflecting on your comments. It's a shame how polluted the kernel space has become on Kaggle. It used to be such a great resource to learn from one another. So many great and novel ideas. Now it's just overflowing with AI slop and needlessly complex brute forcing lb attempts. So much compute and so much noise. It's such a shame.</p>",
+      "replies": [
+       {
+        "id": 3523263,
+        "postDate": "2026-09-10T23:43:50.333Z",
+        "rawMarkdown": "The super ensemble ultra pro max. \n\nThe way the system is set up just incentivizes tons of copy paste leaderboard overfit ensembles. When in all actuality, unique training pipelines like that of the one by @dreaddevelopment shared what’s really the most valuable. It is very much the same with discussions, where there was a time where it was once extremely useful and people started taking advantage of the ranking and point system too much, devaluing the discussions. Glad to see in the last 2 competitions there are still people like @tuckerarrants who are willing to share. Hoping to return the favor once I get a little more time! Currently coding between diaper changes and midnight feedings hahaha",
+        "content": "<p>The super ensemble ultra pro max. </p>\n<p>The way the system is set up just incentivizes tons of copy paste leaderboard overfit ensembles. When in all actuality, unique training pipelines like that of the one by <a href=\"/dreaddevelopment\" target=\"_blank\">@dreaddevelopment</a> shared what’s really the most valuable. It is very much the same with discussions, where there was a time where it was once extremely useful and people started taking advantage of the ranking and point system too much, devaluing the discussions. Glad to see in the last 2 competitions there are still people like <a href=\"/tuckerarrants\" target=\"_blank\">@tuckerarrants</a> who are willing to share. Hoping to return the favor once I get a little more time! Currently coding between diaper changes and midnight feedings hahaha</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "tuckerarrants",
+           "yukiarl",
+           "ggayoayogg",
+           "ayushkhaire",
+           "radwankhondokar",
+           "adaluvu",
+           "dreaddevelopment"
+          ],
+          "userCount": 7
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523264,
+        "postDate": "2026-09-10T23:46:25.400Z",
+        "rawMarkdown": "Happy to help. \n\nAnd yes I agree. When I was last very active on Kaggle, around 2019 to 2020, the public code section was invaluable. GMs were sharing custom training loops, unique augmentation ideas, TTA, etc. You could learn so much just synthesizing data and the notebook medals were actually **earned**. Putting the ideas together with your own code was also a learning experience.\n\nNow you can spawn up a notebook in a prompt and as long as it has a good public score, it gets forked and auto liked. I genuinely think the only solution is removing all non-competition tiers. But even that might not matter as people can always resort to bragging about their \"notebooks forked\" count instead of \"gold medal notebooks\". But alas, it is what it is. \n\n@dreaddevelopment's notebook was a breath of fresh air. Of course it was absorbed into the \"super ensemble ultra pro max\" notebooks but that was inevitable. ",
+        "content": "<p>Happy to help. </p>\n<p>And yes I agree. When I was last very active on Kaggle, around 2019 to 2020, the public code section was invaluable. GMs were sharing custom training loops, unique augmentation ideas, TTA, etc. You could learn so much just synthesizing data and the notebook medals were actually <strong>earned</strong>. Putting the ideas together with your own code was also a learning experience.</p>\n<p>Now you can spawn up a notebook in a prompt and as long as it has a good public score, it gets forked and auto liked. I genuinely think the only solution is removing all non-competition tiers. But even that might not matter as people can always resort to bragging about their \"notebooks forked\" count instead of \"gold medal notebooks\". But alas, it is what it is. </p>\n<p><a href=\"/dreaddevelopment\" target=\"_blank\">@dreaddevelopment</a>'s notebook was a breath of fresh air. Of course it was absorbed into the \"super ensemble ultra pro max\" notebooks but that was inevitable. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 4
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523267,
+        "postDate": "2026-09-10T23:50:36.633Z",
+        "rawMarkdown": "Yep totally with you, missing the days where you could sort by most votes and find actually useful code at every position ",
+        "content": "<p>Yep totally with you, missing the days where you could sort by most votes and find actually useful code at every position </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523272,
+        "postDate": "2026-09-11T00:12:43.230Z",
+        "rawMarkdown": "So this is part of the reason I have not dropped my faster or newer weights yet, my team member sean & I were discussing useful code & datasets/other discussions & I couldn't at this point find any without our work wrapped into it.",
+        "content": "<p>So this is part of the reason I have not dropped my faster or newer weights yet, my team member sean &amp; I were discussing useful code &amp; datasets/other discussions &amp; I couldn't at this point find any without our work wrapped into it.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 4
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523551,
+        "postDate": "2026-09-11T20:38:49.843Z",
+        "rawMarkdown": "i miss the old days, i start kaggle back in high school, and i literally learned machine/deep learning from others notebooks.",
+        "content": "<p>i miss the old days, i start kaggle back in high school, and i literally learned machine/deep learning from others notebooks.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "MengYe",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+         "url": "/konohayui",
+         "tier": "EXPERT",
+         "id": 1113072,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 255,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "MengYe",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+          "url": "/konohayui",
+          "userName": "konohayui",
+          "tier": "EXPERT",
+          "id": 1113072,
+          "profileUrl": "/konohayui",
+          "performanceTier": "EXPERT",
+          "userId": 1113072,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523569,
+        "postDate": "2026-09-11T22:20:54.787Z",
+        "rawMarkdown": "I have only recently begun kaggle comps (I had no idea this was a thing) & in the little over a month of competing, I have noticed a lot of people will publish code/notebooks just to snag a medal.. whats even worse is when you read through it & none of it or very little is theirs, makes it hard to tell whom you're actually competing with.\nAlso super new with medical models entirely so this is a learning experience for me. Currently juggling this competition, UMUD, Biohub, Solar filament, ARC 2 & 3 & kaggriculture.",
+        "content": "<p>I have only recently begun kaggle comps (I had no idea this was a thing) &amp; in the little over a month of competing, I have noticed a lot of people will publish code/notebooks just to snag a medal.. whats even worse is when you read through it &amp; none of it or very little is theirs, makes it hard to tell whom you're actually competing with.\nAlso super new with medical models entirely so this is a learning experience for me. Currently juggling this competition, UMUD, Biohub, Solar filament, ARC 2 &amp; 3 &amp; kaggriculture.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Tom Aindow",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+       "url": "/taindow",
+       "tier": "MASTER",
+       "id": 921947,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 5,
+       "canUpvote": true,
+       "totalUpvotes": 5
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 81,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Tom Aindow",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+        "url": "/taindow",
+        "userName": "taindow",
+        "tier": "MASTER",
+        "id": 921947,
+        "profileUrl": "/taindow",
+        "performanceTier": "MASTER",
+        "userId": 921947,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3523655,
+      "postDate": "2026-09-12T10:50:57.057Z",
+      "rawMarkdown": "My dino model, single fold can reache 0.932. Based on your opinions, I tried resnet50 with the same lables, preproccesed datas , only change the pooling way and head . the pooling is avg and the head is mlp.but the cv only can reache 0.86.I am really curious about the resnet whether  it is efficient like what you said. Maybe I still  don't find the reason why the resnet is worse than dino",
+      "content": "<p>My dino model, single fold can reache 0.932. Based on your opinions, I tried resnet50 with the same lables, preproccesed datas , only change the pooling way and head . the pooling is avg and the head is mlp.but the cv only can reache 0.86.I am really curious about the resnet whether  it is efficient like what you said. Maybe I still  don't find the reason why the resnet is worse than dino</p>",
+      "replies": [
+       {
+        "id": 3523680,
+        "postDate": "2026-09-12T13:44:47.630Z",
+        "rawMarkdown": "DINO is not a model, it's a way of pretraining that basically teaches a model to match crops of itself. It works on any architecture. DINO v1 even released a ResNet50. I am guessing you are using DINOv2 which is ViT-only. So comparing DINOv2 to a ResNet changes the backbone, the objective, and the pretraining data all at once.\n\nSeems like you also compared a LB result with a CV result. 0.86 CV could score 0.95 on the public leaderboard - everyone has different labels so I can't tell you what a CV of 0.86 means. Use the same fold split and find the CV between your models to compare them.\n\n\"DINO crop matching pretraining objective creates a useful prior for MRI classication\" is a very different claim from \"ViTs are better at MRI classifciation than standard CNNs\" and using DINOv2 mixes both at the same time. ",
+        "content": "<p>DINO is not a model, it's a way of pretraining that basically teaches a model to match crops of itself. It works on any architecture. DINO v1 even released a ResNet50. I am guessing you are using DINOv2 which is ViT-only. So comparing DINOv2 to a ResNet changes the backbone, the objective, and the pretraining data all at once.</p>\n<p>Seems like you also compared a LB result with a CV result. 0.86 CV could score 0.95 on the public leaderboard - everyone has different labels so I can't tell you what a CV of 0.86 means. Use the same fold split and find the CV between your models to compare them.</p>\n<p>\"DINO crop matching pretraining objective creates a useful prior for MRI classication\" is a very different claim from \"ViTs are better at MRI classifciation than standard CNNs\" and using DINOv2 mixes both at the same time. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523816,
+        "postDate": "2026-09-13T02:46:39.527Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "totalUpvotes": 1
+        },
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3523817,
+        "postDate": "2026-09-13T02:49:07.250Z",
+        "rawMarkdown": "    Hi Tucker, thanks for the detailed reply — this is exactly the kind of clarification I needed.\n\n    You're right on all three points:\n\n        DINO ≠ DINOv2: I was sloppy. I meant DINOv2 (ViT-S/14) specifically, and I now see the comparison against ResNet changes three things at once: backbone (ViT vs CNN), pretraining objective (DINOv2 self-supervised vs ImageNet supervised), and pretraining data (LVD-142M vs ImageNet-1k). Any of those alone could explain the gap.\n\n        LB vs CV: You're completely right, and this is the more embarrassing mistake. The 0.932 is my public LB score, while the 0.86 is a local CV on my own fold — I shouldn't have compared them at all. 0.86 CV could easily correspond to a very different LB number, exactly as you said. I'll only compare models on the same fold split from now on.\n\n        \"DINO prior for MRI\" vs \"ViT > CNN\": Yeah, I was conflating them. Since I've only tried DINOv2-ViT against supervised-ResNet, I can't attribute the gap to either factor.\n\n    My plan to disentangle this:\n\n        Run ResNet50 with DINOv1 self-supervised pretraining (Meta released that checkpoint) on the same fold split, same preprocessing, same labels, evaluated purely on CV.\n\n        Also run a supervised ViT (e.g. vit_small_patch16_224.augreg_in1k from timm) under the identical setup.\n\n    Between those two I should be able to say something meaningful about whether the DINO objective or the ViT backbone is doing the work.\n\n    Quick question if you don't mind: have you personally seen the DINOv1-ResNet50 checkpoint work well on medical imaging? I'm wondering whether the older DINOv1 objective is strong enough to matter here, or whether it's really the DINOv2 improvements (larger curated data, better augmentation recipe) that make the difference.",
+        "content": "<p>Hi Tucker, thanks for the detailed reply — this is exactly the kind of clarification I needed.\n You're right on all three points:\n     DINO ≠ DINOv2: I was sloppy. I meant DINOv2 (ViT-S/14) specifically, and I now see the comparison against ResNet changes three things at once: backbone (ViT vs CNN), pretraining objective (DINOv2 self-supervised vs ImageNet supervised), and pretraining data (LVD-142M vs ImageNet-1k). Any of those alone could explain the gap.\n     LB vs CV: You're completely right, and this is the more embarrassing mistake. The 0.932 is my public LB score, while the 0.86 is a local CV on my own fold — I shouldn't have compared them at all. 0.86 CV could easily correspond to a very different LB number, exactly as you said. I'll only compare models on the same fold split from now on.\n     \"DINO prior for MRI\" vs \"ViT &gt; CNN\": Yeah, I was conflating them. Since I've only tried DINOv2-ViT against supervised-ResNet, I can't attribute the gap to either factor.\n My plan to disentangle this:\n     Run ResNet50 with DINOv1 self-supervised pretraining (Meta released that checkpoint) on the same fold split, same preprocessing, same labels, evaluated purely on CV.\n     Also run a supervised ViT (e.g. vit_small_patch16_224.augreg_in1k from timm) under the identical setup.\n Between those two I should be able to say something meaningful about whether the DINO objective or the ViT backbone is doing the work.\n Quick question if you don't mind: have you personally seen the DINOv1-ResNet50 checkpoint work well on medical imaging? I'm wondering whether the older DINOv1 objective is strong enough to matter here, or whether it's really the DINOv2 improvements (larger curated data, better augmentation recipe) that make the difference.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "zhenglei_001",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/zhenglei001",
+         "tier": "CONTRIBUTOR",
+         "id": 32441981,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 615,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "zhenglei_001",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/zhenglei001",
+          "userName": "zhenglei001",
+          "tier": "CONTRIBUTOR",
+          "id": 32441981,
+          "profileUrl": "/zhenglei001",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 32441981,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3524134,
+        "postDate": "2026-09-14T02:03:17.280Z",
+        "rawMarkdown": "The last medical image project I worked on was before DINO pretraining protocol existed, so I am not an expert. Don't take my word for it - try the experiment you just outlined and change nothing but the init, ImageNet versus DINO (v1, v2, or v3, or all the above if you really want to be thorough).\n\nIf you say \"well maybe DINOv1 isn't good here but DINOv2 and DINOv3 are\", which is a valid question as they are all different pretraining protocols, look for sets of models that have both ImageNet and the newer DINOs. I think ResNet only has DINOv1, but I believe ConvNext has a DINOv3 version as do other backbones. Ask your LLM to search the timm library or HuggingFace for those exact pairs where literally nothing changes but the init. \n\nThat is about as clean and direct a comparison as you can get. Hope that helps.",
+        "content": "<p>The last medical image project I worked on was before DINO pretraining protocol existed, so I am not an expert. Don't take my word for it - try the experiment you just outlined and change nothing but the init, ImageNet versus DINO (v1, v2, or v3, or all the above if you really want to be thorough).</p>\n<p>If you say \"well maybe DINOv1 isn't good here but DINOv2 and DINOv3 are\", which is a valid question as they are all different pretraining protocols, look for sets of models that have both ImageNet and the newer DINOs. I think ResNet only has DINOv1, but I believe ConvNext has a DINOv3 version as do other backbones. Ask your LLM to search the timm library or HuggingFace for those exact pairs where literally nothing changes but the init. </p>\n<p>That is about as clean and direct a comparison as you can get. Hope that helps.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "zhenglei_001",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/zhenglei001",
+       "tier": "CONTRIBUTOR",
+       "id": 32441981,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 615,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "zhenglei_001",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/zhenglei001",
+        "userName": "zhenglei001",
+        "tier": "CONTRIBUTOR",
+        "id": 32441981,
+        "profileUrl": "/zhenglei001",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 32441981,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 16,
+     "canUpvote": true,
+     "totalUpvotes": 17
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "gchauhan",
+       "taindow",
+       "marimo2feet",
+       "enaimaan",
+       "tarunsingh931",
+       "chengtingyi",
+       "nantohock",
+       "ggayoayogg",
+       "kentorio",
+       "shunkuraishi",
+       "radwankhondokar",
+       "bbruijnis",
+       "syrmez",
+       "adaluvu",
+       "cmasch",
+       "salemali7",
+       "dreaddevelopment"
+      ],
+      "userCount": 17
+     },
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "aiwody",
+       "chengtingyi",
+       "cody11null",
+       "ggayoayogg",
+       "nathanaelrk",
+       "adaluvu",
+       "caoyupeng",
+       "dreaddevelopment"
+      ],
+      "userCount": 8
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528367,
+    "postDate": "2026-09-26T00:21:04.043Z",
+    "rawMarkdown": "Read public notebooks and discussions. There are many great ideas shared.",
+    "content": "<p>Read public notebooks and discussions. There are many great ideas shared.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3523046,
+   "postDate": "2026-09-10T12:48:08.313Z",
+   "rawMarkdown": "Hi Kagglers,\n\nMy current best public score is **0.903**. I have tried several backbones and approaches to report-derived supervision, but improvements of even 0.001 are becoming difficult. Reading the [discussion about compact models reaching 0.93–0.94+ at 224/288 resolution](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735304) has made me reconsider where to spend my next experiments.\n\nI would appreciate advice on what to audit or ablate next. I am sharing my setup and some unsuccessful experiments so others can see what I have tried.\n\n## Current setup\n\n- **Labels:** report-derived soft targets for the 4,407 training studies, with masks/weights for missing, uncertain or ambiguous supervision.\n- **Images:** physical slice ordering using image position projected onto the slice normal; 130-mm crops cached at 336×336; six sequence slots; 12 selected slices per available slot, mainly within the central 20–80% of the stack. Selected slices are grouped into three-channel inputs.\n- **Model:** mainly DINOv2-S/14, hierarchical aggregation within and across series, and twelve learned label queries.\n- **Training:** 50-epoch schedules for the DINO members, using BCE-only or BCE plus a pairwise ranking loss.\n- **Validation:** five-fold CV against fixed report-derived validation targets and masks. Promising pilots are extended to the remaining folds. The 58 expert-labeled studies have already informed development, so I treat them as a development panel rather than an independent test set.\n\nThe current composition has **four model recipes, each trained on five folds: 20 checkpoints total**. Fold predictions are rank-averaged within each recipe, and the resulting family outputs are rank-normalized for composition. Each label receives three equal-weight family contributions; I have not tuned those weights.\n\n| Role | Backbone | Model input | Epochs | Loss | Training labels |\n| --- | --- | ---: | ---: | --- | --- |\n| Generalist | DINOv2-S/14 | 336 | 50 | BCE | All 12 |\n| Specialist | DINOv2-S/14 | 336 | 50 | BCE | ACL, MCL, medial/lateral meniscus |\n| Second DINO | DINOv2-S/14 | 336 | 50 | BCE + pairwise ranking | All 12 |\n| CoAtNet | coatnet_rmlp_2_rw_384 | 384 | 25 | BCE | All 12 |\n\nThe CoAtNet input is resized from the same 336-pixel cache. The specialist replaces the generalist on its four columns. After rank normalization:\n\n```text\nFour specialist-owned columns: (specialist + CoAtNet + second DINO) / 3\nOther eight columns:            (generalist + CoAtNet + second DINO) / 3\n```\n\n## Diagnostics on the expert-labeled development panel\n\nThese are OOF predictions on the 58 expert-labeled studies: each study uses its held-out checkpoint from each recipe before composition. They are not predictions from all five checkpoints on every gold study. There are only 9–35 positives per finding, so the intervals are wide.\n\n“Report target AUC” means the report-derived target scored against the expert labels on this panel. The difference from image-model AUC is descriptive; I do not think its sign alone identifies whether supervision or representation is the bottleneck.\n\n| Finding | Positives | Image-model AUC (95% CI) | Report target AUC |\n| --- | ---: | --- | ---: |\n| MCL | 9 | 0.980 [0.932, 1.000] | 0.921 |\n| Baker's | 12 | 0.958 [0.892, 1.000] | 0.902 |\n| ACL | 24 | 0.958 [0.893, 1.000] | 0.944 |\n| Medial OA | 15 | 0.950 [0.889, 0.992] | 0.891 |\n| Medial Meniscus | 26 | 0.947 [0.888, 0.990] | 0.927 |\n| Contusion | 19 | 0.915 [0.826, 0.981] | 0.821 |\n| Effusion | 35 | 0.901 [0.804, 0.971] | 0.696 |\n| Fracture | 18 | 0.875 [0.756, 0.969] | 0.814 |\n| Lateral Meniscus | 23 | 0.858 [0.746, 0.949] | 0.894 |\n| PF OA | 21 | 0.824 [0.696, 0.924] | 0.819 |\n| Lateral OA | 11 | 0.782 [0.575, 0.954] | 0.829 |\n| Synovitis | 27 | 0.693 [0.544, 0.824] | 0.676 |\n\nTwo observations are motivating my next experiments:\n\n- **Synovitis supervision is sparse.** My extractor classifies 3,610 of 4,407 reports (about 82%) as `not_mentioned`. Overall, 3,745 Synovitis targets (about 85%) are masked, including uncertain cases. Separately, my report audit found that 12 of 27 expert-positive studies had no explicit Synovitis statement. This limits what direct extraction can recover from those reports; it does not establish the image model's ceiling.\n- **Lateral findings remain difficult.** The image-model AUC is below the report-target AUC for Lateral OA and Lateral Meniscus. For Lateral OA, 10 of 11 expert-positive studies mention the finding in their reports. This motivates looking at image construction and training, but does not rule out problems with target quality or disease definitions.\n\n## Experiments that did not provide a useful further gain\n\nLonger schedules and the specialist update have helped; by increasing the training epochs from 25 to 50, the AUC score raised from 0.899 to 0.903 on the public LB. The experiments below did not provide a convincing further gain in the recipes I tested.\n\n- **Alternative public labels:** I tried [Steven's public LLM labels](https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels). Better target AUC on gold58 did not translate into a convincing image-model improvement in my tested recipe. I do not regard target-quality differences as predicted model gains.\n- **Explicit 2×2 spatial region tokens:** I appended pooled regional features to the label-query attention. At 50 epochs, the paired composition gain over two folds was **+0.000003**, with 95% CI **[−0.00086,+0.00084]**. This recipe did not help; I have not tested anatomical segmentation supervision.\n- **Earlier DINOv3-B trials:** These were unsuccessful under an older pipeline. However, the configurations differed in preprocessing, supervision and training settings, so I do not regard them as a controlled conclusion about DINOv3 or about freezing versus fine-tuning.\n\n## Questions I would appreciate help with\n\n1. **Study construction:** For strong single-model results, what mattered most: series selection, physical crop, slice coverage or sampling? What would you check first in the images actually reaching the model? In 2.5D inputs, have you compared consecutive source slices with neighbors in a sparsely sampled stack?\n\n2. **Weak supervision:** How do you handle report-silent and uncertain findings? Have masking, weighting or objective changes helped more than further extraction work?\n\n3. **Compact CNNs:** For competitors doing well with ResNet, EfficientNet or ConvNeXt, which broad training choices mattered most? I am running a matched ConvNeXt-Tiny experiment before spending compute on larger inputs.\n\n4. **Validation:** How do you decide whether a small gain against noisy report-derived labels is worth pursuing while limiting dependence on the public leaderboard?\n\nThanks to everyone sharing experiments. The recent threads on [fold count](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/740375) and compact models prompted this post. Even high-level observations about what to audit or test next would be helpful.\n\nIf any of this is useful to you, I'd genuinely enjoy comparing notes — especially with anyone working on MRI preprocessing, weak supervision, or a modelling approach different from mine. \n\n**I'm also looking for teammates!** If anyone would like to join my team — or would have me join yours — please let me know. I'd bring this pipeline and the full ablation history behind it, including the experiments that didn't work. Everything here was trained on my own GPU. \n",
+   "content": "<p>Hi Kagglers,</p>\n<p>My current best public score is <strong>0.903</strong>. I have tried several backbones and approaches to report-derived supervision, but improvements of even 0.001 are becoming difficult. Reading the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735304\" target=\"_blank\">discussion about compact models reaching 0.93–0.94+ at 224/288 resolution</a> has made me reconsider where to spend my next experiments.</p>\n<p>I would appreciate advice on what to audit or ablate next. I am sharing my setup and some unsuccessful experiments so others can see what I have tried.</p>\n<h2>Current setup</h2>\n<ul>\n<li><strong>Labels:</strong> report-derived soft targets for the 4,407 training studies, with masks/weights for missing, uncertain or ambiguous supervision.</li>\n<li><strong>Images:</strong> physical slice ordering using image position projected onto the slice normal; 130-mm crops cached at 336×336; six sequence slots; 12 selected slices per available slot, mainly within the central 20–80% of the stack. Selected slices are grouped into three-channel inputs.</li>\n<li><strong>Model:</strong> mainly DINOv2-S/14, hierarchical aggregation within and across series, and twelve learned label queries.</li>\n<li><strong>Training:</strong> 50-epoch schedules for the DINO members, using BCE-only or BCE plus a pairwise ranking loss.</li>\n<li><strong>Validation:</strong> five-fold CV against fixed report-derived validation targets and masks. Promising pilots are extended to the remaining folds. The 58 expert-labeled studies have already informed development, so I treat them as a development panel rather than an independent test set.</li>\n</ul>\n<p>The current composition has <strong>four model recipes, each trained on five folds: 20 checkpoints total</strong>. Fold predictions are rank-averaged within each recipe, and the resulting family outputs are rank-normalized for composition. Each label receives three equal-weight family contributions; I have not tuned those weights.</p>\n<table>\n<thead>\n<tr>\n<th>Role</th>\n<th>Backbone</th>\n<th>Model input</th>\n<th>Epochs</th>\n<th>Loss</th>\n<th>Training labels</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Generalist</td>\n<td>DINOv2-S/14</td>\n<td>336</td>\n<td>50</td>\n<td>BCE</td>\n<td>All 12</td>\n</tr>\n<tr>\n<td>Specialist</td>\n<td>DINOv2-S/14</td>\n<td>336</td>\n<td>50</td>\n<td>BCE</td>\n<td>ACL, MCL, medial/lateral meniscus</td>\n</tr>\n<tr>\n<td>Second DINO</td>\n<td>DINOv2-S/14</td>\n<td>336</td>\n<td>50</td>\n<td>BCE + pairwise ranking</td>\n<td>All 12</td>\n</tr>\n<tr>\n<td>CoAtNet</td>\n<td>coatnet_rmlp_2_rw_384</td>\n<td>384</td>\n<td>25</td>\n<td>BCE</td>\n<td>All 12</td>\n</tr>\n</tbody>\n</table>\n<p>The CoAtNet input is resized from the same 336-pixel cache. The specialist replaces the generalist on its four columns. After rank normalization:</p>\n<pre><code>Four specialist-owned columns: (specialist + CoAtNet + second DINO) / 3\nOther eight columns:            (generalist + CoAtNet + second DINO) / 3\n</code></pre>\n<h2>Diagnostics on the expert-labeled development panel</h2>\n<p>These are OOF predictions on the 58 expert-labeled studies: each study uses its held-out checkpoint from each recipe before composition. They are not predictions from all five checkpoints on every gold study. There are only 9–35 positives per finding, so the intervals are wide.</p>\n<p>“Report target AUC” means the report-derived target scored against the expert labels on this panel. The difference from image-model AUC is descriptive; I do not think its sign alone identifies whether supervision or representation is the bottleneck.</p>\n<table>\n<thead>\n<tr>\n<th>Finding</th>\n<th>Positives</th>\n<th>Image-model AUC (95% CI)</th>\n<th>Report target AUC</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MCL</td>\n<td>9</td>\n<td>0.980 [0.932, 1.000]</td>\n<td>0.921</td>\n</tr>\n<tr>\n<td>Baker's</td>\n<td>12</td>\n<td>0.958 [0.892, 1.000]</td>\n<td>0.902</td>\n</tr>\n<tr>\n<td>ACL</td>\n<td>24</td>\n<td>0.958 [0.893, 1.000]</td>\n<td>0.944</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td>15</td>\n<td>0.950 [0.889, 0.992]</td>\n<td>0.891</td>\n</tr>\n<tr>\n<td>Medial Meniscus</td>\n<td>26</td>\n<td>0.947 [0.888, 0.990]</td>\n<td>0.927</td>\n</tr>\n<tr>\n<td>Contusion</td>\n<td>19</td>\n<td>0.915 [0.826, 0.981]</td>\n<td>0.821</td>\n</tr>\n<tr>\n<td>Effusion</td>\n<td>35</td>\n<td>0.901 [0.804, 0.971]</td>\n<td>0.696</td>\n</tr>\n<tr>\n<td>Fracture</td>\n<td>18</td>\n<td>0.875 [0.756, 0.969]</td>\n<td>0.814</td>\n</tr>\n<tr>\n<td>Lateral Meniscus</td>\n<td>23</td>\n<td>0.858 [0.746, 0.949]</td>\n<td>0.894</td>\n</tr>\n<tr>\n<td>PF OA</td>\n<td>21</td>\n<td>0.824 [0.696, 0.924]</td>\n<td>0.819</td>\n</tr>\n<tr>\n<td>Lateral OA</td>\n<td>11</td>\n<td>0.782 [0.575, 0.954]</td>\n<td>0.829</td>\n</tr>\n<tr>\n<td>Synovitis</td>\n<td>27</td>\n<td>0.693 [0.544, 0.824]</td>\n<td>0.676</td>\n</tr>\n</tbody>\n</table>\n<p>Two observations are motivating my next experiments:</p>\n<ul>\n<li><strong>Synovitis supervision is sparse.</strong> My extractor classifies 3,610 of 4,407 reports (about 82%) as <code>not_mentioned</code>. Overall, 3,745 Synovitis targets (about 85%) are masked, including uncertain cases. Separately, my report audit found that 12 of 27 expert-positive studies had no explicit Synovitis statement. This limits what direct extraction can recover from those reports; it does not establish the image model's ceiling.</li>\n<li><strong>Lateral findings remain difficult.</strong> The image-model AUC is below the report-target AUC for Lateral OA and Lateral Meniscus. For Lateral OA, 10 of 11 expert-positive studies mention the finding in their reports. This motivates looking at image construction and training, but does not rule out problems with target quality or disease definitions.</li>\n</ul>\n<h2>Experiments that did not provide a useful further gain</h2>\n<p>Longer schedules and the specialist update have helped; by increasing the training epochs from 25 to 50, the AUC score raised from 0.899 to 0.903 on the public LB. The experiments below did not provide a convincing further gain in the recipes I tested.</p>\n<ul>\n<li><strong>Alternative public labels:</strong> I tried <a href=\"https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels\" target=\"_blank\">Steven's public LLM labels</a>. Better target AUC on gold58 did not translate into a convincing image-model improvement in my tested recipe. I do not regard target-quality differences as predicted model gains.</li>\n<li><strong>Explicit 2×2 spatial region tokens:</strong> I appended pooled regional features to the label-query attention. At 50 epochs, the paired composition gain over two folds was <strong>+0.000003</strong>, with 95% CI <strong>[−0.00086,+0.00084]</strong>. This recipe did not help; I have not tested anatomical segmentation supervision.</li>\n<li><strong>Earlier DINOv3-B trials:</strong> These were unsuccessful under an older pipeline. However, the configurations differed in preprocessing, supervision and training settings, so I do not regard them as a controlled conclusion about DINOv3 or about freezing versus fine-tuning.</li>\n</ul>\n<h2>Questions I would appreciate help with</h2>\n<ol>\n<li><p><strong>Study construction:</strong> For strong single-model results, what mattered most: series selection, physical crop, slice coverage or sampling? What would you check first in the images actually reaching the model? In 2.5D inputs, have you compared consecutive source slices with neighbors in a sparsely sampled stack?</p></li>\n<li><p><strong>Weak supervision:</strong> How do you handle report-silent and uncertain findings? Have masking, weighting or objective changes helped more than further extraction work?</p></li>\n<li><p><strong>Compact CNNs:</strong> For competitors doing well with ResNet, EfficientNet or ConvNeXt, which broad training choices mattered most? I am running a matched ConvNeXt-Tiny experiment before spending compute on larger inputs.</p></li>\n<li><p><strong>Validation:</strong> How do you decide whether a small gain against noisy report-derived labels is worth pursuing while limiting dependence on the public leaderboard?</p></li>\n</ol>\n<p>Thanks to everyone sharing experiments. The recent threads on <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/740375\" target=\"_blank\">fold count</a> and compact models prompted this post. Even high-level observations about what to audit or test next would be helpful.</p>\n<p>If any of this is useful to you, I'd genuinely enjoy comparing notes — especially with anyone working on MRI preprocessing, weak supervision, or a modelling approach different from mine. </p>\n<p><strong>I'm also looking for teammates!</strong> If anyone would like to join my team — or would have me join yours — please let me know. I'd bring this pipeline and the full ablation history behind it, including the experiments that didn't work. Everything here was trained on my own GPU. </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Will",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+    "url": "/pareru806",
+    "tier": "CONTRIBUTOR",
+    "id": 21681832,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 15,
+    "canUpvote": true,
+    "totalUpvotes": 15
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1498,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Will",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+     "url": "/pareru806",
+     "userName": "pareru806",
+     "tier": "CONTRIBUTOR",
+     "id": 21681832,
+     "profileUrl": "/pareru806",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 21681832,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3523046,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740610,
+  "name": "Plateau at 0.903: sharing my pipeline and ablations, and looking for advice",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-10T12:48:08.313523500Z",
+  "totalVotes": 15,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740610",
+  "totalMessages": 14,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Will",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+   "url": "/pareru806",
+   "tier": "CONTRIBUTOR",
+   "id": 21681832,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 14,
+  "firstForumMessageId": 3523046,
+  "id": 740610,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740610#3528367",
+  "lastCommentPostDate": "2026-09-26T00:21:04.043333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-10T12:48:08.313523500Z",
+  "title": "Plateau at 0.903: sharing my pipeline and ablations, and looking for advice",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740610",
+  "votes": 15,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Will",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+    "url": "/pareru806",
+    "userName": "pareru806",
+    "tier": "CONTRIBUTOR",
+    "id": 21681832,
+    "profileUrl": "/pareru806",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 21681832,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

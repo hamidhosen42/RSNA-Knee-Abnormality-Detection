@@ -1,0 +1,111 @@
+{
+ "forumTopic": {
+  "authorId": 18707514,
+  "authorThumbnailName": "18707514-kg.jpg?t=2026-08-11-05-53-25",
+  "authorUserDisplayName": "Arif Hussain",
+  "authorUserName": "arifhussain09",
+  "comments": [
+   {
+    "id": 3515010,
+    "postDate": "2026-08-20T15:31:59.133Z",
+    "rawMarkdown": "Sure - that is one of the major purposes of the shared notebooks.  Showing you how to do things.\n\nBut its kind of poor form to make the fork public without giving any credit to the originator.  It's even\n worse to try and hide the fact that you did a copy and paste when it includes no real changes and your making it public just for hope to get some votes.\n\n",
+    "content": "<p>Sure - that is one of the major purposes of the shared notebooks.  Showing you how to do things.</p>\n<p>But its kind of poor form to make the fork public without giving any credit to the originator.  It's even\n worse to try and hide the fact that you did a copy and paste when it includes no real changes and your making it public just for hope to get some votes.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 644,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514941,
+   "postDate": "2026-08-20T13:08:12.283Z",
+   "rawMarkdown": "Can we improve the  models Pipelines  of other compititor by cloning it ...??pls clearify this",
+   "content": "<p>Can we improve the  models Pipelines  of other compititor by cloning it …??pls clearify this</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Arif Hussain",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18707514-kg.jpg?t=2026-08-11-05-53-25",
+    "url": "/arifhussain09",
+    "tier": "CONTRIBUTOR",
+    "id": 18707514,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false
+  },
+  "firstMessageId": 3514941,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736348,
+  "name": "can we clone other compititor model pipline and improve it??",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-20T13:08:12.281962300Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736348",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Arif Hussain",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18707514-kg.jpg?t=2026-08-11-05-53-25",
+   "url": "/arifhussain09",
+   "tier": "CONTRIBUTOR",
+   "id": 18707514,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3514941,
+  "id": 736348,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736348#3515010",
+  "lastCommentPostDate": "2026-08-20T15:31:59.133333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-20T13:08:12.281962300Z",
+  "title": "can we clone other compititor model pipline and improve it??",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736348",
+  "votes": -1
+ }
+}

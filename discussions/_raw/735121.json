@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 36097973,
+  "authorThumbnailName": "36097973-gr.jpg",
+  "authorUserDisplayName": "dk2lone",
+  "authorUserName": "dk2lone",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3512669,
+   "postDate": "2026-08-14T03:57:10.570Z",
+   "rawMarkdown": "Several widely used public notebooks build on the official RadImageNet ResNet-50 checkpoint, which is released under CC-BY-NC-SA-4.0. RSNA announcement material states that winning models are made available under open licenses.\n\nCould the hosts clarify whether a solution whose backbone is CC-BY-NC-SA can satisfy the winners obligations, given that non-commercial and share-alike terms may not be compatible with an open-source release?\n\nThis is adjacent to the KneeCoT thread (#734109), but concerns pretrained weights rather than training data, and the two may be treated differently.\n\nThank you.",
+   "content": "<p>Several widely used public notebooks build on the official RadImageNet ResNet-50 checkpoint, which is released under CC-BY-NC-SA-4.0. RSNA announcement material states that winning models are made available under open licenses.</p>\n<p>Could the hosts clarify whether a solution whose backbone is CC-BY-NC-SA can satisfy the winners obligations, given that non-commercial and share-alike terms may not be compatible with an open-source release?</p>\n<p>This is adjacent to the KneeCoT thread (#734109), but concerns pretrained weights rather than training data, and the two may be treated differently.</p>\n<p>Thank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "dk2lone",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36097973-gr.jpg",
+    "url": "/dk2lone",
+    "tier": "CONTRIBUTOR",
+    "id": 36097973,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 6,
+    "canUpvote": true,
+    "totalUpvotes": 6
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2331,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "dk2lone",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36097973-gr.jpg",
+     "url": "/dk2lone",
+     "userName": "dk2lone",
+     "tier": "CONTRIBUTOR",
+     "id": 36097973,
+     "profileUrl": "/dk2lone",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36097973,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3512669,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735121,
+  "name": "Are CC-BY-NC pretrained weights compatible with the winners open-licence obligation?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-14T03:57:10.569146600Z",
+  "totalVotes": 6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735121",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "dk2lone",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36097973-gr.jpg",
+   "url": "/dk2lone",
+   "tier": "CONTRIBUTOR",
+   "id": 36097973,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3512669,
+  "id": 735121,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "dk2lone",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735121#3512669",
+  "lastCommentPostDate": "2026-08-14T03:57:10.570Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-14T03:57:10.569146600Z",
+  "title": "Are CC-BY-NC pretrained weights compatible with the winners open-licence obligation?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735121",
+  "votes": 6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "dk2lone",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36097973-gr.jpg",
+    "url": "/dk2lone",
+    "userName": "dk2lone",
+    "tier": "CONTRIBUTOR",
+    "id": 36097973,
+    "profileUrl": "/dk2lone",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36097973,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

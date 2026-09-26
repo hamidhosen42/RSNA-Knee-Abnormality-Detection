@@ -1,0 +1,120 @@
+{
+ "forumTopic": {
+  "authorId": 7036076,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Nicolas Pantoja",
+  "authorUserName": "nicolaspantoja",
+  "comments": [
+   {
+    "id": 3511102,
+    "postDate": "2026-08-10T12:05:46.037Z",
+    "rawMarkdown": "Confirmed.  Reports are not available for the hidden test set.",
+    "content": "<p>Confirmed.  Reports are not available for the hidden test set.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510942,
+   "postDate": "2026-08-10T01:24:12.843Z",
+   "rawMarkdown": "hello, \n\nCould you please confirm whether radiology reports will be unavailable for the hidden test set? Since train.csv includes a Report column but test.csv only includes StudyInstanceUID, why is the competition considered multimodal? Is text intended only for training, while inference must rely solely on MRI images and series metadata?",
+   "content": "<p>hello, </p>\n<p>Could you please confirm whether radiology reports will be unavailable for the hidden test set? Since train.csv includes a Report column but test.csv only includes StudyInstanceUID, why is the competition considered multimodal? Is text intended only for training, while inference must rely solely on MRI images and series metadata?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Nicolas Pantoja",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nicolaspantoja",
+    "tier": "CONTRIBUTOR",
+    "id": 7036076,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Nicolas Pantoja",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/nicolaspantoja",
+     "userName": "nicolaspantoja",
+     "tier": "CONTRIBUTOR",
+     "id": 7036076,
+     "profileUrl": "/nicolaspantoja",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 7036076,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510942,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734118,
+  "name": "reports will be unavailable for the hidden test set?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-10T01:24:12.842081300Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734118",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Nicolas Pantoja",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/nicolaspantoja",
+   "tier": "CONTRIBUTOR",
+   "id": 7036076,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3510942,
+  "id": 734118,
+  "lastCommenterType": "HOST",
+  "lastCommenterName": "Po-Hao \"Howard\" Chen",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734118#3511102",
+  "lastCommentPostDate": "2026-08-10T12:05:46.036666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-10T01:24:12.842081300Z",
+  "title": "reports will be unavailable for the hidden test set?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734118",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Nicolas Pantoja",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nicolaspantoja",
+    "userName": "nicolaspantoja",
+    "tier": "CONTRIBUTOR",
+    "id": 7036076,
+    "profileUrl": "/nicolaspantoja",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 7036076,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

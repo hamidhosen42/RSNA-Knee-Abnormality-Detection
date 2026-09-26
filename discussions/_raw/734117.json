@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 14823419,
+  "authorThumbnailName": "14823419-kg.jpg?t=2026-08-04-08-41-55",
+  "authorUserDisplayName": "Luka Duvanov",
+  "authorUserName": "nekkon",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510940,
+   "postDate": "2026-08-10T01:10:24.567Z",
+   "rawMarkdown": "Follow-up to the earlier notebook. This one extracts all twelve findings from all 4,407 reports and writes weak_labels.csv as notebook output, so you can attach it directly.\n\nThe more useful half is the per-finding measurement on the 58 gold studies. Balanced accuracy ranges from 0.82 (Baker's cyst) to 0.56 (medial meniscus), and the ordering is not random — it tracks what kind of thing the finding is:\n\nNamed objects (Baker's cyst, ACL) work: present or absent, one word per language.\nGraded severities (effusion) fail: \"minimal joint fluid\", \"trace effusion\" — a binary keyword has nowhere to put the adjective. Getting effusion right means learning the annotators' severity threshold, which is a modelling problem, not a vocabulary one.\nUnstated inferences (fracture) fail hardest: 0.93 specificity but 0.44 sensitivity, because more than half are described by appearance without the word ever appearing.\nAlso worth knowing: the extractor finds 2.6 findings per study where the annotators recorded 4.1, and returns nothing at all for 23% of studies. Treat those as unlabelled rather than as all-negative.\n\nVocabulary corrections are the most useful thing anyone can leave in the comments, especially for Turkish and Greek.\n\nhttps://www.kaggle.com/code/nekkon/weak-labels-for-all-12-knee-mri-findings",
+   "content": "<p>Follow-up to the earlier notebook. This one extracts all twelve findings from all 4,407 reports and writes weak_labels.csv as notebook output, so you can attach it directly.</p>\n<p>The more useful half is the per-finding measurement on the 58 gold studies. Balanced accuracy ranges from 0.82 (Baker's cyst) to 0.56 (medial meniscus), and the ordering is not random — it tracks what kind of thing the finding is:</p>\n<p>Named objects (Baker's cyst, ACL) work: present or absent, one word per language.\nGraded severities (effusion) fail: \"minimal joint fluid\", \"trace effusion\" — a binary keyword has nowhere to put the adjective. Getting effusion right means learning the annotators' severity threshold, which is a modelling problem, not a vocabulary one.\nUnstated inferences (fracture) fail hardest: 0.93 specificity but 0.44 sensitivity, because more than half are described by appearance without the word ever appearing.\nAlso worth knowing: the extractor finds 2.6 findings per study where the annotators recorded 4.1, and returns nothing at all for 23% of studies. Treat those as unlabelled rather than as all-negative.</p>\n<p>Vocabulary corrections are the most useful thing anyone can leave in the comments, especially for Turkish and Greek.</p>\n<p><a href=\"https://www.kaggle.com/code/nekkon/weak-labels-for-all-12-knee-mri-findings\" target=\"_blank\">https://www.kaggle.com/code/nekkon/weak-labels-for-all-12-knee-mri-findings</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Luka Duvanov",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+    "url": "/nekkon",
+    "tier": "CONTRIBUTOR",
+    "id": 14823419,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4183,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Luka Duvanov",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+     "url": "/nekkon",
+     "userName": "nekkon",
+     "tier": "CONTRIBUTOR",
+     "id": 14823419,
+     "profileUrl": "/nekkon",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 14823419,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510940,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734117,
+  "name": "Weak labels for all 12 findings + how recoverable each one actually is",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-10T01:10:24.568054600Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734117",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Luka Duvanov",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+   "url": "/nekkon",
+   "tier": "CONTRIBUTOR",
+   "id": 14823419,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3510940,
+  "id": 734117,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Luka Duvanov",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734117#3510940",
+  "lastCommentPostDate": "2026-08-10T01:10:24.566666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-10T01:10:24.568054600Z",
+  "title": "Weak labels for all 12 findings + how recoverable each one actually is",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734117",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Luka Duvanov",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+    "url": "/nekkon",
+    "userName": "nekkon",
+    "tier": "CONTRIBUTOR",
+    "id": 14823419,
+    "profileUrl": "/nekkon",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 14823419,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

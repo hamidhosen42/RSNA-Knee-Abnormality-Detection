@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 13415001,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Beyonder",
+  "authorUserName": "hessamgm",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516288,
+   "postDate": "2026-08-23T20:37:37.980Z",
+   "rawMarkdown": "Could the organizers clarify what criterion the annotation team used for the Synovitis label on these non-contrast studies? Specifically, was synovitis scored through effusion-related surrogates (e.g., effusion-synovitis / capsular distension, or Hoffa-synovitis, as in MOAKS-style scoring), or only when explicit synovial thickening/hypertrophy was described or visible? Relatedly, is Effusion graded independently of Synovitis, and was there a size threshold (e.g., physiologic vs. trace vs. small)? Many radiology reports mention effusion without commenting on the synovium at all, so the intended distinction between these two labels would help everyone deriving training labels from the report text. Thanks!",
+   "content": "<p>Could the organizers clarify what criterion the annotation team used for the Synovitis label on these non-contrast studies? Specifically, was synovitis scored through effusion-related surrogates (e.g., effusion-synovitis / capsular distension, or Hoffa-synovitis, as in MOAKS-style scoring), or only when explicit synovial thickening/hypertrophy was described or visible? Relatedly, is Effusion graded independently of Synovitis, and was there a size threshold (e.g., physiologic vs. trace vs. small)? Many radiology reports mention effusion without commenting on the synovium at all, so the intended distinction between these two labels would help everyone deriving training labels from the report text. Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Beyonder",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/hessamgm",
+    "tier": "CONTRIBUTOR",
+    "id": 13415001,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 11,
+    "canUpvote": true,
+    "totalUpvotes": 11
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1981,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Beyonder",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/hessamgm",
+     "userName": "hessamgm",
+     "tier": "CONTRIBUTOR",
+     "id": 13415001,
+     "profileUrl": "/hessamgm",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 13415001,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516288,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737155,
+  "name": " Annotation criteria question: how were Synovitis and Effusion graded?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-23T20:37:37.980752600Z",
+  "totalVotes": 11,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737155",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Beyonder",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/hessamgm",
+   "tier": "CONTRIBUTOR",
+   "id": 13415001,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3516288,
+  "id": 737155,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Beyonder",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737155#3516288",
+  "lastCommentPostDate": "2026-08-23T20:37:37.980Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-23T20:37:37.980752600Z",
+  "title": " Annotation criteria question: how were Synovitis and Effusion graded?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737155",
+  "votes": 11,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Beyonder",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/hessamgm",
+    "userName": "hessamgm",
+    "tier": "CONTRIBUTOR",
+    "id": 13415001,
+    "profileUrl": "/hessamgm",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 13415001,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

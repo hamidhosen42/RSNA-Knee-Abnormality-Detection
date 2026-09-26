@@ -1,0 +1,165 @@
+{
+ "forumTopic": {
+  "authorId": 31948823,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "epicfangs",
+  "authorUserName": "epicfangs",
+  "comments": [
+   {
+    "id": 3509911,
+    "postDate": "2026-08-07T10:22:20.040Z",
+    "rawMarkdown": "1. GPU notebooks are allowed.\n2. RuntimeSeconds is the time from when execution of the submitted notebook begins to the time when execution ends. If your notebook is installing packages, loading models, and reading DICOMs, then all of that is included in RuntimeSeconds.",
+    "content": "<ol>\n<li>GPU notebooks are allowed.</li>\n<li>RuntimeSeconds is the time from when execution of the submitted notebook begins to the time when execution ends. If your notebook is installing packages, loading models, and reading DICOMs, then all of that is included in RuntimeSeconds.</li>\n</ol>",
+    "replies": [
+     {
+      "id": 3510073,
+      "postDate": "2026-08-07T16:56:07.870Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Ryan Holbrook",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2003505-kg.jpg",
+     "url": "/ryanholbrook",
+     "tier": "STAFF",
+     "id": 2003505,
+     "progressionOptOut": false
+    },
+    "authorType": "ADMIN",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "carloscalvinp",
+       "itsasup",
+       "telingc"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ryan Holbrook",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2003505-kg.jpg",
+      "url": "/ryanholbrook",
+      "userName": "ryanholbrook",
+      "tier": "STAFF",
+      "id": 2003505,
+      "profileUrl": "/ryanholbrook",
+      "performanceTier": "STAFF",
+      "userId": 2003505,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509770,
+   "postDate": "2026-08-07T02:36:57.337Z",
+   "rawMarkdown": "Two questions about the Efficiency Prize, both of which change how a submission would be built.\n\n1. Are GPU notebooks eligible for the Efficiency Prize, or is that track CPU-only? The Code Requirements allow either a CPU or a GPU notebook up to 9 hours for the competition generally, but the Efficiency Prize Evaluation section doesn't say whether the second track narrows that.\n\n2. What does RuntimeSeconds actually cover? The Overview describes it as \"the number of seconds it takes for the submission to be evaluated\". Is that the full wall time of the rerun notebook — including package installation, model loading and reading the test DICOMs — or only an inner scoring portion?\n\nBoth matter quite a bit here because the DICOM read and decode path is CPU-bound, so whether a GPU is available at all, and whether setup time is counted, point at fairly different designs.\n\nThanks!",
+   "content": "<p>Two questions about the Efficiency Prize, both of which change how a submission would be built.</p>\n<ol>\n<li><p>Are GPU notebooks eligible for the Efficiency Prize, or is that track CPU-only? The Code Requirements allow either a CPU or a GPU notebook up to 9 hours for the competition generally, but the Efficiency Prize Evaluation section doesn't say whether the second track narrows that.</p></li>\n<li><p>What does RuntimeSeconds actually cover? The Overview describes it as \"the number of seconds it takes for the submission to be evaluated\". Is that the full wall time of the rerun notebook — including package installation, model loading and reading the test DICOMs — or only an inner scoring portion?</p></li>\n</ol>\n<p>Both matter quite a bit here because the DICOM read and decode path is CPU-bound, so whether a GPU is available at all, and whether setup time is counted, point at fairly different designs.</p>\n<p>Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "epicfangs",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/epicfangs",
+    "tier": "CONTRIBUTOR",
+    "id": 31948823,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "epicfangs",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/epicfangs",
+     "userName": "epicfangs",
+     "tier": "CONTRIBUTOR",
+     "id": 31948823,
+     "profileUrl": "/epicfangs",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 31948823,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509770,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733475,
+  "name": "Efficiency Prize: are GPU notebooks eligible, and what does RuntimeSeconds cover?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T02:36:57.336753400Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733475",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "epicfangs",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/epicfangs",
+   "tier": "CONTRIBUTOR",
+   "id": 31948823,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3509770,
+  "id": 733475,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733475#3510073",
+  "lastCommentPostDate": "2026-08-07T16:56:07.870Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T02:36:57.336753400Z",
+  "title": "Efficiency Prize: are GPU notebooks eligible, and what does RuntimeSeconds cover?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733475",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "epicfangs",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/epicfangs",
+    "userName": "epicfangs",
+    "tier": "CONTRIBUTOR",
+    "id": 31948823,
+    "profileUrl": "/epicfangs",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 31948823,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

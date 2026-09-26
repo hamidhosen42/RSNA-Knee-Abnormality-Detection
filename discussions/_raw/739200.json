@@ -1,0 +1,252 @@
+{
+ "forumTopic": {
+  "authorId": 23907552,
+  "authorThumbnailName": "23907552-kg.jpg?t=2025-09-25-14-56-20",
+  "authorUserDisplayName": "CavdadHun - VBECZ",
+  "authorUserName": "viktorbecz",
+  "comments": [
+   {
+    "id": 3521902,
+    "postDate": "2026-09-07T14:40:01.773Z",
+    "rawMarkdown": "Just looked at my file and 0.1300851 is an example of the format used.  Don't think that is your issue - with auc as metric its possible that integers could work but have not tried it :).\n\nHave you tried predicting on more images by use of the train data rather than test.  Not sure how easy that is with your code.  Had some errors on this competition but format not one of them.  In past I have used clip to make sure the values are between 0.0 and 1.0.\n",
+    "content": "<p>Just looked at my file and 0.1300851 is an example of the format used.  Don't think that is your issue - with auc as metric its possible that integers could work but have not tried it :).</p>\n<p>Have you tried predicting on more images by use of the train data rather than test.  Not sure how easy that is with your code.  Had some errors on this competition but format not one of them.  In past I have used clip to make sure the values are between 0.0 and 1.0.</p>",
+    "replies": [
+     {
+      "id": 3522109,
+      "postDate": "2026-09-08T06:24:21.157Z",
+      "rawMarkdown": "it was not an issue since now.. I have an ensemble pipeline, but submission building and saving uses the same method, but still getting scoring error... using previous runs' CSV then ensemble them should not be an issue either, as many others does that..",
+      "content": "<p>it was not an issue since now.. I have an ensemble pipeline, but submission building and saving uses the same method, but still getting scoring error… using previous runs' CSV then ensemble them should not be an issue either, as many others does that..</p>",
+      "parent": {},
+      "author": {
+       "displayName": "CavdadHun - VBECZ",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+       "url": "/viktorbecz",
+       "tier": "EXPERT",
+       "id": 23907552,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1198,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "CavdadHun - VBECZ",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+        "url": "/viktorbecz",
+        "userName": "viktorbecz",
+        "tier": "EXPERT",
+        "id": 23907552,
+        "profileUrl": "/viktorbecz",
+        "performanceTier": "EXPERT",
+        "userId": 23907552,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 639,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3520290,
+    "postDate": "2026-09-03T04:27:16.733Z",
+    "rawMarkdown": "Limit to two digits",
+    "content": "<p>Limit to two digits</p>",
+    "replies": [
+     {
+      "id": 3521744,
+      "postDate": "2026-09-07T03:55:50.990Z",
+      "rawMarkdown": "did but that does not help.. example... any ideas?",
+      "content": "<p>did but that does not help.. example… any ideas?</p>",
+      "attachments": [
+       {
+        "fileType": ".csv",
+        "id": 50543,
+        "name": "submission (6).csv",
+        "totalBytes": 470,
+        "url": "https://storage.googleapis.com/kaggle-forum-message-attachments/3521744/50543/submission (6).csv"
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "CavdadHun - VBECZ",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+       "url": "/viktorbecz",
+       "tier": "EXPERT",
+       "id": 23907552,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1198,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "CavdadHun - VBECZ",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+        "url": "/viktorbecz",
+        "userName": "viktorbecz",
+        "tier": "EXPERT",
+        "id": 23907552,
+        "profileUrl": "/viktorbecz",
+        "performanceTier": "EXPERT",
+        "userId": 23907552,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Gallant Ngetich ",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/gallantngetich",
+     "tier": "CONTRIBUTOR",
+     "id": 36383761,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3520283,
+   "postDate": "2026-09-03T04:17:56.197Z",
+   "rawMarkdown": "Hi All..\nIn the overview it says: \n\"Submission File\nFor each row in the test set, you must predict a confidence score for each of the twelve target labels. The file should contain a header and have the following format:\n\nStudyInstanceUID,ACL,MCL,Medial Meniscus,Lateral Meniscus,Medial OA,Lateral OA,PF OA,Effusion,Synovitis,Baker's,Contusion,Fracture\n<uid_1>,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5\n<uid_2>,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5\n...\"\n\nGenerally it is pretty straightforward, however, looking into the code sections, I see that someone using 1 decimal place, someone uses8 or more decimal places in the prediction confidence score.\n\nSo my question is that: Can be the number of decimal places  used in the submission.csv for a single confidence score can cause a scoring error? Should I limit the scores to two digits or else?",
+   "content": "<p>Hi All..\nIn the overview it says: \n\"Submission File\nFor each row in the test set, you must predict a confidence score for each of the twelve target labels. The file should contain a header and have the following format:</p>\n<p>StudyInstanceUID,ACL,MCL,Medial Meniscus,Lateral Meniscus,Medial OA,Lateral OA,PF OA,Effusion,Synovitis,Baker's,Contusion,Fracture\n,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5\n,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5\n…\"</p>\n<p>Generally it is pretty straightforward, however, looking into the code sections, I see that someone using 1 decimal place, someone uses8 or more decimal places in the prediction confidence score.</p>\n<p>So my question is that: Can be the number of decimal places  used in the submission.csv for a single confidence score can cause a scoring error? Should I limit the scores to two digits or else?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "CavdadHun - VBECZ",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+    "url": "/viktorbecz",
+    "tier": "EXPERT",
+    "id": 23907552,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1198,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "CavdadHun - VBECZ",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+     "url": "/viktorbecz",
+     "userName": "viktorbecz",
+     "tier": "EXPERT",
+     "id": 23907552,
+     "profileUrl": "/viktorbecz",
+     "performanceTier": "EXPERT",
+     "userId": 23907552,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3520283,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 739200,
+  "name": "Scoring error - submission formatting",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-03T04:17:56.198234300Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/739200",
+  "totalMessages": 4,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "CavdadHun - VBECZ",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+   "url": "/viktorbecz",
+   "tier": "EXPERT",
+   "id": 23907552,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3520283,
+  "id": 739200,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "CavdadHun - VBECZ",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739200#3522109",
+  "lastCommentPostDate": "2026-09-08T06:24:21.156666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-03T04:17:56.198234300Z",
+  "title": "Scoring error - submission formatting",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739200",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "CavdadHun - VBECZ",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23907552-kg.jpg?t=2025-09-25-14-56-20",
+    "url": "/viktorbecz",
+    "userName": "viktorbecz",
+    "tier": "EXPERT",
+    "id": 23907552,
+    "profileUrl": "/viktorbecz",
+    "performanceTier": "EXPERT",
+    "userId": 23907552,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

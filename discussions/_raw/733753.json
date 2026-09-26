@@ -1,0 +1,163 @@
+{
+ "forumTopic": {
+  "authorId": 34488450,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Danilo Pedroso",
+  "authorUserName": "danilopedroso",
+  "comments": [
+   {
+    "id": 3510385,
+    "postDate": "2026-08-08T10:47:44.393Z",
+    "rawMarkdown": "Efficiency evaluation, scoring, hardware, and details are on the competition Overview (home) page, in the second half of the page. It also contains a link to the notebook where the efficiency leaderboard is housed.\n\nGlad to see you are interested. Good luck!",
+    "content": "<p>Efficiency evaluation, scoring, hardware, and details are on the competition Overview (home) page, in the second half of the page. It also contains a link to the notebook where the efficiency leaderboard is housed.</p>\n<p>Glad to see you are interested. Good luck!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "danilopedroso"
+      ],
+      "userCount": 1
+     }
+    ]
+   },
+   {
+    "id": 3510396,
+    "postDate": "2026-08-08T11:27:28.850Z",
+    "rawMarkdown": "Thank you for the Clarification request @danilopedroso ",
+    "content": "<p>Thank you for the Clarification request <a href=\"https://www.kaggle.com/danilopedroso\" target=\"_blank\">@danilopedroso</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "YAY",
+      "featuredUserNames": [
+       "danilopedroso"
+      ],
+      "userCount": 1
+     }
+    ]
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510270,
+   "postDate": "2026-08-08T04:39:18.397Z",
+   "rawMarkdown": "Hello RSNA and Kaggle team,\n\nThe competition page lists the Efficiency Track prizes and the additional obligations for winners, but I could not find the exact scoring and eligibility protocol for this track.\n\nCould you please clarify the following points?\n\n1. Is there a separate leaderboard or ranking for the Efficiency Track?\n\n2. Which hardware and environment will be used to measure efficiency?\n\n3. Which factors determine the ranking: total runtime, inference runtime, peak memory, model size, energy usage, or a combined formula?\n\n4. Is there a minimum Private Leaderboard score, rank, or performance threshold required to be eligible?\n\n5. Will efficiency be measured during the hidden-test re-run of the selected notebook?\n\n6. Are ensembles, test-time augmentation, mixed precision, quantization, distillation, and externally pre-trained public models eligible?\n\n7. Does the general 9-hour notebook limit serve only as a submission requirement, or is runtime within that limit also used to rank Efficiency Track solutions?\n\n8. Will participants need to designate a specific final submission for the Efficiency Track separately from the Main Track?\n\nA detailed description of the evaluation protocol would help participants design solutions that properly balance predictive performance and computational efficiency.\n\nThank you.",
+   "content": "<p>Hello RSNA and Kaggle team,</p>\n<p>The competition page lists the Efficiency Track prizes and the additional obligations for winners, but I could not find the exact scoring and eligibility protocol for this track.</p>\n<p>Could you please clarify the following points?</p>\n<ol>\n<li><p>Is there a separate leaderboard or ranking for the Efficiency Track?</p></li>\n<li><p>Which hardware and environment will be used to measure efficiency?</p></li>\n<li><p>Which factors determine the ranking: total runtime, inference runtime, peak memory, model size, energy usage, or a combined formula?</p></li>\n<li><p>Is there a minimum Private Leaderboard score, rank, or performance threshold required to be eligible?</p></li>\n<li><p>Will efficiency be measured during the hidden-test re-run of the selected notebook?</p></li>\n<li><p>Are ensembles, test-time augmentation, mixed precision, quantization, distillation, and externally pre-trained public models eligible?</p></li>\n<li><p>Does the general 9-hour notebook limit serve only as a submission requirement, or is runtime within that limit also used to rank Efficiency Track solutions?</p></li>\n<li><p>Will participants need to designate a specific final submission for the Efficiency Track separately from the Main Track?</p></li>\n</ol>\n<p>A detailed description of the evaluation protocol would help participants design solutions that properly balance predictive performance and computational efficiency.</p>\n<p>Thank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Danilo Pedroso",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/danilopedroso",
+    "tier": "CONTRIBUTOR",
+    "id": 34488450,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3767,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Danilo Pedroso",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/danilopedroso",
+     "userName": "danilopedroso",
+     "tier": "CONTRIBUTOR",
+     "id": 34488450,
+     "profileUrl": "/danilopedroso",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 34488450,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510270,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733753,
+  "name": "Clarification requested: exact ranking criteria for the Efficiency Track",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-08T04:39:18.395628Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733753",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Danilo Pedroso",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/danilopedroso",
+   "tier": "CONTRIBUTOR",
+   "id": 34488450,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3510270,
+  "id": 733753,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Navneet",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733753#3510396",
+  "lastCommentPostDate": "2026-08-08T11:27:28.850Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-08T04:39:18.395628Z",
+  "title": "Clarification requested: exact ranking criteria for the Efficiency Track",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733753",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Danilo Pedroso",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/danilopedroso",
+    "userName": "danilopedroso",
+    "tier": "CONTRIBUTOR",
+    "id": 34488450,
+    "profileUrl": "/danilopedroso",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 34488450,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

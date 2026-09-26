@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 16465390,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "hida1211",
+  "authorUserName": "hida1211",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515649,
+   "postDate": "2026-08-22T08:16:32.920Z",
+   "rawMarkdown": "Hi everyone,\n\nI've recently seen a few posts on X from non-medical participants who bought Knee MRI (4th ed., Japanese) for this competition.\n\nKnee MRI, 4th edition — \nhttps://www.igaku-shoin.co.jp/book/detail/115127\n\nNote: most of the books below are Japanese-only. I've included the original titles so you can search for them.\n\nEarlier editions have been translated into English, Chinese and Korean, and the Japanese 4th edition came out this year.\n\nI'm a radiologist and I own the 3rd edition — I read it during residency, and it's an excellent, very detailed reference. Honestly, I was impressed by how much effort people here are putting in.\n\nThe book I actually reach for in daily reporting is 下肢MRI読影の一手  3120画像からみた定跡(Lower Extremity MRI: 3,120 Images and the Standard Moves). \nhttps://www.nanzando.com/products/detail/22231\n\nIt has plenty of images, but what makes it useful is the format: patient information → images → \"the key finding\" → \"the key to the diagnosis\" → \"comment from the referring physician.\" It walks you compactly through the path from image to written report. Since this competition is multimodal, that findings-to-text flow might be relevant here too.\n\nIn Japan, the journal 画像診断 (Diagnostic Imaging) is widely trusted among radiologists. If you just want an overview of knee MRI, you can buy a single issue as an e-book on isho.jp. Two I'd recommend:\n\nVol. 44, No. 2 (Jan 2024) — Special issue: Musculoskeletal imaging for beginners: a Q&A approach\nVol. 36, No. 7 (May 2016) — Special issue: Knee MRI you should know\n\nFor a more accessible option, there's 病気がみえる (Byouki ga Mieru), affectionately known as \"Byomie.\" It's aimed at medical and nursing students — light on actual MRI images, but extremely rich in illustrations and quite cheap. It's a great way to cover knee anatomy and pathology comprehensively. (There was no orthopedics volume when I was a student, which made studying harder, so I bought it as soon as it was released.)\n\nFrom a quick search, Magnetic resonance imaging of the knee(PMC7571514) is freely available and seems to cover most of the labels used in this competition. I'm planning to read through it myself as a refresher.\n\nIf there are other radiologists, orthopedic surgeons, radiologic technologists, or other healthcare professionals in this competition — please share the resources you use for learning knee MRI in this thread. Resources in languages other than English are especially hard for participants in other countries to find, and given the multilingual-report setting of this competition, they might turn out to be valuable (even though Japanese reports don't appear to be included in the dataset, unfortunately).\n\nKnee anatomy and knee MRI interpretation both go surprisingly deep — I'm still learning myself. Let's dig into it together and have fun with it. Good luck, everyone!",
+   "content": "<p>Hi everyone,</p>\n<p>I've recently seen a few posts on X from non-medical participants who bought Knee MRI (4th ed., Japanese) for this competition.</p>\n<p>Knee MRI, 4th edition — \n<a href=\"https://www.igaku-shoin.co.jp/book/detail/115127\" target=\"_blank\">https://www.igaku-shoin.co.jp/book/detail/115127</a></p>\n<p>Note: most of the books below are Japanese-only. I've included the original titles so you can search for them.</p>\n<p>Earlier editions have been translated into English, Chinese and Korean, and the Japanese 4th edition came out this year.</p>\n<p>I'm a radiologist and I own the 3rd edition — I read it during residency, and it's an excellent, very detailed reference. Honestly, I was impressed by how much effort people here are putting in.</p>\n<p>The book I actually reach for in daily reporting is 下肢MRI読影の一手  3120画像からみた定跡(Lower Extremity MRI: 3,120 Images and the Standard Moves). \n<a href=\"https://www.nanzando.com/products/detail/22231\" target=\"_blank\">https://www.nanzando.com/products/detail/22231</a></p>\n<p>It has plenty of images, but what makes it useful is the format: patient information → images → \"the key finding\" → \"the key to the diagnosis\" → \"comment from the referring physician.\" It walks you compactly through the path from image to written report. Since this competition is multimodal, that findings-to-text flow might be relevant here too.</p>\n<p>In Japan, the journal 画像診断 (Diagnostic Imaging) is widely trusted among radiologists. If you just want an overview of knee MRI, you can buy a single issue as an e-book on isho.jp. Two I'd recommend:</p>\n<p>Vol. 44, No. 2 (Jan 2024) — Special issue: Musculoskeletal imaging for beginners: a Q&amp;A approach\nVol. 36, No. 7 (May 2016) — Special issue: Knee MRI you should know</p>\n<p>For a more accessible option, there's 病気がみえる (Byouki ga Mieru), affectionately known as \"Byomie.\" It's aimed at medical and nursing students — light on actual MRI images, but extremely rich in illustrations and quite cheap. It's a great way to cover knee anatomy and pathology comprehensively. (There was no orthopedics volume when I was a student, which made studying harder, so I bought it as soon as it was released.)</p>\n<p>From a quick search, Magnetic resonance imaging of the knee(PMC7571514) is freely available and seems to cover most of the labels used in this competition. I'm planning to read through it myself as a refresher.</p>\n<p>If there are other radiologists, orthopedic surgeons, radiologic technologists, or other healthcare professionals in this competition — please share the resources you use for learning knee MRI in this thread. Resources in languages other than English are especially hard for participants in other countries to find, and given the multilingual-report setting of this competition, they might turn out to be valuable (even though Japanese reports don't appear to be included in the dataset, unfortunately).</p>\n<p>Knee anatomy and knee MRI interpretation both go surprisingly deep — I'm still learning myself. Let's dig into it together and have fun with it. Good luck, everyone!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "hida1211",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/hida1211",
+    "tier": "CONTRIBUTOR",
+    "id": 16465390,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 7,
+    "canUpvote": true,
+    "totalUpvotes": 8
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1836,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "hida1211",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/hida1211",
+     "userName": "hida1211",
+     "tier": "CONTRIBUTOR",
+     "id": 16465390,
+     "profileUrl": "/hida1211",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 16465390,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3515649,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736720,
+  "name": "Healthcare professionals: what knee MRI resources do you use in your country or language?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-22T08:16:32.918803300Z",
+  "totalVotes": 7,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736720",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "hida1211",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/hida1211",
+   "tier": "CONTRIBUTOR",
+   "id": 16465390,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3515649,
+  "id": 736720,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "hida1211",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736720#3515649",
+  "lastCommentPostDate": "2026-08-22T08:16:32.920Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-22T08:16:32.918803300Z",
+  "title": "Healthcare professionals: what knee MRI resources do you use in your country or language?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736720",
+  "votes": 7,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "hida1211",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/hida1211",
+    "userName": "hida1211",
+    "tier": "CONTRIBUTOR",
+    "id": 16465390,
+    "profileUrl": "/hida1211",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 16465390,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,324 @@
+{
+  "kernel": {
+    "id": 134929534,
+    "title": "0.942 updated",
+    "forkParent": {
+      "kernelId": 131081318,
+      "runId": 350568688,
+      "url": "/code/andreluizpedroso/rsna-knee-tony-rank-ensemble",
+      "title": "rsna-knee-tony-rank-ensemble",
+      "author": {
+        "id": 2264969,
+        "displayName": "André Luiz Pedroso",
+        "userName": "andreluizpedroso",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2264969-kg.png?t=2024-09-26-12-15-52",
+        "profileUrl": "/andreluizpedroso",
+        "progressionOptOut": false
+      },
+      "diff": {
+        "linesInserted": 6,
+        "linesDeleted": 1,
+        "linesUnchanged": 2146
+      },
+      "dateCreated": "2026-09-17T12:36:04.230Z",
+      "workerStatus": "COMPLETE",
+      "languageId": 9,
+      "versionType": "BATCH"
+    },
+    "currentRunId": 350962331,
+    "mostRecentRunId": 350962331,
+    "url": "/code/akhyar2612/0-942-updated",
+    "tags": [
+      {
+        "name": "gpu",
+        "slug": "gpu",
+        "url": "/tags/gpu"
+      }
+    ],
+    "viewCount": 20,
+    "bestPublicScore": 0.941,
+    "author": {
+      "id": 25928769,
+      "displayName": "Akhyar Ahmad",
+      "userName": "akhyar2612",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25928769-kg.jpg?t=2025-03-28-11-33-54",
+      "profileUrl": "/akhyar2612",
+      "performanceTier": "CONTRIBUTOR",
+      "progressionOptOut": false
+    },
+    "updatedTime": "2026-09-19T03:30:40.523333300Z",
+    "selfLink": "/kernels/134929534",
+    "dockerImagePinningType": "DOCKER_IMAGE_PINNING_TYPE_ORIGINAL",
+    "originalDockerImageId": 31430,
+    "slug": "0-942-updated",
+    "hasLinkedSubmission": true,
+    "canToggleVisibility": true
+  },
+  "kernelRun": {
+    "id": 350962331,
+    "kernelId": 134929534,
+    "status": "COMPLETE",
+    "kernelVersionType": "BATCH",
+    "sourceType": "EDITOR_TYPE_NOTEBOOK",
+    "language": "LANGUAGE_PYTHON",
+    "title": "0.942 updated",
+    "dateCreated": "2026-09-19T03:30:39.373Z",
+    "dateEvaluated": "2026-09-19T03:30:40.523Z",
+    "workerUptimeSeconds": 307,
+    "workerIpAddress": "172.21.73.123  ",
+    "workerIpAddressExternal": "35.253.118.48  ",
+    "scriptLanguageId": 9,
+    "scriptLanguageName": "IPython Notebook HTML",
+    "renderedOutputUrl": "https://www.kaggleusercontent.com/kf/350962331/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..vCM7Zf8kBPbZhxNh-CeSQQ.QPqk03AII52DDJWC3YKnsg0OlWNQn1nd4bHWq9ROvLrQdzFF00TIPkS5ijBZ5tt8lZsC3yNzKxqCh2h24rpG8mhf--dKcb5NTrzw8PGH3Wi0puU8TtOPVKME5qlOfhFiKUXR6LIRQpLuAEhIaWtelobuAK7-JlT3eubPsXaGZC5tc448ifjMx-_Pj7tn6qqdSzs30h8GyLLAbUdqJx2tWSIMKN1RejZ0AVPzXGsUdO0xHV_RJ9CdciNVJgIHLo18h6lsj-It0InBPLWBtt7lGmZ6DPXHEq7WlZ7rirXphrYxMA6eGORpoXQ23VfJQDQckeWitMKg9gMpW5yUssPSGq3Qe9KzXWks04F3UwA1wyoT82SsfRYT4N7JsT1gFz-x1G95ct7dDILFu-xaku9QUnyIMlajyghL9eZL0lpH-t_cTNpTQm-erd2aIDd2blbBz5ZgvejwFyQwTIhN52UuOJCMH5lpyWUUv7BgOuNZPOKUYklsPZdDGo72_DcfSNoXVu2X4DpZzosMkWLPmotD67p2e10Ci_UPFy0R8dopo6gd8ySaq5F00wRT6EKT9dQgOevWhF9bBkJ1rS7EVQ4IWB-4l7gc3AXOKRLbh02ig6A.sodIpoWwTUAZNg8eHdADig/__results__.html?sharingControls=true",
+    "isolatorResults": "<results><dockerfile_url>gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</dockerfile_url><docker_image_digest>37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</docker_image_digest><docker_image_id>sha256:c72831376c5485ec652a6f4a771bf091ae0726310e1b9db3db064387e173e941</docker_image_id><docker_image_name>gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</docker_image_name><exit_code>0</exit_code><output_size_bytes>12413</output_size_bytes><run_time_seconds>517.6381841</run_time_seconds><used_all_space>false</used_all_space><timeout_exceeded>false</timeout_exceeded><out_of_memory>false</out_of_memory><invalid_path_errors>false</invalid_path_errors><succeeded>true</succeeded><was_killed>false</was_killed><infra_container_error>false</infra_container_error></results>",
+    "runInfo": {
+      "dockerfileUrl": "https://github.com/Kaggle/docker-python/blob/main/Dockerfile.tmpl",
+      "dockerHubUrl": "https://gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "dockerImageDigest": "37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "dockerImageId": "sha256:c72831376c5485ec652a6f4a771bf091ae0726310e1b9db3db064387e173e941",
+      "dockerImageName": "gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "outputSizeBytes": 12413,
+      "runTimeSeconds": 517.6381841,
+      "succeeded": true
+    },
+    "dockerImageVersionId": 31430,
+    "dataSources": [
+      {
+        "sourceId": 154281,
+        "databundleVersionId": 20872059,
+        "mountSlug": "competitions/rsna-knee-abnormality-detection"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19134209,
+        "datasetId": 11752181,
+        "mountSlug": "raptor-knee-native384dense"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19134210,
+        "datasetId": 11752182,
+        "mountSlug": "raptor-knee-finespacing"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19395706,
+        "datasetId": 11887000,
+        "mountSlug": "rsna-knee-coat-resgated-ep10-top3"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19613118,
+        "datasetId": 11687294,
+        "mountSlug": "datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_MODEL_INSTANCE_VERSION",
+        "sourceId": 4533,
+        "mountSlug": "models/metaresearch/dinov2/pytorch/small/1",
+        "modelInstanceId": 3325,
+        "modelId": 986
+      }
+    ],
+    "useNewKernelsBackend": true,
+    "isGpuEnabled": true,
+    "acceleratorType": "NVIDIA_TESLA_T4",
+    "authorUserId": 25928769,
+    "kernelVersionNumber": 2
+  },
+  "author": {
+    "id": 25928769,
+    "displayName": "Akhyar Ahmad",
+    "userName": "akhyar2612",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25928769-kg.jpg?t=2025-03-28-11-33-54",
+    "profileUrl": "/akhyar2612",
+    "performanceTier": "CONTRIBUTOR",
+    "progressionOptOut": false
+  },
+  "baseUrl": "/code/akhyar2612/0-942-updated",
+  "collaborators": {
+    "owner": {
+      "userId": 25928769,
+      "profileUrl": "/akhyar2612",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25928769-kg.jpg?t=2025-03-28-11-33-54",
+      "name": "Akhyar Ahmad",
+      "slug": "akhyar2612",
+      "userTier": "CONTRIBUTOR",
+      "type": "OWNER",
+      "progressionOptOut": false
+    }
+  },
+  "dataSources": [
+    {
+      "sourceId": 154281,
+      "databundleVersionId": 20872059,
+      "mountSlug": "competitions/rsna-knee-abnormality-detection"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19134209,
+      "datasetId": 11752181,
+      "mountSlug": "raptor-knee-native384dense"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19134210,
+      "datasetId": 11752182,
+      "mountSlug": "raptor-knee-finespacing"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19395706,
+      "datasetId": 11887000,
+      "mountSlug": "rsna-knee-coat-resgated-ep10-top3"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19613118,
+      "datasetId": 11687294,
+      "mountSlug": "datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_MODEL_INSTANCE_VERSION",
+      "sourceId": 4533,
+      "mountSlug": "models/metaresearch/dinov2/pytorch/small/1",
+      "modelInstanceId": 3325,
+      "modelId": 986
+    }
+  ],
+  "renderableDataSources": [
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19134209
+      },
+      "name": "Knee MRI - Native 384 Dense Corpus",
+      "dataSourceUrl": "/datasets/dreaddevelopment/raptor-knee-native384dense",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11752181/19134209/cc223f1e84453683e79c7eadc05020ff/dataset-thumbnail.png?t=2026-08-23-17-23-29"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19134210
+      },
+      "name": "Knee MRI - Fine Spacing Corpus",
+      "dataSourceUrl": "/datasets/dreaddevelopment/raptor-knee-finespacing",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/11752182/19134210/cc223f1e84453683e79c7eadc05020ff/dataset-thumbnail.png?t=2026-08-23-17-20-03"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19395706
+      },
+      "name": "RSNA Knee CoAt Residual Gated Epoch10 Top3",
+      "dataSourceUrl": "/datasets/mattiaangeli/rsna-knee-coat-resgated-ep10-top3",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-18.png-8955132/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19613118
+      },
+      "name": "RSNA Knee DINO RadImageNet Raptor Assets",
+      "dataSourceUrl": "/datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-9.png-22938014/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceId": 154281
+      },
+      "name": "RSNA Knee Abnormality Detection",
+      "dataSourceUrl": "/competitions/rsna-knee-abnormality-detection",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-competitions/kaggle/154281/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1790498127&Signature=X8gWYev47H4AuDYjMS42LWH5aHxJrHTpmSa5fHFkgEa3BGHa3zO6BPwTxnlOOhO5Qtc6fvGXs7nC%2F4rlxabJjKK5z3bs0USJtyNJcSSa4JRReGBUbsORPXQKBQeovhjC%2FZcFUV5rgQlQriMBa35pjYemRDFDogqmzElHLtNoIXD9RCi1Ob1qE5cWelOVol05FL48R7eiTF5TAJQuNBpw95TiKKh1gMqBbkRfBnz1XPoA7JaIqW3bWnn1X1JFptjRE4AThZnP6R6I0yK%2BD4%2FTYVN96bYA0MpKzxo7%2BX%2BuXwFaLnWZpK6NHLUUpQvOGkeHcQ8T9JuJsZedV3EIVmiVOA%3D%3D&t=2026-07-14-02-42-13"
+    },
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_MODEL_INSTANCE_VERSION",
+        "sourceId": 4533,
+        "modelInstanceId": 3325,
+        "modelId": 986
+      },
+      "name": "DINO v2",
+      "dataSourceUrl": "/models/metaresearch/dinov2/PyTorch/small/1",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-organizations/3837/thumbnail-2.png",
+      "variationSlug": "small"
+    }
+  ],
+  "downloadAllFilesUrl": "/code/svzip/350962331",
+  "bestSubmissionScore": {
+    "scoreFormatted": "0.941",
+    "kernelVersionName": "Version 1",
+    "kernelVersionNumber": 1,
+    "kernelSessionUrl": "/code/akhyar2612/0-942-updated?scriptVersionId=350961812"
+  },
+  "menuLinks": [
+    {
+      "href": "/code/akhyar2612/0-942-updated/code",
+      "tab": "code",
+      "text": "Code",
+      "title": "Code"
+    },
+    {
+      "href": "/code/akhyar2612/0-942-updated/notebook",
+      "tab": "notebook",
+      "text": "Notebook",
+      "title": "Notebook"
+    },
+    {
+      "href": "/code/akhyar2612/0-942-updated/execution",
+      "showOnMobile": false,
+      "tab": "execution",
+      "text": "Execution Info",
+      "title": "Execution Info"
+    },
+    {
+      "href": "/code/akhyar2612/0-942-updated/log",
+      "showOnMobile": false,
+      "tab": "log",
+      "text": "Log",
+      "title": "Log"
+    },
+    {
+      "count": 0,
+      "href": "/code/akhyar2612/0-942-updated/data",
+      "tab": "data",
+      "text": "Input",
+      "title": "Input"
+    },
+    {
+      "href": "/code/akhyar2612/0-942-updated/output",
+      "showOnMobile": false,
+      "tab": "output",
+      "text": "Output",
+      "title": "Output"
+    },
+    {
+      "count": 0,
+      "href": "/code/akhyar2612/0-942-updated/comments",
+      "showZeroCountExplicitly": true,
+      "tab": "comments",
+      "text": "Comments",
+      "title": "Comments"
+    }
+  ],
+  "voteButton": {
+    "medalVotes": 0,
+    "canUpvote": true,
+    "currentUserInfo": {
+      "id": 2374911,
+      "displayName": "scratchpad",
+      "userName": "scratchpad",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "profileUrl": "/scratchpad",
+      "performanceTier": "CONTRIBUTOR"
+    },
+    "showVoters": true,
+    "alwaysShowVoters": true,
+    "kernelId": 134929534
+  },
+  "showSharingControls": true,
+  "moderationStatus": "PRIVATED_MODERATION_STATUS_NO_ABUSE",
+  "description": "",
+  "totalVersionCount": 2,
+  "currentVersionNumber": 2
+}

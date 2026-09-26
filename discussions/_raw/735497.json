@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 36022153,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Demir Poyraz Elcin",
+  "authorUserName": "demirpoyrazelcin",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513383,
+   "postDate": "2026-08-16T09:52:30.163Z",
+   "rawMarkdown": "Rule 2.6(a) requires external data to be \"publicly available and equally accessible to use by all Participants at no cost.\" Several widely used public knee-MRI datasets (e.g., Stanford MRNet, OAI) are free of charge but require registration or a data-use agreement before download.\n\nCould the hosts confirm whether such registration-gated datasets satisfy 2.6(a) for this competition — and if so, whether pre-training on them is permitted?\n\nAt least two earlier participant questions on this point appear to be unanswered. An official ruling would help everyone plan fairly. Thank you!",
+   "content": "<p>Rule 2.6(a) requires external data to be \"publicly available and equally accessible to use by all Participants at no cost.\" Several widely used public knee-MRI datasets (e.g., Stanford MRNet, OAI) are free of charge but require registration or a data-use agreement before download.</p>\n<p>Could the hosts confirm whether such registration-gated datasets satisfy 2.6(a) for this competition — and if so, whether pre-training on them is permitted?</p>\n<p>At least two earlier participant questions on this point appear to be unanswered. An official ruling would help everyone plan fairly. Thank you!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Demir Poyraz Elcin",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/demirpoyrazelcin",
+    "tier": "CONTRIBUTOR",
+    "id": 36022153,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 5,
+    "canUpvote": true,
+    "totalUpvotes": 5
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2398,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Toprak Ergül",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/kiddingundead",
+     "userName": "kiddingundead",
+     "tier": "CONTRIBUTOR",
+     "id": 2494372,
+     "profileUrl": "/kiddingundead",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 2494372,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513383,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735497,
+  "name": "Request for official clarification: Rule 2.6(a) and registration-gated public datasets (MRNet, OAI, etc.)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-16T09:52:30.161992500Z",
+  "totalVotes": 5,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735497",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Demir Poyraz Elcin",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/demirpoyrazelcin",
+   "tier": "CONTRIBUTOR",
+   "id": 36022153,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3513383,
+  "id": 735497,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Demir Poyraz Elcin",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735497#3513383",
+  "lastCommentPostDate": "2026-08-16T09:52:30.163333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-16T09:52:30.161992500Z",
+  "title": "Request for official clarification: Rule 2.6(a) and registration-gated public datasets (MRNet, OAI, etc.)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735497",
+  "votes": 5,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Toprak Ergül",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/kiddingundead",
+    "userName": "kiddingundead",
+    "tier": "CONTRIBUTOR",
+    "id": 2494372,
+    "profileUrl": "/kiddingundead",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 2494372,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

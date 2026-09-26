@@ -1,0 +1,653 @@
+{
+ "forumTopic": {
+  "authorId": 8955132,
+  "authorThumbnailName": "8955132-kg.jpg?t=2024-11-21-10-33-23",
+  "authorUserDisplayName": "Mattia Angeli",
+  "authorUserName": "mattiaangeli",
+  "comments": [
+   {
+    "id": 3513519,
+    "postDate": "2026-08-16T20:24:43.263Z",
+    "rawMarkdown": "Yeah I have been commenting on this for some time, the problem has only gotten worse because now those who farmed discussions just moved to other tiers. https://www.kaggle.com/competitions/birdclef-2026/discussion/704413 https://www.kaggle.com/discussions/product-feedback/701499",
+    "content": "<p>Yeah I have been commenting on this for some time, the problem has only gotten worse because now those who farmed discussions just moved to other tiers. <a href=\"https://www.kaggle.com/competitions/birdclef-2026/discussion/704413\" target=\"_blank\">https://www.kaggle.com/competitions/birdclef-2026/discussion/704413</a> <a href=\"https://www.kaggle.com/discussions/product-feedback/701499\" target=\"_blank\">https://www.kaggle.com/discussions/product-feedback/701499</a></p>",
+    "replies": [
+     {
+      "id": 3513685,
+      "postDate": "2026-08-17T10:25:20.177Z",
+      "rawMarkdown": "I was in BirdCLEF 2026 too. The last few weeks there went completely crazy - a hundred times worse than what we are seeing here now.",
+      "content": "<p>I was in BirdCLEF 2026 too. The last few weeks there went completely crazy - a hundred times worse than what we are seeing here now.</p>",
+      "replies": [
+       {
+        "id": 3513821,
+        "postDate": "2026-08-17T17:44:34.250Z",
+        "rawMarkdown": "Yeah the santa competition was the worst I have ever seen. People were updating public notebooks in the last few hours (because you cant post a new one) and kaggle did nothing about it from what I can tell. Some people farmed to notebooks M / GM notebooks teir with that competition alone 😂",
+        "content": "<p>Yeah the santa competition was the worst I have ever seen. People were updating public notebooks in the last few hours (because you cant post a new one) and kaggle did nothing about it from what I can tell. Some people farmed to notebooks M / GM notebooks teir with that competition alone 😂</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "tuckerarrants",
+           "zy1343930734",
+           "komilparmar"
+          ],
+          "userCount": 3
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3513828,
+        "postDate": "2026-08-17T18:07:53.453Z",
+        "rawMarkdown": "Kaggle was better managed in the years gone by. Things have changed for the worse since the past year, including competitions. \nHope things improve from here - we can hope for better management and moderation from our end @cody11null ",
+        "content": "<p>Kaggle was better managed in the years gone by. Things have changed for the worse since the past year, including competitions. \nHope things improve from here - we can hope for better management and moderation from our end <a href=\"https://www.kaggle.com/cody11null\" target=\"_blank\">@cody11null</a> </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ravi Ramakrishnan",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+         "url": "/ravi20076",
+         "tier": "GRANDMASTER",
+         "id": 8273630,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 292,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ravi Ramakrishnan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+          "url": "/ravi20076",
+          "userName": "ravi20076",
+          "tier": "GRANDMASTER",
+          "id": 8273630,
+          "profileUrl": "/ravi20076",
+          "performanceTier": "GRANDMASTER",
+          "userId": 8273630,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Mattia Angeli",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+       "url": "/mattiaangeli",
+       "tier": "MASTER",
+       "id": 8955132,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 102,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Mattia Angeli",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+        "url": "/mattiaangeli",
+        "userName": "mattiaangeli",
+        "tier": "MASTER",
+        "id": 8955132,
+        "profileUrl": "/mattiaangeli",
+        "performanceTier": "MASTER",
+        "userId": 8955132,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Cody_Null",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+     "url": "/cody11null",
+     "tier": "GRANDMASTER",
+     "id": 13672938,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cody_Null",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+      "url": "/cody11null",
+      "userName": "cody11null",
+      "tier": "GRANDMASTER",
+      "id": 13672938,
+      "profileUrl": "/cody11null",
+      "performanceTier": "GRANDMASTER",
+      "userId": 13672938,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513109,
+    "postDate": "2026-08-15T09:04:34.083Z",
+    "rawMarkdown": "I have reported a lot of notebook duplicates/near-duplicates in the past and all of them got deleted afterwards. Maybe Kaggle will take action soon, idk :V",
+    "content": "<p>I have reported a lot of notebook duplicates/near-duplicates in the past and all of them got deleted afterwards. Maybe Kaggle will take action soon, idk :V</p>",
+    "replies": [
+     {
+      "id": 3513111,
+      "postDate": "2026-08-15T09:18:18.583Z",
+      "rawMarkdown": "@mahoganybuttstrings I think Kaggle's new fork = vote policy is easily hackable and such cases illustrate how people hack the voting rules for vested interests. I think the rules for non-competition tiers should be altered (and perhaps medals and tiers too) to prevent such duplications. ",
+      "content": "<p><a href=\"https://www.kaggle.com/mahoganybuttstrings\" target=\"_blank\">@mahoganybuttstrings</a> I think Kaggle's new fork = vote policy is easily hackable and such cases illustrate how people hack the voting rules for vested interests. I think the rules for non-competition tiers should be altered (and perhaps medals and tiers too) to prevent such duplications. </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Ravi Ramakrishnan",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+       "url": "/ravi20076",
+       "tier": "GRANDMASTER",
+       "id": 8273630,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 292,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Ravi Ramakrishnan",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+        "url": "/ravi20076",
+        "userName": "ravi20076",
+        "tier": "GRANDMASTER",
+        "id": 8273630,
+        "profileUrl": "/ravi20076",
+        "performanceTier": "GRANDMASTER",
+        "userId": 8273630,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3513126,
+      "postDate": "2026-08-15T10:08:13Z",
+      "rawMarkdown": "Yes, the notebooks usually do get removed eventually. The frustrating part is that the same users seem able to repeat the behavior over and over without any meaningful consequence.",
+      "content": "<p>Yes, the notebooks usually do get removed eventually. The frustrating part is that the same users seem able to repeat the behavior over and over without any meaningful consequence.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Mattia Angeli",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+       "url": "/mattiaangeli",
+       "tier": "MASTER",
+       "id": 8955132,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 102,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Mattia Angeli",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+        "url": "/mattiaangeli",
+        "userName": "mattiaangeli",
+        "tier": "MASTER",
+        "id": 8955132,
+        "profileUrl": "/mattiaangeli",
+        "performanceTier": "MASTER",
+        "userId": 8955132,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Mahog",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mahoganybuttstrings",
+     "tier": "EXPERT",
+     "id": 23060793,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mahog",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mahoganybuttstrings",
+      "userName": "mahoganybuttstrings",
+      "tier": "EXPERT",
+      "id": 23060793,
+      "profileUrl": "/mahoganybuttstrings",
+      "performanceTier": "EXPERT",
+      "userId": 23060793,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513170,
+    "postDate": "2026-08-15T13:16:37.960Z",
+    "rawMarkdown": "Been here lots of years - I would guess that almost every rule change or competition structure change has been aimed at Kaggle trying to stop the dog's rear end folks from cheating or hacking the system.\n\nThey have made a ton of changes over my 9 years of activity on the site.  Like most rules in life the changes almost always hurt the good users and only slow down the dogs.  But they do seem to keep working at it.\n\nKeep reporting every single time.  Who knows, maybe they can use some AI to identify the repeat offenders.",
+    "content": "<p>Been here lots of years - I would guess that almost every rule change or competition structure change has been aimed at Kaggle trying to stop the dog's rear end folks from cheating or hacking the system.</p>\n<p>They have made a ton of changes over my 9 years of activity on the site.  Like most rules in life the changes almost always hurt the good users and only slow down the dogs.  But they do seem to keep working at it.</p>\n<p>Keep reporting every single time.  Who knows, maybe they can use some AI to identify the repeat offenders.</p>",
+    "replies": [
+     {
+      "id": 3513369,
+      "postDate": "2026-08-16T08:34:54.837Z",
+      "rawMarkdown": "While offline I asked Codex to scan the public notebooks with similar scores.\n\nThe result was an ordered description: notebooks that are byte-identical, notebooks that added moot cells to hide their theft (like the now silver-medal https://www.kaggle.com/code/salemali7/rsna-knee-90-reports-llm-30-epochs), and those that made substantial changes.\n\nIt took minutes. The AI might be already here.\n",
+      "content": "<p>While offline I asked Codex to scan the public notebooks with similar scores.</p>\n<p>The result was an ordered description: notebooks that are byte-identical, notebooks that added moot cells to hide their theft (like the now silver-medal <a href=\"https://www.kaggle.com/code/salemali7/rsna-knee-90-reports-llm-30-epochs)\" target=\"_blank\">https://www.kaggle.com/code/salemali7/rsna-knee-90-reports-llm-30-epochs)</a>, and those that made substantial changes.</p>\n<p>It took minutes. The AI might be already here.</p>",
+      "replies": [
+       {
+        "id": 3513472,
+        "postDate": "2026-08-16T15:59:36.477Z",
+        "rawMarkdown": "For sure Kaggle has had that capability for a long time.\n\nSome of the copy and paste notebooks have always seemed to just be noobs who don't understand what they are really doing.  Another part are the folks who know and abuse.  \n\nFor sure, if you don't want your work stolen - than don't share it.\n\nIMO - the change to a fork is a vote was not a good idea - seems to me that made abuse easier by those who are attempting to get some glory with no work as part of a team effort.\n",
+        "content": "<p>For sure Kaggle has had that capability for a long time.</p>\n<p>Some of the copy and paste notebooks have always seemed to just be noobs who don't understand what they are really doing.  Another part are the folks who know and abuse.  </p>\n<p>For sure, if you don't want your work stolen - than don't share it.</p>\n<p>IMO - the change to a fork is a vote was not a good idea - seems to me that made abuse easier by those who are attempting to get some glory with no work as part of a team effort.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Mattia Angeli",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+       "url": "/mattiaangeli",
+       "tier": "MASTER",
+       "id": 8955132,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 102,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Mattia Angeli",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+        "url": "/mattiaangeli",
+        "userName": "mattiaangeli",
+        "tier": "MASTER",
+        "id": 8955132,
+        "profileUrl": "/mattiaangeli",
+        "performanceTier": "MASTER",
+        "userId": 8955132,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513128,
+    "postDate": "2026-08-15T10:19:43.017Z",
+    "rawMarkdown": "Byte-identical copies are the easiest cases to prove. The real elephant in the room is people changing one line or a single parameter—usually ensemble weights—and republishing the notebook as original work. Forking and\n  improving someone’s work is fine when it is substantial and clearly credited; disguising a trivial edit as a new solution is the real problem.\n",
+    "content": "<p>Byte-identical copies are the easiest cases to prove. The real elephant in the room is people changing one line or a single parameter—usually ensemble weights—and republishing the notebook as original work. Forking and\n  improving someone’s work is fine when it is substantial and clearly credited; disguising a trivial edit as a new solution is the real problem.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Mattia Angeli",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+     "url": "/mattiaangeli",
+     "tier": "MASTER",
+     "id": 8955132,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 102,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "danny514"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Mattia Angeli",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+      "url": "/mattiaangeli",
+      "userName": "mattiaangeli",
+      "tier": "MASTER",
+      "id": 8955132,
+      "profileUrl": "/mattiaangeli",
+      "performanceTier": "MASTER",
+      "userId": 8955132,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3527263,
+    "postDate": "2026-09-23T10:05:48.120Z",
+    "rawMarkdown": "Bro love your work.\nBtw had some topic to discuss if you are intersted then please let me know .",
+    "content": "<p>Bro love your work.\nBtw had some topic to discuss if you are intersted then please let me know .</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 279,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3527109,
+    "postDate": "2026-09-23T00:41:36.297Z",
+    "rawMarkdown": "Has anyone here dealt with a situation where another public Kaggle notebook was essentially an exact copy of their work, rather than just using a similar approach?\n\nI’m curious about what Kaggle actually considers sufficient evidence when reporting something like this. For example, if the executable cells are identical, the outputs/files are identical, and the main difference is that the original author’s attribution and comments have been removed, is that something Kaggle can verify from the notebook history or metadata?\n\nAlso, what would be the best evidence to preserve before reporting? Would screenshots, the original notebook’s publication/update timestamps, downloaded notebook files, revision history, or hashes of the generated outputs be useful?\n\nOne thing I’m also wondering about is whether Kaggle has any mechanism for notifying the original author about the outcome of a report. If the copied notebook remains public while the report is being reviewed, is there anything else the original author should do besides submitting the report?\n\nAnd for future notebooks, is there a recommended way to include attribution or licensing information so that it’s clear what can and cannot be reused?",
+    "content": "<p>Has anyone here dealt with a situation where another public Kaggle notebook was essentially an exact copy of their work, rather than just using a similar approach?</p>\n<p>I’m curious about what Kaggle actually considers sufficient evidence when reporting something like this. For example, if the executable cells are identical, the outputs/files are identical, and the main difference is that the original author’s attribution and comments have been removed, is that something Kaggle can verify from the notebook history or metadata?</p>\n<p>Also, what would be the best evidence to preserve before reporting? Would screenshots, the original notebook’s publication/update timestamps, downloaded notebook files, revision history, or hashes of the generated outputs be useful?</p>\n<p>One thing I’m also wondering about is whether Kaggle has any mechanism for notifying the original author about the outcome of a report. If the copied notebook remains public while the report is being reviewed, is there anything else the original author should do besides submitting the report?</p>\n<p>And for future notebooks, is there a recommended way to include attribution or licensing information so that it’s clear what can and cannot be reused?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Danny Daniel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/danny514",
+     "tier": "CONTRIBUTOR",
+     "id": 36861990,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3513876,
+    "postDate": "2026-08-17T20:49:42.710Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513094,
+   "postDate": "2026-08-15T08:01:05.983Z",
+   "rawMarkdown": "This has happened twice now: I publish an update, go offline, and a few hours later some accounts like @nikitagajbhiye30 republishes it under another title with the credits removed and comments disabled.\n\nCopied notebook:\n\nhttps://www.kaggle.com/code/nikitagajbhiye30/rsna-knee-00\n\nMy original:\n\nhttps://www.kaggle.com/code/mattiaangeli/bend-the-knee-to-dinov3-ensembled\n\n\"RSNA Knee 00\" v5 is not merely similar to my notebook. All 25 non-empty executable cells are byte-for-byte identical. The only meaningful change was deleting my attribution and community-credit markdown. All three generated CSV files are byte-identical too.\n\nThis is not a new solution or an independent fork. It is my exact published notebook with the credits stripped.\n\nI already reported both incidents. \n",
+   "content": "<p>This has happened twice now: I publish an update, go offline, and a few hours later some accounts like <a href=\"https://www.kaggle.com/nikitagajbhiye30\" target=\"_blank\">@nikitagajbhiye30</a> republishes it under another title with the credits removed and comments disabled.</p>\n<p>Copied notebook:</p>\n<p><a href=\"https://www.kaggle.com/code/nikitagajbhiye30/rsna-knee-00\" target=\"_blank\">https://www.kaggle.com/code/nikitagajbhiye30/rsna-knee-00</a></p>\n<p>My original:</p>\n<p><a href=\"https://www.kaggle.com/code/mattiaangeli/bend-the-knee-to-dinov3-ensembled\" target=\"_blank\">https://www.kaggle.com/code/mattiaangeli/bend-the-knee-to-dinov3-ensembled</a></p>\n<p>\"RSNA Knee 00\" v5 is not merely similar to my notebook. All 25 non-empty executable cells are byte-for-byte identical. The only meaningful change was deleting my attribution and community-credit markdown. All three generated CSV files are byte-identical too.</p>\n<p>This is not a new solution or an independent fork. It is my exact published notebook with the credits stripped.</p>\n<p>I already reported both incidents. </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Mattia Angeli",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+    "url": "/mattiaangeli",
+    "tier": "MASTER",
+    "id": 8955132,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 15,
+    "canUpvote": true,
+    "totalUpvotes": 16
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 102,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Mattia Angeli",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+     "url": "/mattiaangeli",
+     "userName": "mattiaangeli",
+     "tier": "MASTER",
+     "id": 8955132,
+     "profileUrl": "/mattiaangeli",
+     "performanceTier": "MASTER",
+     "userId": 8955132,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513094,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735348,
+  "name": "Does Kaggle Do Anything About Byte-for-Byte Public Notebook Theft?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-15T08:01:05.982135100Z",
+  "totalVotes": 15,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735348",
+  "totalMessages": 14,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Mattia Angeli",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+   "url": "/mattiaangeli",
+   "tier": "MASTER",
+   "id": 8955132,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 14,
+  "firstForumMessageId": 3513094,
+  "id": 735348,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735348#3527263",
+  "lastCommentPostDate": "2026-09-23T10:05:48.120Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-15T08:01:05.982135100Z",
+  "title": "Does Kaggle Do Anything About Byte-for-Byte Public Notebook Theft?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735348",
+  "votes": 15,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Mattia Angeli",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+    "url": "/mattiaangeli",
+    "userName": "mattiaangeli",
+    "tier": "MASTER",
+    "id": 8955132,
+    "profileUrl": "/mattiaangeli",
+    "performanceTier": "MASTER",
+    "userId": 8955132,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

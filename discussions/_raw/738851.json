@@ -1,0 +1,268 @@
+{
+ "forumTopic": {
+  "authorId": 31277407,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Ahmed Ali",
+  "authorUserName": "alia22",
+  "comments": [
+   {
+    "id": 3519642,
+    "postDate": "2026-09-02T01:21:17.720Z",
+    "rawMarkdown": "You identified the problem.  You need to build a model that uses the 12 categories as labels based on examination of only the dicom images.\n\nTo get the training data you have to convert the reports to labels between 0.0 and 1.0 for each of the 12 classes.  Not an easy task.  The best set of labels probably wins the competition.\n\nYou want to learn how to make labels - dig in.   \n\nYou only want to learn the prediction model than a number of folks have shared a set of pretty decent labels.   \n\nLearning to make labels is a skill set you need in the real world.   Not one that LLM's seem to have mastered yet.   ",
+    "content": "<p>You identified the problem.  You need to build a model that uses the 12 categories as labels based on examination of only the dicom images.</p>\n<p>To get the training data you have to convert the reports to labels between 0.0 and 1.0 for each of the 12 classes.  Not an easy task.  The best set of labels probably wins the competition.</p>\n<p>You want to learn how to make labels - dig in.   </p>\n<p>You only want to learn the prediction model than a number of folks have shared a set of pretty decent labels.   </p>\n<p>Learning to make labels is a skill set you need in the real world.   Not one that LLM's seem to have mastered yet.   </p>",
+    "replies": [
+     {
+      "id": 3519648,
+      "postDate": "2026-09-02T01:29:13.503Z",
+      "rawMarkdown": "Thanks for the clarification, I didn't realize that most of the training data isn't labeled. So if I understand correctly, I use the labeled training data to train a model on the reports to create labels for the rest of the data, then use those labels to train a different model on the images? Interesting.",
+      "content": "<p>Thanks for the clarification, I didn't realize that most of the training data isn't labeled. So if I understand correctly, I use the labeled training data to train a model on the reports to create labels for the rest of the data, then use those labels to train a different model on the images? Interesting.</p>",
+      "replies": [
+       {
+        "id": 3519650,
+        "postDate": "2026-09-02T01:33:54.337Z",
+        "rawMarkdown": "You got it!\n\nYes - only 58 of the images are labeled out of the 4700.   \n\nI been here for almost 9 years - have not participated in every competition but I think this is the first were we were not handed the labels.  Back in the day when I was working for real I had to do a lot of label creation - sadly I sucked at it.   You can find the shared labels searching in the discussion posts.",
+        "content": "<p>You got it!</p>\n<p>Yes - only 58 of the images are labeled out of the 4700.   </p>\n<p>I been here for almost 9 years - have not participated in every competition but I think this is the first were we were not handed the labels.  Back in the day when I was working for real I had to do a lot of label creation - sadly I sucked at it.   You can find the shared labels searching in the discussion posts.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Ahmed Ali",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/alia22",
+       "tier": "CONTRIBUTOR",
+       "id": 31277407,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Ahmed Ali",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/alia22",
+        "userName": "alia22",
+        "tier": "CONTRIBUTOR",
+        "id": 31277407,
+        "profileUrl": "/alia22",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 31277407,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3519728,
+      "postDate": "2026-09-02T05:22:08.457Z",
+      "rawMarkdown": "@pcjimmmy nicely shared. I started to read works on Pseudo Labelling which is probably the single best investment anyone can make in this competition. And I was stunned by how many papers are there just regarding pseudoabelling. I also suggested the paperswithcode site to add that as a separate category and **they added it**. 🤯\n\nThe problem though which one will realize while applying those methods is that all of those papers are regarding pseudo labelling on unlabeled data. That isn't the situation here. We already have near perfect labels for those samples achieved using llms. And if you replace them or even update them via pseudoabelling, the model will perform worse then simply training on LLM labels.\n\nSo we have to learn how to update and when to update those pseudo labels. That's the key. 🔑",
+      "content": "<p><a href=\"https://www.kaggle.com/pcjimmmy\" target=\"_blank\">@pcjimmmy</a> nicely shared. I started to read works on Pseudo Labelling which is probably the single best investment anyone can make in this competition. And I was stunned by how many papers are there just regarding pseudoabelling. I also suggested the paperswithcode site to add that as a separate category and <strong>they added it</strong>. 🤯</p>\n<p>The problem though which one will realize while applying those methods is that all of those papers are regarding pseudo labelling on unlabeled data. That isn't the situation here. We already have near perfect labels for those samples achieved using llms. And if you replace them or even update them via pseudoabelling, the model will perform worse then simply training on LLM labels.</p>\n<p>So we have to learn how to update and when to update those pseudo labels. That's the key. 🔑</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Komil Parmar",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+       "url": "/komilparmar",
+       "tier": "EXPERT",
+       "id": 11351811,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 59,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "pcjimmmy"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Komil Parmar",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+        "url": "/komilparmar",
+        "userName": "komilparmar",
+        "tier": "EXPERT",
+        "id": 11351811,
+        "profileUrl": "/komilparmar",
+        "performanceTier": "EXPERT",
+        "userId": 11351811,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3519565,
+   "postDate": "2026-09-01T23:16:29.960Z",
+   "rawMarkdown": "Hi all,\nI noticed that the test data provided does not include the \"Report\" field, and the dataset description says \"The Report field will not be provided at the testing stage.\" How exactly are we supposed to use the reports if they aren't in the test data? Wouldn't that mean that any model that is trained on the reports would not be usable on the test data? Is there something I'm missing here, or are the reports completely useless for the competition?",
+   "content": "<p>Hi all,\nI noticed that the test data provided does not include the \"Report\" field, and the dataset description says \"The Report field will not be provided at the testing stage.\" How exactly are we supposed to use the reports if they aren't in the test data? Wouldn't that mean that any model that is trained on the reports would not be usable on the test data? Is there something I'm missing here, or are the reports completely useless for the competition?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Ahmed Ali",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/alia22",
+    "tier": "CONTRIBUTOR",
+    "id": 31277407,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Ahmed Ali",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/alia22",
+     "userName": "alia22",
+     "tier": "CONTRIBUTOR",
+     "id": 31277407,
+     "profileUrl": "/alia22",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 31277407,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3519565,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738851,
+  "name": "No Reports for Test Data?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-01T23:16:29.959955800Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738851",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Ahmed Ali",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/alia22",
+   "tier": "CONTRIBUTOR",
+   "id": 31277407,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3519565,
+  "id": 738851,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Komil Parmar",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738851#3519728",
+  "lastCommentPostDate": "2026-09-02T05:22:08.456666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-01T23:16:29.959955800Z",
+  "title": "No Reports for Test Data?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738851",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Ahmed Ali",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/alia22",
+    "userName": "alia22",
+    "tier": "CONTRIBUTOR",
+    "id": 31277407,
+    "profileUrl": "/alia22",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 31277407,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

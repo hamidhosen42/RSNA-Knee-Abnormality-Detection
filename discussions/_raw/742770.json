@@ -1,0 +1,157 @@
+{
+ "forumTopic": {
+  "authorId": 812296,
+  "authorThumbnailName": "812296-gr.jpg",
+  "authorUserDisplayName": "RamónLópez",
+  "authorUserName": "lopeznomar",
+  "comments": [
+   {
+    "id": 3528360,
+    "postDate": "2026-09-25T23:57:17.307Z",
+    "rawMarkdown": "Great idea. In today's era of humans collaborating with AI, it is important to use visualization tools to understand what the AI are doing. Then we can review the visualization and make suggestions to the AI.",
+    "content": "<p>Great idea. In today's era of humans collaborating with AI, it is important to use visualization tools to understand what the AI are doing. Then we can review the visualization and make suggestions to the AI.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 93,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3527262,
+   "postDate": "2026-09-23T10:04:30.563Z",
+   "rawMarkdown": "Hi everyone,\n\nQuick intro to what I'm working on, and a genuine ask for your input.\n\nThe problem this competition puts in front of us A si![]ngle knee MRI can carry a dozen different findings at once — ACL and MCL injuries, meniscus tears, osteoarthritis, effusion, synovitis, Baker's cyst, contusion, fracture. We're scoring on macro-averaged AUC across all of them, plus a separate efficiency track. That combination is unusual: a model can look strong on the aggregate number and still be quietly weak on two or three findings that happen to be rare. And the efficiency track means the fastest path to a better score isn't always a bigger model.\n\nThe leaderboard tells you where you are. It never tells you why.\n\nWhat I'm building In the last Kaggle competition I entered, I built a free open-source analytics tool for replays. It ended up being used by people from 51 countries in the final weeks, and the biggest lesson was simple: competitors don't want another score, they want to understand their own model.\n\nSo I'm building the same idea for this one — a free, no-sign-up, open-source companion where you upload your predictions and immediately see:\n\nPer-finding performance, so you know which of the 12 targets is dragging your macro AUC down\nYour hardest cases: where the model is confidently wrong\nThreshold and calibration behaviour per target\nEfficiency trade-offs: accuracy gained versus runtime spent\nRun-to-run comparison, so you can tell a real improvement from noise\nEverything runs in your browser. Nothing gets uploaded or stored.\n\nThe ask It isn't finished, and that's on purpose. I'd rather build what you actually need than guess.\n\nWhat would genuinely help you in the next few weeks? A view, a metric, a plot, a sanity check you keep doing by hand? Drop it in the comments and I'll work through the list publicly — I shipped one new feature per day in the last competition and plan to do the same here.\n\nWhere to reach me\n\nRight here in the comments — I'll work through every suggestion publicly.\nOn X: @lopeznomar — I post daily build updates there.\nBy email: lopeznomar@gmail.com\nThe app itself is in the works — as soon as it's live, this thread gets the link, and the best ideas from this conversation become the first features.                                                                                                             \nGood luck to everyone. 🦵\n\nIndependent open-source project. Not affiliated with, endorsed by, or sponsored by Kaggle or RSNA.\n\n(https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F812296%2F1d1a6e3cd2b4892a9bb835c0ec7e326d%2Frsna-knee-ops-lab-intro-clean.png?generation=1790157292685080&alt=media)",
+   "content": "<p>Hi everyone,</p>\n<p>Quick intro to what I'm working on, and a genuine ask for your input.</p>\n<p>The problem this competition puts in front of us A si![]ngle knee MRI can carry a dozen different findings at once — ACL and MCL injuries, meniscus tears, osteoarthritis, effusion, synovitis, Baker's cyst, contusion, fracture. We're scoring on macro-averaged AUC across all of them, plus a separate efficiency track. That combination is unusual: a model can look strong on the aggregate number and still be quietly weak on two or three findings that happen to be rare. And the efficiency track means the fastest path to a better score isn't always a bigger model.</p>\n<p>The leaderboard tells you where you are. It never tells you why.</p>\n<p>What I'm building In the last Kaggle competition I entered, I built a free open-source analytics tool for replays. It ended up being used by people from 51 countries in the final weeks, and the biggest lesson was simple: competitors don't want another score, they want to understand their own model.</p>\n<p>So I'm building the same idea for this one — a free, no-sign-up, open-source companion where you upload your predictions and immediately see:</p>\n<p>Per-finding performance, so you know which of the 12 targets is dragging your macro AUC down\nYour hardest cases: where the model is confidently wrong\nThreshold and calibration behaviour per target\nEfficiency trade-offs: accuracy gained versus runtime spent\nRun-to-run comparison, so you can tell a real improvement from noise\nEverything runs in your browser. Nothing gets uploaded or stored.</p>\n<p>The ask It isn't finished, and that's on purpose. I'd rather build what you actually need than guess.</p>\n<p>What would genuinely help you in the next few weeks? A view, a metric, a plot, a sanity check you keep doing by hand? Drop it in the comments and I'll work through the list publicly — I shipped one new feature per day in the last competition and plan to do the same here.</p>\n<p>Where to reach me</p>\n<p>Right here in the comments — I'll work through every suggestion publicly.\nOn X: <a href=\"/lopeznomar\" target=\"_blank\">@lopeznomar</a> — I post daily build updates there.\nBy email: <a href=\"mailto:lopeznomar@gmail.com\">lopeznomar@gmail.com</a>\nThe app itself is in the works — as soon as it's live, this thread gets the link, and the best ideas from this conversation become the first features.<br>\nGood luck to everyone. 🦵</p>\n<p>Independent open-source project. Not affiliated with, endorsed by, or sponsored by Kaggle or RSNA.</p>\n<p>(<a href=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F812296%2F1d1a6e3cd2b4892a9bb835c0ec7e326d%2Frsna-knee-ops-lab-intro-clean.png?generation=1790157292685080&amp;alt=media\" target=\"_blank\">https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F812296%2F1d1a6e3cd2b4892a9bb835c0ec7e326d%2Frsna-knee-ops-lab-intro-clean.png?generation=1790157292685080&amp;alt=media</a>)</p>",
+   "attachments": [
+    {
+     "fileType": ".png",
+     "id": 51457,
+     "name": "rsna-knee-ops-lab-intro-clean.png",
+     "totalBytes": 125330,
+     "url": "https://storage.googleapis.com/kaggle-forum-message-attachments/3527262/51457/rsna-knee-ops-lab-intro-clean.png"
+    }
+   ],
+   "parent": {},
+   "author": {
+    "displayName": "RamónLópez",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/812296-gr.jpg",
+    "url": "/lopeznomar",
+    "tier": "CONTRIBUTOR",
+    "id": 812296,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -3,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "YAY",
+     "featuredUserNames": [
+      "nozarashi0423"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "RamónLópez",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/812296-gr.jpg",
+     "url": "/lopeznomar",
+     "userName": "lopeznomar",
+     "tier": "CONTRIBUTOR",
+     "id": 812296,
+     "profileUrl": "/lopeznomar",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 812296,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3527262,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742770,
+  "name": "Title: Building an open analytics companion for this competition — what would you want in it?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-23T10:04:30.562523900Z",
+  "totalVotes": -3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742770",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "RamónLópez",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/812296-gr.jpg",
+   "url": "/lopeznomar",
+   "tier": "CONTRIBUTOR",
+   "id": 812296,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3527262,
+  "id": 742770,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742770#3528360",
+  "lastCommentPostDate": "2026-09-25T23:57:17.306666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-23T10:04:30.562523900Z",
+  "title": "Title: Building an open analytics companion for this competition — what would you want in it?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742770",
+  "votes": -3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "RamónLópez",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/812296-gr.jpg",
+    "url": "/lopeznomar",
+    "userName": "lopeznomar",
+    "tier": "CONTRIBUTOR",
+    "id": 812296,
+    "profileUrl": "/lopeznomar",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 812296,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

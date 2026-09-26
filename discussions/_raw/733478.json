@@ -1,0 +1,183 @@
+{
+ "forumTopic": {
+  "authorId": 22203457,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+  "authorUserName": "nguynvnquangtrng",
+  "comments": [
+   {
+    "id": 3509790,
+    "postDate": "2026-08-07T03:35:42.077Z",
+    "rawMarkdown": "For sure - EfficientNet models very common over last couple of years in kaggle competitions.  ",
+    "content": "<p>For sure - EfficientNet models very common over last couple of years in kaggle competitions.  </p>",
+    "replies": [
+     {
+      "id": 3509797,
+      "postDate": "2026-08-07T04:16:10.560Z",
+      "rawMarkdown": "thank you, sir",
+      "content": "<p>thank you, sir</p>",
+      "parent": {},
+      "author": {
+       "displayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/nguynvnquangtrng",
+       "tier": "CONTRIBUTOR",
+       "id": 22203457,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2647,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/nguynvnquangtrng",
+        "userName": "nguynvnquangtrng",
+        "tier": "CONTRIBUTOR",
+        "id": 22203457,
+        "profileUrl": "/nguynvnquangtrng",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 22203457,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509776,
+   "postDate": "2026-08-07T03:09:31.263Z",
+   "rawMarkdown": "Can i use model EfficientNet in competition?",
+   "content": "<p>Can i use model EfficientNet in competition?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nguynvnquangtrng",
+    "tier": "CONTRIBUTOR",
+    "id": 22203457,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2647,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/nguynvnquangtrng",
+     "userName": "nguynvnquangtrng",
+     "tier": "CONTRIBUTOR",
+     "id": 22203457,
+     "profileUrl": "/nguynvnquangtrng",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 22203457,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509776,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733478,
+  "name": "Use model in competiton",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T03:09:31.264908700Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733478",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/nguynvnquangtrng",
+   "tier": "CONTRIBUTOR",
+   "id": 22203457,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3509776,
+  "id": 733478,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "NGUYỄN VĂN QUANG TRƯỜNG",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733478#3509797",
+  "lastCommentPostDate": "2026-08-07T04:16:10.560Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T03:09:31.264908700Z",
+  "title": "Use model in competiton",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733478",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "NGUYỄN VĂN QUANG TRƯỜNG",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nguynvnquangtrng",
+    "userName": "nguynvnquangtrng",
+    "tier": "CONTRIBUTOR",
+    "id": 22203457,
+    "profileUrl": "/nguynvnquangtrng",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 22203457,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,321 @@
+{
+ "forumTopic": {
+  "authorId": 25787455,
+  "authorThumbnailName": "25787455-kg.png?t=2026-09-26-11-09-50",
+  "authorUserDisplayName": "OzanM.",
+  "authorUserName": "analyticaobscura",
+  "comments": [
+   {
+    "id": 3512022,
+    "postDate": "2026-08-12T14:13:11.260Z",
+    "rawMarkdown": "I suggest you don't download it locally unless you plan to train locally. What I did was to have a script aggregate all non-pixel data (csv) in a Kaggle notebook and download it as a zip file. it is quite small I think, just a couple of GB max. AND for pixel data, download just a couple of studies to help you understand what's going on.",
+    "content": "<p>I suggest you don't download it locally unless you plan to train locally. What I did was to have a script aggregate all non-pixel data (csv) in a Kaggle notebook and download it as a zip file. it is quite small I think, just a couple of GB max. AND for pixel data, download just a couple of studies to help you understand what's going on.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3044,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3512007,
+    "postDate": "2026-08-12T13:38:33.313Z",
+    "rawMarkdown": "you can save a decent bit by transforming full DICOM data to uint8 compressed .npz files, there is a community dataset that's compressed like that https://www.kaggle.com/datasets/barun2104/rsna-knee-mri-processed-3d-volumes",
+    "content": "<p>you can save a decent bit by transforming full DICOM data to uint8 compressed .npz files, there is a community dataset that's compressed like that <a href=\"https://www.kaggle.com/datasets/barun2104/rsna-knee-mri-processed-3d-volumes\" target=\"_blank\">https://www.kaggle.com/datasets/barun2104/rsna-knee-mri-processed-3d-volumes</a></p>",
+    "replies": [
+     {
+      "id": 3512008,
+      "postDate": "2026-08-12T13:42:46.407Z",
+      "rawMarkdown": "Thank you. I did it that way too, but the size was a bit larger. I'll download this.",
+      "content": "<p>Thank you. I did it that way too, but the size was a bit larger. I'll download this.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "OzanM.",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+       "url": "/analyticaobscura",
+       "tier": "GRANDMASTER",
+       "id": 25787455,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 219,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OzanM.",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+        "url": "/analyticaobscura",
+        "userName": "analyticaobscura",
+        "tier": "GRANDMASTER",
+        "id": 25787455,
+        "profileUrl": "/analyticaobscura",
+        "performanceTier": "GRANDMASTER",
+        "userId": 25787455,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "morningduck",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/morningduck",
+     "tier": "CONTRIBUTOR",
+     "id": 11035921,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2264,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "buihuynhgiahuy",
+       "analyticaobscura",
+       "sergiobear"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "morningduck",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/morningduck",
+      "userName": "morningduck",
+      "tier": "CONTRIBUTOR",
+      "id": 11035921,
+      "profileUrl": "/morningduck",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 11035921,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3512000,
+    "postDate": "2026-08-12T13:12:16.763Z",
+    "rawMarkdown": "mount it in read-only mode. ",
+    "content": "<p>mount it in read-only mode. </p>",
+    "replies": [
+     {
+      "id": 3512009,
+      "postDate": "2026-08-12T13:42:52.137Z",
+      "rawMarkdown": "Thank you.\n",
+      "content": "<p>Thank you.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "OzanM.",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+       "url": "/analyticaobscura",
+       "tier": "GRANDMASTER",
+       "id": 25787455,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 219,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OzanM.",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+        "url": "/analyticaobscura",
+        "userName": "analyticaobscura",
+        "tier": "GRANDMASTER",
+        "id": 25787455,
+        "profileUrl": "/analyticaobscura",
+        "performanceTier": "GRANDMASTER",
+        "userId": 25787455,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Giovanny Rodríguez",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/giovannyrodrguez",
+     "tier": "MASTER",
+     "id": 23653385,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1880,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "analyticaobscura"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Giovanny Rodríguez",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/giovannyrodrguez",
+      "userName": "giovannyrodrguez",
+      "tier": "MASTER",
+      "id": 23653385,
+      "profileUrl": "/giovannyrodrguez",
+      "performanceTier": "MASTER",
+      "userId": 23653385,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3511936,
+   "postDate": "2026-08-12T11:00:19.583Z",
+   "rawMarkdown": "First of all, hello everyone. The competition data is quite large. Which method did those who downloaded it locally use? I have a few questions about this. Good luck to everyone!",
+   "content": "<p>First of all, hello everyone. The competition data is quite large. Which method did those who downloaded it locally use? I have a few questions about this. Good luck to everyone!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "OzanM.",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+    "url": "/analyticaobscura",
+    "tier": "GRANDMASTER",
+    "id": 25787455,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 219,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "OzanM.",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+     "url": "/analyticaobscura",
+     "userName": "analyticaobscura",
+     "tier": "GRANDMASTER",
+     "id": 25787455,
+     "profileUrl": "/analyticaobscura",
+     "performanceTier": "GRANDMASTER",
+     "userId": 25787455,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3511936,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734671,
+  "name": "Data download",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-12T11:00:19.583503100Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734671",
+  "totalMessages": 5,
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "OzanM.",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+   "url": "/analyticaobscura",
+   "tier": "GRANDMASTER",
+   "id": 25787455,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3511936,
+  "id": 734671,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734671#3512022",
+  "lastCommentPostDate": "2026-08-12T14:13:11.260Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-12T11:00:19.583503100Z",
+  "title": "Data download",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734671",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "OzanM.",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25787455-kg.png?t=2026-09-26-11-09-50",
+    "url": "/analyticaobscura",
+    "userName": "analyticaobscura",
+    "tier": "GRANDMASTER",
+    "id": 25787455,
+    "profileUrl": "/analyticaobscura",
+    "performanceTier": "GRANDMASTER",
+    "userId": 25787455,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

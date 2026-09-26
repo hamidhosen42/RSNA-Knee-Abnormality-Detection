@@ -1,0 +1,143 @@
+{
+ "forumTopic": {
+  "authorId": 32650047,
+  "authorThumbnailName": "32650047-kg.jpg?t=2026-07-20-10-20-52",
+  "authorUserDisplayName": "Mohammed Reda Medjadj",
+  "authorUserName": "mohammedredamedjadj",
+  "comments": [
+   {
+    "id": 3517860,
+    "postDate": "2026-08-28T13:49:35.403Z",
+    "rawMarkdown": "We welcome participation of competitors between 13-18 years of age after the following forms are submitted.\n\nForm #1: Parent/Guardian Consent for Minor's Use of Kaggle.com Submitted one time by a parent or guardian to authorize a minor child (between ages 13 and 16) to create and use a Kaggle account. https://www.kaggle.com/guardian-consent-minor-use Form #2: Parent/Guardian Consent for Minor's Participation in a Kaggle Competition Submitted on a per-competition basis for the minor to enter and participate in a specific, eligible Kaggle competition. https://www.kaggle.com/consent-minors-process\n\nThank you and good luck!",
+    "content": "<p>We welcome participation of competitors between 13-18 years of age after the following forms are submitted.</p>\n<p>Form #1: Parent/Guardian Consent for Minor's Use of Kaggle.com Submitted one time by a parent or guardian to authorize a minor child (between ages 13 and 16) to create and use a Kaggle account. <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">https://www.kaggle.com/guardian-consent-minor-use</a> Form #2: Parent/Guardian Consent for Minor's Participation in a Kaggle Competition Submitted on a per-competition basis for the minor to enter and participate in a specific, eligible Kaggle competition. <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">https://www.kaggle.com/consent-minors-process</a></p>\n<p>Thank you and good luck!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Michelle Riopel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/michelleriopel",
+     "tier": "CONTRIBUTOR",
+     "id": 7441439,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "mohammedredamedjadj"
+      ],
+      "userCount": 1
+     }
+    ]
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516662,
+   "postDate": "2026-08-24T22:39:37.403Z",
+   "rawMarkdown": "Hi organizers,\n\nI'm 17 (French resident; age of majority in France is 18). I'd like to enter this competition, but the Kaggle Foundational Rules (Sec. 3.1.a) require being 18 unless the Competition Sponsor agrees to an exception with parental/guardian consent.\n\nMy parent/guardian is willing to provide consent and sign any required documentation. Is RSNA able to accommodate a minor-participation exception for this competition, and if so, what's the process and a realistic timeline given the Entry Deadline of October 15, 2026?\n\nThanks in advance.",
+   "content": "<p>Hi organizers,</p>\n<p>I'm 17 (French resident; age of majority in France is 18). I'd like to enter this competition, but the Kaggle Foundational Rules (Sec. 3.1.a) require being 18 unless the Competition Sponsor agrees to an exception with parental/guardian consent.</p>\n<p>My parent/guardian is willing to provide consent and sign any required documentation. Is RSNA able to accommodate a minor-participation exception for this competition, and if so, what's the process and a realistic timeline given the Entry Deadline of October 15, 2026?</p>\n<p>Thanks in advance.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Mohammed Reda Medjadj",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32650047-kg.jpg?t=2026-07-20-10-20-52",
+    "url": "/mohammedredamedjadj",
+    "tier": "CONTRIBUTOR",
+    "id": 32650047,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 674,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "outlier4933"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Mohammed Reda Medjadj",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32650047-kg.jpg?t=2026-07-20-10-20-52",
+     "url": "/mohammedredamedjadj",
+     "userName": "mohammedredamedjadj",
+     "tier": "CONTRIBUTOR",
+     "id": 32650047,
+     "profileUrl": "/mohammedredamedjadj",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 32650047,
+     "progressionOptOut": false
+    },
+    "intro": "Hi everyone! I'm Mohammed, an independent builder. I write software driven by two real interests: motorsport strategy analysis and bio-computational research, which is what brought me to RSNA."
+   }
+  },
+  "firstMessageId": 3516662,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737350,
+  "name": "Minor participation — is a Sponsor-approved exception possible?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-24T22:39:37.403631400Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737350",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Mohammed Reda Medjadj",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32650047-kg.jpg?t=2026-07-20-10-20-52",
+   "url": "/mohammedredamedjadj",
+   "tier": "CONTRIBUTOR",
+   "id": 32650047,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3516662,
+  "id": 737350,
+  "lastCommenterType": "HOST",
+  "lastCommenterName": "Michelle Riopel",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737350#3517860",
+  "lastCommentPostDate": "2026-08-28T13:49:35.403333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-24T22:39:37.403631400Z",
+  "title": "Minor participation — is a Sponsor-approved exception possible?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737350",
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Mohammed Reda Medjadj",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32650047-kg.jpg?t=2026-07-20-10-20-52",
+    "url": "/mohammedredamedjadj",
+    "userName": "mohammedredamedjadj",
+    "tier": "CONTRIBUTOR",
+    "id": 32650047,
+    "profileUrl": "/mohammedredamedjadj",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 32650047,
+    "progressionOptOut": false
+   },
+   "intro": "Hi everyone! I'm Mohammed, an independent builder. I write software driven by two real interests: motorsport strategy analysis and bio-computational research, which is what brought me to RSNA."
+  }
+ }
+}

@@ -1,0 +1,318 @@
+{
+ "forumTopic": {
+  "authorId": 215751,
+  "authorThumbnailName": "215751-gr.jpg",
+  "authorUserDisplayName": "SeaGoat",
+  "authorUserName": "vbandaru",
+  "comments": [
+   {
+    "id": 3518210,
+    "postDate": "2026-08-30T01:43:21.660Z",
+    "rawMarkdown": "Generally my submits will run between 2-4 hours so yeah, you're fine",
+    "content": "<p>Generally my submits will run between 2-4 hours so yeah, you're fine</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 145,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dread Development",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+      "url": "/dreaddevelopment",
+      "userName": "dreaddevelopment",
+      "tier": "EXPERT",
+      "id": 35987882,
+      "profileUrl": "/dreaddevelopment",
+      "performanceTier": "EXPERT",
+      "userId": 35987882,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3518206,
+    "postDate": "2026-08-29T23:50:41.040Z",
+    "rawMarkdown": "Yes it can go for a few hours",
+    "content": "<p>Yes it can go for a few hours</p>",
+    "replies": [
+     {
+      "id": 3522124,
+      "postDate": "2026-09-08T07:39:33.380Z",
+      "rawMarkdown": "the hell why??\n",
+      "content": "<p>the hell why??</p>",
+      "replies": [
+       {
+        "id": 3522455,
+        "postDate": "2026-09-08T22:54:59.207Z",
+        "rawMarkdown": "Depends on how you've got your models running - I have been experimenting & have taken it from 9hours - 5hours - 4hours - 2hours - 1hour - 29 minutes - 26 minutes - 23 minutes",
+        "content": "<p>Depends on how you've got your models running - I have been experimenting &amp; have taken it from 9hours - 5hours - 4hours - 2hours - 1hour - 29 minutes - 26 minutes - 23 minutes</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 145,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3522976,
+        "postDate": "2026-09-10T06:31:09.780Z",
+        "rawMarkdown": "what kinda experiment and how did you reduce it, i don't think quantization will help but if you know why it takes too long and how did you make it to 23min, lmk!\n",
+        "content": "<p>what kinda experiment and how did you reduce it, i don't think quantization will help but if you know why it takes too long and how did you make it to 23min, lmk!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "im.vetri",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31750069-kg.jpg?t=2026-03-04-18-30-16",
+         "url": "/imvetri0",
+         "tier": "CONTRIBUTOR",
+         "id": 31750069,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 481,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Krishna",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18952517-kg.jpg?t=2026-05-08-21-12-38",
+          "url": "/kaori02",
+          "userName": "kaori02",
+          "tier": "CONTRIBUTOR",
+          "id": 18952517,
+          "profileUrl": "/kaori02",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 18952517,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "im.vetri",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31750069-kg.jpg?t=2026-03-04-18-30-16",
+       "url": "/imvetri0",
+       "tier": "CONTRIBUTOR",
+       "id": 31750069,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 481,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Krishna",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18952517-kg.jpg?t=2026-05-08-21-12-38",
+        "url": "/kaori02",
+        "userName": "kaori02",
+        "tier": "CONTRIBUTOR",
+        "id": 18952517,
+        "profileUrl": "/kaori02",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 18952517,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Joseph Elliott",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17742458-kg.jpg?t=2023-11-14-14-53-41",
+     "url": "/jwelliott",
+     "tier": "CONTRIBUTOR",
+     "id": 17742458,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1502,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "vbandaru"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Joseph Elliott",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17742458-kg.jpg?t=2023-11-14-14-53-41",
+      "url": "/jwelliott",
+      "userName": "jwelliott",
+      "tier": "CONTRIBUTOR",
+      "id": 17742458,
+      "profileUrl": "/jwelliott",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 17742458,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3518189,
+   "postDate": "2026-08-29T20:46:36.663Z",
+   "rawMarkdown": "My Submission is running for more than 2 hours. Is that fine ?\n\n",
+   "content": "<p>My Submission is running for more than 2 hours. Is that fine ?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "SeaGoat",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+    "url": "/vbandaru",
+    "tier": "CONTRIBUTOR",
+    "id": 215751,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 5
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1517,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "dreaddevelopment"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "SeaGoat",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+     "url": "/vbandaru",
+     "userName": "vbandaru",
+     "tier": "CONTRIBUTOR",
+     "id": 215751,
+     "profileUrl": "/vbandaru",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 215751,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3518189,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738129,
+  "name": "Submission running for more than 2 hours",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-29T20:46:36.661679800Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738129",
+  "totalMessages": 5,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "SeaGoat",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+   "url": "/vbandaru",
+   "tier": "CONTRIBUTOR",
+   "id": 215751,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3518189,
+  "id": 738129,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "im.vetri",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738129#3522976",
+  "lastCommentPostDate": "2026-09-10T06:31:09.780Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-29T20:46:36.661679800Z",
+  "title": "Submission running for more than 2 hours",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738129",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "SeaGoat",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/215751-gr.jpg",
+    "url": "/vbandaru",
+    "userName": "vbandaru",
+    "tier": "CONTRIBUTOR",
+    "id": 215751,
+    "profileUrl": "/vbandaru",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 215751,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

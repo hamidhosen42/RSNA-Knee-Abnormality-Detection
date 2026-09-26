@@ -1,0 +1,194 @@
+{
+ "forumTopic": {
+  "authorId": 11351811,
+  "authorThumbnailName": "11351811-kg.jpg?t=2025-07-02-06-16-19",
+  "authorUserDisplayName": "Komil Parmar",
+  "authorUserName": "komilparmar",
+  "comments": [
+   {
+    "id": 3518125,
+    "postDate": "2026-08-29T15:12:55.917Z",
+    "rawMarkdown": "Nice share and agree with your conclusions - my current approach.  Experiment with single fold, smallest Dino, 224 image - submissions marked for efficiency.   When I think I am making some progress, 5 fold, largest model, 448 image for LB score.",
+    "content": "<p>Nice share and agree with your conclusions - my current approach.  Experiment with single fold, smallest Dino, 224 image - submissions marked for efficiency.   When I think I am making some progress, 5 fold, largest model, 448 image for LB score.</p>",
+    "replies": [
+     {
+      "id": 3518129,
+      "postDate": "2026-08-29T15:18:47.757Z",
+      "rawMarkdown": "Yeah, same here. \nStick to cheap configurations, single fold, for ablations, experiments, and then do the final run at last for heavy configuration, I will do when the competition is near end.\n \nOf course some things would perform better at higher resolution, and single fold may contain some noise, but there aren't any drastic changes here. The strategy works **perfectly** for this competition. \n\nMeanwhile there are people arguing about compute requirements :`)",
+      "content": "<p>Yeah, same here. \nStick to cheap configurations, single fold, for ablations, experiments, and then do the final run at last for heavy configuration, I will do when the competition is near end.</p>\n<p>Of course some things would perform better at higher resolution, and single fold may contain some noise, but there aren't any drastic changes here. The strategy works <strong>perfectly</strong> for this competition. </p>\n<p>Meanwhile there are people arguing about compute requirements :`)</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Komil Parmar",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+       "url": "/komilparmar",
+       "tier": "EXPERT",
+       "id": 11351811,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 59,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "KAGGLE",
+        "featuredUserNames": [
+         "pcjimmmy"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Komil Parmar",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+        "url": "/komilparmar",
+        "userName": "komilparmar",
+        "tier": "EXPERT",
+        "id": 11351811,
+        "profileUrl": "/komilparmar",
+        "performanceTier": "EXPERT",
+        "userId": 11351811,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3518115,
+   "postDate": "2026-08-29T14:20:00.050Z",
+   "rawMarkdown": "Just wanted to share a small ablation, so you don't have to conduct the same. \n\nSo far I had used only the small variant of DINOv2 for all my experiments, so I tried whether base gives any further improvement. Everything else about the two runs is identical, like same data, same schedule, same augmentation, same seed. Only the backbone was swapped.\n\nFindings (gold macro AUC by epoch chart attached):\n\n![Dinov2 Small vs base variant Gold 58 score](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F11351811%2Fe70c9accde9a4dbd06307dff24d40073%2Fdinov2_small_vs_base_gold.png?generation=1788012410517623&alt=media)  \n\nBase converges clearly faster: it holds a lead of up to ~+0.015 through the early and middle epochs.\nHowever, given a long enough schedule, both curves converge to the same final score, the endpoint difference is within noise (see the green/red delta bars fading to zero).\n\nPractical takeaway: if for some reason you are fighting against overfitting (YOU SHOULD NOT BTW) or you're compute-bound or just want training short schedules for any other reason, base reaches a given score in noticeably fewer epochs. If you train to convergence, small gets you the same result at roughly 4× less compute and it's the **obviously better choice for the efficiency prize**.\n\nThis is consistent with what was discussed in the earlier encoder-size thread, capacity doesn't seem to raise the ceiling at 224. Whatever is limiting scores at this resolution, it doesn't appear to be model size. \n\nCaveats: single fold, single seed, 224 px only, I haven't tested whether the same holds at higher resolutions BUT I do believe the trend will favor larger variants at larger resolution.\n\nI know the configuration and other training details are missing, but that's intentional. :`)",
+   "content": "<p>Just wanted to share a small ablation, so you don't have to conduct the same. </p>\n<p>So far I had used only the small variant of DINOv2 for all my experiments, so I tried whether base gives any further improvement. Everything else about the two runs is identical, like same data, same schedule, same augmentation, same seed. Only the backbone was swapped.</p>\n<p>Findings (gold macro AUC by epoch chart attached):</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F11351811%2Fe70c9accde9a4dbd06307dff24d40073%2Fdinov2_small_vs_base_gold.png?generation=1788012410517623&amp;alt=media\" alt=\"Dinov2 Small vs base variant Gold 58 score\">  </p>\n<p>Base converges clearly faster: it holds a lead of up to ~+0.015 through the early and middle epochs.\nHowever, given a long enough schedule, both curves converge to the same final score, the endpoint difference is within noise (see the green/red delta bars fading to zero).</p>\n<p>Practical takeaway: if for some reason you are fighting against overfitting (YOU SHOULD NOT BTW) or you're compute-bound or just want training short schedules for any other reason, base reaches a given score in noticeably fewer epochs. If you train to convergence, small gets you the same result at roughly 4× less compute and it's the <strong>obviously better choice for the efficiency prize</strong>.</p>\n<p>This is consistent with what was discussed in the earlier encoder-size thread, capacity doesn't seem to raise the ceiling at 224. Whatever is limiting scores at this resolution, it doesn't appear to be model size. </p>\n<p>Caveats: single fold, single seed, 224 px only, I haven't tested whether the same holds at higher resolutions BUT I do believe the trend will favor larger variants at larger resolution.</p>\n<p>I know the configuration and other training details are missing, but that's intentional. :`)</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Komil Parmar",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+    "url": "/komilparmar",
+    "tier": "EXPERT",
+    "id": 11351811,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 5,
+    "canUpvote": true,
+    "totalUpvotes": 5
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 59,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Komil Parmar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+     "url": "/komilparmar",
+     "userName": "komilparmar",
+     "tier": "EXPERT",
+     "id": 11351811,
+     "profileUrl": "/komilparmar",
+     "performanceTier": "EXPERT",
+     "userId": 11351811,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3518115,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738096,
+  "name": "Dinov2 Base vs Small at 224 resolution",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-29T14:20:00.050063500Z",
+  "totalVotes": 5,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738096",
+  "totalMessages": 2,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Komil Parmar",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+   "url": "/komilparmar",
+   "tier": "EXPERT",
+   "id": 11351811,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3518115,
+  "id": 738096,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Komil Parmar",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738096#3518129",
+  "lastCommentPostDate": "2026-08-29T15:18:47.756666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-29T14:20:00.050063500Z",
+  "title": "Dinov2 Base vs Small at 224 resolution",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738096",
+  "votes": 5,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Komil Parmar",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+    "url": "/komilparmar",
+    "userName": "komilparmar",
+    "tier": "EXPERT",
+    "id": 11351811,
+    "profileUrl": "/komilparmar",
+    "performanceTier": "EXPERT",
+    "userId": 11351811,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

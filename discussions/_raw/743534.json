@@ -1,0 +1,178 @@
+{
+ "forumTopic": {
+  "authorId": 36581902,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Yogesh Krishna",
+  "authorUserName": "yogeshkrishna1709",
+  "comments": [
+   {
+    "id": 3528592,
+    "postDate": "2026-09-26T08:42:37.897Z",
+    "rawMarkdown": "I will offer my layman understanding of this. All the series within a study represents a single person. So why multiple series? Well, each series tries to provide different evidence, or makes it easier to identify different abnormalities.\n\nWithin a study, three different views of the knee are taken: side view (sagittal), front view (coronal) and bottom view (axial). Each of these planes provides the reviewer a different angle to look for an abnormality. This is because an abnormality may only be visible when looking at it from one particular view (which you can't tell beforehand when performing the MRI scan). \n\nEach of these three planes may also have different properties such as fat suppression and fluid sensitivity. A normal MRI will make fat appear bright, which can make it sometimes difficult to differentiate fat from fluids. A fat suppressed series only allows fluids to look bright while suppressing fats from appearing bright. This makes it easier to identify abnormalities related to fluids such as effusion and synovitis. See the hosts's post [here](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343) for more on this.\n\nThe slices in a series may also vary by thickness. Series with many slices will typically have thinner slices. If you consider all these variations (view, fat suppression, fluid sensitivity, and thickness), it's not difficult to see why a study can have up to 14 series. A sagittal series may have fat suppression or not. The same sagittal series may have different slice thickness as well.\n\nIn order to make a judgment about a knee abnormality, the reviewer will need to see all these series (different angles, different fat and fluid configurations) in order to have a holistic understanding of the knee's condition.",
+    "content": "<p>I will offer my layman understanding of this. All the series within a study represents a single person. So why multiple series? Well, each series tries to provide different evidence, or makes it easier to identify different abnormalities.</p>\n<p>Within a study, three different views of the knee are taken: side view (sagittal), front view (coronal) and bottom view (axial). Each of these planes provides the reviewer a different angle to look for an abnormality. This is because an abnormality may only be visible when looking at it from one particular view (which you can't tell beforehand when performing the MRI scan). </p>\n<p>Each of these three planes may also have different properties such as fat suppression and fluid sensitivity. A normal MRI will make fat appear bright, which can make it sometimes difficult to differentiate fat from fluids. A fat suppressed series only allows fluids to look bright while suppressing fats from appearing bright. This makes it easier to identify abnormalities related to fluids such as effusion and synovitis. See the hosts's post <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343\" target=\"_blank\">here</a> for more on this.</p>\n<p>The slices in a series may also vary by thickness. Series with many slices will typically have thinner slices. If you consider all these variations (view, fat suppression, fluid sensitivity, and thickness), it's not difficult to see why a study can have up to 14 series. A sagittal series may have fat suppression or not. The same sagittal series may have different slice thickness as well.</p>\n<p>In order to make a judgment about a knee abnormality, the reviewer will need to see all these series (different angles, different fat and fluid configurations) in order to have a holistic understanding of the knee's condition.</p>",
+    "replies": [
+     {
+      "id": 3528661,
+      "postDate": "2026-09-26T09:32:12.393Z",
+      "rawMarkdown": "Thanks man great explaination",
+      "content": "<p>Thanks man great explaination</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Yogesh Krishna",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/yogeshkrishna1709",
+       "tier": "CONTRIBUTOR",
+       "id": 36581902,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Yogesh Krishna",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/yogeshkrishna1709",
+        "userName": "yogeshkrishna1709",
+        "tier": "CONTRIBUTOR",
+        "id": 36581902,
+        "profileUrl": "/yogeshkrishna1709",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36581902,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Wisdom Aduah",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/anaphase21",
+     "tier": "CONTRIBUTOR",
+     "id": 2144387,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2998,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Wisdom Aduah",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/anaphase21",
+      "userName": "anaphase21",
+      "tier": "CONTRIBUTOR",
+      "id": 2144387,
+      "profileUrl": "/anaphase21",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2144387,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528540,
+   "postDate": "2026-09-26T06:50:08.277Z",
+   "rawMarkdown": "What do these terms in problem statement actually mean? \nIn a session, multiple MRIs taken, are these of same individual or different individuals? Because neither taking multiple MRIs of same individuals make sense nor does different individuals MRIs taken in same session/study.\nAlso does 1 study mean a single MRI only or multiple MRIs? (Ofcourse, represented as several DICOM series/files)",
+   "content": "<p>What do these terms in problem statement actually mean? \nIn a session, multiple MRIs taken, are these of same individual or different individuals? Because neither taking multiple MRIs of same individuals make sense nor does different individuals MRIs taken in same session/study.\nAlso does 1 study mean a single MRI only or multiple MRIs? (Ofcourse, represented as several DICOM series/files)</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Yogesh Krishna",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/yogeshkrishna1709",
+    "tier": "CONTRIBUTOR",
+    "id": 36581902,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Yogesh Krishna",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/yogeshkrishna1709",
+     "userName": "yogeshkrishna1709",
+     "tier": "CONTRIBUTOR",
+     "id": 36581902,
+     "profileUrl": "/yogeshkrishna1709",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36581902,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528540,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743534,
+  "name": "What is difference between study and series?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-26T06:50:08.275686100Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743534",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Yogesh Krishna",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/yogeshkrishna1709",
+   "tier": "CONTRIBUTOR",
+   "id": 36581902,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3528540,
+  "id": 743534,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Yogesh Krishna",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743534#3528661",
+  "lastCommentPostDate": "2026-09-26T09:32:12.393333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-26T06:50:08.275686100Z",
+  "title": "What is difference between study and series?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743534",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Yogesh Krishna",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/yogeshkrishna1709",
+    "userName": "yogeshkrishna1709",
+    "tier": "CONTRIBUTOR",
+    "id": 36581902,
+    "profileUrl": "/yogeshkrishna1709",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36581902,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

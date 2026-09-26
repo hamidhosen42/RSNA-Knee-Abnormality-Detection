@@ -1,0 +1,180 @@
+{
+ "forumTopic": {
+  "authorId": 25318955,
+  "authorThumbnailName": "25318955-kg.jpg?t=2025-12-09-03-48-46",
+  "authorUserDisplayName": "daoviet",
+  "authorUserName": "daoviet",
+  "comments": [
+   {
+    "id": 3510059,
+    "postDate": "2026-08-07T16:32:29.603Z",
+    "rawMarkdown": "Hello! The test set will not have \"Report\" available, whether before or after notebook submission.",
+    "content": "<p>Hello! The test set will not have \"Report\" available, whether before or after notebook submission.</p>",
+    "replies": [
+     {
+      "id": 3510213,
+      "postDate": "2026-08-08T00:54:04.303Z",
+      "rawMarkdown": "Thank you for the clarification❤️",
+      "content": "<p>Thank you for the clarification❤️</p>",
+      "parent": {},
+      "author": {
+       "displayName": "daoviet",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25318955-kg.jpg?t=2025-12-09-03-48-46",
+       "url": "/daoviet",
+       "tier": "EXPERT",
+       "id": 25318955,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1005,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "daoviet",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25318955-kg.jpg?t=2025-12-09-03-48-46",
+        "url": "/daoviet",
+        "userName": "daoviet",
+        "tier": "EXPERT",
+        "id": 25318955,
+        "profileUrl": "/daoviet",
+        "performanceTier": "EXPERT",
+        "userId": 25318955,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510022,
+   "postDate": "2026-08-07T15:00:36.223Z",
+   "rawMarkdown": "Currently, the test set does not have \"Report\" column. Will it appear when i submit my notebook ?",
+   "content": "<p>Currently, the test set does not have \"Report\" column. Will it appear when i submit my notebook ?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "daoviet",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25318955-kg.jpg?t=2025-12-09-03-48-46",
+    "url": "/daoviet",
+    "tier": "EXPERT",
+    "id": 25318955,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1005,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "daoviet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25318955-kg.jpg?t=2025-12-09-03-48-46",
+     "url": "/daoviet",
+     "userName": "daoviet",
+     "tier": "EXPERT",
+     "id": 25318955,
+     "profileUrl": "/daoviet",
+     "performanceTier": "EXPERT",
+     "userId": 25318955,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510022,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733592,
+  "name": "About the \"Report\" in real test set",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T15:00:36.222857700Z",
+  "tags": [
+   {
+    "id": 14104,
+    "name": "text",
+    "listingUrl": "/search?q=text+tag%3A%22text%22",
+    "tagUrl": "/tags/text-data",
+    "displayName": "Text"
+   }
+  ],
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733592",
+  "totalMessages": 2,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "daoviet",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25318955-kg.jpg?t=2025-12-09-03-48-46",
+   "url": "/daoviet",
+   "tier": "EXPERT",
+   "id": 25318955,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3510022,
+  "id": 733592,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "daoviet",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733592#3510213",
+  "lastCommentPostDate": "2026-08-08T00:54:04.303333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T15:00:36.222857700Z",
+  "tags": [
+   {
+    "id": 14104,
+    "name": "text",
+    "listingUrl": "/tags/text-data",
+    "displayName": "Text"
+   }
+  ],
+  "title": "About the \"Report\" in real test set",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733592",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "daoviet",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25318955-kg.jpg?t=2025-12-09-03-48-46",
+    "url": "/daoviet",
+    "userName": "daoviet",
+    "tier": "EXPERT",
+    "id": 25318955,
+    "profileUrl": "/daoviet",
+    "performanceTier": "EXPERT",
+    "userId": 25318955,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

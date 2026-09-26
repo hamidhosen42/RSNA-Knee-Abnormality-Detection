@@ -1,0 +1,175 @@
+{
+ "forumTopic": {
+  "authorId": 27506421,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "oshiko0450",
+  "authorUserName": "oshiko0450",
+  "comments": [
+   {
+    "id": 3523638,
+    "postDate": "2026-09-12T08:23:32.370Z",
+    "rawMarkdown": "Based on Section 3.4(b), the restriction applies to hand-labeling or human prediction of validation/test records. It does not prohibit manually reviewing the provided training MRIs. Since those images are part of the Competition Data, participant-created labels for the training set would generally be derived labels rather than External Data.\n\nI would still recommend documenting the labeling protocol and asking the host for explicit confirmation before relying on it, especially if the labels are used in a final submission.",
+    "content": "<p>Based on Section 3.4(b), the restriction applies to hand-labeling or human prediction of validation/test records. It does not prohibit manually reviewing the provided training MRIs. Since those images are part of the Competition Data, participant-created labels for the training set would generally be derived labels rather than External Data.</p>\n<p>I would still recommend documenting the labeling protocol and asking the host for explicit confirmation before relying on it, especially if the labels are used in a final submission.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "ParsaAshrafi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29822703-kg.jpg?t=2026-09-14-10-51-18",
+     "url": "/parsaashrafii",
+     "tier": "CONTRIBUTOR",
+     "id": 29822703,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1035,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "ParsaAshrafi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29822703-kg.jpg?t=2026-09-14-10-51-18",
+      "url": "/parsaashrafii",
+      "userName": "parsaashrafii",
+      "tier": "CONTRIBUTOR",
+      "id": 29822703,
+      "profileUrl": "/parsaashrafii",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29822703,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3523299,
+    "postDate": "2026-09-11T03:17:23.667Z",
+    "rawMarkdown": "I believe the rules state that you cannot hand label test images - that's not applicable to this competition as we cannot see the test images.  It was applicable in competitions in the past when the test images were available for download/review.\n\nIf you want to manually examine and label the train images - go for it.  Modification of train data has NEVER been considered as \"external data\".\n\n\n",
+    "content": "<p>I believe the rules state that you cannot hand label test images - that's not applicable to this competition as we cannot see the test images.  It was applicable in competitions in the past when the test images were available for download/review.</p>\n<p>If you want to manually examine and label the train images - go for it.  Modification of train data has NEVER been considered as \"external data\".</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 639,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3523234,
+   "postDate": "2026-09-10T21:40:23.353Z",
+   "rawMarkdown": "Hi,\n\nI would like to clarify one point about manual annotation of the training data.\n\nI understand from previous discussions that:\n\n* the 58 provided labels were assigned from the MRI images independently of the clinical reports;\n* when the report and image-based label disagree, the image-based label should be considered authoritative;\n* the remaining training reports may be used to derive weak labels.\n\nThe Competition Rules also state that submissions may not use information from hand labeling or human prediction of the validation dataset or test data records.\n\nWould it be permitted for a participant to manually review some of the unlabeled MRI studies in the provided training set and create additional image-based labels, using the published competition label definitions, and then use those labels for model training?\n\nIf this is permitted, would participant-created labels for the provided training images be considered External Data under the competition rules, or would they be considered derived from the provided competition data?\n\nThank you for the clarification.",
+   "content": "<p>Hi,</p>\n<p>I would like to clarify one point about manual annotation of the training data.</p>\n<p>I understand from previous discussions that:</p>\n<ul>\n<li>the 58 provided labels were assigned from the MRI images independently of the clinical reports;</li>\n<li>when the report and image-based label disagree, the image-based label should be considered authoritative;</li>\n<li>the remaining training reports may be used to derive weak labels.</li>\n</ul>\n<p>The Competition Rules also state that submissions may not use information from hand labeling or human prediction of the validation dataset or test data records.</p>\n<p>Would it be permitted for a participant to manually review some of the unlabeled MRI studies in the provided training set and create additional image-based labels, using the published competition label definitions, and then use those labels for model training?</p>\n<p>If this is permitted, would participant-created labels for the provided training images be considered External Data under the competition rules, or would they be considered derived from the provided competition data?</p>\n<p>Thank you for the clarification.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "oshiko0450",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/oshiko0450",
+    "tier": "CONTRIBUTOR",
+    "id": 27506421,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1397,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "oshiko0450",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/oshiko0450",
+     "userName": "oshiko0450",
+     "tier": "CONTRIBUTOR",
+     "id": 27506421,
+     "profileUrl": "/oshiko0450",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27506421,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3523234,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740718,
+  "name": "Clarification on Manual Annotation of Unlabeled Training MRIs",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-10T21:40:23.352461900Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740718",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "oshiko0450",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/oshiko0450",
+   "tier": "CONTRIBUTOR",
+   "id": 27506421,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3523234,
+  "id": 740718,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "ParsaAshrafi",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740718#3523638",
+  "lastCommentPostDate": "2026-09-12T08:23:32.370Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-10T21:40:23.352461900Z",
+  "title": "Clarification on Manual Annotation of Unlabeled Training MRIs",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740718",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "oshiko0450",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/oshiko0450",
+    "userName": "oshiko0450",
+    "tier": "CONTRIBUTOR",
+    "id": 27506421,
+    "profileUrl": "/oshiko0450",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27506421,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

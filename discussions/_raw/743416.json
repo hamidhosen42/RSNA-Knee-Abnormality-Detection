@@ -1,0 +1,194 @@
+{
+ "forumTopic": {
+  "authorId": 2593251,
+  "authorThumbnailName": "2593251-kg.jpg",
+  "authorUserDisplayName": "YYama",
+  "authorUserName": "yosukeyama",
+  "comments": [
+   {
+    "id": 3528398,
+    "postDate": "2026-09-26T03:25:50.803Z",
+    "rawMarkdown": "This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get \"caught\" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.",
+    "content": "<p>This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get \"caught\" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.</p>",
+    "replies": [
+     {
+      "id": 3528497,
+      "postDate": "2026-09-26T05:50:04.413Z",
+      "rawMarkdown": "I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.\n\nWhat particularly concerns me is that relevant external knee MRI data could allow even a fairly simple approach to achieve a dramatic improvement in score. If some teams use those datasets while others refrain because the rules are unclear, the competition becomes substantially unequal. I would appreciate explicit guidance from the hosts on which datasets are allowed.",
+      "content": "<p>I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.</p>\n<p>What particularly concerns me is that relevant external knee MRI data could allow even a fairly simple approach to achieve a dramatic improvement in score. If some teams use those datasets while others refrain because the rules are unclear, the competition becomes substantially unequal. I would appreciate explicit guidance from the hosts on which datasets are allowed.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "YYama",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+       "url": "/yosukeyama",
+       "tier": "MASTER",
+       "id": 2593251,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 3,
+       "canUpvote": true,
+       "totalUpvotes": 3
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 52,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Takashi Someya",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
+        "url": "/takashisomeya",
+        "userName": "takashisomeya",
+        "tier": "GRANDMASTER",
+        "id": 6102861,
+        "profileUrl": "/takashisomeya",
+        "performanceTier": "GRANDMASTER",
+        "userId": 6102861,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "SURPRISE",
+      "featuredUserNames": [
+       "laymond"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528387,
+   "postDate": "2026-09-26T01:52:06.163Z",
+   "rawMarkdown": "Thank you to the hosts for organizing this challenge and for taking the time to answer questions throughout the competition. I appreciate that assessing third-party datasets individually is difficult, especially when their access requirements and licenses differ.\n\nQuestions about external knee MRI data are spread across several threads. Without a clear answer for commonly used datasets, teams may train under different assumptions about what is permitted, which makes it difficult to ensure a level playing field.\n\nI have read the [original question](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652), the [registration-gated dataset question](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497), and the [institutional-agreement follow-up](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950). There are also separate questions about [pretrained weights](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121) and [research-use agreements](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/738111).\n\nThe host has [explicitly ruled that KneeCoT is not allowed](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109) because its formal institutional agreement may create unequal access. The host has also [explained](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965) that non-commercial terms alone do not exclude a dataset, while straightforward registration and substantial institutional approval may be treated differently. It remains unclear to me how these principles apply to the following resources:\n\n| Resource | Relevant access or licensing issue |\n| --- | --- |\n| [Stanford MRNet](https://aimi.stanford.edu/datasets/mrnet-knee-mris) | Research-use agreement |\n| [Stanford SKM-TEA](https://aimi.stanford.edu/datasets/skm-tea-knee-mri) | Registration and data-use terms |\n| [NYU fastMRI](https://fastmri.med.nyu.edu/) and [fastMRI+](https://github.com/microsoft/fastmri-plus) | Data-sharing agreement for images; separately released annotations |\n| [Osteoarthritis Initiative (OAI)](https://nda.nih.gov/oai) | Data Use Certification and institutional requirements |\n| [KneeMRI](https://zenodo.org/records/14789903) | CC BY-NC-ND 4.0 |\n| [KneeXNet-2.5D](https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D) | Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify |\n\nCould the hosts give a **yes or no for each resource** under this competition's external-data rules? If the answer differs between training on the images and fine-tuning publicly released weights, please state that separately. It would also help to know whether using each resource is compatible with the winner's requirement to release the final model. I understand that teams remain responsible for complying with the original providers' terms.\n\nBecause the same question keeps appearing in different threads, could the hosts **pin the answer in the Discussion** so all teams can find and follow the same guidance?\n\n@javaduke95",
+   "content": "<p>Thank you to the hosts for organizing this challenge and for taking the time to answer questions throughout the competition. I appreciate that assessing third-party datasets individually is difficult, especially when their access requirements and licenses differ.</p>\n<p>Questions about external knee MRI data are spread across several threads. Without a clear answer for commonly used datasets, teams may train under different assumptions about what is permitted, which makes it difficult to ensure a level playing field.</p>\n<p>I have read the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652\" target=\"_blank\">original question</a>, the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497\" target=\"_blank\">registration-gated dataset question</a>, and the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950\" target=\"_blank\">institutional-agreement follow-up</a>. There are also separate questions about <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121\" target=\"_blank\">pretrained weights</a> and <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/738111\" target=\"_blank\">research-use agreements</a>.</p>\n<p>The host has <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">explicitly ruled that KneeCoT is not allowed</a> because its formal institutional agreement may create unequal access. The host has also <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965\" target=\"_blank\">explained</a> that non-commercial terms alone do not exclude a dataset, while straightforward registration and substantial institutional approval may be treated differently. It remains unclear to me how these principles apply to the following resources:</p>\n<table>\n<thead>\n<tr>\n<th>Resource</th>\n<th>Relevant access or licensing issue</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://aimi.stanford.edu/datasets/mrnet-knee-mris\" target=\"_blank\">Stanford MRNet</a></td>\n<td>Research-use agreement</td>\n</tr>\n<tr>\n<td><a href=\"https://aimi.stanford.edu/datasets/skm-tea-knee-mri\" target=\"_blank\">Stanford SKM-TEA</a></td>\n<td>Registration and data-use terms</td>\n</tr>\n<tr>\n<td><a href=\"https://fastmri.med.nyu.edu/\" target=\"_blank\">NYU fastMRI</a> and <a href=\"https://github.com/microsoft/fastmri-plus\" target=\"_blank\">fastMRI+</a></td>\n<td>Data-sharing agreement for images; separately released annotations</td>\n</tr>\n<tr>\n<td><a href=\"https://nda.nih.gov/oai\" target=\"_blank\">Osteoarthritis Initiative (OAI)</a></td>\n<td>Data Use Certification and institutional requirements</td>\n</tr>\n<tr>\n<td><a href=\"https://zenodo.org/records/14789903\" target=\"_blank\">KneeMRI</a></td>\n<td>CC BY-NC-ND 4.0</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D\" target=\"_blank\">KneeXNet-2.5D</a></td>\n<td>Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify</td>\n</tr>\n</tbody>\n</table>\n<p>Could the hosts give a <strong>yes or no for each resource</strong> under this competition's external-data rules? If the answer differs between training on the images and fine-tuning publicly released weights, please state that separately. It would also help to know whether using each resource is compatible with the winner's requirement to release the final model. I understand that teams remain responsible for complying with the original providers' terms.</p>\n<p>Because the same question keeps appearing in different threads, could the hosts <strong>pin the answer in the Discussion</strong> so all teams can find and follow the same guidance?</p>\n<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "YYama",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+    "url": "/yosukeyama",
+    "tier": "MASTER",
+    "id": 2593251,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 15,
+    "canUpvote": true,
+    "totalUpvotes": 15
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 52,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Takashi Someya",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
+     "url": "/takashisomeya",
+     "userName": "takashisomeya",
+     "tier": "GRANDMASTER",
+     "id": 6102861,
+     "profileUrl": "/takashisomeya",
+     "performanceTier": "GRANDMASTER",
+     "userId": 6102861,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528387,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743416,
+  "name": "Please clarify which external knee MRI datasets are allowed",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-26T01:52:06.163949500Z",
+  "totalVotes": 15,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743416",
+  "totalMessages": 2,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "YYama",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+   "url": "/yosukeyama",
+   "tier": "MASTER",
+   "id": 2593251,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3528387,
+  "id": 743416,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "YYama",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416#3528497",
+  "lastCommentPostDate": "2026-09-26T05:50:04.413333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-26T01:52:06.163949500Z",
+  "title": "Please clarify which external knee MRI datasets are allowed",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416",
+  "votes": 19,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Takashi Someya",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
+    "url": "/takashisomeya",
+    "userName": "takashisomeya",
+    "tier": "GRANDMASTER",
+    "id": 6102861,
+    "profileUrl": "/takashisomeya",
+    "performanceTier": "GRANDMASTER",
+    "userId": 6102861,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

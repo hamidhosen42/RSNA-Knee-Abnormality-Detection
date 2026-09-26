@@ -1,0 +1,97 @@
+{
+ "forumTopic": {
+  "authorId": 34366463,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "padala Naga sri",
+  "authorUserName": "nagasripadala21",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515204,
+   "postDate": "2026-08-21T03:17:30.160Z",
+   "rawMarkdown": "Hi everyone! I am new to Kaggle and interested in participating in the RSNA Knee Abnormalities Detection competition. I am currently learning Python, machine learning and AI, and I would like to join a team where I can learn and contribute. If anyone has a team with an available spot, please let me know. Thank you!",
+   "content": "<p>Hi everyone! I am new to Kaggle and interested in participating in the RSNA Knee Abnormalities Detection competition. I am currently learning Python, machine learning and AI, and I would like to join a team where I can learn and contribute. If anyone has a team with an available spot, please let me know. Thank you!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "padala Naga sri",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nagasripadala21",
+    "tier": "CONTRIBUTOR",
+    "id": 34366463,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -4,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "padala Naga sri",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/nagasripadala21",
+     "userName": "nagasripadala21",
+     "tier": "CONTRIBUTOR",
+     "id": 34366463,
+     "profileUrl": "/nagasripadala21",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 34366463,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3515204,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736497,
+  "name": "asking to join inn team",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-21T03:17:30.160086300Z",
+  "totalVotes": -4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736497",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "padala Naga sri",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/nagasripadala21",
+   "tier": "CONTRIBUTOR",
+   "id": 34366463,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3515204,
+  "id": 736497,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "padala Naga sri",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736497#3515204",
+  "lastCommentPostDate": "2026-08-21T03:17:30.160Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-21T03:17:30.160086300Z",
+  "title": "asking to join inn team",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736497",
+  "votes": -4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "padala Naga sri",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nagasripadala21",
+    "userName": "nagasripadala21",
+    "tier": "CONTRIBUTOR",
+    "id": 34366463,
+    "profileUrl": "/nagasripadala21",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 34366463,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

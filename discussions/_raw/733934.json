@@ -1,0 +1,148 @@
+{
+ "forumTopic": {
+  "authorId": 684804,
+  "authorThumbnailName": "684804-kg.png",
+  "authorUserDisplayName": "Barun Kumar",
+  "authorUserName": "barun2104",
+  "comments": [
+   {
+    "id": 3528373,
+    "postDate": "2026-09-26T00:29:01.047Z",
+    "rawMarkdown": "Thanks for sharing!",
+    "content": "<p>Thanks for sharing!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": true,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510636,
+   "postDate": "2026-08-09T06:32:57.300Z",
+   "rawMarkdown": "Hey Everyone! 👋\nTo help jumpstart model exploration in the RSNA Knee Abnormality Detection Challenge, I've published a complete, end-to-end [PyTorch baseline notebook](https://www.kaggle.com/code/barun2104/baseline-rsna-knee-mri-2-5d-resnet34) using a **2.5D ResNet-34 architecture** trained on Fold 0.\n\nHandling 3D DICOM volumes directly during training can cause severe I/O bottlenecks. To make training fast, clean, and reproducible, this baseline runs off preprocessed, memory-efficient `(24, 160, 160)` volume arrays.\n\n### 💡 Key Notebook Highlights\n- **2.5D ResNet-34 Backbone:** Instead of computationally heavy 3D convolutions, we map the 24 depth slices across input channels, adapting ImageNet pre-trained weights to leverage transfer learning.\n\n- **12 Multi-Label Pathology Targets:** Trains directly on all primary targets (`ACL`, `MCL`, `Meniscus tears`, `OA`, `Effusion`, etc.) using `BCEWithLogitsLoss`.\n\n- **Fast Batch Training (AMP FP16):** Uses Automatic Mixed Precision and batch size of 32 for rapid epoch iteration times on Kaggle GPU (T4 / P100).\n\n- **Cross-Validation Metric:** Tracks Mean Macro ROC-AUC across Fold 0.\n\n### 🔗 Related Resources & Datasets\n- **📓 Training Notebook:** [[Baseline] RSNA Knee MRI — 2.5D ResNet34](https://www.kaggle.com/code/barun2104/baseline-rsna-knee-mri-2-5d-resnet34)\n\n- **📊 Metadata CSV Dataset:** [RSNA Knee - Stratified Folds & LLM Soft Labels](https://www.kaggle.com/datasets/barun2104/rsna-knee-stratified-folds-and-llm-soft-labels)\n\n- **🖼️ Processed 3D Volumes Dataset:** [RSNA Knee MRI - Processed 3D Volumes](https://www.kaggle.com/datasets/barun2104/rsna-knee-mri-processed-3d-volumes)\n\n### 🚀 What's Next on the Roadmap?\n- **Semi-Supervised Pre-Training:** Leveraging the `pseudo_*` targets in the metadata file to pre-train on unannotated studies before fine-tuning on ground truth folds.\n\n- **Backbone Benchmarking:** Testing EfficientNet and ConvNeXt 2.5D variants.\n\n- **Data Augmentation:** Adding 3D spatial transformations (random flipping, slight rotations, intensity scaling).\n\nCheck out the notebook, feel free to fork/copy it for your own experiments, and let me know if you have any feedback or ideas to improve the CV score!\n\n**What model architectures or slice depths are you planning to experiment with first?**",
+   "content": "<p>Hey Everyone! 👋\nTo help jumpstart model exploration in the RSNA Knee Abnormality Detection Challenge, I've published a complete, end-to-end <a href=\"https://www.kaggle.com/code/barun2104/baseline-rsna-knee-mri-2-5d-resnet34\" target=\"_blank\">PyTorch baseline notebook</a> using a <strong>2.5D ResNet-34 architecture</strong> trained on Fold 0.</p>\n<p>Handling 3D DICOM volumes directly during training can cause severe I/O bottlenecks. To make training fast, clean, and reproducible, this baseline runs off preprocessed, memory-efficient <code>(24, 160, 160)</code> volume arrays.</p>\n<h3>💡 Key Notebook Highlights</h3>\n<ul>\n<li><p><strong>2.5D ResNet-34 Backbone:</strong> Instead of computationally heavy 3D convolutions, we map the 24 depth slices across input channels, adapting ImageNet pre-trained weights to leverage transfer learning.</p></li>\n<li><p><strong>12 Multi-Label Pathology Targets:</strong> Trains directly on all primary targets (<code>ACL</code>, <code>MCL</code>, <code>Meniscus tears</code>, <code>OA</code>, <code>Effusion</code>, etc.) using <code>BCEWithLogitsLoss</code>.</p></li>\n<li><p><strong>Fast Batch Training (AMP FP16):</strong> Uses Automatic Mixed Precision and batch size of 32 for rapid epoch iteration times on Kaggle GPU (T4 / P100).</p></li>\n<li><p><strong>Cross-Validation Metric:</strong> Tracks Mean Macro ROC-AUC across Fold 0.</p></li>\n</ul>\n<h3>🔗 Related Resources &amp; Datasets</h3>\n<ul>\n<li><p><strong>📓 Training Notebook:</strong> <a href=\"https://www.kaggle.com/code/barun2104/baseline-rsna-knee-mri-2-5d-resnet34\" target=\"_blank\">[Baseline] RSNA Knee MRI — 2.5D ResNet34</a></p></li>\n<li><p><strong>📊 Metadata CSV Dataset:</strong> <a href=\"https://www.kaggle.com/datasets/barun2104/rsna-knee-stratified-folds-and-llm-soft-labels\" target=\"_blank\">RSNA Knee - Stratified Folds &amp; LLM Soft Labels</a></p></li>\n<li><p><strong>🖼️ Processed 3D Volumes Dataset:</strong> <a href=\"https://www.kaggle.com/datasets/barun2104/rsna-knee-mri-processed-3d-volumes\" target=\"_blank\">RSNA Knee MRI - Processed 3D Volumes</a></p></li>\n</ul>\n<h3>🚀 What's Next on the Roadmap?</h3>\n<ul>\n<li><p><strong>Semi-Supervised Pre-Training:</strong> Leveraging the <code>pseudo_*</code> targets in the metadata file to pre-train on unannotated studies before fine-tuning on ground truth folds.</p></li>\n<li><p><strong>Backbone Benchmarking:</strong> Testing EfficientNet and ConvNeXt 2.5D variants.</p></li>\n<li><p><strong>Data Augmentation:</strong> Adding 3D spatial transformations (random flipping, slight rotations, intensity scaling).</p></li>\n</ul>\n<p>Check out the notebook, feel free to fork/copy it for your own experiments, and let me know if you have any feedback or ideas to improve the CV score!</p>\n<p><strong>What model architectures or slice depths are you planning to experiment with first?</strong></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Barun Kumar",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/684804-kg.png",
+    "url": "/barun2104",
+    "tier": "EXPERT",
+    "id": 684804,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3687,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "lixin73"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Barun Kumar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/684804-kg.png",
+     "url": "/barun2104",
+     "userName": "barun2104",
+     "tier": "EXPERT",
+     "id": 684804,
+     "profileUrl": "/barun2104",
+     "performanceTier": "EXPERT",
+     "userId": 684804,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510636,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733934,
+  "name": "[Baseline Notebook] 2.5D ResNet-34 PyTorch Pipeline (Fold 0) | Preprocessed 3D Volumes",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T06:32:57.300202500Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733934",
+  "totalMessages": 1,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Barun Kumar",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/684804-kg.png",
+   "url": "/barun2104",
+   "tier": "EXPERT",
+   "id": 684804,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3510636,
+  "id": 733934,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733934#3528373",
+  "lastCommentPostDate": "2026-09-26T00:29:01.046666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T06:32:57.300202500Z",
+  "title": "[Baseline Notebook] 2.5D ResNet-34 PyTorch Pipeline (Fold 0) | Preprocessed 3D Volumes",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733934",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Barun Kumar",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/684804-kg.png",
+    "url": "/barun2104",
+    "userName": "barun2104",
+    "tier": "EXPERT",
+    "id": 684804,
+    "profileUrl": "/barun2104",
+    "performanceTier": "EXPERT",
+    "userId": 684804,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

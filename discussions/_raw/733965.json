@@ -1,0 +1,552 @@
+{
+ "forumTopic": {
+  "authorId": 413040,
+  "authorThumbnailName": "413040-gp.jpg",
+  "authorUserDisplayName": "Po-Hao \"Howard\" Chen",
+  "authorUserName": "javaduke95",
+  "comments": [
+   {
+    "id": 3527445,
+    "postDate": "2026-09-23T20:31:07.657Z",
+    "rawMarkdown": "Thanks for the clarification! Just one quick question: if LLM-generated labels/embeddings from the reports are allowed, would it also be okay to use an external LLM to extract structured features like findings, laterality, or severity and combine those with MRI features?\n\nAnd would this be allowed at inference time only if those same features can be generated from the information available at inference?\n",
+    "content": "<p>Thanks for the clarification! Just one quick question: if LLM-generated labels/embeddings from the reports are allowed, would it also be okay to use an external LLM to extract structured features like findings, laterality, or severity and combine those with MRI features?</p>\n<p>And would this be allowed at inference time only if those same features can be generated from the information available at inference?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Danny Daniel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/danny514",
+     "tier": "CONTRIBUTOR",
+     "id": 36861990,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3521660,
+    "postDate": "2026-09-06T16:59:14.213Z",
+    "rawMarkdown": "This is a very welcome clarification from the organizers. Allowing the use of commercially hosted LLMs (like OpenAI, Anthropic, or Google APIs) for tasks like text parsing, label extraction, or metadata enrichment really opens up creative pipeline designs especially for handling the report text efficiently.It’s great to see the rules explicitly state that API inference doesn't count as prohibited private sharing, provided the tools remain lowcost and accessible to everyone. It gives teams the green light to leverage state-of-the-art text processing without the fear of accidental disqualification. Thanks for highlighting this section!",
+    "content": "<p>This is a very welcome clarification from the organizers. Allowing the use of commercially hosted LLMs (like OpenAI, Anthropic, or Google APIs) for tasks like text parsing, label extraction, or metadata enrichment really opens up creative pipeline designs especially for handling the report text efficiently.It’s great to see the rules explicitly state that API inference doesn't count as prohibited private sharing, provided the tools remain lowcost and accessible to everyone. It gives teams the green light to leverage state-of-the-art text processing without the fear of accidental disqualification. Thanks for highlighting this section!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Manish",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32499439-kg.jpg?t=2026-08-16-04-47-50",
+     "url": "/manishpatil115",
+     "tier": "CONTRIBUTOR",
+     "id": 32499439,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3521208,
+    "postDate": "2026-09-05T07:20:15.053Z",
+    "rawMarkdown": "Thank you for the Use of Commercially Hosted LLMs info @javaduke95 ",
+    "content": "<p>Thank you for the Use of Commercially Hosted LLMs info <a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3515499,
+    "postDate": "2026-08-21T21:48:19.597Z",
+    "rawMarkdown": "Ok, by the sentence: *\"(for example, extracting labels from reports) will not, by itself, be considered prohibited PRIVATE SHARING of Competition Data outside the Team.\"* i can conclude that i can use LLM API (i.e. openAI) to read the reports, which are actually in diifferent languages, to generate the labels, so i don't have to struggle?\nI know that the answer may be abvious but i just want to make 100% sure i can save me so much trouble and focus on model not in getting the target labels without been kicked out from the competence.\nThanks!",
+    "content": "<p>Ok, by the sentence: <em>\"(for example, extracting labels from reports) will not, by itself, be considered prohibited PRIVATE SHARING of Competition Data outside the Team.\"</em> i can conclude that i can use LLM API (i.e. openAI) to read the reports, which are actually in diifferent languages, to generate the labels, so i don't have to struggle?\nI know that the answer may be abvious but i just want to make 100% sure i can save me so much trouble and focus on model not in getting the target labels without been kicked out from the competence.\nThanks!</p>",
+    "replies": [
+     {
+      "id": 3517694,
+      "postDate": "2026-08-27T21:59:45.243Z",
+      "rawMarkdown": "You can use LLM API, such as those from OpenAI, to read the reports to generate the labels.",
+      "content": "<p>You can use LLM API, such as those from OpenAI, to read the reports to generate the labels.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Po-Hao \"Howard\" Chen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+       "url": "/javaduke95",
+       "tier": "CONTRIBUTOR",
+       "id": 413040,
+       "progressionOptOut": false
+      },
+      "authorType": "HOST",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "THANK_YOU",
+        "featuredUserNames": [
+         "osakanateishoku"
+        ],
+        "userCount": 1
+       }
+      ]
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Mayobanex Santana",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18412186-kg.jpeg?t=2024-06-17-22-13-35",
+     "url": "/mayobanexsantana",
+     "tier": "CONTRIBUTOR",
+     "id": 18412186,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mayobanex Santana",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18412186-kg.jpeg?t=2024-06-17-22-13-35",
+      "url": "/mayobanexsantana",
+      "userName": "mayobanexsantana",
+      "tier": "CONTRIBUTOR",
+      "id": 18412186,
+      "profileUrl": "/mayobanexsantana",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18412186,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510701,
+    "postDate": "2026-08-09T10:23:11.330Z",
+    "rawMarkdown": "\"Participants remain responsible for ensuring that any external service complies with all applicable Competition Rules and the service's terms of use, including the requirements for reasonable accessibility and minimal cost.\n\nThe Competition Host reserves the right to determine whether a particular service, model, or configuration is reasonably accessible, is prohibitively costly, or otherwise creates an unfair competitive advantage.\"\n\n\n\nCould you give us your assessment regarding the use of common public MRI datasets for this challenge? Many of them only allow research (and no commercial) use, and getting a price to me could be classified as commercial use (I'm not a lawyer though so I don't know).\n\nFor example, [this dataset](https://stanford.redivis.com/datasets/4a2c-4cpkzrn2c?access&requirement=474) specifically states: \"Permission is granted to view and use the Dataset without charge for personal, **non-commercial research purposes only**. Any commercial use, sale, or **other monetization is prohibited**.\"\n\nI understand these restrictions are describing external datasets, so we should probably get in contact with those databases. But I was wondering what your independent assessment would be. Thanks!\n\n",
+    "content": "<p>\"Participants remain responsible for ensuring that any external service complies with all applicable Competition Rules and the service's terms of use, including the requirements for reasonable accessibility and minimal cost.</p>\n<p>The Competition Host reserves the right to determine whether a particular service, model, or configuration is reasonably accessible, is prohibitively costly, or otherwise creates an unfair competitive advantage.\"</p>\n<p>Could you give us your assessment regarding the use of common public MRI datasets for this challenge? Many of them only allow research (and no commercial) use, and getting a price to me could be classified as commercial use (I'm not a lawyer though so I don't know).</p>\n<p>For example, <a href=\"https://stanford.redivis.com/datasets/4a2c-4cpkzrn2c?access&amp;requirement=474\" target=\"_blank\">this dataset</a> specifically states: \"Permission is granted to view and use the Dataset without charge for personal, <strong>non-commercial research purposes only</strong>. Any commercial use, sale, or <strong>other monetization is prohibited</strong>.\"</p>\n<p>I understand these restrictions are describing external datasets, so we should probably get in contact with those databases. But I was wondering what your independent assessment would be. Thanks!</p>",
+    "replies": [
+     {
+      "id": 3514129,
+      "postDate": "2026-08-18T15:07:22.713Z",
+      "rawMarkdown": "That's a great suggestion - contact the source and ask if they are ok with you using the data in a kaggle competition.  Not sure if they would reply, but also past experience suggest kaggle reluctant to reply to this type of question during the competition.",
+      "content": "<p>That's a great suggestion - contact the source and ask if they are ok with you using the data in a kaggle competition.  Not sure if they would reply, but also past experience suggest kaggle reluctant to reply to this type of question during the competition.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "PC Jimmmy",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+       "url": "/pcjimmmy",
+       "tier": "MASTER",
+       "id": 1062256,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 635,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "PC Jimmmy",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+        "url": "/pcjimmmy",
+        "userName": "pcjimmmy",
+        "tier": "MASTER",
+        "id": 1062256,
+        "profileUrl": "/pcjimmmy",
+        "performanceTier": "MASTER",
+        "userId": 1062256,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Nicolai Karcher",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/pejophylo",
+     "tier": "CONTRIBUTOR",
+     "id": 2084214,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 784,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "KAGGLE",
+      "featuredUserNames": [
+       "jhairgallardo",
+       "sambwani15",
+       "enaimaan",
+       "alessandroflati",
+       "mattiaangeli",
+       "vladyslavmorozov",
+       "jeevin",
+       "manyagupta1337",
+       "perfectoshi",
+       "nicolascayuela9"
+      ],
+      "userCount": 10
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nicolai Karcher",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/pejophylo",
+      "userName": "pejophylo",
+      "tier": "CONTRIBUTOR",
+      "id": 2084214,
+      "profileUrl": "/pejophylo",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2084214,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3512977,
+    "postDate": "2026-08-14T21:30:30.767Z",
+    "rawMarkdown": "To make the dataset question above concrete: the Osteoarthritis Initiative (OAI) is free of charge and open to any researcher after a click-through data use agreement, but the agreement limits use to non-commercial research. The same access pattern covers MRNet, fastMRI+ and SKM-TEA, so a ruling on the category would settle it for essentially every public knee-MRI resource. Given the prize money, could the host confirm whether external datasets under research-only agreements are permitted, and if so whether the winners' open-source obligation is affected? Teams need this before committing pretraining work ahead of the entry deadline. Thank you.",
+    "content": "<p>To make the dataset question above concrete: the Osteoarthritis Initiative (OAI) is free of charge and open to any researcher after a click-through data use agreement, but the agreement limits use to non-commercial research. The same access pattern covers MRNet, fastMRI+ and SKM-TEA, so a ruling on the category would settle it for essentially every public knee-MRI resource. Given the prize money, could the host confirm whether external datasets under research-only agreements are permitted, and if so whether the winners' open-source obligation is affected? Teams need this before committing pretraining work ahead of the entry deadline. Thank you.</p>",
+    "replies": [
+     {
+      "id": 3517696,
+      "postDate": "2026-08-27T22:14:33.257Z",
+      "rawMarkdown": "From the competition’s perspective, use of these datasets would be considered non-commercial; receipt of competition prize money does not, by itself, make their use a commercial sale or commercial exploitation. These datasets would not be excluded by the competition rules solely because their licenses restrict use to non-commercial purposes.\n\nA separate consideration is whether an external dataset is reasonably accessible to all competitors. Datasets that can be accessed through a straightforward registration or click-through data-use agreement would generally satisfy this requirement. By contrast, datasets requiring institution-specific approvals, negotiated written agreements, IRB approval, lengthy credentialing, or other substantial administrative steps may present a meaningful accessibility barrier, particularly given the remaining competition timeline. Such requirements could therefore affect whether a dataset is considered allowable under the competition’s external-data rules, independent of whether its use is characterized as commercial or non-commercial.\n\nOur job (Host) is tough here because RSNA and Kaggle do not own or control these external datasets and cannot interpret or waive their individual data-use agreements, expedite requests and so on, on behalf of the dataset owners. Teams remain responsible for ensuring that their intended use, including participation in a prize-bearing competition and any required release of code or models, is permitted under the applicable dataset license or agreement.\n\nTherefore, to the extent the question concerns the *competition rules*, readily accessible datasets with non-commercial restrictions are not prohibited on that basis alone. Dataset-specific licensing obligations remain the responsibility of each team, and datasets involving substantial approval or access hurdles may need to be considered separately under the competition’s equal-accessibility requirements.\n\nSorry for the verbose response. I hope it's at least a little helpful...",
+      "content": "<p>From the competition’s perspective, use of these datasets would be considered non-commercial; receipt of competition prize money does not, by itself, make their use a commercial sale or commercial exploitation. These datasets would not be excluded by the competition rules solely because their licenses restrict use to non-commercial purposes.</p>\n<p>A separate consideration is whether an external dataset is reasonably accessible to all competitors. Datasets that can be accessed through a straightforward registration or click-through data-use agreement would generally satisfy this requirement. By contrast, datasets requiring institution-specific approvals, negotiated written agreements, IRB approval, lengthy credentialing, or other substantial administrative steps may present a meaningful accessibility barrier, particularly given the remaining competition timeline. Such requirements could therefore affect whether a dataset is considered allowable under the competition’s external-data rules, independent of whether its use is characterized as commercial or non-commercial.</p>\n<p>Our job (Host) is tough here because RSNA and Kaggle do not own or control these external datasets and cannot interpret or waive their individual data-use agreements, expedite requests and so on, on behalf of the dataset owners. Teams remain responsible for ensuring that their intended use, including participation in a prize-bearing competition and any required release of code or models, is permitted under the applicable dataset license or agreement.</p>\n<p>Therefore, to the extent the question concerns the <em>competition rules</em>, readily accessible datasets with non-commercial restrictions are not prohibited on that basis alone. Dataset-specific licensing obligations remain the responsibility of each team, and datasets involving substantial approval or access hurdles may need to be considered separately under the competition’s equal-accessibility requirements.</p>\n<p>Sorry for the verbose response. I hope it's at least a little helpful…</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Po-Hao \"Howard\" Chen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+       "url": "/javaduke95",
+       "tier": "CONTRIBUTOR",
+       "id": 413040,
+       "progressionOptOut": false
+      },
+      "authorType": "HOST",
+      "votes": {
+       "totalVotes": 6,
+       "canUpvote": true,
+       "totalUpvotes": 6
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "UGUR OZER",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/aeonairisk",
+     "tier": "CONTRIBUTOR",
+     "id": 35552083,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2572,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "UGUR OZER",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/aeonairisk",
+      "userName": "aeonairisk",
+      "tier": "CONTRIBUTOR",
+      "id": 35552083,
+      "profileUrl": "/aeonairisk",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35552083,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3511329,
+    "postDate": "2026-08-10T21:45:23.640Z",
+    "rawMarkdown": "The rules about commercially hosted LLMs are important here. Since knee MRI interpretation requires domain expertise, it's tempting to use an LLM to help with reasoning. But the competition rules likely restrict this to ensure the solutions are based on the image data, not external reasoning. Check the rules page carefully before incorporating any LLM-based features.",
+    "content": "<p>The rules about commercially hosted LLMs are important here. Since knee MRI interpretation requires domain expertise, it's tempting to use an LLM to help with reasoning. But the competition rules likely restrict this to ensure the solutions are based on the image data, not external reasoning. Check the rules page carefully before incorporating any LLM-based features.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ragheb haddara",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/l4r3nn",
+     "tier": "CONTRIBUTOR",
+     "id": 35670825,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4224,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ragheb haddara",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/l4r3nn",
+      "userName": "l4r3nn",
+      "tier": "CONTRIBUTOR",
+      "id": 35670825,
+      "profileUrl": "/l4r3nn",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35670825,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3521200,
+    "postDate": "2026-09-05T06:31:11.090Z",
+    "rawMarkdown": "@javaduke95 Thanks for all the clarifications.\n\nWould it be allowed to publish a Kaggle Dataset like the one below if it contains the original radiology report text from the competition data, or fragments/excerpts of that text?\n\nhttps://www.kaggle.com/datasets/laymond/rsna-knee-abnormality-qwen3-8b-weak-labels\n\nI’m specifically wondering whether including either the full report text or extracted portions of it in a public dataset would be considered redistribution of Competition Data under the competition rules.",
+    "content": "<p><a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> Thanks for all the clarifications.</p>\n<p>Would it be allowed to publish a Kaggle Dataset like the one below if it contains the original radiology report text from the competition data, or fragments/excerpts of that text?</p>\n<p><a href=\"https://www.kaggle.com/datasets/laymond/rsna-knee-abnormality-qwen3-8b-weak-labels\" target=\"_blank\">https://www.kaggle.com/datasets/laymond/rsna-knee-abnormality-qwen3-8b-weak-labels</a></p>\n<p>I’m specifically wondering whether including either the full report text or extracted portions of it in a public dataset would be considered redistribution of Competition Data under the competition rules.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Sebastian Garcia",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/sebgarciavillalobos",
+     "tier": "CONTRIBUTOR",
+     "id": 33013219,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Sebastian Garcia",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/sebgarciavillalobos",
+      "userName": "sebgarciavillalobos",
+      "tier": "CONTRIBUTOR",
+      "id": 33013219,
+      "profileUrl": "/sebgarciavillalobos",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 33013219,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514027,
+    "postDate": "2026-08-18T09:26:21.707Z",
+    "rawMarkdown": "Thanks for clarifying this. Allowing hosted LLMs opens some interesting possibilities for extracting structured labels or features from the reports. Would using LLM-derived labels or embeddings from the report text be fully acceptable as model inputs at both training and inference time? Thanks in advance\n",
+    "content": "<p>Thanks for clarifying this. Allowing hosted LLMs opens some interesting possibilities for extracting structured labels or features from the reports. Would using LLM-derived labels or embeddings from the report text be fully acceptable as model inputs at both training and inference time? Thanks in advance</p>",
+    "replies": [
+     {
+      "id": 3517695,
+      "postDate": "2026-08-27T22:05:41.070Z",
+      "rawMarkdown": "\"Would using LLM-derived labels or embeddings from the report text be fully acceptable as model inputs at both training and inference time?\" \n\nYes. Just make sure you read some of the other discussion threads about what the model is provided as input at \"inference time.\"",
+      "content": "<p>\"Would using LLM-derived labels or embeddings from the report text be fully acceptable as model inputs at both training and inference time?\" </p>\n<p>Yes. Just make sure you read some of the other discussion threads about what the model is provided as input at \"inference time.\"</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Po-Hao \"Howard\" Chen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+       "url": "/javaduke95",
+       "tier": "CONTRIBUTOR",
+       "id": 413040,
+       "progressionOptOut": false
+      },
+      "authorType": "HOST",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Oscar Yáñez Feijóo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+     "url": "/oscaryezfeijo",
+     "tier": "CONTRIBUTOR",
+     "id": 16134786,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2335,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Oscar Yáñez Feijóo",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16134786-kg.png?t=2024-12-01-22-46-34",
+      "url": "/oscaryezfeijo",
+      "userName": "oscaryezfeijo",
+      "tier": "CONTRIBUTOR",
+      "id": 16134786,
+      "profileUrl": "/oscaryezfeijo",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 16134786,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510692,
+   "postDate": "2026-08-09T09:52:50.447Z",
+   "rawMarkdown": "Use of commercially hosted LLMs and other external inference services is permitted, provided that the service and method of use otherwise comply with the Competition Rules, including requirements that external data, models, software, and associated tools be reasonably accessible to all participants and of minimal cost. \n\nIn other words, for purposes of this competition, submitting Competition Data, including report text, to an external LLM or API for inference or other computational processing (for example, extracting labels from reports) will not, by itself, be considered prohibited **PRIVATE SHARING** of Competition Data outside the Team.\n\nPlease refer to the [RSNA Knee Abnormality Detection Competition Rules](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/rules).  This is in accordance to Section 2.6.b, **EXTERNAL DATA AND TOOLS**.\n\nThe **PRIVATE SHARING** restriction is intended to prohibit sharing Competition Data, code, or competition-specific work product with other participants, teams, or third parties for collaboration or competitive use outside the registered Team.\n\nParticipants remain responsible for ensuring that any external service complies with all applicable Competition Rules and the service's terms of use, including the requirements for reasonable accessibility and minimal cost.\n\nThe Competition Host reserves the right to determine whether a particular service, model, or configuration is reasonably accessible, is prohibitively costly, or otherwise creates an unfair competitive advantage.",
+   "content": "<p>Use of commercially hosted LLMs and other external inference services is permitted, provided that the service and method of use otherwise comply with the Competition Rules, including requirements that external data, models, software, and associated tools be reasonably accessible to all participants and of minimal cost. </p>\n<p>In other words, for purposes of this competition, submitting Competition Data, including report text, to an external LLM or API for inference or other computational processing (for example, extracting labels from reports) will not, by itself, be considered prohibited <strong>PRIVATE SHARING</strong> of Competition Data outside the Team.</p>\n<p>Please refer to the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/rules\" target=\"_blank\">RSNA Knee Abnormality Detection Competition Rules</a>.  This is in accordance to Section 2.6.b, <strong>EXTERNAL DATA AND TOOLS</strong>.</p>\n<p>The <strong>PRIVATE SHARING</strong> restriction is intended to prohibit sharing Competition Data, code, or competition-specific work product with other participants, teams, or third parties for collaboration or competitive use outside the registered Team.</p>\n<p>Participants remain responsible for ensuring that any external service complies with all applicable Competition Rules and the service's terms of use, including the requirements for reasonable accessibility and minimal cost.</p>\n<p>The Competition Host reserves the right to determine whether a particular service, model, or configuration is reasonably accessible, is prohibitively costly, or otherwise creates an unfair competitive advantage.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Po-Hao \"Howard\" Chen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+    "url": "/javaduke95",
+    "tier": "CONTRIBUTOR",
+    "id": 413040,
+    "progressionOptOut": false
+   },
+   "authorType": "HOST",
+   "votes": {
+    "totalVotes": 20,
+    "canUpvote": true,
+    "totalUpvotes": 20
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "dijorajsenroy",
+      "raulrrc",
+      "qwrfsdr",
+      "vladyslavmorozov",
+      "nathanaelrk",
+      "k256net",
+      "surehsan",
+      "dheerajkannaujiya",
+      "basedhussain",
+      "vikram2u",
+      "miracliu",
+      "tahmidtawsif",
+      "kevinyannick",
+      "apoorvsara",
+      "i3abd1",
+      "dmitrisidorenko",
+      "xavierhoste"
+     ],
+     "userCount": 17
+    },
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "reinierkr"
+     ],
+     "userCount": 1
+    }
+   ]
+  },
+  "firstMessageId": 3510692,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733965,
+  "isStickied": true,
+  "name": "Use of Commercially Hosted LLMs",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T09:52:50.447484800Z",
+  "totalVotes": 20,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733965",
+  "totalMessages": 13,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Po-Hao \"Howard\" Chen",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+   "url": "/javaduke95",
+   "tier": "CONTRIBUTOR",
+   "id": 413040,
+   "progressionOptOut": false
+  },
+  "authorType": "HOST",
+  "commentCount": 13,
+  "firstForumMessageId": 3510692,
+  "id": 733965,
+  "isSticky": true,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Danny Daniel",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733965#3527445",
+  "lastCommentPostDate": "2026-09-23T20:31:07.656666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T09:52:50.447484800Z",
+  "title": "Use of Commercially Hosted LLMs",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733965",
+  "votes": 20
+ }
+}

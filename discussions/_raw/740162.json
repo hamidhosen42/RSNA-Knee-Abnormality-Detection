@@ -1,0 +1,184 @@
+{
+ "forumTopic": {
+  "authorId": 6515340,
+  "authorThumbnailName": "6515340-kg.jpeg?t=2024-06-06-13-34-22",
+  "authorUserDisplayName": "Nathan Jacob",
+  "authorUserName": "nathanjacob",
+  "comments": [
+   {
+    "id": 3522386,
+    "postDate": "2026-09-08T19:02:40.947Z",
+    "rawMarkdown": "Nice summary!\nWhat didn't work for me so far:\n1. DinoV3 doesn't perform as good as DinoV2 for me, which is strange.\n2. I tried hard to use reports as an auxiliary loss, unfortunately it hurts the performance no matter how much I played with its weight in the total loss. It seems that reports are quite noisy, unfortunately.",
+    "content": "<p>Nice summary!\nWhat didn't work for me so far:</p>\n<ol>\n<li>DinoV3 doesn't perform as good as DinoV2 for me, which is strange.</li>\n<li>I tried hard to use reports as an auxiliary loss, unfortunately it hurts the performance no matter how much I played with its weight in the total loss. It seems that reports are quite noisy, unfortunately.</li>\n</ol>",
+    "parent": {},
+    "author": {
+     "displayName": "Rasoul Mojtahedzadeh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4392121-kg.png",
+     "url": "/rasoulmojtahedzadeh",
+     "tier": "EXPERT",
+     "id": 4392121,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 789,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rasoul Mojtahedzadeh",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4392121-kg.png",
+      "url": "/rasoulmojtahedzadeh",
+      "userName": "rasoulmojtahedzadeh",
+      "tier": "EXPERT",
+      "id": 4392121,
+      "profileUrl": "/rasoulmojtahedzadeh",
+      "performanceTier": "EXPERT",
+      "userId": 4392121,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3522256,
+   "postDate": "2026-09-08T14:15:33.897Z",
+   "rawMarkdown": "I've been working through this competition over the past few days and wanted to share what I've      \nlearned, since a lot of it wasn't obvious coming in.                                               \n                                                                                                           \n**The labeling situation is tricky.** Only 58 out of 4,407 studies have gold labels. The rest need to be \nextracted from radiology reports — and those reports are in 9+ languages. I wrote up the data structure  \nand DICOM quirks in [Know Your Knee](https://www.kaggle.com/code/nathanjacob/know-your-knee-eda-dicom-deep-dive-and-baseline) if you're just getting started.                                                                                    \n                                                                                                           \n**The 4-arm ensemble architecture** that the top solutions use is really clever once you break it down - separate heads for different MRI planes fused with attention. I tried to explain the intuition behind it in [4-Arm Ensemble Explained](https://www.kaggle.com/code/nathanjacob/4-arm-ensemble-explained-rsna-knee-0-937).\n                                                                                                           \n**The multilingual reports** are an underexplored angle. Running DINOv2 with cross-lingual label\nextraction covers a lot more of the dataset than English-only approaches. Wrote about that [here](https://www.kaggle.com/code/nathanjacob/dinov2-baseline-knees-in-9-languages).                    \n                                                                                       \nWould love to hear what's working for others. Anyone had luck with the efficiency track?    ",
+   "content": "<p>I've been working through this competition over the past few days and wanted to share what I've<br>\nlearned, since a lot of it wasn't obvious coming in.                                               </p>\n<p><strong>The labeling situation is tricky.</strong> Only 58 out of 4,407 studies have gold labels. The rest need to be \nextracted from radiology reports — and those reports are in 9+ languages. I wrote up the data structure<br>\nand DICOM quirks in <a href=\"https://www.kaggle.com/code/nathanjacob/know-your-knee-eda-dicom-deep-dive-and-baseline\" target=\"_blank\">Know Your Knee</a> if you're just getting started.                                                                                    </p>\n<p><strong>The 4-arm ensemble architecture</strong> that the top solutions use is really clever once you break it down - separate heads for different MRI planes fused with attention. I tried to explain the intuition behind it in <a href=\"https://www.kaggle.com/code/nathanjacob/4-arm-ensemble-explained-rsna-knee-0-937\" target=\"_blank\">4-Arm Ensemble Explained</a>.</p>\n<p><strong>The multilingual reports</strong> are an underexplored angle. Running DINOv2 with cross-lingual label\nextraction covers a lot more of the dataset than English-only approaches. Wrote about that <a href=\"https://www.kaggle.com/code/nathanjacob/dinov2-baseline-knees-in-9-languages\" target=\"_blank\">here</a>.                    </p>\n<p>Would love to hear what's working for others. Anyone had luck with the efficiency track?    </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Nathan Jacob",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6515340-kg.jpeg?t=2024-06-06-13-34-22",
+    "url": "/nathanjacob",
+    "tier": "EXPERT",
+    "id": 6515340,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 460,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Nathan Jacob",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6515340-kg.jpeg?t=2024-06-06-13-34-22",
+     "url": "/nathanjacob",
+     "userName": "nathanjacob",
+     "tier": "EXPERT",
+     "id": 6515340,
+     "profileUrl": "/nathanjacob",
+     "performanceTier": "EXPERT",
+     "userId": 6515340,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3522256,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740162,
+  "name": "Things that helped (and didn't) when approaching RSNA Knee from scratch   ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-08T14:15:33.897991400Z",
+  "tags": [
+   {
+    "id": 13102,
+    "name": "beginner",
+    "listingUrl": "/search?q=beginner+tag%3A%22beginner%22",
+    "tagUrl": "/tags/beginner",
+    "displayName": "Beginner"
+   },
+   {
+    "id": 13201,
+    "name": "exploratory data analysis",
+    "listingUrl": "/search?q=exploratory+data+analysis+tag%3A%22exploratory+data+analysis%22",
+    "tagUrl": "/tags/eda",
+    "displayName": "Exploratory Data Analysis"
+   },
+   {
+    "id": 2107,
+    "name": "languages",
+    "listingUrl": "/search?q=languages+tag%3A%22languages%22",
+    "tagUrl": "/tags/languages",
+    "displayName": "Languages"
+   }
+  ],
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740162",
+  "totalMessages": 1,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Nathan Jacob",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6515340-kg.jpeg?t=2024-06-06-13-34-22",
+   "url": "/nathanjacob",
+   "tier": "EXPERT",
+   "id": 6515340,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3522256,
+  "id": 740162,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Rasoul Mojtahedzadeh",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740162#3522386",
+  "lastCommentPostDate": "2026-09-08T19:02:40.946666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-08T14:15:33.897991400Z",
+  "tags": [
+   {
+    "id": 2107,
+    "name": "languages",
+    "listingUrl": "/tags/languages",
+    "displayName": "Languages"
+   },
+   {
+    "id": 13102,
+    "name": "beginner",
+    "listingUrl": "/tags/beginner",
+    "displayName": "Beginner"
+   },
+   {
+    "id": 13201,
+    "name": "exploratory data analysis",
+    "listingUrl": "/tags/eda",
+    "displayName": "Exploratory Data Analysis"
+   }
+  ],
+  "title": "Things that helped (and didn't) when approaching RSNA Knee from scratch   ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740162",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Nathan Jacob",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6515340-kg.jpeg?t=2024-06-06-13-34-22",
+    "url": "/nathanjacob",
+    "userName": "nathanjacob",
+    "tier": "EXPERT",
+    "id": 6515340,
+    "profileUrl": "/nathanjacob",
+    "performanceTier": "EXPERT",
+    "userId": 6515340,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

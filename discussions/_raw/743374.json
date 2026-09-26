@@ -1,0 +1,144 @@
+{
+ "forumTopic": {
+  "authorId": 10604833,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Prateek Grover",
+  "authorUserName": "prateekgroverin",
+  "comments": [
+   {
+    "id": 3528356,
+    "postDate": "2026-09-25T23:51:52.850Z",
+    "rawMarkdown": "Nice optimization, good work!",
+    "content": "<p>Nice optimization, good work!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 93,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528293,
+   "postDate": "2026-09-25T19:18:57.670Z",
+   "rawMarkdown": "On inference, I went from ~40 min to under 10 with a CoAtNet. A few things that helped, which might transfer:\n\n- One model copy per GPU, each with its own shard of studies - replacing DataParallel, which re-broadcasts every parameter on each forward call. \n- Read each DICOM once, concurrently. One threaded pass per series serves both slice ordering and pixels. A single reader gets ~59 MB/s from /kaggle/input; 16 threads get ~372.\n- Parse DICOM headers directly instead of through pydicom: 0.307 → 0.058 ms/file.\n- Read pixels straight from the PixelData offset (np.frombuffer) - bit-identical to pydicom, 1.22 → 0.33 ms/slice.\n- Take the 1st/99th percentiles on a strided subsample. np.percentile sorts, and that sort was ~60% of decode time.\n- fp16 weights with half inputs, no autocast - 2.08× over autocast on a T4.\n- uint8 to the GPU, normalise on device, pinned memory, non-blocking copies, persistent workers.\n\n***Looking for teammates strong on labels/targets or bringing a resilient single model submission > 0.940.***",
+   "content": "<p>On inference, I went from ~40 min to under 10 with a CoAtNet. A few things that helped, which might transfer:</p>\n<ul>\n<li>One model copy per GPU, each with its own shard of studies - replacing DataParallel, which re-broadcasts every parameter on each forward call. </li>\n<li>Read each DICOM once, concurrently. One threaded pass per series serves both slice ordering and pixels. A single reader gets ~59 MB/s from /kaggle/input; 16 threads get ~372.</li>\n<li>Parse DICOM headers directly instead of through pydicom: 0.307 → 0.058 ms/file.</li>\n<li>Read pixels straight from the PixelData offset (np.frombuffer) - bit-identical to pydicom, 1.22 → 0.33 ms/slice.</li>\n<li>Take the 1st/99th percentiles on a strided subsample. np.percentile sorts, and that sort was ~60% of decode time.</li>\n<li>fp16 weights with half inputs, no autocast - 2.08× over autocast on a T4.</li>\n<li>uint8 to the GPU, normalise on device, pinned memory, non-blocking copies, persistent workers.</li>\n</ul>\n<p><strong><em>Looking for teammates strong on labels/targets or bringing a resilient single model submission &gt; 0.940.</em></strong></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Prateek Grover",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/prateekgroverin",
+    "tier": "CONTRIBUTOR",
+    "id": 10604833,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 131,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Prateek Grover",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/prateekgroverin",
+     "userName": "prateekgroverin",
+     "tier": "CONTRIBUTOR",
+     "id": 10604833,
+     "profileUrl": "/prateekgroverin",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 10604833,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528293,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743374,
+  "name": "Optimizations for blazingly fast submissions (<10 minutes!) + Looking for teammates :)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-25T19:18:57.669583500Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Prateek Grover",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/prateekgroverin",
+   "tier": "CONTRIBUTOR",
+   "id": 10604833,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3528293,
+  "id": 743374,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3528356",
+  "lastCommentPostDate": "2026-09-25T23:51:52.850Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-25T19:18:57.669583500Z",
+  "title": "Optimizations for blazingly fast submissions (<10 minutes!) + Looking for teammates :)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
+  "votes": 2,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Prateek Grover",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/prateekgroverin",
+    "userName": "prateekgroverin",
+    "tier": "CONTRIBUTOR",
+    "id": 10604833,
+    "profileUrl": "/prateekgroverin",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 10604833,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

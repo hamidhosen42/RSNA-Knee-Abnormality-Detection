@@ -1,0 +1,94 @@
+{
+ "forumTopic": {
+  "authorId": 13669554,
+  "authorThumbnailName": "13669554-kg.jpg?t=2025-03-11-02-27-49",
+  "authorUserDisplayName": "Dhiyanesh Babu C V",
+  "authorUserName": "dhiyaneshbabu",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528778,
+   "postDate": "2026-09-26T13:44:02.707Z",
+   "rawMarkdown": "Hi everyone,\n\nI am new to this competition.\nThe data is very big, so I can only process it on Kaggle, not on my laptop.\nIs the free Kaggle GPU enough for this competition? My laptop has an RTX GPU with 6 GB. Is that useful?\n\nThanks for ur tips.",
+   "content": "<p>Hi everyone,</p>\n<p>I am new to this competition.\nThe data is very big, so I can only process it on Kaggle, not on my laptop.\nIs the free Kaggle GPU enough for this competition? My laptop has an RTX GPU with 6 GB. Is that useful?</p>\n<p>Thanks for ur tips.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Dhiyanesh Babu C V",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+    "url": "/dhiyaneshbabu",
+    "tier": "CONTRIBUTOR",
+    "id": 13669554,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Dhiyanesh Babu C V",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+     "url": "/dhiyaneshbabu",
+     "userName": "dhiyaneshbabu",
+     "tier": "CONTRIBUTOR",
+     "id": 13669554,
+     "profileUrl": "/dhiyaneshbabu",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 13669554,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528778,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743698,
+  "name": "Am new here: Is the Kaggle GPU enough for this competition?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-26T13:44:02.705841900Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743698",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Dhiyanesh Babu C V",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+   "url": "/dhiyaneshbabu",
+   "tier": "CONTRIBUTOR",
+   "id": 13669554,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3528778,
+  "id": 743698,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Dhiyanesh Babu C V",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743698#3528778",
+  "lastCommentPostDate": "2026-09-26T13:44:02.706666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-26T13:44:02.705841900Z",
+  "title": "Am new here: Is the Kaggle GPU enough for this competition?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743698",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Dhiyanesh Babu C V",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+    "url": "/dhiyaneshbabu",
+    "userName": "dhiyaneshbabu",
+    "tier": "CONTRIBUTOR",
+    "id": 13669554,
+    "profileUrl": "/dhiyaneshbabu",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 13669554,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

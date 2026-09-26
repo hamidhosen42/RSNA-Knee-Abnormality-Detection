@@ -1,0 +1,511 @@
+{
+ "forumTopic": {
+  "authorId": 27121006,
+  "authorThumbnailName": "27121006-kg.jpeg?t=2026-06-19-10-08-22",
+  "authorUserDisplayName": "Tanvir Anjum Apurbo",
+  "authorUserName": "tanviranjumapurbo",
+  "comments": [
+   {
+    "id": 3528354,
+    "postDate": "2026-09-25T23:45:44.790Z",
+    "rawMarkdown": "There is still 1 month remaining, so that gives lots of time to succeed even if you only use 1 GPU. Currently I am participating with one L40S 48GB GPU. I queue a sequence of experiments on a single L40S 48GB GPU. Each experiment takes a few hours, so we get dozens of experiments each day.\n\nIn about a week, my experiments have found some strong single models and a LB 0.945 ensemble (without using public notebook models)! (Note I am not using public notebook models. If we use public notebook models, the search is quicker because we just search for something to improve public notebooks and don't start from scratch).",
+    "content": "<p>There is still 1 month remaining, so that gives lots of time to succeed even if you only use 1 GPU. Currently I am participating with one L40S 48GB GPU. I queue a sequence of experiments on a single L40S 48GB GPU. Each experiment takes a few hours, so we get dozens of experiments each day.</p>\n<p>In about a week, my experiments have found some strong single models and a LB 0.945 ensemble (without using public notebook models)! (Note I am not using public notebook models. If we use public notebook models, the search is quicker because we just search for something to improve public notebooks and don't start from scratch).</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528186,
+    "postDate": "2026-09-25T15:58:41.663Z",
+    "rawMarkdown": "Colab A100 for me , my team has consumed more than 4000 Compute Units, wasted but have a deep understanding into the datasets , love the competition",
+    "content": "<p>Colab A100 for me , my team has consumed more than 4000 Compute Units, wasted but have a deep understanding into the datasets , love the competition</p>",
+    "replies": [
+     {
+      "id": 3528301,
+      "postDate": "2026-09-25T19:39:22.747Z",
+      "rawMarkdown": "how much it cost?",
+      "content": "<p>how much it cost?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Tanvir Anjum Apurbo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+       "url": "/tanviranjumapurbo",
+       "tier": "CONTRIBUTOR",
+       "id": 27121006,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Tanvir Anjum Apurbo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+        "url": "/tanviranjumapurbo",
+        "userName": "tanviranjumapurbo",
+        "tier": "CONTRIBUTOR",
+        "id": 27121006,
+        "profileUrl": "/tanviranjumapurbo",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27121006,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3528310,
+      "postDate": "2026-09-25T19:50:07.790Z",
+      "rawMarkdown": "Could you please tell how you managed to get the dataset into colab? I have colab pro+ subscription, but for almost a month now, I have not been able to use it because I simply do not have enough disk space on colab. I got the data into my google drive but reading from drive during training is EXTREMELY SLOW.",
+      "content": "<p>Could you please tell how you managed to get the dataset into colab? I have colab pro+ subscription, but for almost a month now, I have not been able to use it because I simply do not have enough disk space on colab. I got the data into my google drive but reading from drive during training is EXTREMELY SLOW.</p>",
+      "replies": [
+       {
+        "id": 3528315,
+        "postDate": "2026-09-25T20:31:58.280Z",
+        "rawMarkdown": "You preprocess the cache on Kaggle, which has the data mounted automatically, push it to a private dataset, and load it on Colab with the Kaggle API. My cache is 50GB at 384px and takes about 5m to load into Colab disk. ",
+        "content": "<p>You preprocess the cache on Kaggle, which has the data mounted automatically, push it to a private dataset, and load it on Colab with the Kaggle API. My cache is 50GB at 384px and takes about 5m to load into Colab disk. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3528319,
+        "postDate": "2026-09-25T20:50:35.953Z",
+        "rawMarkdown": "Just to be sure I understand you: what you did was to preprocess the dicom files on a kaggle notebook. But \"Push to a private dataset\" is where I am lost. Do you mean to commit the notebook and create a dataset from the outputs?",
+        "content": "<p>Just to be sure I understand you: what you did was to preprocess the dicom files on a kaggle notebook. But \"Push to a private dataset\" is where I am lost. Do you mean to commit the notebook and create a dataset from the outputs?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Wisdom Aduah",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/anaphase21",
+         "tier": "CONTRIBUTOR",
+         "id": 2144387,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2997,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Wisdom Aduah",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/anaphase21",
+          "userName": "anaphase21",
+          "tier": "CONTRIBUTOR",
+          "id": 2144387,
+          "profileUrl": "/anaphase21",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2144387,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3528321,
+        "postDate": "2026-09-25T21:07:48.350Z",
+        "rawMarkdown": "You can do that if you want or you can create the dataset directly in the Kaggle notebook, again using the Kaggle APIs. Same outcome, first skips the commit + download step, it just uploads directly from the notebook when you run it. Ask a LLM, it'll know what to do but you certainly should not be reading any DICOMs from a Google Drive folder. ",
+        "content": "<p>You can do that if you want or you can create the dataset directly in the Kaggle notebook, again using the Kaggle APIs. Same outcome, first skips the commit + download step, it just uploads directly from the notebook when you run it. Ask a LLM, it'll know what to do but you certainly should not be reading any DICOMs from a Google Drive folder. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3528327,
+        "postDate": "2026-09-25T21:24:42.407Z",
+        "rawMarkdown": "That was really helpful. Thanks.",
+        "content": "<p>That was really helpful. Thanks.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Wisdom Aduah",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/anaphase21",
+         "tier": "CONTRIBUTOR",
+         "id": 2144387,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2997,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Wisdom Aduah",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/anaphase21",
+          "userName": "anaphase21",
+          "tier": "CONTRIBUTOR",
+          "id": 2144387,
+          "profileUrl": "/anaphase21",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2144387,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Wisdom Aduah",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/anaphase21",
+       "tier": "CONTRIBUTOR",
+       "id": 2144387,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2997,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Wisdom Aduah",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/anaphase21",
+        "userName": "anaphase21",
+        "tier": "CONTRIBUTOR",
+        "id": 2144387,
+        "profileUrl": "/anaphase21",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 2144387,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Cà Rốt Production",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+     "url": "/crtproduction",
+     "tier": "CONTRIBUTOR",
+     "id": 20960131,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "KAGGLE",
+      "featuredUserNames": [
+       "tanviranjumapurbo"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cà Rốt Production",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+      "url": "/crtproduction",
+      "userName": "crtproduction",
+      "tier": "CONTRIBUTOR",
+      "id": 20960131,
+      "profileUrl": "/crtproduction",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 20960131,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528183,
+    "postDate": "2026-09-25T15:39:35.287Z",
+    "rawMarkdown": "RTX 3090 works for me",
+    "content": "<p>RTX 3090 works for me</p>",
+    "replies": [
+     {
+      "id": 3528302,
+      "postDate": "2026-09-25T19:39:42.990Z",
+      "rawMarkdown": "24gb?                ",
+      "content": "<p>24gb?                </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Tanvir Anjum Apurbo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+       "url": "/tanviranjumapurbo",
+       "tier": "CONTRIBUTOR",
+       "id": 27121006,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Tanvir Anjum Apurbo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+        "url": "/tanviranjumapurbo",
+        "userName": "tanviranjumapurbo",
+        "tier": "CONTRIBUTOR",
+        "id": 27121006,
+        "profileUrl": "/tanviranjumapurbo",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27121006,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "pompom555",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+     "url": "/pompom555",
+     "tier": "EXPERT",
+     "id": 4855941,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 80,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "KAGGLE",
+      "featuredUserNames": [
+       "tanviranjumapurbo"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "pompom555",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+      "url": "/pompom555",
+      "userName": "pompom555",
+      "tier": "EXPERT",
+      "id": 4855941,
+      "profileUrl": "/pompom555",
+      "performanceTier": "EXPERT",
+      "userId": 4855941,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528180,
+   "postDate": "2026-09-25T15:32:01.580Z",
+   "rawMarkdown": "May I know the hardware specifications of you guys are using? I am wondering I will be able to train this huge dataset or not.",
+   "content": "<p>May I know the hardware specifications of you guys are using? I am wondering I will be able to train this huge dataset or not.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Tanvir Anjum Apurbo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+    "url": "/tanviranjumapurbo",
+    "tier": "CONTRIBUTOR",
+    "id": 27121006,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Tanvir Anjum Apurbo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+     "url": "/tanviranjumapurbo",
+     "userName": "tanviranjumapurbo",
+     "tier": "CONTRIBUTOR",
+     "id": 27121006,
+     "profileUrl": "/tanviranjumapurbo",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27121006,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528180,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743303,
+  "name": "Hardware Specifications",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-25T15:32:01.579227200Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743303",
+  "totalMessages": 10,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Tanvir Anjum Apurbo",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+   "url": "/tanviranjumapurbo",
+   "tier": "CONTRIBUTOR",
+   "id": 27121006,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 10,
+  "firstForumMessageId": 3528180,
+  "id": 743303,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743303#3528354",
+  "lastCommentPostDate": "2026-09-25T23:45:44.790Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-25T15:32:01.579227200Z",
+  "title": "Hardware Specifications",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743303",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Tanvir Anjum Apurbo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27121006-kg.jpeg?t=2026-06-19-10-08-22",
+    "url": "/tanviranjumapurbo",
+    "userName": "tanviranjumapurbo",
+    "tier": "CONTRIBUTOR",
+    "id": 27121006,
+    "profileUrl": "/tanviranjumapurbo",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27121006,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

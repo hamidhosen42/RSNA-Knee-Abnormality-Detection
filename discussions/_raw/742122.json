@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 34488450,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Danilo Pedroso",
+  "authorUserName": "danilopedroso",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3526029,
+   "postDate": "2026-09-20T00:35:32.200Z",
+   "rawMarkdown": "Hello Kaggle Support,\n\nI am danilopedroso. Please advise on the failed hidden rerun for:\n\nCompetition: rsna-knee-abnormality-detection\nNotebook: danilopedroso/rsna-knee-30-main-hybrid-v2-v1-lateral-meniscus\nResource: 130569806\nSource Version: 20\nSubmission ID: 56338136\n\nAt 2026-09-19 00:29:02 UTC (API observation time), the official API returned COMPLETE with an error description and no Public Score:\n\n“Your notebook hit an unhandled error while rerunning your code.”\n\nThis indicates processing ended with an error, not successful scoring. No exception class, traceback, failure stage, or reliable hidden-rerun duration was available in that response.\n\nThe expanded error view was not available for inspection. The error message quoted above was obtained from the official API.\n\nThe private V20 notebook uses CPU for both models, with no accelerator and GPU, TPU, and Internet disabled, and two public weight inputs. Its visible execution completed and its submission.csv was validated. This does not establish that the hidden rerun succeeded.\n\nOur investigation passed 37 distinct local tests. Structural scenarios up to 1,000 studies passed with stubs, which do not reproduce the full pipeline’s resource usage. We did not reproduce OOM. The internal deadline and output rollback behaved as designed. V2 preprocessing rejects a synthetic case with differently sized slices; we have no evidence this occurred in hidden data or belongs to the inputs our code must support. No speculative patch was applied.\n\nCould you advise, within the competition’s disclosure restrictions:\n\nA. Is any additional error category or sanitized diagnostic guidance shareable for this submission?\n\nB. Is there an indication of a violation of a published environment, resource, input, or format requirement that can be explained without revealing hidden-set characteristics?\n\nC. If the exception class, stage, or duration cannot be disclosed, what official diagnostic procedure is recommended?\n\nD. Is there public documentation of guarantees about image dimensions across slices within a series, relevant to preprocessing? We seek only the general public contract, not whether a condition occurs in hidden data.\n\nThe cause remains unknown. We are not asserting a platform bug or requesting hidden data, labels, or individual records. No sensitive files or private source code are attached. We have not repeated the submission.\n\nThank you.",
+   "content": "<p>Hello Kaggle Support,</p>\n<p>I am danilopedroso. Please advise on the failed hidden rerun for:</p>\n<p>Competition: rsna-knee-abnormality-detection\nNotebook: danilopedroso/rsna-knee-30-main-hybrid-v2-v1-lateral-meniscus\nResource: 130569806\nSource Version: 20\nSubmission ID: 56338136</p>\n<p>At 2026-09-19 00:29:02 UTC (API observation time), the official API returned COMPLETE with an error description and no Public Score:</p>\n<p>“Your notebook hit an unhandled error while rerunning your code.”</p>\n<p>This indicates processing ended with an error, not successful scoring. No exception class, traceback, failure stage, or reliable hidden-rerun duration was available in that response.</p>\n<p>The expanded error view was not available for inspection. The error message quoted above was obtained from the official API.</p>\n<p>The private V20 notebook uses CPU for both models, with no accelerator and GPU, TPU, and Internet disabled, and two public weight inputs. Its visible execution completed and its submission.csv was validated. This does not establish that the hidden rerun succeeded.</p>\n<p>Our investigation passed 37 distinct local tests. Structural scenarios up to 1,000 studies passed with stubs, which do not reproduce the full pipeline’s resource usage. We did not reproduce OOM. The internal deadline and output rollback behaved as designed. V2 preprocessing rejects a synthetic case with differently sized slices; we have no evidence this occurred in hidden data or belongs to the inputs our code must support. No speculative patch was applied.</p>\n<p>Could you advise, within the competition’s disclosure restrictions:</p>\n<p>A. Is any additional error category or sanitized diagnostic guidance shareable for this submission?</p>\n<p>B. Is there an indication of a violation of a published environment, resource, input, or format requirement that can be explained without revealing hidden-set characteristics?</p>\n<p>C. If the exception class, stage, or duration cannot be disclosed, what official diagnostic procedure is recommended?</p>\n<p>D. Is there public documentation of guarantees about image dimensions across slices within a series, relevant to preprocessing? We seek only the general public contract, not whether a condition occurs in hidden data.</p>\n<p>The cause remains unknown. We are not asserting a platform bug or requesting hidden data, labels, or individual records. No sensitive files or private source code are attached. We have not repeated the submission.</p>\n<p>Thank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Danilo Pedroso",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/danilopedroso",
+    "tier": "CONTRIBUTOR",
+    "id": 34488450,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3765,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Danilo Pedroso",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/danilopedroso",
+     "userName": "danilopedroso",
+     "tier": "CONTRIBUTOR",
+     "id": 34488450,
+     "profileUrl": "/danilopedroso",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 34488450,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3526029,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742122,
+  "name": "RSNA Knee — submission 56338136 fails during hidden rerun; V20 CPU run succeeds",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-20T00:35:32.201415200Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742122",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Danilo Pedroso",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/danilopedroso",
+   "tier": "CONTRIBUTOR",
+   "id": 34488450,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3526029,
+  "id": 742122,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Danilo Pedroso",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742122#3526029",
+  "lastCommentPostDate": "2026-09-20T00:35:32.200Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-20T00:35:32.201415200Z",
+  "title": "RSNA Knee — submission 56338136 fails during hidden rerun; V20 CPU run succeeds",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742122",
+  "votes": -1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Danilo Pedroso",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/danilopedroso",
+    "userName": "danilopedroso",
+    "tier": "CONTRIBUTOR",
+    "id": 34488450,
+    "profileUrl": "/danilopedroso",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 34488450,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

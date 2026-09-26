@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 32651996,
+  "authorThumbnailName": "32651996-gr.jpg",
+  "authorUserDisplayName": "Sơn Nguyễn Hoàng",
+  "authorUserName": "songod0906",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3521485,
+   "postDate": "2026-09-06T04:50:13.430Z",
+   "rawMarkdown": "Hi host team, I'm checking the release requirements early so I don't leave a licensing problem until the end.\n\nFor a solution using public pretrained weights under CC-BY-NC-SA 4.0 or the DINOv3 licence, is it OK to release the final model as separate components under their original licences, with one inference notebook linking them?\n\nIf an upstream component cannot be rehosted, would a pinned public link satisfy the weights-delivery requirement, or would that component need to be replaced? I saw the pretrained-model exception in the winner licence clause, but wanted to check how it fits the public Kaggle model/dataset requirement.\n\nThanks!",
+   "content": "<p>Hi host team, I'm checking the release requirements early so I don't leave a licensing problem until the end.</p>\n<p>For a solution using public pretrained weights under CC-BY-NC-SA 4.0 or the DINOv3 licence, is it OK to release the final model as separate components under their original licences, with one inference notebook linking them?</p>\n<p>If an upstream component cannot be rehosted, would a pinned public link satisfy the weights-delivery requirement, or would that component need to be replaced? I saw the pretrained-model exception in the winner licence clause, but wanted to check how it fits the public Kaggle model/dataset requirement.</p>\n<p>Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Sơn Nguyễn Hoàng",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32651996-gr.jpg",
+    "url": "/songod0906",
+    "tier": "CONTRIBUTOR",
+    "id": 32651996,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1467,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Sơn Nguyễn Hoàng",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32651996-gr.jpg",
+     "url": "/songod0906",
+     "userName": "songod0906",
+     "tier": "CONTRIBUTOR",
+     "id": 32651996,
+     "profileUrl": "/songod0906",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 32651996,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3521485,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 739758,
+  "name": "Final model release with mixed upstream weight licences",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-06T04:50:13.430647500Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/739758",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Sơn Nguyễn Hoàng",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32651996-gr.jpg",
+   "url": "/songod0906",
+   "tier": "CONTRIBUTOR",
+   "id": 32651996,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3521485,
+  "id": 739758,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Sơn Nguyễn Hoàng",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739758#3521485",
+  "lastCommentPostDate": "2026-09-06T04:50:13.430Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-06T04:50:13.430647500Z",
+  "title": "Final model release with mixed upstream weight licences",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739758",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Sơn Nguyễn Hoàng",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32651996-gr.jpg",
+    "url": "/songod0906",
+    "userName": "songod0906",
+    "tier": "CONTRIBUTOR",
+    "id": 32651996,
+    "profileUrl": "/songod0906",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 32651996,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

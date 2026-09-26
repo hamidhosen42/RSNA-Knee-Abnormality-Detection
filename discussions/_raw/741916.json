@@ -1,0 +1,255 @@
+{
+ "forumTopic": {
+  "authorId": 32583154,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "MJ121212",
+  "authorUserName": "mj121212",
+  "comments": [
+   {
+    "id": 3525872,
+    "postDate": "2026-09-19T09:17:44.693Z",
+    "rawMarkdown": "My understanding is that due to large data size (569.76 GB) / 819640 files, Kaggle prefer that we download the data using Kaggle SDK. However, if you click on the \"Download as zip\", it should download 246GB file.",
+    "content": "<p>My understanding is that due to large data size (569.76 GB) / 819640 files, Kaggle prefer that we download the data using Kaggle SDK. However, if you click on the \"Download as zip\", it should download 246GB file.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Sanjib Biswas",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/aidiagnosis",
+     "tier": "CONTRIBUTOR",
+     "id": 21457095,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2225,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Sanjib Biswas",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/aidiagnosis",
+      "userName": "aidiagnosis",
+      "tier": "CONTRIBUTOR",
+      "id": 21457095,
+      "profileUrl": "/aidiagnosis",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 21457095,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3525714,
+    "postDate": "2026-09-18T17:50:58.923Z",
+    "rawMarkdown": "Hi @mj121212,\n\nThanks for the report. We attempted to update the dataset recently to fix the corrupted DICOMs, but it looks like the update may have failed. I will look into it.",
+    "content": "<p>Hi <a href=\"/mj121212\" target=\"_blank\">@mj121212</a>,</p>\n<p>Thanks for the report. We attempted to update the dataset recently to fix the corrupted DICOMs, but it looks like the update may have failed. I will look into it.</p>",
+    "replies": [
+     {
+      "id": 3525821,
+      "postDate": "2026-09-19T04:23:56.037Z",
+      "rawMarkdown": "@ryanholbrook Which DICOMs were corrupted/replaced? Is there a discussion talking about them?",
+      "content": "<p><a href=\"/ryanholbrook\" target=\"_blank\">@ryanholbrook</a> Which DICOMs were corrupted/replaced? Is there a discussion talking about them?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "CoreyJamesLevinson",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1238844-kg.jpg",
+       "url": "/returnofsputnik",
+       "tier": "GRANDMASTER",
+       "id": 1238844,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2483,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "CoreyJamesLevinson",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1238844-kg.jpg",
+        "url": "/returnofsputnik",
+        "userName": "returnofsputnik",
+        "tier": "GRANDMASTER",
+        "id": 1238844,
+        "profileUrl": "/returnofsputnik",
+        "performanceTier": "GRANDMASTER",
+        "userId": 1238844,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3525923,
+      "postDate": "2026-09-19T14:45:26.737Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Ryan Holbrook",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2003505-kg.jpg",
+     "url": "/ryanholbrook",
+     "tier": "STAFF",
+     "id": 2003505,
+     "progressionOptOut": false
+    },
+    "authorType": "ADMIN",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "marcimarc",
+       "mj121212"
+      ],
+      "userCount": 2
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ryan Holbrook",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2003505-kg.jpg",
+      "url": "/ryanholbrook",
+      "userName": "ryanholbrook",
+      "tier": "STAFF",
+      "id": 2003505,
+      "profileUrl": "/ryanholbrook",
+      "performanceTier": "STAFF",
+      "userId": 2003505,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3525619,
+   "postDate": "2026-09-18T12:10:19.150Z",
+   "rawMarkdown": "the download link to the dataset and several links are broken and unusable now. they were working before. I cannot download the dataset again, even with the script. I have attached the snapshot of the page I am taking about with the link.  ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F32583154%2F8ae76b604b5fab8562e5ef599a88e741%2FScreenshot%202026-09-18%20130750.png?generation=1789733360957090&alt=media)",
+   "content": "<p>the download link to the dataset and several links are broken and unusable now. they were working before. I cannot download the dataset again, even with the script. I have attached the snapshot of the page I am taking about with the link.  <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F32583154%2F8ae76b604b5fab8562e5ef599a88e741%2FScreenshot%202026-09-18%20130750.png?generation=1789733360957090&amp;alt=media\" alt=\"\"></p>",
+   "parent": {},
+   "author": {
+    "displayName": "MJ121212",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/mj121212",
+    "tier": "CONTRIBUTOR",
+    "id": 32583154,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1552,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "SURPRISE",
+     "featuredUserNames": [
+      "xuyuan",
+      "prishajhala"
+     ],
+     "userCount": 2
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "MJ121212",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mj121212",
+     "userName": "mj121212",
+     "tier": "CONTRIBUTOR",
+     "id": 32583154,
+     "profileUrl": "/mj121212",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 32583154,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3525619,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 741916,
+  "name": "Broken download link",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-18T12:10:19.148462700Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/741916",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "MJ121212",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/mj121212",
+   "tier": "CONTRIBUTOR",
+   "id": 32583154,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3525619,
+  "id": 741916,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741916#3525923",
+  "lastCommentPostDate": "2026-09-19T14:45:26.736666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-18T12:10:19.148462700Z",
+  "title": "Broken download link",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741916",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "MJ121212",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/mj121212",
+    "userName": "mj121212",
+    "tier": "CONTRIBUTOR",
+    "id": 32583154,
+    "profileUrl": "/mj121212",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 32583154,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

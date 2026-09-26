@@ -1,0 +1,621 @@
+{
+ "forumTopic": {
+  "authorId": 17004472,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "bdbotond",
+  "authorUserName": "bdbotond",
+  "comments": [
+   {
+    "id": 3522948,
+    "postDate": "2026-09-10T02:57:19.177Z",
+    "rawMarkdown": "Your 9 hours does not need to include anything but the generation of the submission file by predicting on the hidden test file.  You can load your model by way of a dataset or use a kaggle notebook with the trained models.\n\nIf using kaggle to train I believe the current time restriction is 12 hours for a single run.  But you can break the kaggle training into multiple notebooks if needed.\n\nI do all my training on local computer - my current attempt is pretty slow and taking almost 24 hours to train.",
+    "content": "<p>Your 9 hours does not need to include anything but the generation of the submission file by predicting on the hidden test file.  You can load your model by way of a dataset or use a kaggle notebook with the trained models.</p>\n<p>If using kaggle to train I believe the current time restriction is 12 hours for a single run.  But you can break the kaggle training into multiple notebooks if needed.</p>\n<p>I do all my training on local computer - my current attempt is pretty slow and taking almost 24 hours to train.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 635,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3522880,
+    "postDate": "2026-09-09T22:34:14.553Z",
+    "rawMarkdown": "Hey! So that 9 Hour grading/scoring time is not a floor/ceiling at all & it can be improved! There are several methods to increase the time, I have scored/graded between 23 minutes & 9 hours with every combo in between.\nMy best as of 9/9/2026 6:32 EST is 29.5 minutes placing my team at 24th in efficiency, I have another in now that is a 23 minute run that should reflect once the host updates the list today & dont hold me to it but I believe the current leader is down to 5 minutes so thats the time to beat!! ",
+    "content": "<p>Hey! So that 9 Hour grading/scoring time is not a floor/ceiling at all &amp; it can be improved! There are several methods to increase the time, I have scored/graded between 23 minutes &amp; 9 hours with every combo in between.\nMy best as of 9/9/2026 6:32 EST is 29.5 minutes placing my team at 24th in efficiency, I have another in now that is a 23 minute run that should reflect once the host updates the list today &amp; dont hold me to it but I believe the current leader is down to 5 minutes so thats the time to beat!! </p>",
+    "replies": [
+     {
+      "id": 3522917,
+      "postDate": "2026-09-10T00:36:42.597Z",
+      "rawMarkdown": "Interesting to see what someone else's timing is and where they are at the the efficiency leaderboard!  My best is around 5 minutes, probably closer to 6.  I'm not too sure it's worth trying to lower it even more at this point.",
+      "content": "<p>Interesting to see what someone else's timing is and where they are at the the efficiency leaderboard!  My best is around 5 minutes, probably closer to 6.  I'm not too sure it's worth trying to lower it even more at this point.</p>",
+      "replies": [
+       {
+        "id": 3525325,
+        "postDate": "2026-09-17T14:09:50.567Z",
+        "rawMarkdown": "Just to make sure I understand this is the time from the notebook submission until you have a score on the leaderboard right? I only check just because that time is so impressive that it could be mistaken for a save and run all notebook time 😂",
+        "content": "<p>Just to make sure I understand this is the time from the notebook submission until you have a score on the leaderboard right? I only check just because that time is so impressive that it could be mistaken for a save and run all notebook time 😂</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525329,
+        "postDate": "2026-09-17T14:24:04.053Z",
+        "rawMarkdown": "Just incredible that you can hit 5 or 6 minutes at inference! You must be sub sampling the dicoms right? I cannot even read them all in that time let alone generate predictions :D can't wait to see your final solution ..",
+        "content": "<p>Just incredible that you can hit 5 or 6 minutes at inference! You must be sub sampling the dicoms right? I cannot even read them all in that time let alone generate predictions :D can't wait to see your final solution ..</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom Aindow",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+         "url": "/taindow",
+         "tier": "MASTER",
+         "id": 921947,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 81,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tom Aindow",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+          "url": "/taindow",
+          "userName": "taindow",
+          "tier": "MASTER",
+          "id": 921947,
+          "profileUrl": "/taindow",
+          "performanceTier": "MASTER",
+          "userId": 921947,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525338,
+        "postDate": "2026-09-17T14:53:51.107Z",
+        "rawMarkdown": "That's really impressive , my bare minimum is 5-6 hours , and your is just 5 mins . It shows the level between us.\nDamn!! I need to work harder",
+        "content": "<p>That's really impressive , my bare minimum is 5-6 hours , and your is just 5 mins . It shows the level between us.\nDamn!! I need to work harder</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 278,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       },
+       {
+        "id": 3525383,
+        "postDate": "2026-09-17T16:25:17.483Z",
+        "rawMarkdown": "Yep, that's the time from hitting submit to getting a score.  I spent so much time trying to figure out how to get read times lower.  It's still probably 60 or 70% of my submission time",
+        "content": "<p>Yep, that's the time from hitting submit to getting a score.  I spent so much time trying to figure out how to get read times lower.  It's still probably 60 or 70% of my submission time</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Scott Willis",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/scottgwillis",
+         "tier": "CONTRIBUTOR",
+         "id": 17764997,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Scott Willis",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/scottgwillis",
+          "userName": "scottgwillis",
+          "tier": "CONTRIBUTOR",
+          "id": 17764997,
+          "profileUrl": "/scottgwillis",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17764997,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525410,
+        "postDate": "2026-09-17T17:55:19.607Z",
+        "rawMarkdown": "Given that and the LB I really hope to see you hold strong in private leaderboard. Hoping to learn lots from your solution! ",
+        "content": "<p>Given that and the LB I really hope to see you hold strong in private leaderboard. Hoping to learn lots from your solution! </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525891,
+        "postDate": "2026-09-19T11:41:15.990Z",
+        "rawMarkdown": "since , you are no. 1 in this competition . So there is some difference in the working method ofc.\nCan you give some advice tho.",
+        "content": "<p>since , you are no. 1 in this competition . So there is some difference in the working method ofc.\nCan you give some advice tho.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 278,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       },
+       {
+        "id": 3525971,
+        "postDate": "2026-09-19T18:24:10.473Z",
+        "rawMarkdown": "I'll be honest, I just tried things.  I used a small model that I can train fairly quick so I could just keep iterating as fast as I could.  This isn't something I'm experienced with.  It was a lot of reading papers, chatting with LLMs about what I didn't know, and then reading more papers to make sure the information was correct.  My goal wasn't necessarily to win and even though I'm 1st currently.  I'm expecting things to change quite a bit with the private leaderboard.\n\nI've trained around 900 models at this point.  Considering I'm someone who doesn't work in machine learning, or even in tech, so I've just been trying whatever idea comes into my head.  It's also the reason I don't feel confident my score will hold up.",
+        "content": "<p>I'll be honest, I just tried things.  I used a small model that I can train fairly quick so I could just keep iterating as fast as I could.  This isn't something I'm experienced with.  It was a lot of reading papers, chatting with LLMs about what I didn't know, and then reading more papers to make sure the information was correct.  My goal wasn't necessarily to win and even though I'm 1st currently.  I'm expecting things to change quite a bit with the private leaderboard.</p>\n<p>I've trained around 900 models at this point.  Considering I'm someone who doesn't work in machine learning, or even in tech, so I've just been trying whatever idea comes into my head.  It's also the reason I don't feel confident my score will hold up.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Scott Willis",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/scottgwillis",
+         "tier": "CONTRIBUTOR",
+         "id": 17764997,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 4
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Scott Willis",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/scottgwillis",
+          "userName": "scottgwillis",
+          "tier": "CONTRIBUTOR",
+          "id": 17764997,
+          "profileUrl": "/scottgwillis",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17764997,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525978,
+        "postDate": "2026-09-19T19:01:22.130Z",
+        "rawMarkdown": "900 models is insane 🤣 I respect it. Be more confident in yourself. If you have some sort of validation set you're confident in, you'll be fine on the private leaderboard, even if your score drops somewhat. I can't image there will be that much shake-up in this competition anyways. \n\nYour training times must be incredibly fast for 900 models or you've been training/experimenting 24/7 lol",
+        "content": "<p>900 models is insane 🤣 I respect it. Be more confident in yourself. If you have some sort of validation set you're confident in, you'll be fine on the private leaderboard, even if your score drops somewhat. I can't image there will be that much shake-up in this competition anyways. </p>\n<p>Your training times must be incredibly fast for 900 models or you've been training/experimenting 24/7 lol</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Jack",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+         "url": "/jackvd",
+         "tier": "MASTER",
+         "id": 21922722,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 789,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Jack",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+          "url": "/jackvd",
+          "userName": "jackvd",
+          "tier": "MASTER",
+          "id": 21922722,
+          "profileUrl": "/jackvd",
+          "performanceTier": "MASTER",
+          "userId": 21922722,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3526033,
+        "postDate": "2026-09-20T01:46:32.703Z",
+        "rawMarkdown": "I agree with Jack, if you are also getting good CV on your out of fold scores and your gold score then you should be fine. Sure it might shift a bit, but the trend should be good.",
+        "content": "<p>I agree with Jack, if you are also getting good CV on your out of fold scores and your gold score then you should be fine. Sure it might shift a bit, but the trend should be good.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3526069,
+        "postDate": "2026-09-20T08:33:06.050Z",
+        "rawMarkdown": "That's really helpful insight. One more question like which particular model are you training?",
+        "content": "<p>That's really helpful insight. One more question like which particular model are you training?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 278,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Scott Willis",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/scottgwillis",
+       "tier": "CONTRIBUTOR",
+       "id": 17764997,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Scott Willis",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/scottgwillis",
+        "userName": "scottgwillis",
+        "tier": "CONTRIBUTOR",
+        "id": 17764997,
+        "profileUrl": "/scottgwillis",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 17764997,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 144,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dread Development",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+      "url": "/dreaddevelopment",
+      "userName": "dreaddevelopment",
+      "tier": "EXPERT",
+      "id": 35987882,
+      "profileUrl": "/dreaddevelopment",
+      "performanceTier": "EXPERT",
+      "userId": 35987882,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3522785,
+   "postDate": "2026-09-09T19:01:25.373Z",
+   "rawMarkdown": "Not clear for me that the 9h evaluation runtime, only counting on the test part, or it has to include the training time of the model as well?",
+   "content": "<p>Not clear for me that the 9h evaluation runtime, only counting on the test part, or it has to include the training time of the model as well?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "bdbotond",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/bdbotond",
+    "tier": "CONTRIBUTOR",
+    "id": 17004472,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4167,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "bdbotond",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/bdbotond",
+     "userName": "bdbotond",
+     "tier": "CONTRIBUTOR",
+     "id": 17004472,
+     "profileUrl": "/bdbotond",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 17004472,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3522785,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740474,
+  "name": "9h runtime question",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-09T19:01:25.373312300Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740474",
+  "totalMessages": 13,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "bdbotond",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/bdbotond",
+   "tier": "CONTRIBUTOR",
+   "id": 17004472,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 13,
+  "firstForumMessageId": 3522785,
+  "id": 740474,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740474#3526069",
+  "lastCommentPostDate": "2026-09-20T08:33:06.050Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-09T19:01:25.373312300Z",
+  "title": "9h runtime question",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740474",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "bdbotond",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/bdbotond",
+    "userName": "bdbotond",
+    "tier": "CONTRIBUTOR",
+    "id": 17004472,
+    "profileUrl": "/bdbotond",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 17004472,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

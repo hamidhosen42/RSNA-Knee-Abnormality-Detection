@@ -1,0 +1,176 @@
+{
+ "forumTopic": {
+  "authorId": 30785739,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Abd Musab Sid",
+  "authorUserName": "abdmusabsid",
+  "comments": [
+   {
+    "id": 3526242,
+    "postDate": "2026-09-20T19:08:22.510Z",
+    "rawMarkdown": "interestingly i saw by just using the metadata, you could gave AUC > 0.6 so there is good signal even without using the image model",
+    "content": "<p>interestingly i saw by just using the metadata, you could gave AUC &gt; 0.6 so there is good signal even without using the image model</p>",
+    "parent": {},
+    "author": {
+     "displayName": "CoreyJamesLevinson",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1238844-kg.jpg",
+     "url": "/returnofsputnik",
+     "tier": "GRANDMASTER",
+     "id": 1238844,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2483,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "CoreyJamesLevinson",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1238844-kg.jpg",
+      "url": "/returnofsputnik",
+      "userName": "returnofsputnik",
+      "tier": "GRANDMASTER",
+      "id": 1238844,
+      "profileUrl": "/returnofsputnik",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1238844,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3526315,
+    "postDate": "2026-09-21T00:26:04.560Z",
+    "rawMarkdown": "Tried X3D-M pretrained on Kinetic400, got about .63 LB\nI am starting finetuning 2.5D image pretrained models is the way to go",
+    "content": "<p>Tried X3D-M pretrained on Kinetic400, got about .63 LB\nI am starting finetuning 2.5D image pretrained models is the way to go</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3042,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3526180,
+   "postDate": "2026-09-20T15:44:49.433Z",
+   "rawMarkdown": "same as title, Bcz I am,",
+   "content": "<p>same as title, Bcz I am,</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Abd Musab Sid",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/abdmusabsid",
+    "tier": "CONTRIBUTOR",
+    "id": 30785739,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Abd Musab Sid",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/abdmusabsid",
+     "userName": "abdmusabsid",
+     "tier": "CONTRIBUTOR",
+     "id": 30785739,
+     "profileUrl": "/abdmusabsid",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 30785739,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3526180,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742190,
+  "name": "anybody here, maybe not using image models to do this???",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-20T15:44:49.434339700Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742190",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Abd Musab Sid",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/abdmusabsid",
+   "tier": "CONTRIBUTOR",
+   "id": 30785739,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3526180,
+  "id": 742190,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742190#3526315",
+  "lastCommentPostDate": "2026-09-21T00:26:04.560Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-20T15:44:49.434339700Z",
+  "title": "anybody here, maybe not using image models to do this???",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742190",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Abd Musab Sid",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/abdmusabsid",
+    "userName": "abdmusabsid",
+    "tier": "CONTRIBUTOR",
+    "id": 30785739,
+    "profileUrl": "/abdmusabsid",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 30785739,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

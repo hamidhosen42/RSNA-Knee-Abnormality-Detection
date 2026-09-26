@@ -1,0 +1,268 @@
+{
+ "forumTopic": {
+  "authorId": 28874055,
+  "authorThumbnailName": "28874055-kg.jpg?t=2026-08-02-03-35-19",
+  "authorUserDisplayName": "Raymond Yuen",
+  "authorUserName": "laymond",
+  "comments": [
+   {
+    "id": 3526643,
+    "postDate": "2026-09-21T22:13:36.547Z",
+    "rawMarkdown": "It's hard to say, but Top 50, everyone is now over 0.95 - so I believe they all do indeed have separate models outperforming the public stack's 0.941 number. (atleast I do). \n\nPerhaps in a couple of weeks, when teams start forming ensembles - we'll see atleast the entire Top 10 go over 0.96, and they should remain there with the Private LB too.",
+    "content": "<p>It's hard to say, but Top 50, everyone is now over 0.95 - so I believe they all do indeed have separate models outperforming the public stack's 0.941 number. (atleast I do). </p>\n<p>Perhaps in a couple of weeks, when teams start forming ensembles - we'll see atleast the entire Top 10 go over 0.96, and they should remain there with the Private LB too.</p>",
+    "replies": [
+     {
+      "id": 3526708,
+      "postDate": "2026-09-22T04:15:24.810Z",
+      "rawMarkdown": "Hopefully we’re not overfitting, and hopefully we won’t be🫣. It’s just that with this structure, it feels hard to actually tell whether a model is genuinely better or just happens to line up with the public LB.",
+      "content": "<p>Hopefully we’re not overfitting, and hopefully we won’t be🫣. It’s just that with this structure, it feels hard to actually tell whether a model is genuinely better or just happens to line up with the public LB.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Raymond Yuen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+       "url": "/laymond",
+       "tier": "CONTRIBUTOR",
+       "id": 28874055,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 76,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Raymond Yuen",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+        "url": "/laymond",
+        "userName": "laymond",
+        "tier": "CONTRIBUTOR",
+        "id": 28874055,
+        "profileUrl": "/laymond",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 28874055,
+        "progressionOptOut": false
+       },
+       "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Prateek Grover",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/prateekgroverin",
+     "tier": "CONTRIBUTOR",
+     "id": 10604833,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 129,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Prateek Grover",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/prateekgroverin",
+      "userName": "prateekgroverin",
+      "tier": "CONTRIBUTOR",
+      "id": 10604833,
+      "profileUrl": "/prateekgroverin",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 10604833,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3526524,
+    "postDate": "2026-09-21T16:54:08.477Z",
+    "rawMarkdown": "I have not looked close but I think most of the pile up in bronze and some silver are two shared notebooks that have been tweaked or just copied by lots of folks.  When a huge portion of the metals are based on only a couple of shared notebooks the potential for shakeup is huge.  I once jumped up 1000 positions into a silver in a competition where most of the pre-final metals were the result of one shared notebook that \"failed\".",
+    "content": "<p>I have not looked close but I think most of the pile up in bronze and some silver are two shared notebooks that have been tweaked or just copied by lots of folks.  When a huge portion of the metals are based on only a couple of shared notebooks the potential for shakeup is huge.  I once jumped up 1000 positions into a silver in a competition where most of the pre-final metals were the result of one shared notebook that \"failed\".</p>",
+    "replies": [
+     {
+      "id": 3526707,
+      "postDate": "2026-09-22T04:13:20.777Z",
+      "rawMarkdown": "wow. a 1000 places jump is insane! I guess the biggest question is whether the shared solutions are robust or people are just sitting on the same lb overfit",
+      "content": "<p>wow. a 1000 places jump is insane! I guess the biggest question is whether the shared solutions are robust or people are just sitting on the same lb overfit</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Raymond Yuen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+       "url": "/laymond",
+       "tier": "CONTRIBUTOR",
+       "id": 28874055,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 76,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Raymond Yuen",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+        "url": "/laymond",
+        "userName": "laymond",
+        "tier": "CONTRIBUTOR",
+        "id": 28874055,
+        "profileUrl": "/laymond",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 28874055,
+        "progressionOptOut": false
+       },
+       "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 636,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3526467,
+   "postDate": "2026-09-21T13:46:50.780Z",
+   "rawMarkdown": "Hello there... I'm pretty new to Kaggle. The only comps I've done with a private LB are MAP and S6E8, and in both the private scores barely moved (relatively), so I've never actually seen a serious shake-up. I'm quite curious about how this one will end.\n\nSo we're only given 58 gold studies, plus reports that don't exactly line up with the dicoms. My best training label (picked by LB, not by its AUC against the 58) sits at around 0.89 macro AUC against the gold, while my model's local eval against gold is around 0.925 and LB 0.947. So the model already beats the labels it was trained on, which makes local validation pretty hard to trust. My current approach is to just train on everything (eval set just soley on gold) and trust +0.002 level LB changes.\n\nWhat I see is everyone's clustered up. The silver line and bronze line literally share the same three digits, and near my rank teams squish within a 0.005 range. Up there 0.001 looks like it's worth roughly 7–9 places, and there's a big pile of teams sitting on the exact same score. \n\nSo how much does it usually move? And could this competition be more severe?\n\nAny advice would be great. May the force be with you.\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F28874055%2Fe229b935284a39d100bb04128a1647b6%2FScreenshot%202026-09-21%20214355.png?generation=1789998291573590&alt=media)",
+   "content": "<p>Hello there… I'm pretty new to Kaggle. The only comps I've done with a private LB are MAP and S6E8, and in both the private scores barely moved (relatively), so I've never actually seen a serious shake-up. I'm quite curious about how this one will end.</p>\n<p>So we're only given 58 gold studies, plus reports that don't exactly line up with the dicoms. My best training label (picked by LB, not by its AUC against the 58) sits at around 0.89 macro AUC against the gold, while my model's local eval against gold is around 0.925 and LB 0.947. So the model already beats the labels it was trained on, which makes local validation pretty hard to trust. My current approach is to just train on everything (eval set just soley on gold) and trust +0.002 level LB changes.</p>\n<p>What I see is everyone's clustered up. The silver line and bronze line literally share the same three digits, and near my rank teams squish within a 0.005 range. Up there 0.001 looks like it's worth roughly 7–9 places, and there's a big pile of teams sitting on the exact same score. </p>\n<p>So how much does it usually move? And could this competition be more severe?</p>\n<p>Any advice would be great. May the force be with you.\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F28874055%2Fe229b935284a39d100bb04128a1647b6%2FScreenshot%202026-09-21%20214355.png?generation=1789998291573590&amp;alt=media\" alt=\"\"></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Raymond Yuen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+    "url": "/laymond",
+    "tier": "CONTRIBUTOR",
+    "id": 28874055,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 76,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Raymond Yuen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+     "url": "/laymond",
+     "userName": "laymond",
+     "tier": "CONTRIBUTOR",
+     "id": 28874055,
+     "profileUrl": "/laymond",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 28874055,
+     "progressionOptOut": false
+    },
+    "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+   }
+  },
+  "firstMessageId": 3526467,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742327,
+  "name": "How bad will the private LB shake-up be?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-21T13:46:50.778972800Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742327",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Raymond Yuen",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+   "url": "/laymond",
+   "tier": "CONTRIBUTOR",
+   "id": 28874055,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3526467,
+  "id": 742327,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Raymond Yuen",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742327#3526708",
+  "lastCommentPostDate": "2026-09-22T04:15:24.810Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-21T13:46:50.778972800Z",
+  "title": "How bad will the private LB shake-up be?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742327",
+  "votes": 3,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Raymond Yuen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+    "url": "/laymond",
+    "userName": "laymond",
+    "tier": "CONTRIBUTOR",
+    "id": 28874055,
+    "profileUrl": "/laymond",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 28874055,
+    "progressionOptOut": false
+   },
+   "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+  }
+ }
+}

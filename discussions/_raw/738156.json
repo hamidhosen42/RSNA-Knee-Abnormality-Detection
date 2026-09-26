@@ -1,0 +1,120 @@
+{
+ "forumTopic": {
+  "authorId": 15942302,
+  "authorThumbnailName": "15942302-kg.png?t=2024-01-23-13-45-10",
+  "authorUserDisplayName": "Yet, WiaLive !",
+  "authorUserName": "yetwialive",
+  "comments": [
+   {
+    "id": 3518252,
+    "postDate": "2026-08-30T06:30:00.327Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3518240,
+   "postDate": "2026-08-30T05:53:48.147Z",
+   "rawMarkdown": "Following the host ruling on KneeCoT (institutional/ethics agreement required → not allowed), could the host clarify the status of datasets DERIVED from OAI but re-hosted fully publicly — no registration, no agreement, standard open license?\n\nConcrete example: OAIZIB-CM on Hugging Face (ungated, CC BY-NC 4.0; 507 DESS exams with tissue segmentation masks).\n\nTwo specific questions:\n1. Does \"publicly and freely available\" refer to the dataset actually being used (the ungated public re-release), or does the provenance of the source images (OAI, which itself requires a data use agreement) make such derivatives ineligible?\n2. If allowed: the winners' obligation releases weights under CC BY-NC 4.0 — we read CC BY-NC pretraining data as compatible with that, is this correct?\n\nThis complements the still-open questions in the earlier external-data threads. A written ruling either way would help everyone plan compute fairly. Thanks!\n",
+   "content": "<p>Following the host ruling on KneeCoT (institutional/ethics agreement required → not allowed), could the host clarify the status of datasets DERIVED from OAI but re-hosted fully publicly — no registration, no agreement, standard open license?</p>\n<p>Concrete example: OAIZIB-CM on Hugging Face (ungated, CC BY-NC 4.0; 507 DESS exams with tissue segmentation masks).</p>\n<p>Two specific questions:</p>\n<ol>\n<li>Does \"publicly and freely available\" refer to the dataset actually being used (the ungated public re-release), or does the provenance of the source images (OAI, which itself requires a data use agreement) make such derivatives ineligible?</li>\n<li>If allowed: the winners' obligation releases weights under CC BY-NC 4.0 — we read CC BY-NC pretraining data as compatible with that, is this correct?</li>\n</ol>\n<p>This complements the still-open questions in the earlier external-data threads. A written ruling either way would help everyone plan compute fairly. Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Yet, WiaLive !",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15942302-kg.png?t=2024-01-23-13-45-10",
+    "url": "/yetwialive",
+    "tier": "CONTRIBUTOR",
+    "id": 15942302,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 120,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Yet, WiaLive !",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15942302-kg.png?t=2024-01-23-13-45-10",
+     "url": "/yetwialive",
+     "userName": "yetwialive",
+     "tier": "CONTRIBUTOR",
+     "id": 15942302,
+     "profileUrl": "/yetwialive",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 15942302,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3518240,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738156,
+  "name": "External data: are ungated, openly-licensed OAI-derivative datasets allowed?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-30T05:53:48.148245700Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738156",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Yet, WiaLive !",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15942302-kg.png?t=2024-01-23-13-45-10",
+   "url": "/yetwialive",
+   "tier": "CONTRIBUTOR",
+   "id": 15942302,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3518240,
+  "id": 738156,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738156#3518252",
+  "lastCommentPostDate": "2026-08-30T06:30:00.326666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-30T05:53:48.148245700Z",
+  "title": "External data: are ungated, openly-licensed OAI-derivative datasets allowed?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738156",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Yet, WiaLive !",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15942302-kg.png?t=2024-01-23-13-45-10",
+    "url": "/yetwialive",
+    "userName": "yetwialive",
+    "tier": "CONTRIBUTOR",
+    "id": 15942302,
+    "profileUrl": "/yetwialive",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 15942302,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

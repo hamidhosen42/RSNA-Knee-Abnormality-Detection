@@ -1,0 +1,218 @@
+{
+ "forumTopic": {
+  "authorId": 7389764,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Ataracsia",
+  "authorUserName": "ataracsia",
+  "comments": [
+   {
+    "id": 3521351,
+    "postDate": "2026-09-05T15:48:50.010Z",
+    "rawMarkdown": "Probably GiB vs GB measurements. ",
+    "content": "<p>Probably GiB vs GB measurements. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "tennogh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+     "url": "/tennogh",
+     "tier": "MASTER",
+     "id": 3991745,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 8,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "syamoji141",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+      "url": "/syamoji141chan",
+      "userName": "syamoji141chan",
+      "tier": "EXPERT",
+      "id": 5570066,
+      "profileUrl": "/syamoji141chan",
+      "performanceTier": "EXPERT",
+      "userId": 5570066,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3521340,
+    "postDate": "2026-09-05T15:33:32.310Z",
+    "rawMarkdown": "571.9 here -but I have a couple of extra text files in the folder right now for 2.0 = 569.9",
+    "content": "<p>571.9 here -but I have a couple of extra text files in the folder right now for 2.0 = 569.9</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3521330,
+    "postDate": "2026-09-05T15:06:31.530Z",
+    "rawMarkdown": "right\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F26421714%2F7be3e2cf1309b03b89bd86b89ce4fcb7%2F2689c31bfb05c5c4439d8791fedd9b3d.png?generation=1788620770663664&alt=media)",
+    "content": "<p>right\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F26421714%2F7be3e2cf1309b03b89bd86b89ce4fcb7%2F2689c31bfb05c5c4439d8791fedd9b3d.png?generation=1788620770663664&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1071,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "SpeedSci",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+      "url": "/caoyupeng",
+      "userName": "caoyupeng",
+      "tier": "EXPERT",
+      "id": 26421714,
+      "profileUrl": "/caoyupeng",
+      "performanceTier": "EXPERT",
+      "userId": 26421714,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3521319,
+   "postDate": "2026-09-05T14:35:32.640Z",
+   "rawMarkdown": "I downloaded this .zip file and extracted it, but it only came to about 530 GB (819,640 files).\n\nPerhaps the extraction didn’t work properly?",
+   "content": "<p>I downloaded this .zip file and extracted it, but it only came to about 530 GB (819,640 files).</p>\n<p>Perhaps the extraction didn’t work properly?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Ataracsia",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/ataracsia",
+    "tier": "CONTRIBUTOR",
+    "id": 7389764,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Ataracsia",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/ataracsia",
+     "userName": "ataracsia",
+     "tier": "CONTRIBUTOR",
+     "id": 7389764,
+     "profileUrl": "/ataracsia",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 7389764,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3521319,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 739693,
+  "name": "Is the dataset for this competition really 569.76 GB?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-05T14:35:32.638893200Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/739693",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Ataracsia",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/ataracsia",
+   "tier": "CONTRIBUTOR",
+   "id": 7389764,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3521319,
+  "id": 739693,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "tennogh",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739693#3521351",
+  "lastCommentPostDate": "2026-09-05T15:48:50.010Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-05T14:35:32.638893200Z",
+  "title": "Is the dataset for this competition really 569.76 GB?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739693",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Ataracsia",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/ataracsia",
+    "userName": "ataracsia",
+    "tier": "CONTRIBUTOR",
+    "id": 7389764,
+    "profileUrl": "/ataracsia",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 7389764,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

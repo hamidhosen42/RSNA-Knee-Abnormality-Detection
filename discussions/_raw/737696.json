@@ -1,0 +1,994 @@
+{
+ "forumTopic": {
+  "authorId": 35987882,
+  "authorThumbnailName": "35987882-kg.png?t=2026-08-08-01-35-22",
+  "authorUserDisplayName": "Dread Development",
+  "authorUserName": "dreaddevelopment",
+  "comments": [
+   {
+    "id": 3526829,
+    "postDate": "2026-09-22T11:42:49.393Z",
+    "rawMarkdown": "Bro just want to say , the work you are doing is absolutely amazing. Keep doing it.\nBtw just a question like are you just using the kaggle T4 only or you are also using some external GPUs ?",
+    "content": "<p>Bro just want to say , the work you are doing is absolutely amazing. Keep doing it.\nBtw just a question like are you just using the kaggle T4 only or you are also using some external GPUs ?</p>",
+    "replies": [
+     {
+      "id": 3527119,
+      "postDate": "2026-09-23T01:12:36.330Z",
+      "rawMarkdown": "Thank you! I truly appreciate it! Ehhh so I learned real quick 45 hours (I pay for the sub) is not enough & when I bleed it, It essentially stops all my progress until reset as I am doing entirely to many competitions right now. I do use my local GPU as well as rented instances & a few VPS (so I dont wait 2hrs on data to transfer)\n\nI was previously already training models so I had the general pipeline in place & have learned a lot since starting. ",
+      "content": "<p>Thank you! I truly appreciate it! Ehhh so I learned real quick 45 hours (I pay for the sub) is not enough &amp; when I bleed it, It essentially stops all my progress until reset as I am doing entirely to many competitions right now. I do use my local GPU as well as rented instances &amp; a few VPS (so I dont wait 2hrs on data to transfer)</p>\n<p>I was previously already training models so I had the general pipeline in place &amp; have learned a lot since starting. </p>",
+      "replies": [
+       {
+        "id": 3527248,
+        "postDate": "2026-09-23T09:18:52.500Z",
+        "rawMarkdown": "Ohh, nice! Great job, anyways. 🙌\n\nIf you don’t mind, we can talk later about something else. I actually have an idea that I think we could work on together.\n",
+        "content": "<p>Ohh, nice! Great job, anyways. 🙌</p>\n<p>If you don’t mind, we can talk later about something else. I actually have an idea that I think we could work on together.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 278,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 144,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 278,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3520983,
+    "postDate": "2026-09-04T14:51:27.547Z",
+    "rawMarkdown": "A couple questions..\n1. Is your 0.936-0.938 model trained on the same labels as the 0.924?\n2. Is your 0.936-0.938 model trained on the same datasets as the 0.924?\n3. Is your 0.936-0.938 model using the same inference pipeline as the 0.924 or did you make improvements to it?\n4. Does your SWA checkpoint from the 0.924 model set score better or worse than best epoch model? I'd answer this myself but I'm out of submissions from testing a bunch of other things lol\n\nI've been testing a bunch of things with your previous SWA checkpoint and have it scoring well and quite efficiently. Your work has been insightful and a good starting point for this competition. Although I'd happily mess around with whatever new weights you release, don't feel pressured to release more weights, especially if they're your best or close to your best. This is a competition after all 😅",
+    "content": "<p>A couple questions..</p>\n<ol>\n<li>Is your 0.936-0.938 model trained on the same labels as the 0.924?</li>\n<li>Is your 0.936-0.938 model trained on the same datasets as the 0.924?</li>\n<li>Is your 0.936-0.938 model using the same inference pipeline as the 0.924 or did you make improvements to it?</li>\n<li>Does your SWA checkpoint from the 0.924 model set score better or worse than best epoch model? I'd answer this myself but I'm out of submissions from testing a bunch of other things lol</li>\n</ol>\n<p>I've been testing a bunch of things with your previous SWA checkpoint and have it scoring well and quite efficiently. Your work has been insightful and a good starting point for this competition. Although I'd happily mess around with whatever new weights you release, don't feel pressured to release more weights, especially if they're your best or close to your best. This is a competition after all 😅</p>",
+    "replies": [
+     {
+      "id": 3521127,
+      "postDate": "2026-09-04T23:23:01.233Z",
+      "rawMarkdown": "1. Labels - yes, every checkpoint published  is trained on the same label set with the only difference being the corpus geometry & window count.\n\n2. Dataset - Same comp data, nothing external with the only change in preprocessing. The 0.924 set is 64 slices,140mm crop, span 0.06-0.94, 336px. Later ones widen the span, go to 80-96 slices or move to 384 px.\n\n3. Pipeline - Same architecture and same windowing code\n\n4. SWA - slightly worse. On our 58 gold labeled studies the final checkpoint reads 0.9167 and the SWA one 0.9150. Across six SWA/non-SWA pairs it averages out to nothing, and on the board an SWA arm scored 0.937 where its non-SWA twin scored 0.938.\n\nI have not been able to make nearly as much progress in the last two weeks due to the OpenAI  security comp consuming all of my attention, however as that has concluded I am back to focusing on RSNA so I expect to gain headway this weekend.\nI do ... want very much so to release more raptor weights & I do have quite a few to release even as of right now, I just dont want a repeat of my last drop.\nI had made a few datasets public as well as the weights & I watched the entire board shift.. once I can asses where I stand I will release them, just being careful in doing so.\n\nI am also trying to get back on track for Biohub, Solar filament, UMUD & another small lang model thats wrapping up so I am still diving time between several comps though these are no where near the headache the OpenAI  Security comp was so expect the release sooner (maybe sunday)😀",
+      "content": "<ol>\n<li><p>Labels - yes, every checkpoint published  is trained on the same label set with the only difference being the corpus geometry &amp; window count.</p></li>\n<li><p>Dataset - Same comp data, nothing external with the only change in preprocessing. The 0.924 set is 64 slices,140mm crop, span 0.06-0.94, 336px. Later ones widen the span, go to 80-96 slices or move to 384 px.</p></li>\n<li><p>Pipeline - Same architecture and same windowing code</p></li>\n<li><p>SWA - slightly worse. On our 58 gold labeled studies the final checkpoint reads 0.9167 and the SWA one 0.9150. Across six SWA/non-SWA pairs it averages out to nothing, and on the board an SWA arm scored 0.937 where its non-SWA twin scored 0.938.</p></li>\n</ol>\n<p>I have not been able to make nearly as much progress in the last two weeks due to the OpenAI  security comp consuming all of my attention, however as that has concluded I am back to focusing on RSNA so I expect to gain headway this weekend.\nI do … want very much so to release more raptor weights &amp; I do have quite a few to release even as of right now, I just dont want a repeat of my last drop.\nI had made a few datasets public as well as the weights &amp; I watched the entire board shift.. once I can asses where I stand I will release them, just being careful in doing so.</p>\n<p>I am also trying to get back on track for Biohub, Solar filament, UMUD &amp; another small lang model thats wrapping up so I am still diving time between several comps though these are no where near the headache the OpenAI  Security comp was so expect the release sooner (maybe sunday)😀</p>",
+      "replies": [
+       {
+        "id": 3521141,
+        "postDate": "2026-09-05T00:00:32.870Z",
+        "rawMarkdown": "Thanks for the response. I've got the solo swa checkpoint from https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-widedense scoring 0.930 - you're telling me this was worse than 0.924? Or am I confused about your datasets and notebooks?",
+        "content": "<p>Thanks for the response. I've got the solo swa checkpoint from <a href=\"https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-widedense\" target=\"_blank\">https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-widedense</a> scoring 0.930 - you're telling me this was worse than 0.924? Or am I confused about your datasets and notebooks?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Jack",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+         "url": "/jackvd",
+         "tier": "MASTER",
+         "id": 21922722,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 793,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Jack",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+          "url": "/jackvd",
+          "userName": "jackvd",
+          "tier": "MASTER",
+          "id": 21922722,
+          "profileUrl": "/jackvd",
+          "performanceTier": "MASTER",
+          "userId": 21922722,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521142,
+        "postDate": "2026-09-05T00:44:57.570Z",
+        "rawMarkdown": "You're not confused about the datasets, 0.924 isnt a property of the checkpoint but rather how many windows it was scored with. That number was the corpus at 42 windows per study.\nThe identical weights at 62 windows scored 0.927 on our board so window count alone was worth +0.003 & full coverage is higher still. A solo SWA checkpoint reading 0.930 is consistent with that - You're just scoring more of each study than my early run did.\nI have another checkpoint public already that pushes those exact weights to 0.932 If im not mistaken.\n\nI am scoring a few subs right now and expect them back soon, I've made some tweaks & am not entirely sure but very optimistic about them.\n\n* I have 7 in flight scoring right now",
+        "content": "<p>You're not confused about the datasets, 0.924 isnt a property of the checkpoint but rather how many windows it was scored with. That number was the corpus at 42 windows per study.\nThe identical weights at 62 windows scored 0.927 on our board so window count alone was worth +0.003 &amp; full coverage is higher still. A solo SWA checkpoint reading 0.930 is consistent with that - You're just scoring more of each study than my early run did.\nI have another checkpoint public already that pushes those exact weights to 0.932 If im not mistaken.</p>\n<p>I am scoring a few subs right now and expect them back soon, I've made some tweaks &amp; am not entirely sure but very optimistic about them.</p>\n<ul>\n<li>I have 7 in flight scoring right now</li>\n</ul>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521143,
+        "postDate": "2026-09-05T00:46:21.333Z",
+        "rawMarkdown": "This is the solo SWA that scored 0.932 - https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-finespacing",
+        "content": "<p>This is the solo SWA that scored 0.932 - <a href=\"https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-finespacing\" target=\"_blank\">https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-finespacing</a></p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "jackvd"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 144,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Jack",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+     "url": "/jackvd",
+     "tier": "MASTER",
+     "id": 21922722,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 793,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Jack",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+      "url": "/jackvd",
+      "userName": "jackvd",
+      "tier": "MASTER",
+      "id": 21922722,
+      "profileUrl": "/jackvd",
+      "performanceTier": "MASTER",
+      "userId": 21922722,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517670,
+    "postDate": "2026-08-27T20:10:23.553Z",
+    "rawMarkdown": "Is this saying you have a 5 fold raptor sub with .936-.938 or is that a larger ensemble? Thanks for sharing in any case!",
+    "content": "<p>Is this saying you have a 5 fold raptor sub with .936-.938 or is that a larger ensemble? Thanks for sharing in any case!</p>",
+    "replies": [
+     {
+      "id": 3517697,
+      "postDate": "2026-08-27T22:21:11.370Z",
+      "rawMarkdown": "Great question Cody! So neither & that may not of been what you were expecting.\nits a single model, not a 5 + - fold, one CoAtNet 384 run over the full labelled set with a small fully labelled holdout to pick the checkpoint.\nA couple of the subs average the best three epochs of that same run, but there is no fold ensembeling in it.\n\nI will release updated weights as soon as possible, I am just really crunched for time at the moment as I have another competition wrapping up (OpenAI Security) & I would rather not finish sub 20 on the public board so I have diverted all of my attention there until end of that comp.\nI hope this answered your question!!!",
+      "content": "<p>Great question Cody! So neither &amp; that may not of been what you were expecting.\nits a single model, not a 5 + - fold, one CoAtNet 384 run over the full labelled set with a small fully labelled holdout to pick the checkpoint.\nA couple of the subs average the best three epochs of that same run, but there is no fold ensembeling in it.</p>\n<p>I will release updated weights as soon as possible, I am just really crunched for time at the moment as I have another competition wrapping up (OpenAI Security) &amp; I would rather not finish sub 20 on the public board so I have diverted all of my attention there until end of that comp.\nI hope this answered your question!!!</p>",
+      "replies": [
+       {
+        "id": 3517769,
+        "postDate": "2026-08-28T05:57:31.773Z",
+        "rawMarkdown": "Very cool! Thanks for sharing, interested in seeing your next update!",
+        "content": "<p>Very cool! Thanks for sharing, interested in seeing your next update!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "dreaddevelopment"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518136,
+        "postDate": "2026-08-29T16:09:12.673Z",
+        "rawMarkdown": "May I ask about the inference time of your pipeline? I think your leaderboard score is quite strong, but I didn’t see your name on the efficiency leaderboard, so I was curious about the runtime.",
+        "content": "<p>May I ask about the inference time of your pipeline? I think your leaderboard score is quite strong, but I didn’t see your name on the efficiency leaderboard, so I was curious about the runtime.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "nguyen214",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/nguyen214",
+         "tier": "CONTRIBUTOR",
+         "id": 36134359,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2474,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "dreaddevelopment"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "nguyen214",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/nguyen214",
+          "userName": "nguyen214",
+          "tier": "CONTRIBUTOR",
+          "id": 36134359,
+          "profileUrl": "/nguyen214",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 36134359,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518170,
+        "postDate": "2026-08-29T18:18:40.450Z",
+        "rawMarkdown": "Sure, its around 9 hours for the full test set.\nAlmost all of that is the window count rather than models. We score 94 windows per study, so our CoAtNet ends up costing about as much as the entire 5 fold dino half we blend it with.\nwe did run a trimmed version a few days back, 24 windows on one T4 scored 0.02 and 42 windows got 0.930, so the cheap end is only about 0.01 behind.\nJust havent selected one of those for the effiecienc side.",
+        "content": "<p>Sure, its around 9 hours for the full test set.\nAlmost all of that is the window count rather than models. We score 94 windows per study, so our CoAtNet ends up costing about as much as the entire 5 fold dino half we blend it with.\nwe did run a trimmed version a few days back, 24 windows on one T4 scored 0.02 and 42 windows got 0.930, so the cheap end is only about 0.01 behind.\nJust havent selected one of those for the effiecienc side.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521688,
+        "postDate": "2026-09-06T19:05:16.017Z",
+        "rawMarkdown": "Wanted to update you on the timing - I have dropped scoring time to under 2 hours now & am continuing to work both the timing & accuracy in parallel.\n\nUpdate 9/7/2026 at 11:51 EST - Time down from 2 hours to 29 minutes",
+        "content": "<p>Wanted to update you on the timing - I have dropped scoring time to under 2 hours now &amp; am continuing to work both the timing &amp; accuracy in parallel.</p>\n<p>Update 9/7/2026 at 11:51 EST - Time down from 2 hours to 29 minutes</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "YAY",
+          "featuredUserNames": [
+           "phamgianguyen"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 144,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Cody_Null",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+     "url": "/cody11null",
+     "tier": "GRANDMASTER",
+     "id": 13672938,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "dreaddevelopment"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cody_Null",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+      "url": "/cody11null",
+      "userName": "cody11null",
+      "tier": "GRANDMASTER",
+      "id": 13672938,
+      "profileUrl": "/cody11null",
+      "performanceTier": "GRANDMASTER",
+      "userId": 13672938,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528359,
+    "postDate": "2026-09-25T23:56:11.107Z",
+    "rawMarkdown": "@dreaddevelopment Thanks for all your contributions. I am currently using your labels. And I have read your notebooks and discussions for ideas.",
+    "content": "<p><a href=\"/dreaddevelopment\" target=\"_blank\">@dreaddevelopment</a> Thanks for all your contributions. I am currently using your labels. And I have read your notebooks and discussions for ideas.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3524672,
+    "postDate": "2026-09-15T15:24:11.287Z",
+    "rawMarkdown": "Thanks for publishing these, and for the geometry table on the dataset pages - it's what makes them usable without burning submissions to guess. We run maxspan-v5 and native384dense-v10 as a two-arm blend over a shared decode.\n\nA question about the one page that omits the geometry. Nine of the ten Raptor datasets state slices / span / crop / stored px; raptor-knee-finespacing says only \"the Fine Spacing preprocessing of the corpus\". Given your note above that the later corpora \"go to 80-96 slices\", I'd rather not feed v9 a volume it never saw:\n\n1. What slice count and span does the Fine Spacing corpus use?\n\n2. Was the 0.932 scored at your 94 windows per study, or at a lower count?\n\nThe reason for (2) is your own fullspan result: widening the span at a fixed 44 slices cost 0.009, with the conclusion that widening only pays if slices are added to keep the sampling dense. If Fine Spacing is a 96-slice corpus, then scoring it on a 64-slot volume at 62 windows is that same density mismatch in the same direction - so the 0.932 wouldn't be available at 62 windows, and the checkpoint swap and the window count would be two different levers rather than one.\n\nAlso, if you happen to remember: \"42 windows got 0.930\" for the trimmed run - was that on the Fine Spacing corpus or the 64-slice one?\n\nHappy to report back what we measure either way.",
+    "content": "<p>Thanks for publishing these, and for the geometry table on the dataset pages - it's what makes them usable without burning submissions to guess. We run maxspan-v5 and native384dense-v10 as a two-arm blend over a shared decode.</p>\n<p>A question about the one page that omits the geometry. Nine of the ten Raptor datasets state slices / span / crop / stored px; raptor-knee-finespacing says only \"the Fine Spacing preprocessing of the corpus\". Given your note above that the later corpora \"go to 80-96 slices\", I'd rather not feed v9 a volume it never saw:</p>\n<ol>\n<li><p>What slice count and span does the Fine Spacing corpus use?</p></li>\n<li><p>Was the 0.932 scored at your 94 windows per study, or at a lower count?</p></li>\n</ol>\n<p>The reason for (2) is your own fullspan result: widening the span at a fixed 44 slices cost 0.009, with the conclusion that widening only pays if slices are added to keep the sampling dense. If Fine Spacing is a 96-slice corpus, then scoring it on a 64-slot volume at 62 windows is that same density mismatch in the same direction - so the 0.932 wouldn't be available at 62 windows, and the checkpoint swap and the window count would be two different levers rather than one.</p>\n<p>Also, if you happen to remember: \"42 windows got 0.930\" for the trimmed run - was that on the Fine Spacing corpus or the 64-slice one?</p>\n<p>Happy to report back what we measure either way.</p>",
+    "replies": [
+     {
+      "id": 3524687,
+      "postDate": "2026-09-15T16:05:36.510Z",
+      "rawMarkdown": "Good catch. That page went up without the geometry line and I've just fixed it, so it's on the dataset now along with a note about window counts.\nFine Spacing is 80 slices per study across 2 to 98 percent of each series, a 140 mm crop, stored at 336 pixels. The slots are 22 sagittal fluid, 18 sagittal, 15 coronal fluid, 10 coronal, 15 axial. Full window coverage is 78.\nThe 0.932 was scored at 78, so no, it isn't available at 62, and your reasoning about why is right. Same effect as the full span result: 44 slices over 2 to 98 percent scored 0.917 against 0.926 for 44 over 6 to 94, so spreading the same slices thinner cost 0.009. Putting 64 slices over the wide span brought it to 0.928, and 80 slices to 0.932. Density is the lever rather than span, and 1.20 percent of the stack per slice is the finest I've measured and also the best. Scoring an 80 slice volume at 62 windows leaves about a fifth of it unread, and at that point the checkpoint swap and the coverage change stop being separable, which is exactly what you said.\nOn the 42 window 0.930, I think two numbers from this thread have got stuck together. My 42 window results top out at 0.926. The 0.924 is the 64 slice corpus at 42 windows, and the identical weights read 0.927 at 62. The 0.930 is Jack's, further up this thread, from running the widedense SWA checkpoint with more coverage than my original run used.\nPlease do report back what you get, I'd be interested either way.",
+      "content": "<p>Good catch. That page went up without the geometry line and I've just fixed it, so it's on the dataset now along with a note about window counts.\nFine Spacing is 80 slices per study across 2 to 98 percent of each series, a 140 mm crop, stored at 336 pixels. The slots are 22 sagittal fluid, 18 sagittal, 15 coronal fluid, 10 coronal, 15 axial. Full window coverage is 78.\nThe 0.932 was scored at 78, so no, it isn't available at 62, and your reasoning about why is right. Same effect as the full span result: 44 slices over 2 to 98 percent scored 0.917 against 0.926 for 44 over 6 to 94, so spreading the same slices thinner cost 0.009. Putting 64 slices over the wide span brought it to 0.928, and 80 slices to 0.932. Density is the lever rather than span, and 1.20 percent of the stack per slice is the finest I've measured and also the best. Scoring an 80 slice volume at 62 windows leaves about a fifth of it unread, and at that point the checkpoint swap and the coverage change stop being separable, which is exactly what you said.\nOn the 42 window 0.930, I think two numbers from this thread have got stuck together. My 42 window results top out at 0.926. The 0.924 is the 64 slice corpus at 42 windows, and the identical weights read 0.927 at 62. The 0.930 is Jack's, further up this thread, from running the widedense SWA checkpoint with more coverage than my original run used.\nPlease do report back what you get, I'd be interested either way.</p>",
+      "replies": [
+       {
+        "id": 3525865,
+        "postDate": "2026-09-19T08:11:02.677Z",
+        "rawMarkdown": "Reporting back as promised. Your density curve doesn't transfer to our pipeline, and I think the reason is instructive.\nWe tested it at fixed everything-else on one fold: 8 slices/slot → 10 slices/slot, which on our 0.12–0.88 band moves us from 1.58% to 1.27% of the stack per slice into the range you measured as best. It came back −0.0045 (plateau −0.0046) against a 0.003 noise threshold, so a real, small negative. We also tried tightening the crop 140 → 110 mm at the denser sampling: +0.0005, inside noise, unresolved.\nThe difference is probably structural rather than a contradiction. You sample 80 slices across whole series and score every window position, so extra slices buy genuinely new coverage. We sample 6 per-series slots into a masked attention head that pools 48 tokens, so extra slices mostly dilute the softmax rather than adding field of view the head already sees the whole span, just coarsely. Density is a coverage lever for you and a pooling-composition change for us.\nTwo other one-variable results from the same week, in case they're useful: swapping RadImageNet for ImageNet ResNet-50 at identical architecture and correct per-corpus normalisation cost us −0.063, and replacing our attention head with masked mean pooling cost −0.014. So for this pipeline the medical pretraining and the learned pooling are both doing real work.\nThanks again for publishing the geometry it saved us from spending a submission finding out that 0.932 wasn't available at 62 windows.",
+        "content": "<p>Reporting back as promised. Your density curve doesn't transfer to our pipeline, and I think the reason is instructive.\nWe tested it at fixed everything-else on one fold: 8 slices/slot → 10 slices/slot, which on our 0.12–0.88 band moves us from 1.58% to 1.27% of the stack per slice into the range you measured as best. It came back −0.0045 (plateau −0.0046) against a 0.003 noise threshold, so a real, small negative. We also tried tightening the crop 140 → 110 mm at the denser sampling: +0.0005, inside noise, unresolved.\nThe difference is probably structural rather than a contradiction. You sample 80 slices across whole series and score every window position, so extra slices buy genuinely new coverage. We sample 6 per-series slots into a masked attention head that pools 48 tokens, so extra slices mostly dilute the softmax rather than adding field of view the head already sees the whole span, just coarsely. Density is a coverage lever for you and a pooling-composition change for us.\nTwo other one-variable results from the same week, in case they're useful: swapping RadImageNet for ImageNet ResNet-50 at identical architecture and correct per-corpus normalisation cost us −0.063, and replacing our attention head with masked mean pooling cost −0.014. So for this pipeline the medical pretraining and the learned pooling are both doing real work.\nThanks again for publishing the geometry it saved us from spending a submission finding out that 0.932 wasn't available at 62 windows.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ziad Ahmed",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/ziadahmeddd",
+         "tier": "CONTRIBUTOR",
+         "id": 31162503,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1256,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ziad Ahmed",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/ziadahmeddd",
+          "userName": "ziadahmeddd",
+          "tier": "CONTRIBUTOR",
+          "id": 31162503,
+          "profileUrl": "/ziadahmeddd",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 31162503,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3527123,
+        "postDate": "2026-09-23T01:20:00.610Z",
+        "rawMarkdown": "Thats a clean result & I think your read on it is right.\n\nWorth knowing from this side, the lever has a ceiling for us too.\nGoing from 48-72 eval windows , a 50% increase moved the board 0.944 & cost 8 minutes of runtime. So it isnt that density pays for me & not for you, its that it stops paying & in your setup it stop paying earlier then goes slightly negative.\n\nCoverage lever versus pooling compositon  change is exactly the distinction. If the head already sees the whole span, extra slices arent new information, they're more tokens competing in the same softmax & past some point thats a cost rather than a gain.\n\nOne that does go the other way for you is RadImageNet, that was a negative in my pipeline.\n\nAnd your masked mean result matches something I saw from the other direction, changing the pooling at inference on weights that were trained with attention cost about 0.02. The heads weighting is not a formality.\n\nthank you greatly for reporting back properly with the noise threshold attached. rare <3",
+        "content": "<p>Thats a clean result &amp; I think your read on it is right.</p>\n<p>Worth knowing from this side, the lever has a ceiling for us too.\nGoing from 48-72 eval windows , a 50% increase moved the board 0.944 &amp; cost 8 minutes of runtime. So it isnt that density pays for me &amp; not for you, its that it stops paying &amp; in your setup it stop paying earlier then goes slightly negative.</p>\n<p>Coverage lever versus pooling compositon  change is exactly the distinction. If the head already sees the whole span, extra slices arent new information, they're more tokens competing in the same softmax &amp; past some point thats a cost rather than a gain.</p>\n<p>One that does go the other way for you is RadImageNet, that was a negative in my pipeline.</p>\n<p>And your masked mean result matches something I saw from the other direction, changing the pooling at inference on weights that were trained with attention cost about 0.02. The heads weighting is not a formality.</p>\n<p>thank you greatly for reporting back properly with the noise threshold attached. rare &lt;3</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3527283,
+        "postDate": "2026-09-23T10:53:28.620Z",
+        "rawMarkdown": "That framing helps a lot \"more tokens competing in the same softmax\" predicts the shape we got, not just the sign. Our coverage curve over 4,407 studies, weak-label macro, shipped heads, nothing retrained:\n\nk=16  0.8867     k=40  0.8934  (+0.0002 vs k=31)\nk=24  0.8909     k=48  0.8939  (+0.0007)\nk=31  0.8932     k=56  0.8940  (+0.0008)\nk=62  0.8948  (+0.0016)\n\nSo it climbs to ~31 and then flattens for the next 30 windows. Noise floor on this ruler is ~0.002, so everything from 40 to 62 is one flat line with a slight upward drift at the end. That matches your 48→72 reading the density lever isn't differently-signed between us, it's just that we're further along the same saturating curve. Caveat on my side: those checkpoints were trained on these studies, so the absolute level is inflated; the shape is what I'd trust, not the number.\n\nOn RadImageNet going the other way I think I can offer a mechanism, because it was negative for us too until one change. Fold-0, out-of-fold, n=1102:\n\nImageNet ResNet-34,   3 adjacent slices as channels   0.8152\nRadImageNet R50,      3 adjacent slices as channels   0.8339\nRadImageNet R50,      centre slice repeated x3        0.8542\n\nThe trunk swap alone was worth +0.019. The channel contract was worth another +0.020 on its own. RadImageNet is pretrained on single-channel medical images replicated across RGB, so a 2.5D stack of adjacent slices is out-of-distribution for its first conv in a way ImageNet weights don't care about ImageNet was trained on real colour. If your pipeline fed it a slice triplet (which any Raptor-geometry setup naturally does), that's likely most of your negative. Costs one line to test.\n\nSame family as your pooling point, now that I look at it: both are cases where the weights carry an input contract that isn't in the config, and violating it reads as \"that component doesn't work here.\"\n\nOne disagreement worth flagging, since it's your shipped config: the reversed arm measures negative on our ruler. v5 forward 0.8943 vs reversed 0.8873, and adding both reversals takes the blend from 0.8948 to 0.8918. Your stack weights maxspan-v5-reverse at 0.10, so either our ruler disagrees with the board, or it earns its place through decorrelation inside a bigger ensemble than the two arms I'm testing it in. I'd believe the second just recording that I couldn't reproduce it as a standalone gain.\nOne more, unrelated but cheap: coatnet_rmlp_2 accepts img_size=256 with the 384 checkpoint and zero missing tensors, strict=True passes, 2.9× faster. It also loses 0.029 AUC. The rmlp bias generalises architecturally and not functionally  the tensors fit, the features don't survive.",
+        "content": "<p>That framing helps a lot \"more tokens competing in the same softmax\" predicts the shape we got, not just the sign. Our coverage curve over 4,407 studies, weak-label macro, shipped heads, nothing retrained:</p>\n<p>k=16  0.8867     k=40  0.8934  (+0.0002 vs k=31)\nk=24  0.8909     k=48  0.8939  (+0.0007)\nk=31  0.8932     k=56  0.8940  (+0.0008)\nk=62  0.8948  (+0.0016)</p>\n<p>So it climbs to ~31 and then flattens for the next 30 windows. Noise floor on this ruler is ~0.002, so everything from 40 to 62 is one flat line with a slight upward drift at the end. That matches your 48→72 reading the density lever isn't differently-signed between us, it's just that we're further along the same saturating curve. Caveat on my side: those checkpoints were trained on these studies, so the absolute level is inflated; the shape is what I'd trust, not the number.</p>\n<p>On RadImageNet going the other way I think I can offer a mechanism, because it was negative for us too until one change. Fold-0, out-of-fold, n=1102:</p>\n<p>ImageNet ResNet-34,   3 adjacent slices as channels   0.8152\nRadImageNet R50,      3 adjacent slices as channels   0.8339\nRadImageNet R50,      centre slice repeated x3        0.8542</p>\n<p>The trunk swap alone was worth +0.019. The channel contract was worth another +0.020 on its own. RadImageNet is pretrained on single-channel medical images replicated across RGB, so a 2.5D stack of adjacent slices is out-of-distribution for its first conv in a way ImageNet weights don't care about ImageNet was trained on real colour. If your pipeline fed it a slice triplet (which any Raptor-geometry setup naturally does), that's likely most of your negative. Costs one line to test.</p>\n<p>Same family as your pooling point, now that I look at it: both are cases where the weights carry an input contract that isn't in the config, and violating it reads as \"that component doesn't work here.\"</p>\n<p>One disagreement worth flagging, since it's your shipped config: the reversed arm measures negative on our ruler. v5 forward 0.8943 vs reversed 0.8873, and adding both reversals takes the blend from 0.8948 to 0.8918. Your stack weights maxspan-v5-reverse at 0.10, so either our ruler disagrees with the board, or it earns its place through decorrelation inside a bigger ensemble than the two arms I'm testing it in. I'd believe the second just recording that I couldn't reproduce it as a standalone gain.\nOne more, unrelated but cheap: coatnet_rmlp_2 accepts img_size=256 with the 384 checkpoint and zero missing tensors, strict=True passes, 2.9× faster. It also loses 0.029 AUC. The rmlp bias generalises architecturally and not functionally  the tensors fit, the features don't survive.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ziad Ahmed",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/ziadahmeddd",
+         "tier": "CONTRIBUTOR",
+         "id": 31162503,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1256,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ziad Ahmed",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/ziadahmeddd",
+          "userName": "ziadahmeddd",
+          "tier": "CONTRIBUTOR",
+          "id": 31162503,
+          "profileUrl": "/ziadahmeddd",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 31162503,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 144,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Ziad Ahmed",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/ziadahmeddd",
+     "tier": "CONTRIBUTOR",
+     "id": 31162503,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1256,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ziad Ahmed",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/ziadahmeddd",
+      "userName": "ziadahmeddd",
+      "tier": "CONTRIBUTOR",
+      "id": 31162503,
+      "profileUrl": "/ziadahmeddd",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31162503,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517353,
+   "postDate": "2026-08-26T23:40:02.833Z",
+   "rawMarkdown": "Just want to thank everyone who has upvoted the Raptor dataset & the other relevant notebooks! I didn't expect 1,900 downloads in just under a week!\n\nI do plan on releasing more weights asap, I just have not had time to consolidate as of yet but do keep an eye out as the initial release was only my 0.924 set & I do have that same set trained & scoring 0.936-0.938 with one un-blended model.\nStill trying to ensure I am as efficient as can possibly be!\nAgain, thank you all !!",
+   "content": "<p>Just want to thank everyone who has upvoted the Raptor dataset &amp; the other relevant notebooks! I didn't expect 1,900 downloads in just under a week!</p>\n<p>I do plan on releasing more weights asap, I just have not had time to consolidate as of yet but do keep an eye out as the initial release was only my 0.924 set &amp; I do have that same set trained &amp; scoring 0.936-0.938 with one un-blended model.\nStill trying to ensure I am as efficient as can possibly be!\nAgain, thank you all !!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Dread Development",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+    "url": "/dreaddevelopment",
+    "tier": "EXPERT",
+    "id": 35987882,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 19,
+    "canUpvote": true,
+    "totalUpvotes": 20
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 144,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "ashokgaire",
+      "mattiaangeli",
+      "ggayoayogg",
+      "nicholas33",
+      "masapirika",
+      "lixin73",
+      "davidthapa05"
+     ],
+     "userCount": 7
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "userName": "dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "profileUrl": "/dreaddevelopment",
+     "performanceTier": "EXPERT",
+     "userId": 35987882,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517353,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737696,
+  "name": "RSNA Raptor Weights",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-26T23:40:02.832972600Z",
+  "tags": [
+   {
+    "id": 12028,
+    "name": "medicine",
+    "listingUrl": "/search?q=medicine+tag%3A%22medicine%22",
+    "tagUrl": "/tags/medicine",
+    "displayName": "Medicine"
+   },
+   {
+    "id": 13310,
+    "name": "deep learning",
+    "listingUrl": "/search?q=deep+learning+tag%3A%22deep+learning%22",
+    "tagUrl": "/tags/deep-learning",
+    "displayName": "Deep Learning"
+   }
+  ],
+  "totalVotes": 19,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737696",
+  "totalMessages": 20,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Dread Development",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+   "url": "/dreaddevelopment",
+   "tier": "EXPERT",
+   "id": 35987882,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 20,
+  "firstForumMessageId": 3517353,
+  "id": 737696,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737696#3528359",
+  "lastCommentPostDate": "2026-09-25T23:56:11.106666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-26T23:40:02.832972600Z",
+  "tags": [
+   {
+    "id": 12028,
+    "name": "medicine",
+    "listingUrl": "/tags/medicine",
+    "displayName": "Medicine"
+   },
+   {
+    "id": 13310,
+    "name": "deep learning",
+    "listingUrl": "/tags/deep-learning",
+    "displayName": "Deep Learning"
+   }
+  ],
+  "title": "RSNA Raptor Weights",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737696",
+  "votes": 19,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Dread Development",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+    "url": "/dreaddevelopment",
+    "userName": "dreaddevelopment",
+    "tier": "EXPERT",
+    "id": 35987882,
+    "profileUrl": "/dreaddevelopment",
+    "performanceTier": "EXPERT",
+    "userId": 35987882,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

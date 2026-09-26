@@ -1,0 +1,287 @@
+{
+ "forumTopic": {
+  "authorId": 2745618,
+  "authorThumbnailName": "2745618-kg.png?t=2025-07-29-11-12-38",
+  "authorUserDisplayName": "John Doe",
+  "authorUserName": "osamurai",
+  "comments": [
+   {
+    "id": 3526495,
+    "postDate": "2026-09-21T15:34:26.963Z",
+    "rawMarkdown": "Using OAI as an external dataset does not violate the RSNA Knee Abnormality Detection challenge rules if it is generally accessible to all participants without an escalated (i.e. institutional) review and sign-off or access to a legal team, and is free of charge.\n\nWe do not own or control the OAI dataset and cannot comment on whether this challenge complies OAI data-use terms from the dataset stewards' perspective.",
+    "content": "<p>Using OAI as an external dataset does not violate the RSNA Knee Abnormality Detection challenge rules if it is generally accessible to all participants without an escalated (i.e. institutional) review and sign-off or access to a legal team, and is free of charge.</p>\n<p>We do not own or control the OAI dataset and cannot comment on whether this challenge complies OAI data-use terms from the dataset stewards' perspective.</p>",
+    "replies": [
+     {
+      "id": 3526606,
+      "postDate": "2026-09-21T20:08:35.297Z",
+      "rawMarkdown": "It's difficult to be less clear :)",
+      "content": "<p>It's difficult to be less clear :)</p>",
+      "replies": [
+       {
+        "id": 3526614,
+        "postDate": "2026-09-21T20:36:08.760Z",
+        "rawMarkdown": "does this mean yes or no lol?",
+        "content": "<p>does this mean yes or no lol?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "OmerZalman",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/omerzalman",
+         "tier": "CONTRIBUTOR",
+         "id": 29641607,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "OmerZalman",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/omerzalman",
+          "userName": "omerzalman",
+          "tier": "CONTRIBUTOR",
+          "id": 29641607,
+          "profileUrl": "/omerzalman",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 29641607,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3526616,
+        "postDate": "2026-09-21T20:56:27.070Z",
+        "rawMarkdown": "It is a no, as it requires institutional sign off. \n\nVirtually all external datasets that are remotely useful here are not allowed. They are either not “freely and generally accessible to all” or they **explicitly** carry a no derivatives clause/license.\n\nTrying to find labeled knee MRI datasets to use here is a waste of time. I would love to be proven wrong, but on applying the host own criteria and reading the usage requirements of the data providers, none pass both.  ",
+        "content": "<p>It is a no, as it requires institutional sign off. </p>\n<p>Virtually all external datasets that are remotely useful here are not allowed. They are either not “freely and generally accessible to all” or they <strong>explicitly</strong> carry a no derivatives clause/license.</p>\n<p>Trying to find labeled knee MRI datasets to use here is a waste of time. I would love to be proven wrong, but on applying the host own criteria and reading the usage requirements of the data providers, none pass both.  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 6,
+         "canUpvote": true,
+         "totalUpvotes": 6
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3526638,
+        "postDate": "2026-09-21T21:48:11.473Z",
+        "rawMarkdown": "what datasets did you use?",
+        "content": "<p>what datasets did you use?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "OmerZalman",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/omerzalman",
+         "tier": "CONTRIBUTOR",
+         "id": 29641607,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "OmerZalman",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/omerzalman",
+          "userName": "omerzalman",
+          "tier": "CONTRIBUTOR",
+          "id": 29641607,
+          "profileUrl": "/omerzalman",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 29641607,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Optimo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+       "url": "/optimo",
+       "tier": "MASTER",
+       "id": 190923,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 53,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Optimo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+        "url": "/optimo",
+        "userName": "optimo",
+        "tier": "MASTER",
+        "id": 190923,
+        "profileUrl": "/optimo",
+        "performanceTier": "MASTER",
+        "userId": 190923,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3525389,
+   "postDate": "2026-09-17T17:03:14.803Z",
+   "rawMarkdown": "@javaduke95 A narrow follow-up, naming one dataset rather than a category.\n\nIn https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\nthe host ruled that KneeCoT is not permitted \"due to the required data\nagreement with dataset institution\". The broader question about free\nclick-through research datasets\n(https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652)\nis still open, and\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950\nasks about OAI but has no answer yet.\n\nCould you rule specifically on the Osteoarthritis Initiative (OAI)? It is free\nof charge and is distributed through the NIMH Data Archive (NDA), which\nrequires registering and agreeing to data use terms before download.\n\nTwo points would settle it:\n\n1. Is OAI permitted as External Data under Section 2.6?\n2. If NDA access to OAI requires an institutional sign-off (for example, a\n   Data Use Certification signed by the participant's institution), does the\n   KneeCoT reasoning apply to OAI as well?\n\nA yes or no on OAI would be enough. Thank you.",
+   "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> A narrow follow-up, naming one dataset rather than a category.</p>\n<p>In <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109</a>\nthe host ruled that KneeCoT is not permitted \"due to the required data\nagreement with dataset institution\". The broader question about free\nclick-through research datasets\n(<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652</a>)\nis still open, and\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950</a>\nasks about OAI but has no answer yet.</p>\n<p>Could you rule specifically on the Osteoarthritis Initiative (OAI)? It is free\nof charge and is distributed through the NIMH Data Archive (NDA), which\nrequires registering and agreeing to data use terms before download.</p>\n<p>Two points would settle it:</p>\n<ol>\n<li>Is OAI permitted as External Data under Section 2.6?</li>\n<li>If NDA access to OAI requires an institutional sign-off (for example, a\nData Use Certification signed by the participant's institution), does the\nKneeCoT reasoning apply to OAI as well?</li>\n</ol>\n<p>A yes or no on OAI would be enough. Thank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "John Doe",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2745618-kg.png?t=2025-07-29-11-12-38",
+    "url": "/osamurai",
+    "tier": "EXPERT",
+    "id": 2745618,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 117,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Yuto.M",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23245911-kg.png?t=2026-06-23-04-51-24",
+     "url": "/yutomuroshima",
+     "userName": "yutomuroshima",
+     "tier": "EXPERT",
+     "id": 23245911,
+     "profileUrl": "/yutomuroshima",
+     "performanceTier": "EXPERT",
+     "userId": 23245911,
+     "progressionOptOut": false
+    },
+    "intro": "We're sharing our insights and working as a team to win a gold medal.\nAnyone is welcome to apply to join us."
+   }
+  },
+  "firstMessageId": 3525389,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 741819,
+  "name": "Is the Osteoarthritis Initiative (OAI) permitted as external data?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-17T17:03:14.804576700Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/741819",
+  "totalMessages": 5,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "John Doe",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2745618-kg.png?t=2025-07-29-11-12-38",
+   "url": "/osamurai",
+   "tier": "EXPERT",
+   "id": 2745618,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3525389,
+  "id": 741819,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741819#3526638",
+  "lastCommentPostDate": "2026-09-21T21:48:11.473333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-17T17:03:14.804576700Z",
+  "title": "Is the Osteoarthritis Initiative (OAI) permitted as external data?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741819",
+  "votes": 2,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Yuto.M",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23245911-kg.png?t=2026-06-23-04-51-24",
+    "url": "/yutomuroshima",
+    "userName": "yutomuroshima",
+    "tier": "EXPERT",
+    "id": 23245911,
+    "profileUrl": "/yutomuroshima",
+    "performanceTier": "EXPERT",
+    "userId": 23245911,
+    "progressionOptOut": false
+   },
+   "intro": "We're sharing our insights and working as a team to win a gold medal.\nAnyone is welcome to apply to join us."
+  }
+ }
+}

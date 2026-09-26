@@ -1,0 +1,143 @@
+{
+ "forumTopic": {
+  "authorId": 145164,
+  "authorThumbnailName": "145164-kg.JPG?t=2025-08-14-07-51-30",
+  "authorUserDisplayName": "Dennis",
+  "authorUserName": "dennisfong",
+  "comments": [
+   {
+    "id": 3510530,
+    "postDate": "2026-08-08T19:58:41.053Z",
+    "rawMarkdown": "See the response from competition hosts here: https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733826. ",
+    "content": "<p>See the response from competition hosts here: <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733826\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733826</a>. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tom Aindow",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+     "url": "/taindow",
+     "tier": "MASTER",
+     "id": 921947,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 81,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tom Aindow",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+      "url": "/taindow",
+      "userName": "taindow",
+      "tier": "MASTER",
+      "id": 921947,
+      "profileUrl": "/taindow",
+      "performanceTier": "MASTER",
+      "userId": 921947,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510501,
+   "postDate": "2026-08-08T17:18:56.137Z",
+   "rawMarkdown": "For StudyInstanceUID: 1.2.826.0.1.3680043.8.498.73926443729786165628848843707532839995\n\nThe ground truth shows Baker's as 0, which means it does not present in the MRI.\n\nThe translated (from Google translate) report is:\nT2-hyperintense linear radial lesion of the pars intermedia of the medial meniscus with incomplete separation of a small flap (3/7, 5/109-110). The initially extruded pars intermedia of the medial meniscus shows mucoid fraying in the body. Further subtle horizontal T2 hyperintensity is seen in the posterior horn of the medial meniscus (3/7, 4/20). Focal T2-hyperintense signal is present in the medial tibial plateau (7/22). Fluid signal is present around the MCL. The ACL, PCL, MCL, and LCL are intact and show normal signal intensity. Small cystic changes are present at the ACL insertion sites. There is a small joint effusion. A Baker's cyst is present, measuring up to 2 x 1.5 x CC (3.5 cm).\n\nThe last sentence shows \"A Baker's cyst is present, measuring up to 2 x 1.5 x CC (3.5 cm).\" From the label description provided by @javaduke95 (https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343), \"Baker (popliteal) cyst: A moderate or large fluid collection in the characteristic location behind the knee.\" How to define \"moderate or large\"?\n\nI know that different radiologists may have different perspectives towards the images. I wonder if the one who wrote the report found the Baker's cyst, but the one gave the ground truth label does not found it. I am confused of which radiologist I should follow.\n\nThe ground truth is given from reading the report or the MRI images?\n\nI am not a radiologist. I am pleased to have someone to share the insight on finding the Baker's cyst?\n\nThanks.",
+   "content": "<p>For StudyInstanceUID: 1.2.826.0.1.3680043.8.498.73926443729786165628848843707532839995</p>\n<p>The ground truth shows Baker's as 0, which means it does not present in the MRI.</p>\n<p>The translated (from Google translate) report is:\nT2-hyperintense linear radial lesion of the pars intermedia of the medial meniscus with incomplete separation of a small flap (3/7, 5/109-110). The initially extruded pars intermedia of the medial meniscus shows mucoid fraying in the body. Further subtle horizontal T2 hyperintensity is seen in the posterior horn of the medial meniscus (3/7, 4/20). Focal T2-hyperintense signal is present in the medial tibial plateau (7/22). Fluid signal is present around the MCL. The ACL, PCL, MCL, and LCL are intact and show normal signal intensity. Small cystic changes are present at the ACL insertion sites. There is a small joint effusion. A Baker's cyst is present, measuring up to 2 x 1.5 x CC (3.5 cm).</p>\n<p>The last sentence shows \"A Baker's cyst is present, measuring up to 2 x 1.5 x CC (3.5 cm).\" From the label description provided by <a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> (<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343)\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343)</a>, \"Baker (popliteal) cyst: A moderate or large fluid collection in the characteristic location behind the knee.\" How to define \"moderate or large\"?</p>\n<p>I know that different radiologists may have different perspectives towards the images. I wonder if the one who wrote the report found the Baker's cyst, but the one gave the ground truth label does not found it. I am confused of which radiologist I should follow.</p>\n<p>The ground truth is given from reading the report or the MRI images?</p>\n<p>I am not a radiologist. I am pleased to have someone to share the insight on finding the Baker's cyst?</p>\n<p>Thanks.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Dennis",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/145164-kg.JPG?t=2025-08-14-07-51-30",
+    "url": "/dennisfong",
+    "tier": "EXPERT",
+    "id": 145164,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2214,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Dennis",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/145164-kg.JPG?t=2025-08-14-07-51-30",
+     "url": "/dennisfong",
+     "userName": "dennisfong",
+     "tier": "EXPERT",
+     "id": 145164,
+     "profileUrl": "/dennisfong",
+     "performanceTier": "EXPERT",
+     "userId": 145164,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510501,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733864,
+  "name": "How the ground truth labels are labelled ?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-08T17:18:56.135685400Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733864",
+  "totalMessages": 1,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Dennis",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/145164-kg.JPG?t=2025-08-14-07-51-30",
+   "url": "/dennisfong",
+   "tier": "EXPERT",
+   "id": 145164,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3510501,
+  "id": 733864,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Tom Aindow",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733864#3510530",
+  "lastCommentPostDate": "2026-08-08T19:58:41.053333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-08T17:18:56.135685400Z",
+  "title": "How the ground truth labels are labelled ?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733864",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Dennis",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/145164-kg.JPG?t=2025-08-14-07-51-30",
+    "url": "/dennisfong",
+    "userName": "dennisfong",
+    "tier": "EXPERT",
+    "id": 145164,
+    "profileUrl": "/dennisfong",
+    "performanceTier": "EXPERT",
+    "userId": 145164,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

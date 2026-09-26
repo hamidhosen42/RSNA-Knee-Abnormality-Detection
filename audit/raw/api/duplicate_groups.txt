@@ -1,0 +1,13 @@
+exact/near-exact duplicate groups (mutual containment >= 0.995): 12 groups covering 44 notebooks; singletons 15
+- [8] mattiaangeli/bend-the-knee-to-the-dinosaurs (0.941), hyakumanben2025/rsna-knee-mattiaangeli-live-repro-v2 (0.941), yamadan96/rsna-knee-bk1-fork (0.941), yamadan96/rsna-knee-ar2-fork (0.941), valentinonguyen/knee-sub-ar2combo (0.941), yamadan96/rsna-knee-fh3-fork (0.941), rafanikitas/bend-the-knee-to-the-dinosaurs (0.941), yamadan96/rsna-knee-subg (0.941)
+- [7] beraterolelk/0-941-sota-rsna-knee-dinov2-radimagenet (0.941), beraterolelk/rsna-v2-seed7-ensemble-leg-0-941-base (0.941), kolyaflexcu/rsna-knee-plateau-base (0.941), kolyaflexcu/rsna-knee-raptor-v9 (0.941), rushmanthnalluri/rsna-knee-abnormality-detection (0.941), luonmayman/rsna-knee-0941-probe22 (0.941), luonmayman/rsna-knee-0941-probe22-v8rev (0.941)
+- [4] starkhushi/rsna-knee-why-public-forks-stop-at-0-941 (0.941), elshahed/stark-p22 (0.941), elshahed/stark-p22-v9 (0.941), elshahed/stark-p22-v4 (0.941)
+- [4] mattiaangeli/bend-the-knee-to-speedy-raptors-the-original (0.943), aastikrajan15/knee-s74-c (0.943), hyakumanben2025/rsna-knee-mattiaangeli-speedy-raptors-v2 (0.943), gwey1025/rsna-knee-phase1-fork-speedy-raptors-recipe (0.943)
+- [4] maverickss26/rsna-knee-0942-restructured (0.942), sushanthtiruvaipati/rsna-knee-0942-rad-fracture-oof (0.942), valentinonguyen/knee-sub-radfracture942 (0.942), kolyaflexcu/rsna-knee-speedy947 (0.942)
+- [3] jiweiliu/rsna-knee-fast-2xt4-inference (0.943), haideptry/rsna-knee-speedy-raptors-coatnet-d4-0943 (0.943), evgendvorkin/rsna-versia-5 (0.942)
+- [3] renta0426/rsna-knee-hybrid-raptor-meniscus-specialist (0.941), vaihero/rsna-knee-rentafork (0.941), vaihero/rsna-knee-rentanorev (0.941)
+- [3] ricecakar/rsna-knee-public-0-941-control (0.941), valentinonguyen/knee-sub-control (0.941), ricecakar/rsna-knee-941-dino2pf (0.941)
+- [2] tsuyu122/rsna-knee-0-941-public-checkpoints-audit (0.941), nobuwlnter/rsna-knee-fast-2xt4-original (0.941)
+- [2] ayodejiibrahimlateef/rsna-knee-a01-mattia-current-public (0.941), apilkhadka/rsna-knee-a01-candidate (0.941)
+- [2] valentinonguyen/knee-sub-band32w15 (0.941), valentinonguyen/knee-sub-band32w08 (0.941)
+- [2] pjmathematician/rsna-knee-d4-blend (0.946), pjmathematician/rsna-knee-d4-lite (0.945)

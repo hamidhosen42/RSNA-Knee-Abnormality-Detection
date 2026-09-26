@@ -1,0 +1,101 @@
+{
+ "forumTopic": {
+  "authorId": 15737195,
+  "authorThumbnailName": "15737195-kg.jpeg?t=2026-04-26-19-58-29",
+  "authorUserDisplayName": "Mehmet Özer",
+  "authorUserName": "ozermehmet",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515973,
+   "postDate": "2026-08-22T16:44:07.367Z",
+   "rawMarkdown": "I'm wondering if a simple detector -> crop pipeline could help here, especially for subtle meniscus/ligament findings.\n\nSomething along the lines of:\n\n```python\nbbox = detector(image)\nroi = crop(image, bbox, margin=0.15)\nprediction = model(roi)\n```\n\nHas anyone tried this? Curious whether the extra localization step gives a meaningful gain over using the full FOV, or whether things like edema/effusion are better handled with the full image.\n",
+   "content": "<p>I'm wondering if a simple detector -&gt; crop pipeline could help here, especially for subtle meniscus/ligament findings.</p>\n<p>Something along the lines of:</p>\n<pre><code>bbox = detector(image)\nroi = crop(image, bbox, margin=0.15)\nprediction = model(roi)\n</code></pre>\n<p>Has anyone tried this? Curious whether the extra localization step gives a meaningful gain over using the full FOV, or whether things like edema/effusion are better handled with the full image.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Mehmet Özer",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15737195-kg.jpeg?t=2026-04-26-19-58-29",
+    "url": "/ozermehmet",
+    "tier": "CONTRIBUTOR",
+    "id": 15737195,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 408,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Mehmet Özer",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15737195-kg.jpeg?t=2026-04-26-19-58-29",
+     "url": "/ozermehmet",
+     "userName": "ozermehmet",
+     "tier": "CONTRIBUTOR",
+     "id": 15737195,
+     "profileUrl": "/ozermehmet",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 15737195,
+     "progressionOptOut": false
+    },
+    "intro": "3 model 0.934 37min, 1 fold 0.925 16min"
+   }
+  },
+  "firstMessageId": 3515973,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736999,
+  "name": "Has anyone tried YOLO / ROI cropping for the knee joint?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-22T16:44:07.367617Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736999",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Mehmet Özer",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15737195-kg.jpeg?t=2026-04-26-19-58-29",
+   "url": "/ozermehmet",
+   "tier": "CONTRIBUTOR",
+   "id": 15737195,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3515973,
+  "id": 736999,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Mehmet Özer",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736999#3515973",
+  "lastCommentPostDate": "2026-08-22T16:44:07.366666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-22T16:44:07.367617Z",
+  "title": "Has anyone tried YOLO / ROI cropping for the knee joint?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736999",
+  "votes": 3,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Mehmet Özer",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15737195-kg.jpeg?t=2026-04-26-19-58-29",
+    "url": "/ozermehmet",
+    "userName": "ozermehmet",
+    "tier": "CONTRIBUTOR",
+    "id": 15737195,
+    "profileUrl": "/ozermehmet",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 15737195,
+    "progressionOptOut": false
+   },
+   "intro": "3 model 0.934 37min, 1 fold 0.925 16min"
+  }
+ }
+}

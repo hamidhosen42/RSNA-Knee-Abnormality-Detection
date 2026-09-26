@@ -1,0 +1,215 @@
+{
+ "forumTopic": {
+  "authorId": 34058977,
+  "authorThumbnailName": "34058977-kg.jpg?t=2026-08-20-07-06-33",
+  "authorUserDisplayName": "RoshiBear",
+  "authorUserName": "roshibear",
+  "comments": [
+   {
+    "id": 3517940,
+    "postDate": "2026-08-28T17:56:19.327Z",
+    "rawMarkdown": "This question is best addressed at a general level rather than as a statement about how participants should interpret this specific dataset. Part of the challenge is understanding the characteristics of the training data and how the diagnostic space represented here relates to the broader complexity of musculoskeletal MRI. Any curated dataset is necessarily a subset of the real world, and even carefully defined features may not capture every combination or edge case encountered in clinical practice.\n\nFat suppression, whether achieved by inversion recovery, frequency-selective fat saturation, or another technique, is not inherently the same as fluid sensitivity.\n\nIn musculoskeletal MRI, however, the two can and often do occur together. Fluid-sensitive sequences commonly highlight edema, hemorrhage/contusion, and other abnormalities in soft tissues and bone marrow. Because subcutaneous tissues and bone marrow contain substantial amounts of fat, suppressing the fat signal generally makes these fluid-related abnormalities easier to visualize. \n\nAs a result, most clinically useful fluid-sensitive MSK sequences are also fat-suppressed.\n\nThat relationship is not absolute. A fluid-sensitive sequence does not necessarily have to be fat-suppressed, and a fat-suppressed sequence is not necessarily fluid-sensitive. For example, when evaluating bone tumors or musculoskeletal infection, fat-suppressed non-fluid-sensitive sequences may be used before and after contrast administration so enhancement can be assessed directly.\n\nAccordingly, while the two columns appear identical across the current training dataset, they represent conceptually distinct imaging characteristics. Their equality in the training data should not be interpreted as meaning the terms are generally interchangeable in MRI, or that they must be equal in another dataset.\n",
+    "content": "<p>This question is best addressed at a general level rather than as a statement about how participants should interpret this specific dataset. Part of the challenge is understanding the characteristics of the training data and how the diagnostic space represented here relates to the broader complexity of musculoskeletal MRI. Any curated dataset is necessarily a subset of the real world, and even carefully defined features may not capture every combination or edge case encountered in clinical practice.</p>\n<p>Fat suppression, whether achieved by inversion recovery, frequency-selective fat saturation, or another technique, is not inherently the same as fluid sensitivity.</p>\n<p>In musculoskeletal MRI, however, the two can and often do occur together. Fluid-sensitive sequences commonly highlight edema, hemorrhage/contusion, and other abnormalities in soft tissues and bone marrow. Because subcutaneous tissues and bone marrow contain substantial amounts of fat, suppressing the fat signal generally makes these fluid-related abnormalities easier to visualize. </p>\n<p>As a result, most clinically useful fluid-sensitive MSK sequences are also fat-suppressed.</p>\n<p>That relationship is not absolute. A fluid-sensitive sequence does not necessarily have to be fat-suppressed, and a fat-suppressed sequence is not necessarily fluid-sensitive. For example, when evaluating bone tumors or musculoskeletal infection, fat-suppressed non-fluid-sensitive sequences may be used before and after contrast administration so enhancement can be assessed directly.</p>\n<p>Accordingly, while the two columns appear identical across the current training dataset, they represent conceptually distinct imaging characteristics. Their equality in the training data should not be interpreted as meaning the terms are generally interchangeable in MRI, or that they must be equal in another dataset.</p>",
+    "replies": [
+     {
+      "id": 3525228,
+      "postDate": "2026-09-17T07:35:12.503Z",
+      "rawMarkdown": "Hi @javaduke95 , would you please briefly explain how Fluid_Sensitive and Fat_Suppression come from? I cannot find it in the tag of dcm files. I believe that \"0008,0008 Image Type\" may be the most relevant but I cannot correlate it to Fluid_Sensitive and Fat_Suppression (e.g. 0008,0008 Image Type: ['ORIGINAL', 'PRIMARY', 'M_SE', 'M', 'SE'] ). ",
+      "content": "<p>Hi <a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> , would you please briefly explain how Fluid_Sensitive and Fat_Suppression come from? I cannot find it in the tag of dcm files. I believe that \"0008,0008 Image Type\" may be the most relevant but I cannot correlate it to Fluid_Sensitive and Fat_Suppression (e.g. 0008,0008 Image Type: ['ORIGINAL', 'PRIMARY', 'M_SE', 'M', 'SE'] ). </p>",
+      "replies": [
+       {
+        "id": 3525349,
+        "postDate": "2026-09-17T15:13:10.023Z",
+        "rawMarkdown": "The are in the provided data files\n train_series.cvs and test_series.cvs.",
+        "content": "<p>The are in the provided data files\n train_series.cvs and test_series.cvs.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "kebenny",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/kebenny",
+       "tier": "CONTRIBUTOR",
+       "id": 12088692,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3745,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "justinlamlamlam",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/justinlamlamlam",
+        "userName": "justinlamlamlam",
+        "tier": "EXPERT",
+        "id": 9084867,
+        "profileUrl": "/justinlamlamlam",
+        "performanceTier": "EXPERT",
+        "userId": 9084867,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "roshibear"
+      ],
+      "userCount": 1
+     }
+    ]
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516610,
+   "postDate": "2026-08-24T19:13:14.920Z",
+   "rawMarkdown": "In train_series.csv, Fluid_Sensitive and Fat_Suppression are exactly the same for all 24,371 series:\n\n10,361 series have both = 0\n14,010 series have both = 1\n0 series have different values\n\nHowever, the dataset description says that these two features are not necessarily the same thing. That also makes sense because, in MRI, a fat-suppressed scan isn't automatically fluid-sensitive.\n\nSo i was wondering:\n\nAre these two columns actually supposed to be the same, or is one being derived from the other in this dataset?\n\nThis matters because if they're always identical, we might treat them as one feature instead of two.\n\nThanks!",
+   "content": "<p>In train_series.csv, Fluid_Sensitive and Fat_Suppression are exactly the same for all 24,371 series:</p>\n<p>10,361 series have both = 0\n14,010 series have both = 1\n0 series have different values</p>\n<p>However, the dataset description says that these two features are not necessarily the same thing. That also makes sense because, in MRI, a fat-suppressed scan isn't automatically fluid-sensitive.</p>\n<p>So i was wondering:</p>\n<p>Are these two columns actually supposed to be the same, or is one being derived from the other in this dataset?</p>\n<p>This matters because if they're always identical, we might treat them as one feature instead of two.</p>\n<p>Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "RoshiBear",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34058977-kg.jpg?t=2026-08-20-07-06-33",
+    "url": "/roshibear",
+    "tier": "CONTRIBUTOR",
+    "id": 34058977,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Sureh San",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/surehsan",
+     "userName": "surehsan",
+     "tier": "CONTRIBUTOR",
+     "id": 23439796,
+     "profileUrl": "/surehsan",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 23439796,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516610,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737312,
+  "name": "Fluid_Sensitive and Fat_Suppression appear identical across all series",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-24T19:13:14.919332600Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737312",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "RoshiBear",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34058977-kg.jpg?t=2026-08-20-07-06-33",
+   "url": "/roshibear",
+   "tier": "CONTRIBUTOR",
+   "id": 34058977,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3516610,
+  "id": 737312,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737312#3525349",
+  "lastCommentPostDate": "2026-09-17T15:13:10.023333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-24T19:13:14.919332600Z",
+  "title": "Fluid_Sensitive and Fat_Suppression appear identical across all series",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737312",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Sureh San",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/surehsan",
+    "userName": "surehsan",
+    "tier": "CONTRIBUTOR",
+    "id": 23439796,
+    "profileUrl": "/surehsan",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 23439796,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,183 @@
+{
+ "forumTopic": {
+  "authorId": 28482905,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "avg-HU",
+  "authorUserName": "patrickmatulich",
+  "comments": [
+   {
+    "id": 3509957,
+    "postDate": "2026-08-07T11:51:55.650Z",
+    "rawMarkdown": "Hello! This is an important question and useful observation.\n\nThe radiology reports in the training set are deidentified versions of the original contributor reports. They are provided as clinical text and may contain ambiguous wording, internal inconsistencies, or findings that do not map one-to-one to the challenge’s binary targets. This design reflects a common real-world setting in medical imaging where large-scale model development often relies on routinely generated clinical reports.\n\nThe sample labels were assigned from image review using the challenge annotation rubric by two independent readers with a third adjudicating disagreements. \n\nFor meniscal tears, the target is a definite tear; intrasubstance degenerative signals that do not reach the articular surface are negative.  The same process was used for the testing set.\n\nSimilarly, marrow edema, cartilage findings, and terminology in the narrative or impression do not by themselves determine the contusion, osteoarthritis, or other challenge labels. Those labels reflect the standardized image-review criteria.  (See the [Overview discussion thread](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343) near the bottom where these are defined)\n\nA report may therefore use language that appears inconsistent with the corresponding image-based label because the original report and the image-based labels were generated through different processes.",
+    "content": "<p>Hello! This is an important question and useful observation.</p>\n<p>The radiology reports in the training set are deidentified versions of the original contributor reports. They are provided as clinical text and may contain ambiguous wording, internal inconsistencies, or findings that do not map one-to-one to the challenge’s binary targets. This design reflects a common real-world setting in medical imaging where large-scale model development often relies on routinely generated clinical reports.</p>\n<p>The sample labels were assigned from image review using the challenge annotation rubric by two independent readers with a third adjudicating disagreements. </p>\n<p>For meniscal tears, the target is a definite tear; intrasubstance degenerative signals that do not reach the articular surface are negative.  The same process was used for the testing set.</p>\n<p>Similarly, marrow edema, cartilage findings, and terminology in the narrative or impression do not by themselves determine the contusion, osteoarthritis, or other challenge labels. Those labels reflect the standardized image-review criteria.  (See the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343\" target=\"_blank\">Overview discussion thread</a> near the bottom where these are defined)</p>\n<p>A report may therefore use language that appears inconsistent with the corresponding image-based label because the original report and the image-based labels were generated through different processes.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3517527,
+    "postDate": "2026-08-27T11:39:23.420Z",
+    "rawMarkdown": "good question, tks tks.👍",
+    "content": "<p>good question, tks tks.👍</p>",
+    "parent": {},
+    "author": {
+     "displayName": "telingc",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/telingc",
+     "tier": "CONTRIBUTOR",
+     "id": 36301976,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2761,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "telingc",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/telingc",
+      "userName": "telingc",
+      "tier": "CONTRIBUTOR",
+      "id": 36301976,
+      "profileUrl": "/telingc",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36301976,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3509818,
+    "postDate": "2026-08-07T05:34:35.117Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509807,
+   "postDate": "2026-08-07T05:03:03.740Z",
+   "rawMarkdown": "The decision criteria for the competition is binary for the 12 areas. However, for scenarios like the meniscus in which it is common to have degenerative interstitial signal this is counted as 0 and 1 in the sample set. Can you clarify the grading of these findings? Is it supposed to be 0 = no tear and 1 = tear? If so, then the example dataset has errors. Secondly, I noticed in the reports there are some inconsistencies such as \"Minimal reactive bone marrow edema present…related to adjacent meniscal tear…No acute fracture or bone bruise\" which is somewhat contradictory. Especially since in that same dictation it says that the medial compartment cartilage is intact. \n\nI don't know of a scenario in which a patient has \"bone marrow edema\" in the setting a meniscal tear and normal cartilage in which you could factually say \"no contusion\"\n\nAnother report describes chondral lesion within the lateral facet of the patella which should represent chondrosis of the patellofemoral compartment, but the impression lists \"lateral compartment chondromalacia\" which is also factually wrong\n\n\"Lateral meniscus and medial meniscus are normal. Loss of integrity of the medial meniscus in the trunk section and changes in signal intensity consistent with horizontal tear in the posterior horn are observed. \"",
+   "content": "<p>The decision criteria for the competition is binary for the 12 areas. However, for scenarios like the meniscus in which it is common to have degenerative interstitial signal this is counted as 0 and 1 in the sample set. Can you clarify the grading of these findings? Is it supposed to be 0 = no tear and 1 = tear? If so, then the example dataset has errors. Secondly, I noticed in the reports there are some inconsistencies such as \"Minimal reactive bone marrow edema present…related to adjacent meniscal tear…No acute fracture or bone bruise\" which is somewhat contradictory. Especially since in that same dictation it says that the medial compartment cartilage is intact. </p>\n<p>I don't know of a scenario in which a patient has \"bone marrow edema\" in the setting a meniscal tear and normal cartilage in which you could factually say \"no contusion\"</p>\n<p>Another report describes chondral lesion within the lateral facet of the patella which should represent chondrosis of the patellofemoral compartment, but the impression lists \"lateral compartment chondromalacia\" which is also factually wrong</p>\n<p>\"Lateral meniscus and medial meniscus are normal. Loss of integrity of the medial meniscus in the trunk section and changes in signal intensity consistent with horizontal tear in the posterior horn are observed. \"</p>",
+   "parent": {},
+   "author": {
+    "displayName": "avg-HU",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/patrickmatulich",
+    "tier": "CONTRIBUTOR",
+    "id": 28482905,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 8,
+    "canUpvote": true,
+    "totalUpvotes": 8
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 717,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "avg-HU",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/patrickmatulich",
+     "userName": "patrickmatulich",
+     "tier": "CONTRIBUTOR",
+     "id": 28482905,
+     "profileUrl": "/patrickmatulich",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 28482905,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509807,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733491,
+  "name": "Data/Reporting Inconsistencies",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T05:03:03.738778900Z",
+  "totalVotes": 8,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733491",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "avg-HU",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/patrickmatulich",
+   "tier": "CONTRIBUTOR",
+   "id": 28482905,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3509807,
+  "id": 733491,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "telingc",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733491#3517527",
+  "lastCommentPostDate": "2026-08-27T11:39:23.420Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T05:03:03.738778900Z",
+  "title": "Data/Reporting Inconsistencies",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733491",
+  "votes": 8,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "avg-HU",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/patrickmatulich",
+    "userName": "patrickmatulich",
+    "tier": "CONTRIBUTOR",
+    "id": 28482905,
+    "profileUrl": "/patrickmatulich",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 28482905,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

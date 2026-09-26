@@ -1,0 +1,261 @@
+{
+ "forumTopic": {
+  "authorId": 17784323,
+  "authorThumbnailName": "17784323-kg.png?t=2026-06-14-17-48-40",
+  "authorUserDisplayName": "k256.dev",
+  "authorUserName": "k256net",
+  "comments": [
+   {
+    "id": 3515576,
+    "postDate": "2026-08-22T02:45:51.867Z",
+    "rawMarkdown": "So I'm surprisingly #1 on the efficiency LB right now.  No ensemble and I'm not too sure how much more I can squeeze out of it, but it's been really fun seeing how far I can push it without hurting efficiency.",
+    "content": "<p>So I'm surprisingly #1 on the efficiency LB right now.  No ensemble and I'm not too sure how much more I can squeeze out of it, but it's been really fun seeing how far I can push it without hurting efficiency.</p>",
+    "replies": [
+     {
+      "id": 3515583,
+      "postDate": "2026-08-22T04:03:07.060Z",
+      "rawMarkdown": "Honestly, I've come to think the Efficiency LB is the real public leaderboard. Let's both watch out for overfitting to public — good luck to us both!",
+      "content": "<p>Honestly, I've come to think the Efficiency LB is the real public leaderboard. Let's both watch out for overfitting to public — good luck to us both!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "k256.dev",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+       "url": "/k256net",
+       "tier": "MASTER",
+       "id": 17784323,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1952,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "k256.dev",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+        "url": "/k256net",
+        "userName": "k256net",
+        "tier": "MASTER",
+        "id": 17784323,
+        "profileUrl": "/k256net",
+        "performanceTier": "MASTER",
+        "userId": 17784323,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Scott Willis",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/scottgwillis",
+     "tier": "CONTRIBUTOR",
+     "id": 17764997,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Scott Willis",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/scottgwillis",
+      "userName": "scottgwillis",
+      "tier": "CONTRIBUTOR",
+      "id": 17764997,
+      "profileUrl": "/scottgwillis",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 17764997,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515569,
+    "postDate": "2026-08-22T02:16:44.817Z",
+    "rawMarkdown": "I agree. \n\nOne thing to keep in mind is that the top two Public LB submissions seem to be used for the Efficiency LB as well, so we should be careful not to accidentally get a high score through ensembling.",
+    "content": "<p>I agree. </p>\n<p>One thing to keep in mind is that the top two Public LB submissions seem to be used for the Efficiency LB as well, so we should be careful not to accidentally get a high score through ensembling.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chikuwabu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+     "url": "/prgckwb",
+     "tier": "MASTER",
+     "id": 9945255,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 28,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chikuwabu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+      "url": "/prgckwb",
+      "userName": "prgckwb",
+      "tier": "MASTER",
+      "id": 9945255,
+      "profileUrl": "/prgckwb",
+      "performanceTier": "MASTER",
+      "userId": 9945255,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516470,
+    "postDate": "2026-08-24T13:24:15.703Z",
+    "rawMarkdown": "Thanks for opening this up — the Efficiency LB really is the more informative board.\n\nI profiled our inference pipeline and hit a wall I can't get past. Breakdown for ~1300 studies:\n\nheader pass          0.5 min\nslice ordering      12.0 min   <- the wall\ndecode + resize      4.1 min\ncontainer + import   5.0 min\nGPU (5-fold)        10.0 min\n\nThe ordering pass reads the geometry tags of every slice in every selected series (~186 files per study) to sort by the projection onto the slice normal, then keeps only 9. Things I tried that didn't work:\n\nThreads: saturates at 64. Going to 128/256/512 changes nothing, so it's not latency-bound.\nReading only every Nth slice and interpolating: slice agreement with the full ordering drops to ~39%, no better than chance for the ones not sampled.\nInstanceNumber instead of the projection: 94.5% agreement but zero speedup — the cost is opening the file, not parsing the tag.\n\nYou mentioned ~20 min total with preprocessing plus a single 5-fold model. Are you doing something fundamentally different at the ordering step, or skipping it? Genuinely curious whether the geometric sort is worth its cost at all",
+    "content": "<p>Thanks for opening this up — the Efficiency LB really is the more informative board.</p>\n<p>I profiled our inference pipeline and hit a wall I can't get past. Breakdown for ~1300 studies:</p>\n<p>header pass          0.5 min\nslice ordering      12.0 min   &lt;- the wall\ndecode + resize      4.1 min\ncontainer + import   5.0 min\nGPU (5-fold)        10.0 min</p>\n<p>The ordering pass reads the geometry tags of every slice in every selected series (~186 files per study) to sort by the projection onto the slice normal, then keeps only 9. Things I tried that didn't work:</p>\n<p>Threads: saturates at 64. Going to 128/256/512 changes nothing, so it's not latency-bound.\nReading only every Nth slice and interpolating: slice agreement with the full ordering drops to ~39%, no better than chance for the ones not sampled.\nInstanceNumber instead of the projection: 94.5% agreement but zero speedup — the cost is opening the file, not parsing the tag.</p>\n<p>You mentioned ~20 min total with preprocessing plus a single 5-fold model. Are you doing something fundamentally different at the ordering step, or skipping it? Genuinely curious whether the geometric sort is worth its cost at all</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Berat Kirbiyik",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/beratkirbiyik",
+     "tier": "CONTRIBUTOR",
+     "id": 28581274,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1241,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Berat Kirbiyik",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/beratkirbiyik",
+      "userName": "beratkirbiyik",
+      "tier": "CONTRIBUTOR",
+      "id": 28581274,
+      "profileUrl": "/beratkirbiyik",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 28581274,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515563,
+   "postDate": "2026-08-22T01:27:30.293Z",
+   "rawMarkdown": "As of Aug 22, not many of the public LB top 50 also appear in the Efficiency LB top 50 — about 32%.\n\nA high score with a long runtime might mean two things: with a 9h limit there may be little ensembling headroom left, and the score might have been bought with ensembling in the first place — this could be a competition where ensembling pays, judging from the public notebooks.\n\nSo a fast, decent-scoring solution might have more room left than the public LB makes it look.\n\nFor reference: I'm currently Efficiency LB 22nd, Public LB 78th  with 0.926. my runtime is about 20 minutes — just preprocessing plus a single model trained with 5-fold. Reading the Efficiency LB is what tells me a better score should be reachable in about the same runtime. Maybe worth a look for you too?\n\nEfficiency LB\nhttps://www.kaggle.com/code/ryanholbrook/rsna-knee-abnormalities-efficiency-lb",
+   "content": "<p>As of Aug 22, not many of the public LB top 50 also appear in the Efficiency LB top 50 — about 32%.</p>\n<p>A high score with a long runtime might mean two things: with a 9h limit there may be little ensembling headroom left, and the score might have been bought with ensembling in the first place — this could be a competition where ensembling pays, judging from the public notebooks.</p>\n<p>So a fast, decent-scoring solution might have more room left than the public LB makes it look.</p>\n<p>For reference: I'm currently Efficiency LB 22nd, Public LB 78th  with 0.926. my runtime is about 20 minutes — just preprocessing plus a single model trained with 5-fold. Reading the Efficiency LB is what tells me a better score should be reachable in about the same runtime. Maybe worth a look for you too?</p>\n<p>Efficiency LB\n<a href=\"https://www.kaggle.com/code/ryanholbrook/rsna-knee-abnormalities-efficiency-lb\" target=\"_blank\">https://www.kaggle.com/code/ryanholbrook/rsna-knee-abnormalities-efficiency-lb</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "k256.dev",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+    "url": "/k256net",
+    "tier": "MASTER",
+    "id": 17784323,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 13,
+    "canUpvote": true,
+    "totalUpvotes": 13
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1952,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "userName": "k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "profileUrl": "/k256net",
+     "performanceTier": "MASTER",
+     "userId": 17784323,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3515563,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736678,
+  "name": "Maybe worth checking the Efficiency LB?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-22T01:27:30.292215900Z",
+  "totalVotes": 13,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736678",
+  "totalMessages": 4,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "k256.dev",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+   "url": "/k256net",
+   "tier": "MASTER",
+   "id": 17784323,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3515563,
+  "id": 736678,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Berat Kirbiyik",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736678#3516470",
+  "lastCommentPostDate": "2026-08-24T13:24:15.703333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-22T01:27:30.292215900Z",
+  "title": "Maybe worth checking the Efficiency LB?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736678",
+  "votes": 13,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "k256.dev",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+    "url": "/k256net",
+    "userName": "k256net",
+    "tier": "MASTER",
+    "id": 17784323,
+    "profileUrl": "/k256net",
+    "performanceTier": "MASTER",
+    "userId": 17784323,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

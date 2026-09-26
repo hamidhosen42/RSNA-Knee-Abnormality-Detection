@@ -1,0 +1,225 @@
+{
+ "forumTopic": {
+  "authorId": 14823419,
+  "authorThumbnailName": "14823419-kg.jpg?t=2026-08-04-08-41-55",
+  "authorUserDisplayName": "Luka Duvanov",
+  "authorUserName": "nekkon",
+  "comments": [
+   {
+    "id": 3511804,
+    "postDate": "2026-08-12T04:07:09.437Z",
+    "rawMarkdown": "I need to ask that my approach i thought was to convert the report to identify labels for rest of report but it cannot happen due to large computation hours of report conversion into english and then into labels. What else approach i can use to convert my report into labels given in the csv file ?\n",
+    "content": "<p>I need to ask that my approach i thought was to convert the report to identify labels for rest of report but it cannot happen due to large computation hours of report conversion into english and then into labels. What else approach i can use to convert my report into labels given in the csv file ?</p>",
+    "replies": [
+     {
+      "id": 3512138,
+      "postDate": "2026-08-12T18:03:12.247Z",
+      "rawMarkdown": "You don't need to translate the reports. Translate the vocabulary.\n\nThe cost you're hitting is O(corpus): 4,407 reports through a seq2seq model.\nWhat you need is O(vocabulary): roughly 40-60 terms per finding times 7\nlanguages. That's a few hundred strings, translated once, and after that it's\nplain string matching over the corpus — seconds on CPU, no GPU hours.\n\nRadiology reports are formulaic, which is what makes this work. \"Effusion\"\nshows up as effusion / efüzyon / derrame / Erguss / συλλογή / effusie /\népanchement plus a few morphological variants each. Build that table per\nfinding, then match.\n\nTwo things that will cost you more than the model choice if you skip them:\n\n1. Negation direction is language-specific. Turkish negates after the term —\n   \"efüzyon izlenmedi\" means NO effusion. A left-only negation window (the\n   default in every English NegEx port) silently inverts the second-largest\n   language in this corpus. Right-side window for Turkish, left for the\n   Germanic and Romance ones.\n\n2. Detect the language first, then apply that language's lexicon and negation\n   rule. Stopword-frequency ID is enough and costs nothing. About 428 reports\n   won't resolve — those are worth looking at rather than guessing at.\n\nFor calibration: a matcher built this way, with the vocabulary written without\nlooking at the 58, gets 0.86 on Baker's cyst and 0.66 on effusion. That's the\nfloor, and it runs in minutes.\n\nIf you do want a model, skip translation and go multilingual directly —\nsentence embeddings from LaBSE or multilingual-e5 are one forward pass per\nsentence and stay comparable across all seven languages. But don't fit\nthresholds on the 58: ACL prevalence there is 41% against ~20% in the corpus,\nso anything calibrated on them will be biased",
+      "content": "<p>You don't need to translate the reports. Translate the vocabulary.</p>\n<p>The cost you're hitting is O(corpus): 4,407 reports through a seq2seq model.\nWhat you need is O(vocabulary): roughly 40-60 terms per finding times 7\nlanguages. That's a few hundred strings, translated once, and after that it's\nplain string matching over the corpus — seconds on CPU, no GPU hours.</p>\n<p>Radiology reports are formulaic, which is what makes this work. \"Effusion\"\nshows up as effusion / efüzyon / derrame / Erguss / συλλογή / effusie /\népanchement plus a few morphological variants each. Build that table per\nfinding, then match.</p>\n<p>Two things that will cost you more than the model choice if you skip them:</p>\n<ol>\n<li><p>Negation direction is language-specific. Turkish negates after the term —\n\"efüzyon izlenmedi\" means NO effusion. A left-only negation window (the\ndefault in every English NegEx port) silently inverts the second-largest\nlanguage in this corpus. Right-side window for Turkish, left for the\nGermanic and Romance ones.</p></li>\n<li><p>Detect the language first, then apply that language's lexicon and negation\nrule. Stopword-frequency ID is enough and costs nothing. About 428 reports\nwon't resolve — those are worth looking at rather than guessing at.</p></li>\n</ol>\n<p>For calibration: a matcher built this way, with the vocabulary written without\nlooking at the 58, gets 0.86 on Baker's cyst and 0.66 on effusion. That's the\nfloor, and it runs in minutes.</p>\n<p>If you do want a model, skip translation and go multilingual directly —\nsentence embeddings from LaBSE or multilingual-e5 are one forward pass per\nsentence and stay comparable across all seven languages. But don't fit\nthresholds on the 58: ACL prevalence there is 41% against ~20% in the corpus,\nso anything calibrated on them will be biased</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Luka Duvanov",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+       "url": "/nekkon",
+       "tier": "CONTRIBUTOR",
+       "id": 14823419,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 4183,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "THANK_YOU",
+        "featuredUserNames": [
+         "malavdmodi"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Luka Duvanov",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+        "url": "/nekkon",
+        "userName": "nekkon",
+        "tier": "CONTRIBUTOR",
+        "id": 14823419,
+        "profileUrl": "/nekkon",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 14823419,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Malav D Modi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/malavdmodi",
+     "tier": "CONTRIBUTOR",
+     "id": 20249480,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Malav D Modi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/malavdmodi",
+      "userName": "malavdmodi",
+      "tier": "CONTRIBUTOR",
+      "id": 20249480,
+      "profileUrl": "/malavdmodi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 20249480,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510938,
+    "postDate": "2026-08-10T00:57:57.500Z",
+    "rawMarkdown": "Thank you for the supervision @nekkon ",
+    "content": "<p>Thank you for the supervision <a href=\"https://www.kaggle.com/nekkon\" target=\"_blank\">@nekkon</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510923,
+   "postDate": "2026-08-09T22:26:38.010Z",
+   "rawMarkdown": "Ground facts I wanted before starting, in case they save someone else the time:\n\nExactly 58 studies are labelled, and all twelve columns are filled for the same 58. There is no partial labelling to exploit.\nThe reports are in seven languages — English, Turkish, Spanish, German, Greek (178 of them, in Greek script), Dutch, French — plus 428 a stopword detector cannot place. Turkish negates after the term (efüzyon izlenmedi), so a left-only negation window silently inverts the second-largest language in the corpus.\nFluid_Sensitive and Fat_Suppression are the same column, identical on all 24,371 series. Encode one, drop the other.\nEvery study has all three planes and both contrast types — no fallback path needed for a fixed-shape input.\nA plain multilingual keyword matcher, vocabulary not tuned on the 58, gets 0.86 on Baker's cyst and 0.66 on effusion. That is the floor to beat.\nThe 58 are not a random sample: ACL prevalence is 41% there against ~20% in the corpus. Do not set priors from them.\nhttps://www.kaggle.com/code/nekkon/knee-mri-58-labels-for-4-407-studies",
+   "content": "<p>Ground facts I wanted before starting, in case they save someone else the time:</p>\n<p>Exactly 58 studies are labelled, and all twelve columns are filled for the same 58. There is no partial labelling to exploit.\nThe reports are in seven languages — English, Turkish, Spanish, German, Greek (178 of them, in Greek script), Dutch, French — plus 428 a stopword detector cannot place. Turkish negates after the term (efüzyon izlenmedi), so a left-only negation window silently inverts the second-largest language in the corpus.\nFluid_Sensitive and Fat_Suppression are the same column, identical on all 24,371 series. Encode one, drop the other.\nEvery study has all three planes and both contrast types — no fallback path needed for a fixed-shape input.\nA plain multilingual keyword matcher, vocabulary not tuned on the 58, gets 0.86 on Baker's cyst and 0.66 on effusion. That is the floor to beat.\nThe 58 are not a random sample: ACL prevalence is 41% there against ~20% in the corpus. Do not set priors from them.\n<a href=\"https://www.kaggle.com/code/nekkon/knee-mri-58-labels-for-4-407-studies\" target=\"_blank\">https://www.kaggle.com/code/nekkon/knee-mri-58-labels-for-4-407-studies</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Luka Duvanov",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+    "url": "/nekkon",
+    "tier": "CONTRIBUTOR",
+    "id": 14823419,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 7,
+    "canUpvote": true,
+    "totalUpvotes": 7
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4183,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "nathanaelrk"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Luka Duvanov",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+     "url": "/nekkon",
+     "userName": "nekkon",
+     "tier": "CONTRIBUTOR",
+     "id": 14823419,
+     "profileUrl": "/nekkon",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 14823419,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510923,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734106,
+  "name": "58 labelled studies out of 4,407 — the rest of the supervision is in the reports",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T22:26:38.008456500Z",
+  "totalVotes": 7,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734106",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Luka Duvanov",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+   "url": "/nekkon",
+   "tier": "CONTRIBUTOR",
+   "id": 14823419,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3510923,
+  "id": 734106,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Luka Duvanov",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734106#3512138",
+  "lastCommentPostDate": "2026-08-12T18:03:12.246666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T22:26:38.008456500Z",
+  "title": "58 labelled studies out of 4,407 — the rest of the supervision is in the reports",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734106",
+  "votes": 7,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Luka Duvanov",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14823419-kg.jpg?t=2026-08-04-08-41-55",
+    "url": "/nekkon",
+    "userName": "nekkon",
+    "tier": "CONTRIBUTOR",
+    "id": 14823419,
+    "profileUrl": "/nekkon",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 14823419,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

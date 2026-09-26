@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 2630633,
+  "authorThumbnailName": "2630633-kg.png",
+  "authorUserDisplayName": "Enai",
+  "authorUserName": "enaimaan",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515128,
+   "postDate": "2026-08-20T21:17:32.607Z",
+   "rawMarkdown": "Hello,\n\nWhile checking the consistency of the released DICOM metadata, I noticed that series grouped under the same study generally have distinct `FrameOfReferenceUID` values.\n\nCould the organizers clarify whether this is:\n\n1. a property of the original acquisitions, or\n2. a result of the deidentification/export process?\n\nAlso, should spatial position and orientation fields be interpreted only within each individual series, or are their numerical values expressed in a common study-level patient coordinate system?\n\nThank you.",
+   "content": "<p>Hello,</p>\n<p>While checking the consistency of the released DICOM metadata, I noticed that series grouped under the same study generally have distinct <code>FrameOfReferenceUID</code> values.</p>\n<p>Could the organizers clarify whether this is:</p>\n<ol>\n<li>a property of the original acquisitions, or</li>\n<li>a result of the deidentification/export process?</li>\n</ol>\n<p>Also, should spatial position and orientation fields be interpreted only within each individual series, or are their numerical values expressed in a common study-level patient coordinate system?</p>\n<p>Thank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Enai",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+    "url": "/enaimaan",
+    "tier": "CONTRIBUTOR",
+    "id": 2630633,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3044,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "userName": "enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "profileUrl": "/enaimaan",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 2630633,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3515128,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736457,
+  "name": "Clarification on FrameOfReferenceUID in the released DICOM files",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-20T21:17:32.605191Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736457",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Enai",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+   "url": "/enaimaan",
+   "tier": "CONTRIBUTOR",
+   "id": 2630633,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3515128,
+  "id": 736457,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736457#3515128",
+  "lastCommentPostDate": "2026-08-20T21:17:32.606666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-20T21:17:32.605191Z",
+  "title": "Clarification on FrameOfReferenceUID in the released DICOM files",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736457",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Enai",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+    "url": "/enaimaan",
+    "userName": "enaimaan",
+    "tier": "CONTRIBUTOR",
+    "id": 2630633,
+    "profileUrl": "/enaimaan",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 2630633,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

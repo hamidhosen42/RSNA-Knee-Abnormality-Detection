@@ -1,0 +1,227 @@
+{
+ "forumTopic": {
+  "authorId": 9945255,
+  "authorThumbnailName": "9945255-kg.png?t=2025-06-03-19-18-29",
+  "authorUserDisplayName": "Chikuwabu",
+  "authorUserName": "prgckwb",
+  "comments": [
+   {
+    "id": 3514901,
+    "postDate": "2026-08-20T11:31:41.877Z",
+    "rawMarkdown": "I already insert random images of gorillas and other primates as part of my augmentation process. I thought this was common practice?",
+    "content": "<p>I already insert random images of gorillas and other primates as part of my augmentation process. I thought this was common practice?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tom Aindow",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+     "url": "/taindow",
+     "tier": "MASTER",
+     "id": 921947,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 83,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "pcjimmmy",
+       "prgckwb",
+       "marumarukun",
+       "mattagar",
+       "ozermehmet",
+       "hida1211"
+      ],
+      "userCount": 6
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tom Aindow",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+      "url": "/taindow",
+      "userName": "taindow",
+      "tier": "MASTER",
+      "id": 921947,
+      "profileUrl": "/taindow",
+      "performanceTier": "MASTER",
+      "userId": 921947,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515016,
+    "postDate": "2026-08-20T15:38:23.900Z",
+    "rawMarkdown": "I have found one of the bad parts of using LLM's to help has been a huge decline in my looking at the images.\n\nI use to spend most of the first couple of weeks of a competition doing mostly EDA's and looking at hundreds or even thousands of the images.  This is the 2nd competition would I seem to have completely skipped that vital step.",
+    "content": "<p>I have found one of the bad parts of using LLM's to help has been a huge decline in my looking at the images.</p>\n<p>I use to spend most of the first couple of weeks of a competition doing mostly EDA's and looking at hundreds or even thousands of the images.  This is the 2nd competition would I seem to have completely skipped that vital step.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 643,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "SURPRISE",
+      "featuredUserNames": [
+       "enaimaan"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514843,
+   "postDate": "2026-08-20T08:43:23.920Z",
+   "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F9945255%2F1e0c3afa532c28ab127ee7e06f056c80%2Fgorilla-d847cd71000730cd511a3f5f355bf95654ead0ca.webp?generation=1787215357782115&alt=media)\n\nThe image above is a CT scan. This image contains a gorilla. According to this article, even highly trained radiologists often miss the gorilla.\n\nBefore blindly training models with Coding Agent, it might be a good idea to check if there is a gorilla in the knee MRI.\n\nhttps://www.npr.org/sections/health-shots/2013/02/11/171409656/why-even-radiologists-can-miss-a-gorilla-hiding-in-plain-sight",
+   "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F9945255%2F1e0c3afa532c28ab127ee7e06f056c80%2Fgorilla-d847cd71000730cd511a3f5f355bf95654ead0ca.webp?generation=1787215357782115&amp;alt=media\" alt=\"\"></p>\n<p>The image above is a CT scan. This image contains a gorilla. According to this article, even highly trained radiologists often miss the gorilla.</p>\n<p>Before blindly training models with Coding Agent, it might be a good idea to check if there is a gorilla in the knee MRI.</p>\n<p><a href=\"https://www.npr.org/sections/health-shots/2013/02/11/171409656/why-even-radiologists-can-miss-a-gorilla-hiding-in-plain-sight\" target=\"_blank\">https://www.npr.org/sections/health-shots/2013/02/11/171409656/why-even-radiologists-can-miss-a-gorilla-hiding-in-plain-sight</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Chikuwabu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+    "url": "/prgckwb",
+    "tier": "MASTER",
+    "id": 9945255,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 11,
+    "canUpvote": true,
+    "totalUpvotes": 11
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 28,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "ren4yu",
+      "taindow",
+      "aniroula",
+      "tuckerarrants",
+      "naru19",
+      "marumarukun",
+      "ihiratch",
+      "isy640",
+      "ggayoayogg",
+      "k256net",
+      "adaluvu",
+      "hiranorm",
+      "alisalmanrana"
+     ],
+     "userCount": 13
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Chikuwabu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+     "url": "/prgckwb",
+     "userName": "prgckwb",
+     "tier": "MASTER",
+     "id": 9945255,
+     "profileUrl": "/prgckwb",
+     "performanceTier": "MASTER",
+     "userId": 9945255,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514843,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736301,
+  "name": "Are you actually looking at the data?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-20T08:43:23.919047100Z",
+  "totalVotes": 11,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736301",
+  "totalMessages": 2,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Chikuwabu",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+   "url": "/prgckwb",
+   "tier": "MASTER",
+   "id": 9945255,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3514843,
+  "id": 736301,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736301#3515016",
+  "lastCommentPostDate": "2026-08-20T15:38:23.900Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-20T08:43:23.919047100Z",
+  "title": "Are you actually looking at the data?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736301",
+  "votes": 11,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Chikuwabu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+    "url": "/prgckwb",
+    "userName": "prgckwb",
+    "tier": "MASTER",
+    "id": 9945255,
+    "profileUrl": "/prgckwb",
+    "performanceTier": "MASTER",
+    "userId": 9945255,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

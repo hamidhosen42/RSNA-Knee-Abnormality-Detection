@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 36326921,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Abdullah Wasee",
+  "authorUserName": "abdullahwasee",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3518833,
+   "postDate": "2026-08-31T17:46:10.117Z",
+   "rawMarkdown": "Every RSNA winner I can find uses a recurrent head to aggregate slices rather than pooling - 2019 hemorrhage (1st place was literally titled \"Sequential model wins\"), 2022 cervical spine (CNN+LSTM), 2023 abdominal trauma (CNN+GRU, max-pooled over slice logits), 2024 lumbar spine. The 2023 writeup says GRU beat self-attention in their ablations.\n\nI haven't seen it mentioned in this competition's discussions, where the consensus seems to be attention pooling over sequence slots.\n\nMy guess at why it might not transfer: those are CT volumes with 96 slices, and most setups here use 3–9 slices per plane. A GRU over 3 steps has little sequence to model.\n\nHas anyone tried it? And if so, did more slices per plane make it worth it, or does the resolution trade-off kill it?\n\nCurrently at 0.807 public / 0.751 on the annotated 58, ResNet-34 2.5D with attention pooling, so I'm asking from behind - happy to share my ablation log if useful.",
+   "content": "<p>Every RSNA winner I can find uses a recurrent head to aggregate slices rather than pooling - 2019 hemorrhage (1st place was literally titled \"Sequential model wins\"), 2022 cervical spine (CNN+LSTM), 2023 abdominal trauma (CNN+GRU, max-pooled over slice logits), 2024 lumbar spine. The 2023 writeup says GRU beat self-attention in their ablations.</p>\n<p>I haven't seen it mentioned in this competition's discussions, where the consensus seems to be attention pooling over sequence slots.</p>\n<p>My guess at why it might not transfer: those are CT volumes with 96 slices, and most setups here use 3–9 slices per plane. A GRU over 3 steps has little sequence to model.</p>\n<p>Has anyone tried it? And if so, did more slices per plane make it worth it, or does the resolution trade-off kill it?</p>\n<p>Currently at 0.807 public / 0.751 on the annotated 58, ResNet-34 2.5D with attention pooling, so I'm asking from behind - happy to share my ablation log if useful.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Abdullah Wasee",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/abdullahwasee",
+    "tier": "CONTRIBUTOR",
+    "id": 36326921,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2417,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Abdullah Wasee",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/abdullahwasee",
+     "userName": "abdullahwasee",
+     "tier": "CONTRIBUTOR",
+     "id": 36326921,
+     "profileUrl": "/abdullahwasee",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36326921,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3518833,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738495,
+  "name": "Has anyone tried a GRU/LSTM head over slices here?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-31T17:46:10.116144Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738495",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Abdullah Wasee",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/abdullahwasee",
+   "tier": "CONTRIBUTOR",
+   "id": 36326921,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3518833,
+  "id": 738495,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Abdullah Wasee",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738495#3518833",
+  "lastCommentPostDate": "2026-08-31T17:46:10.116666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-31T17:46:10.116144Z",
+  "title": "Has anyone tried a GRU/LSTM head over slices here?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738495",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Abdullah Wasee",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/abdullahwasee",
+    "userName": "abdullahwasee",
+    "tier": "CONTRIBUTOR",
+    "id": 36326921,
+    "profileUrl": "/abdullahwasee",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36326921,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

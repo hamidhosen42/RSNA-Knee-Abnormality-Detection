@@ -1,0 +1,232 @@
+{
+ "forumTopic": {
+  "authorId": 36326921,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Abdullah Wasee",
+  "authorUserName": "abdullahwasee",
+  "comments": [
+   {
+    "id": 3518612,
+    "postDate": "2026-08-31T11:17:17.873Z",
+    "rawMarkdown": "Use Steven's knee report dataset to see if it improves your LB score:\n\nhttps://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels",
+    "content": "<p>Use Steven's knee report dataset to see if it improves your LB score:</p>\n<p><a href=\"https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels\" target=\"_blank\">https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels</a></p>",
+    "replies": [
+     {
+      "id": 3518837,
+      "postDate": "2026-08-31T17:47:31.203Z",
+      "rawMarkdown": "Thanks, that made a bigger difference than I expected. ",
+      "content": "<p>Thanks, that made a bigger difference than I expected. </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Abdullah Wasee",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/abdullahwasee",
+       "tier": "CONTRIBUTOR",
+       "id": 36326921,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2417,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Abdullah Wasee",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/abdullahwasee",
+        "userName": "abdullahwasee",
+        "tier": "CONTRIBUTOR",
+        "id": 36326921,
+        "profileUrl": "/abdullahwasee",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36326921,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Rasoul Mojtahedzadeh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4392121-kg.png",
+     "url": "/rasoulmojtahedzadeh",
+     "tier": "EXPERT",
+     "id": 4392121,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 791,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "developerasaad"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rasoul Mojtahedzadeh",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4392121-kg.png",
+      "url": "/rasoulmojtahedzadeh",
+      "userName": "rasoulmojtahedzadeh",
+      "tier": "EXPERT",
+      "id": 4392121,
+      "profileUrl": "/rasoulmojtahedzadeh",
+      "performanceTier": "EXPERT",
+      "userId": 4392121,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3522585,
+    "postDate": "2026-09-09T08:44:26.360Z",
+    "rawMarkdown": "Your pipeline is actually solid - ResNet-34, gated attention pooling, 4 sequence slots, clause-scoped negation in extraction. The\nfact that you caught the DICOM sorting bug (SOP Instance UID vs ImagePositionPatient) tells me you're debugging at the right level.\n                                                                                                                                   \nI think the gap from 0.74 → 0.87+ is mostly a label quality ceiling, not an architecture problem. Here's why:                    \n  \n**The label extraction bottleneck**                                                                                              \n                                                                                                                                   \nWith only 58 gold-labeled studies out of 4,407, you're almost entirely dependent on your rule-based extraction for training signal. The thread on best single-model scores (735304) has a revealing pattern: every jump from 0.87 → 0.93+ came from better label extraction (mostly LLM-based), not from architecture changes. One competitor got 0.949 single-model just by switching to Gemma 4 for local label extraction.                                                                                              \n\nThe consensus emerging is that a \"single prompt LLM extraction has not been beaten by more sophisticated extraction procedures\" -and the image model (\"student\") consistently outperforms the label extractor (\"teacher\"), which means better labels → the model learns what the labels can't explicitly capture.                                                                                 \n                                                                                                                                   \n**Resolution might also be a factor**\n                                      \nYour 256px at 140mm crop gives you 0.547 mm/px effective resolution. Some of the 0.93+ models are running at 336-384px (0.383-0.416 mm/px at the same physical crop). For subtle findings like early OA or small meniscal tears, that resolution difference could matter — especially in the coronal plane where compartmental OA grading needs to resolve joint space narrowing. \n                                                                                                                                   \n**What I'd try in your position:**                                                                                               \n                                      \n1. Before touching architecture: swap your rule-based extraction for Steven's public labels dataset or run a local LLM extraction pass. This is probably the single biggest lever.                                                                                \n2. If you want to stay rule-based: make sure your extraction handles severity grading for effusion/synovitis (these are the hardest labels - reports often say \"mild effusion\" without a clear positive/negative boundary) and multilingual reports (9-12 languages in this dataset).\n3. Try bumping to 336px at the same 140mm physical crop — relatively cheap experiment that might add a point or two.             \n                                                                                                                                   \nThe good news: your pipeline fundamentals (attention pooling, physical crop, proper slice ordering) are in the right ballpark.   \nThe bad news: below 0.87, it's almost certainly a data problem, not a model problem.",
+    "content": "<p>Your pipeline is actually solid - ResNet-34, gated attention pooling, 4 sequence slots, clause-scoped negation in extraction. The\nfact that you caught the DICOM sorting bug (SOP Instance UID vs ImagePositionPatient) tells me you're debugging at the right level.</p>\n<p>I think the gap from 0.74 → 0.87+ is mostly a label quality ceiling, not an architecture problem. Here's why:                    </p>\n<p><strong>The label extraction bottleneck</strong>                                                                                              </p>\n<p>With only 58 gold-labeled studies out of 4,407, you're almost entirely dependent on your rule-based extraction for training signal. The thread on best single-model scores (735304) has a revealing pattern: every jump from 0.87 → 0.93+ came from better label extraction (mostly LLM-based), not from architecture changes. One competitor got 0.949 single-model just by switching to Gemma 4 for local label extraction.                                                                                              </p>\n<p>The consensus emerging is that a \"single prompt LLM extraction has not been beaten by more sophisticated extraction procedures\" -and the image model (\"student\") consistently outperforms the label extractor (\"teacher\"), which means better labels → the model learns what the labels can't explicitly capture.                                                                                 </p>\n<p><strong>Resolution might also be a factor</strong></p>\n<p>Your 256px at 140mm crop gives you 0.547 mm/px effective resolution. Some of the 0.93+ models are running at 336-384px (0.383-0.416 mm/px at the same physical crop). For subtle findings like early OA or small meniscal tears, that resolution difference could matter — especially in the coronal plane where compartmental OA grading needs to resolve joint space narrowing. </p>\n<p><strong>What I'd try in your position:</strong>                                                                                               </p>\n<ol>\n<li>Before touching architecture: swap your rule-based extraction for Steven's public labels dataset or run a local LLM extraction pass. This is probably the single biggest lever.                                                                                </li>\n<li>If you want to stay rule-based: make sure your extraction handles severity grading for effusion/synovitis (these are the hardest labels - reports often say \"mild effusion\" without a clear positive/negative boundary) and multilingual reports (9-12 languages in this dataset).</li>\n<li>Try bumping to 336px at the same 140mm physical crop — relatively cheap experiment that might add a point or two.             </li>\n</ol>\n<p>The good news: your pipeline fundamentals (attention pooling, physical crop, proper slice ordering) are in the right ballpark.<br>\nThe bad news: below 0.87, it's almost certainly a data problem, not a model problem.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Nathan Jacob",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6515340-kg.jpeg?t=2024-06-06-13-34-22",
+     "url": "/nathanjacob",
+     "tier": "EXPERT",
+     "id": 6515340,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 464,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nathan Jacob",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6515340-kg.jpeg?t=2024-06-06-13-34-22",
+      "url": "/nathanjacob",
+      "userName": "nathanjacob",
+      "tier": "EXPERT",
+      "id": 6515340,
+      "profileUrl": "/nathanjacob",
+      "performanceTier": "EXPERT",
+      "userId": 6515340,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3518602,
+   "postDate": "2026-08-31T10:57:59.820Z",
+   "rawMarkdown": "Hi - first Kaggle competition, and I've hit a wall I can't reason my way past. Sharing what I've measured in case the gap is obvious to someone who's been here longer.\n\nWhere I am. 0.739 macro AUC on the 58 annotated studies, 5-fold. Report extraction at 0.725 against the same 58.\n\nPipeline. Rule-based multilingual extraction (clause-scoped negation in both directions, severity grading), then a 2.5D ResNet-34 with gated attention pooling over 4 sequence slots × 3 adjacent-slice triplets at 256px, 140 mm physical crop.\n\nThings that measurably helped me, in case they're useful to other beginners:\n\nSorting slices by ImagePositionPatient projected onto the slice normal rather than filename. Filenames are SOP Instance UIDs and are effectively random - this was my single biggest bug.\nGrading mild findings lower. I found reports saying \"geringer Gelenkerguss\" (slight effusion) annotated as negative, so scoring every mention at 0.85 was systematically wrong. Effusion went 0.628 → 0.726, ACL 0.775 → 0.855.\nSharpening the soft labels: BCE against targets clustered near 0.5 barely trains. GOLD went 0.653 → 0.725.\n\nWhere I'm stuck. Medial Meniscus 0.59 and MCL 0.60 - the thin structures. Everything large and diffuse is fine (Medial OA 0.89, Effusion 0.88).\n\nWhat I'd love guidance on:\n\nReading public notebooks, the consensus seems to be 336px with 3 slices rather than more slices at lower resolution. Is that mostly resolution, or mostly that adjacent triplets beat spread-out slices? I've seen both claimed.\nHow much of the ResNet → DINOv2 gap is real versus fold noise? One post measured DINOv2-S → B as a null (+0.0011), which makes me unsure whether the backbone matters at all past a point.\nPublic solutions seem to plateau near 0.87 while the top is 0.952. Is that gap ensembling and scale, or is there a class of technique the published notebooks aren't using?\n\nHappy to share my full ablation log if useful. Thanks for reading - the discussions here have already saved me several wasted weeks.",
+   "content": "<p>Hi - first Kaggle competition, and I've hit a wall I can't reason my way past. Sharing what I've measured in case the gap is obvious to someone who's been here longer.</p>\n<p>Where I am. 0.739 macro AUC on the 58 annotated studies, 5-fold. Report extraction at 0.725 against the same 58.</p>\n<p>Pipeline. Rule-based multilingual extraction (clause-scoped negation in both directions, severity grading), then a 2.5D ResNet-34 with gated attention pooling over 4 sequence slots × 3 adjacent-slice triplets at 256px, 140 mm physical crop.</p>\n<p>Things that measurably helped me, in case they're useful to other beginners:</p>\n<p>Sorting slices by ImagePositionPatient projected onto the slice normal rather than filename. Filenames are SOP Instance UIDs and are effectively random - this was my single biggest bug.\nGrading mild findings lower. I found reports saying \"geringer Gelenkerguss\" (slight effusion) annotated as negative, so scoring every mention at 0.85 was systematically wrong. Effusion went 0.628 → 0.726, ACL 0.775 → 0.855.\nSharpening the soft labels: BCE against targets clustered near 0.5 barely trains. GOLD went 0.653 → 0.725.</p>\n<p>Where I'm stuck. Medial Meniscus 0.59 and MCL 0.60 - the thin structures. Everything large and diffuse is fine (Medial OA 0.89, Effusion 0.88).</p>\n<p>What I'd love guidance on:</p>\n<p>Reading public notebooks, the consensus seems to be 336px with 3 slices rather than more slices at lower resolution. Is that mostly resolution, or mostly that adjacent triplets beat spread-out slices? I've seen both claimed.\nHow much of the ResNet → DINOv2 gap is real versus fold noise? One post measured DINOv2-S → B as a null (+0.0011), which makes me unsure whether the backbone matters at all past a point.\nPublic solutions seem to plateau near 0.87 while the top is 0.952. Is that gap ensembling and scale, or is there a class of technique the published notebooks aren't using?</p>\n<p>Happy to share my full ablation log if useful. Thanks for reading - the discussions here have already saved me several wasted weeks.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Abdullah Wasee",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/abdullahwasee",
+    "tier": "CONTRIBUTOR",
+    "id": 36326921,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2417,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Abdullah Wasee",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/abdullahwasee",
+     "userName": "abdullahwasee",
+     "tier": "CONTRIBUTOR",
+     "id": 36326921,
+     "profileUrl": "/abdullahwasee",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36326921,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3518602,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738339,
+  "name": "Stuck around 0.74 OOF - what separates the 0.87 tier from 0.93+?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-31T10:57:59.818715400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738339",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Abdullah Wasee",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/abdullahwasee",
+   "tier": "CONTRIBUTOR",
+   "id": 36326921,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3518602,
+  "id": 738339,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Nathan Jacob",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738339#3522585",
+  "lastCommentPostDate": "2026-09-09T08:44:26.360Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-31T10:57:59.818715400Z",
+  "title": "Stuck around 0.74 OOF - what separates the 0.87 tier from 0.93+?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738339",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Abdullah Wasee",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/abdullahwasee",
+    "userName": "abdullahwasee",
+    "tier": "CONTRIBUTOR",
+    "id": 36326921,
+    "profileUrl": "/abdullahwasee",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36326921,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

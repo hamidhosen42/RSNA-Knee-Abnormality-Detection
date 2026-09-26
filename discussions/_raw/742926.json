@@ -1,0 +1,305 @@
+{
+ "forumTopic": {
+  "authorId": 24953374,
+  "authorThumbnailName": "24953374-kg.JPG?t=2026-08-16-07-58-48",
+  "authorUserDisplayName": "MUTTAHIR",
+  "authorUserName": "muttahir",
+  "comments": [
+   {
+    "id": 3528357,
+    "postDate": "2026-09-25T23:53:40.313Z",
+    "rawMarkdown": "All of these things can help\n* improve train labels\n* change image preprocess\n* change the representation we input into our model\n* change model architecture\n* change backbone\n* change data augmentation\n* change learning schedule",
+    "content": "<p>All of these things can help</p>\n<ul>\n<li>improve train labels</li>\n<li>change image preprocess</li>\n<li>change the representation we input into our model</li>\n<li>change model architecture</li>\n<li>change backbone</li>\n<li>change data augmentation</li>\n<li>change learning schedule</li>\n</ul>",
+    "replies": [
+     {
+      "id": 3528539,
+      "postDate": "2026-09-26T06:49:07.867Z",
+      "rawMarkdown": "Thanks, Chris—this is a helpful list. I’ll test one change at a time, starting with train-label quality and image preprocessing, then try a different input representation or backbone if validation supports it. I’ll keep the same study-level folds and compare macro AUC/OOF predictions rather than chasing the public leaderboard. For this dataset, which single change would you test first?",
+      "content": "<p>Thanks, Chris—this is a helpful list. I’ll test one change at a time, starting with train-label quality and image preprocessing, then try a different input representation or backbone if validation supports it. I’ll keep the same study-level folds and compare macro AUC/OOF predictions rather than chasing the public leaderboard. For this dataset, which single change would you test first?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "MUTTAHIR",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+       "url": "/muttahir",
+       "tier": "CONTRIBUTOR",
+       "id": 24953374,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1272,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "MUTTAHIR",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+        "url": "/muttahir",
+        "userName": "muttahir",
+        "tier": "CONTRIBUTOR",
+        "id": 24953374,
+        "profileUrl": "/muttahir",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 24953374,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3528624,
+      "postDate": "2026-09-26T09:12:30.157Z",
+      "rawMarkdown": "Thanks, Chris. I tested the report/E11 signals as a small, controlled first step. Only 57 matched gold-labeled studies were available per finding across the 12 targets, so these local results are noisy and are not leaderboard scores. They also do not measure my complete ensemble, whose current public score is 0.940.\n\nValidation results (mean macro AUC):\n• Report-only: 0.8692\n• E11 OOF-only: 0.8582\n• Fixed 50/50 percentile-rank blend: 0.9077\n• Nested-CV-tuned rank weights: 0.9026\n• Raw 50/50 probability mean: 0.9105\n• Train-standardized mean: 0.9086\n\nThe weight-tuned rank blend was worse than the fixed blend. Raw averaging was only +0.0028 over percentile ranking on this small sample, so I did not change the 0.940 submission. The rank-weight experiment used nested CV (outer 3-fold × 10 repeats; inner 3-fold × 3 repeats for weight selection); the signal-transform comparison used repeated 3-fold validation × 10. These tests cover only the report/E11 branch; I still need OOF predictions from the full ensemble to evaluate a real addition.\n\nNext I plan to audit report labels, then test one MRI preprocessing or input-representation change at a time, followed by a different backbone or augmentation/schedule if validation supports it. Practical tips: keep all slices/series from each study in one fold; inspect per-target AUC as well as macro AUC; generate full-ensemble OOF predictions before blending; tune weights only inside training folds; and repeat apparent gains across folds/seeds before trusting them. I’ll avoid choosing changes based only on public leaderboard movement.\n\nWhich preprocessing or representation change would you try first for this dataset?",
+      "content": "<p>Thanks, Chris. I tested the report/E11 signals as a small, controlled first step. Only 57 matched gold-labeled studies were available per finding across the 12 targets, so these local results are noisy and are not leaderboard scores. They also do not measure my complete ensemble, whose current public score is 0.940.</p>\n<p>Validation results (mean macro AUC):\n• Report-only: 0.8692\n• E11 OOF-only: 0.8582\n• Fixed 50/50 percentile-rank blend: 0.9077\n• Nested-CV-tuned rank weights: 0.9026\n• Raw 50/50 probability mean: 0.9105\n• Train-standardized mean: 0.9086</p>\n<p>The weight-tuned rank blend was worse than the fixed blend. Raw averaging was only +0.0028 over percentile ranking on this small sample, so I did not change the 0.940 submission. The rank-weight experiment used nested CV (outer 3-fold × 10 repeats; inner 3-fold × 3 repeats for weight selection); the signal-transform comparison used repeated 3-fold validation × 10. These tests cover only the report/E11 branch; I still need OOF predictions from the full ensemble to evaluate a real addition.</p>\n<p>Next I plan to audit report labels, then test one MRI preprocessing or input-representation change at a time, followed by a different backbone or augmentation/schedule if validation supports it. Practical tips: keep all slices/series from each study in one fold; inspect per-target AUC as well as macro AUC; generate full-ensemble OOF predictions before blending; tune weights only inside training folds; and repeat apparent gains across folds/seeds before trusting them. I’ll avoid choosing changes based only on public leaderboard movement.</p>\n<p>Which preprocessing or representation change would you try first for this dataset?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "MUTTAHIR",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+       "url": "/muttahir",
+       "tier": "CONTRIBUTOR",
+       "id": 24953374,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1272,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "MUTTAHIR",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+        "url": "/muttahir",
+        "userName": "muttahir",
+        "tier": "CONTRIBUTOR",
+        "id": 24953374,
+        "profileUrl": "/muttahir",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 24953374,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 85,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3527675,
+    "postDate": "2026-09-24T11:35:59.797Z",
+    "rawMarkdown": "Try blending some other model with this to increase the score\n",
+    "content": "<p>Try blending some other model with this to increase the score</p>",
+    "replies": [
+     {
+      "id": 3527993,
+      "postDate": "2026-09-25T06:32:11.183Z",
+      "rawMarkdown": "Thanks, Lavin! I already have a blended ensemble with DINO-family MRI models and RadImageNet heads, so I’ll focus on adding a genuinely complementary model and validate the blend with OOF predictions rather than tuning to the public leaderboard. Did you have a particular backbone or checkpoint that worked well for this dataset?",
+      "content": "<p>Thanks, Lavin! I already have a blended ensemble with DINO-family MRI models and RadImageNet heads, so I’ll focus on adding a genuinely complementary model and validate the blend with OOF predictions rather than tuning to the public leaderboard. Did you have a particular backbone or checkpoint that worked well for this dataset?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "MUTTAHIR",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+       "url": "/muttahir",
+       "tier": "CONTRIBUTOR",
+       "id": 24953374,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1272,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "MUTTAHIR",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+        "url": "/muttahir",
+        "userName": "muttahir",
+        "tier": "CONTRIBUTOR",
+        "id": 24953374,
+        "profileUrl": "/muttahir",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 24953374,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -3,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 280,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3527582,
+   "postDate": "2026-09-24T06:48:22.907Z",
+   "rawMarkdown": "Hi everyone. I’m looking for a controlled next experiment to improve my current public AUC of 0.940 in the RSNA Knee Abnormality Detection competition. My notebook is an attributed reproduction of Mattia Angeli’s public version 27, ‘Bend the Knee to the DINOv3.’ It includes 20 DINO MRI members, five DINOv3/A5 folds, RadImageNet heads, and probability-based TTA pooling with target-specific overrides. For those who improved beyond 0.94, what helped most: better report-derived labels, a genuinely different encoder, or OOF-based ensemble blending? How did you validate changes without overfitting to the public leaderboard? I’ll retain attribution for any code or ideas I use.",
+   "content": "<p>Hi everyone. I’m looking for a controlled next experiment to improve my current public AUC of 0.940 in the RSNA Knee Abnormality Detection competition. My notebook is an attributed reproduction of Mattia Angeli’s public version 27, ‘Bend the Knee to the DINOv3.’ It includes 20 DINO MRI members, five DINOv3/A5 folds, RadImageNet heads, and probability-based TTA pooling with target-specific overrides. For those who improved beyond 0.94, what helped most: better report-derived labels, a genuinely different encoder, or OOF-based ensemble blending? How did you validate changes without overfitting to the public leaderboard? I’ll retain attribution for any code or ideas I use.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "MUTTAHIR",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+    "url": "/muttahir",
+    "tier": "CONTRIBUTOR",
+    "id": 24953374,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -5,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1272,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "MUTTAHIR",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+     "url": "/muttahir",
+     "userName": "muttahir",
+     "tier": "CONTRIBUTOR",
+     "id": 24953374,
+     "profileUrl": "/muttahir",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 24953374,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3527582,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742926,
+  "name": "Suggestions for improving a 0.940 RSNA Knee ensemble",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-24T06:48:22.907131800Z",
+  "totalVotes": -5,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742926",
+  "totalMessages": 5,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "MUTTAHIR",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+   "url": "/muttahir",
+   "tier": "CONTRIBUTOR",
+   "id": 24953374,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3527582,
+  "id": 742926,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "MUTTAHIR",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742926#3528624",
+  "lastCommentPostDate": "2026-09-26T09:12:30.156666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-24T06:48:22.907131800Z",
+  "title": "Suggestions for improving a 0.940 RSNA Knee ensemble",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742926",
+  "votes": -5,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "MUTTAHIR",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24953374-kg.JPG?t=2026-08-16-07-58-48",
+    "url": "/muttahir",
+    "userName": "muttahir",
+    "tier": "CONTRIBUTOR",
+    "id": 24953374,
+    "profileUrl": "/muttahir",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 24953374,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

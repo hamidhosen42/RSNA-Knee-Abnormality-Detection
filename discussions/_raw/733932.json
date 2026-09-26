@@ -1,0 +1,456 @@
+{
+ "forumTopic": {
+  "authorId": 11479618,
+  "authorThumbnailName": "11479618-kg.jpg?t=2026-05-15-03-22-51",
+  "authorUserDisplayName": "stevenleehans",
+  "authorUserName": "stevenleehans",
+  "comments": [
+   {
+    "id": 3524013,
+    "postDate": "2026-09-13T17:11:52.043Z",
+    "rawMarkdown": "Bro , we can team up if you want I have some crazy idea and already prepared it and has 70-85% of getting a CV of 0.952+ if you are interested please reply here.\n\nCause I need someone as likeminded as me",
+    "content": "<p>Bro , we can team up if you want I have some crazy idea and already prepared it and has 70-85% of getting a CV of 0.952+ if you are interested please reply here.</p>\n<p>Cause I need someone as likeminded as me</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -4,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 278,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3512870,
+    "postDate": "2026-08-14T15:25:41.747Z",
+    "rawMarkdown": "Thank you for doing this work, I lost a day trying to first identify language source and then get to some degree of acceptable extraction, then found your post with a review of what others have done and what could be the \"I don't know\" effect. ",
+    "content": "<p>Thank you for doing this work, I lost a day trying to first identify language source and then get to some degree of acceptable extraction, then found your post with a review of what others have done and what could be the \"I don't know\" effect. </p>",
+    "replies": [
+     {
+      "id": 3512875,
+      "postDate": "2026-08-14T15:42:31.847Z",
+      "rawMarkdown": "Happy to help! i was helped a lot in the last comp by fellow kagglers. it's my way to give back!\nFeel free to use my Knee Report LLM Labels",
+      "content": "<p>Happy to help! i was helped a lot in the last comp by fellow kagglers. it's my way to give back!\nFeel free to use my Knee Report LLM Labels</p>",
+      "parent": {},
+      "author": {
+       "displayName": "stevenleehans",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+       "url": "/stevenleehans",
+       "tier": "EXPERT",
+       "id": 11479618,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1897,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "stevenleehans",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+        "url": "/stevenleehans",
+        "userName": "stevenleehans",
+        "tier": "EXPERT",
+        "id": 11479618,
+        "profileUrl": "/stevenleehans",
+        "performanceTier": "EXPERT",
+        "userId": 11479618,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "OpPrime",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31234056-kg.jpg?t=2026-03-22-23-34-57",
+     "url": "/farshidamira",
+     "tier": "CONTRIBUTOR",
+     "id": 31234056,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 150,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "OpPrime",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31234056-kg.jpg?t=2026-03-22-23-34-57",
+      "url": "/farshidamira",
+      "userName": "farshidamira",
+      "tier": "CONTRIBUTOR",
+      "id": 31234056,
+      "profileUrl": "/farshidamira",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31234056,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528365,
+    "postDate": "2026-09-26T00:19:25.933Z",
+    "rawMarkdown": "Great insight, this is true",
+    "content": "<p>Great insight, this is true</p>",
+    "replies": [
+     {
+      "id": 3528597,
+      "postDate": "2026-09-26T08:50:03.813Z",
+      "rawMarkdown": "ooh ! damn I am competiting with NVIDIA engineer lol!!\n",
+      "content": "<p>ooh ! damn I am competiting with NVIDIA engineer lol!!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 278,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3525263,
+    "postDate": "2026-09-17T09:46:25.823Z",
+    "rawMarkdown": "intresting😊",
+    "content": "<p>intresting😊</p>",
+    "parent": {},
+    "author": {
+     "displayName": "UoM23MLMSc239362l",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/uomml23msc239362l",
+     "tier": "CONTRIBUTOR",
+     "id": 15892727,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "UoM23MLMSc239362l",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/uomml23msc239362l",
+      "userName": "uomml23msc239362l",
+      "tier": "CONTRIBUTOR",
+      "id": 15892727,
+      "profileUrl": "/uomml23msc239362l",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 15892727,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514273,
+    "postDate": "2026-08-18T20:59:50.220Z",
+    "rawMarkdown": "Thanks a lot for sharing labels\nI was pulling my hair out for just doing this task",
+    "content": "<p>Thanks a lot for sharing labels\nI was pulling my hair out for just doing this task</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Mahyar Dana",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mahyardana",
+     "tier": "CONTRIBUTOR",
+     "id": 10368916,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3000,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mahyar Dana",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mahyardana",
+      "userName": "mahyardana",
+      "tier": "CONTRIBUTOR",
+      "id": 10368916,
+      "profileUrl": "/mahyardana",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 10368916,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513291,
+    "postDate": "2026-08-15T23:53:17.577Z",
+    "rawMarkdown": "Thanks for this article, I set my LLM extraction phase to explicitly ignore any study with no clear diagnosis and set it 0 across all 12 labels, but with this your findings in Effusion and synovitis it just proves I was throwing in lots of false negatives into my work",
+    "content": "<p>Thanks for this article, I set my LLM extraction phase to explicitly ignore any study with no clear diagnosis and set it 0 across all 12 labels, but with this your findings in Effusion and synovitis it just proves I was throwing in lots of false negatives into my work</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Promise Ekpo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/promiseekpo",
+     "tier": "CONTRIBUTOR",
+     "id": 18702977,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2841,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Promise Ekpo",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/promiseekpo",
+      "userName": "promiseekpo",
+      "tier": "CONTRIBUTOR",
+      "id": 18702977,
+      "profileUrl": "/promiseekpo",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18702977,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510693,
+    "postDate": "2026-08-09T09:55:46.747Z",
+    "rawMarkdown": "Interesting!",
+    "content": "<p>Interesting!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "imtayhan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36042239-kg.jpeg?t=2026-08-09-09-38-24",
+     "url": "/imtayhan",
+     "tier": "CONTRIBUTOR",
+     "id": 36042239,
+     "progressionOptOut": true
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510628,
+   "postDate": "2026-08-09T05:54:36.207Z",
+   "rawMarkdown": "**TL;DR** — Only 58 of 4,407 training studies have real labels, so everyone manufactures\ntargets from the radiology report. An LLM does this measurably better than a regex\n(**0.8780 vs 0.8136** against the 58 gold studies). But the more useful finding is about\nthe *gaps*: **25.4% of all label cells are \"the report does not address this\"**, and what\nthat silence *means* is different for every finding. Getting that wrong costs more than the\nlabeller's accuracy does.\n\n---\n\n## Credit\n\n**LLM-read report labels are not our idea, and we were not first.** Several people\npublished them before us, and anyone arriving at this post should have their work too:\n\n- **Pilkwang Kim** — [rsna-knee-llm-labels](https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels)\n  (2026-08-06, the first of these) and\n  [rsna-knee-baseline-v1](https://www.kaggle.com/code/pilkwang/rsna-knee-baseline-v1)\n- **barun2104** — [Stratified Folds & LLM Soft Labels](https://www.kaggle.com/datasets/barun2104/rsna-knee-stratified-folds-and-llm-soft-labels) (2026-08-07)\n- **lixin73** — [LLM Report Labels (GPT-5.6-Sol)](https://www.kaggle.com/datasets/lixin73/rsna-knee-llm-report-labels-sol56) (2026-08-08)\n\nAnd the pipelines this work was measured against:\n\n- **Karnakbayev Artur** — [rsna-knee-eda-to-2-5d](https://www.kaggle.com/code/karnakbaevarthur/rsna-knee-eda-to-2-5d)\n- **Will / wguesdon** — [rsna-knee-dinov2-at-meniscus-resolution](https://www.kaggle.com/code/wguesdon/rsna-knee-dinov2-at-meniscus-resolution)\n- **Alexandre Moritz**, **Roman Rozen** — public EDA and baselines\n\nThe observation that *labels*, not the encoder, are the binding constraint came from\nmeasuring their pipelines — not from improving on them.\n\n**So what is this post for?** Not the labelling. It is about what the labeller does when it\n*refuses* to answer, which is a quarter of the time, and which we have not seen discussed.\nIf you already use one of the label sets above, section 4 is the part that may change what\nyou do with it.\n\n---\n\n## 1. The setup, for anyone arriving late\n\n`train.csv` has a `Report` column. `test.csv` does not. So text can only ever produce\n**targets**, never a model input. And only **58 of 4,407** studies carry real annotator\nlabels for the twelve findings — 1.3%.\n\nThat means almost everyone in this competition is training against labels they invented,\nand the quality of that invention is a ceiling nothing downstream can pass.\n\nMeasured against those 58 gold studies:\n\n| label source | macro AUC vs gold |\n|---|---|\n| regex / lexicon extraction | 0.8136 |\n| LLM reading the same reports | **0.8780** |\n\nWe published the labels: **[RSNA Knee LLM Report Labels](https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels)**.\n\n---\n\n## 2. The part we did not expect\n\nWe asked the labeller for a probability per finding, **with an explicit \"the report does\nnot address this\" option** that maps to 0.5. That turned out to be the most informative\ndesign decision we made, because it makes the *gaps* visible instead of silently coercing\nthem to negative.\n\n**25.4% of all cells came back at exactly 0.5.** And they are wildly uneven:\n\n| finding | gold AUC | \"not addressed\" |\n|---|---|---|\n| **Synovitis** | **0.678** | **83.7%** |\n| Baker's | 0.946 | 48.2% |\n| Fracture | 0.793 | 42.9% |\n| ACL | 0.993 | 8.3% |\n| Medial Meniscus | 0.954 | 5.5% |\n\n**Synovitis is the worst column by a distance — and 84% of it is missing.** Yet 27 of the\n58 gold studies *have* synovitis. It is common in the joint and seldom written down.\nThe labeller is being honest, and the honesty destroys the column.\n\n---\n\n## 3. One thing we tested, and it worked\n\nRadiologists report **effusion** readily and **synovitis** rarely, and the two co-occur.\nSo we asked a single pre-registered question: does the *Effusion* field predict *gold\nSynovitis* better than the *Synovitis* field does?\n\n```\nLLM Synovitis field  vs gold Synovitis : 0.6780\nLLM Effusion  field  vs gold Synovitis : 0.7115   <-- yes\ngold co-occurrence: P(syn | eff) = 0.63  vs  P(syn | no eff) = 0.22\n```\n\n**A field that is not about synovitis predicts synovitis better than the synovitis field\ndoes.** Filling only the *undecided* synovitis cells from effusion — never overriding an\nexplicit statement — moves that column **0.678 → 0.790** and the whole key\n**0.8780 → 0.8873**.\n\n---\n\n## 4. The part worth your attention: generalising it made things worse\n\nThe obvious next move is to do that for all twelve findings. So we did, properly: for each\nfinding, learn a ridge model predicting it from the other eleven, **fit on the 4,407-study\ncorpus** (never on the 58 gold — those were used only to score, once), and use it to fill\nthat finding's undecided cells.\n\n| key | macro vs gold |\n|---|---|\n| v1 baseline | 0.8780 |\n| **v2 — synovitis only** | **0.8873** |\n| v3 — learned imputation, all twelve | 0.8805 |\n\n**The blanket version is worse than the targeted one.** Per label it splits cleanly:\n\n```\nSynovitis  +0.056     Baker's   -0.029\nPF OA      +0.023     Contusion -0.031\nFracture   +0.015     Lateral OA -0.019\n```\n\nHere is why, and it is the actual lesson:\n\n| finding | gold+ when report is SILENT | when it SPEAKS |\n|---|---|---|\n| Synovitis | **0.34** | 0.76 |\n| PF OA | 0.21 | 0.41 |\n| Baker's | **0.03** | 0.44 |\n| Medial OA | **0.00** | 0.36 |\n\n**When a radiologist does not mention a Baker's cyst, there almost certainly is not one —\n3% versus 44%. The silence *is* the label.** Overwriting it with a correlation-based guess\nthrows away real information. But silence about synovitis still leaves a 34% chance it is\npresent, so there the silence is genuinely uninformative and imputing helps.\n\nAcross the nine readable findings, that \"silence ratio\" correlates **+0.59** with how much\nimputation helped. (Nine points — suggestive, not proven.)\n\n> **\"Not addressed\" is not one thing. For some findings it means *absent*; for others it\n> means *nobody looked*. Treating them alike is worse than leaving the gaps in.**\n\n---\n\n## 5. Honest limits\n\n- **58 studies is a small ruler.** On it, differences below roughly 0.02 macro are not\n  measurable. We have had three separate readings from this ruler overturned by the\n  leaderboard — treat small gaps as *unknown*, not as zero.\n- **A better key is not automatically a better model.** We swapped these labels in and got\n  no gain on the first attempt; it only paid off after unrelated pipeline bugs were fixed.\n- **We also tried the version that cheats** — selecting *which* findings to impute using the\n  gold labels. It scored 0.8845, still below the disciplined 0.8873. Nothing was left on the\n  table by not cheating, which is not always how that goes.\n- **Gold prevalence is the annotator's sampling, not disease prevalence.** Every gold study\n  has at least one positive finding; mean 4.14 per study.\n- These are **model-generated labels, not ground truth** — a better approximation of what\n  the report says, nothing more.\n\n---\n\n## 6. If you take one thing\n\nAsk your labeller for **\"I don't know\"** as a first-class answer, then look at where it\nsays so. The distribution of its refusals told us more about this dataset than its accuracy\ndid — and one column, repaired on that basis, was worth more than any change we made to the\nimages.\n\nLabels and weights are public; questions and corrections welcome.\n",
+   "content": "<p><strong>TL;DR</strong> — Only 58 of 4,407 training studies have real labels, so everyone manufactures\ntargets from the radiology report. An LLM does this measurably better than a regex\n(<strong>0.8780 vs 0.8136</strong> against the 58 gold studies). But the more useful finding is about\nthe <em>gaps</em>: <strong>25.4% of all label cells are \"the report does not address this\"</strong>, and what\nthat silence <em>means</em> is different for every finding. Getting that wrong costs more than the\nlabeller's accuracy does.</p>\n<hr>\n<h2>Credit</h2>\n<p><strong>LLM-read report labels are not our idea, and we were not first.</strong> Several people\npublished them before us, and anyone arriving at this post should have their work too:</p>\n<ul>\n<li><strong>Pilkwang Kim</strong> — <a href=\"https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels\" target=\"_blank\">rsna-knee-llm-labels</a>\n(2026-08-06, the first of these) and\n<a href=\"https://www.kaggle.com/code/pilkwang/rsna-knee-baseline-v1\" target=\"_blank\">rsna-knee-baseline-v1</a></li>\n<li><strong>barun2104</strong> — <a href=\"https://www.kaggle.com/datasets/barun2104/rsna-knee-stratified-folds-and-llm-soft-labels\" target=\"_blank\">Stratified Folds &amp; LLM Soft Labels</a> (2026-08-07)</li>\n<li><strong>lixin73</strong> — <a href=\"https://www.kaggle.com/datasets/lixin73/rsna-knee-llm-report-labels-sol56\" target=\"_blank\">LLM Report Labels (GPT-5.6-Sol)</a> (2026-08-08)</li>\n</ul>\n<p>And the pipelines this work was measured against:</p>\n<ul>\n<li><strong>Karnakbayev Artur</strong> — <a href=\"https://www.kaggle.com/code/karnakbaevarthur/rsna-knee-eda-to-2-5d\" target=\"_blank\">rsna-knee-eda-to-2-5d</a></li>\n<li><strong>Will / wguesdon</strong> — <a href=\"https://www.kaggle.com/code/wguesdon/rsna-knee-dinov2-at-meniscus-resolution\" target=\"_blank\">rsna-knee-dinov2-at-meniscus-resolution</a></li>\n<li><strong>Alexandre Moritz</strong>, <strong>Roman Rozen</strong> — public EDA and baselines</li>\n</ul>\n<p>The observation that <em>labels</em>, not the encoder, are the binding constraint came from\nmeasuring their pipelines — not from improving on them.</p>\n<p><strong>So what is this post for?</strong> Not the labelling. It is about what the labeller does when it\n<em>refuses</em> to answer, which is a quarter of the time, and which we have not seen discussed.\nIf you already use one of the label sets above, section 4 is the part that may change what\nyou do with it.</p>\n<hr>\n<h2>1. The setup, for anyone arriving late</h2>\n<p><code>train.csv</code> has a <code>Report</code> column. <code>test.csv</code> does not. So text can only ever produce\n<strong>targets</strong>, never a model input. And only <strong>58 of 4,407</strong> studies carry real annotator\nlabels for the twelve findings — 1.3%.</p>\n<p>That means almost everyone in this competition is training against labels they invented,\nand the quality of that invention is a ceiling nothing downstream can pass.</p>\n<p>Measured against those 58 gold studies:</p>\n<table>\n<thead>\n<tr>\n<th>label source</th>\n<th>macro AUC vs gold</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>regex / lexicon extraction</td>\n<td>0.8136</td>\n</tr>\n<tr>\n<td>LLM reading the same reports</td>\n<td><strong>0.8780</strong></td>\n</tr>\n</tbody>\n</table>\n<p>We published the labels: <strong><a href=\"https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels\" target=\"_blank\">RSNA Knee LLM Report Labels</a></strong>.</p>\n<hr>\n<h2>2. The part we did not expect</h2>\n<p>We asked the labeller for a probability per finding, <strong>with an explicit \"the report does\nnot address this\" option</strong> that maps to 0.5. That turned out to be the most informative\ndesign decision we made, because it makes the <em>gaps</em> visible instead of silently coercing\nthem to negative.</p>\n<p><strong>25.4% of all cells came back at exactly 0.5.</strong> And they are wildly uneven:</p>\n<table>\n<thead>\n<tr>\n<th>finding</th>\n<th>gold AUC</th>\n<th>\"not addressed\"</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Synovitis</strong></td>\n<td><strong>0.678</strong></td>\n<td><strong>83.7%</strong></td>\n</tr>\n<tr>\n<td>Baker's</td>\n<td>0.946</td>\n<td>48.2%</td>\n</tr>\n<tr>\n<td>Fracture</td>\n<td>0.793</td>\n<td>42.9%</td>\n</tr>\n<tr>\n<td>ACL</td>\n<td>0.993</td>\n<td>8.3%</td>\n</tr>\n<tr>\n<td>Medial Meniscus</td>\n<td>0.954</td>\n<td>5.5%</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Synovitis is the worst column by a distance — and 84% of it is missing.</strong> Yet 27 of the\n58 gold studies <em>have</em> synovitis. It is common in the joint and seldom written down.\nThe labeller is being honest, and the honesty destroys the column.</p>\n<hr>\n<h2>3. One thing we tested, and it worked</h2>\n<p>Radiologists report <strong>effusion</strong> readily and <strong>synovitis</strong> rarely, and the two co-occur.\nSo we asked a single pre-registered question: does the <em>Effusion</em> field predict <em>gold\nSynovitis</em> better than the <em>Synovitis</em> field does?</p>\n<pre><code>LLM Synovitis field  vs gold Synovitis : 0.6780\nLLM Effusion  field  vs gold Synovitis : 0.7115   &lt;-- yes\ngold co-occurrence: P(syn | eff) = 0.63  vs  P(syn | no eff) = 0.22\n</code></pre>\n<p><strong>A field that is not about synovitis predicts synovitis better than the synovitis field\ndoes.</strong> Filling only the <em>undecided</em> synovitis cells from effusion — never overriding an\nexplicit statement — moves that column <strong>0.678 → 0.790</strong> and the whole key\n<strong>0.8780 → 0.8873</strong>.</p>\n<hr>\n<h2>4. The part worth your attention: generalising it made things worse</h2>\n<p>The obvious next move is to do that for all twelve findings. So we did, properly: for each\nfinding, learn a ridge model predicting it from the other eleven, <strong>fit on the 4,407-study\ncorpus</strong> (never on the 58 gold — those were used only to score, once), and use it to fill\nthat finding's undecided cells.</p>\n<table>\n<thead>\n<tr>\n<th>key</th>\n<th>macro vs gold</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>v1 baseline</td>\n<td>0.8780</td>\n</tr>\n<tr>\n<td><strong>v2 — synovitis only</strong></td>\n<td><strong>0.8873</strong></td>\n</tr>\n<tr>\n<td>v3 — learned imputation, all twelve</td>\n<td>0.8805</td>\n</tr>\n</tbody>\n</table>\n<p><strong>The blanket version is worse than the targeted one.</strong> Per label it splits cleanly:</p>\n<pre><code>Synovitis  +0.056     Baker's   -0.029\nPF OA      +0.023     Contusion -0.031\nFracture   +0.015     Lateral OA -0.019\n</code></pre>\n<p>Here is why, and it is the actual lesson:</p>\n<table>\n<thead>\n<tr>\n<th>finding</th>\n<th>gold+ when report is SILENT</th>\n<th>when it SPEAKS</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Synovitis</td>\n<td><strong>0.34</strong></td>\n<td>0.76</td>\n</tr>\n<tr>\n<td>PF OA</td>\n<td>0.21</td>\n<td>0.41</td>\n</tr>\n<tr>\n<td>Baker's</td>\n<td><strong>0.03</strong></td>\n<td>0.44</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td><strong>0.00</strong></td>\n<td>0.36</td>\n</tr>\n</tbody>\n</table>\n<p><strong>When a radiologist does not mention a Baker's cyst, there almost certainly is not one —\n3% versus 44%. The silence <em>is</em> the label.</strong> Overwriting it with a correlation-based guess\nthrows away real information. But silence about synovitis still leaves a 34% chance it is\npresent, so there the silence is genuinely uninformative and imputing helps.</p>\n<p>Across the nine readable findings, that \"silence ratio\" correlates <strong>+0.59</strong> with how much\nimputation helped. (Nine points — suggestive, not proven.)</p>\n<blockquote>\n  <p><strong>\"Not addressed\" is not one thing. For some findings it means <em>absent</em>; for others it\nmeans <em>nobody looked</em>. Treating them alike is worse than leaving the gaps in.</strong></p>\n</blockquote>\n<hr>\n<h2>5. Honest limits</h2>\n<ul>\n<li><strong>58 studies is a small ruler.</strong> On it, differences below roughly 0.02 macro are not\nmeasurable. We have had three separate readings from this ruler overturned by the\nleaderboard — treat small gaps as <em>unknown</em>, not as zero.</li>\n<li><strong>A better key is not automatically a better model.</strong> We swapped these labels in and got\nno gain on the first attempt; it only paid off after unrelated pipeline bugs were fixed.</li>\n<li><strong>We also tried the version that cheats</strong> — selecting <em>which</em> findings to impute using the\ngold labels. It scored 0.8845, still below the disciplined 0.8873. Nothing was left on the\ntable by not cheating, which is not always how that goes.</li>\n<li><strong>Gold prevalence is the annotator's sampling, not disease prevalence.</strong> Every gold study\nhas at least one positive finding; mean 4.14 per study.</li>\n<li>These are <strong>model-generated labels, not ground truth</strong> — a better approximation of what\nthe report says, nothing more.</li>\n</ul>\n<hr>\n<h2>6. If you take one thing</h2>\n<p>Ask your labeller for <strong>\"I don't know\"</strong> as a first-class answer, then look at where it\nsays so. The distribution of its refusals told us more about this dataset than its accuracy\ndid — and one column, repaired on that basis, was worth more than any change we made to the\nimages.</p>\n<p>Labels and weights are public; questions and corrections welcome.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "stevenleehans",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+    "url": "/stevenleehans",
+    "tier": "EXPERT",
+    "id": 11479618,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 55,
+    "canUpvote": true,
+    "totalUpvotes": 55
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1897,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "enaimaan",
+      "okilireaya",
+      "samiklah",
+      "osakanateishoku",
+      "uomml23msc239362l",
+      "promiseekpo",
+      "lixin73",
+      "dharaawasthi",
+      "tgeliot"
+     ],
+     "userCount": 9
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "stevenleehans",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+     "url": "/stevenleehans",
+     "userName": "stevenleehans",
+     "tier": "EXPERT",
+     "id": 11479618,
+     "profileUrl": "/stevenleehans",
+     "performanceTier": "EXPERT",
+     "userId": 11479618,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510628,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733932,
+  "name": "\"Not addressed\" is a label too — what we learned reading 4,407 knee reports with an LLM",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T05:54:36.206763100Z",
+  "totalVotes": 55,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733932",
+  "totalMessages": 9,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "stevenleehans",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+   "url": "/stevenleehans",
+   "tier": "EXPERT",
+   "id": 11479618,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 9,
+  "firstForumMessageId": 3510628,
+  "id": 733932,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932#3528597",
+  "lastCommentPostDate": "2026-09-26T08:50:03.813333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T05:54:36.206763100Z",
+  "title": "\"Not addressed\" is a label too — what we learned reading 4,407 knee reports with an LLM",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932",
+  "votes": 55,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "stevenleehans",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+    "url": "/stevenleehans",
+    "userName": "stevenleehans",
+    "tier": "EXPERT",
+    "id": 11479618,
+    "profileUrl": "/stevenleehans",
+    "performanceTier": "EXPERT",
+    "userId": 11479618,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

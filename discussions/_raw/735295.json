@@ -1,0 +1,81 @@
+{
+ "forumTopic": {
+  "authorId": 9003372,
+  "authorThumbnailName": "9003372-kg.jpeg?t=2026-05-17-16-24-38",
+  "authorUserDisplayName": "Chemousse Berdjouh",
+  "authorUserName": "chemousseberd",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3512987,
+   "postDate": "2026-08-14T23:01:20.330Z",
+   "rawMarkdown": "Hi everyone, I’m participating from Algeria and I have a question about prize payments. If I win a cash-prize Kaggle competition, can the prize be paid to a **RedotPay virtual Visa card**?\n\nHas anyone from Algeria successfully received a Kaggle competition prize using RedotPay or a similar virtual Visa card?\n\nI’d really appreciate any information or experience. Thank you!",
+   "content": "<p>Hi everyone, I’m participating from Algeria and I have a question about prize payments. If I win a cash-prize Kaggle competition, can the prize be paid to a <strong>RedotPay virtual Visa card</strong>?</p>\n<p>Has anyone from Algeria successfully received a Kaggle competition prize using RedotPay or a similar virtual Visa card?</p>\n<p>I’d really appreciate any information or experience. Thank you!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Chemousse Berdjouh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9003372-kg.jpeg?t=2026-05-17-16-24-38",
+    "url": "/chemousseberd",
+    "tier": "CONTRIBUTOR",
+    "id": 9003372,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false
+  },
+  "firstMessageId": 3512987,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735295,
+  "name": "Prize payment ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-14T23:01:20.330893200Z",
+  "tags": [
+   {
+    "id": 3400,
+    "name": "africa",
+    "listingUrl": "/search?q=africa+tag%3A%22africa%22",
+    "tagUrl": "/tags/africa",
+    "displayName": "Africa"
+   }
+  ],
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735295",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Chemousse Berdjouh",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9003372-kg.jpeg?t=2026-05-17-16-24-38",
+   "url": "/chemousseberd",
+   "tier": "CONTRIBUTOR",
+   "id": 9003372,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3512987,
+  "id": 735295,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Chemousse Berdjouh",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735295#3512987",
+  "lastCommentPostDate": "2026-08-14T23:01:20.330Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-14T23:01:20.330893200Z",
+  "tags": [
+   {
+    "id": 3400,
+    "name": "africa",
+    "listingUrl": "/tags/africa",
+    "displayName": "Africa"
+   }
+  ],
+  "title": "Prize payment ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735295"
+ }
+}

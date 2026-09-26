@@ -1,0 +1,220 @@
+{
+ "forumTopic": {
+  "authorId": 18391231,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Jaideep726",
+  "authorUserName": "jaideep726",
+  "comments": [
+   {
+    "id": 3528371,
+    "postDate": "2026-09-26T00:25:01.480Z",
+    "rawMarkdown": "Great question. We have 3 choices\n* use 58 gold labels\n* use our 4.2k created labels from reports\n* use the public LB",
+    "content": "<p>Great question. We have 3 choices</p>\n<ul>\n<li>use 58 gold labels</li>\n<li>use our 4.2k created labels from reports</li>\n<li>use the public LB</li>\n</ul>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 93,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517150,
+    "postDate": "2026-08-26T09:06:49.657Z",
+    "rawMarkdown": "I've tried numerous combinations of LLMs, but the performance consistently plateaus at around 0.89. I suspect this might be the actual capability ceiling for LLMs. Furthermore, in real-world scenarios, different doctors have varying levels of experience and naturally provide different opinions, meaning the ground truth reports themselves aren't absolutely flawless.\n\nBecause of this, I've basically given up on chasing higher metrics. I feel like the ultimate solution might be training multiple models on different labels and relying on trial and error to get better scores. But honestly, this approach feels almost identical to continuous ensembling, which inevitably leads to overfitting.",
+    "content": "<p>I've tried numerous combinations of LLMs, but the performance consistently plateaus at around 0.89. I suspect this might be the actual capability ceiling for LLMs. Furthermore, in real-world scenarios, different doctors have varying levels of experience and naturally provide different opinions, meaning the ground truth reports themselves aren't absolutely flawless.</p>\n<p>Because of this, I've basically given up on chasing higher metrics. I feel like the ultimate solution might be training multiple models on different labels and relying on trial and error to get better scores. But honestly, this approach feels almost identical to continuous ensembling, which inevitably leads to overfitting.</p>",
+    "replies": [
+     {
+      "id": 3517183,
+      "postDate": "2026-08-26T11:38:47.727Z",
+      "rawMarkdown": "what is the 0.89 figure exactly? ",
+      "content": "<p>what is the 0.89 figure exactly? </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Jaideep726",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/jaideep726",
+       "tier": "CONTRIBUTOR",
+       "id": 18391231,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3647,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Jaideep726",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/jaideep726",
+        "userName": "jaideep726",
+        "tier": "CONTRIBUTOR",
+        "id": 18391231,
+        "profileUrl": "/jaideep726",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 18391231,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "LaiCxm",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/laicxm",
+     "tier": "CONTRIBUTOR",
+     "id": 32793014,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 908,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "LaiCxm",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/laicxm",
+      "userName": "laicxm",
+      "tier": "CONTRIBUTOR",
+      "id": 32793014,
+      "profileUrl": "/laicxm",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 32793014,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516817,
+   "postDate": "2026-08-25T12:39:41.300Z",
+   "rawMarkdown": "I know maybe this has been discussed before but this is the first problem I encountered starting out as a beginner. how are you guys trying to verify your labelling techniques on the the bigger 4349 reports \n",
+   "content": "<p>I know maybe this has been discussed before but this is the first problem I encountered starting out as a beginner. how are you guys trying to verify your labelling techniques on the the bigger 4349 reports </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Jaideep726",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/jaideep726",
+    "tier": "CONTRIBUTOR",
+    "id": 18391231,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3647,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Jaideep726",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/jaideep726",
+     "userName": "jaideep726",
+     "tier": "CONTRIBUTOR",
+     "id": 18391231,
+     "profileUrl": "/jaideep726",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 18391231,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516817,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737418,
+  "name": "Only 58 Gold Labels. ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-25T12:39:41.299536700Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737418",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Jaideep726",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/jaideep726",
+   "tier": "CONTRIBUTOR",
+   "id": 18391231,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3516817,
+  "id": 737418,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737418#3528371",
+  "lastCommentPostDate": "2026-09-26T00:25:01.480Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-25T12:39:41.299536700Z",
+  "title": "Only 58 Gold Labels. ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737418",
+  "votes": -1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Jaideep726",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/jaideep726",
+    "userName": "jaideep726",
+    "tier": "CONTRIBUTOR",
+    "id": 18391231,
+    "profileUrl": "/jaideep726",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 18391231,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

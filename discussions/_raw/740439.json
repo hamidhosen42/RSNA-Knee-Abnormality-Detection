@@ -1,0 +1,160 @@
+{
+ "forumTopic": {
+  "authorId": 35644958,
+  "authorThumbnailName": "35644958-kg.PNG?t=2026-09-08-08-23-08",
+  "authorUserDisplayName": "Lê Quang Cảnh",
+  "authorUserName": "zhincez",
+  "comments": [
+   {
+    "id": 3523643,
+    "postDate": "2026-09-12T08:48:38.080Z",
+    "rawMarkdown": "Thank you for the leaderboard showing 3 decimals @zhincez ",
+    "content": "<p>Thank you for the leaderboard showing 3 decimals <a href=\"/zhincez\" target=\"_blank\">@zhincez</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3523640,
+    "postDate": "2026-09-12T08:26:48.677Z",
+    "rawMarkdown": "Your observation is very reasonable. With a leaderboard displayed to three decimals, changes below roughly 0.0005 can be impossible to distinguish, so a large sweep may mostly be measuring rounding noise.\n\nI would build the local ruler first:\n\n- use study-level, multilabel-stratified splits;\n- generate strict OOF predictions for every candidate blend;\n- report bootstrap confidence intervals, not only one mean AUC;\n- compare per-label deltas, especially for rare findings;\n- only spend a submission when the expected gain is larger than the display resolution and remains stable across folds.\n\nFor blend tuning, tracking rank correlation between OOF variants and leaderboard results is also more informative than chasing equal displayed scores. If several submissions show the same rounded score, keep the simplest and most reproducible one.",
+    "content": "<p>Your observation is very reasonable. With a leaderboard displayed to three decimals, changes below roughly 0.0005 can be impossible to distinguish, so a large sweep may mostly be measuring rounding noise.</p>\n<p>I would build the local ruler first:</p>\n<ul>\n<li>use study-level, multilabel-stratified splits;</li>\n<li>generate strict OOF predictions for every candidate blend;</li>\n<li>report bootstrap confidence intervals, not only one mean AUC;</li>\n<li>compare per-label deltas, especially for rare findings;</li>\n<li>only spend a submission when the expected gain is larger than the display resolution and remains stable across folds.</li>\n</ul>\n<p>For blend tuning, tracking rank correlation between OOF variants and leaderboard results is also more informative than chasing equal displayed scores. If several submissions show the same rounded score, keep the simplest and most reproducible one.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "ParsaAshrafi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29822703-kg.jpg?t=2026-09-14-10-51-18",
+     "url": "/parsaashrafii",
+     "tier": "CONTRIBUTOR",
+     "id": 29822703,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1035,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "ParsaAshrafi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29822703-kg.jpg?t=2026-09-14-10-51-18",
+      "url": "/parsaashrafii",
+      "userName": "parsaashrafii",
+      "tier": "CONTRIBUTOR",
+      "id": 29822703,
+      "profileUrl": "/parsaashrafii",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29822703,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3522730,
+   "postDate": "2026-09-09T17:06:19.743Z",
+   "rawMarkdown": "I blended a public notebook with my own CoAtNet ensemble, then spent two weeks tuning the blend. Here is the whole weight sweep with the leaderboard score each one produced. W is the weight on the public source, rank-mean blending.\n\n```\nW_pub   LB\n0.00   0.934   (pure my own ensemble)\n0.15   0.935\n0.30   0.936\n0.45   0.936\n0.50   0.937\n0.60   0.937\n0.70   0.937\n0.75   0.937\n0.90   0.936\n1.00   0.936   (pure public notebook)\n```\n\nTen points on the axis, four distinct numbers, and a flat plateau from 0.50 to 0.75.\n\nThen I changed the blend operator instead of the weight, all at W = 0.60:\n\n```\nrank-mean                 0.937\nprobability space         0.937\nlogit space               0.937\ngeometric mean on rank    0.937\npower mean, order 2       0.936\nrank clipped to [.05,.95] 0.937\n```\n\nThen adaptive weights: per study, per label, twelve separate coefficients, the same thing with the sign flipped, a version with double the span. Every one of them: 0.937.\n\nCounting up, 13 of my submissions read exactly 0.937 and I cannot order any of them.\n\nThe part worth sitting with: pure public is 0.936 and pure mine is 0.934, so everything my own ensemble adds on top of a public notebook is worth at most one displayed digit. Two weeks of blend tuning bought me 0.001, and I have no idea whether that 0.001 is real or rounding.\n\nI do not have a clean answer, but two things I would do differently:\n\nCheck the display resolution against the effect size before starting an axis. Three decimals means anything under about 0.0005 is invisible, and blend weight moves the score by less than that across most of its range. That axis was never measurable here, no matter how many submissions I threw at it.\n\nBuild the local ruler first. Mine ran the wrong way: my 58-study gold set ranked variants in roughly the opposite order to the leaderboard, so I had no way to break the ties either. I kept submitting because the leaderboard was the only number I had, which is exactly backwards.\n\nIf anyone has a local validation setup that actually correlates with the board here, I would like to hear how you built it. Especially how you split, given how few studies carry the rarer labels.",
+   "content": "<p>I blended a public notebook with my own CoAtNet ensemble, then spent two weeks tuning the blend. Here is the whole weight sweep with the leaderboard score each one produced. W is the weight on the public source, rank-mean blending.</p>\n<pre><code>W_pub   LB\n0.00   0.934   (pure my own ensemble)\n0.15   0.935\n0.30   0.936\n0.45   0.936\n0.50   0.937\n0.60   0.937\n0.70   0.937\n0.75   0.937\n0.90   0.936\n1.00   0.936   (pure public notebook)\n</code></pre>\n<p>Ten points on the axis, four distinct numbers, and a flat plateau from 0.50 to 0.75.</p>\n<p>Then I changed the blend operator instead of the weight, all at W = 0.60:</p>\n<pre><code>rank-mean                 0.937\nprobability space         0.937\nlogit space               0.937\ngeometric mean on rank    0.937\npower mean, order 2       0.936\nrank clipped to [.05,.95] 0.937\n</code></pre>\n<p>Then adaptive weights: per study, per label, twelve separate coefficients, the same thing with the sign flipped, a version with double the span. Every one of them: 0.937.</p>\n<p>Counting up, 13 of my submissions read exactly 0.937 and I cannot order any of them.</p>\n<p>The part worth sitting with: pure public is 0.936 and pure mine is 0.934, so everything my own ensemble adds on top of a public notebook is worth at most one displayed digit. Two weeks of blend tuning bought me 0.001, and I have no idea whether that 0.001 is real or rounding.</p>\n<p>I do not have a clean answer, but two things I would do differently:</p>\n<p>Check the display resolution against the effect size before starting an axis. Three decimals means anything under about 0.0005 is invisible, and blend weight moves the score by less than that across most of its range. That axis was never measurable here, no matter how many submissions I threw at it.</p>\n<p>Build the local ruler first. Mine ran the wrong way: my 58-study gold set ranked variants in roughly the opposite order to the leaderboard, so I had no way to break the ties either. I kept submitting because the leaderboard was the only number I had, which is exactly backwards.</p>\n<p>If anyone has a local validation setup that actually correlates with the board here, I would like to hear how you built it. Especially how you split, given how few studies carry the rarer labels.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Lê Quang Cảnh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35644958-kg.PNG?t=2026-09-08-08-23-08",
+    "url": "/zhincez",
+    "tier": "CONTRIBUTOR",
+    "id": 35644958,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1454,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Lê Quang Cảnh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35644958-kg.PNG?t=2026-09-08-08-23-08",
+     "url": "/zhincez",
+     "userName": "zhincez",
+     "tier": "CONTRIBUTOR",
+     "id": 35644958,
+     "profileUrl": "/zhincez",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 35644958,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3522730,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740439,
+  "name": "The leaderboard shows 3 decimals and I spent 20 submissions inside one of them",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-09T17:06:19.742047400Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740439",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Lê Quang Cảnh",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35644958-kg.PNG?t=2026-09-08-08-23-08",
+   "url": "/zhincez",
+   "tier": "CONTRIBUTOR",
+   "id": 35644958,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3522730,
+  "id": 740439,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Navneet",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740439#3523643",
+  "lastCommentPostDate": "2026-09-12T08:48:38.080Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-09T17:06:19.742047400Z",
+  "title": "The leaderboard shows 3 decimals and I spent 20 submissions inside one of them",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740439",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Lê Quang Cảnh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35644958-kg.PNG?t=2026-09-08-08-23-08",
+    "url": "/zhincez",
+    "userName": "zhincez",
+    "tier": "CONTRIBUTOR",
+    "id": 35644958,
+    "profileUrl": "/zhincez",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 35644958,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

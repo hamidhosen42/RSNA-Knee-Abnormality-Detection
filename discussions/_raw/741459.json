@@ -1,0 +1,205 @@
+{
+ "forumTopic": {
+  "authorId": 27284910,
+  "authorThumbnailName": "27284910-kg.jpg?t=2026-09-14-09-46-56",
+  "authorUserDisplayName": "Lavin Wins",
+  "authorUserName": "lavinwins",
+  "comments": [
+   {
+    "id": 3524624,
+    "postDate": "2026-09-15T13:19:55.277Z",
+    "rawMarkdown": "Let's see the method what if it works then what we could win the medal lol...",
+    "content": "<p>Let's see the method what if it works then what we could win the medal lol…</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": -4,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 279,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3524623,
+    "postDate": "2026-09-15T13:19:30.187Z",
+    "rawMarkdown": "Guys , try the method atleast , there is nothing for you to lose",
+    "content": "<p>Guys , try the method atleast , there is nothing for you to lose</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": -4,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 279,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3524620,
+   "postDate": "2026-09-15T12:59:11.003Z",
+   "rawMarkdown": "Hi everyone,\nI currently have a single-model pipeline scoring 0.940 on the public leaderboard. I am actively working on improving my local CV and exploring new architectures, but I believe the fastest way to climb to the top of the leaderboard right now is strategic ensembling.\nI am looking to merge with a team or solo competitor who fulfills the following:\n\nScore: Holds a stable public LB score of 0.935+ (or a very strong local CV).\n\nDiversity: Uses a different model backbone, unique data augmentations, or a distinct post-processing approach compared to standard baselines.\n\nGoal: Highly motivated to actively experiment, share insights, and secure a top spot.\n\nBy cross-multiplying/ensembling our diverse out-of-fold (OOF) predictions, we can significantly boost our robust generalization and minimize public LB overfitting.If you have a complementary pipeline and want to join forces to secure a gold medal, please drop a comment below or send me a direct message with:Your current CV/LB score.A brief overview of your model architecture (to ensure diversity).\n\nLet's team up and push the boundaries!",
+   "content": "<p>Hi everyone,\nI currently have a single-model pipeline scoring 0.940 on the public leaderboard. I am actively working on improving my local CV and exploring new architectures, but I believe the fastest way to climb to the top of the leaderboard right now is strategic ensembling.\nI am looking to merge with a team or solo competitor who fulfills the following:</p>\n<p>Score: Holds a stable public LB score of 0.935+ (or a very strong local CV).</p>\n<p>Diversity: Uses a different model backbone, unique data augmentations, or a distinct post-processing approach compared to standard baselines.</p>\n<p>Goal: Highly motivated to actively experiment, share insights, and secure a top spot.</p>\n<p>By cross-multiplying/ensembling our diverse out-of-fold (OOF) predictions, we can significantly boost our robust generalization and minimize public LB overfitting.If you have a complementary pipeline and want to join forces to secure a gold medal, please drop a comment below or send me a direct message with:Your current CV/LB score.A brief overview of your model architecture (to ensure diversity).</p>\n<p>Let's team up and push the boundaries!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -8,
+    "canUpvote": true,
+    "totalUpvotes": 5
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 279,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "huytngo",
+      "idkwhatuserits",
+      "darnitistoosimple"
+     ],
+     "userCount": 3
+    },
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "artikhandelwall"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "userName": "lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "profileUrl": "/lavinwins",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27284910,
+     "progressionOptOut": false
+    },
+    "intro": "Someone who is rich "
+   }
+  },
+  "firstMessageId": 3524620,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 741459,
+  "name": "🤝 [Team Merger] Looking for a 0.940+ Partner to Ensemble and Push for Gold",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-15T12:59:11.004755700Z",
+  "totalVotes": -8,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/741459",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Lavin Wins",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+   "url": "/lavinwins",
+   "tier": "CONTRIBUTOR",
+   "id": 27284910,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3524620,
+  "id": 741459,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741459#3524624",
+  "lastCommentPostDate": "2026-09-15T13:19:55.276666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-15T12:59:11.004755700Z",
+  "title": "🤝 [Team Merger] Looking for a 0.940+ Partner to Ensemble and Push for Gold",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741459",
+  "votes": -8,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "userName": "lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "profileUrl": "/lavinwins",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27284910,
+    "progressionOptOut": false
+   },
+   "intro": "Someone who is rich "
+  }
+ }
+}

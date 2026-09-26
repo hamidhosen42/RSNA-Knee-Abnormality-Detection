@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 2486166,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Richard_61",
+  "authorUserName": "yiliu15",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528396,
+   "postDate": "2026-09-26T03:15:55.897Z",
+   "rawMarkdown": "@javaduke95 A narrow follow-up on the winners' obligations. The same point was raised in [#737950](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950) and [#735121](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121) but has no host answer yet.\n\nRule 2.8.a.1 requires that \"the model weights should be provided as a public kaggle dataset so it is both publicly accessible and linked to the inference/submission code.\" Rule 2.5.a.4 says: \"In the event that input data or pretrained models with an incompatible license are used to generate your winning solution, you do not need to grant an open source license in the preceding Section for that data and/or model(s).\"\n\nSeveral free, click-through knee-MRI datasets forbid sharing material derived from them: KneeMRI is CC BY-NC-ND 4.0, the MRNet Research Use Agreement (§6) prohibits derivative works, and the fastMRI Data Sharing Agreement prohibits distributing data files derived from the dataset. Weights trained on them may therefore not be publishable as a public Kaggle dataset.\n\nWe understand you cannot interpret the dataset stewards' own terms (as in [#741819](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819)). This question is only about the competition's Rules:\n\n1. When a winner's weights were trained on such data, does Rule 2.5.a.4 also exempt those weights from the Rule 2.8.a.1 requirement to publish them publicly — for example, by delivering them privately to the Sponsor for verification while all code is public?\n2. If not, is such a solution ineligible for Leaderboard and Efficiency prizes, so that teams should remove that data before the Final Submission Deadline?\n\nA yes/no on each would settle this for everyone before the deadline. Thank you.\n",
+   "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> A narrow follow-up on the winners' obligations. The same point was raised in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950\" target=\"_blank\">#737950</a> and <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121\" target=\"_blank\">#735121</a> but has no host answer yet.</p>\n<p>Rule 2.8.a.1 requires that \"the model weights should be provided as a public kaggle dataset so it is both publicly accessible and linked to the inference/submission code.\" Rule 2.5.a.4 says: \"In the event that input data or pretrained models with an incompatible license are used to generate your winning solution, you do not need to grant an open source license in the preceding Section for that data and/or model(s).\"</p>\n<p>Several free, click-through knee-MRI datasets forbid sharing material derived from them: KneeMRI is CC BY-NC-ND 4.0, the MRNet Research Use Agreement (§6) prohibits derivative works, and the fastMRI Data Sharing Agreement prohibits distributing data files derived from the dataset. Weights trained on them may therefore not be publishable as a public Kaggle dataset.</p>\n<p>We understand you cannot interpret the dataset stewards' own terms (as in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819\" target=\"_blank\">#741819</a>). This question is only about the competition's Rules:</p>\n<ol>\n<li>When a winner's weights were trained on such data, does Rule 2.5.a.4 also exempt those weights from the Rule 2.8.a.1 requirement to publish them publicly — for example, by delivering them privately to the Sponsor for verification while all code is public?</li>\n<li>If not, is such a solution ineligible for Leaderboard and Efficiency prizes, so that teams should remove that data before the Final Submission Deadline?</li>\n</ol>\n<p>A yes/no on each would settle this for everyone before the deadline. Thank you.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Richard_61",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/yiliu15",
+    "tier": "CONTRIBUTOR",
+    "id": 2486166,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 26,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Richard_61",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/yiliu15",
+     "userName": "yiliu15",
+     "tier": "CONTRIBUTOR",
+     "id": 2486166,
+     "profileUrl": "/yiliu15",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 2486166,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528396,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743420,
+  "name": "Rule 2.5.a.4 vs 2.8.a.1 — do weights trained on no-redistribution external data have to be published? (yes/no)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-26T03:15:55.897488300Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743420",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Richard_61",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/yiliu15",
+   "tier": "CONTRIBUTOR",
+   "id": 2486166,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3528396,
+  "id": 743420,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Richard_61",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743420#3528396",
+  "lastCommentPostDate": "2026-09-26T03:15:55.896666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-26T03:15:55.897488300Z",
+  "title": "Rule 2.5.a.4 vs 2.8.a.1 — do weights trained on no-redistribution external data have to be published? (yes/no)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743420",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Richard_61",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/yiliu15",
+    "userName": "yiliu15",
+    "tier": "CONTRIBUTOR",
+    "id": 2486166,
+    "profileUrl": "/yiliu15",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 2486166,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,455 @@
+{
+ "forumTopic": {
+  "authorId": 27284910,
+  "authorThumbnailName": "27284910-kg.jpg?t=2026-09-14-09-46-56",
+  "authorUserDisplayName": "Lavin Wins",
+  "authorUserName": "lavinwins",
+  "comments": [
+   {
+    "id": 3527287,
+    "postDate": "2026-09-23T11:08:02.053Z",
+    "rawMarkdown": "have you tried to completely freeze the text encoder and train just the image encoder? This way, you don't need reports in testing. you are just using them to get a study-wise embedding that you can later train with a small set of high-quality labels. This is an idea I was contemplating.",
+    "content": "<p>have you tried to completely freeze the text encoder and train just the image encoder? This way, you don't need reports in testing. you are just using them to get a study-wise embedding that you can later train with a small set of high-quality labels. This is an idea I was contemplating.</p>",
+    "replies": [
+     {
+      "id": 3527296,
+      "postDate": "2026-09-23T12:08:13.167Z",
+      "rawMarkdown": "I tried this too , but I did not find this something special cause many discussion forum have already discussed this lol",
+      "content": "<p>I tried this too , but I did not find this something special cause many discussion forum have already discussed this lol</p>",
+      "replies": [
+       {
+        "id": 3527313,
+        "postDate": "2026-09-23T13:19:35.703Z",
+        "rawMarkdown": "Oh, thanks. I didn't notice that. I guess I should read the discussions more :)",
+        "content": "<p>Oh, thanks. I didn't notice that. I guess I should read the discussions more :)</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Enai",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+         "url": "/enaimaan",
+         "tier": "CONTRIBUTOR",
+         "id": 2630633,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3042,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Enai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+          "url": "/enaimaan",
+          "userName": "enaimaan",
+          "tier": "CONTRIBUTOR",
+          "id": 2630633,
+          "profileUrl": "/enaimaan",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2630633,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3527697,
+        "postDate": "2026-09-24T13:28:25.690Z",
+        "rawMarkdown": "no problem ",
+        "content": "<p>no problem </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 279,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 279,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3042,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3526356,
+    "postDate": "2026-09-21T04:29:34.933Z",
+    "rawMarkdown": "During inference on the test set, diagnostic reports are not provided.🤣",
+    "content": "<p>During inference on the test set, diagnostic reports are not provided.🤣</p>",
+    "replies": [
+     {
+      "id": 3526402,
+      "postDate": "2026-09-21T08:15:50.087Z",
+      "rawMarkdown": "Lol forgot to add \n",
+      "content": "<p>Lol forgot to add </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 279,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Wayne_127",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15801225-kg.jpg?t=2025-03-10-02-59-51",
+     "url": "/wayne127",
+     "tier": "EXPERT",
+     "id": 15801225,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 786,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "pompom555",
+       "vc9408"
+      ],
+      "userCount": 2
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Wayne_127",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15801225-kg.jpg?t=2025-03-10-02-59-51",
+      "url": "/wayne127",
+      "userName": "wayne127",
+      "tier": "EXPERT",
+      "id": 15801225,
+      "profileUrl": "/wayne127",
+      "performanceTier": "EXPERT",
+      "userId": 15801225,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3526381,
+    "postDate": "2026-09-21T06:35:46.210Z",
+    "rawMarkdown": "",
+    "replies": [
+     {
+      "id": 3526403,
+      "postDate": "2026-09-21T08:16:13.900Z",
+      "rawMarkdown": "Hmm... Exactly",
+      "content": "<p>Hmm… Exactly</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 279,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3526345,
+   "postDate": "2026-09-21T03:44:07.360Z",
+   "rawMarkdown": "## Introduction:\n\nHi all,\nAs the leaderboard accelerates past 0.95, I’ve been experimenting with the multimodal aspect of the RSNA Knee Abnormality Detection dataset. While visual-only backbones give a solid baseline, properly fusing the 3D MRIs with the multi-language text reports presents a unique architecture bottleneck.\n\nI wanted to share a specific roadblock I hit regarding cross-attention alignment, along with a lightweight fusion snippet, to see how others are tackling this.\n\n\n## The Roadblock / Insight\n\nWhen feeding the 3D MRI embeddings (extracted via a 3D-EfficientNet) and text embeddings (via a multilingual BERT variant) into a late-fusion Cross-Attention layer, I noticed a severe gradient imbalance. The model aggressively overfits to the text reports within the first 3 epochs, completely ignoring subtle visual cues for rarer abnormalities like MCL tears.\nTo mitigate this, I implemented a custom Layer-wise Learning Rate Decay (LLRD) specifically for the text encoder to prevent it from dominating early training.\n\n## Quick preview of the Multimodal Cross-Attention Block I am testing\n\n`\n\nimport torch\nimport torch.nn as nn\n\nclass RSNAKneeFusion(nn.Module):\n    def __init__(self, visual_dim=1024, text_dim=768, embed_dim=512):\n        super().__init__()\n        self.vis_proj = nn.Linear(visual_dim, embed_dim)\n        self.txt_proj = nn.Linear(text_dim, embed_dim)\n        self.cross_attn = nn.MultiheadAttention(embed_dim, num_heads=8, batch_first=True)\n        \n    def forward(self, image_feats, text_feats):\n        # image_feats shape: [B, S, 1024] (3D context tokens)\n        # text_feats shape:  [B, T, 768]  (Radiology report tokens)\n        v = self.vis_proj(image_feats)\n        t = self.txt_proj(text_feats)\n        \n        # Query: Image, Key/Value: Text\n        attn_out, _ = self.cross_attn(v, t, t)\n        return attn_out.mean(dim=1) # Global fused representation\n`\n\n###The Peer-Level Questions :\n\nQ1 ) Text Bias: Is anyone else finding that multimodal models overfit drastically faster than vision-only models on this dataset? Are you utilizing a warm-up strategy for the image backbone before introducing text?\n\nQ2) Tokenization: With the reports being in a dozen different languages, did you find standard translation APIs helpful, or are native multilingual models (like XLM-RoBERTa) retaining the clinical nuances better?\n\nQ3) CV-to-LB Correlation: My local 5-fold CV tracks perfectly with the text-dominant model, but I suspect a private LB shakeup if the hidden test set contains missing or brief text reports. How are you handling potential missing text modalities at inference?",
+   "content": "<h2>Introduction:</h2>\n<p>Hi all,\nAs the leaderboard accelerates past 0.95, I’ve been experimenting with the multimodal aspect of the RSNA Knee Abnormality Detection dataset. While visual-only backbones give a solid baseline, properly fusing the 3D MRIs with the multi-language text reports presents a unique architecture bottleneck.</p>\n<p>I wanted to share a specific roadblock I hit regarding cross-attention alignment, along with a lightweight fusion snippet, to see how others are tackling this.</p>\n<h2>The Roadblock / Insight</h2>\n<p>When feeding the 3D MRI embeddings (extracted via a 3D-EfficientNet) and text embeddings (via a multilingual BERT variant) into a late-fusion Cross-Attention layer, I noticed a severe gradient imbalance. The model aggressively overfits to the text reports within the first 3 epochs, completely ignoring subtle visual cues for rarer abnormalities like MCL tears.\nTo mitigate this, I implemented a custom Layer-wise Learning Rate Decay (LLRD) specifically for the text encoder to prevent it from dominating early training.</p>\n<h2>Quick preview of the Multimodal Cross-Attention Block I am testing</h2>\n<p>`</p>\n<p>import torch\nimport torch.nn as nn</p>\n<p>class RSNAKneeFusion(nn.Module):\n    def <strong>init</strong>(self, visual_dim=1024, text_dim=768, embed_dim=512):\n        super().<strong>init</strong>()\n        self.vis_proj = nn.Linear(visual_dim, embed_dim)\n        self.txt_proj = nn.Linear(text_dim, embed_dim)\n        self.cross_attn = nn.MultiheadAttention(embed_dim, num_heads=8, batch_first=True)</p>\n<pre><code>def forward(self, image_feats, text_feats):\n    # image_feats shape: [B, S, 1024] (3D context tokens)\n    # text_feats shape:  [B, T, 768]  (Radiology report tokens)\n    v = self.vis_proj(image_feats)\n    t = self.txt_proj(text_feats)\n\n    # Query: Image, Key/Value: Text\n    attn_out, _ = self.cross_attn(v, t, t)\n    return attn_out.mean(dim=1) # Global fused representation\n</code></pre>\n<p>`</p>\n<h3>The Peer-Level Questions :</h3>\n<p>Q1 ) Text Bias: Is anyone else finding that multimodal models overfit drastically faster than vision-only models on this dataset? Are you utilizing a warm-up strategy for the image backbone before introducing text?</p>\n<p>Q2) Tokenization: With the reports being in a dozen different languages, did you find standard translation APIs helpful, or are native multilingual models (like XLM-RoBERTa) retaining the clinical nuances better?</p>\n<p>Q3) CV-to-LB Correlation: My local 5-fold CV tracks perfectly with the text-dominant model, but I suspect a private LB shakeup if the hidden test set contains missing or brief text reports. How are you handling potential missing text modalities at inference?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -10,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 279,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "userName": "lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "profileUrl": "/lavinwins",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27284910,
+     "progressionOptOut": false
+    },
+    "intro": "Someone who is rich "
+   }
+  },
+  "firstMessageId": 3526345,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742267,
+  "name": "Multimodal Fusion Bottlenecks: Aligning 3D MRI Volume Embeddings with Multilingual Report Transformers",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-21T03:44:07.361652Z",
+  "tags": [
+   {
+    "id": 13104,
+    "name": "advanced",
+    "listingUrl": "/search?q=advanced+tag%3A%22advanced%22",
+    "tagUrl": "/tags/advanced",
+    "displayName": "Advanced"
+   },
+   {
+    "id": 14211,
+    "name": "adversarial learning",
+    "listingUrl": "/search?q=adversarial+learning+tag%3A%22adversarial+learning%22",
+    "tagUrl": "/tags/adversarial-learning",
+    "displayName": "Adversarial Learning"
+   },
+   {
+    "id": 12101,
+    "name": "artificial intelligence",
+    "listingUrl": "/search?q=artificial+intelligence+tag%3A%22artificial+intelligence%22",
+    "tagUrl": "/tags/artificial-intelligence",
+    "displayName": "Artificial Intelligence"
+   }
+  ],
+  "totalVotes": -10,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742267",
+  "totalMessages": 8,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Lavin Wins",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+   "url": "/lavinwins",
+   "tier": "CONTRIBUTOR",
+   "id": 27284910,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 8,
+  "firstForumMessageId": 3526345,
+  "id": 742267,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742267#3527697",
+  "lastCommentPostDate": "2026-09-24T13:28:25.690Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-21T03:44:07.361652Z",
+  "tags": [
+   {
+    "id": 12101,
+    "name": "artificial intelligence",
+    "listingUrl": "/tags/artificial-intelligence",
+    "displayName": "Artificial Intelligence"
+   },
+   {
+    "id": 13104,
+    "name": "advanced",
+    "listingUrl": "/tags/advanced",
+    "displayName": "Advanced"
+   },
+   {
+    "id": 14211,
+    "name": "adversarial learning",
+    "listingUrl": "/tags/adversarial-learning",
+    "displayName": "Adversarial Learning"
+   }
+  ],
+  "title": "Multimodal Fusion Bottlenecks: Aligning 3D MRI Volume Embeddings with Multilingual Report Transformers",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742267",
+  "votes": -10,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "userName": "lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "profileUrl": "/lavinwins",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27284910,
+    "progressionOptOut": false
+   },
+   "intro": "Someone who is rich "
+  }
+ }
+}

@@ -1,0 +1,182 @@
+{
+ "forumTopic": {
+  "authorId": 6082025,
+  "authorThumbnailName": "6082025-kg.png?t=2026-08-01-19-49-46",
+  "authorUserDisplayName": "Oleksii Zhukov",
+  "authorUserName": "zhukovoleksiy",
+  "comments": [
+   {
+    "id": 3510253,
+    "postDate": "2026-08-08T04:01:16.200Z",
+    "rawMarkdown": "Useful; at first, I also wondered if there was a shortcut.",
+    "content": "<p>Useful; at first, I also wondered if there was a shortcut.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Handudu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8812411-kg.jpg?t=2026-08-11-16-41-53",
+     "url": "/handudu",
+     "tier": "EXPERT",
+     "id": 8812411,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Handudu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8812411-kg.jpg?t=2026-08-11-16-41-53",
+      "url": "/handudu",
+      "userName": "handudu",
+      "tier": "EXPERT",
+      "id": 8812411,
+      "profileUrl": "/handudu",
+      "performanceTier": "EXPERT",
+      "userId": 8812411,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510435,
+    "postDate": "2026-08-08T14:05:25.843Z",
+    "rawMarkdown": "0.932 LB within one day is too good tho. ",
+    "content": "<p>0.932 LB within one day is too good tho. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "agr hmmm",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+     "url": "/agrimrai29",
+     "tier": "CONTRIBUTOR",
+     "id": 25547938,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3151,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "agr hmmm",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+      "url": "/agrimrai29",
+      "userName": "agrimrai29",
+      "tier": "CONTRIBUTOR",
+      "id": 25547938,
+      "profileUrl": "/agrimrai29",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 25547938,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509853,
+   "postDate": "2026-08-07T07:12:14.850Z",
+   "rawMarkdown": "**TL;DR: DICOM metadata alone reaches 0.6515 macro AUC under random folds but only 0.598 across unseen scanners. Safe to say no meaningful shortcuts found. Leaderboard scores seem to reflect image reading.**\n\nPublic LB scores passed 0.8 and 0.9 within about a day of launch. That seemed strangely high for this label set in such short period, so I tested whether DICOM metadata alone could account for this.\n\nIt can't. Full header metadata, no pixels, reaches 0.6515 macro AUC under random folds and 0.5981 under scanner-grouped folds. The 0.053 increment is site memorization and it does not transfer to unseen scanners.\n\n**Method**\n\nTwo probes, with the decision threshold written down before running anything:\n\nProbe A: site identifiability. Cluster studies on Manufacturer + ManufacturerModelName + SoftwareVersions + ImagingFrequency + ReceiveCoilName. No labels needed. Result: 265 distinct fingerprints, top 20 covering 45.5% of studies.\n\nProbe B: metadata => targets. HistGradientBoosting on study-level metadata features, targets = report-derived labels, scored under random 5-fold and under GroupKFold on the fingerprint above. The gap is the number of interest.\n\nFeatures: series composition (plane × Fluid_Sensitive × Fat_Suppression counts, protocol signature string), plus per-study median/min/max of TR, TE, TI, flip angle, echo train length, pixel bandwidth, averages, phase encoding steps, slice thickness, spacing, pixel spacing, matrix size, field strength, ImagingFrequency, and categorical scanner/coil/software identity.\n\n**Results:**\n\n| Label            | Random | Site-grouped |  Drop |\n| ---------------- | --------: | -----------: | ----: |\n| ACL              |  0.705    |        0.670 | 0.035 |\n| MCL              |  0.683    |        0.648 | 0.035 |\n| Medial Meniscus  |  0.590    |        0.548 | 0.042 |\n| Lateral Meniscus |  0.595    |        0.565 | 0.030 |\n| Medial OA        |  0.652    |        0.578 | 0.074 |\n| Lateral OA       |  0.637    |        0.563 | 0.074 |\n| PF OA            |  0.680    |        0.599 | 0.081 |\n| Effusion         |  0.628    |        0.582 | 0.046 |\n| Synovitis        |  0.644    |        0.602 | 0.042 |\n| Baker's          |  0.765    |        0.717 | 0.048 |\n| Contusion        |  0.633    |        0.587 | 0.046 |\n| Fracture         |  0.605    |        0.519 | 0.086 |\n| **Macro**        |**0.6516** |   **0.5981** | **0.0534** |\n\n\nSeries composition alone (no DICOM reads at all) gives 0.5954. So the entire DICOM header pass adds 0.056 over the four columns already in `train_series.csv`\n\n**Note:**\n- Targets are report-derived, not expert annotations. Only 58 studies carry per-condition labels, which is too few to fit or validate against. So part of the 0.053 may be metadata predicting reporting style rather than disease.\n- 265 fingerprints is finer-grained than institution. I'm separating individual scanners and software revisions within sites, so the grouped folds are stricter than true site holdout. That makes 0.053 an upper bound for a second, independent reason.\n\n\nMy notebook: https://www.kaggle.com/code/zhukovoleksiy/rsna-metadata-probe\n\nThe report extractor used to generate targets is from: https://www.kaggle.com/code/romanrozen/rsna-knee-data-structure-eda-baseline",
+   "content": "<p><strong>TL;DR: DICOM metadata alone reaches 0.6515 macro AUC under random folds but only 0.598 across unseen scanners. Safe to say no meaningful shortcuts found. Leaderboard scores seem to reflect image reading.</strong></p>\n<p>Public LB scores passed 0.8 and 0.9 within about a day of launch. That seemed strangely high for this label set in such short period, so I tested whether DICOM metadata alone could account for this.</p>\n<p>It can't. Full header metadata, no pixels, reaches 0.6515 macro AUC under random folds and 0.5981 under scanner-grouped folds. The 0.053 increment is site memorization and it does not transfer to unseen scanners.</p>\n<p><strong>Method</strong></p>\n<p>Two probes, with the decision threshold written down before running anything:</p>\n<p>Probe A: site identifiability. Cluster studies on Manufacturer + ManufacturerModelName + SoftwareVersions + ImagingFrequency + ReceiveCoilName. No labels needed. Result: 265 distinct fingerprints, top 20 covering 45.5% of studies.</p>\n<p>Probe B: metadata =&gt; targets. HistGradientBoosting on study-level metadata features, targets = report-derived labels, scored under random 5-fold and under GroupKFold on the fingerprint above. The gap is the number of interest.</p>\n<p>Features: series composition (plane × Fluid_Sensitive × Fat_Suppression counts, protocol signature string), plus per-study median/min/max of TR, TE, TI, flip angle, echo train length, pixel bandwidth, averages, phase encoding steps, slice thickness, spacing, pixel spacing, matrix size, field strength, ImagingFrequency, and categorical scanner/coil/software identity.</p>\n<p><strong>Results:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Label</th>\n<th>Random</th>\n<th>Site-grouped</th>\n<th>Drop</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>ACL</td>\n<td>0.705</td>\n<td>0.670</td>\n<td>0.035</td>\n</tr>\n<tr>\n<td>MCL</td>\n<td>0.683</td>\n<td>0.648</td>\n<td>0.035</td>\n</tr>\n<tr>\n<td>Medial Meniscus</td>\n<td>0.590</td>\n<td>0.548</td>\n<td>0.042</td>\n</tr>\n<tr>\n<td>Lateral Meniscus</td>\n<td>0.595</td>\n<td>0.565</td>\n<td>0.030</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td>0.652</td>\n<td>0.578</td>\n<td>0.074</td>\n</tr>\n<tr>\n<td>Lateral OA</td>\n<td>0.637</td>\n<td>0.563</td>\n<td>0.074</td>\n</tr>\n<tr>\n<td>PF OA</td>\n<td>0.680</td>\n<td>0.599</td>\n<td>0.081</td>\n</tr>\n<tr>\n<td>Effusion</td>\n<td>0.628</td>\n<td>0.582</td>\n<td>0.046</td>\n</tr>\n<tr>\n<td>Synovitis</td>\n<td>0.644</td>\n<td>0.602</td>\n<td>0.042</td>\n</tr>\n<tr>\n<td>Baker's</td>\n<td>0.765</td>\n<td>0.717</td>\n<td>0.048</td>\n</tr>\n<tr>\n<td>Contusion</td>\n<td>0.633</td>\n<td>0.587</td>\n<td>0.046</td>\n</tr>\n<tr>\n<td>Fracture</td>\n<td>0.605</td>\n<td>0.519</td>\n<td>0.086</td>\n</tr>\n<tr>\n<td><strong>Macro</strong></td>\n<td><strong>0.6516</strong></td>\n<td><strong>0.5981</strong></td>\n<td><strong>0.0534</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Series composition alone (no DICOM reads at all) gives 0.5954. So the entire DICOM header pass adds 0.056 over the four columns already in <code>train_series.csv</code></p>\n<p><strong>Note:</strong></p>\n<ul>\n<li>Targets are report-derived, not expert annotations. Only 58 studies carry per-condition labels, which is too few to fit or validate against. So part of the 0.053 may be metadata predicting reporting style rather than disease.</li>\n<li>265 fingerprints is finer-grained than institution. I'm separating individual scanners and software revisions within sites, so the grouped folds are stricter than true site holdout. That makes 0.053 an upper bound for a second, independent reason.</li>\n</ul>\n<p>My notebook: <a href=\"https://www.kaggle.com/code/zhukovoleksiy/rsna-metadata-probe\" target=\"_blank\">https://www.kaggle.com/code/zhukovoleksiy/rsna-metadata-probe</a></p>\n<p>The report extractor used to generate targets is from: <a href=\"https://www.kaggle.com/code/romanrozen/rsna-knee-data-structure-eda-baseline\" target=\"_blank\">https://www.kaggle.com/code/romanrozen/rsna-knee-data-structure-eda-baseline</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Oleksii Zhukov",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6082025-kg.png?t=2026-08-01-19-49-46",
+    "url": "/zhukovoleksiy",
+    "tier": "MASTER",
+    "id": 6082025,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 18,
+    "canUpvote": true,
+    "totalUpvotes": 18
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2849,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Oleksii Zhukov",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6082025-kg.png?t=2026-08-01-19-49-46",
+     "url": "/zhukovoleksiy",
+     "userName": "zhukovoleksiy",
+     "tier": "MASTER",
+     "id": 6082025,
+     "profileUrl": "/zhukovoleksiy",
+     "performanceTier": "MASTER",
+     "userId": 6082025,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509853,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733517,
+  "name": "0.932 LB within one day. Tested for DICOM metadata shortcut",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T07:12:14.851086200Z",
+  "totalVotes": 18,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733517",
+  "totalMessages": 2,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Oleksii Zhukov",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6082025-kg.png?t=2026-08-01-19-49-46",
+   "url": "/zhukovoleksiy",
+   "tier": "MASTER",
+   "id": 6082025,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3509853,
+  "id": 733517,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "agr hmmm",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733517#3510435",
+  "lastCommentPostDate": "2026-08-08T14:05:25.843333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T07:12:14.851086200Z",
+  "title": "0.932 LB within one day. Tested for DICOM metadata shortcut",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733517",
+  "votes": 18,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Oleksii Zhukov",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6082025-kg.png?t=2026-08-01-19-49-46",
+    "url": "/zhukovoleksiy",
+    "userName": "zhukovoleksiy",
+    "tier": "MASTER",
+    "id": 6082025,
+    "profileUrl": "/zhukovoleksiy",
+    "performanceTier": "MASTER",
+    "userId": 6082025,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

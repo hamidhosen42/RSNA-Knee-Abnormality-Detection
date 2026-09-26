@@ -1,0 +1,138 @@
+{
+ "forumTopic": {
+  "authorId": 2262016,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "nahusha",
+  "authorUserName": "nahusha123",
+  "comments": [
+   {
+    "id": 3528352,
+    "postDate": "2026-09-25T23:41:45.013Z",
+    "rawMarkdown": "Yes (sort of). Let me clarify. We select 2 final submissions. Both will be considered for main track and both will be consider for efficiency track. (So, you could select your best main track and best efficiency as your final 2 subs).",
+    "content": "<p>Yes (sort of). Let me clarify. We select 2 final submissions. Both will be considered for main track and both will be consider for efficiency track. (So, you could select your best main track and best efficiency as your final 2 subs).</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 93,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528260,
+   "postDate": "2026-09-25T18:11:50.043Z",
+   "rawMarkdown": "Does the competition allow to select 2 final submissions among the many submissions one for main track and the other for efficiency track?",
+   "content": "<p>Does the competition allow to select 2 final submissions among the many submissions one for main track and the other for efficiency track?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "nahusha",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/nahusha123",
+    "tier": "CONTRIBUTOR",
+    "id": 2262016,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Harshil Maheta",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/harshilmaheta",
+     "userName": "harshilmaheta",
+     "tier": "CONTRIBUTOR",
+     "id": 36454097,
+     "profileUrl": "/harshilmaheta",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36454097,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528260,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743356,
+  "name": "Can we select 2 final submissions?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-25T18:11:50.042694600Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743356",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "nahusha",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/nahusha123",
+   "tier": "CONTRIBUTOR",
+   "id": 2262016,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3528260,
+  "id": 743356,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743356#3528352",
+  "lastCommentPostDate": "2026-09-25T23:41:45.013333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-25T18:11:50.042694600Z",
+  "title": "Can we select 2 final submissions?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743356",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Harshil Maheta",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/harshilmaheta",
+    "userName": "harshilmaheta",
+    "tier": "CONTRIBUTOR",
+    "id": 36454097,
+    "profileUrl": "/harshilmaheta",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36454097,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

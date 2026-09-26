@@ -1,0 +1,125 @@
+{
+ "forumTopic": {
+  "authorId": 747159,
+  "authorThumbnailName": "747159-kg.jpg?t=2026-08-08-10-47-01",
+  "authorUserDisplayName": "Istiyak Amin Santo",
+  "authorUserName": "istiyakaminsanto",
+  "comments": [
+   {
+    "id": 3514658,
+    "postDate": "2026-08-19T20:52:48.900Z",
+    "rawMarkdown": "The issue you mentioned with limited labels reminded me of what I saw in my own synthetic project. My synthetic AHT values covered a believable range, but the feature columns were way too uniform and didn’t reflect real‑world variation. I couldn’t find any meaningful relationships and the correlations were almost zero for everything.\nI get what you mean about validation being unreliable when the labeled portion barely has any signal. I didn’t even bother splitting the data because there was no pattern for a model to pick up. The synthetic data in my dataset looked clean, but it wasn’t even useful. I guess your subset of the MRI dataset that was actually labeled is too small for reliable evaluation too.\nI didn’t have any extra text fields to pull from, but your idea of trying to get labels from text fields sounded interesting and it wasn't something I had even considered for a case like this.",
+    "content": "<p>The issue you mentioned with limited labels reminded me of what I saw in my own synthetic project. My synthetic AHT values covered a believable range, but the feature columns were way too uniform and didn’t reflect real‑world variation. I couldn’t find any meaningful relationships and the correlations were almost zero for everything.\nI get what you mean about validation being unreliable when the labeled portion barely has any signal. I didn’t even bother splitting the data because there was no pattern for a model to pick up. The synthetic data in my dataset looked clean, but it wasn’t even useful. I guess your subset of the MRI dataset that was actually labeled is too small for reliable evaluation too.\nI didn’t have any extra text fields to pull from, but your idea of trying to get labels from text fields sounded interesting and it wasn't something I had even considered for a case like this.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "JeremyAM",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/jeremyam",
+     "tier": "CONTRIBUTOR",
+     "id": 24838230,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514081,
+   "postDate": "2026-08-18T13:15:43.863Z",
+   "rawMarkdown": "Quick EDA that's worth knowing before you build a validation split.\n\n**Label coverage:** `train.csv` has 4,407 rows, but only **58 (1.3%)** have all 12 label columns filled in. The other 4,349 have `Report` text but empty labels. If you carve a validation set from `train.csv` naively, you'll likely end up with very few (or zero) labeled examples in it — worth explicitly filtering to the 58 labeled rows for any clean eval.\n\n**Label prevalence among the 58 labeled studies:**\n| Label | Positive rate |\n|---|---|\n| Effusion | 60% |\n| Synovitis | 47% |\n| Medial Meniscus | 45% |\n| ACL | 41% |\n| Lateral Meniscus | 40% |\n| PF OA | 36% |\n| Contusion | 33% |\n| Fracture | 31% |\n| Medial OA | 26% |\n| Baker's | 21% |\n| Lateral OA | 19% |\n| MCL | 16% |\n\n**Reports are genuinely multilingual** confirmed at least English, Spanish, Greek, Turkish, Dutch, Bulgarian, Croatian, and German in a sample. If you're doing any NLP on `Report`, don't assume English.\n\n**Series structure** (`train_series.csv`): median 5 series/study (range 3–14), split across Sagittal/Coronal/Axial planes. `Fluid_Sensitive` and `Fat_Suppression` are perfectly correlated in this dataset  only 6 distinct (plane, sequence-type) combos actually occur, despite the data description hedging that they're not always equivalent.\n\n**DICOM notes:** image dimensions vary a lot even within one study (I've seen 640×640 up to 960×960, plus at least one non-square 640×1280), and transfer syntax is mixed (some uncompressed, some presumably JPEG-family per the data page)  resize and don't assume a fixed input shape.\n\nCurious what others are finding on the label side anyone had luck deriving usable labels from the report text for the unlabeled majority?\n",
+   "content": "<p>Quick EDA that's worth knowing before you build a validation split.</p>\n<p><strong>Label coverage:</strong> <code>train.csv</code> has 4,407 rows, but only <strong>58 (1.3%)</strong> have all 12 label columns filled in. The other 4,349 have <code>Report</code> text but empty labels. If you carve a validation set from <code>train.csv</code> naively, you'll likely end up with very few (or zero) labeled examples in it — worth explicitly filtering to the 58 labeled rows for any clean eval.</p>\n<p><strong>Label prevalence among the 58 labeled studies:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Label</th>\n<th>Positive rate</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Effusion</td>\n<td>60%</td>\n</tr>\n<tr>\n<td>Synovitis</td>\n<td>47%</td>\n</tr>\n<tr>\n<td>Medial Meniscus</td>\n<td>45%</td>\n</tr>\n<tr>\n<td>ACL</td>\n<td>41%</td>\n</tr>\n<tr>\n<td>Lateral Meniscus</td>\n<td>40%</td>\n</tr>\n<tr>\n<td>PF OA</td>\n<td>36%</td>\n</tr>\n<tr>\n<td>Contusion</td>\n<td>33%</td>\n</tr>\n<tr>\n<td>Fracture</td>\n<td>31%</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td>26%</td>\n</tr>\n<tr>\n<td>Baker's</td>\n<td>21%</td>\n</tr>\n<tr>\n<td>Lateral OA</td>\n<td>19%</td>\n</tr>\n<tr>\n<td>MCL</td>\n<td>16%</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Reports are genuinely multilingual</strong> confirmed at least English, Spanish, Greek, Turkish, Dutch, Bulgarian, Croatian, and German in a sample. If you're doing any NLP on <code>Report</code>, don't assume English.</p>\n<p><strong>Series structure</strong> (<code>train_series.csv</code>): median 5 series/study (range 3–14), split across Sagittal/Coronal/Axial planes. <code>Fluid_Sensitive</code> and <code>Fat_Suppression</code> are perfectly correlated in this dataset  only 6 distinct (plane, sequence-type) combos actually occur, despite the data description hedging that they're not always equivalent.</p>\n<p><strong>DICOM notes:</strong> image dimensions vary a lot even within one study (I've seen 640×640 up to 960×960, plus at least one non-square 640×1280), and transfer syntax is mixed (some uncompressed, some presumably JPEG-family per the data page)  resize and don't assume a fixed input shape.</p>\n<p>Curious what others are finding on the label side anyone had luck deriving usable labels from the report text for the unlabeled majority?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Istiyak Amin Santo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+    "url": "/istiyakaminsanto",
+    "tier": "CONTRIBUTOR",
+    "id": 747159,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3209,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Istiyak Amin Santo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+     "url": "/istiyakaminsanto",
+     "userName": "istiyakaminsanto",
+     "tier": "CONTRIBUTOR",
+     "id": 747159,
+     "profileUrl": "/istiyakaminsanto",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 747159,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514081,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735855,
+  "name": "EDA: Only 58/4407 training studies have ground-truth labels what that means for validation",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-18T13:15:43.864811400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735855",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Istiyak Amin Santo",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+   "url": "/istiyakaminsanto",
+   "tier": "CONTRIBUTOR",
+   "id": 747159,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3514081,
+  "id": 735855,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "JeremyAM",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735855#3514658",
+  "lastCommentPostDate": "2026-08-19T20:52:48.900Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-18T13:15:43.864811400Z",
+  "title": "EDA: Only 58/4407 training studies have ground-truth labels what that means for validation",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735855",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Istiyak Amin Santo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/747159-kg.jpg?t=2026-08-08-10-47-01",
+    "url": "/istiyakaminsanto",
+    "userName": "istiyakaminsanto",
+    "tier": "CONTRIBUTOR",
+    "id": 747159,
+    "profileUrl": "/istiyakaminsanto",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 747159,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

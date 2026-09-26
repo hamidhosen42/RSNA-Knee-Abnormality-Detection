@@ -1,0 +1,315 @@
+{
+ "forumTopic": {
+  "authorId": 25547938,
+  "authorThumbnailName": "25547938-kg.png?t=2026-08-09-09-55-05",
+  "authorUserDisplayName": "agr hmmm",
+  "authorUserName": "agrimrai29",
+  "comments": [
+   {
+    "id": 3510452,
+    "postDate": "2026-08-08T15:07:41.870Z",
+    "rawMarkdown": "The dataset description mentions that part of the training data can be labeled\nbased on the reports — in other words, as long as you have the reports, labeling\nthem one way or another is possible. You could even do it by hand, although the\nreports are written in multiple languages, so in most cases that would be hard.\nAs discussed in other threads, using a local LLM is one option here.\n\nI think report-derived weak labels are the starting line. Most of the public\nbaseline notebooks seem to start from there.",
+    "content": "<p>The dataset description mentions that part of the training data can be labeled\nbased on the reports — in other words, as long as you have the reports, labeling\nthem one way or another is possible. You could even do it by hand, although the\nreports are written in multiple languages, so in most cases that would be hard.\nAs discussed in other threads, using a local LLM is one option here.</p>\n<p>I think report-derived weak labels are the starting line. Most of the public\nbaseline notebooks seem to start from there.</p>",
+    "replies": [
+     {
+      "id": 3510534,
+      "postDate": "2026-08-08T20:15:06.373Z",
+      "rawMarkdown": "Gotcha. Thanks\nNot the best dataset for a compitition in my opinion. Could be wrong. Wdyt. I think let's get the proper data (all label or all report based) and when see how different people come up with different architectures and models and best one wins. ",
+      "content": "<p>Gotcha. Thanks\nNot the best dataset for a compitition in my opinion. Could be wrong. Wdyt. I think let's get the proper data (all label or all report based) and when see how different people come up with different architectures and models and best one wins. </p>",
+      "replies": [
+       {
+        "id": 3510543,
+        "postDate": "2026-08-08T20:41:50.253Z",
+        "rawMarkdown": "This is my current understanding. There's no proper ground truth \"label\" here. A radiologist reads an MRI and writes a report, but scans are hard to read and two radiologists can disagree. That happens in every medical imaging competition, you're just not given the report, so you take the label as truth when it isn't.\n\nWhat's different is the host told us how the labels were made: two readers against a published rubric, a third adjudicating, same for the test set. So there is a procedure and it disagrees with the reports in a known direction: the readers use stricter thresholds than a radiologist writing for clinical care, so the reports over-call.\n\nThe reports are arguably a richer dataset than usual, since a report says more than a binary label. The reason you'd want more than the ~50 provided labels is to calibrate your extractor against the competition's annotators - you're trying to match your label generator to theirs, which is hard with so few.\n\n",
+        "content": "<p>This is my current understanding. There's no proper ground truth \"label\" here. A radiologist reads an MRI and writes a report, but scans are hard to read and two radiologists can disagree. That happens in every medical imaging competition, you're just not given the report, so you take the label as truth when it isn't.</p>\n<p>What's different is the host told us how the labels were made: two readers against a published rubric, a third adjudicating, same for the test set. So there is a procedure and it disagrees with the reports in a known direction: the readers use stricter thresholds than a radiologist writing for clinical care, so the reports over-call.</p>\n<p>The reports are arguably a richer dataset than usual, since a report says more than a binary label. The reason you'd want more than the ~50 provided labels is to calibrate your extractor against the competition's annotators - you're trying to match your label generator to theirs, which is hard with so few.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 4
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "KAGGLE",
+          "featuredUserNames": [
+           "k256net",
+           "qifeihhh666",
+           "telingc"
+          ],
+          "userCount": 3
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "agr hmmm",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+       "url": "/agrimrai29",
+       "tier": "CONTRIBUTOR",
+       "id": 25547938,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3158,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "KAGGLE",
+        "featuredUserNames": [
+         "k256net",
+         "telingc"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "agr hmmm",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+        "url": "/agrimrai29",
+        "userName": "agrimrai29",
+        "tier": "CONTRIBUTOR",
+        "id": 25547938,
+        "profileUrl": "/agrimrai29",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 25547938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1952,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "telingc"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510566,
+    "postDate": "2026-08-08T23:39:06.520Z",
+    "rawMarkdown": "You got labels that are ground truths (call them Gold).  The rest of the images need you to create the labels by correctly reading the reports.\n\nI think there have been a number of kaggle competitions over the past years with a similar situation - some GOLD and than rocks you need to pan to find the gold.  My guess - the best panners will be the winners.\n\nAnd always remember - to be a winner you need to predict the Kaggle truth which is sometimes harder than the real truth :)  Medical competitions are the place I first started using the words \"Kaggle Truth\".  Reading these images is one heck of a hard job, I would never want to do it.   When humans make visual inspections there is always lots of variation.  We need to use the images without labels but must remember that the host tells us the labelers did NOT use the reports.\n",
+    "content": "<p>You got labels that are ground truths (call them Gold).  The rest of the images need you to create the labels by correctly reading the reports.</p>\n<p>I think there have been a number of kaggle competitions over the past years with a similar situation - some GOLD and than rocks you need to pan to find the gold.  My guess - the best panners will be the winners.</p>\n<p>And always remember - to be a winner you need to predict the Kaggle truth which is sometimes harder than the real truth :)  Medical competitions are the place I first started using the words \"Kaggle Truth\".  Reading these images is one heck of a hard job, I would never want to do it.   When humans make visual inspections there is always lots of variation.  We need to use the images without labels but must remember that the host tells us the labelers did NOT use the reports.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "telingc"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510444,
+   "postDate": "2026-08-08T14:43:17.633Z",
+   "rawMarkdown": "Hi,\n\nI’m trying to understand the intended training setup. From train.csv, I see only 58 studies with the 12 ground truth labels, while the remaining 4.3k studies have MRI data and reports but no labels. \nSince the test set appears to provide MRI data without reports (as per [this discussion ](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733592))\nwhat is the intended way to use the large unlabeled training set? \n\nWith only 58 labeled studies, this doesn't seem like a conventional supervised CV problem, while an NLP-based approach doesn't transfer directly if test reports aren't available. What is the intended learning setup here?\n\nAm i expected to use self-supervised learning, report-derived weak labels/pseudo-labeling, or another semi-supervised approach to train the MRI model?\n\nThanks\n",
+   "content": "<p>Hi,</p>\n<p>I’m trying to understand the intended training setup. From train.csv, I see only 58 studies with the 12 ground truth labels, while the remaining 4.3k studies have MRI data and reports but no labels. \nSince the test set appears to provide MRI data without reports (as per <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733592\" target=\"_blank\">this discussion </a>)\nwhat is the intended way to use the large unlabeled training set? </p>\n<p>With only 58 labeled studies, this doesn't seem like a conventional supervised CV problem, while an NLP-based approach doesn't transfer directly if test reports aren't available. What is the intended learning setup here?</p>\n<p>Am i expected to use self-supervised learning, report-derived weak labels/pseudo-labeling, or another semi-supervised approach to train the MRI model?</p>\n<p>Thanks</p>",
+   "parent": {},
+   "author": {
+    "displayName": "agr hmmm",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+    "url": "/agrimrai29",
+    "tier": "CONTRIBUTOR",
+    "id": 25547938,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3158,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "telingc"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "agr hmmm",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+     "url": "/agrimrai29",
+     "userName": "agrimrai29",
+     "tier": "CONTRIBUTOR",
+     "id": 25547938,
+     "profileUrl": "/agrimrai29",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 25547938,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510444,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733836,
+  "name": "Clarification on Training Data",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-08T14:43:17.634274200Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733836",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "agr hmmm",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+   "url": "/agrimrai29",
+   "tier": "CONTRIBUTOR",
+   "id": 25547938,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3510444,
+  "id": 733836,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733836#3510566",
+  "lastCommentPostDate": "2026-08-08T23:39:06.520Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-08T14:43:17.634274200Z",
+  "title": "Clarification on Training Data",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733836",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "agr hmmm",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25547938-kg.png?t=2026-08-09-09-55-05",
+    "url": "/agrimrai29",
+    "userName": "agrimrai29",
+    "tier": "CONTRIBUTOR",
+    "id": 25547938,
+    "profileUrl": "/agrimrai29",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 25547938,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,4085 @@
+{
+ "forumTopic": {
+  "authorId": 17990524,
+  "authorThumbnailName": "17990524-gr.jpg",
+  "authorUserDisplayName": "roy214",
+  "authorUserName": "phamgianguyen",
+  "comments": [
+   {
+    "id": 3528480,
+    "postDate": "2026-09-26T05:34:32.593Z",
+    "rawMarkdown": "Thank you for the single-model score @phamgianguyen ",
+    "content": "<p>Thank you for the single-model score <a href=\"/phamgianguyen\" target=\"_blank\">@phamgianguyen</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3528358,
+    "postDate": "2026-09-25T23:55:16.657Z",
+    "rawMarkdown": "There are two types of single models. Those using original report extracted labels and those using pseudo labels. If we use pseudo labels, then every single model can match our best ensemble CV score and reporting that hides the fact that it isn't actually \"single model\".",
+    "content": "<p>There are two types of single models. Those using original report extracted labels and those using pseudo labels. If we use pseudo labels, then every single model can match our best ensemble CV score and reporting that hides the fact that it isn't actually \"single model\".</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 5,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 91,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3526410,
+    "postDate": "2026-09-21T09:01:49.393Z",
+    "rawMarkdown": "I got bored with the usual vision backbones from previous years' winning solutions and decided to finetune Qwen 3.5 with 384x384 inputs.\n\nSingle fold, 0.950, ~3.5 hours.",
+    "content": "<p>I got bored with the usual vision backbones from previous years' winning solutions and decided to finetune Qwen 3.5 with 384x384 inputs.</p>\n<p>Single fold, 0.950, ~3.5 hours.</p>",
+    "replies": [
+     {
+      "id": 3527271,
+      "postDate": "2026-09-23T10:26:03.107Z",
+      "rawMarkdown": "Nice result! Could you share which exact Qwen 3.5 variant you used (4B/9B/27B/etc.)? And did you finetune the full VLM or just the vision part?",
+      "content": "<p>Nice result! Could you share which exact Qwen 3.5 variant you used (4B/9B/27B/etc.)? And did you finetune the full VLM or just the vision part?</p>",
+      "replies": [
+       {
+        "id": 3527348,
+        "postDate": "2026-09-23T15:36:43.660Z",
+        "rawMarkdown": "I used qwen 3.5 2b. I attached lora modules to the language model and jointly fine-tuned them with the vision encoder. ",
+        "content": "<p>I used qwen 3.5 2b. I attached lora modules to the language model and jointly fine-tuned them with the vision encoder. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "NguyenThanhNhan",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1134433-kg.jpg",
+         "url": "/andy2709",
+         "tier": "GRANDMASTER",
+         "id": 1134433,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 5
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 60,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "samson8",
+           "phngbqun"
+          ],
+          "userCount": 2
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "NguyenThanhNhan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1134433-kg.jpg",
+          "url": "/andy2709",
+          "userName": "andy2709",
+          "tier": "GRANDMASTER",
+          "id": 1134433,
+          "profileUrl": "/andy2709",
+          "performanceTier": "GRANDMASTER",
+          "userId": 1134433,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3527403,
+        "postDate": "2026-09-23T17:50:36.263Z",
+        "rawMarkdown": "Thanks for sharing.I almost went with 9B, which would've required renting much more expensive machines.",
+        "content": "<p>Thanks for sharing.I almost went with 9B, which would've required renting much more expensive machines.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "SpeedSci",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+         "url": "/caoyupeng",
+         "tier": "EXPERT",
+         "id": 26421714,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1065,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "SpeedSci",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+          "url": "/caoyupeng",
+          "userName": "caoyupeng",
+          "tier": "EXPERT",
+          "id": 26421714,
+          "profileUrl": "/caoyupeng",
+          "performanceTier": "EXPERT",
+          "userId": 26421714,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Baquannn",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/phngbqun",
+       "tier": "CONTRIBUTOR",
+       "id": 27788930,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1232,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Duc-Truong Hoang",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11065492-gr.jpg",
+        "url": "/marcohoang",
+        "userName": "marcohoang",
+        "tier": "CONTRIBUTOR",
+        "id": 11065492,
+        "profileUrl": "/marcohoang",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 11065492,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "NguyenThanhNhan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1134433-kg.jpg",
+     "url": "/andy2709",
+     "tier": "GRANDMASTER",
+     "id": 1134433,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 20,
+     "canUpvote": true,
+     "totalUpvotes": 20
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 60,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "YAY",
+      "featuredUserNames": [
+       "taindow",
+       "cdeotte",
+       "timkrige",
+       "tuckerarrants",
+       "pompom555",
+       "brechtlauwers",
+       "nikoro256",
+       "samson8",
+       "ggayoayogg",
+       "wayne127",
+       "shivsatyam",
+       "caoyupeng",
+       "ektarr"
+      ],
+      "userCount": 13
+     },
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "trantrikien239",
+       "samson8",
+       "ggayoayogg"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "NguyenThanhNhan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1134433-kg.jpg",
+      "url": "/andy2709",
+      "userName": "andy2709",
+      "tier": "GRANDMASTER",
+      "id": 1134433,
+      "profileUrl": "/andy2709",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1134433,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3526158,
+    "postDate": "2026-09-20T14:42:00.697Z",
+    "rawMarkdown": "I got 91.0 using a Resnet34 backbone coupled with a mundane linear head.",
+    "content": "<p>I got 91.0 using a Resnet34 backbone coupled with a mundane linear head.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Shiv Satyam",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17429833-kg.png?t=2026-02-22-18-23-34",
+     "url": "/shivsatyam",
+     "tier": "EXPERT",
+     "id": 17429833,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2386,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Shiv Satyam",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17429833-kg.png?t=2026-02-22-18-23-34",
+      "url": "/shivsatyam",
+      "userName": "shivsatyam",
+      "tier": "EXPERT",
+      "id": 17429833,
+      "profileUrl": "/shivsatyam",
+      "performanceTier": "EXPERT",
+      "userId": 17429833,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3525138,
+    "postDate": "2026-09-16T23:32:05.800Z",
+    "rawMarkdown": "Got a single fold CoAtNet at 224px to 0.950 right now.",
+    "content": "<p>Got a single fold CoAtNet at 224px to 0.950 right now.</p>",
+    "replies": [
+     {
+      "id": 3525155,
+      "postDate": "2026-09-17T01:20:59.037Z",
+      "rawMarkdown": "Nice! do you mind sharing a bit of your thought process behind getting that single fold? anyways congrats!",
+      "content": "<p>Nice! do you mind sharing a bit of your thought process behind getting that single fold? anyways congrats!</p>",
+      "replies": [
+       {
+        "id": 3525193,
+        "postDate": "2026-09-17T05:25:24.790Z",
+        "rawMarkdown": "Thank you! The main thing was one check. On the 58 provided labels, my OOF predictions were already closer to the radiologists than the extracted labels the model was trained on. Bigger models weren't helping either, so I figured the labels were the bottleneck and started working on that. The model is pretty standard: 2.5D CoAtNet at 224 (a few neighbouring slices at a time).",
+        "content": "<p>Thank you! The main thing was one check. On the 58 provided labels, my OOF predictions were already closer to the radiologists than the extracted labels the model was trained on. Bigger models weren't helping either, so I figured the labels were the bottleneck and started working on that. The model is pretty standard: 2.5D CoAtNet at 224 (a few neighbouring slices at a time).</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Archit Konde",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+         "url": "/architkonde",
+         "tier": "CONTRIBUTOR",
+         "id": 7079381,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 38,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "taindow",
+           "kaiserm",
+           "nathanaelrk",
+           "salemali7"
+          ],
+          "userCount": 4
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Archit Konde",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+          "url": "/architkonde",
+          "userName": "architkonde",
+          "tier": "CONTRIBUTOR",
+          "id": 7079381,
+          "profileUrl": "/architkonde",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 7079381,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525255,
+        "postDate": "2026-09-17T09:04:15.410Z",
+        "rawMarkdown": "That’s interesting! I got a mean AUC of 0.9208 on the 58 provided labels.Synovitis was my lowest-scoring class at 0.7969, followed by PF OA at 0.8533.\nwhat did you get on the 58 labels? And what were your Synovitis and PF OA scores? Which classes were the main bottlenecks for you?",
+        "content": "<p>That’s interesting! I got a mean AUC of 0.9208 on the 58 provided labels.Synovitis was my lowest-scoring class at 0.7969, followed by PF OA at 0.8533.\nwhat did you get on the 58 labels? And what were your Synovitis and PF OA scores? Which classes were the main bottlenecks for you?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Salem Ali",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+         "url": "/salemali7",
+         "tier": "EXPERT",
+         "id": 32974286,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 182,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Salem Ali",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+          "url": "/salemali7",
+          "userName": "salemali7",
+          "tier": "EXPERT",
+          "id": 32974286,
+          "profileUrl": "/salemali7",
+          "performanceTier": "EXPERT",
+          "userId": 32974286,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525491,
+        "postDate": "2026-09-17T21:12:24.357Z",
+        "rawMarkdown": "Congratulations of the great model performance! 0.950 single fold is amazing.\n\nSeems like the labels are really the key here, then. I've tried lots though and haven't had much success. I thought that perhaps using my models strongest predictions to highlight noisy labels might help, whether by masking them in training or by replacing them outright, but neither really have any noticeable effect. \n\nBut then again, I suppose feeding a model back it's own predictions isn't exactly telling it anything new, it just makes it easier to reach the same point. \n\nI'm scratching my head trying to think about how to improve these labels further. Maybe multiple models with different strengths can teach each other when to listen to the teacher and when to ignore it? \n\nIf you had any gentle hints to spare it would be much appreciated !",
+        "content": "<p>Congratulations of the great model performance! 0.950 single fold is amazing.</p>\n<p>Seems like the labels are really the key here, then. I've tried lots though and haven't had much success. I thought that perhaps using my models strongest predictions to highlight noisy labels might help, whether by masking them in training or by replacing them outright, but neither really have any noticeable effect. </p>\n<p>But then again, I suppose feeding a model back it's own predictions isn't exactly telling it anything new, it just makes it easier to reach the same point. </p>\n<p>I'm scratching my head trying to think about how to improve these labels further. Maybe multiple models with different strengths can teach each other when to listen to the teacher and when to ignore it? </p>\n<p>If you had any gentle hints to spare it would be much appreciated !</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom Aindow",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+         "url": "/taindow",
+         "tier": "MASTER",
+         "id": 921947,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 80,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tom Aindow",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+          "url": "/taindow",
+          "userName": "taindow",
+          "tier": "MASTER",
+          "id": 921947,
+          "profileUrl": "/taindow",
+          "performanceTier": "MASTER",
+          "userId": 921947,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525700,
+        "postDate": "2026-09-18T17:25:03.347Z",
+        "rawMarkdown": "Single model (out of fold) is 0.930 on the 58 for me. Synovitis 0.797 and Lateral OA 0.816 are my weakest, PF OA 0.874. Our Synovitis numbers are nearly identical, which is interesting. I wouldn't read too much into the per-class values though, some classes only have 9-12 positives across the 58 studies.",
+        "content": "<p>Single model (out of fold) is 0.930 on the 58 for me. Synovitis 0.797 and Lateral OA 0.816 are my weakest, PF OA 0.874. Our Synovitis numbers are nearly identical, which is interesting. I wouldn't read too much into the per-class values though, some classes only have 9-12 positives across the 58 studies.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Archit Konde",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+         "url": "/architkonde",
+         "tier": "CONTRIBUTOR",
+         "id": 7079381,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 38,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "salemali7"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Archit Konde",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+          "url": "/architkonde",
+          "userName": "architkonde",
+          "tier": "CONTRIBUTOR",
+          "id": 7079381,
+          "profileUrl": "/architkonde",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 7079381,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525701,
+        "postDate": "2026-09-18T17:26:25.743Z",
+        "rawMarkdown": "Thank you! Of course, happy to help.\n\nMasking the noisy labels did nothing for me either. Replacing them with the model's predictions came out worse than mixing the two, so I ended up keeping the extracted label and mixing the prediction into it rather than choosing between them. Why that helps, I'm honestly not sure. My guess is it's less about new information and more about how confident the label is, but that's a guess.\n\nRounding the labels to 0/1 also hurt; keeping them as fractions was better. And I found it useful to look at calibration on the 58 rather than only AUC. Mine happened to line up already (labels around 0.3 were positive roughly 30% of the time), which is what made me stop poking at the extraction.\n\nHave you found anything that moves the diffuse classes? Synovitis and Lateral OA are where I'm stuck, and nothing I've tried on the model side seems to touch them.",
+        "content": "<p>Thank you! Of course, happy to help.</p>\n<p>Masking the noisy labels did nothing for me either. Replacing them with the model's predictions came out worse than mixing the two, so I ended up keeping the extracted label and mixing the prediction into it rather than choosing between them. Why that helps, I'm honestly not sure. My guess is it's less about new information and more about how confident the label is, but that's a guess.</p>\n<p>Rounding the labels to 0/1 also hurt; keeping them as fractions was better. And I found it useful to look at calibration on the 58 rather than only AUC. Mine happened to line up already (labels around 0.3 were positive roughly 30% of the time), which is what made me stop poking at the extraction.</p>\n<p>Have you found anything that moves the diffuse classes? Synovitis and Lateral OA are where I'm stuck, and nothing I've tried on the model side seems to touch them.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Archit Konde",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+         "url": "/architkonde",
+         "tier": "CONTRIBUTOR",
+         "id": 7079381,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 38,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Archit Konde",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+          "url": "/architkonde",
+          "userName": "architkonde",
+          "tier": "CONTRIBUTOR",
+          "id": 7079381,
+          "profileUrl": "/architkonde",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 7079381,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3525942,
+        "postDate": "2026-09-19T16:29:49.190Z",
+        "rawMarkdown": "Interesting I've also tried blending prediction and labels together but didn't have much luck, something to come back to perhaps.\n\nSynovitis I have tried to attack with little luck. It's clearly under reported I think, based on the golden data, so I suspect there are lots of false negatives in my labels. It's there, present, but they don't say anything about it. I tried to filter out these false positives by basically masking all negative synovitis labels except the ones where it was explicitly declared absent (not many), or was negative alongside lots of other negatives (I.e. the whole scan basically came back normal). This didn't do anything to my result though. I suspect masking false negatives isn't enough: the model needs more positives.",
+        "content": "<p>Interesting I've also tried blending prediction and labels together but didn't have much luck, something to come back to perhaps.</p>\n<p>Synovitis I have tried to attack with little luck. It's clearly under reported I think, based on the golden data, so I suspect there are lots of false negatives in my labels. It's there, present, but they don't say anything about it. I tried to filter out these false positives by basically masking all negative synovitis labels except the ones where it was explicitly declared absent (not many), or was negative alongside lots of other negatives (I.e. the whole scan basically came back normal). This didn't do anything to my result though. I suspect masking false negatives isn't enough: the model needs more positives.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom Aindow",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+         "url": "/taindow",
+         "tier": "MASTER",
+         "id": 921947,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 80,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tom Aindow",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+          "url": "/taindow",
+          "userName": "taindow",
+          "tier": "MASTER",
+          "id": 921947,
+          "profileUrl": "/taindow",
+          "performanceTier": "MASTER",
+          "userId": 921947,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3526342,
+        "postDate": "2026-09-21T03:00:45.740Z",
+        "rawMarkdown": "Yeah, I see the same thing on the gold set. Synovitis is the one the reports just don't mention, so most of the negatives are really silence. I tried something like your mask, dropping the low-confidence cells, and it did nothing for me either. What I did instead was look at where my image model was already beating the report labels, and it was mostly those silent cases, so I figured the model knew more than the labels did and used its predictions to fill them in instead of cutting anything out.\n\nThat one moved right away, but only because the predictions were properly out of fold. In fold ones just parrot the labels back. And I ended up pushing the blend a lot further toward the model than felt sane. 50/50 already jumped, going heavier on the model added a bit more.\n\nWere yours out of fold? And how heavy did you go on the prediction side?",
+        "content": "<p>Yeah, I see the same thing on the gold set. Synovitis is the one the reports just don't mention, so most of the negatives are really silence. I tried something like your mask, dropping the low-confidence cells, and it did nothing for me either. What I did instead was look at where my image model was already beating the report labels, and it was mostly those silent cases, so I figured the model knew more than the labels did and used its predictions to fill them in instead of cutting anything out.</p>\n<p>That one moved right away, but only because the predictions were properly out of fold. In fold ones just parrot the labels back. And I ended up pushing the blend a lot further toward the model than felt sane. 50/50 already jumped, going heavier on the model added a bit more.</p>\n<p>Were yours out of fold? And how heavy did you go on the prediction side?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Archit Konde",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+         "url": "/architkonde",
+         "tier": "CONTRIBUTOR",
+         "id": 7079381,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 38,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Archit Konde",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+          "url": "/architkonde",
+          "userName": "architkonde",
+          "tier": "CONTRIBUTOR",
+          "id": 7079381,
+          "profileUrl": "/architkonde",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 7079381,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "huytngo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/huytngo",
+       "tier": "CONTRIBUTOR",
+       "id": 21647636,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 39,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Apoorv Saraogee",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35739363-kg.jpg?t=2026-08-12-03-25-20",
+        "url": "/apoorvsara",
+        "userName": "apoorvsara",
+        "tier": "CONTRIBUTOR",
+        "id": 35739363,
+        "profileUrl": "/apoorvsara",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 35739363,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3525225,
+      "postDate": "2026-09-17T07:30:17.437Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Archit Konde",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+     "url": "/architkonde",
+     "tier": "CONTRIBUTOR",
+     "id": 7079381,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 38,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Archit Konde",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7079381-kg.png?t=2026-04-03-14-43-41",
+      "url": "/architkonde",
+      "userName": "architkonde",
+      "tier": "CONTRIBUTOR",
+      "id": 7079381,
+      "profileUrl": "/architkonde",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 7079381,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3524699,
+    "postDate": "2026-09-15T16:41:09.617Z",
+    "rawMarkdown": "0.938 Lb. full train CoAtNet with 288*288. For now labels are still my greatest lever, especially pseudo labeling and blending different labels.\n\nUpdate: Now at 0.94 lb. still label improvements\n\nUpdate: Now 0.949. still label :D",
+    "content": "<p>0.938 Lb. full train CoAtNet with 288*288. For now labels are still my greatest lever, especially pseudo labeling and blending different labels.</p>\n<p>Update: Now at 0.94 lb. still label improvements</p>\n<p>Update: Now 0.949. still label :D</p>",
+    "replies": [
+     {
+      "id": 3527136,
+      "postDate": "2026-09-23T02:07:48.747Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     },
+     {
+      "id": 3527272,
+      "postDate": "2026-09-23T10:29:05.180Z",
+      "rawMarkdown": "Really impressive improvement! Would you mind sharing a bit more about your label strategy? In particular, how are you generating the pseudo labels and how do you blend them with the original/other labels? Are the pseudo labels coming from OOF predictions, external models, or another source? Thanks for sharing!",
+      "content": "<p>Really impressive improvement! Would you mind sharing a bit more about your label strategy? In particular, how are you generating the pseudo labels and how do you blend them with the original/other labels? Are the pseudo labels coming from OOF predictions, external models, or another source? Thanks for sharing!</p>",
+      "replies": [
+       {
+        "id": 3527279,
+        "postDate": "2026-09-23T10:38:18.450Z",
+        "rawMarkdown": "Thanks! I’m mainly using multiple weak-label sources (public, api, local) to train teacher models, then using the teacher models to generate pseudo-labels and eventually training a final model on them. This way the model gets more information from the images. Different teachers seem to help different targets.",
+        "content": "<p>Thanks! I’m mainly using multiple weak-label sources (public, api, local) to train teacher models, then using the teacher models to generate pseudo-labels and eventually training a final model on them. This way the model gets more information from the images. Different teachers seem to help different targets.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Raymond Yuen",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+         "url": "/laymond",
+         "tier": "CONTRIBUTOR",
+         "id": 28874055,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 74,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Raymond Yuen",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+          "url": "/laymond",
+          "userName": "laymond",
+          "tier": "CONTRIBUTOR",
+          "id": 28874055,
+          "profileUrl": "/laymond",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 28874055,
+          "progressionOptOut": false
+         },
+         "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+        }
+       },
+       {
+        "id": 3527281,
+        "postDate": "2026-09-23T10:45:57.723Z",
+        "rawMarkdown": "Btw from my experiments the difference between expensive and cheap models are minimal. The total API cost of the labels I'm currently using (including experimentation) is less than $5",
+        "content": "<p>Btw from my experiments the difference between expensive and cheap models are minimal. The total API cost of the labels I'm currently using (including experimentation) is less than $5</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Raymond Yuen",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+         "url": "/laymond",
+         "tier": "CONTRIBUTOR",
+         "id": 28874055,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 74,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Raymond Yuen",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+          "url": "/laymond",
+          "userName": "laymond",
+          "tier": "CONTRIBUTOR",
+          "id": 28874055,
+          "profileUrl": "/laymond",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 28874055,
+          "progressionOptOut": false
+         },
+         "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Baquannn",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/phngbqun",
+       "tier": "CONTRIBUTOR",
+       "id": 27788930,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1232,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Duc-Truong Hoang",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11065492-gr.jpg",
+        "url": "/marcohoang",
+        "userName": "marcohoang",
+        "tier": "CONTRIBUTOR",
+        "id": 11065492,
+        "profileUrl": "/marcohoang",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 11065492,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Raymond Yuen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+     "url": "/laymond",
+     "tier": "CONTRIBUTOR",
+     "id": 28874055,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 74,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Raymond Yuen",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+      "url": "/laymond",
+      "userName": "laymond",
+      "tier": "CONTRIBUTOR",
+      "id": 28874055,
+      "profileUrl": "/laymond",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 28874055,
+      "progressionOptOut": false
+     },
+     "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+    }
+   },
+   {
+    "id": 3524183,
+    "postDate": "2026-09-14T07:41:14.233Z",
+    "rawMarkdown": "Single fold, CoAtNet, 384*384, LB 0.937, but fusion is ineffective.",
+    "content": "<p>Single fold, CoAtNet, 384*384, LB 0.937, but fusion is ineffective.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Less",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22061443-kg.jpg?t=2025-09-11-01-34-42",
+     "url": "/jiaoyouzhang",
+     "tier": "MASTER",
+     "id": 22061443,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 88,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Less",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22061443-kg.jpg?t=2025-09-11-01-34-42",
+      "url": "/jiaoyouzhang",
+      "userName": "jiaoyouzhang",
+      "tier": "MASTER",
+      "id": 22061443,
+      "profileUrl": "/jiaoyouzhang",
+      "performanceTier": "MASTER",
+      "userId": 22061443,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3519217,
+    "postDate": "2026-09-01T10:06:34.323Z",
+    "rawMarkdown": "0.936lb, single fold, small resnet model, 224x224",
+    "content": "<p>0.936lb, single fold, small resnet model, 224x224</p>",
+    "replies": [
+     {
+      "id": 3519327,
+      "postDate": "2026-09-01T14:48:30.450Z",
+      "rawMarkdown": "Really impressive results with such a small resnet! I’m curious about your approach to handling label noise. Would you be willing to share some details?",
+      "content": "<p>Really impressive results with such a small resnet! I’m curious about your approach to handling label noise. Would you be willing to share some details?</p>",
+      "replies": [
+       {
+        "id": 3520002,
+        "postDate": "2026-09-02T17:04:42.500Z",
+        "rawMarkdown": "I did a little bit of label work, combined my labels with some public dataset and it increased lb score by 0.015\n\nThen some pre training on the encoder and training longer with more regularization helped to reach 0.936!\n\nIts a little hard to properly evaluate what really helped, when I made too many changes in between runs (e.g. changing the encoder architecture), I stopped seeing a correlation between validation and lb…",
+        "content": "<p>I did a little bit of label work, combined my labels with some public dataset and it increased lb score by 0.015</p>\n<p>Then some pre training on the encoder and training longer with more regularization helped to reach 0.936!</p>\n<p>Its a little hard to properly evaluate what really helped, when I made too many changes in between runs (e.g. changing the encoder architecture), I stopped seeing a correlation between validation and lb…</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Yann Majewski",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/yannmajewski",
+         "tier": "EXPERT",
+         "id": 4059244,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 68,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Yann Majewski",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/yannmajewski",
+          "userName": "yannmajewski",
+          "tier": "EXPERT",
+          "id": 4059244,
+          "profileUrl": "/yannmajewski",
+          "performanceTier": "EXPERT",
+          "userId": 4059244,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520075,
+        "postDate": "2026-09-02T19:25:43.800Z",
+        "rawMarkdown": " I’ve found the same thing in my experiments data quality and training strategy can matter more than just making the model more complex. 0.936 with one fold ,a small ResNet is impressive,\ncongrats!",
+        "content": "<p>I’ve found the same thing in my experiments data quality and training strategy can matter more than just making the model more complex. 0.936 with one fold ,a small ResNet is impressive,\ncongrats!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Salem Ali",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+         "url": "/salemali7",
+         "tier": "EXPERT",
+         "id": 32974286,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 182,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Salem Ali",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+          "url": "/salemali7",
+          "userName": "salemali7",
+          "tier": "EXPERT",
+          "id": 32974286,
+          "profileUrl": "/salemali7",
+          "performanceTier": "EXPERT",
+          "userId": 32974286,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Salem Ali",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+       "url": "/salemali7",
+       "tier": "EXPERT",
+       "id": 32974286,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 182,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Salem Ali",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+        "url": "/salemali7",
+        "userName": "salemali7",
+        "tier": "EXPERT",
+        "id": 32974286,
+        "profileUrl": "/salemali7",
+        "performanceTier": "EXPERT",
+        "userId": 32974286,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Yann Majewski",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/yannmajewski",
+     "tier": "EXPERT",
+     "id": 4059244,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 68,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "uddipanb"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Yann Majewski",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/yannmajewski",
+      "userName": "yannmajewski",
+      "tier": "EXPERT",
+      "id": 4059244,
+      "profileUrl": "/yannmajewski",
+      "performanceTier": "EXPERT",
+      "userId": 4059244,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3520201,
+    "postDate": "2026-09-03T00:21:47.753Z",
+    "rawMarkdown": "0.930 in 46 minutes, hoping a label improvement experiment pushes this further",
+    "content": "<p>0.930 in 46 minutes, hoping a label improvement experiment pushes this further</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Jack",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+     "url": "/jackvd",
+     "tier": "MASTER",
+     "id": 21922722,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 787,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Jack",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+      "url": "/jackvd",
+      "userName": "jackvd",
+      "tier": "MASTER",
+      "id": 21922722,
+      "profileUrl": "/jackvd",
+      "performanceTier": "MASTER",
+      "userId": 21922722,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3520511,
+    "postDate": "2026-09-03T15:13:03.147Z",
+    "rawMarkdown": "So far 0.942 raw, 0.943 with TTA at 288x288. OOF pseudo-labels have been pretty well correlated with LB. ",
+    "content": "<p>So far 0.942 raw, 0.943 with TTA at 288x288. OOF pseudo-labels have been pretty well correlated with LB. </p>",
+    "replies": [
+     {
+      "id": 3520560,
+      "postDate": "2026-09-03T16:54:13.597Z",
+      "rawMarkdown": "That's really high! At just 288x288 resolution. If resolution was just 288x288 to get such high scores, I wonder what are the core drivers of such a high score then. If you would be willing to share any hints... Great job regardless!",
+      "content": "<p>That's really high! At just 288x288 resolution. If resolution was just 288x288 to get such high scores, I wonder what are the core drivers of such a high score then. If you would be willing to share any hints… Great job regardless!</p>",
+      "replies": [
+       {
+        "id": 3520564,
+        "postDate": "2026-09-03T17:00:32.597Z",
+        "rawMarkdown": "Just a lot of incremental improvements. I have my own labels but they are not measurably better than the public ones. I'm not sure resolution is such a big driver.",
+        "content": "<p>Just a lot of incremental improvements. I have my own labels but they are not measurably better than the public ones. I'm not sure resolution is such a big driver.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "tennogh",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+         "url": "/tennogh",
+         "tier": "MASTER",
+         "id": 3991745,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 8,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "syamoji141",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+          "url": "/syamoji141chan",
+          "userName": "syamoji141chan",
+          "tier": "EXPERT",
+          "id": 5570066,
+          "profileUrl": "/syamoji141chan",
+          "performanceTier": "EXPERT",
+          "userId": 5570066,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520567,
+        "postDate": "2026-09-03T17:09:59.857Z",
+        "rawMarkdown": "Agreed with resolution not being that important. I'm sure its backbone dependent and I've only tried ResNets and EffNets, but 224 / 288 is the sweet spot so far. ",
+        "content": "<p>Agreed with resolution not being that important. I'm sure its backbone dependent and I've only tried ResNets and EffNets, but 224 / 288 is the sweet spot so far. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520569,
+        "postDate": "2026-09-03T17:16:33.747Z",
+        "rawMarkdown": "Wow, that's really interesting and worring at the same time. I gotta be finding the missing peice staying low-res. Thankyou @tennogh @tuckerarrants ",
+        "content": "<p>Wow, that's really interesting and worring at the same time. I gotta be finding the missing peice staying low-res. Thankyou <a href=\"https://www.kaggle.com/tennogh\" target=\"_blank\">@tennogh</a> <a href=\"https://www.kaggle.com/tuckerarrants\" target=\"_blank\">@tuckerarrants</a> </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Komil Parmar",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+         "url": "/komilparmar",
+         "tier": "EXPERT",
+         "id": 11351811,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 56,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Komil Parmar",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+          "url": "/komilparmar",
+          "userName": "komilparmar",
+          "tier": "EXPERT",
+          "id": 11351811,
+          "profileUrl": "/komilparmar",
+          "performanceTier": "EXPERT",
+          "userId": 11351811,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520743,
+        "postDate": "2026-09-04T03:32:02.427Z",
+        "rawMarkdown": "Thanks for sharing! I'm planning to start training with public labels. Do you think it's better to start with hard (0/1) or soft labels?",
+        "content": "<p>Thanks for sharing! I'm planning to start training with public labels. Do you think it's better to start with hard (0/1) or soft labels?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Shuolin Liu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2727680-kg.jpg",
+         "url": "/lsl000ud",
+         "tier": "MASTER",
+         "id": 2727680,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Shuolin Liu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2727680-kg.jpg",
+          "url": "/lsl000ud",
+          "userName": "lsl000ud",
+          "tier": "MASTER",
+          "id": 2727680,
+          "profileUrl": "/lsl000ud",
+          "performanceTier": "MASTER",
+          "userId": 2727680,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520745,
+        "postDate": "2026-09-04T03:35:34.647Z",
+        "rawMarkdown": "Start with soft but worth trying both so you can measure the value of the soft labels. The delta between the two is itself insightful.",
+        "content": "<p>Start with soft but worth trying both so you can measure the value of the soft labels. The delta between the two is itself insightful.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "lsl000ud"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523155,
+        "postDate": "2026-09-10T17:54:44.050Z",
+        "rawMarkdown": "Have you found any magic slices/windows for 224 res? I am trying it now with 0.446 mm/px on 64 slices 62 windows but my model scores struggle. Cant make out if my data is the problem or I have just busted something in my pipeline hahaha ",
+        "content": "<p>Have you found any magic slices/windows for 224 res? I am trying it now with 0.446 mm/px on 64 slices 62 windows but my model scores struggle. Cant make out if my data is the problem or I have just busted something in my pipeline hahaha </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523270,
+        "postDate": "2026-09-11T00:06:07.497Z",
+        "rawMarkdown": "At 100mm Field of View you may be losing some useful information. My sweet spot is 140mm to 160mm FOV. \n\nUPDATE: I was wrong about the 140-160 comment. Different models do well with different FOVs. ",
+        "content": "<p>At 100mm Field of View you may be losing some useful information. My sweet spot is 140mm to 160mm FOV. </p>\n<p>UPDATE: I was wrong about the 140-160 comment. Different models do well with different FOVs. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Parag",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/396939-kg.png?t=2026-07-24-17-16-31",
+         "url": "/paragkale",
+         "tier": "MASTER",
+         "id": 396939,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 6,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "SURPRISE",
+          "featuredUserNames": [
+           "osakanateishoku"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Parag",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/396939-kg.png?t=2026-07-24-17-16-31",
+          "url": "/paragkale",
+          "userName": "paragkale",
+          "tier": "MASTER",
+          "id": 396939,
+          "profileUrl": "/paragkale",
+          "performanceTier": "MASTER",
+          "userId": 396939,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523293,
+        "postDate": "2026-09-11T03:03:11.693Z",
+        "rawMarkdown": "Ill have a think about that one! Thanks!",
+        "content": "<p>Ill have a think about that one! Thanks!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Komil Parmar",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+       "url": "/komilparmar",
+       "tier": "EXPERT",
+       "id": 11351811,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 56,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Komil Parmar",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+        "url": "/komilparmar",
+        "userName": "komilparmar",
+        "tier": "EXPERT",
+        "id": 11351811,
+        "profileUrl": "/komilparmar",
+        "performanceTier": "EXPERT",
+        "userId": 11351811,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "tennogh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+     "url": "/tennogh",
+     "tier": "MASTER",
+     "id": 3991745,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 8,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "uddipanb"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "syamoji141",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+      "url": "/syamoji141chan",
+      "userName": "syamoji141chan",
+      "tier": "EXPERT",
+      "id": 5570066,
+      "profileUrl": "/syamoji141chan",
+      "performanceTier": "EXPERT",
+      "userId": 5570066,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515147,
+    "postDate": "2026-08-20T22:27:20.557Z",
+    "rawMarkdown": "I'm at 0.938 with a single model, single fold.\n\nI'm also pretty new to all of this, so I'm going to assume that I'm missing a lot that I could be doing to help out my model.",
+    "content": "<p>I'm at 0.938 with a single model, single fold.</p>\n<p>I'm also pretty new to all of this, so I'm going to assume that I'm missing a lot that I could be doing to help out my model.</p>",
+    "replies": [
+     {
+      "id": 3515634,
+      "postDate": "2026-08-22T07:24:25.747Z",
+      "rawMarkdown": "Really impressive result, congratulations! Would you be willing to share any details about how you are approaching the problem? It seems you are also top of the efficiency leaderboard, so perhaps you are doing something quite different to most !",
+      "content": "<p>Really impressive result, congratulations! Would you be willing to share any details about how you are approaching the problem? It seems you are also top of the efficiency leaderboard, so perhaps you are doing something quite different to most !</p>",
+      "replies": [
+       {
+        "id": 3515986,
+        "postDate": "2026-08-22T16:55:33.927Z",
+        "rawMarkdown": "I just tried to start with as small of a model as possible.  My whole goal was to start aiming for the efficiency LB and then go up from there if needed.  I also spent a lot of time trying to figure out how to work around the low quality labels I have.  I did break down and submit a 5 fold ensemble though, so my current 0.947 is no longer a single fold.\n\nI'm not too confident my score is going to hold on the private LB, though.  Should be interesting to see.",
+        "content": "<p>I just tried to start with as small of a model as possible.  My whole goal was to start aiming for the efficiency LB and then go up from there if needed.  I also spent a lot of time trying to figure out how to work around the low quality labels I have.  I did break down and submit a 5 fold ensemble though, so my current 0.947 is no longer a single fold.</p>\n<p>I'm not too confident my score is going to hold on the private LB, though.  Should be interesting to see.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Scott Willis",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/scottgwillis",
+         "tier": "CONTRIBUTOR",
+         "id": 17764997,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "taindow",
+           "ggayoayogg",
+           "phngbqun",
+           "aloktiwa"
+          ],
+          "userCount": 4
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Scott Willis",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/scottgwillis",
+          "userName": "scottgwillis",
+          "tier": "CONTRIBUTOR",
+          "id": 17764997,
+          "profileUrl": "/scottgwillis",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17764997,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3519159,
+        "postDate": "2026-09-01T07:11:38.647Z",
+        "rawMarkdown": "Congrats on holding #1 on the efficiency board — the \"start as small as possible\" framing is the opposite of what most of us drifted into, and clearly it worked.\n\nThe part I'd love to hear more about is the labels. You said you spent a lot of time working around the low-quality labels. Were you working from one of the public LLM-extracted sets, or did you build your own extraction? And when you say \"working around\" — is that a labelling-side fix (better extraction, soft targets, per-class confidence) or a training-side one (loss weighting, sample reweighting, masking uncertain cells)?\n\nAsking because we're stuck at 0.924 and every architectural lever we've tried has come back inside noise: larger backbone, cross-slot attention, top-k pooling, EMA, mixup, longer schedules, slice-count sweeps. Seven ablations, all within 0.008 of each other. That pattern usually means the ceiling is upstream of the model, and your comment is the first thing I've read that points squarely at it.\n\nHappy to share our timing profile in return — we got a CoAtNet-384 run down from 65 minutes to 17 by pipelining preprocessing against GPU, if that's useful to anyone.",
+        "content": "<p>Congrats on holding #1 on the efficiency board — the \"start as small as possible\" framing is the opposite of what most of us drifted into, and clearly it worked.</p>\n<p>The part I'd love to hear more about is the labels. You said you spent a lot of time working around the low-quality labels. Were you working from one of the public LLM-extracted sets, or did you build your own extraction? And when you say \"working around\" — is that a labelling-side fix (better extraction, soft targets, per-class confidence) or a training-side one (loss weighting, sample reweighting, masking uncertain cells)?</p>\n<p>Asking because we're stuck at 0.924 and every architectural lever we've tried has come back inside noise: larger backbone, cross-slot attention, top-k pooling, EMA, mixup, longer schedules, slice-count sweeps. Seven ablations, all within 0.008 of each other. That pattern usually means the ceiling is upstream of the model, and your comment is the first thing I've read that points squarely at it.</p>\n<p>Happy to share our timing profile in return — we got a CoAtNet-384 run down from 65 minutes to 17 by pipelining preprocessing against GPU, if that's useful to anyone.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Berat Kirbiyik",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/beratkirbiyik",
+         "tier": "CONTRIBUTOR",
+         "id": 28581274,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1234,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "KAGGLE",
+          "featuredUserNames": [
+           "salemali7"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Berat Kirbiyik",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/beratkirbiyik",
+          "userName": "beratkirbiyik",
+          "tier": "CONTRIBUTOR",
+          "id": 28581274,
+          "profileUrl": "/beratkirbiyik",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 28581274,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521384,
+        "postDate": "2026-09-05T17:11:36.443Z",
+        "rawMarkdown": "please help me what to do to reduce time",
+        "content": "<p>please help me what to do to reduce time</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Devguru Tiwari",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/dev123123456",
+         "tier": "CONTRIBUTOR",
+         "id": 34812965,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1484,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "x Clove",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26438960-kg.jpeg?t=2026-08-17-14-47-00",
+          "url": "/xclove",
+          "userName": "xclove",
+          "tier": "CONTRIBUTOR",
+          "id": 26438960,
+          "profileUrl": "/xclove",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 26438960,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521391,
+        "postDate": "2026-09-05T17:40:26.257Z",
+        "rawMarkdown": "I'm not using public labels.  I used Gemma 4 locally to extract labels from the reports.  I ran through it multiple times until it was \"good enough\" and they ended up being around .89.   I haven't tried public labels at all, like most people have said, I haven't really found a huge difference in the label quality right now.  My current LB best (0.949) is a single fold, single model and scores around .930 on gold.  I'm basically out of ideas right without sacrificing effeciency.\n\nScoring usually takes around 5 minutes, if that's helpful. ",
+        "content": "<p>I'm not using public labels.  I used Gemma 4 locally to extract labels from the reports.  I ran through it multiple times until it was \"good enough\" and they ended up being around .89.   I haven't tried public labels at all, like most people have said, I haven't really found a huge difference in the label quality right now.  My current LB best (0.949) is a single fold, single model and scores around .930 on gold.  I'm basically out of ideas right without sacrificing effeciency.</p>\n<p>Scoring usually takes around 5 minutes, if that's helpful. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Scott Willis",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/scottgwillis",
+         "tier": "CONTRIBUTOR",
+         "id": 17764997,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 7,
+         "canUpvote": true,
+         "totalUpvotes": 7
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "YAY",
+          "featuredUserNames": [
+           "taindow",
+           "ggayoayogg",
+           "dreaddevelopment"
+          ],
+          "userCount": 3
+         },
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "syhrull",
+           "salemali7",
+           "dreaddevelopment"
+          ],
+          "userCount": 3
+         },
+         {
+          "emoji": "SURPRISE",
+          "featuredUserNames": [
+           "saltedlemon",
+           "dreaddevelopment"
+          ],
+          "userCount": 2
+         },
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "dreaddevelopment"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Scott Willis",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/scottgwillis",
+          "userName": "scottgwillis",
+          "tier": "CONTRIBUTOR",
+          "id": 17764997,
+          "profileUrl": "/scottgwillis",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17764997,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521398,
+        "postDate": "2026-09-05T18:11:16.247Z",
+        "rawMarkdown": "Single fold, single model, 5 minute sub 0.949 is unreal haha I cant even process the images that fast right now",
+        "content": "<p>Single fold, single model, 5 minute sub 0.949 is unreal haha I cant even process the images that fast right now</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "timkrige",
+           "tuckerarrants",
+           "alessandroflati",
+           "jiangxiwu",
+           "ggayoayogg"
+          ],
+          "userCount": 5
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3522662,
+        "postDate": "2026-09-09T13:28:24.803Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3522684,
+        "postDate": "2026-09-09T14:54:03.640Z",
+        "rawMarkdown": "I've really only ever spent time on efficentnet and resnet.  I spent a little time on others but at least this point I want to see how much I can get out of them.",
+        "content": "<p>I've really only ever spent time on efficentnet and resnet.  I spent a little time on others but at least this point I want to see how much I can get out of them.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Scott Willis",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/scottgwillis",
+         "tier": "CONTRIBUTOR",
+         "id": 17764997,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 5
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "coolinlai"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Scott Willis",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/scottgwillis",
+          "userName": "scottgwillis",
+          "tier": "CONTRIBUTOR",
+          "id": 17764997,
+          "profileUrl": "/scottgwillis",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17764997,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Tom Aindow",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+       "url": "/taindow",
+       "tier": "MASTER",
+       "id": 921947,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 80,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Tom Aindow",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+        "url": "/taindow",
+        "userName": "taindow",
+        "tier": "MASTER",
+        "id": 921947,
+        "profileUrl": "/taindow",
+        "performanceTier": "MASTER",
+        "userId": 921947,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3522723,
+      "postDate": "2026-09-09T16:56:31.147Z",
+      "rawMarkdown": "> I'm at 0.938 with a single model, single fold.\n> \n> I'm also pretty new to all of this, so I'm going to assume that I'm missing a lot that I could be doing to help out my model.\n\nBro you are a beast man, appreciate the advice on this thread.",
+      "content": "<blockquote>\n  <p>I'm at 0.938 with a single model, single fold.</p>\n  <p>I'm also pretty new to all of this, so I'm going to assume that I'm missing a lot that I could be doing to help out my model.</p>\n</blockquote>\n<p>Bro you are a beast man, appreciate the advice on this thread.</p>",
+      "replies": [
+       {
+        "id": 3524586,
+        "postDate": "2026-09-15T10:37:19.463Z",
+        "rawMarkdown": "what base model did you use for this and where did you get/assemble your labels from ?",
+        "content": "<p>what base model did you use for this and where did you get/assemble your labels from ?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "MJ121212",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/mj121212",
+         "tier": "CONTRIBUTOR",
+         "id": 32583154,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1547,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "MJ121212",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/mj121212",
+          "userName": "mj121212",
+          "tier": "CONTRIBUTOR",
+          "id": 32583154,
+          "profileUrl": "/mj121212",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 32583154,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3524704,
+        "postDate": "2026-09-15T16:53:47.940Z",
+        "rawMarkdown": "I'm using a smaller resnet.  Honestly at this point I'd be shocked if I'm not overfitting and my score holds up on the private LB.",
+        "content": "<p>I'm using a smaller resnet.  Honestly at this point I'd be shocked if I'm not overfitting and my score holds up on the private LB.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Scott Willis",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/scottgwillis",
+         "tier": "CONTRIBUTOR",
+         "id": 17764997,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Scott Willis",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/scottgwillis",
+          "userName": "scottgwillis",
+          "tier": "CONTRIBUTOR",
+          "id": 17764997,
+          "profileUrl": "/scottgwillis",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17764997,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3524919,
+        "postDate": "2026-09-16T08:41:30.117Z",
+        "rawMarkdown": "@scottgwillis What makes you worry about overfitting the public LB ? You do have a lot of subs, but a single fold single model running in 5 min and reaching such high scores seems like a solid solution instead of a worrying one. Are you relying a lot on LB to make changes to your approach ? Do you have a good CV/LB correlation ? Did you tweak any parameter on LB alone ?",
+        "content": "<p><a href=\"/scottgwillis\" target=\"_blank\">@scottgwillis</a> What makes you worry about overfitting the public LB ? You do have a lot of subs, but a single fold single model running in 5 min and reaching such high scores seems like a solid solution instead of a worrying one. Are you relying a lot on LB to make changes to your approach ? Do you have a good CV/LB correlation ? Did you tweak any parameter on LB alone ?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Optimo",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+         "url": "/optimo",
+         "tier": "MASTER",
+         "id": 190923,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 53,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Optimo",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+          "url": "/optimo",
+          "userName": "optimo",
+          "tier": "MASTER",
+          "id": 190923,
+          "profileUrl": "/optimo",
+          "performanceTier": "MASTER",
+          "userId": 190923,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "huytngo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/huytngo",
+       "tier": "CONTRIBUTOR",
+       "id": 21647636,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 39,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "KAGGLE",
+        "featuredUserNames": [
+         "cody11null",
+         "mj121212"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Apoorv Saraogee",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35739363-kg.jpg?t=2026-08-12-03-25-20",
+        "url": "/apoorvsara",
+        "userName": "apoorvsara",
+        "tier": "CONTRIBUTOR",
+        "id": 35739363,
+        "profileUrl": "/apoorvsara",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 35739363,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3525008,
+      "postDate": "2026-09-16T15:17:39.617Z",
+      "rawMarkdown": "@scottgwillis  , Bro you are at the top , can you please give me some advice related how to get started , like I used public baseline at recieved 0.94 so what next step should I take or what was your strategy?",
+      "content": "<p><a href=\"/scottgwillis\" target=\"_blank\">@scottgwillis</a>  , Bro you are at the top , can you please give me some advice related how to get started , like I used public baseline at recieved 0.94 so what next step should I take or what was your strategy?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -9,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 278,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Scott Willis",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/scottgwillis",
+     "tier": "CONTRIBUTOR",
+     "id": 17764997,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "YAY",
+      "featuredUserNames": [
+       "komilparmar",
+       "telingc"
+      ],
+      "userCount": 2
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Scott Willis",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/scottgwillis",
+      "userName": "scottgwillis",
+      "tier": "CONTRIBUTOR",
+      "id": 17764997,
+      "profileUrl": "/scottgwillis",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 17764997,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513019,
+    "postDate": "2026-08-15T01:32:37.950Z",
+    "rawMarkdown": "In my option - 9 days into a competition is a very silly time to be wasting efforts refining ensemble models.  ",
+    "content": "<p>In my option - 9 days into a competition is a very silly time to be wasting efforts refining ensemble models.  </p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 8,
+     "canUpvote": true,
+     "totalUpvotes": 8
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 631,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "timkrige",
+       "ggayoayogg"
+      ],
+      "userCount": 2
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515050,
+    "postDate": "2026-08-20T16:49:30.603Z",
+    "rawMarkdown": "single(5-fold) model 0.926 @ 336px\n\nLLM output labels only",
+    "content": "<p>single(5-fold) model 0.926 @ 336px</p>\n<p>LLM output labels only</p>",
+    "replies": [
+     {
+      "id": 3515696,
+      "postDate": "2026-08-22T09:22:52.693Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1943,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513461,
+    "postDate": "2026-08-16T15:23:04.520Z",
+    "rawMarkdown": "Single model 0.934 @ 224px \n \nUpdate: 0.943 with some tweaks, still @ 224px",
+    "content": "<p>Single model 0.934 @ 224px </p>\n<p>Update: 0.943 with some tweaks, still @ 224px</p>",
+    "replies": [
+     {
+      "id": 3513553,
+      "postDate": "2026-08-17T00:32:44.853Z",
+      "rawMarkdown": "Is this a single fold, or N-fold ensemble?",
+      "content": "<p>Is this a single fold, or N-fold ensemble?</p>",
+      "replies": [
+       {
+        "id": 3513573,
+        "postDate": "2026-08-17T01:52:13.533Z",
+        "rawMarkdown": "5 fold ensemble",
+        "content": "<p>5 fold ensemble</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "prgckwb",
+           "ggayoayogg",
+           "etsushiyamamoto",
+           "nicolascayuela9"
+          ],
+          "userCount": 4
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3513878,
+        "postDate": "2026-08-17T21:00:36.593Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3513879,
+        "postDate": "2026-08-17T21:00:54.030Z",
+        "rawMarkdown": "Really impressive result at 224x, are you willing to give any insight into your approach, either labeling or modelling? My current thinking is that labeling can be a significant source of error, since many labels in the gold set do not agree with the reports when the diagnosis rules are applied strictly (e.g. small effusions being labeled as 1). ",
+        "content": "<p>Really impressive result at 224x, are you willing to give any insight into your approach, either labeling or modelling? My current thinking is that labeling can be a significant source of error, since many labels in the gold set do not agree with the reports when the diagnosis rules are applied strictly (e.g. small effusions being labeled as 1). </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom Aindow",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+         "url": "/taindow",
+         "tier": "MASTER",
+         "id": 921947,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 80,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tom Aindow",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+          "url": "/taindow",
+          "userName": "taindow",
+          "tier": "MASTER",
+          "id": 921947,
+          "profileUrl": "/taindow",
+          "performanceTier": "MASTER",
+          "userId": 921947,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3513883,
+        "postDate": "2026-08-17T21:33:40.020Z",
+        "rawMarkdown": "My label extraction is very crude - haven’t spent much time on it. But yes, I agree, I think it’s important here.\n\nThe model architecture is standard for these types of competitions and relatively small, currently taking around 25m for preprocessing and inference via submission scoring, including TTA. ",
+        "content": "<p>My label extraction is very crude - haven’t spent much time on it. But yes, I agree, I think it’s important here.</p>\n<p>The model architecture is standard for these types of competitions and relatively small, currently taking around 25m for preprocessing and inference via submission scoring, including TTA. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "taindow"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518445,
+        "postDate": "2026-08-30T23:06:46.997Z",
+        "rawMarkdown": "Are you guys only using the 58 to validate labels and then using the LB as your CV effectively? Or are you trusting the created labels to compute CV? Curious what some are getting for their CV and label scores compared to gold 58. ",
+        "content": "<p>Are you guys only using the 58 to validate labels and then using the LB as your CV effectively? Or are you trusting the created labels to compute CV? Curious what some are getting for their CV and label scores compared to gold 58. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518449,
+        "postDate": "2026-08-31T00:07:03.007Z",
+        "rawMarkdown": "I only validate against the report generated labels, never the provided labels. The sample size of the gold labels is just too small to resolve anything.\n\nI've only used the LB to check correlation between it and my report generated labels CV, which is, so far, strongly correlated. If the correlation breaks, might just treat it like BirdCLEF and use LB for CV.\n\nMy CV is around 0.87 - 0.9 depending on the generated labels used, all leading to the same ~0.94 leaderboard score. ",
+        "content": "<p>I only validate against the report generated labels, never the provided labels. The sample size of the gold labels is just too small to resolve anything.</p>\n<p>I've only used the LB to check correlation between it and my report generated labels CV, which is, so far, strongly correlated. If the correlation breaks, might just treat it like BirdCLEF and use LB for CV.</p>\n<p>My CV is around 0.87 - 0.9 depending on the generated labels used, all leading to the same ~0.94 leaderboard score. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "salemali7"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518458,
+        "postDate": "2026-08-31T01:02:56.787Z",
+        "rawMarkdown": "Great! That’s about what my plan was too! Have you tried comparing the score of your generated labels to the 58 gold? Same issues exist with small sample size and the domain issue of their being natural disagreement between experts. But curious if you’ve managed to score much differently than I have. I’m at about .9 AUC. And another method at .92 that I worry is probably just a bit too good to be true.",
+        "content": "<p>Great! That’s about what my plan was too! Have you tried comparing the score of your generated labels to the 58 gold? Same issues exist with small sample size and the domain issue of their being natural disagreement between experts. But curious if you’ve managed to score much differently than I have. I’m at about .9 AUC. And another method at .92 that I worry is probably just a bit too good to be true.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518459,
+        "postDate": "2026-08-31T01:10:38.977Z",
+        "rawMarkdown": "Yes I did a while back, the label extractor against gold is around yours, a bit lower I believe. Maybe 0.89. I've read the 58 reports of the gold labels, and my extraction is not missing anything - the reports genuinely do not contain the information required to generate the corresponding label, which is that domain issue you just mentioned. The radiologist writting the report either missed or simply did not care to report that particular label. \n\nSpent the last week or so getting \"better\" labels and none of it translated to the LB. Single prompt LLM extraction has not been beaten, outside of noise, by any more sophisticated extraction procedures that I have tried. ",
+        "content": "<p>Yes I did a while back, the label extractor against gold is around yours, a bit lower I believe. Maybe 0.89. I've read the 58 reports of the gold labels, and my extraction is not missing anything - the reports genuinely do not contain the information required to generate the corresponding label, which is that domain issue you just mentioned. The radiologist writting the report either missed or simply did not care to report that particular label. </p>\n<p>Spent the last week or so getting \"better\" labels and none of it translated to the LB. Single prompt LLM extraction has not been beaten, outside of noise, by any more sophisticated extraction procedures that I have tried. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518461,
+        "postDate": "2026-08-31T01:15:10.047Z",
+        "rawMarkdown": "I get the same result. Any time I try more than that my resulting curves definitely look like overfitting more than actual better labels. I assume the .89 you have also gets better results than the public .89? For me I did fair with public labels but using a different model got .9 and the cv is much much better. ",
+        "content": "<p>I get the same result. Any time I try more than that my resulting curves definitely look like overfitting more than actual better labels. I assume the .89 you have also gets better results than the public .89? For me I did fair with public labels but using a different model got .9 and the cv is much much better. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518462,
+        "postDate": "2026-08-31T01:25:26.263Z",
+        "rawMarkdown": "Exactly, I try not to look at the gold reports too much to avoid overfitting prompts to them. I actually haven't tried the public labels at all, as I am not totally sure how they were generated. My best current LB model is from my first pass at extraction, with thousands of verified extraction failures. I correct them, no change in LB. Image model \"student\" seems to consistently outperform the label extractor \"teacher\". Where it struggles are on the labels that are just poorly reported in general.",
+        "content": "<p>Exactly, I try not to look at the gold reports too much to avoid overfitting prompts to them. I actually haven't tried the public labels at all, as I am not totally sure how they were generated. My best current LB model is from my first pass at extraction, with thousands of verified extraction failures. I correct them, no change in LB. Image model \"student\" seems to consistently outperform the label extractor \"teacher\". Where it struggles are on the labels that are just poorly reported in general.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518464,
+        "postDate": "2026-08-31T01:28:32.797Z",
+        "rawMarkdown": "Maybe I am not as far off as I thought then. Thanks so much for sharing, bringing back the kaggle spirit! ",
+        "content": "<p>Maybe I am not as far off as I thought then. Thanks so much for sharing, bringing back the kaggle spirit! </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518466,
+        "postDate": "2026-08-31T01:40:14.840Z",
+        "rawMarkdown": "Of course. I could be wrong, but I lean more \"extracted labels are probably fine\" than \"extracted labels are the main lever to pull here\". I'm not the best with this whole LLM thing, but based on all the work I've done with labels so far, it has not made a difference. The fundamental challenge is that report->label vs. image->label gap, which no amount of extraction tweaking can fix.",
+        "content": "<p>Of course. I could be wrong, but I lean more \"extracted labels are probably fine\" than \"extracted labels are the main lever to pull here\". I'm not the best with this whole LLM thing, but based on all the work I've done with labels so far, it has not made a difference. The fundamental challenge is that report-&gt;label vs. image-&gt;label gap, which no amount of extraction tweaking can fix.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518471,
+        "postDate": "2026-08-31T01:58:30.613Z",
+        "rawMarkdown": "I am personally much better with LLMs than image models and I think LLMs would be the main lever if there wasnt such a grey area there in the middle. The actual difference between a .92 and a .89 cv on those 58 gold samples is really explained by just small disagreement between only a few samples which would be natural in the field. So I think here it could be a difference but THE difference would probably be more about how you actually handle labels in modeling. At least thats my take on it, going to be fun to see how it all goes in the end!",
+        "content": "<p>I am personally much better with LLMs than image models and I think LLMs would be the main lever if there wasnt such a grey area there in the middle. The actual difference between a .92 and a .89 cv on those 58 gold samples is really explained by just small disagreement between only a few samples which would be natural in the field. So I think here it could be a difference but THE difference would probably be more about how you actually handle labels in modeling. At least thats my take on it, going to be fun to see how it all goes in the end!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518522,
+        "postDate": "2026-08-31T07:05:15.310Z",
+        "rawMarkdown": "It does seem like in many cases the reports just don't contain the information and clever \"fixes\" end up overfitting to the 58 set. Some of the disagreements are also interesting, could be different diagnosis policies or missing context (e.g. previous MRI/x-ray). Maybe I'll find a radiologist to look at some examples. ",
+        "content": "<p>It does seem like in many cases the reports just don't contain the information and clever \"fixes\" end up overfitting to the 58 set. Some of the disagreements are also interesting, could be different diagnosis policies or missing context (e.g. previous MRI/x-ray). Maybe I'll find a radiologist to look at some examples. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "tennogh",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+         "url": "/tennogh",
+         "tier": "MASTER",
+         "id": 3991745,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 8,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "syamoji141",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+          "url": "/syamoji141chan",
+          "userName": "syamoji141chan",
+          "tier": "EXPERT",
+          "id": 5570066,
+          "profileUrl": "/syamoji141chan",
+          "performanceTier": "EXPERT",
+          "userId": 5570066,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3518960,
+        "postDate": "2026-08-31T22:26:29.457Z",
+        "rawMarkdown": "I completely agree with your point. i came to the exact same conclusion: due to the inherent noise in the data and the fact that radiologists simply don't mention everything in their reports, the report->label mapping can never truly equal the image->label reality. Just like in your experience, i found that no matter how much I tried to refine and tweak the labels, it had no meaningful impact on the LB.\n​Since the image model (Student) manages to bypass these textual gaps and detect the true visual features, have you tried using the model's high-confidence predictions to relabel the noisy data and train iteratively? or do you avoid this to prevent a confirmation bias",
+        "content": "<p>I completely agree with your point. i came to the exact same conclusion: due to the inherent noise in the data and the fact that radiologists simply don't mention everything in their reports, the report-&gt;label mapping can never truly equal the image-&gt;label reality. Just like in your experience, i found that no matter how much I tried to refine and tweak the labels, it had no meaningful impact on the LB.\n​Since the image model (Student) manages to bypass these textual gaps and detect the true visual features, have you tried using the model's high-confidence predictions to relabel the noisy data and train iteratively? or do you avoid this to prevent a confirmation bias</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Salem Ali",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+         "url": "/salemali7",
+         "tier": "EXPERT",
+         "id": 32974286,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 182,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Salem Ali",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32974286-kg.png?t=2026-08-26-23-19-53",
+          "url": "/salemali7",
+          "userName": "salemali7",
+          "tier": "EXPERT",
+          "id": 32974286,
+          "profileUrl": "/salemali7",
+          "performanceTier": "EXPERT",
+          "userId": 32974286,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3519005,
+        "postDate": "2026-09-01T00:33:33.983Z",
+        "rawMarkdown": "Yes, its a good idea and worth trying. But you certainly can't validate against labels you repair or your CV will improve by definition. Would be like pseudo labeling then validating against your pseudo labels. ",
+        "content": "<p>Yes, its a good idea and worth trying. But you certainly can't validate against labels you repair or your CV will improve by definition. Would be like pseudo labeling then validating against your pseudo labels. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "salemali7"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521265,
+        "postDate": "2026-09-05T10:56:37.857Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3521401,
+        "postDate": "2026-09-05T18:39:12.240Z",
+        "rawMarkdown": "I use them in training, but not for validation. They make up around 1.3% of loss mass so not going to make much difference with or without, but they are not useful for CV so might as well train with them so they aren't completely wasted.",
+        "content": "<p>I use them in training, but not for validation. They make up around 1.3% of loss mass so not going to make much difference with or without, but they are not useful for CV so might as well train with them so they aren't completely wasted.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "coolinlai"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tucker Arrants",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+          "url": "/tuckerarrants",
+          "userName": "tuckerarrants",
+          "tier": "MASTER",
+          "id": 4379159,
+          "profileUrl": "/tuckerarrants",
+          "performanceTier": "MASTER",
+          "userId": 4379159,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3521514,
+        "postDate": "2026-09-06T06:54:14.960Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Chikuwabu",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+       "url": "/prgckwb",
+       "tier": "MASTER",
+       "id": 9945255,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 28,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Chikuwabu",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+        "url": "/prgckwb",
+        "userName": "prgckwb",
+        "tier": "MASTER",
+        "id": 9945255,
+        "profileUrl": "/prgckwb",
+        "performanceTier": "MASTER",
+        "userId": 9945255,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3515988,
+      "postDate": "2026-08-22T16:55:59.833Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     },
+     {
+      "id": 3521095,
+      "postDate": "2026-09-04T20:53:32.327Z",
+      "rawMarkdown": "Hi Tucker — we're the team at 0.943 (charlessavas). Your posts on label handling match what we've measured: we probed public per-target AUC by column ablation, priced the report-to-image label ceiling per target, and built a one-hour harness that A/B tests any external model against our 8-signal ensemble.\n\nOur lineup is DINOv2-MIL-heavy; yours sounds highly decorrelated from it. Our one external arm (correlation 0.83) was worth +0.004 public across four submissions.\n\nProposal: compare model and validation evidence first. If the families look independent, merge through Kaggle; then measure prediction correlation inside the team before changing either pipeline. A combination plausibly gives us a path through the current 0.949 top-10 cutoff. We'd bring the probe map, the external-integration harness, and a documented do-not-retry log of about 40 dead ends. Interested?",
+      "content": "<p>Hi Tucker — we're the team at 0.943 (charlessavas). Your posts on label handling match what we've measured: we probed public per-target AUC by column ablation, priced the report-to-image label ceiling per target, and built a one-hour harness that A/B tests any external model against our 8-signal ensemble.</p>\n<p>Our lineup is DINOv2-MIL-heavy; yours sounds highly decorrelated from it. Our one external arm (correlation 0.83) was worth +0.004 public across four submissions.</p>\n<p>Proposal: compare model and validation evidence first. If the families look independent, merge through Kaggle; then measure prediction correlation inside the team before changing either pipeline. A combination plausibly gives us a path through the current 0.949 top-10 cutoff. We'd bring the probe map, the external-integration harness, and a documented do-not-retry log of about 40 dead ends. Interested?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Charles Savas",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34721175-gr.jpg",
+       "url": "/charlessavas",
+       "tier": "CONTRIBUTOR",
+       "id": 34721175,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -6,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 234,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Charles Savas",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34721175-gr.jpg",
+        "url": "/charlessavas",
+        "userName": "charlessavas",
+        "tier": "CONTRIBUTOR",
+        "id": 34721175,
+        "profileUrl": "/charlessavas",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 34721175,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513077,
+    "postDate": "2026-08-15T06:46:10.823Z",
+    "rawMarkdown": "Single model 0.915, DinoV2 based. \n\nHighly doubt the top results are ensembles, look at the [efficiency lb](https://www.kaggle.com/code/ryanholbrook/rsna-knee-abnormalities-efficiency-lb), you can see many high scoring submissions also have decent run times, i.e. they're not running 20 different models.\n\nPublic notebooks just ensemble early on to try and get a high leaderboard score and exposure/kudos on their notebooks. Waste of time IMO.",
+    "content": "<p>Single model 0.915, DinoV2 based. </p>\n<p>Highly doubt the top results are ensembles, look at the <a href=\"https://www.kaggle.com/code/ryanholbrook/rsna-knee-abnormalities-efficiency-lb\" target=\"_blank\">efficiency lb</a>, you can see many high scoring submissions also have decent run times, i.e. they're not running 20 different models.</p>\n<p>Public notebooks just ensemble early on to try and get a high leaderboard score and exposure/kudos on their notebooks. Waste of time IMO.</p>",
+    "replies": [
+     {
+      "id": 3513424,
+      "postDate": "2026-08-16T12:51:42.463Z",
+      "rawMarkdown": "Single model 0.92 is impressive. Would you mind sharing the input geometry you landed on — resolution, physical crop in mm, and slices per series?\n\nWe're at 0.826 with 192px / 9 slices / 4 sequence slots and trying to work out whether our ceiling is the input pipeline or the model itself.",
+      "content": "<p>Single model 0.92 is impressive. Would you mind sharing the input geometry you landed on — resolution, physical crop in mm, and slices per series?</p>\n<p>We're at 0.826 with 192px / 9 slices / 4 sequence slots and trying to work out whether our ceiling is the input pipeline or the model itself.</p>",
+      "replies": [
+       {
+        "id": 3513433,
+        "postDate": "2026-08-16T13:27:02.583Z",
+        "rawMarkdown": "Sharing is quite revealing on my methods. What I can strongly suggest - look at the images your model sees. Does it look detailed enough? Do you think 192px is sufficient to see mm level details? \n\nI find playing with the pipeline is crucial.  If I can it see the details, how could a model?\n\nDo research on the labels. Learn what the model needs to see. Llms are very wrong a lot of the time here without careful guidance.",
+        "content": "<p>Sharing is quite revealing on my methods. What I can strongly suggest - look at the images your model sees. Does it look detailed enough? Do you think 192px is sufficient to see mm level details? </p>\n<p>I find playing with the pipeline is crucial.  If I can it see the details, how could a model?</p>\n<p>Do research on the labels. Learn what the model needs to see. Llms are very wrong a lot of the time here without careful guidance.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tim Krige",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+         "url": "/timkrige",
+         "tier": "EXPERT",
+         "id": 3326547,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1201,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "ibadia",
+           "beratkirbiyik",
+           "nicolascayuela9"
+          ],
+          "userCount": 3
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tim Krige",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+          "url": "/timkrige",
+          "userName": "timkrige",
+          "tier": "EXPERT",
+          "id": 3326547,
+          "profileUrl": "/timkrige",
+          "performanceTier": "EXPERT",
+          "userId": 3326547,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3513877,
+        "postDate": "2026-08-17T20:55:27.327Z",
+        "rawMarkdown": "Sure, I'm using 392x with 150mm center crop (0.383 mm/px) and I randomly sample a bag of 32 slices per study across all studies during training. I'm still not quite sure what does and doesn't work here. I suspect that labels may actually be one of the most important parts.",
+        "content": "<p>Sure, I'm using 392x with 150mm center crop (0.383 mm/px) and I randomly sample a bag of 32 slices per study across all studies during training. I'm still not quite sure what does and doesn't work here. I suspect that labels may actually be one of the most important parts.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom Aindow",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+         "url": "/taindow",
+         "tier": "MASTER",
+         "id": 921947,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 80,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tom Aindow",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+          "url": "/taindow",
+          "userName": "taindow",
+          "tier": "MASTER",
+          "id": 921947,
+          "profileUrl": "/taindow",
+          "performanceTier": "MASTER",
+          "userId": 921947,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Berat Kirbiyik",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/beratkirbiyik",
+       "tier": "CONTRIBUTOR",
+       "id": 28581274,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1234,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Berat Kirbiyik",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/beratkirbiyik",
+        "userName": "beratkirbiyik",
+        "tier": "CONTRIBUTOR",
+        "id": 28581274,
+        "profileUrl": "/beratkirbiyik",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 28581274,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tom Aindow",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+     "url": "/taindow",
+     "tier": "MASTER",
+     "id": 921947,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 5,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 80,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tom Aindow",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+      "url": "/taindow",
+      "userName": "taindow",
+      "tier": "MASTER",
+      "id": 921947,
+      "profileUrl": "/taindow",
+      "performanceTier": "MASTER",
+      "userId": 921947,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513030,
+    "postDate": "2026-08-15T03:07:13.947Z",
+    "rawMarkdown": "A single model actually works much better than you'd expect.",
+    "content": "<p>A single model actually works much better than you'd expect.</p>",
+    "replies": [
+     {
+      "id": 3521524,
+      "postDate": "2026-09-06T08:11:11.087Z",
+      "rawMarkdown": "Could you tell me the labels you are using. Since, i dont have any personal labels and using public available labels. Also, any hint on how to improve methodology will be helpful. Thank you in adv man.",
+      "content": "<p>Could you tell me the labels you are using. Since, i dont have any personal labels and using public available labels. Also, any hint on how to improve methodology will be helpful. Thank you in adv man.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Devguru Tiwari",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/dev123123456",
+       "tier": "CONTRIBUTOR",
+       "id": 34812965,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1484,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "x Clove",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26438960-kg.jpeg?t=2026-08-17-14-47-00",
+        "url": "/xclove",
+        "userName": "xclove",
+        "tier": "CONTRIBUTOR",
+        "id": 26438960,
+        "profileUrl": "/xclove",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 26438960,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chikuwabu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+     "url": "/prgckwb",
+     "tier": "MASTER",
+     "id": 9945255,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 28,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chikuwabu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+      "url": "/prgckwb",
+      "userName": "prgckwb",
+      "tier": "MASTER",
+      "id": 9945255,
+      "profileUrl": "/prgckwb",
+      "performanceTier": "MASTER",
+      "userId": 9945255,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513182,
+    "postDate": "2026-08-15T14:37:39.307Z",
+    "rawMarkdown": "I am on a single model. OOF AUC = LB AUC within noise, 0.92. ",
+    "content": "<p>I am on a single model. OOF AUC = LB AUC within noise, 0.92. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tim Krige",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+     "url": "/timkrige",
+     "tier": "EXPERT",
+     "id": 3326547,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1201,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tim Krige",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+      "url": "/timkrige",
+      "userName": "timkrige",
+      "tier": "EXPERT",
+      "id": 3326547,
+      "profileUrl": "/timkrige",
+      "performanceTier": "EXPERT",
+      "userId": 3326547,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528431,
+    "postDate": "2026-09-26T04:23:38.427Z",
+    "rawMarkdown": "I was thinking a CNN would work best",
+    "content": "<p>I was thinking a CNN would work best</p>",
+    "parent": {},
+    "author": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "OmerZalman",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/omerzalman",
+      "userName": "omerzalman",
+      "tier": "CONTRIBUTOR",
+      "id": 29641607,
+      "profileUrl": "/omerzalman",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29641607,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3525010,
+    "postDate": "2026-09-16T15:28:32.040Z",
+    "rawMarkdown": "I'm at 0.930 with a single model (CoAtNet, 1h22min), and I haven't tried ensembles yet.",
+    "content": "<p>I'm at 0.930 with a single model (CoAtNet, 1h22min), and I haven't tried ensembles yet.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "kmn",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9406233-kg.png?t=2025-09-07-06-58-40",
+     "url": "/kmatsu01",
+     "tier": "EXPERT",
+     "id": 9406233,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1892,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "kmn",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9406233-kg.png?t=2025-09-07-06-58-40",
+      "url": "/kmatsu01",
+      "userName": "kmatsu01",
+      "tier": "EXPERT",
+      "id": 9406233,
+      "profileUrl": "/kmatsu01",
+      "performanceTier": "EXPERT",
+      "userId": 9406233,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515698,
+    "postDate": "2026-08-22T09:23:36.857Z",
+    "rawMarkdown": "single(5-fold) model 0.929 @ 224px\n\nLLM output labels only",
+    "content": "<p>single(5-fold) model 0.929 @ 224px</p>\n<p>LLM output labels only</p>",
+    "replies": [
+     {
+      "id": 3520188,
+      "postDate": "2026-09-02T23:36:04.997Z",
+      "rawMarkdown": "What LLM did you use?",
+      "content": "<p>What LLM did you use?</p>",
+      "replies": [
+       {
+        "id": 3520505,
+        "postDate": "2026-09-03T15:07:19.433Z",
+        "rawMarkdown": "im using \"astra\" lol",
+        "content": "<p>im using \"astra\" lol</p>",
+        "parent": {},
+        "author": {
+         "displayName": "diet1236364",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+         "url": "/kosuke123",
+         "tier": "CONTRIBUTOR",
+         "id": 22231354,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 35,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "daveconnor"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "diet1236364",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+          "url": "/kosuke123",
+          "userName": "kosuke123",
+          "tier": "CONTRIBUTOR",
+          "id": 22231354,
+          "profileUrl": "/kosuke123",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 22231354,
+          "progressionOptOut": false
+         },
+         "intro": "winable"
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Saicharan Ramineni",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33573923-gr.jpg",
+       "url": "/godlydonuts",
+       "tier": "CONTRIBUTOR",
+       "id": 33573923,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 716,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "FUNNY",
+        "featuredUserNames": [
+         "kosuke123"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Saicharan Ramineni",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33573923-gr.jpg",
+        "url": "/godlydonuts",
+        "userName": "godlydonuts",
+        "tier": "CONTRIBUTOR",
+        "id": 33573923,
+        "profileUrl": "/godlydonuts",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 33573923,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "diet1236364",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+     "url": "/kosuke123",
+     "tier": "CONTRIBUTOR",
+     "id": 22231354,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 35,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "diet1236364",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+      "url": "/kosuke123",
+      "userName": "kosuke123",
+      "tier": "CONTRIBUTOR",
+      "id": 22231354,
+      "profileUrl": "/kosuke123",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 22231354,
+      "progressionOptOut": false
+     },
+     "intro": "winable"
+    }
+   },
+   {
+    "id": 3513661,
+    "postDate": "2026-08-17T09:09:42.770Z",
+    "rawMarkdown": "I’d like to ask how long it usually takes to train a model using DINOv2. Also, roughly how much computational resources are required for this competition?\n",
+    "content": "<p>I’d like to ask how long it usually takes to train a model using DINOv2. Also, roughly how much computational resources are required for this competition?</p>",
+    "replies": [
+     {
+      "id": 3513671,
+      "postDate": "2026-08-17T09:44:32.100Z",
+      "rawMarkdown": "This is a hard question to answer. Dino has a variety of sizes, small to huge. Within a size there are layers, with larger sized having more layers. In some competitions there have been amazing results from the pretrained dino weights and only finetuned heads. Others require unfreezing a few of the last layers, and still other competitions benefit from a full backbone unfreeze. The more of the backbone you unfreeze the more VRAM and GPU speed  you need. I am finding strong correlations between number of layers unfrozen and score, but I only have limited vram so I am typically training the smallest dino's.\n\nI am on a 3070 and a 5070ti for most of my training. Models take a day or so to train 5 folds. \n\nA good technique on a tiny model is better than just throwing data at a large model and hoping compute can solve it, typically. You would also learn more like this.\n\nI hope this helps. ",
+      "content": "<p>This is a hard question to answer. Dino has a variety of sizes, small to huge. Within a size there are layers, with larger sized having more layers. In some competitions there have been amazing results from the pretrained dino weights and only finetuned heads. Others require unfreezing a few of the last layers, and still other competitions benefit from a full backbone unfreeze. The more of the backbone you unfreeze the more VRAM and GPU speed  you need. I am finding strong correlations between number of layers unfrozen and score, but I only have limited vram so I am typically training the smallest dino's.</p>\n<p>I am on a 3070 and a 5070ti for most of my training. Models take a day or so to train 5 folds. </p>\n<p>A good technique on a tiny model is better than just throwing data at a large model and hoping compute can solve it, typically. You would also learn more like this.</p>\n<p>I hope this helps. </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Tim Krige",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+       "url": "/timkrige",
+       "tier": "EXPERT",
+       "id": 3326547,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1201,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "ajisamudra",
+         "enaimaan",
+         "komilparmar",
+         "mattagar",
+         "kentorio"
+        ],
+        "userCount": 5
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Tim Krige",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+        "url": "/timkrige",
+        "userName": "timkrige",
+        "tier": "EXPERT",
+        "id": 3326547,
+        "profileUrl": "/timkrige",
+        "performanceTier": "EXPERT",
+        "userId": 3326547,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Aic",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23193939-kg.jpg?t=2026-08-14-06-54-39",
+     "url": "/gunianxue",
+     "tier": "EXPERT",
+     "id": 23193939,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1758,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Aic",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23193939-kg.jpg?t=2026-08-14-06-54-39",
+      "url": "/gunianxue",
+      "userName": "gunianxue",
+      "tier": "EXPERT",
+      "id": 23193939,
+      "profileUrl": "/gunianxue",
+      "performanceTier": "EXPERT",
+      "userId": 23193939,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3527217,
+    "postDate": "2026-09-23T07:06:59.967Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3521115,
+    "postDate": "2026-09-04T22:42:46.270Z",
+    "rawMarkdown": "",
+    "replies": [
+     {
+      "id": 3521218,
+      "postDate": "2026-09-05T08:15:52.937Z",
+      "rawMarkdown": "I think different architectures can still complement each other, so I’m not fully convinced that ensembling is just averaging the same label noise. Right now, the most promising direction to me feels like: good labels + a strong single model + a few truly complementary models blended together.",
+      "content": "<p>I think different architectures can still complement each other, so I’m not fully convinced that ensembling is just averaging the same label noise. Right now, the most promising direction to me feels like: good labels + a strong single model + a few truly complementary models blended together.</p>",
+      "replies": [
+       {
+        "id": 3521436,
+        "postDate": "2026-09-05T22:06:23.003Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1
+        },
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1065,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "SpeedSci",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+        "url": "/caoyupeng",
+        "userName": "caoyupeng",
+        "tier": "EXPERT",
+        "id": 26421714,
+        "profileUrl": "/caoyupeng",
+        "performanceTier": "EXPERT",
+        "userId": 26421714,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3521219,
+      "postDate": "2026-09-05T08:20:15.810Z",
+      "rawMarkdown": "I’m a bit confused about something and wanted to ask: in my experiments, v10 labels + DINOv2 outperformed v9 labels + DINOv2 — but when I switched to ConvNeXt, v9 labels + ConvNeXt actually did better than v10 labels + ConvNeXt.\n\nIt seems like different architectures have different \"ability\" to benefit from label improvements. Has anyone else run into something similar?",
+      "content": "<p>I’m a bit confused about something and wanted to ask: in my experiments, v10 labels + DINOv2 outperformed v9 labels + DINOv2 — but when I switched to ConvNeXt, v9 labels + ConvNeXt actually did better than v10 labels + ConvNeXt.</p>\n<p>It seems like different architectures have different \"ability\" to benefit from label improvements. Has anyone else run into something similar?</p>",
+      "replies": [
+       {
+        "id": 3521431,
+        "postDate": "2026-09-05T21:55:27.987Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "caoyupeng"
+          ],
+          "userCount": 1
+         }
+        ]
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1065,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "SpeedSci",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+        "url": "/caoyupeng",
+        "userName": "caoyupeng",
+        "tier": "EXPERT",
+        "id": 26421714,
+        "profileUrl": "/caoyupeng",
+        "performanceTier": "EXPERT",
+        "userId": 26421714,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -3
+    },
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513000,
+   "postDate": "2026-08-14T23:38:09.840Z",
+   "rawMarkdown": "What is the best score you’ve achieved with a single model?\n\nI’m trying to train a strong single model first before moving on to ensembling, and I’m curious how far a single model can go.\n\nI’ve noticed that most of the public solutions use ensembles of 20+ models and achieve around 0.91. For those scoring around 0.92–0.94 on the leaderboard, are you also using ensembles, or is it possible to reach that range with a single model?\n\nFor reference, my current best score is 0.887 with DINOv2.",
+   "content": "<p>What is the best score you’ve achieved with a single model?</p>\n<p>I’m trying to train a strong single model first before moving on to ensembling, and I’m curious how far a single model can go.</p>\n<p>I’ve noticed that most of the public solutions use ensembles of 20+ models and achieve around 0.91. For those scoring around 0.92–0.94 on the leaderboard, are you also using ensembles, or is it possible to reach that range with a single model?</p>\n<p>For reference, my current best score is 0.887 with DINOv2.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "roy214",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17990524-gr.jpg",
+    "url": "/phamgianguyen",
+    "tier": "CONTRIBUTOR",
+    "id": 17990524,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 61,
+    "canUpvote": true,
+    "totalUpvotes": 61
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2463,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "roy214",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17990524-gr.jpg",
+     "url": "/phamgianguyen",
+     "userName": "phamgianguyen",
+     "tier": "CONTRIBUTOR",
+     "id": 17990524,
+     "profileUrl": "/phamgianguyen",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 17990524,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513000,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735304,
+  "name": "Best single-model score",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-14T23:38:09.839930500Z",
+  "totalVotes": 61,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735304",
+  "totalMessages": 98,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "roy214",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17990524-gr.jpg",
+   "url": "/phamgianguyen",
+   "tier": "CONTRIBUTOR",
+   "id": 17990524,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 101,
+  "firstForumMessageId": 3513000,
+  "id": 735304,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Dhiyanesh Babu C V",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735304#3528776",
+  "lastCommentPostDate": "2026-09-26T13:37:14.316666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-14T23:38:09.839930500Z",
+  "title": "Best single-model score",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735304",
+  "votes": 62,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "roy214",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17990524-gr.jpg",
+    "url": "/phamgianguyen",
+    "userName": "phamgianguyen",
+    "tier": "CONTRIBUTOR",
+    "id": 17990524,
+    "profileUrl": "/phamgianguyen",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 17990524,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

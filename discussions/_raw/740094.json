@@ -1,0 +1,137 @@
+{
+ "forumTopic": {
+  "authorId": 36514470,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Piterson465",
+  "authorUserName": "piterson465",
+  "comments": [
+   {
+    "id": 3523639,
+    "postDate": "2026-09-12T08:25:10.567Z",
+    "rawMarkdown": "Good questions. I would handle both cases defensively in the submission:\n\n1. For a single-class label, do not assume that the scorer skips the column or substitutes 0.5. In local validation, `roc_auc_score` is undefined for a single class, so the exact competition behavior should be confirmed by the host.\n\n2. For corrupted DICOMs, wrap `pixel_array` in a guarded loader, log the failure, and use a deterministic fallback such as a neighboring valid slice or a zero-filled image. This prevents one malformed study from crashing the entire submission.\n\nUntil the host confirms the scorer behavior and test-data guarantees, treating both cases defensively is the safest approach.",
+    "content": "<p>Good questions. I would handle both cases defensively in the submission:</p>\n<ol>\n<li><p>For a single-class label, do not assume that the scorer skips the column or substitutes 0.5. In local validation, <code>roc_auc_score</code> is undefined for a single class, so the exact competition behavior should be confirmed by the host.</p></li>\n<li><p>For corrupted DICOMs, wrap <code>pixel_array</code> in a guarded loader, log the failure, and use a deterministic fallback such as a neighboring valid slice or a zero-filled image. This prevents one malformed study from crashing the entire submission.</p></li>\n</ol>\n<p>Until the host confirms the scorer behavior and test-data guarantees, treating both cases defensively is the safest approach.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "ParsaAshrafi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29822703-kg.jpg?t=2026-09-14-10-51-18",
+     "url": "/parsaashrafii",
+     "tier": "CONTRIBUTOR",
+     "id": 29822703,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1035,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "ParsaAshrafi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29822703-kg.jpg?t=2026-09-14-10-51-18",
+      "url": "/parsaashrafii",
+      "userName": "parsaashrafii",
+      "tier": "CONTRIBUTOR",
+      "id": 29822703,
+      "profileUrl": "/parsaashrafii",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29822703,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3522136,
+   "postDate": "2026-09-08T08:13:14.300Z",
+   "rawMarkdown": "Two narrow questions about how the evaluation behaves in edge cases. Both change\nhow a submission is built, so I would rather ask than guess.\n\n1. Single-class label columns.\n   The metric is the unweighted mean of 12 per-label ROC AUCs. If one of the 12\n   label columns happens to contain only one class in the private test set, what\n   does the scorer do with it: skip that column and average over the remaining\n   ones, substitute 0.5, or does the submission error out? With 12 labels and the\n   rarer findings this seems worth pinning down, because \"skip\" and \"substitute\n   0.5\" give materially different macro scores for the same predictions.\n\n2. Corrupted DICOMs in the test set.\n   Two threads report training studies whose PixelData is truncated relative to\n   the Group 0028 header, so pydicom raises ValueError on .pixel_array\n   (discussion/738708 and discussion/737163). Are the test studies known to be\n   free of this, or should submissions be written to survive it? A single\n   unhandled file would turn a working submission into a zero, so if the test set\n   is not guaranteed clean it would help everyone to say so explicitly.\n\nThanks!",
+   "content": "<p>Two narrow questions about how the evaluation behaves in edge cases. Both change\nhow a submission is built, so I would rather ask than guess.</p>\n<ol>\n<li><p>Single-class label columns.\nThe metric is the unweighted mean of 12 per-label ROC AUCs. If one of the 12\nlabel columns happens to contain only one class in the private test set, what\ndoes the scorer do with it: skip that column and average over the remaining\nones, substitute 0.5, or does the submission error out? With 12 labels and the\nrarer findings this seems worth pinning down, because \"skip\" and \"substitute\n0.5\" give materially different macro scores for the same predictions.</p></li>\n<li><p>Corrupted DICOMs in the test set.\nTwo threads report training studies whose PixelData is truncated relative to\nthe Group 0028 header, so pydicom raises ValueError on .pixel_array\n(discussion/738708 and discussion/737163). Are the test studies known to be\nfree of this, or should submissions be written to survive it? A single\nunhandled file would turn a working submission into a zero, so if the test set\nis not guaranteed clean it would help everyone to say so explicitly.</p></li>\n</ol>\n<p>Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Piterson465",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/piterson465",
+    "tier": "CONTRIBUTOR",
+    "id": 36514470,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2115,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Piterson465",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/piterson465",
+     "userName": "piterson465",
+     "tier": "CONTRIBUTOR",
+     "id": 36514470,
+     "profileUrl": "/piterson465",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36514470,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3522136,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 740094,
+  "name": "Metric edge cases: single-class label columns, and corrupted DICOMs in the test set",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-08T08:13:14.300191400Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/740094",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Piterson465",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/piterson465",
+   "tier": "CONTRIBUTOR",
+   "id": 36514470,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3522136,
+  "id": 740094,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "ParsaAshrafi",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740094#3523639",
+  "lastCommentPostDate": "2026-09-12T08:25:10.566666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-08T08:13:14.300191400Z",
+  "title": "Metric edge cases: single-class label columns, and corrupted DICOMs in the test set",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740094",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Piterson465",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/piterson465",
+    "userName": "piterson465",
+    "tier": "CONTRIBUTOR",
+    "id": 36514470,
+    "profileUrl": "/piterson465",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36514470,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

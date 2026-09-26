@@ -1,0 +1,142 @@
+{
+ "forumTopic": {
+  "authorId": 34302508,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Alejandro Zorrilla Bejarano",
+  "authorUserName": "alejandrozobe",
+  "comments": [
+   {
+    "id": 3517385,
+    "postDate": "2026-08-27T01:58:01.017Z",
+    "rawMarkdown": "As a radiologist, if I do not mention a fracture on a knee MRI, it means that I did not see a fracture. I think that most radiologist would do the same for meniscal or fligamentous tear.  For osteoarthtitis it may not be so clear cut, as there are a lot of different way to describe osteoarthritis without mentioning it directly, but by describing it (cartilage loss, chondromalasia, cartilage fissuring, cartilage thinning, osteophytes, etc)",
+    "content": "<p>As a radiologist, if I do not mention a fracture on a knee MRI, it means that I did not see a fracture. I think that most radiologist would do the same for meniscal or fligamentous tear.  For osteoarthtitis it may not be so clear cut, as there are a lot of different way to describe osteoarthritis without mentioning it directly, but by describing it (cartilage loss, chondromalasia, cartilage fissuring, cartilage thinning, osteophytes, etc)</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Amil Gentili",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/agentili",
+     "tier": "EXPERT",
+     "id": 1451372,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 488,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Amil Gentili",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/agentili",
+      "userName": "agentili",
+      "tier": "EXPERT",
+      "id": 1451372,
+      "profileUrl": "/agentili",
+      "performanceTier": "EXPERT",
+      "userId": 1451372,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517259,
+   "postDate": "2026-08-26T15:41:54.453Z",
+   "rawMarkdown": "Hi all,\n\nWorking on generating weak labels from the report text for the 4,349 unlabelled studies (keyword + negation approach, no LLM). One design question I haven't fully settled:\n\nWhen a finding (e.g. Fracture) is never mentioned in the report at all, should the weak label be:\n(a) 0 (absence) - reasoning: radiologists systematically report what they see, so silence implies absence. Under this closed-world assumption, if a report doesn't mention a finding at all, it's effectively a negative statement by omission - the same way a report doesn't need to say \"no headache, shoulder not broken\" for every possible unrelated finding; it only mentions what's relevant/present, or\n(b) an explicit \"unknown/not mentioned\" state - reasoning: reports vary a lot in style/completeness across institutions, so silence might just mean the radiologist didn't comment on it.\n\nI saw the report by another user comparing against a published LLM label set (topic 733932/734055) that used an explicit refusal code rather than forcing binary - curious if others have thoughts on which assumption holds better here, especially given how varied report length/style is across the 10+ languages in this dataset.\n\nAny data points (even anecdotal, from manually reading a few reports) would help. Thanks!",
+   "content": "<p>Hi all,</p>\n<p>Working on generating weak labels from the report text for the 4,349 unlabelled studies (keyword + negation approach, no LLM). One design question I haven't fully settled:</p>\n<p>When a finding (e.g. Fracture) is never mentioned in the report at all, should the weak label be:\n(a) 0 (absence) - reasoning: radiologists systematically report what they see, so silence implies absence. Under this closed-world assumption, if a report doesn't mention a finding at all, it's effectively a negative statement by omission - the same way a report doesn't need to say \"no headache, shoulder not broken\" for every possible unrelated finding; it only mentions what's relevant/present, or\n(b) an explicit \"unknown/not mentioned\" state - reasoning: reports vary a lot in style/completeness across institutions, so silence might just mean the radiologist didn't comment on it.</p>\n<p>I saw the report by another user comparing against a published LLM label set (topic 733932/734055) that used an explicit refusal code rather than forcing binary - curious if others have thoughts on which assumption holds better here, especially given how varied report length/style is across the 10+ languages in this dataset.</p>\n<p>Any data points (even anecdotal, from manually reading a few reports) would help. Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Alejandro Zorrilla Bejarano",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/alejandrozobe",
+    "tier": "CONTRIBUTOR",
+    "id": 34302508,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Alejandro Zorrilla Bejarano",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/alejandrozobe",
+     "userName": "alejandrozobe",
+     "tier": "CONTRIBUTOR",
+     "id": 34302508,
+     "profileUrl": "/alejandrozobe",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 34302508,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517259,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737650,
+  "name": "Unmentioned finding = negative, or unknown? (weak labels from report text)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-26T15:41:54.454355600Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737650",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Alejandro Zorrilla Bejarano",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/alejandrozobe",
+   "tier": "CONTRIBUTOR",
+   "id": 34302508,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3517259,
+  "id": 737650,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Amil Gentili",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737650#3517385",
+  "lastCommentPostDate": "2026-08-27T01:58:01.016666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-26T15:41:54.454355600Z",
+  "title": "Unmentioned finding = negative, or unknown? (weak labels from report text)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737650",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Alejandro Zorrilla Bejarano",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/alejandrozobe",
+    "userName": "alejandrozobe",
+    "tier": "CONTRIBUTOR",
+    "id": 34302508,
+    "profileUrl": "/alejandrozobe",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 34302508,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

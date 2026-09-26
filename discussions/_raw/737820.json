@@ -1,0 +1,330 @@
+{
+ "forumTopic": {
+  "authorId": 100236,
+  "authorThumbnailName": "100236-kg.png?t=2024-07-09-01-29-05",
+  "authorUserDisplayName": "Jiwei Liu",
+  "authorUserName": "jiweiliu",
+  "comments": [
+   {
+    "id": 3517602,
+    "postDate": "2026-08-27T16:32:53.560Z",
+    "rawMarkdown": "It is a direct account ban. Not the usual warning, suspension and ban sequence. I was shocked ",
+    "content": "<p>It is a direct account ban. Not the usual warning, suspension and ban sequence. I was shocked </p>",
+    "replies": [
+     {
+      "id": 3517635,
+      "postDate": "2026-08-27T18:28:16.810Z",
+      "rawMarkdown": "good thing you are back, now back to farming... kaggriculture 👨‍🌾",
+      "content": "<p>good thing you are back, now back to farming… kaggriculture 👨‍🌾</p>",
+      "parent": {},
+      "author": {
+       "displayName": "CroDoc",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6674022-kg.png",
+       "url": "/crodoc",
+       "tier": "GRANDMASTER",
+       "id": 6674022,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 3
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "FUNNY",
+        "featuredUserNames": [
+         "bwandowando",
+         "komilparmar"
+        ],
+        "userCount": 2
+       }
+      ]
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Jiwei Liu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/100236-kg.png?t=2024-07-09-01-29-05",
+     "url": "/jiweiliu",
+     "tier": "GRANDMASTER",
+     "id": 100236,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 80,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Theo Viel",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2062758-kg.png",
+      "url": "/theoviel",
+      "userName": "theoviel",
+      "tier": "GRANDMASTER",
+      "id": 2062758,
+      "profileUrl": "/theoviel",
+      "performanceTier": "GRANDMASTER",
+      "userId": 2062758,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517610,
+    "postDate": "2026-08-27T17:14:59.507Z",
+    "rawMarkdown": "It's interesting when an AI makes a judgement that's wrong.  I got a suspension a bit ago for a joke that the AI felt was a personal attack.   Only a week of not participating in discussions - no biggie.  \n\nI love AI.  I think it will bring lots to the world.\n\nBut you will never see me get into an AI driven taxi :)",
+    "content": "<p>It's interesting when an AI makes a judgement that's wrong.  I got a suspension a bit ago for a joke that the AI felt was a personal attack.   Only a week of not participating in discussions - no biggie.  </p>\n<p>I love AI.  I think it will bring lots to the world.</p>\n<p>But you will never see me get into an AI driven taxi :)</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "bwandowando",
+       "researchbntz",
+       "xiaowenhao404"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528370,
+    "postDate": "2026-09-26T00:23:46.680Z",
+    "rawMarkdown": "Glad you are back! Welcome back!",
+    "content": "<p>Glad you are back! Welcome back!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 93,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517625,
+    "postDate": "2026-08-27T18:05:08.787Z",
+    "rawMarkdown": "Rest aside, quite a clever technique sir. I am thinking of using it on colab, but yeah will have to check colab's policy first. lol! \nHope your account is back online in its original state ASAP! ",
+    "content": "<p>Rest aside, quite a clever technique sir. I am thinking of using it on colab, but yeah will have to check colab's policy first. lol! \nHope your account is back online in its original state ASAP! </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Komil Parmar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+     "url": "/komilparmar",
+     "tier": "EXPERT",
+     "id": 11351811,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 59,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Komil Parmar",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+      "url": "/komilparmar",
+      "userName": "komilparmar",
+      "tier": "EXPERT",
+      "id": 11351811,
+      "profileUrl": "/komilparmar",
+      "performanceTier": "EXPERT",
+      "userId": 11351811,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517600,
+   "postDate": "2026-08-27T16:30:39.243Z",
+   "rawMarkdown": "Hello all, I'd like to share a scary experience. My account was banned 8 hours ago. I submitted a appeal and my account is just reinstated so I can publish this post.\n\nI got this email about accoutn ban:\n```\nHi Jiwei Liu,\nOur automated content review system recently found that your content is not compliant with one or more of our policies. See below for more information about your content status and how to correct the issue.\n\nContent:\nNotebook: RSNA Knee M1 C9 MaxSpan Inductor cache T4 (2026-08-27 08:10)\n\nSource of Report:Automated systems\nIssue Found: Violates our Community Guidelines and/or Termsagainst Resource abuse. For further explanation of why the content and/or use of the platform is considered violative on these grounds, please refer to Kaggle’s Community Guidelines.\nResult: We have unpublished the content and issued a ban on your account, unless we determine otherwise after an appeal.\n```\n\nThe notebook referenced is a simple python script:\n```\n\"\"\"Build a reusable T4 TorchInductor cache for the M1-C9 MaxSpan graph.\"\"\"\n\nfrom __future__ import annotations\n\nimport hashlib\nimport importlib.metadata\nimport importlib.util\nimport json\nimport os\nfrom pathlib import Path\nimport platform\nimport shutil\nimport sys\nimport tarfile\nimport time\n\n\nREFERENCE_PARENT_MANIFEST_SHA256 = (\n    \"e71afd1717aa9c2751a7eafc36960c480a7f10f1da841d26d53cd331b47e51fd\"\n)\n\n\ndef sha256_file(path: Path) -> str:\n    digest = hashlib.sha256()\n    with path.open(\"rb\") as handle:\n        for block in iter(lambda: handle.read(8 << 20), b\"\"):\n            digest.update(block)\n    return digest.hexdigest()\n\n\ndef package() -> Path:\n    paths = sorted(\n        path.resolve()\n        for path in Path(\"/kaggle/input\").glob(\"**/m0_c3_manifest.json\")\n        if path.is_file()\n    )\n    if len(paths) != 1:\n        raise FileNotFoundError(\n            f\"expected one m0_c3_manifest.json, observed {len(paths)}\"\n        )\n    return paths[0].parent\n\n\ndef import_file(name: str, path: Path):\n    spec = importlib.util.spec_from_file_location(name, path)\n    if spec is None or spec.loader is None:\n        raise RuntimeError(f\"cannot import runtime: {path}\")\n    module = importlib.util.module_from_spec(spec)\n    sys.modules[name] = module\n    spec.loader.exec_module(module)\n    return module\n\n\ndef main() -> None:\n    work = Path(\"/kaggle/working\")\n    cache = Path(\"/tmp/torchinductor_cache\")\n    cache.mkdir(parents=True, exist_ok=False)\n    os.environ[\"TORCHINDUCTOR_CACHE_DIR\"] = str(cache)\n    os.environ[\"TORCHINDUCTOR_FX_GRAPH_CACHE\"] = \"1\"\n    os.environ[\"TORCHINDUCTOR_AUTOGRAD_CACHE\"] = \"1\"\n\n    import numpy as np\n    import torch\n\n    if torch.cuda.device_count() != 2:\n        raise RuntimeError(\n            f\"cache builder requires two visible GPUs, observed \"\n            f\"{torch.cuda.device_count()}\"\n        )\n    gpu_names = [torch.cuda.get_device_name(index) for index in range(2)]\n    if any(\"T4\" not in name for name in gpu_names):\n        raise RuntimeError(f\"cache builder requires T4 GPUs, observed {gpu_names}\")\n\n    parent = package()\n    manifest_path = parent / \"m0_c3_manifest.json\"\n    manifest_hash = sha256_file(manifest_path)\n    if manifest_hash != REFERENCE_PARENT_MANIFEST_SHA256:\n        raise RuntimeError(\n            f\"parent manifest drift: expected={REFERENCE_PARENT_MANIFEST_SHA256} \"\n            f\"observed={manifest_hash}\"\n        )\n    manifest = json.loads(manifest_path.read_text())\n    checkpoint = parent / \"maxspan_member0.pth\"\n    checkpoint_hash = sha256_file(checkpoint)\n    expected_checkpoint_hash = manifest[\"files\"].get(checkpoint.name)\n    if checkpoint_hash != expected_checkpoint_hash:\n        raise RuntimeError(\n            f\"checkpoint drift: expected={expected_checkpoint_hash} \"\n            f\"observed={checkpoint_hash}\"\n        )\n\n    runtime_path = parent / \"maxspan_runtime.py\"\n    runtime_hash = sha256_file(runtime_path)\n    expected_runtime_hash = manifest[\"files\"].get(runtime_path.name)\n    if runtime_hash != expected_runtime_hash:\n        raise RuntimeError(\n            f\"runtime drift: expected={expected_runtime_hash} \"\n            f\"observed={runtime_hash}\"\n        )\n    runtime = import_file(\"m1_c9_fast_maxspan_runtime\", runtime_path)\n\n    device_audits = []\n    for index in range(2):\n        device = torch.device(f\"cuda:{index}\")\n        torch.cuda.set_device(device)\n        torch.cuda.reset_peak_memory_stats(index)\n        model = runtime.load_model(checkpoint, device)\n        image = torch.zeros(\n            (\n                1,\n                runtime.EVAL_WINDOWS,\n                3,\n                runtime.MODEL_SIZE,\n                runtime.MODEL_SIZE,\n            ),\n            dtype=torch.float32,\n            device=device,\n        )\n\n        def invoke(candidate):\n            with torch.inference_mode(), torch.autocast(\n                \"cuda\", dtype=torch.float16\n            ):\n                return candidate(image).float()\n\n        torch.cuda.synchronize(device)\n        eager_started = time.monotonic()\n        eager = invoke(model)\n        torch.cuda.synchronize(device)\n        eager_seconds = time.monotonic() - eager_started\n\n        compiled = torch.compile(\n            model,\n            backend=\"inductor\",\n            mode=\"default\",\n            fullgraph=False,\n            dynamic=False,\n        )\n        torch.cuda.synchronize(device)\n        compile_started = time.monotonic()\n        compiled_first = invoke(compiled)\n        torch.cuda.synchronize(device)\n        compile_first_seconds = time.monotonic() - compile_started\n\n        torch.cuda.synchronize(device)\n        steady_started = time.monotonic()\n        compiled_steady = invoke(compiled)\n        torch.cuda.synchronize(device)\n        steady_seconds = time.monotonic() - steady_started\n        eager_values = eager.detach().cpu().numpy()\n        first_values = compiled_first.detach().cpu().numpy()\n        steady_values = compiled_steady.detach().cpu().numpy()\n        device_audits.append(\n            {\n                \"device\": index,\n                \"name\": gpu_names[index],\n                \"eager_seconds\": eager_seconds,\n                \"compile_first_seconds\": compile_first_seconds,\n                \"compiled_steady_seconds\": steady_seconds,\n                \"max_abs_compiled_vs_eager\": float(\n                    np.max(np.abs(first_values - eager_values))\n                ),\n                \"max_abs_compiled_repeat\": float(\n                    np.max(np.abs(steady_values - first_values))\n                ),\n                \"peak_reserved_bytes\": torch.cuda.max_memory_reserved(index),\n            }\n        )\n        del compiled_steady, compiled_first, eager, image, compiled, model\n        torch.cuda.empty_cache()\n\n    archive = work / \"m1_c9_maxspan_inductor_cache_t4.tar.gz\"\n    with tarfile.open(archive, \"w:gz\", compresslevel=6) as handle:\n        handle.add(cache, arcname=cache.name)\n    cache_files = sorted(path for path in cache.rglob(\"*\") if path.is_file())\n    cache_bytes = sum(path.stat().st_size for path in cache_files)\n    archive_hash = sha256_file(archive)\n    builder_source_hash = sha256_file(Path(__file__).resolve())\n    shutil.rmtree(cache)\n    if cache.exists():\n        raise RuntimeError(f\"failed to remove raw cache directory: {cache}\")\n    receipt = {\n        \"status\": \"VALID_M1_C9_MAXSPAN_INDUCTOR_CACHE_T4\",\n        \"artifact_version\": 3,\n        \"created_utc\": time.strftime(\"%Y-%m-%dT%H:%M:%SZ\", time.gmtime()),\n        \"builder_source_sha256\": builder_source_hash,\n        \"python\": sys.version,\n        \"platform\": platform.platform(),\n        \"torch\": torch.__version__,\n        \"torch_cuda\": torch.version.cuda,\n        \"cudnn\": torch.backends.cudnn.version(),\n        \"triton\": importlib.metadata.version(\"triton\"),\n        \"gpu_names\": gpu_names,\n        \"gpu_capabilities\": [\n            list(torch.cuda.get_device_capability(index)) for index in range(2)\n        ],\n        \"compile\": {\n            \"backend\": \"inductor\",\n            \"mode\": \"default\",\n            \"fullgraph\": False,\n            \"dynamic\": False,\n            \"input_shape\": [\n                1,\n                runtime.EVAL_WINDOWS,\n                3,\n                runtime.MODEL_SIZE,\n                runtime.MODEL_SIZE,\n            ],\n            \"input_dtype\": \"torch.float32\",\n            \"autocast_dtype\": \"torch.float16\",\n            \"inference_mode\": True,\n        },\n        \"cache_runtime_path\": str(cache),\n        \"parent_manifest_sha256\": manifest_hash,\n        \"maxspan_runtime_sha256\": runtime_hash,\n        \"checkpoint_name\": checkpoint.name,\n        \"checkpoint_sha256\": checkpoint_hash,\n        \"device_audits\": device_audits,\n        \"cache_files\": len(cache_files),\n        \"cache_bytes\": cache_bytes,\n        \"archive_name\": archive.name,\n        \"archive_bytes\": archive.stat().st_size,\n        \"archive_sha256\": archive_hash,\n        \"raw_cache_removed\": True,\n    }\n    receipt_path = work / \"m1_c9_maxspan_inductor_cache_t4_receipt.json\"\n    receipt_path.write_text(json.dumps(receipt, indent=2) + \"\\n\")\n    print(json.dumps(receipt, sort_keys=True), flush=True)\n\n\nif __name__ == \"__main__\":\n    main()\n```\n\nWhat's interesting is I pushed 3 versions of this kernel and only version 3 triggered the account ban somehow. Here is version 2-3 diff:\n```\ndef main() -> None:\n     work = Path(\"/kaggle/working\")\n-    cache = work / \"torchinductor_cache\"\n+    cache = Path(\"/tmp/torchinductor_cache\")\n\n     archive = work / \"m1_c9_maxspan_inductor_cache_t4.tar.gz\"\n     with tarfile.open(archive, \"w:gz\", compresslevel=6) as handle:\n-        handle.add(cache, arcname=\"torchinductor_cache\")\n+        handle.add(cache, arcname=cache.name)\n\n-        \"artifact_version\": 2,\n+        \"artifact_version\": 3,\n\n+        \"cache_runtime_path\": str(cache),\n```",
+   "content": "<p>Hello all, I'd like to share a scary experience. My account was banned 8 hours ago. I submitted a appeal and my account is just reinstated so I can publish this post.</p>\n<p>I got this email about accoutn ban:</p>\n<pre><code>Hi Jiwei Liu,\nOur automated content review system recently found that your content is not compliant with one or more of our policies. See below for more information about your content status and how to correct the issue.\n\nContent:\nNotebook: RSNA Knee M1 C9 MaxSpan Inductor cache T4 (2026-08-27 08:10)\n\nSource of Report:Automated systems\nIssue Found: Violates our Community Guidelines and/or Termsagainst Resource abuse. For further explanation of why the content and/or use of the platform is considered violative on these grounds, please refer to Kaggle’s Community Guidelines.\nResult: We have unpublished the content and issued a ban on your account, unless we determine otherwise after an appeal.\n</code></pre>\n<p>The notebook referenced is a simple python script:</p>\n<pre><code>\"\"\"Build a reusable T4 TorchInductor cache for the M1-C9 MaxSpan graph.\"\"\"\n\nfrom __future__ import annotations\n\nimport hashlib\nimport importlib.metadata\nimport importlib.util\nimport json\nimport os\nfrom pathlib import Path\nimport platform\nimport shutil\nimport sys\nimport tarfile\nimport time\n\n\nREFERENCE_PARENT_MANIFEST_SHA256 = (\n    \"e71afd1717aa9c2751a7eafc36960c480a7f10f1da841d26d53cd331b47e51fd\"\n)\n\n\ndef sha256_file(path: Path) -&gt; str:\n    digest = hashlib.sha256()\n    with path.open(\"rb\") as handle:\n        for block in iter(lambda: handle.read(8 &lt;&lt; 20), b\"\"):\n            digest.update(block)\n    return digest.hexdigest()\n\n\ndef package() -&gt; Path:\n    paths = sorted(\n        path.resolve()\n        for path in Path(\"/kaggle/input\").glob(\"**/m0_c3_manifest.json\")\n        if path.is_file()\n    )\n    if len(paths) != 1:\n        raise FileNotFoundError(\n            f\"expected one m0_c3_manifest.json, observed {len(paths)}\"\n        )\n    return paths[0].parent\n\n\ndef import_file(name: str, path: Path):\n    spec = importlib.util.spec_from_file_location(name, path)\n    if spec is None or spec.loader is None:\n        raise RuntimeError(f\"cannot import runtime: {path}\")\n    module = importlib.util.module_from_spec(spec)\n    sys.modules[name] = module\n    spec.loader.exec_module(module)\n    return module\n\n\ndef main() -&gt; None:\n    work = Path(\"/kaggle/working\")\n    cache = Path(\"/tmp/torchinductor_cache\")\n    cache.mkdir(parents=True, exist_ok=False)\n    os.environ[\"TORCHINDUCTOR_CACHE_DIR\"] = str(cache)\n    os.environ[\"TORCHINDUCTOR_FX_GRAPH_CACHE\"] = \"1\"\n    os.environ[\"TORCHINDUCTOR_AUTOGRAD_CACHE\"] = \"1\"\n\n    import numpy as np\n    import torch\n\n    if torch.cuda.device_count() != 2:\n        raise RuntimeError(\n            f\"cache builder requires two visible GPUs, observed \"\n            f\"{torch.cuda.device_count()}\"\n        )\n    gpu_names = [torch.cuda.get_device_name(index) for index in range(2)]\n    if any(\"T4\" not in name for name in gpu_names):\n        raise RuntimeError(f\"cache builder requires T4 GPUs, observed {gpu_names}\")\n\n    parent = package()\n    manifest_path = parent / \"m0_c3_manifest.json\"\n    manifest_hash = sha256_file(manifest_path)\n    if manifest_hash != REFERENCE_PARENT_MANIFEST_SHA256:\n        raise RuntimeError(\n            f\"parent manifest drift: expected={REFERENCE_PARENT_MANIFEST_SHA256} \"\n            f\"observed={manifest_hash}\"\n        )\n    manifest = json.loads(manifest_path.read_text())\n    checkpoint = parent / \"maxspan_member0.pth\"\n    checkpoint_hash = sha256_file(checkpoint)\n    expected_checkpoint_hash = manifest[\"files\"].get(checkpoint.name)\n    if checkpoint_hash != expected_checkpoint_hash:\n        raise RuntimeError(\n            f\"checkpoint drift: expected={expected_checkpoint_hash} \"\n            f\"observed={checkpoint_hash}\"\n        )\n\n    runtime_path = parent / \"maxspan_runtime.py\"\n    runtime_hash = sha256_file(runtime_path)\n    expected_runtime_hash = manifest[\"files\"].get(runtime_path.name)\n    if runtime_hash != expected_runtime_hash:\n        raise RuntimeError(\n            f\"runtime drift: expected={expected_runtime_hash} \"\n            f\"observed={runtime_hash}\"\n        )\n    runtime = import_file(\"m1_c9_fast_maxspan_runtime\", runtime_path)\n\n    device_audits = []\n    for index in range(2):\n        device = torch.device(f\"cuda:{index}\")\n        torch.cuda.set_device(device)\n        torch.cuda.reset_peak_memory_stats(index)\n        model = runtime.load_model(checkpoint, device)\n        image = torch.zeros(\n            (\n                1,\n                runtime.EVAL_WINDOWS,\n                3,\n                runtime.MODEL_SIZE,\n                runtime.MODEL_SIZE,\n            ),\n            dtype=torch.float32,\n            device=device,\n        )\n\n        def invoke(candidate):\n            with torch.inference_mode(), torch.autocast(\n                \"cuda\", dtype=torch.float16\n            ):\n                return candidate(image).float()\n\n        torch.cuda.synchronize(device)\n        eager_started = time.monotonic()\n        eager = invoke(model)\n        torch.cuda.synchronize(device)\n        eager_seconds = time.monotonic() - eager_started\n\n        compiled = torch.compile(\n            model,\n            backend=\"inductor\",\n            mode=\"default\",\n            fullgraph=False,\n            dynamic=False,\n        )\n        torch.cuda.synchronize(device)\n        compile_started = time.monotonic()\n        compiled_first = invoke(compiled)\n        torch.cuda.synchronize(device)\n        compile_first_seconds = time.monotonic() - compile_started\n\n        torch.cuda.synchronize(device)\n        steady_started = time.monotonic()\n        compiled_steady = invoke(compiled)\n        torch.cuda.synchronize(device)\n        steady_seconds = time.monotonic() - steady_started\n        eager_values = eager.detach().cpu().numpy()\n        first_values = compiled_first.detach().cpu().numpy()\n        steady_values = compiled_steady.detach().cpu().numpy()\n        device_audits.append(\n            {\n                \"device\": index,\n                \"name\": gpu_names[index],\n                \"eager_seconds\": eager_seconds,\n                \"compile_first_seconds\": compile_first_seconds,\n                \"compiled_steady_seconds\": steady_seconds,\n                \"max_abs_compiled_vs_eager\": float(\n                    np.max(np.abs(first_values - eager_values))\n                ),\n                \"max_abs_compiled_repeat\": float(\n                    np.max(np.abs(steady_values - first_values))\n                ),\n                \"peak_reserved_bytes\": torch.cuda.max_memory_reserved(index),\n            }\n        )\n        del compiled_steady, compiled_first, eager, image, compiled, model\n        torch.cuda.empty_cache()\n\n    archive = work / \"m1_c9_maxspan_inductor_cache_t4.tar.gz\"\n    with tarfile.open(archive, \"w:gz\", compresslevel=6) as handle:\n        handle.add(cache, arcname=cache.name)\n    cache_files = sorted(path for path in cache.rglob(\"*\") if path.is_file())\n    cache_bytes = sum(path.stat().st_size for path in cache_files)\n    archive_hash = sha256_file(archive)\n    builder_source_hash = sha256_file(Path(__file__).resolve())\n    shutil.rmtree(cache)\n    if cache.exists():\n        raise RuntimeError(f\"failed to remove raw cache directory: {cache}\")\n    receipt = {\n        \"status\": \"VALID_M1_C9_MAXSPAN_INDUCTOR_CACHE_T4\",\n        \"artifact_version\": 3,\n        \"created_utc\": time.strftime(\"%Y-%m-%dT%H:%M:%SZ\", time.gmtime()),\n        \"builder_source_sha256\": builder_source_hash,\n        \"python\": sys.version,\n        \"platform\": platform.platform(),\n        \"torch\": torch.__version__,\n        \"torch_cuda\": torch.version.cuda,\n        \"cudnn\": torch.backends.cudnn.version(),\n        \"triton\": importlib.metadata.version(\"triton\"),\n        \"gpu_names\": gpu_names,\n        \"gpu_capabilities\": [\n            list(torch.cuda.get_device_capability(index)) for index in range(2)\n        ],\n        \"compile\": {\n            \"backend\": \"inductor\",\n            \"mode\": \"default\",\n            \"fullgraph\": False,\n            \"dynamic\": False,\n            \"input_shape\": [\n                1,\n                runtime.EVAL_WINDOWS,\n                3,\n                runtime.MODEL_SIZE,\n                runtime.MODEL_SIZE,\n            ],\n            \"input_dtype\": \"torch.float32\",\n            \"autocast_dtype\": \"torch.float16\",\n            \"inference_mode\": True,\n        },\n        \"cache_runtime_path\": str(cache),\n        \"parent_manifest_sha256\": manifest_hash,\n        \"maxspan_runtime_sha256\": runtime_hash,\n        \"checkpoint_name\": checkpoint.name,\n        \"checkpoint_sha256\": checkpoint_hash,\n        \"device_audits\": device_audits,\n        \"cache_files\": len(cache_files),\n        \"cache_bytes\": cache_bytes,\n        \"archive_name\": archive.name,\n        \"archive_bytes\": archive.stat().st_size,\n        \"archive_sha256\": archive_hash,\n        \"raw_cache_removed\": True,\n    }\n    receipt_path = work / \"m1_c9_maxspan_inductor_cache_t4_receipt.json\"\n    receipt_path.write_text(json.dumps(receipt, indent=2) + \"\\n\")\n    print(json.dumps(receipt, sort_keys=True), flush=True)\n\n\nif __name__ == \"__main__\":\n    main()\n</code></pre>\n<p>What's interesting is I pushed 3 versions of this kernel and only version 3 triggered the account ban somehow. Here is version 2-3 diff:</p>\n<pre><code>def main() -&gt; None:\n     work = Path(\"/kaggle/working\")\n-    cache = work / \"torchinductor_cache\"\n+    cache = Path(\"/tmp/torchinductor_cache\")\n\n     archive = work / \"m1_c9_maxspan_inductor_cache_t4.tar.gz\"\n     with tarfile.open(archive, \"w:gz\", compresslevel=6) as handle:\n-        handle.add(cache, arcname=\"torchinductor_cache\")\n+        handle.add(cache, arcname=cache.name)\n\n-        \"artifact_version\": 2,\n+        \"artifact_version\": 3,\n\n+        \"cache_runtime_path\": str(cache),\n</code></pre>",
+   "parent": {},
+   "author": {
+    "displayName": "Jiwei Liu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/100236-kg.png?t=2024-07-09-01-29-05",
+    "url": "/jiweiliu",
+    "tier": "GRANDMASTER",
+    "id": 100236,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 10,
+    "canUpvote": true,
+    "totalUpvotes": 11
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 80,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "bwandowando",
+      "quan0095"
+     ],
+     "userCount": 2
+    },
+    {
+     "emoji": "SURPRISE",
+     "featuredUserNames": [
+      "tuckerarrants"
+     ],
+     "userCount": 1
+    },
+    {
+     "emoji": "KAGGLE",
+     "featuredUserNames": [
+      "mattiaangeli"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Theo Viel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2062758-kg.png",
+     "url": "/theoviel",
+     "userName": "theoviel",
+     "tier": "GRANDMASTER",
+     "id": 2062758,
+     "profileUrl": "/theoviel",
+     "performanceTier": "GRANDMASTER",
+     "userId": 2062758,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517600,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737820,
+  "name": "My account was banned due to a notebook. Just reinstated ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-27T16:30:39.243079600Z",
+  "totalVotes": 10,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737820",
+  "totalMessages": 5,
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Jiwei Liu",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/100236-kg.png?t=2024-07-09-01-29-05",
+   "url": "/jiweiliu",
+   "tier": "GRANDMASTER",
+   "id": 100236,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3517600,
+  "id": 737820,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737820#3528370",
+  "lastCommentPostDate": "2026-09-26T00:23:46.680Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-27T16:30:39.243079600Z",
+  "title": "My account was banned due to a notebook. Just reinstated ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737820",
+  "votes": 10,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Theo Viel",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2062758-kg.png",
+    "url": "/theoviel",
+    "userName": "theoviel",
+    "tier": "GRANDMASTER",
+    "id": 2062758,
+    "profileUrl": "/theoviel",
+    "performanceTier": "GRANDMASTER",
+    "userId": 2062758,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

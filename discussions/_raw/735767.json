@@ -1,0 +1,411 @@
+{
+ "forumTopic": {
+  "authorId": 22938014,
+  "authorThumbnailName": "22938014-kg.png?t=2024-10-15-22-21-41",
+  "authorUserDisplayName": "Tony Li",
+  "authorUserName": "tonylica",
+  "comments": [
+   {
+    "id": 3515174,
+    "postDate": "2026-08-21T00:57:35.807Z",
+    "rawMarkdown": "0.975 is the threshold of gold medal",
+    "content": "<p>0.975 is the threshold of gold medal</p>",
+    "replies": [
+     {
+      "id": 3515191,
+      "postDate": "2026-08-21T02:13:12.513Z",
+      "rawMarkdown": "welcome back",
+      "content": "<p>welcome back</p>",
+      "replies": [
+       {
+        "id": 3515207,
+        "postDate": "2026-08-21T03:29:05.020Z",
+        "rawMarkdown": "Thanks it's very tough to me ",
+        "content": "<p>Thanks it's very tough to me </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2025-12-30-09-11-55",
+         "url": "/tom99763",
+         "tier": "MASTER",
+         "id": 4310004,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 922,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "tingyi",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+          "url": "/chengtingyi",
+          "userName": "chengtingyi",
+          "tier": "CONTRIBUTOR",
+          "id": 8788200,
+          "profileUrl": "/chengtingyi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 8788200,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "MengYe",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+       "url": "/konohayui",
+       "tier": "EXPERT",
+       "id": 1113072,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 255,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "MengYe",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+        "url": "/konohayui",
+        "userName": "konohayui",
+        "tier": "EXPERT",
+        "id": 1113072,
+        "profileUrl": "/konohayui",
+        "performanceTier": "EXPERT",
+        "userId": 1113072,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tom",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2025-12-30-09-11-55",
+     "url": "/tom99763",
+     "tier": "MASTER",
+     "id": 4310004,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 922,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "tingyi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+      "url": "/chengtingyi",
+      "userName": "chengtingyi",
+      "tier": "CONTRIBUTOR",
+      "id": 8788200,
+      "profileUrl": "/chengtingyi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 8788200,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514117,
+    "postDate": "2026-08-18T14:31:46.160Z",
+    "rawMarkdown": "I would expect a huge shakeup and lots of over fit models.  Since we need to create the labels, trusting your cv as a golden rule not very helpful. \n\nIt's pretty easy to spot what looks like conflicting results in the 58 gold labels we have received.  So we are trying to build models that predict the kaggle truth - often an elusive monster to grab hold of.\n\n",
+    "content": "<p>I would expect a huge shakeup and lots of over fit models.  Since we need to create the labels, trusting your cv as a golden rule not very helpful. </p>\n<p>It's pretty easy to spot what looks like conflicting results in the 58 gold labels we have received.  So we are trying to build models that predict the kaggle truth - often an elusive monster to grab hold of.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 636,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514058,
+    "postDate": "2026-08-18T11:34:49.357Z",
+    "rawMarkdown": "@tonylica, I take it these are then your predictions? ~0.97 public?\n\nI am far more curious about private. With the current gold -> public leaderboard overfit chance, and the tendency to overfit public leaderboards that has become possible due to agents and autosubmissions poling the leaderboard so fast, I think the public leaderboard will lie.\n\nMy guess: private LB >0.94 would be gold. Winner 0.96. \n\n",
+    "content": "<p><a href=\"https://www.kaggle.com/tonylica\" target=\"_blank\">@tonylica</a>, I take it these are then your predictions? ~0.97 public?</p>\n<p>I am far more curious about private. With the current gold -&gt; public leaderboard overfit chance, and the tendency to overfit public leaderboards that has become possible due to agents and autosubmissions poling the leaderboard so fast, I think the public leaderboard will lie.</p>\n<p>My guess: private LB &gt;0.94 would be gold. Winner 0.96. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tim Krige",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+     "url": "/timkrige",
+     "tier": "EXPERT",
+     "id": 3326547,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1202,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tim Krige",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
+      "url": "/timkrige",
+      "userName": "timkrige",
+      "tier": "EXPERT",
+      "id": 3326547,
+      "profileUrl": "/timkrige",
+      "performanceTier": "EXPERT",
+      "userId": 3326547,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514068,
+    "postDate": "2026-08-18T12:17:54.657Z",
+    "rawMarkdown": "With so many strong teams joining this early, I think the final scores could improve significantly. A 0.97+ public LB seems possible, but the private LB and generalization will probably be the real challenge. Excited to see how far the leaderboard moves!",
+    "content": "<p>With so many strong teams joining this early, I think the final scores could improve significantly. A 0.97+ public LB seems possible, but the private LB and generalization will probably be the real challenge. Excited to see how far the leaderboard moves!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Feroz Ahmed DS",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29521237-kg.jpeg?t=2026-05-30-19-25-58",
+     "url": "/ferozahmedds",
+     "tier": "CONTRIBUTOR",
+     "id": 29521237,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3528372,
+    "postDate": "2026-09-26T00:27:27.703Z",
+    "rawMarkdown": "Hard to predict. Gold threshold is probably 0.96 and first place is probably 0.975.",
+    "content": "<p>Hard to predict. Gold threshold is probably 0.96 and first place is probably 0.975.</p>",
+    "replies": [
+     {
+      "id": 3528377,
+      "postDate": "2026-09-26T00:51:06.517Z",
+      "rawMarkdown": "Yeah I think the same , cause there are alot of good teams participating just like you lol!",
+      "content": "<p>Yeah I think the same , cause there are alot of good teams participating just like you lol!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 278,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513916,
+   "postDate": "2026-08-18T00:05:14.913Z",
+   "rawMarkdown": "Really happy 😄 to see Kaggle competitions becoming more and more popular, with so many new teams joining.\n\nFor comparison:\n\n* **RSNA 2025:** finished with **1,149 teams**\n* **RSNA 2026:** only **12 days in**, and we already have **1,832 teams**\n\nThe leaderboard is also moving incredibly fast. The current **#1 public LB is already around 0.951**, while publicly shared solutions are already reaching around **0.92**.\n\nSo I’m curious: **where do you think the final ceiling will be?**\n\nIf BirdCLEF+ 2026 is any indication of how much solutions can improve during a competition, could we eventually see something like:\n\n* **#1 final/Public LB:** ~**0.97**\n* **Best publicly shared solution:** ~**0.95**\n\nOf course, medical imaging competitions can behave very differently, and CV/generalization on the private set may change the picture a lot.\n\nBut with this many strong teams joining this early, one thing seems certain: **this is going to be a really tough competition. 😄**\n\nCurious what others think the end-game scores might look like.\n",
+   "content": "<p>Really happy 😄 to see Kaggle competitions becoming more and more popular, with so many new teams joining.</p>\n<p>For comparison:</p>\n<ul>\n<li><strong>RSNA 2025:</strong> finished with <strong>1,149 teams</strong></li>\n<li><strong>RSNA 2026:</strong> only <strong>12 days in</strong>, and we already have <strong>1,832 teams</strong></li>\n</ul>\n<p>The leaderboard is also moving incredibly fast. The current <strong>#1 public LB is already around 0.951</strong>, while publicly shared solutions are already reaching around <strong>0.92</strong>.</p>\n<p>So I’m curious: <strong>where do you think the final ceiling will be?</strong></p>\n<p>If BirdCLEF+ 2026 is any indication of how much solutions can improve during a competition, could we eventually see something like:</p>\n<ul>\n<li><strong>#1 final/Public LB:</strong> ~<strong>0.97</strong></li>\n<li><strong>Best publicly shared solution:</strong> ~<strong>0.95</strong></li>\n</ul>\n<p>Of course, medical imaging competitions can behave very differently, and CV/generalization on the private set may change the picture a lot.</p>\n<p>But with this many strong teams joining this early, one thing seems certain: <strong>this is going to be a really tough competition. 😄</strong></p>\n<p>Curious what others think the end-game scores might look like.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Tony Li",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+    "url": "/tonylica",
+    "tier": "MASTER",
+    "id": 22938014,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 17,
+    "canUpvote": true,
+    "totalUpvotes": 17
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 508,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Tony Li",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+     "url": "/tonylica",
+     "userName": "tonylica",
+     "tier": "MASTER",
+     "id": 22938014,
+     "profileUrl": "/tonylica",
+     "performanceTier": "MASTER",
+     "userId": 22938014,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513916,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735767,
+  "name": "What Could the Final Ceiling Be for RSNA 2026?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-18T00:05:14.912469500Z",
+  "totalVotes": 17,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735767",
+  "totalMessages": 8,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Tony Li",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+   "url": "/tonylica",
+   "tier": "MASTER",
+   "id": 22938014,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 8,
+  "firstForumMessageId": 3513916,
+  "id": 735767,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735767#3528377",
+  "lastCommentPostDate": "2026-09-26T00:51:06.516666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-18T00:05:14.912469500Z",
+  "title": "What Could the Final Ceiling Be for RSNA 2026?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735767",
+  "votes": 17,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Tony Li",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+    "url": "/tonylica",
+    "userName": "tonylica",
+    "tier": "MASTER",
+    "id": 22938014,
+    "profileUrl": "/tonylica",
+    "performanceTier": "MASTER",
+    "userId": 22938014,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

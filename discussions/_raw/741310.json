@@ -1,0 +1,115 @@
+{
+ "forumTopic": {
+  "authorId": 14767,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "gchauhan",
+  "authorUserName": "gchauhan",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3524307,
+   "postDate": "2026-09-14T15:31:36.397Z",
+   "rawMarkdown": "I published an EDA that tries to answer one question: what does this data force a model to do? \nhttps://www.kaggle.com/code/gchauhan/eda-rsna-knee-what-the-data-tells-us\n\n**What stood out**\n\n- Training targets come from reports; the score comes from radiologists reading images. On the 58 expert-labelled studies, reports are silent on about half of the expert-positive Synovitis cases. Fracture is in 7% of reports but 31% of expert labels. Treating \"not mentioned\" as \"absent\" teaches the model the reporting habit, not the finding.\n- InstanceNumber runs against slice position in over a third of series. If you stack slices by instance number, neighbouring-slice context is scrambled for those series. Sort by position along the slice normal.\n- Laterality is missing in about half of studies. Work out the side from geometry before mirroring right knees to left. If you flip for augmentation, medial/lateral labels (menisci, OA) have to swap too.\n- The CSV hides the contrast. \"non-FS\" mixes T1, PD and T2, and most repeated series types are a second contrast rather than a retake. Keying slots only on plane × FS merges different images.\n- A study is a variable set of 3–14 series. The most common combination covers only 40% of studies, so a missing-series mask isn't optional.\n- Slices are ~10× farther apart than pixels (~0.3 mm in-plane vs ~3.5 mm between slices). That favours 2.5D, meaning a 2D encoder plus a depth model, over 3D from scratch, which is also what past RSNA spine/PE winners found.\n\nThe last section maps each finding to a modelling consequence and to what winners of past RSNA imaging competitions did.\n\nReport labels are from @pilkwang's LLM-read report labels (https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels). Thanks!\n\nQuestion for others: how are you handling \"not mentioned\" in the report labels: as negative, as a prior, or masked? And has anyone measured the effect of fixing slice order on local CV?",
+   "content": "<p>I published an EDA that tries to answer one question: what does this data force a model to do? \n<a href=\"https://www.kaggle.com/code/gchauhan/eda-rsna-knee-what-the-data-tells-us\" target=\"_blank\">https://www.kaggle.com/code/gchauhan/eda-rsna-knee-what-the-data-tells-us</a></p>\n<p><strong>What stood out</strong></p>\n<ul>\n<li>Training targets come from reports; the score comes from radiologists reading images. On the 58 expert-labelled studies, reports are silent on about half of the expert-positive Synovitis cases. Fracture is in 7% of reports but 31% of expert labels. Treating \"not mentioned\" as \"absent\" teaches the model the reporting habit, not the finding.</li>\n<li>InstanceNumber runs against slice position in over a third of series. If you stack slices by instance number, neighbouring-slice context is scrambled for those series. Sort by position along the slice normal.</li>\n<li>Laterality is missing in about half of studies. Work out the side from geometry before mirroring right knees to left. If you flip for augmentation, medial/lateral labels (menisci, OA) have to swap too.</li>\n<li>The CSV hides the contrast. \"non-FS\" mixes T1, PD and T2, and most repeated series types are a second contrast rather than a retake. Keying slots only on plane × FS merges different images.</li>\n<li>A study is a variable set of 3–14 series. The most common combination covers only 40% of studies, so a missing-series mask isn't optional.</li>\n<li>Slices are ~10× farther apart than pixels (~0.3 mm in-plane vs ~3.5 mm between slices). That favours 2.5D, meaning a 2D encoder plus a depth model, over 3D from scratch, which is also what past RSNA spine/PE winners found.</li>\n</ul>\n<p>The last section maps each finding to a modelling consequence and to what winners of past RSNA imaging competitions did.</p>\n<p>Report labels are from <a href=\"/pilkwang\" target=\"_blank\">@pilkwang</a>'s LLM-read report labels (<a href=\"https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels)\" target=\"_blank\">https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels)</a>. Thanks!</p>\n<p>Question for others: how are you handling \"not mentioned\" in the report labels: as negative, as a prior, or masked? And has anyone measured the effect of fixing slice order on local CV?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "gchauhan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/gchauhan",
+    "tier": "CONTRIBUTOR",
+    "id": 14767,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1696,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "outlier4933"
+     ],
+     "userCount": 1
+    },
+    {
+     "emoji": "KAGGLE",
+     "featuredUserNames": [
+      "yuepixing"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "gchauhan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/gchauhan",
+     "userName": "gchauhan",
+     "tier": "CONTRIBUTOR",
+     "id": 14767,
+     "profileUrl": "/gchauhan",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 14767,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3524307,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 741310,
+  "name": "Six data traps in RSNA Knee: slice order, missing laterality, silent reports (EDA)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-14T15:31:36.396999500Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/741310",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "gchauhan",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/gchauhan",
+   "tier": "CONTRIBUTOR",
+   "id": 14767,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3524307,
+  "id": 741310,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "gchauhan",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741310#3524307",
+  "lastCommentPostDate": "2026-09-14T15:31:36.396666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-14T15:31:36.396999500Z",
+  "title": "Six data traps in RSNA Knee: slice order, missing laterality, silent reports (EDA)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/741310",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "gchauhan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/gchauhan",
+    "userName": "gchauhan",
+    "tier": "CONTRIBUTOR",
+    "id": 14767,
+    "profileUrl": "/gchauhan",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 14767,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,242 @@
+{
+ "forumTopic": {
+  "authorId": 1666986,
+  "authorThumbnailName": "1666986-kg.jpg",
+  "authorUserDisplayName": "Yee Ng",
+  "authorUserName": "yeeseng",
+  "comments": [
+   {
+    "id": 3517261,
+    "postDate": "2026-08-26T15:47:59.903Z",
+    "rawMarkdown": "Hello,\n\nThank you kindly for surfacing this issue--we will review these files and provide an update shortly.",
+    "content": "<p>Hello,</p>\n<p>Thank you kindly for surfacing this issue--we will review these files and provide an update shortly.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Jason Sho",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17556690-kg.jpeg?t=2025-08-19-15-35-19",
+     "url": "/shosys",
+     "tier": "CONTRIBUTOR",
+     "id": 17556690,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3517440,
+    "postDate": "2026-08-27T07:09:45.477Z",
+    "rawMarkdown": "Same issue here.",
+    "content": "<p>Same issue here.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Yiming Ma",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/yimingma1024",
+     "tier": "CONTRIBUTOR",
+     "id": 6860846,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Yiming Ma",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/yimingma1024",
+      "userName": "yimingma1024",
+      "tier": "CONTRIBUTOR",
+      "id": 6860846,
+      "profileUrl": "/yimingma1024",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 6860846,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516788,
+    "postDate": "2026-08-25T10:41:05.113Z",
+    "rawMarkdown": "Yes, I experienced exactly the same issue with exactly those two DICOM files. Both files contain Pixel Data that is exactly half the size expected from their DICOM metadata, so this appears to be an issue in the distributed dataset rather than a failed download. Redownloading is therefore unlikely to fix these two files. ",
+    "content": "<p>Yes, I experienced exactly the same issue with exactly those two DICOM files. Both files contain Pixel Data that is exactly half the size expected from their DICOM metadata, so this appears to be an issue in the distributed dataset rather than a failed download. Redownloading is therefore unlikely to fix these two files. </p>",
+    "replies": [
+     {
+      "id": 3516899,
+      "postDate": "2026-08-25T15:58:43.480Z",
+      "rawMarkdown": "Thank you! I’m going to blacklist both during training. Cheers.",
+      "content": "<p>Thank you! I’m going to blacklist both during training. Cheers.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Yee Ng",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1666986-kg.jpg",
+       "url": "/yeeseng",
+       "tier": "EXPERT",
+       "id": 1666986,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3026,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Yee Ng",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1666986-kg.jpg",
+        "url": "/yeeseng",
+        "userName": "yeeseng",
+        "tier": "EXPERT",
+        "id": 1666986,
+        "profileUrl": "/yeeseng",
+        "performanceTier": "EXPERT",
+        "userId": 1666986,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "takeharu-yoshikawa",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/takeharuyoshikawa",
+     "tier": "CONTRIBUTOR",
+     "id": 27480308,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 52,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Takashi Someya",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
+      "url": "/takashisomeya",
+      "userName": "takashisomeya",
+      "tier": "GRANDMASTER",
+      "id": 6102861,
+      "profileUrl": "/takashisomeya",
+      "performanceTier": "GRANDMASTER",
+      "userId": 6102861,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516312,
+   "postDate": "2026-08-23T22:22:27.900Z",
+   "rawMarkdown": "There are two files in the training set that crashed my runs:\n                                                                                                                 \n  - StudyInstanceUID: 1.2.826.0.1.3680043.8.498.37833587429731221455928642963031995680                                                                                                                                     \n  - SeriesInstanceUID: 1.2.826.0.1.3680043.8.498.31160785238781353848727311763596115703                                                                                                                                    \n  - SOPInstanceUID: 1.2.826.0.1.3680043.8.498.66460523372602171398246641420761543626.dcm                                                                                                                        \n                                                                                                                                                                                                                                                                                                 \n  - StudyInstanceUID: 1.2.826.0.1.3680043.8.498.34685905030370793639196564723935583035                                                                                                                                     \n  - SeriesInstanceUID: 1.2.826.0.1.3680043.8.498.39396636671446532796538574315802928348                                                                                                                                    \n  - SOPInstanceUID: 1.2.826.0.1.3680043.8.498.41947538458330624797291612781685746320.dcm                                                                                                                        \n\nDid anyone else experience the same issue, or is it just me? I'm trying to decide whether I should redownload the dataset.",
+   "content": "<p>There are two files in the training set that crashed my runs:</p>\n<ul>\n<li><p>StudyInstanceUID: 1.2.826.0.1.3680043.8.498.37833587429731221455928642963031995680                                                                                                                                     </p></li>\n<li><p>SeriesInstanceUID: 1.2.826.0.1.3680043.8.498.31160785238781353848727311763596115703                                                                                                                                    </p></li>\n<li><p>SOPInstanceUID: 1.2.826.0.1.3680043.8.498.66460523372602171398246641420761543626.dcm                                                                                                                        </p></li>\n<li><p>StudyInstanceUID: 1.2.826.0.1.3680043.8.498.34685905030370793639196564723935583035                                                                                                                                     </p></li>\n<li><p>SeriesInstanceUID: 1.2.826.0.1.3680043.8.498.39396636671446532796538574315802928348                                                                                                                                    </p></li>\n<li><p>SOPInstanceUID: 1.2.826.0.1.3680043.8.498.41947538458330624797291612781685746320.dcm                                                                                                                        </p></li>\n</ul>\n<p>Did anyone else experience the same issue, or is it just me? I'm trying to decide whether I should redownload the dataset.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Yee Ng",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1666986-kg.jpg",
+    "url": "/yeeseng",
+    "tier": "EXPERT",
+    "id": 1666986,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 10,
+    "canUpvote": true,
+    "totalUpvotes": 10
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3026,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Yee Ng",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1666986-kg.jpg",
+     "url": "/yeeseng",
+     "userName": "yeeseng",
+     "tier": "EXPERT",
+     "id": 1666986,
+     "profileUrl": "/yeeseng",
+     "performanceTier": "EXPERT",
+     "userId": 1666986,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516312,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737163,
+  "name": "corrupt files",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-23T22:22:27.898901800Z",
+  "totalVotes": 10,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737163",
+  "totalMessages": 4,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Yee Ng",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1666986-kg.jpg",
+   "url": "/yeeseng",
+   "tier": "EXPERT",
+   "id": 1666986,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3516312,
+  "id": 737163,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Yiming Ma",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737163#3517440",
+  "lastCommentPostDate": "2026-08-27T07:09:45.476666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-23T22:22:27.898901800Z",
+  "title": "corrupt files",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737163",
+  "votes": 10,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Yee Ng",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1666986-kg.jpg",
+    "url": "/yeeseng",
+    "userName": "yeeseng",
+    "tier": "EXPERT",
+    "id": 1666986,
+    "profileUrl": "/yeeseng",
+    "performanceTier": "EXPERT",
+    "userId": 1666986,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,456 @@
+{
+ "forumTopic": {
+  "authorId": 33369423,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Ercan Gurvit",
+  "authorUserName": "ercangurvit",
+  "comments": [
+   {
+    "id": 3519450,
+    "postDate": "2026-09-01T18:15:18.953Z",
+    "rawMarkdown": "NC licenses are allowed from the host's perspective,[ as mentioned here](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965#3517696). ND licenses are a problem. Most external datasets that are relevant here are ND, and training a model on images, then releasing those weights as required by Kaggle winning solutions, would be a derivative and hence prohibited.\n\nMRNet, KneeMRI, etc. all carry a ND license and I would be surpised if they are allowed for model training. ",
+    "content": "<p>NC licenses are allowed from the host's perspective,<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965#3517696\" target=\"_blank\"> as mentioned here</a>. ND licenses are a problem. Most external datasets that are relevant here are ND, and training a model on images, then releasing those weights as required by Kaggle winning solutions, would be a derivative and hence prohibited.</p>\n<p>MRNet, KneeMRI, etc. all carry a ND license and I would be surpised if they are allowed for model training. </p>",
+    "replies": [
+     {
+      "id": 3519496,
+      "postDate": "2026-09-01T20:04:24.497Z",
+      "rawMarkdown": "Yeah I haven’t tried any external data for this reason, would be curious if top teams are using it",
+      "content": "<p>Yeah I haven’t tried any external data for this reason, would be curious if top teams are using it</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 3,
+       "canUpvote": true,
+       "totalUpvotes": 3
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3521473,
+    "postDate": "2026-09-06T03:34:04.523Z",
+    "rawMarkdown": "Following up on the KneeCoT ruling above, and on your note in \"Use of Commercially Hosted LLMs\" distinguishing \"straightforward registration or click-through\" access from \"institution-specific approvals, negotiated written agreements, IRB approval, lengthy credentialing\" -- could you confirm which side of that line these fall on:\n\n- MRNet (Stanford AIMI): a Research Use Agreement accepted via click-through on the AIMI portal\n- fastMRI (NYU, raw k-space/DICOM release): requires emailing NYU and waiting on an approved data-sharing agreement\n- OAI (NIH-funded, accessed via a federal data archive): requires a signed Data Use Certification\n- SKM-TEA (Stanford AIMI): same access pattern as MRNet\n\nA ruling per access-pattern (click-through vs. emailed/signed agreement) rather than per dataset would help everyone here, since most of the open questions on this board reduce to the same two patterns. Thanks for the KneeCoT ruling above -- trying to apply it correctly before committing pretraining compute.",
+    "content": "<p>Following up on the KneeCoT ruling above, and on your note in \"Use of Commercially Hosted LLMs\" distinguishing \"straightforward registration or click-through\" access from \"institution-specific approvals, negotiated written agreements, IRB approval, lengthy credentialing\" -- could you confirm which side of that line these fall on:</p>\n<ul>\n<li>MRNet (Stanford AIMI): a Research Use Agreement accepted via click-through on the AIMI portal</li>\n<li>fastMRI (NYU, raw k-space/DICOM release): requires emailing NYU and waiting on an approved data-sharing agreement</li>\n<li>OAI (NIH-funded, accessed via a federal data archive): requires a signed Data Use Certification</li>\n<li>SKM-TEA (Stanford AIMI): same access pattern as MRNet</li>\n</ul>\n<p>A ruling per access-pattern (click-through vs. emailed/signed agreement) rather than per dataset would help everyone here, since most of the open questions on this board reduce to the same two patterns. Thanks for the KneeCoT ruling above -- trying to apply it correctly before committing pretraining compute.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Fernando Faria",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36006511-kg.png?t=2026-08-08-21-08-47",
+     "url": "/fernandoadefaria",
+     "tier": "CONTRIBUTOR",
+     "id": 36006511,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1307,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Fernando Faria",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36006511-kg.png?t=2026-08-08-21-08-47",
+      "url": "/fernandoadefaria",
+      "userName": "fernandoadefaria",
+      "tier": "CONTRIBUTOR",
+      "id": 36006511,
+      "profileUrl": "/fernandoadefaria",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36006511,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3520451,
+    "postDate": "2026-09-03T12:25:07.750Z",
+    "rawMarkdown": "Not sure if external data is permitted—but if I do training or label cleaning locally, it's unlikely anyone would be able to tell. Definitely something to think about.",
+    "content": "<p>Not sure if external data is permitted—but if I do training or label cleaning locally, it's unlikely anyone would be able to tell. Definitely something to think about.</p>",
+    "replies": [
+     {
+      "id": 3521355,
+      "postDate": "2026-09-05T16:03:13.637Z",
+      "rawMarkdown": "Sure, but the competition rules state that your published results have to be replicable. This isn't possible if you don't disclose all of your training data. I suppose it doesn't matter if you're not trying to win, but in that case, why bother?",
+      "content": "<p>Sure, but the competition rules state that your published results have to be replicable. This isn't possible if you don't disclose all of your training data. I suppose it doesn't matter if you're not trying to win, but in that case, why bother?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Steve421471",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/steve421471",
+       "tier": "CONTRIBUTOR",
+       "id": 18618211,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 389,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Steve421471",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/steve421471",
+        "userName": "steve421471",
+        "tier": "CONTRIBUTOR",
+        "id": 18618211,
+        "profileUrl": "/steve421471",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 18618211,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1067,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "SpeedSci",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+      "url": "/caoyupeng",
+      "userName": "caoyupeng",
+      "tier": "EXPERT",
+      "id": 26421714,
+      "profileUrl": "/caoyupeng",
+      "performanceTier": "EXPERT",
+      "userId": 26421714,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3519419,
+    "postDate": "2026-09-01T16:59:09.517Z",
+    "rawMarkdown": "A related edge case I would appreciate clarification on:\n\nSuppose a pretrained model checkpoint is publicly downloadable, free of charge, and equally accessible to every competition participant, but the authors originally pretrained it partly on a private clinical cohort that competition participants themselves cannot access.\n\nParticipants would use only the public pretrained checkpoint, not the underlying private data.\n\nWould that public checkpoint be considered an acceptable external model under the competition’s “reasonably accessible to all” rule?\n\nI am specifically trying to distinguish this case from directly using an external dataset that requires a DUA or institutional access. The resource actually used by competitors would be the freely available pretrained model, while some of its historical pretraining data would not itself be reproducible or accessible.\n\nA host ruling would be helpful before deciding whether such a model can be included in a final solution.",
+    "content": "<p>A related edge case I would appreciate clarification on:</p>\n<p>Suppose a pretrained model checkpoint is publicly downloadable, free of charge, and equally accessible to every competition participant, but the authors originally pretrained it partly on a private clinical cohort that competition participants themselves cannot access.</p>\n<p>Participants would use only the public pretrained checkpoint, not the underlying private data.</p>\n<p>Would that public checkpoint be considered an acceptable external model under the competition’s “reasonably accessible to all” rule?</p>\n<p>I am specifically trying to distinguish this case from directly using an external dataset that requires a DUA or institutional access. The resource actually used by competitors would be the freely available pretrained model, while some of its historical pretraining data would not itself be reproducible or accessible.</p>\n<p>A host ruling would be helpful before deciding whether such a model can be included in a final solution.</p>",
+    "replies": [
+     {
+      "id": 3519439,
+      "postDate": "2026-09-01T17:52:04.967Z",
+      "rawMarkdown": "Lets take your thought a tiny bit further.  I don't have access to any of the data used to train ChatGPT, Gemini Pro, or Claude.\nFor that matter Dino V2 training data is hidden from me.\n\nWhat do you think the host would say about the use of these models?\n\nThink the answer given in another post - its our job to understand the restrictions of any data or model used.",
+      "content": "<p>Lets take your thought a tiny bit further.  I don't have access to any of the data used to train ChatGPT, Gemini Pro, or Claude.\nFor that matter Dino V2 training data is hidden from me.</p>\n<p>What do you think the host would say about the use of these models?</p>\n<p>Think the answer given in another post - its our job to understand the restrictions of any data or model used.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "PC Jimmmy",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+       "url": "/pcjimmmy",
+       "tier": "MASTER",
+       "id": 1062256,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 636,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "PC Jimmmy",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+        "url": "/pcjimmmy",
+        "userName": "pcjimmmy",
+        "tier": "MASTER",
+        "id": 1062256,
+        "profileUrl": "/pcjimmmy",
+        "performanceTier": "MASTER",
+        "userId": 1062256,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3519647,
+      "postDate": "2026-09-02T01:28:43.340Z",
+      "rawMarkdown": "I myself not worried about this particular rule.  It only comes into play if you are a winner.  \n\nI see no way in heck I am going to make it to the top 10 - this (IMO) is a really hard set of data and matching what the radiologists reported based on only 58 gold images is a shake up in the making.\n\nI got  7 day ban from discussion a few months ago for suggesting to someone pretty new that the probability of winning was approaching 0.0.",
+      "content": "<p>I myself not worried about this particular rule.  It only comes into play if you are a winner.  </p>\n<p>I see no way in heck I am going to make it to the top 10 - this (IMO) is a really hard set of data and matching what the radiologists reported based on only 58 gold images is a shake up in the making.</p>\n<p>I got  7 day ban from discussion a few months ago for suggesting to someone pretty new that the probability of winning was approaching 0.0.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "PC Jimmmy",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+       "url": "/pcjimmmy",
+       "tier": "MASTER",
+       "id": 1062256,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 636,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "PC Jimmmy",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+        "url": "/pcjimmmy",
+        "userName": "pcjimmmy",
+        "tier": "MASTER",
+        "id": 1062256,
+        "profileUrl": "/pcjimmmy",
+        "performanceTier": "MASTER",
+        "userId": 1062256,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3520313,
+      "postDate": "2026-09-03T05:56:58.643Z",
+      "rawMarkdown": "@javaduke95 Could you please provide an official host ruling on comment #3519419? Specifically, is a freely downloadable checkpoint trained on inaccessible private clinical data allowed, and can it satisfy winner-delivery requirements when its repository only declares Apache-2.0 in the README but provides no LICENSE file or checkpoint-specific terms?\n\nWe need clarification before using MRI-CORE",
+      "content": "<p><a href=\"https://www.kaggle.com/javaduke95\" target=\"_blank\">@javaduke95</a> Could you please provide an official host ruling on comment #3519419? Specifically, is a freely downloadable checkpoint trained on inaccessible private clinical data allowed, and can it satisfy winner-delivery requirements when its repository only declares Apache-2.0 in the README but provides no LICENSE file or checkpoint-specific terms?</p>\n<p>We need clarification before using MRI-CORE</p>",
+      "parent": {},
+      "author": {
+       "displayName": "junicus",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8506559-kg.jpg",
+       "url": "/junicus",
+       "tier": "EXPERT",
+       "id": 8506559,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 530,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "junicus",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8506559-kg.jpg",
+        "url": "/junicus",
+        "userName": "junicus",
+        "tier": "EXPERT",
+        "id": 8506559,
+        "profileUrl": "/junicus",
+        "performanceTier": "EXPERT",
+        "userId": 8506559,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Doublej37",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/doublej37",
+     "tier": "EXPERT",
+     "id": 13958245,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2019,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Doublej37",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/doublej37",
+      "userName": "doublej37",
+      "tier": "EXPERT",
+      "id": 13958245,
+      "profileUrl": "/doublej37",
+      "performanceTier": "EXPERT",
+      "userId": 13958245,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517828,
+   "postDate": "2026-08-28T10:15:00.210Z",
+   "rawMarkdown": "Thanks to the host for the clear ruling on KneeCoT (topic 734109). The stated reasoning was that a dataset requiring a formal data agreement with the providing institution can make the playing field uneven.\n\nCould the host confirm whether that interpretation generalizes to other knee MRI datasets that are free of charge but gated behind an institutional agreement - for example OAI (NIH/NIMH Data Archive), which requires a signed Data Use Certification from an institution holding an active Federal Wide Assurance, or MRNet (Stanford), which requires a Research Use Agreement.\n\nA related question, since it bears on the same decision: winners' obligations require delivering model weights as a public Kaggle dataset, and sharing the final model publicly for open distribution and validation. If a pretrained model were derived from data under such an agreement, would publishing those weights satisfy that obligation - or does that requirement independently rule out pretraining on agreement-gated data, regardless of the license?\n\nAsking before investing compute, so the answer is on record for everyone.",
+   "content": "<p>Thanks to the host for the clear ruling on KneeCoT (topic 734109). The stated reasoning was that a dataset requiring a formal data agreement with the providing institution can make the playing field uneven.</p>\n<p>Could the host confirm whether that interpretation generalizes to other knee MRI datasets that are free of charge but gated behind an institutional agreement - for example OAI (NIH/NIMH Data Archive), which requires a signed Data Use Certification from an institution holding an active Federal Wide Assurance, or MRNet (Stanford), which requires a Research Use Agreement.</p>\n<p>A related question, since it bears on the same decision: winners' obligations require delivering model weights as a public Kaggle dataset, and sharing the final model publicly for open distribution and validation. If a pretrained model were derived from data under such an agreement, would publishing those weights satisfy that obligation - or does that requirement independently rule out pretraining on agreement-gated data, regardless of the license?</p>\n<p>Asking before investing compute, so the answer is on record for everyone.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Ercan Gurvit",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/ercangurvit",
+    "tier": "CONTRIBUTOR",
+    "id": 33369423,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1980,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Ercan Gurvit",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/ercangurvit",
+     "userName": "ercangurvit",
+     "tier": "CONTRIBUTOR",
+     "id": 33369423,
+     "profileUrl": "/ercangurvit",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 33369423,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517828,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737950,
+  "name": "External data behind an institutional data use agreement - does the KneeCoT ruling generalize?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-28T10:15:00.209227800Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737950",
+  "totalMessages": 9,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Ercan Gurvit",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/ercangurvit",
+   "tier": "CONTRIBUTOR",
+   "id": 33369423,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 9,
+  "firstForumMessageId": 3517828,
+  "id": 737950,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Fernando Faria",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737950#3521473",
+  "lastCommentPostDate": "2026-09-06T03:34:04.523333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-28T10:15:00.209227800Z",
+  "title": "External data behind an institutional data use agreement - does the KneeCoT ruling generalize?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737950",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Ercan Gurvit",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/ercangurvit",
+    "userName": "ercangurvit",
+    "tier": "CONTRIBUTOR",
+    "id": 33369423,
+    "profileUrl": "/ercangurvit",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 33369423,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

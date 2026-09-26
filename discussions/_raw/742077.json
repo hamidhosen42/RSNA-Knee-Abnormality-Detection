@@ -1,0 +1,108 @@
+{
+ "forumTopic": {
+  "authorId": 31041949,
+  "authorThumbnailName": "31041949-kg.jpeg?t=2026-03-29-07-11-17",
+  "authorUserDisplayName": "Renmq",
+  "authorUserName": "renmingqian",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3525939,
+   "postDate": "2026-09-19T16:00:31.433Z",
+   "rawMarkdown": "Hi everyone,\n\nI’m currently unable to download the competition dataset from Kaggle using the ZIP download option. The download either fails or does not start properly.\n\nHas anyone else encountered the same issue recently?\n\nIf there is a known solution, alternative download method, or official mirror, I would really appreciate it if you could share it.\n\nThanks in advance!",
+   "content": "<p>Hi everyone,</p>\n<p>I’m currently unable to download the competition dataset from Kaggle using the ZIP download option. The download either fails or does not start properly.</p>\n<p>Has anyone else encountered the same issue recently?</p>\n<p>If there is a known solution, alternative download method, or official mirror, I would really appreciate it if you could share it.</p>\n<p>Thanks in advance!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Renmq",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+    "url": "/renmingqian",
+    "tier": "EXPERT",
+    "id": 31041949,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1823,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "SURPRISE",
+     "featuredUserNames": [
+      "prishajhala"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Renmq",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+     "url": "/renmingqian",
+     "userName": "renmingqian",
+     "tier": "EXPERT",
+     "id": 31041949,
+     "profileUrl": "/renmingqian",
+     "performanceTier": "EXPERT",
+     "userId": 31041949,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3525939,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742077,
+  "name": "Download data problem",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-19T16:00:31.434465Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742077",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Renmq",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+   "url": "/renmingqian",
+   "tier": "EXPERT",
+   "id": 31041949,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3525939,
+  "id": 742077,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Renmq",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742077#3525939",
+  "lastCommentPostDate": "2026-09-19T16:00:31.433333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-19T16:00:31.434465Z",
+  "title": "Download data problem",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742077",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Renmq",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+    "url": "/renmingqian",
+    "userName": "renmingqian",
+    "tier": "EXPERT",
+    "id": 31041949,
+    "profileUrl": "/renmingqian",
+    "performanceTier": "EXPERT",
+    "userId": 31041949,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

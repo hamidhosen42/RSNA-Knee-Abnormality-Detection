@@ -1,0 +1,220 @@
+{
+ "forumTopic": {
+  "authorId": 31647866,
+  "authorThumbnailName": "31647866-kg.jpg?t=2026-06-26-17-57-10",
+  "authorUserDisplayName": "Saanvi Belede Naga",
+  "authorUserName": "saanvibeledenaga",
+  "comments": [
+   {
+    "id": 3510896,
+    "postDate": "2026-08-09T19:31:21.847Z",
+    "rawMarkdown": "This is a common discussion point over lots of years.   \n\nSadly folks can gain information probing the leader board and using an error to stop the submission attempt.  Without those submissions being counted you could run probes all day long.\n\nLike most things in life - cheaters make it harder for the rest of us.\n",
+    "content": "<p>This is a common discussion point over lots of years.   </p>\n<p>Sadly folks can gain information probing the leader board and using an error to stop the submission attempt.  Without those submissions being counted you could run probes all day long.</p>\n<p>Like most things in life - cheaters make it harder for the rest of us.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3511046,
+    "postDate": "2026-08-10T08:35:20.710Z",
+    "rawMarkdown": "Each time I am submitting I am encountering same error you mentioned above although my log is not showing any error, could you please tell me what could be the reason?",
+    "content": "<p>Each time I am submitting I am encountering same error you mentioned above although my log is not showing any error, could you please tell me what could be the reason?</p>",
+    "replies": [
+     {
+      "id": 3511150,
+      "postDate": "2026-08-10T14:40:10.360Z",
+      "rawMarkdown": "What is the specific error message.\n\nMost common errors often deal with memory or shape issues.  The notebook works OK with 3 fake test files but than fails with the full load.   Modify your prediction code so it predicts on a large number of the train files.  If you have timout errors than you would want to predict on 1300 train.  Doing that exposes the code to those common issues.\n\nIf you cannot figure it out - make the notebook and any datasets public and share a link here.  There will be some folks who will help - trouble shooting code without seeing it seldom works.\n",
+      "content": "<p>What is the specific error message.</p>\n<p>Most common errors often deal with memory or shape issues.  The notebook works OK with 3 fake test files but than fails with the full load.   Modify your prediction code so it predicts on a large number of the train files.  If you have timout errors than you would want to predict on 1300 train.  Doing that exposes the code to those common issues.</p>\n<p>If you cannot figure it out - make the notebook and any datasets public and share a link here.  There will be some folks who will help - trouble shooting code without seeing it seldom works.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "PC Jimmmy",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+       "url": "/pcjimmmy",
+       "tier": "MASTER",
+       "id": 1062256,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 642,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "PC Jimmmy",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+        "url": "/pcjimmmy",
+        "userName": "pcjimmmy",
+        "tier": "MASTER",
+        "id": 1062256,
+        "profileUrl": "/pcjimmmy",
+        "performanceTier": "MASTER",
+        "userId": 1062256,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "SUDHISH KUMAR",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/sudhishkumar021",
+     "tier": "CONTRIBUTOR",
+     "id": 31512337,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3451,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "SUDHISH KUMAR",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/sudhishkumar021",
+      "userName": "sudhishkumar021",
+      "tier": "CONTRIBUTOR",
+      "id": 31512337,
+      "profileUrl": "/sudhishkumar021",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31512337,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510839,
+   "postDate": "2026-08-09T17:30:19.077Z",
+   "rawMarkdown": "I encountered an error in one of the cells of my notebook and forgot to remove it before submitting. Though the notebook had an error one of my submissions got used up. I think the competition hosts should look into this and only consider submission counts for valid notebooks only. \nIf I were to submit a csv file and it throws an error while scoring, it doesn't count as a valid submission and the daily submission count doesn't get affected(speaking from prev kaggle comp experiences).",
+   "content": "<p>I encountered an error in one of the cells of my notebook and forgot to remove it before submitting. Though the notebook had an error one of my submissions got used up. I think the competition hosts should look into this and only consider submission counts for valid notebooks only. \nIf I were to submit a csv file and it throws an error while scoring, it doesn't count as a valid submission and the daily submission count doesn't get affected(speaking from prev kaggle comp experiences).</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Saanvi Belede Naga",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31647866-kg.jpg?t=2026-06-26-17-57-10",
+    "url": "/saanvibeledenaga",
+    "tier": "CONTRIBUTOR",
+    "id": 31647866,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -2,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3809,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Saanvi Belede Naga",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31647866-kg.jpg?t=2026-06-26-17-57-10",
+     "url": "/saanvibeledenaga",
+     "userName": "saanvibeledenaga",
+     "tier": "CONTRIBUTOR",
+     "id": 31647866,
+     "profileUrl": "/saanvibeledenaga",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 31647866,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510839,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734062,
+  "name": "Your notebook hit an unhandled error while rerunning your code. ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T17:30:19.075554700Z",
+  "totalVotes": -2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734062",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Saanvi Belede Naga",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31647866-kg.jpg?t=2026-06-26-17-57-10",
+   "url": "/saanvibeledenaga",
+   "tier": "CONTRIBUTOR",
+   "id": 31647866,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3510839,
+  "id": 734062,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734062#3511150",
+  "lastCommentPostDate": "2026-08-10T14:40:10.360Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T17:30:19.075554700Z",
+  "title": "Your notebook hit an unhandled error while rerunning your code. ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734062",
+  "votes": -2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Saanvi Belede Naga",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31647866-kg.jpg?t=2026-06-26-17-57-10",
+    "url": "/saanvibeledenaga",
+    "userName": "saanvibeledenaga",
+    "tier": "CONTRIBUTOR",
+    "id": 31647866,
+    "profileUrl": "/saanvibeledenaga",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 31647866,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

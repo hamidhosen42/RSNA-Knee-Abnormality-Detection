@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 12771595,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "pizzaboy",
+  "authorUserName": "pizzaboythe3rd",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3518148,
+   "postDate": "2026-08-29T16:33:29.733Z",
+   "rawMarkdown": "The rules allow external data if it is \"freely & publicly available to all — pretrained models included.\"\n\nSome widely used academic medical-imaging datasets (for example the Stanford AIMI releases) are free for anyone to access, but access is through a standard research-use agreement whose terms include non-commercial-use and no-derivative-works clauses.\n\nTwo questions, so we can plan within the rules:\n\n1. Does a dataset behind such a free-but-signed research-use agreement count as \"freely & publicly available to all\" for this competition?\n2. If a winning solution used a model pretrained on such a dataset, would that conflict with the winners' open-sourcing obligation as the hosts read it?\n\nA written answer either way would be appreciated — happy to simply not use such data if the answer is no.",
+   "content": "<p>The rules allow external data if it is \"freely &amp; publicly available to all — pretrained models included.\"</p>\n<p>Some widely used academic medical-imaging datasets (for example the Stanford AIMI releases) are free for anyone to access, but access is through a standard research-use agreement whose terms include non-commercial-use and no-derivative-works clauses.</p>\n<p>Two questions, so we can plan within the rules:</p>\n<ol>\n<li>Does a dataset behind such a free-but-signed research-use agreement count as \"freely &amp; publicly available to all\" for this competition?</li>\n<li>If a winning solution used a model pretrained on such a dataset, would that conflict with the winners' open-sourcing obligation as the hosts read it?</li>\n</ol>\n<p>A written answer either way would be appreciated — happy to simply not use such data if the answer is no.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "pizzaboy",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/pizzaboythe3rd",
+    "tier": "CONTRIBUTOR",
+    "id": 12771595,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 74,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "pizzaboy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/pizzaboythe3rd",
+     "userName": "pizzaboythe3rd",
+     "tier": "CONTRIBUTOR",
+     "id": 12771595,
+     "profileUrl": "/pizzaboythe3rd",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 12771595,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3518148,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738111,
+  "name": "External data rule — datasets that are free to access but carry research-use agreements",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-29T16:33:29.732101600Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738111",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "pizzaboy",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/pizzaboythe3rd",
+   "tier": "CONTRIBUTOR",
+   "id": 12771595,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3518148,
+  "id": 738111,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "pizzaboy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738111#3518148",
+  "lastCommentPostDate": "2026-08-29T16:33:29.733333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-29T16:33:29.732101600Z",
+  "title": "External data rule — datasets that are free to access but carry research-use agreements",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738111",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "pizzaboy",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/pizzaboythe3rd",
+    "userName": "pizzaboythe3rd",
+    "tier": "CONTRIBUTOR",
+    "id": 12771595,
+    "profileUrl": "/pizzaboythe3rd",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 12771595,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

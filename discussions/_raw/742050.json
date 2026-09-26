@@ -1,0 +1,345 @@
+{
+ "forumTopic": {
+  "authorId": 14548749,
+  "authorThumbnailName": "14548749-kg.png?t=2026-09-09-05-06-05",
+  "authorUserDisplayName": "starkhushi",
+  "authorUserName": "starkhushi",
+  "comments": [
+   {
+    "id": 3525875,
+    "postDate": "2026-09-19T09:37:29.737Z",
+    "rawMarkdown": "The bigger point is that basically **no one besides [@DreadDevelopment](https://www.kaggle.com/dreaddevelopment) and me has released genuinely new models recently**.\n\nBuilding a new model, prototyping it, training it and running proper ablations takes hours or days. Changing `0.55/0.15` to `0.60/0.10`, re-ranking, or tweaking per-label blend weights takes minutes.\n\nRepeat those minute-scale changes across dozens or hundreds of submissions and you are simply overfitting the public LB. A `.940 → .941` move from another blend tweak is not strong evidence of a better model.\n\nThat is also why I would be very cautious about reading too much into whether 0.55/0.15 or 0.60/0.10 is “better.” Without new models or an independent validation signal, repeatedly searching those blend weights is basically another hyperparameter search on the public split.\n\nSome of this is probably encouraged by the incentive to reach the top of the public leaderboard and make popular notebooks, but that is different from demonstrating better generalization on the hidden test.",
+    "content": "<p>The bigger point is that basically <strong>no one besides <a href=\"https://www.kaggle.com/dreaddevelopment\" target=\"_blank\">@DreadDevelopment</a> and me has released genuinely new models recently</strong>.</p>\n<p>Building a new model, prototyping it, training it and running proper ablations takes hours or days. Changing <code>0.55/0.15</code> to <code>0.60/0.10</code>, re-ranking, or tweaking per-label blend weights takes minutes.</p>\n<p>Repeat those minute-scale changes across dozens or hundreds of submissions and you are simply overfitting the public LB. A <code>.940 → .941</code> move from another blend tweak is not strong evidence of a better model.</p>\n<p>That is also why I would be very cautious about reading too much into whether 0.55/0.15 or 0.60/0.10 is “better.” Without new models or an independent validation signal, repeatedly searching those blend weights is basically another hyperparameter search on the public split.</p>\n<p>Some of this is probably encouraged by the incentive to reach the top of the public leaderboard and make popular notebooks, but that is different from demonstrating better generalization on the hidden test.</p>",
+    "replies": [
+     {
+      "id": 3525876,
+      "postDate": "2026-09-19T09:48:05.897Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -2
+      },
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Mattia Angeli",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+     "url": "/mattiaangeli",
+     "tier": "MASTER",
+     "id": 8955132,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 101,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Mattia Angeli",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+      "url": "/mattiaangeli",
+      "userName": "mattiaangeli",
+      "tier": "MASTER",
+      "id": 8955132,
+      "profileUrl": "/mattiaangeli",
+      "performanceTier": "MASTER",
+      "userId": 8955132,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3525911,
+    "postDate": "2026-09-19T13:41:09.927Z",
+    "rawMarkdown": "So I’m going to agree with @mattiaangeli on this, covered it very well.\nPersonally I have been working hard on developing my next iteration, which happens to be much slower that a few tweaks & a submit.\n\nMy current score & best time (0.944 & 13 minutes) has been a 2 week long training process. \nIn the last two weeks I’ve trained 40 different models, attacking this from every possible angle with a goal of catching Scott.\nThe weights I had made public as well as the datasets, I get on average 50 notifications a day (0.924 Raptor)\nSo that bulk section of teams sitting at 0.941 are sitting there due to the mass forking and minor tweaking not actual tuning nor training nor anything that’s not already being done.\n\nThis makes this competition especially slow & difficult for people like me, I personally can only really use the discussions with others to build on new ideas due to a large percentage of public code/notebooks just being forks of my earlier work.\n\nI did audit the competition a week or so ago & in total, 10,000 downloads over my datasets with roughly 3,000 forks. Just about everyone gives credit so I am appreciative of that! \nJust takes teams like my team longer to produce genuine quality work.\n(I have been non stop working this for weeks & just in the past 2 or so days broke my own best of 0.941 & scoring time of 14 minutes)",
+    "content": "<p>So I’m going to agree with <a href=\"/mattiaangeli\" target=\"_blank\">@mattiaangeli</a> on this, covered it very well.\nPersonally I have been working hard on developing my next iteration, which happens to be much slower that a few tweaks &amp; a submit.</p>\n<p>My current score &amp; best time (0.944 &amp; 13 minutes) has been a 2 week long training process. \nIn the last two weeks I’ve trained 40 different models, attacking this from every possible angle with a goal of catching Scott.\nThe weights I had made public as well as the datasets, I get on average 50 notifications a day (0.924 Raptor)\nSo that bulk section of teams sitting at 0.941 are sitting there due to the mass forking and minor tweaking not actual tuning nor training nor anything that’s not already being done.</p>\n<p>This makes this competition especially slow &amp; difficult for people like me, I personally can only really use the discussions with others to build on new ideas due to a large percentage of public code/notebooks just being forks of my earlier work.</p>\n<p>I did audit the competition a week or so ago &amp; in total, 10,000 downloads over my datasets with roughly 3,000 forks. Just about everyone gives credit so I am appreciative of that! \nJust takes teams like my team longer to produce genuine quality work.\n(I have been non stop working this for weeks &amp; just in the past 2 or so days broke my own best of 0.941 &amp; scoring time of 14 minutes)</p>",
+    "replies": [
+     {
+      "id": 3525968,
+      "postDate": "2026-09-19T18:11:24.570Z",
+      "rawMarkdown": "Getting that down to 13 minutes is really impressive.  When I tried using CoAtNet (assuming that's what you're still using), my best submission time was around 25 minutes.",
+      "content": "<p>Getting that down to 13 minutes is really impressive.  When I tried using CoAtNet (assuming that's what you're still using), my best submission time was around 25 minutes.</p>",
+      "replies": [
+       {
+        "id": 3526030,
+        "postDate": "2026-09-20T01:17:56.257Z",
+        "rawMarkdown": "Thank you sir! & Yes, still CoAtNet, paired with a ConvNeXt now.\nThe thing that really surprised me was how little of our runtime is actually the model, with as little as 2 minutes of diff between a single arm & a dual arm run.\n",
+        "content": "<p>Thank you sir! &amp; Yes, still CoAtNet, paired with a ConvNeXt now.\nThe thing that really surprised me was how little of our runtime is actually the model, with as little as 2 minutes of diff between a single arm &amp; a dual arm run.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 144,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Scott Willis",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/scottgwillis",
+       "tier": "CONTRIBUTOR",
+       "id": 17764997,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "dreaddevelopment"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Scott Willis",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/scottgwillis",
+        "userName": "scottgwillis",
+        "tier": "CONTRIBUTOR",
+        "id": 17764997,
+        "profileUrl": "/scottgwillis",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 17764997,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3526152,
+      "postDate": "2026-09-20T14:31:02.677Z",
+      "rawMarkdown": "Absolutely — that’s the distinction I was trying to highlight. The consistency of the 0.941 score shows how much of the public leaderboard comes from the same recipe and minor tweaks.\n\nRespect for making your datasets and weights public despite the massive number of forks. And congrats on 0.944 in 13 minutes — that kind of improvement clearly comes from much deeper experimentation.\n",
+      "content": "<p>Absolutely — that’s the distinction I was trying to highlight. The consistency of the 0.941 score shows how much of the public leaderboard comes from the same recipe and minor tweaks.</p>\n<p>Respect for making your datasets and weights public despite the massive number of forks. And congrats on 0.944 in 13 minutes — that kind of improvement clearly comes from much deeper experimentation.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "starkhushi",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+       "url": "/starkhushi",
+       "tier": "EXPERT",
+       "id": 14548749,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": -2,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 607,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "starkhushi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+        "url": "/starkhushi",
+        "userName": "starkhushi",
+        "tier": "EXPERT",
+        "id": 14548749,
+        "profileUrl": "/starkhushi",
+        "performanceTier": "EXPERT",
+        "userId": 14548749,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 144,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "KAGGLE",
+      "featuredUserNames": [
+       "daveconnor"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dread Development",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+      "url": "/dreaddevelopment",
+      "userName": "dreaddevelopment",
+      "tier": "EXPERT",
+      "id": 35987882,
+      "profileUrl": "/dreaddevelopment",
+      "performanceTier": "EXPERT",
+      "userId": 35987882,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3525863,
+   "postDate": "2026-09-19T07:49:26.077Z",
+   "rawMarkdown": "Around 200 teams share a public score of exactly 0.941, and most run a fork of @mattiaangeli's *Bend the Knee to the Dinosaurs* with the 0.941 recipe from @maverickss26 / @renta0426. I diffed the forks against the base and found three things worth knowing if you're in that block.\n\n**1. The base notebook documents its own experiments.** Its `.ipynb` metadata holds an `rsna_optimization` entry per version, naming the single predictive change each version made. Pull the notebook with `kaggle kernels pull mattiaangeli/bend-the-knee-to-the-dinosaurs -m` and read the metadata of the JSON file. It's the closest thing to an ablation log this competition has.\n\n**2. The 0.941 recipe is three changes, not four.** Against v27 (0.940) it changes the per-label outer CoAt weights, re-ranks the inner CoAt/Raptor hybrid, sets the Raptor arms to 0.55/0.15, and re-ranks `_ke_cr`. That last one does nothing: `_raptor.csv` is already a percentile rank at that point.\n\n**3. Mattia's own stack keeps the Raptor arms at 0.60/0.10.** His ledger shows the per-label map and the inner re-rank adopted, but not the 0.55/0.15 arms. Every 0.55/0.15 build I could find (maverickss26, renta0426, mine, a public copy of mine) sits at 0.941, and @jiweiliu's speed fork independently reverted the same two weights.\n\nEvery number here is a real submission:\n\n| configuration | public |\n|---|---|\n| v27, `model_sources`/`kernel_sources` missing (all 20 DINOv2 members silently dropped) | 0.937 |\n| v27, complete sources | 0.940 |\n| + per-label map, inner re-rank, arms 0.55/0.15 | 0.941 |\n| + arms back to 0.60/0.10 | [SCORE] |\n\nA runnable version with the full source checklist is here: https://www.kaggle.com/code/starkhushi/rsna-knee-why-public-forks-stop-at-0-941\n\nOne caveat: the per-label map was tuned on the public split, and `Lateral Meniscus = 1.00` discards three of the four stages for that column. Keep a flat-0.60 version as your second final pick.\n",
+   "content": "<p>Around 200 teams share a public score of exactly 0.941, and most run a fork of <a href=\"/mattiaangeli\" target=\"_blank\">@mattiaangeli</a>'s <em>Bend the Knee to the Dinosaurs</em> with the 0.941 recipe from <a href=\"/maverickss26\" target=\"_blank\">@maverickss26</a> / <a href=\"/renta0426\" target=\"_blank\">@renta0426</a>. I diffed the forks against the base and found three things worth knowing if you're in that block.</p>\n<p><strong>1. The base notebook documents its own experiments.</strong> Its <code>.ipynb</code> metadata holds an <code>rsna_optimization</code> entry per version, naming the single predictive change each version made. Pull the notebook with <code>kaggle kernels pull mattiaangeli/bend-the-knee-to-the-dinosaurs -m</code> and read the metadata of the JSON file. It's the closest thing to an ablation log this competition has.</p>\n<p><strong>2. The 0.941 recipe is three changes, not four.</strong> Against v27 (0.940) it changes the per-label outer CoAt weights, re-ranks the inner CoAt/Raptor hybrid, sets the Raptor arms to 0.55/0.15, and re-ranks <code>_ke_cr</code>. That last one does nothing: <code>_raptor.csv</code> is already a percentile rank at that point.</p>\n<p><strong>3. Mattia's own stack keeps the Raptor arms at 0.60/0.10.</strong> His ledger shows the per-label map and the inner re-rank adopted, but not the 0.55/0.15 arms. Every 0.55/0.15 build I could find (maverickss26, renta0426, mine, a public copy of mine) sits at 0.941, and <a href=\"/jiweiliu\" target=\"_blank\">@jiweiliu</a>'s speed fork independently reverted the same two weights.</p>\n<p>Every number here is a real submission:</p>\n<table>\n<thead>\n<tr>\n<th>configuration</th>\n<th>public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>v27, <code>model_sources</code>/<code>kernel_sources</code> missing (all 20 DINOv2 members silently dropped)</td>\n<td>0.937</td>\n</tr>\n<tr>\n<td>v27, complete sources</td>\n<td>0.940</td>\n</tr>\n<tr>\n<td>+ per-label map, inner re-rank, arms 0.55/0.15</td>\n<td>0.941</td>\n</tr>\n<tr>\n<td>+ arms back to 0.60/0.10</td>\n<td>[SCORE]</td>\n</tr>\n</tbody>\n</table>\n<p>A runnable version with the full source checklist is here: <a href=\"https://www.kaggle.com/code/starkhushi/rsna-knee-why-public-forks-stop-at-0-941\" target=\"_blank\">https://www.kaggle.com/code/starkhushi/rsna-knee-why-public-forks-stop-at-0-941</a></p>\n<p>One caveat: the per-label map was tuned on the public split, and <code>Lateral Meniscus = 1.00</code> discards three of the four stages for that column. Keep a flat-0.60 version as your second final pick.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "starkhushi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+    "url": "/starkhushi",
+    "tier": "EXPERT",
+    "id": 14548749,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 3
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 607,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "starkhushi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+     "url": "/starkhushi",
+     "userName": "starkhushi",
+     "tier": "EXPERT",
+     "id": 14548749,
+     "profileUrl": "/starkhushi",
+     "performanceTier": "EXPERT",
+     "userId": 14548749,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3525863,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742050,
+  "name": "Why ~200 public forks sit at exactly 0.941 ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-19T07:49:26.076795400Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742050",
+  "totalMessages": 6,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "starkhushi",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+   "url": "/starkhushi",
+   "tier": "EXPERT",
+   "id": 14548749,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 6,
+  "firstForumMessageId": 3525863,
+  "id": 742050,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "starkhushi",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742050#3526152",
+  "lastCommentPostDate": "2026-09-20T14:31:02.676666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-19T07:49:26.076795400Z",
+  "title": "Why ~200 public forks sit at exactly 0.941 ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742050",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "starkhushi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+    "url": "/starkhushi",
+    "userName": "starkhushi",
+    "tier": "EXPERT",
+    "id": 14548749,
+    "profileUrl": "/starkhushi",
+    "performanceTier": "EXPERT",
+    "userId": 14548749,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

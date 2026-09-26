@@ -1,0 +1,11 @@
+experiment,configuration,status,public_LB,standalone_quality,OOF_macro_AUC,gold58_AUC,corr_with_D4_Lite_pearson,corr_with_D4_Lite_spearman,per_target_corr,marginal_blend_contribution,runtime_contribution,evidence_source,notes
+D4-Blend-full,public P (0.55) + private F[S_dist+S_coat+S_cnxl] (0.45),OBSERVED (not run by us),0.946,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE (only 3 visible test studies),UNAVAILABLE,UNAVAILABLE,vs Lite: +0.001 displayed; rounding interval (0.000; 0.002),fleet 95 s on 3 studies (not extrapolatable),Kaggle bestPublicScore v1,-
+D4-Lite (= Blend minus S_coat and S_cnxl),public P (0.55) + private F[S_dist] (0.45),OBSERVED (not run by us),0.945,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE,1.0 (self),1.0 (self),-,-,fleet 33 s on 3 studies,Kaggle bestPublicScore v1,-
+Blend minus S_dist,public + F[S_coat+S_cnxl],NOT RUNNABLE,-,-,-,-,-,-,-,-,-,-,private weights inaccessible to us
+Blend minus S_coat,public + F[S_dist+S_cnxl],NOT RUNNABLE,-,-,-,-,-,-,-,-,-,-,private weights inaccessible to us
+Blend minus S_cnxl,public + F[S_dist+S_coat],NOT RUNNABLE,-,-,-,-,-,-,-,-,-,-,private weights inaccessible to us
+Blend/Lite minus private leg (= Jiwei v11 + Fracture flip),delete cells 30-32 of D4 Lite,PROPOSED (1 submission; needs user approval),-,-,-,-,-,-,-,isolates private-leg LB effect (LITE minus this) and flip effect (this minus 0.943),removes private leg,-,a plain fork crashes in cell 31 (TypeError on None/'arms'); cells must be deleted
+Jiwei v11 (0.943) = D4 public part without Fracture flip,upstream,OBSERVED (not run by us),0.943,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE,-,commit run 277 s on 3 studies,Kaggle bestPublicScore v11,-
+Fracture flip alone on 0.942 base,maverick 0942 v7 + flip,OBSERVED (third-party),0.942 (parent 0.942),-,author-reported report-label: Fracture +0.0118 (n=4185); macro +0.00099,author-reported: Fracture -0.0097 (18 pos),-,-,-,+0.000 displayed (interval -0.001; +0.001),none,sushanthtiruvaipati/rsna-knee-0942-rad-fracture-oof,author claims not verified by us
+D4-w55,public 0.45 + F[3 arms] 0.55,UNKNOWN SCORE,not in >=0.941 list,-,-,-,-,-,-,-,-,API list,may be unscored or <0.941
+D4-blend-b,public'(Fracture re-excluded) 0.60 + F 0.18 + core 0.22,UNKNOWN SCORE,not in >=0.941 list,-,-,-,-,-,-,-,-,API list,may be unscored or <0.941

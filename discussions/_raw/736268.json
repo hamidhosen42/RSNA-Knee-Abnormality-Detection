@@ -1,0 +1,653 @@
+{
+ "forumTopic": {
+  "authorId": 11072950,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "XuKong Ji",
+  "authorUserName": "xukongji",
+  "comments": [
+   {
+    "id": 3518150,
+    "postDate": "2026-08-29T16:57:18.110Z",
+    "rawMarkdown": "You can also just check for notebooks with comments. Notebooks with lots of likes and no comments are just high scoring, overfit to LB, AI generated noise. This alone can find the few useful publicly shared notebooks. ",
+    "content": "<p>You can also just check for notebooks with comments. Notebooks with lots of likes and no comments are just high scoring, overfit to LB, AI generated noise. This alone can find the few useful publicly shared notebooks. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "KAGGLE",
+      "featuredUserNames": [
+       "adaluvu"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514799,
+    "postDate": "2026-08-20T06:13:14.623Z",
+    "rawMarkdown": "Sadly the public notebooks has become the place were you fork and hope to get some up votes.\n\nI do sort by recently created and NEVER look at folks without a decent kaggle ranking as I plan my what the heck am I going to try today list.",
+    "content": "<p>Sadly the public notebooks has become the place were you fork and hope to get some up votes.</p>\n<p>I do sort by recently created and NEVER look at folks without a decent kaggle ranking as I plan my what the heck am I going to try today list.</p>",
+    "replies": [
+     {
+      "id": 3515244,
+      "postDate": "2026-08-21T07:36:14.320Z",
+      "rawMarkdown": "Totally agree. Too many notebooks are just ensembling spam for GM points. ",
+      "content": "<p>Totally agree. Too many notebooks are just ensembling spam for GM points. </p>",
+      "parent": {},
+      "author": {
+       "displayName": "XuKong Ji",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/xukongji",
+       "tier": "EXPERT",
+       "id": 11072950,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 228,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "XuKong Ji",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/xukongji",
+        "userName": "xukongji",
+        "tier": "EXPERT",
+        "id": 11072950,
+        "profileUrl": "/xukongji",
+        "performanceTier": "EXPERT",
+        "userId": 11072950,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514969,
+    "postDate": "2026-08-20T13:55:36.063Z",
+    "rawMarkdown": "[This discussion from ROGII-Wellbore](https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction/discussion/718670) might be useful to sift through the noise of public notebooks. ",
+    "content": "<p><a href=\"https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction/discussion/718670\" target=\"_blank\">This discussion from ROGII-Wellbore</a> might be useful to sift through the noise of public notebooks. </p>",
+    "replies": [
+     {
+      "id": 3515246,
+      "postDate": "2026-08-21T07:41:22.523Z",
+      "rawMarkdown": "Thanks for share this. Will check it out",
+      "content": "<p>Thanks for share this. Will check it out</p>",
+      "parent": {},
+      "author": {
+       "displayName": "XuKong Ji",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/xukongji",
+       "tier": "EXPERT",
+       "id": 11072950,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 228,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "XuKong Ji",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/xukongji",
+        "userName": "xukongji",
+        "tier": "EXPERT",
+        "id": 11072950,
+        "profileUrl": "/xukongji",
+        "performanceTier": "EXPERT",
+        "userId": 11072950,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3518140,
+    "postDate": "2026-08-29T16:26:25.403Z",
+    "rawMarkdown": "This is what happens at the coding agent era. Generating lots of contents (maybe low quality ones) is cheap",
+    "content": "<p>This is what happens at the coding agent era. Generating lots of contents (maybe low quality ones) is cheap</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Homurraa",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/liuh26",
+     "tier": "CONTRIBUTOR",
+     "id": 16295178,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2933,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Homurraa",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/liuh26",
+      "userName": "liuh26",
+      "tier": "CONTRIBUTOR",
+      "id": 16295178,
+      "profileUrl": "/liuh26",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 16295178,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514970,
+    "postDate": "2026-08-20T13:57:10.140Z",
+    "rawMarkdown": "A project that’s a bit of a challenge for me, but one that benefits humanity...",
+    "content": "<p>A project that’s a bit of a challenge for me, but one that benefits humanity…</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ahmet Kiraz",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35920773-kg.jpg?t=2026-08-20-08-47-47",
+     "url": "/ahmetqiraz",
+     "tier": "CONTRIBUTOR",
+     "id": 35920773,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4362,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ahmet Kiraz",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35920773-kg.jpg?t=2026-08-20-08-47-47",
+      "url": "/ahmetqiraz",
+      "userName": "ahmetqiraz",
+      "tier": "CONTRIBUTOR",
+      "id": 35920773,
+      "profileUrl": "/ahmetqiraz",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35920773,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514915,
+    "postDate": "2026-08-20T11:57:46.930Z",
+    "rawMarkdown": "It’s currently a race to overfit the public leaderboard, 0.001 at a time 😅\n",
+    "content": "<p>It’s currently a race to overfit the public leaderboard, 0.001 at a time 😅</p>",
+    "replies": [
+     {
+      "id": 3514926,
+      "postDate": "2026-08-20T12:25:37.590Z",
+      "rawMarkdown": "Here's the only cell you need from several dozen top-scoring public notebooks:\n\n**[DINOv3 architecture](https://www.kaggle.com/code/mattiaangeli/bend-the-knee-to-dinov3-ensembled?scriptVersionId=343218600&cellId=24)**\n\nIt was only a modest addition to [Pilkwang's 20-model DINOv2 ensemble](https://www.kaggle.com/datasets/pilkwang/rsna-knee-weights), since their errors remain fairly correlated.\n",
+      "content": "<p>Here's the only cell you need from several dozen top-scoring public notebooks:</p>\n<p><strong><a href=\"https://www.kaggle.com/code/mattiaangeli/bend-the-knee-to-dinov3-ensembled?scriptVersionId=343218600&amp;cellId=24\" target=\"_blank\">DINOv3 architecture</a></strong></p>\n<p>It was only a modest addition to <a href=\"https://www.kaggle.com/datasets/pilkwang/rsna-knee-weights\" target=\"_blank\">Pilkwang's 20-model DINOv2 ensemble</a>, since their errors remain fairly correlated.</p>",
+      "replies": [
+       {
+        "id": 3515241,
+        "postDate": "2026-08-21T07:27:59.900Z",
+        "rawMarkdown": "That's nice!!!",
+        "content": "<p>That's nice!!!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "XuKong Ji",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/xukongji",
+         "tier": "EXPERT",
+         "id": 11072950,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 228,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "XuKong Ji",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/xukongji",
+          "userName": "xukongji",
+          "tier": "EXPERT",
+          "id": 11072950,
+          "profileUrl": "/xukongji",
+          "performanceTier": "EXPERT",
+          "userId": 11072950,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Mattia Angeli",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+       "url": "/mattiaangeli",
+       "tier": "MASTER",
+       "id": 8955132,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 102,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Mattia Angeli",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+        "url": "/mattiaangeli",
+        "userName": "mattiaangeli",
+        "tier": "MASTER",
+        "id": 8955132,
+        "profileUrl": "/mattiaangeli",
+        "performanceTier": "MASTER",
+        "userId": 8955132,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Mattia Angeli",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+     "url": "/mattiaangeli",
+     "tier": "MASTER",
+     "id": 8955132,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 102,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Mattia Angeli",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+      "url": "/mattiaangeli",
+      "userName": "mattiaangeli",
+      "tier": "MASTER",
+      "id": 8955132,
+      "profileUrl": "/mattiaangeli",
+      "performanceTier": "MASTER",
+      "userId": 8955132,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514885,
+    "postDate": "2026-08-20T10:48:42.737Z",
+    "rawMarkdown": ">https://www.kaggle.com/code/*******/*******\n\n> Hey Claude/codex, extract any potentially useful insights from this public notebook.\n\nThat’s all you need! You don’t even need to upvote a notebook just to fork it when you’re not sure whether it’ll be useful.",
+    "content": "<blockquote>\n  <p><a href=\"https://www.kaggle.com/code/*******/*******\" target=\"_blank\">https://www.kaggle.com/code/*******/*******</a></p>\n  <p>Hey Claude/codex, extract any potentially useful insights from this public notebook.</p>\n</blockquote>\n<p>That’s all you need! You don’t even need to upvote a notebook just to fork it when you’re not sure whether it’ll be useful.</p>",
+    "replies": [
+     {
+      "id": 3514963,
+      "postDate": "2026-08-20T13:40:24.283Z",
+      "rawMarkdown": "Maybe you could also ask Claude to scan the top scoring public notebooks and tell you which are original work, and which are a fork with one hyperparameter changed and a new name on it. The credits section is usually the part that got removed.\n\nThen you can decide if and who to upvote — and who to report.\n",
+      "content": "<p>Maybe you could also ask Claude to scan the top scoring public notebooks and tell you which are original work, and which are a fork with one hyperparameter changed and a new name on it. The credits section is usually the part that got removed.</p>\n<p>Then you can decide if and who to upvote — and who to report.</p>",
+      "replies": [
+       {
+        "id": 3515245,
+        "postDate": "2026-08-21T07:39:13.990Z",
+        "rawMarkdown": "Seeming likes token is all i need😅",
+        "content": "<p>Seeming likes token is all i need😅</p>",
+        "parent": {},
+        "author": {
+         "displayName": "XuKong Ji",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/xukongji",
+         "tier": "EXPERT",
+         "id": 11072950,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 228,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "XuKong Ji",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/xukongji",
+          "userName": "xukongji",
+          "tier": "EXPERT",
+          "id": 11072950,
+          "profileUrl": "/xukongji",
+          "performanceTier": "EXPERT",
+          "userId": 11072950,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Mattia Angeli",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+       "url": "/mattiaangeli",
+       "tier": "MASTER",
+       "id": 8955132,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 102,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Mattia Angeli",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8955132-kg.jpg?t=2024-11-21-10-33-23",
+        "url": "/mattiaangeli",
+        "userName": "mattiaangeli",
+        "tier": "MASTER",
+        "id": 8955132,
+        "profileUrl": "/mattiaangeli",
+        "performanceTier": "MASTER",
+        "userId": 8955132,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Bull",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4472591-kg.jpg",
+     "url": "/welshonionman",
+     "tier": "EXPERT",
+     "id": 4472591,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 139,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Bull",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4472591-kg.jpg",
+      "url": "/welshonionman",
+      "userName": "welshonionman",
+      "tier": "EXPERT",
+      "id": 4472591,
+      "profileUrl": "/welshonionman",
+      "performanceTier": "EXPERT",
+      "userId": 4472591,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514771,
+   "postDate": "2026-08-20T04:31:34.063Z",
+   "rawMarkdown": "Hard to learn something new from public codes, They are noisy, duplicate...",
+   "content": "<p>Hard to learn something new from public codes, They are noisy, duplicate…</p>",
+   "parent": {},
+   "author": {
+    "displayName": "XuKong Ji",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/xukongji",
+    "tier": "EXPERT",
+    "id": 11072950,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 13,
+    "canUpvote": true,
+    "totalUpvotes": 13
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 228,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "bwandowando",
+      "osamurai",
+      "tuckerarrants",
+      "hiromuashida",
+      "yukiarl",
+      "mattiaangeli",
+      "ggayoayogg",
+      "k256net",
+      "adaluvu"
+     ],
+     "userCount": 9
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "XuKong Ji",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/xukongji",
+     "userName": "xukongji",
+     "tier": "EXPERT",
+     "id": 11072950,
+     "profileUrl": "/xukongji",
+     "performanceTier": "EXPERT",
+     "userId": 11072950,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514771,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736268,
+  "name": "Too many noise public notebookS.",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-20T04:31:34.063043800Z",
+  "totalVotes": 13,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736268",
+  "totalMessages": 13,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "XuKong Ji",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/xukongji",
+   "tier": "EXPERT",
+   "id": 11072950,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 13,
+  "firstForumMessageId": 3514771,
+  "id": 736268,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Tucker Arrants",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736268#3518150",
+  "lastCommentPostDate": "2026-08-29T16:57:18.110Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-20T04:31:34.063043800Z",
+  "title": "Too many noise public notebookS.",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736268",
+  "votes": 13,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "XuKong Ji",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/xukongji",
+    "userName": "xukongji",
+    "tier": "EXPERT",
+    "id": 11072950,
+    "profileUrl": "/xukongji",
+    "performanceTier": "EXPERT",
+    "userId": 11072950,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,373 @@
+{
+ "forumTopic": {
+  "authorId": 3991745,
+  "authorThumbnailName": "3991745-kg.jpg?t=2025-03-27-17-14-19",
+  "authorUserDisplayName": "tennogh",
+  "authorUserName": "tennogh",
+  "comments": [
+   {
+    "id": 3514731,
+    "postDate": "2026-08-20T01:58:56.887Z",
+    "rawMarkdown": "Thanks for sharing! I ran your MRI through my model:\n\n| Rank | Finding   | Score |\n| ---: | --------- | ----: |\n|    1 | Contusion | - |\n|    2 | Synovitis | - |\n|    3 | ACL       | - |\n\nContusion is a nice hit since you already confirmed it, and ACL also made the top 3.\n\nSo for Synovitis, one of two things may be true:\n\n* My model has a high Public LB score, but has learned some competition-specific bias and is weak to OOD cases.\n* You actually have some signs of Synovitis — which I hope is not the case.\n",
+    "content": "<p>Thanks for sharing! I ran your MRI through my model:</p>\n<table>\n<thead>\n<tr>\n<th>Rank</th>\n<th>Finding</th>\n<th>Score</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Contusion</td>\n<td>-</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Synovitis</td>\n<td>-</td>\n</tr>\n<tr>\n<td>3</td>\n<td>ACL</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p>Contusion is a nice hit since you already confirmed it, and ACL also made the top 3.</p>\n<p>So for Synovitis, one of two things may be true:</p>\n<ul>\n<li>My model has a high Public LB score, but has learned some competition-specific bias and is weak to OOD cases.</li>\n<li>You actually have some signs of Synovitis — which I hope is not the case.</li>\n</ul>",
+    "replies": [
+     {
+      "id": 3515283,
+      "postDate": "2026-08-21T11:11:22.550Z",
+      "rawMarkdown": "I'm not completely certain because I don't fully understand the terminology in French vs English, but I believe the report does not mention synovitis, but it does mention effusion. According to [this discussion](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733932), both are often co-occurring and synovitis is under-reported.",
+      "content": "<p>I'm not completely certain because I don't fully understand the terminology in French vs English, but I believe the report does not mention synovitis, but it does mention effusion. According to <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733932\" target=\"_blank\">this discussion</a>, both are often co-occurring and synovitis is under-reported.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "tennogh",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+       "url": "/tennogh",
+       "tier": "MASTER",
+       "id": 3991745,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 8,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "syamoji141",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+        "url": "/syamoji141chan",
+        "userName": "syamoji141chan",
+        "tier": "EXPERT",
+        "id": 5570066,
+        "profileUrl": "/syamoji141chan",
+        "performanceTier": "EXPERT",
+        "userId": 5570066,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chikuwabu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+     "url": "/prgckwb",
+     "tier": "MASTER",
+     "id": 9945255,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 28,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "SURPRISE",
+      "featuredUserNames": [
+       "tuckerarrants"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chikuwabu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+      "url": "/prgckwb",
+      "userName": "prgckwb",
+      "tier": "MASTER",
+      "id": 9945255,
+      "profileUrl": "/prgckwb",
+      "performanceTier": "MASTER",
+      "userId": 9945255,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517342,
+    "postDate": "2026-08-26T22:14:23.650Z",
+    "rawMarkdown": "Great, and thanks for sharing this dataset @tennogh.\n\nI would share my MRI and data but i have just immigrated to Canada, and i didn't bring that MRI with me, so i won't be able to share the data.",
+    "content": "<p>Great, and thanks for sharing this dataset <a href=\"https://www.kaggle.com/tennogh\" target=\"_blank\">@tennogh</a>.</p>\n<p>I would share my MRI and data but i have just immigrated to Canada, and i didn't bring that MRI with me, so i won't be able to share the data.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Harsh_2035",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+     "url": "/harsh2035",
+     "tier": "EXPERT",
+     "id": 27313120,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 845,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Harsh_2035",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+      "url": "/harsh2035",
+      "userName": "harsh2035",
+      "tier": "EXPERT",
+      "id": 27313120,
+      "profileUrl": "/harsh2035",
+      "performanceTier": "EXPERT",
+      "userId": 27313120,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515335,
+    "postDate": "2026-08-21T14:22:27.960Z",
+    "rawMarkdown": "I might have missed it - did you share the \"report\" - I don't see it in the data set you shared.\n\nNever-mind - looked again and it was right there   :)",
+    "content": "<p>I might have missed it - did you share the \"report\" - I don't see it in the data set you shared.</p>\n<p>Never-mind - looked again and it was right there   :)</p>",
+    "replies": [
+     {
+      "id": 3515347,
+      "postDate": "2026-08-21T14:36:04.823Z",
+      "rawMarkdown": "The structure might not be very clear, I tried to follow this competition's format. The report (in French) is included in \"train.csv\", so you can generate your own labels.",
+      "content": "<p>The structure might not be very clear, I tried to follow this competition's format. The report (in French) is included in \"train.csv\", so you can generate your own labels.</p>",
+      "replies": [
+       {
+        "id": 3515349,
+        "postDate": "2026-08-21T14:42:52.260Z",
+        "rawMarkdown": "Thanks - you did good - I did not yet have enough coffee to have a functional brain.\n\nThanks for the share\n",
+        "content": "<p>Thanks - you did good - I did not yet have enough coffee to have a functional brain.</p>\n<p>Thanks for the share</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 643,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "tennogh",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+       "url": "/tennogh",
+       "tier": "MASTER",
+       "id": 3991745,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 8,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "syamoji141",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+        "url": "/syamoji141chan",
+        "userName": "syamoji141chan",
+        "tier": "EXPERT",
+        "id": 5570066,
+        "profileUrl": "/syamoji141chan",
+        "performanceTier": "EXPERT",
+        "userId": 5570066,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 643,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3514616,
+   "postDate": "2026-08-19T18:21:17.020Z",
+   "rawMarkdown": "After seeing [this discussion](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733497) by @harsh2035, I figured it would be fun to share [my knee MRI](https://www.kaggle.com/datasets/tennogh/my-knee-mri).\n\nFor context, this was taken 6 weeks after an ice climbing accident and confirmed a full ACL rupture. There are other abnormalities such as partial tears and contusion. Because of this accident I was forced to stop mountaineering for 6 months and started competing on Kaggle.\n\nThe dataset license is CC0, however the report text is written by a radiologist and I don't claim any rights to it. I have purged the data of any sensitive information and put it into the competition format.\n\nEdit: interestingly my current model correctly predicts the ACL, but it also confidently identifies a fracture, even though there was none.",
+   "content": "<p>After seeing <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733497\" target=\"_blank\">this discussion</a> by <a href=\"https://www.kaggle.com/harsh2035\" target=\"_blank\">@harsh2035</a>, I figured it would be fun to share <a href=\"https://www.kaggle.com/datasets/tennogh/my-knee-mri\" target=\"_blank\">my knee MRI</a>.</p>\n<p>For context, this was taken 6 weeks after an ice climbing accident and confirmed a full ACL rupture. There are other abnormalities such as partial tears and contusion. Because of this accident I was forced to stop mountaineering for 6 months and started competing on Kaggle.</p>\n<p>The dataset license is CC0, however the report text is written by a radiologist and I don't claim any rights to it. I have purged the data of any sensitive information and put it into the competition format.</p>\n<p>Edit: interestingly my current model correctly predicts the ACL, but it also confidently identifies a fracture, even though there was none.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "tennogh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+    "url": "/tennogh",
+    "tier": "MASTER",
+    "id": 3991745,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 20,
+    "canUpvote": true,
+    "totalUpvotes": 20
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 8,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "pejophylo",
+      "adastroabyssosque",
+      "hiranorm"
+     ],
+     "userCount": 3
+    },
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "pejophylo",
+      "yosukeyama",
+      "pompom555",
+      "adaluvu",
+      "hiranorm",
+      "sultent"
+     ],
+     "userCount": 6
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "syamoji141",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+     "url": "/syamoji141chan",
+     "userName": "syamoji141chan",
+     "tier": "EXPERT",
+     "id": 5570066,
+     "profileUrl": "/syamoji141chan",
+     "performanceTier": "EXPERT",
+     "userId": 5570066,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3514616,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736170,
+  "name": "Sharing my knee MRI",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-19T18:21:17.021054800Z",
+  "totalVotes": 20,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736170",
+  "totalMessages": 6,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "tennogh",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+   "url": "/tennogh",
+   "tier": "MASTER",
+   "id": 3991745,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 6,
+  "firstForumMessageId": 3514616,
+  "id": 736170,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Harsh_2035",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736170#3517342",
+  "lastCommentPostDate": "2026-08-26T22:14:23.650Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-19T18:21:17.021054800Z",
+  "title": "Sharing my knee MRI",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736170",
+  "votes": 20,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "syamoji141",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+    "url": "/syamoji141chan",
+    "userName": "syamoji141chan",
+    "tier": "EXPERT",
+    "id": 5570066,
+    "profileUrl": "/syamoji141chan",
+    "performanceTier": "EXPERT",
+    "userId": 5570066,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "forumTopic": {
+  "authorId": 20249480,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Malav D Modi",
+  "authorUserName": "malavdmodi",
+  "comments": [
+   {
+    "id": 3512087,
+    "postDate": "2026-08-12T16:21:04.030Z",
+    "rawMarkdown": "Fine tune the regex or use an LLM to do the work.  \n\nEither way, this competition is pretty much two parts.   Get the right labels.  Get the right model.",
+    "content": "<p>Fine tune the regex or use an LLM to do the work.  </p>\n<p>Either way, this competition is pretty much two parts.   Get the right labels.  Get the right model.</p>",
+    "replies": [
+     {
+      "id": 3512118,
+      "postDate": "2026-08-12T17:24:48.877Z",
+      "rawMarkdown": "Thanks for your guidance, will let you know if any further progress or doubts. Thankyou !!",
+      "content": "<p>Thanks for your guidance, will let you know if any further progress or doubts. Thankyou !!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Malav D Modi",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/malavdmodi",
+       "tier": "CONTRIBUTOR",
+       "id": 20249480,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Malav D Modi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/malavdmodi",
+        "userName": "malavdmodi",
+        "tier": "CONTRIBUTOR",
+        "id": 20249480,
+        "profileUrl": "/malavdmodi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 20249480,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3511854,
+   "postDate": "2026-08-12T06:56:59.310Z",
+   "rawMarkdown": "How to classify the labels using the report into 12 abnormalitites? Currently i am using regex based rules but no proper conclusion is drawn. Kindly help me it ",
+   "content": "<p>How to classify the labels using the report into 12 abnormalitites? Currently i am using regex based rules but no proper conclusion is drawn. Kindly help me it </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Malav D Modi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/malavdmodi",
+    "tier": "CONTRIBUTOR",
+    "id": 20249480,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Malav D Modi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/malavdmodi",
+     "userName": "malavdmodi",
+     "tier": "CONTRIBUTOR",
+     "id": 20249480,
+     "profileUrl": "/malavdmodi",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 20249480,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3511854,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734623,
+  "name": "Classifying labels into 12 abnormalities using Report in train.csv file",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-12T06:56:59.310891300Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734623",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Malav D Modi",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/malavdmodi",
+   "tier": "CONTRIBUTOR",
+   "id": 20249480,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3511854,
+  "id": 734623,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Malav D Modi",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734623#3512118",
+  "lastCommentPostDate": "2026-08-12T17:24:48.876666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-12T06:56:59.310891300Z",
+  "title": "Classifying labels into 12 abnormalities using Report in train.csv file",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734623",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Malav D Modi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/malavdmodi",
+    "userName": "malavdmodi",
+    "tier": "CONTRIBUTOR",
+    "id": 20249480,
+    "profileUrl": "/malavdmodi",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 20249480,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

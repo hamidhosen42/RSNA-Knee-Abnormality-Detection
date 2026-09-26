@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 11035921,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "morningduck",
+  "authorUserName": "morningduck",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510750,
+   "postDate": "2026-08-09T13:40:37.430Z",
+   "rawMarkdown": "## Scanner-grouped vs. random CV splits\n\nThe competition DICOMs carry `Manufacturer` (Siemens / Philips / GE) and\n`MagneticFieldStrength` (1.5T / 3T). There are ~13 distinct scanner groups\nacross the 4,407 training studies:\n\n| Scanner Group   | Studies |\n|-----------------|---------|\n| Siemens_1.5T    | 1,148   |\n| Siemens_3T      | 781     |\n| GE_1.5T         | 698     |\n| Philips_3T      | 663     |\n| Philips_1.5T    | 619     |\n\nA standard random K-fold split places the same scanner in both train and\nval folds. To measure the effect, I trained a metadata-only classifier\n(no pixels) and evaluated it under both split types:\n\n| Split type      | Macro-AUC |\n|-----------------|-----------|\n| Random 5-fold   | 0.652     |\n| Scanner-grouped | 0.598     |\n\nThe gap is ~0.05 from metadata alone. OA targets showed the largest drop\n(0.07–0.09), consistent with field-strength-dependent cartilage contrast\ndifferences.\n\n## PatientSex in test DICOM headers\n\n`PatientSex` (tag 0010,0040) is present in the test set DICOM headers.\n\nTraining distribution: M=2,076 / F=1,894.\n\n| Target      | M prevalence | F prevalence |\n|-------------|-------------|-------------|\n| ACL         | ~54%        | ~32%        |\n| Medial OA   | ~12%        | ~45%        |\n\nMales show higher rates of traumatic injuries (ACL, MCL, Fracture); females\nshow higher rates of degenerative changes (OA).\n\n## Other metadata available in test headers\n\n`Manufacturer`, `MagneticFieldStrength`, `SeriesDescription`, and\n`ImageOrientationPatient` are all readable via `pydicom` at inference time.\n",
+   "content": "<h2>Scanner-grouped vs. random CV splits</h2>\n<p>The competition DICOMs carry <code>Manufacturer</code> (Siemens / Philips / GE) and\n<code>MagneticFieldStrength</code> (1.5T / 3T). There are ~13 distinct scanner groups\nacross the 4,407 training studies:</p>\n<table>\n<thead>\n<tr>\n<th>Scanner Group</th>\n<th>Studies</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Siemens_1.5T</td>\n<td>1,148</td>\n</tr>\n<tr>\n<td>Siemens_3T</td>\n<td>781</td>\n</tr>\n<tr>\n<td>GE_1.5T</td>\n<td>698</td>\n</tr>\n<tr>\n<td>Philips_3T</td>\n<td>663</td>\n</tr>\n<tr>\n<td>Philips_1.5T</td>\n<td>619</td>\n</tr>\n</tbody>\n</table>\n<p>A standard random K-fold split places the same scanner in both train and\nval folds. To measure the effect, I trained a metadata-only classifier\n(no pixels) and evaluated it under both split types:</p>\n<table>\n<thead>\n<tr>\n<th>Split type</th>\n<th>Macro-AUC</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Random 5-fold</td>\n<td>0.652</td>\n</tr>\n<tr>\n<td>Scanner-grouped</td>\n<td>0.598</td>\n</tr>\n</tbody>\n</table>\n<p>The gap is ~0.05 from metadata alone. OA targets showed the largest drop\n(0.07–0.09), consistent with field-strength-dependent cartilage contrast\ndifferences.</p>\n<h2>PatientSex in test DICOM headers</h2>\n<p><code>PatientSex</code> (tag 0010,0040) is present in the test set DICOM headers.</p>\n<p>Training distribution: M=2,076 / F=1,894.</p>\n<table>\n<thead>\n<tr>\n<th>Target</th>\n<th>M prevalence</th>\n<th>F prevalence</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>ACL</td>\n<td>~54%</td>\n<td>~32%</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td>~12%</td>\n<td>~45%</td>\n</tr>\n</tbody>\n</table>\n<p>Males show higher rates of traumatic injuries (ACL, MCL, Fracture); females\nshow higher rates of degenerative changes (OA).</p>\n<h2>Other metadata available in test headers</h2>\n<p><code>Manufacturer</code>, <code>MagneticFieldStrength</code>, <code>SeriesDescription</code>, and\n<code>ImageOrientationPatient</code> are all readable via <code>pydicom</code> at inference time.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "morningduck",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/morningduck",
+    "tier": "CONTRIBUTOR",
+    "id": 11035921,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 6,
+    "canUpvote": true,
+    "totalUpvotes": 6
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2261,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "morningduck",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/morningduck",
+     "userName": "morningduck",
+     "tier": "CONTRIBUTOR",
+     "id": 11035921,
+     "profileUrl": "/morningduck",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 11035921,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510750,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 734004,
+  "name": "DICOM metadata findings: scanner-grouped CV and PatientSex priors",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T13:40:37.428875800Z",
+  "totalVotes": 6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/734004",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "morningduck",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/morningduck",
+   "tier": "CONTRIBUTOR",
+   "id": 11035921,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3510750,
+  "id": 734004,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "morningduck",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734004#3510750",
+  "lastCommentPostDate": "2026-08-09T13:40:37.430Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T13:40:37.428875800Z",
+  "title": "DICOM metadata findings: scanner-grouped CV and PatientSex priors",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/734004",
+  "votes": 6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "morningduck",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/morningduck",
+    "userName": "morningduck",
+    "tier": "CONTRIBUTOR",
+    "id": 11035921,
+    "profileUrl": "/morningduck",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 11035921,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

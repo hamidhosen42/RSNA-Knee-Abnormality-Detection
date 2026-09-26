@@ -1,0 +1,569 @@
+{
+ "forumTopic": {
+  "authorId": 25971077,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "fran garcia",
+  "authorUserName": "frangarcia02",
+  "comments": [
+   {
+    "id": 3519981,
+    "postDate": "2026-09-02T16:10:17.490Z",
+    "rawMarkdown": "Hi Fran, \n\nYou can use Kaggle, AWS, GCP and even your local computer without GPUs. Take into account, the time, complexity and cost associated to the project. Ask your LLM, what are the Data Engineering and Deployment aspects that you should cover for a multimodal project like this provide the Competition link. \n\n\nGood Luck! ",
+    "content": "<p>Hi Fran, </p>\n<p>You can use Kaggle, AWS, GCP and even your local computer without GPUs. Take into account, the time, complexity and cost associated to the project. Ask your LLM, what are the Data Engineering and Deployment aspects that you should cover for a multimodal project like this provide the Competition link. </p>\n<p>Good Luck! </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Linda PerezP",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/lindaperezp",
+     "tier": "CONTRIBUTOR",
+     "id": 16416074,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3076,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Linda PerezP",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/lindaperezp",
+      "userName": "lindaperezp",
+      "tier": "CONTRIBUTOR",
+      "id": 16416074,
+      "profileUrl": "/lindaperezp",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 16416074,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3519966,
+    "postDate": "2026-09-02T15:42:34.967Z",
+    "rawMarkdown": "Yes you absolutely can! If you’re looking for cheap options outside of your own local GPU’s vast.ai is what I generally use",
+    "content": "<p>Yes you absolutely can! If you’re looking for cheap options outside of your own local GPU’s vast.ai is what I generally use</p>",
+    "replies": [
+     {
+      "id": 3520261,
+      "postDate": "2026-09-03T03:02:19.480Z",
+      "rawMarkdown": "Hi, How can you transfer data between and within new instances in Vastai? I wonder if anyone can use spot instances effectively.",
+      "content": "<p>Hi, How can you transfer data between and within new instances in Vastai? I wonder if anyone can use spot instances effectively.</p>",
+      "replies": [
+       {
+        "id": 3520270,
+        "postDate": "2026-09-03T03:15:25.847Z",
+        "rawMarkdown": "Hey! So I treat vast as disposable compute, not storage so small files & code go directly over SSH with scp on Linux\nrsync -avP is better because interrupted transfers resume.\nFor large datasets, upload them once to a persistent storage like a vast volume, S3 etc then let every new instance pull from there instead of uploading repeatedly.\nI do use the spot instances with little to no issue ever, you just have to make sure you're monitoring & saving checkpoints.\nI have also found that chunking & sending parallel transfers is much more effective for large files.\nI have used the spot instances for a number of comps as well as my own distillation, pre training & fine tuning with less issues than I have finger so, hope this helped!\nIf you have any more questions feel free!",
+        "content": "<p>Hey! So I treat vast as disposable compute, not storage so small files &amp; code go directly over SSH with scp on Linux\nrsync -avP is better because interrupted transfers resume.\nFor large datasets, upload them once to a persistent storage like a vast volume, S3 etc then let every new instance pull from there instead of uploading repeatedly.\nI do use the spot instances with little to no issue ever, you just have to make sure you're monitoring &amp; saving checkpoints.\nI have also found that chunking &amp; sending parallel transfers is much more effective for large files.\nI have used the spot instances for a number of comps as well as my own distillation, pre training &amp; fine tuning with less issues than I have finger so, hope this helped!\nIf you have any more questions feel free!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 145,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Phuc",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/phucbb",
+       "tier": "CONTRIBUTOR",
+       "id": 1922919,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 2153,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Phuc",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/phucbb",
+        "userName": "phucbb",
+        "tier": "CONTRIBUTOR",
+        "id": 1922919,
+        "profileUrl": "/phucbb",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 1922919,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 145,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dread Development",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+      "url": "/dreaddevelopment",
+      "userName": "dreaddevelopment",
+      "tier": "EXPERT",
+      "id": 35987882,
+      "profileUrl": "/dreaddevelopment",
+      "performanceTier": "EXPERT",
+      "userId": 35987882,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3519946,
+    "postDate": "2026-09-02T14:48:27.377Z",
+    "rawMarkdown": "Yes, you can train on your own GPU.\n\nYou can set up Ubuntu locally with Python, PyTorch, CUDA, and the libraries you need, then do most of your training there.\n\nIf you are starting now, I recommend targeting Kaggle’s **Tesla T4 x2** environment rather than the P100, since the P100 is being retired.\n\nOne important thing: each T4 has **16 GB of VRAM**. T4 x2 means two separate 16 GB GPUs, not one 32 GB GPU.\n\nFor a beginner, I strongly recommend starting with **one GPU first**. Make sure the whole training or inference pipeline finishes correctly within 16 GB VRAM. Once that works reliably, then modify the code to use both T4 GPUs in parallel.\n\nMulti-GPU code adds extra complexity, so debugging is much easier if the single-GPU version already works.\n\nAlso, if your local GPU has much more VRAM, your code may work locally but fail on Kaggle. You may need to reduce the batch size, input size, model size, or memory usage before uploading it.\n\nSo the safest approach is:\n\n**Local Ubuntu → one GPU → fit within 16 GB VRAM → complete the full pipeline → then optimize for T4 x2.**\n",
+    "content": "<p>Yes, you can train on your own GPU.</p>\n<p>You can set up Ubuntu locally with Python, PyTorch, CUDA, and the libraries you need, then do most of your training there.</p>\n<p>If you are starting now, I recommend targeting Kaggle’s <strong>Tesla T4 x2</strong> environment rather than the P100, since the P100 is being retired.</p>\n<p>One important thing: each T4 has <strong>16 GB of VRAM</strong>. T4 x2 means two separate 16 GB GPUs, not one 32 GB GPU.</p>\n<p>For a beginner, I strongly recommend starting with <strong>one GPU first</strong>. Make sure the whole training or inference pipeline finishes correctly within 16 GB VRAM. Once that works reliably, then modify the code to use both T4 GPUs in parallel.</p>\n<p>Multi-GPU code adds extra complexity, so debugging is much easier if the single-GPU version already works.</p>\n<p>Also, if your local GPU has much more VRAM, your code may work locally but fail on Kaggle. You may need to reduce the batch size, input size, model size, or memory usage before uploading it.</p>\n<p>So the safest approach is:</p>\n<p><strong>Local Ubuntu → one GPU → fit within 16 GB VRAM → complete the full pipeline → then optimize for T4 x2.</strong></p>",
+    "replies": [
+     {
+      "id": 3520177,
+      "postDate": "2026-09-02T23:13:51.507Z",
+      "rawMarkdown": "Thanks! I have another question. If I train locally, do I have to download the Kaggle dataset?",
+      "content": "<p>Thanks! I have another question. If I train locally, do I have to download the Kaggle dataset?</p>",
+      "replies": [
+       {
+        "id": 3520229,
+        "postDate": "2026-09-03T02:14:02.927Z",
+        "rawMarkdown": "Yes - you need to download the kaggle data.  \n",
+        "content": "<p>Yes - you need to download the kaggle data.  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 641,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "komilparmar"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520295,
+        "postDate": "2026-09-03T04:59:48.167Z",
+        "rawMarkdown": "I don't understand this question. If you want to train locally, why or how wouldn't you need to have the data locally as well? \nAre you planning to make some data stream? Or train a model without using the competition data?",
+        "content": "<p>I don't understand this question. If you want to train locally, why or how wouldn't you need to have the data locally as well? \nAre you planning to make some data stream? Or train a model without using the competition data?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Komil Parmar",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+         "url": "/komilparmar",
+         "tier": "EXPERT",
+         "id": 11351811,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 59,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Komil Parmar",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+          "url": "/komilparmar",
+          "userName": "komilparmar",
+          "tier": "EXPERT",
+          "id": 11351811,
+          "profileUrl": "/komilparmar",
+          "performanceTier": "EXPERT",
+          "userId": 11351811,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520883,
+        "postDate": "2026-09-04T11:08:05.673Z",
+        "rawMarkdown": "Yes. If you want to work on it locally, you need to download the competition data to your PC. In my case, the compressed ZIP file is about 247 GB, and downloading such a large file from overseas can be quite slow and inconvenient.\n\nKaggle also appears to be using Google-hosted infrastructure, and from what I have observed, the server location may differ depending on the runtime. For example, CPU-only sessions and Tesla T4 ×2 GPU sessions seem to be assigned to different server regions within the United States. This may also affect download and transfer speeds for overseas participants.\n",
+        "content": "<p>Yes. If you want to work on it locally, you need to download the competition data to your PC. In my case, the compressed ZIP file is about 247 GB, and downloading such a large file from overseas can be quite slow and inconvenient.</p>\n<p>Kaggle also appears to be using Google-hosted infrastructure, and from what I have observed, the server location may differ depending on the runtime. For example, CPU-only sessions and Tesla T4 ×2 GPU sessions seem to be assigned to different server regions within the United States. This may also affect download and transfer speeds for overseas participants.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Seung Sup Lee",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/seungsuplee",
+         "tier": "CONTRIBUTOR",
+         "id": 35714145,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2633,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Seung Sup Lee",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/seungsuplee",
+          "userName": "seungsuplee",
+          "tier": "CONTRIBUTOR",
+          "id": 35714145,
+          "profileUrl": "/seungsuplee",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 35714145,
+          "progressionOptOut": false
+         },
+         "intro": "GNSS Antenna A-E Filter Inventor, SAR Image Processing\n\nhttps://www.linkedin.com/in/sean-lee-64434033/"
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "fran garcia",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/frangarcia02",
+       "tier": "CONTRIBUTOR",
+       "id": 25971077,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 3021,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "fran garcia",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/frangarcia02",
+        "userName": "frangarcia02",
+        "tier": "CONTRIBUTOR",
+        "id": 25971077,
+        "profileUrl": "/frangarcia02",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 25971077,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Seung Sup Lee",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/seungsuplee",
+     "tier": "CONTRIBUTOR",
+     "id": 35714145,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2633,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Seung Sup Lee",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/seungsuplee",
+      "userName": "seungsuplee",
+      "tier": "CONTRIBUTOR",
+      "id": 35714145,
+      "profileUrl": "/seungsuplee",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35714145,
+      "progressionOptOut": false
+     },
+     "intro": "GNSS Antenna A-E Filter Inventor, SAR Image Processing\n\nhttps://www.linkedin.com/in/sean-lee-64434033/"
+    }
+   },
+   {
+    "id": 3519905,
+    "postDate": "2026-09-02T12:56:16.383Z",
+    "rawMarkdown": "You can use your GPU's, if your a relative of Elon Musk maybe he would let you use the Nashville facility.\n\nAlmost 100% of kaggle competitions let you train local.  You will need to attached your model files in a data set, but lots of examples of how to do that and most LLM's know enough about kaggle to help you create a zip file local to use in the data set.\n\nOnly the final inference and creation of the submission.csv needs to be on a kaggle notebook.\n\nhave fun",
+    "content": "<p>You can use your GPU's, if your a relative of Elon Musk maybe he would let you use the Nashville facility.</p>\n<p>Almost 100% of kaggle competitions let you train local.  You will need to attached your model files in a data set, but lots of examples of how to do that and most LLM's know enough about kaggle to help you create a zip file local to use in the data set.</p>\n<p>Only the final inference and creation of the submission.csv needs to be on a kaggle notebook.</p>\n<p>have fun</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "pompom555",
+       "paritoshtripathi5"
+      ],
+      "userCount": 2
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3522093,
+    "postDate": "2026-09-08T04:52:14.360Z",
+    "rawMarkdown": "Hi! I'm also new to kaggle and this is my first competition.\nI think you can use your own GPU but it is not recomended. I don't know your GPU availablity but for me 30h capcity that kaggle support was enough.",
+    "content": "<p>Hi! I'm also new to kaggle and this is my first competition.\nI think you can use your own GPU but it is not recomended. I don't know your GPU availablity but for me 30h capcity that kaggle support was enough.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Moonwon12",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16909384-kg.jpg?t=2026-09-18-07-43-55",
+     "url": "/moonwon12",
+     "tier": "CONTRIBUTOR",
+     "id": 16909384,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1221,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Moonwon12",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16909384-kg.jpg?t=2026-09-18-07-43-55",
+      "url": "/moonwon12",
+      "userName": "moonwon12",
+      "tier": "CONTRIBUTOR",
+      "id": 16909384,
+      "profileUrl": "/moonwon12",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 16909384,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3519894,
+   "postDate": "2026-09-02T12:33:53.103Z",
+   "rawMarkdown": "Hi! I'm new to Kaggle, this is my first time participating in a competition, and I have a couple of questions I'd like to ask. Can I use my own GPU to train the model, or does it have to run exclusively on a notebook? Thanks for your help!",
+   "content": "<p>Hi! I'm new to Kaggle, this is my first time participating in a competition, and I have a couple of questions I'd like to ask. Can I use my own GPU to train the model, or does it have to run exclusively on a notebook? Thanks for your help!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "fran garcia",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/frangarcia02",
+    "tier": "CONTRIBUTOR",
+    "id": 25971077,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3021,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "fran garcia",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/frangarcia02",
+     "userName": "frangarcia02",
+     "tier": "CONTRIBUTOR",
+     "id": 25971077,
+     "profileUrl": "/frangarcia02",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 25971077,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3519894,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 739000,
+  "name": "Working with our own GPU",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-02T12:33:53.103789500Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/739000",
+  "totalMessages": 11,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "fran garcia",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/frangarcia02",
+   "tier": "CONTRIBUTOR",
+   "id": 25971077,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 11,
+  "firstForumMessageId": 3519894,
+  "id": 739000,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Moonwon12",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739000#3522093",
+  "lastCommentPostDate": "2026-09-08T04:52:14.360Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-02T12:33:53.103789500Z",
+  "title": "Working with our own GPU",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739000",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "fran garcia",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/frangarcia02",
+    "userName": "frangarcia02",
+    "tier": "CONTRIBUTOR",
+    "id": 25971077,
+    "profileUrl": "/frangarcia02",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 25971077,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

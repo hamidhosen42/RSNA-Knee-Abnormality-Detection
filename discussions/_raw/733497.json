@@ -1,0 +1,1014 @@
+{
+ "forumTopic": {
+  "authorId": 27313120,
+  "authorThumbnailName": "27313120-kg.jpeg?t=2025-10-19-05-21-27",
+  "authorUserDisplayName": "Harsh_2035",
+  "authorUserName": "harsh2035",
+  "comments": [
+   {
+    "id": 3510757,
+    "postDate": "2026-08-09T14:16:57.587Z",
+    "rawMarkdown": "I think under the competition rules, you are technically supposed to make your MRI publicly available to use it in the competition (see \"EXTERNAL DATA AND TOOLS\"), even though it's probably not impactful. I have a ruptured ACL too, maybe we can make a \"Kagglers with injured knees\" dataset.",
+    "content": "<p>I think under the competition rules, you are technically supposed to make your MRI publicly available to use it in the competition (see \"EXTERNAL DATA AND TOOLS\"), even though it's probably not impactful. I have a ruptured ACL too, maybe we can make a \"Kagglers with injured knees\" dataset.</p>",
+    "replies": [
+     {
+      "id": 3510764,
+      "postDate": "2026-08-09T14:35:42.297Z",
+      "rawMarkdown": "Haha, Yeah we should make it \n\nInjured knee kagglers assemble!!",
+      "content": "<p>Haha, Yeah we should make it </p>\n<p>Injured knee kagglers assemble!!</p>",
+      "replies": [
+       {
+        "id": 3512930,
+        "postDate": "2026-08-14T18:58:36.537Z",
+        "rawMarkdown": "I also just torn my ACL, would love to share my MRI! lol",
+        "content": "<p>I also just torn my ACL, would love to share my MRI! lol</p>",
+        "parent": {},
+        "author": {
+         "displayName": "zhengg_joyce",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11260393-kg.jpeg?t=2026-08-14-19-00-11",
+         "url": "/zhenggjoyce",
+         "tier": "CONTRIBUTOR",
+         "id": 11260393,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "zhengg_joyce",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11260393-kg.jpeg?t=2026-08-14-19-00-11",
+          "url": "/zhenggjoyce",
+          "userName": "zhenggjoyce",
+          "tier": "CONTRIBUTOR",
+          "id": 11260393,
+          "profileUrl": "/zhenggjoyce",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 11260393,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Harsh_2035",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+       "url": "/harsh2035",
+       "tier": "EXPERT",
+       "id": 27313120,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 5,
+       "canUpvote": true,
+       "totalUpvotes": 5
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 842,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Harsh_2035",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+        "url": "/harsh2035",
+        "userName": "harsh2035",
+        "tier": "EXPERT",
+        "id": 27313120,
+        "profileUrl": "/harsh2035",
+        "performanceTier": "EXPERT",
+        "userId": 27313120,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3511700,
+      "postDate": "2026-08-11T19:37:50.037Z",
+      "rawMarkdown": "show your knee MRI",
+      "content": "<p>show your knee MRI</p>",
+      "parent": {},
+      "author": {
+       "displayName": "pandabi",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/pandabi",
+       "tier": "CONTRIBUTOR",
+       "id": 18573691,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1727,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "pandabi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/pandabi",
+        "userName": "pandabi",
+        "tier": "CONTRIBUTOR",
+        "id": 18573691,
+        "profileUrl": "/pandabi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 18573691,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3513023,
+      "postDate": "2026-08-15T01:38:28.723Z",
+      "rawMarkdown": "Not sure I would agree that you need to make data that you created available for use by all.  \n\nIts not external data, its your own!\n",
+      "content": "<p>Not sure I would agree that you need to make data that you created available for use by all.  </p>\n<p>Its not external data, its your own!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "PC Jimmmy",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+       "url": "/pcjimmmy",
+       "tier": "MASTER",
+       "id": 1062256,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 641,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "PC Jimmmy",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+        "url": "/pcjimmmy",
+        "userName": "pcjimmmy",
+        "tier": "MASTER",
+        "id": 1062256,
+        "profileUrl": "/pcjimmmy",
+        "performanceTier": "MASTER",
+        "userId": 1062256,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "tennogh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+     "url": "/tennogh",
+     "tier": "MASTER",
+     "id": 3991745,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 14,
+     "canUpvote": true,
+     "totalUpvotes": 14
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 8,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "enaimaan",
+       "mrinath",
+       "jsday96",
+       "tuckerarrants",
+       "zy1343930734",
+       "mathieuduverne",
+       "prgckwb",
+       "zhenggjoyce",
+       "paritoshtripathi5",
+       "marcorocha65",
+       "cody11null",
+       "tanetisanjay",
+       "ggayoayogg",
+       "vc9408",
+       "naveedlihazi",
+       "surehsan",
+       "sergiobear",
+       "bohdanbb2000",
+       "laymond",
+       "neuralnetdev"
+      ],
+      "userCount": 20
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "syamoji141",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+      "url": "/syamoji141chan",
+      "userName": "syamoji141chan",
+      "tier": "EXPERT",
+      "id": 5570066,
+      "profileUrl": "/syamoji141chan",
+      "performanceTier": "EXPERT",
+      "userId": 5570066,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3509858,
+    "postDate": "2026-08-07T07:47:11Z",
+    "rawMarkdown": "true zero shot validation",
+    "content": "<p>true zero shot validation</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Simon Beck",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4921379-kg.png?t=2026-06-27-10-19-42",
+     "url": "/beckpro",
+     "tier": "EXPERT",
+     "id": 4921379,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3231,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "skanderbeg",
+       "godhand",
+       "basavarajus",
+       "pejophylo",
+       "tuckerarrants",
+       "zy1343930734",
+       "evgeniyazarov",
+       "yukiarl",
+       "abheykalia",
+       "paritoshtripathi5",
+       "tanetisanjay",
+       "ggayoayogg",
+       "kimdoong",
+       "rudrpratapsingh",
+       "qifeihhh666",
+       "jordanspeight",
+       "buihuynhgiahuy",
+       "pablolee789",
+       "alisalmanrana",
+       "perfectoshi",
+       "harsh2035",
+       "lrdcmndrjonsnow",
+       "neuralnetdev"
+      ],
+      "userCount": 23
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Simon Beck",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4921379-kg.png?t=2026-06-27-10-19-42",
+      "url": "/beckpro",
+      "userName": "beckpro",
+      "tier": "EXPERT",
+      "id": 4921379,
+      "profileUrl": "/beckpro",
+      "performanceTier": "EXPERT",
+      "userId": 4921379,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3509870,
+    "postDate": "2026-08-07T08:27:40.477Z",
+    "rawMarkdown": "If anyone wants to create this competition into a project and wants to see if they can use it on a real world data, just say it and i will share the photos.\n",
+    "content": "<p>If anyone wants to create this competition into a project and wants to see if they can use it on a real world data, just say it and i will share the photos.</p>",
+    "replies": [
+     {
+      "id": 3515198,
+      "postDate": "2026-08-21T02:52:25.717Z",
+      "rawMarkdown": "I have actually started experimenting with this ",
+      "content": "<p>I have actually started experimenting with this </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 145,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Harsh_2035",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+     "url": "/harsh2035",
+     "tier": "EXPERT",
+     "id": 27313120,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 842,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Harsh_2035",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+      "url": "/harsh2035",
+      "userName": "harsh2035",
+      "tier": "EXPERT",
+      "id": 27313120,
+      "profileUrl": "/harsh2035",
+      "performanceTier": "EXPERT",
+      "userId": 27313120,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3523418,
+    "postDate": "2026-09-11T13:55:16.733Z",
+    "rawMarkdown": "@harsh2035 \nSeriously did your doctor provide dcm data? or just screen-shot? I doubt my doctor provide dcm data...",
+    "content": "<p><a href=\"/harsh2035\" target=\"_blank\">@harsh2035</a> \nSeriously did your doctor provide dcm data? or just screen-shot? I doubt my doctor provide dcm data…</p>",
+    "replies": [
+     {
+      "id": 3523422,
+      "postDate": "2026-09-11T14:25:20.340Z",
+      "rawMarkdown": "Laws vary by country but typically you have the right to access your healthcare data. In my country (Germany) patients still frequently get CDs from the radiologist xD\n\nBut even if the data is transferred digitally from radiology to orthopedics or wherever you can ask and they have no reason to not give you your own data (or are even bound by law to give you the data) \n",
+      "content": "<p>Laws vary by country but typically you have the right to access your healthcare data. In my country (Germany) patients still frequently get CDs from the radiologist xD</p>\n<p>But even if the data is transferred digitally from radiology to orthopedics or wherever you can ask and they have no reason to not give you your own data (or are even bound by law to give you the data) </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Roman Vuskov",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17870789-kg.jpg?t=2025-08-13-10-09-37",
+       "url": "/romanvuskov",
+       "tier": "CONTRIBUTOR",
+       "id": 17870789,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 60,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Roman Vuskov",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17870789-kg.jpg?t=2025-08-13-10-09-37",
+        "url": "/romanvuskov",
+        "userName": "romanvuskov",
+        "tier": "CONTRIBUTOR",
+        "id": 17870789,
+        "profileUrl": "/romanvuskov",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 17870789,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3523444,
+      "postDate": "2026-09-11T15:21:00.360Z",
+      "rawMarkdown": "@pompom555\n\nI don't know what is dcm.\n\nMy doctor gave me MRI scans and a Report that stats the result and finding of the MRIs.\nIt was like 6 MRI scans.",
+      "content": "<p><a href=\"/pompom555\" target=\"_blank\">@pompom555</a></p>\n<p>I don't know what is dcm.</p>\n<p>My doctor gave me MRI scans and a Report that stats the result and finding of the MRIs.\nIt was like 6 MRI scans.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Harsh_2035",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+       "url": "/harsh2035",
+       "tier": "EXPERT",
+       "id": 27313120,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 842,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Harsh_2035",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+        "url": "/harsh2035",
+        "userName": "harsh2035",
+        "tier": "EXPERT",
+        "id": 27313120,
+        "profileUrl": "/harsh2035",
+        "performanceTier": "EXPERT",
+        "userId": 27313120,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "pompom555",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+     "url": "/pompom555",
+     "tier": "EXPERT",
+     "id": 4855941,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 82,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "pompom555",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+      "url": "/pompom555",
+      "userName": "pompom555",
+      "tier": "EXPERT",
+      "id": 4855941,
+      "profileUrl": "/pompom555",
+      "performanceTier": "EXPERT",
+      "userId": 4855941,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3513390,
+    "postDate": "2026-08-16T10:21:42.407Z",
+    "rawMarkdown": "Haha, I actually have some knee issues myself from heavy running! My doctor just told me to rest and said it would be fine, but it's been months with zero improvement, and honestly, I don't want to see another doctor right now. The pain always flares up right when I hit the 5k mark. Now I'm literally learning ML just for this competition. I'm even half-tempted to upload my own MRI! 😆",
+    "content": "<p>Haha, I actually have some knee issues myself from heavy running! My doctor just told me to rest and said it would be fine, but it's been months with zero improvement, and honestly, I don't want to see another doctor right now. The pain always flares up right when I hit the 5k mark. Now I'm literally learning ML just for this competition. I'm even half-tempted to upload my own MRI! 😆</p>",
+    "replies": [
+     {
+      "id": 3514629,
+      "postDate": "2026-08-19T18:50:32.720Z",
+      "rawMarkdown": "Check for symptoms like locking of the knee and caving - this could be a meniscus tear @ilaydacan26 ",
+      "content": "<p>Check for symptoms like locking of the knee and caving - this could be a meniscus tear <a href=\"https://www.kaggle.com/ilaydacan26\" target=\"_blank\">@ilaydacan26</a> </p>",
+      "replies": [
+       {
+        "id": 3515448,
+        "postDate": "2026-08-21T18:52:33.157Z",
+        "rawMarkdown": "Thank you I will consider it 🙏",
+        "content": "<p>Thank you I will consider it 🙏</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ilayda Can",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34653389-gr.jpg",
+         "url": "/ilaydacan26",
+         "tier": "CONTRIBUTOR",
+         "id": 34653389,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ilayda Can",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34653389-gr.jpg",
+          "url": "/ilaydacan26",
+          "userName": "ilaydacan26",
+          "tier": "CONTRIBUTOR",
+          "id": 34653389,
+          "profileUrl": "/ilaydacan26",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 34653389,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Ravi Ramakrishnan",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+       "url": "/ravi20076",
+       "tier": "GRANDMASTER",
+       "id": 8273630,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 292,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "ilaydacan26"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Ravi Ramakrishnan",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+        "url": "/ravi20076",
+        "userName": "ravi20076",
+        "tier": "GRANDMASTER",
+        "id": 8273630,
+        "profileUrl": "/ravi20076",
+        "performanceTier": "GRANDMASTER",
+        "userId": 8273630,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Ilayda Can",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34653389-gr.jpg",
+     "url": "/ilaydacan26",
+     "tier": "CONTRIBUTOR",
+     "id": 34653389,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ilayda Can",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34653389-gr.jpg",
+      "url": "/ilaydacan26",
+      "userName": "ilaydacan26",
+      "tier": "CONTRIBUTOR",
+      "id": 34653389,
+      "profileUrl": "/ilaydacan26",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 34653389,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510716,
+    "postDate": "2026-08-09T11:41:30.633Z",
+    "rawMarkdown": "Hope you recover soon, and this competition helps you and many more like you!",
+    "content": "<p>Hope you recover soon, and this competition helps you and many more like you!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rudr Pratap Singh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16816937-kg.jpg?t=2026-01-15-15-12-19",
+     "url": "/rudrpratapsingh",
+     "tier": "EXPERT",
+     "id": 16816937,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3661,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rudr Pratap Singh",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16816937-kg.jpg?t=2026-01-15-15-12-19",
+      "url": "/rudrpratapsingh",
+      "userName": "rudrpratapsingh",
+      "tier": "EXPERT",
+      "id": 16816937,
+      "profileUrl": "/rudrpratapsingh",
+      "performanceTier": "EXPERT",
+      "userId": 16816937,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3510632,
+    "postDate": "2026-08-09T06:26:22.990Z",
+    "rawMarkdown": "@harsh2035 \n\nWould like to do out of fold validation later on ! You can train models till you get your readings correct . .",
+    "content": "<p><a href=\"https://www.kaggle.com/harsh2035\" target=\"_blank\">@harsh2035</a> </p>\n<p>Would like to do out of fold validation later on ! You can train models till you get your readings correct . .</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ayush Khaire",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16503833-kg.jpg?t=2025-09-19-14-50-05",
+     "url": "/ayushkhaire",
+     "tier": "EXPERT",
+     "id": 16503833,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ayush Khaire",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16503833-kg.jpg?t=2025-09-19-14-50-05",
+      "url": "/ayushkhaire",
+      "userName": "ayushkhaire",
+      "tier": "EXPERT",
+      "id": 16503833,
+      "profileUrl": "/ayushkhaire",
+      "performanceTier": "EXPERT",
+      "userId": 16503833,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3509933,
+    "postDate": "2026-08-07T11:10:14.487Z",
+    "rawMarkdown": "We built the competition to demystify radiology AI and make things relevant to real-life.  Love seeing that you find this relevant to yours.\n\nACL is one of the most important ligaments in the largest joints in the body. I hope the injury wasn't too bad and good luck with recovery! \n\n",
+    "content": "<p>We built the competition to demystify radiology AI and make things relevant to real-life.  Love seeing that you find this relevant to yours.</p>\n<p>ACL is one of the most important ligaments in the largest joints in the body. I hope the injury wasn't too bad and good luck with recovery! </p>",
+    "replies": [
+     {
+      "id": 3509934,
+      "postDate": "2026-08-07T11:17:00.003Z",
+      "rawMarkdown": "Thanks, I am recovering very quickly, and I also do a lot of exercises, so I don't have any pain.\n",
+      "content": "<p>Thanks, I am recovering very quickly, and I also do a lot of exercises, so I don't have any pain.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Harsh_2035",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+       "url": "/harsh2035",
+       "tier": "EXPERT",
+       "id": 27313120,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 842,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Harsh_2035",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+        "url": "/harsh2035",
+        "userName": "harsh2035",
+        "tier": "EXPERT",
+        "id": 27313120,
+        "profileUrl": "/harsh2035",
+        "performanceTier": "EXPERT",
+        "userId": 27313120,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3510630,
+      "postDate": "2026-08-09T06:04:34.143Z",
+      "rawMarkdown": "Thank you for hosting the competition!\nI actually joined this competition because I watched Jensen Huang's video about the job AI is gonna wipe, it's radiologist...",
+      "content": "<p>Thank you for hosting the competition!\nI actually joined this competition because I watched Jensen Huang's video about the job AI is gonna wipe, it's radiologist…</p>",
+      "parent": {},
+      "author": {
+       "displayName": "stevenleehans",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+       "url": "/stevenleehans",
+       "tier": "EXPERT",
+       "id": 11479618,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1901,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "stevenleehans",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+        "url": "/stevenleehans",
+        "userName": "stevenleehans",
+        "tier": "EXPERT",
+        "id": 11479618,
+        "profileUrl": "/stevenleehans",
+        "performanceTier": "EXPERT",
+        "userId": 11479618,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Po-Hao \"Howard\" Chen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+     "url": "/javaduke95",
+     "tier": "CONTRIBUTOR",
+     "id": 413040,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3513389,
+    "postDate": "2026-08-16T10:18:13.560Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509820,
+   "postDate": "2026-08-07T05:43:30.003Z",
+   "rawMarkdown": "Recently, I had some instability in my left knee, and doctor said that i should do MRI, I did it.\n\nGuess what, I had my ( ACL ) front ligament tear completely, So i am gonna use my MRI in this competition and see if it can predict it accurately.\n",
+   "content": "<p>Recently, I had some instability in my left knee, and doctor said that i should do MRI, I did it.</p>\n<p>Guess what, I had my ( ACL ) front ligament tear completely, So i am gonna use my MRI in this competition and see if it can predict it accurately.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Harsh_2035",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+    "url": "/harsh2035",
+    "tier": "EXPERT",
+    "id": 27313120,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 40,
+    "canUpvote": true,
+    "totalUpvotes": 41
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 842,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "anjanarao",
+      "godhand",
+      "mathormad",
+      "msthil",
+      "pilkwang",
+      "d17129765",
+      "sawantprasad036",
+      "zacchaeus",
+      "npinpi",
+      "tjangun",
+      "zy1343930734",
+      "kazukisato",
+      "deepernet",
+      "chengtingyi",
+      "redblackberry",
+      "refv00",
+      "noussairmighri",
+      "survagya",
+      "ivanvybornov",
+      "paritoshtripathi5",
+      "sammatrix",
+      "ggayoayogg",
+      "nathanaelrk",
+      "biancochiu",
+      "rudrpratapsingh",
+      "k256net",
+      "qifeihhh666",
+      "vc9408",
+      "nikolaidomashenko",
+      "syphers",
+      "surehsan",
+      "buihuynhgiahuy",
+      "hiranorm",
+      "kimura0415",
+      "agrimrai29",
+      "pablolee789",
+      "sergiobear",
+      "alisalmanrana",
+      "adrinmoyano",
+      "harsh2035",
+      "soumya7765",
+      "josephadamski91",
+      "ilaydacan26",
+      "etsushiyamamoto"
+     ],
+     "userCount": 44
+    },
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "tomkake",
+      "pilkwang",
+      "chiman3se",
+      "harrisonhoran",
+      "zy1343930734",
+      "penguingc",
+      "stevenleehans",
+      "marumarukun",
+      "sammatrix",
+      "tanetisanjay",
+      "thelastsmilodon",
+      "kentorio",
+      "ozermehmet",
+      "dinanabb",
+      "k256net",
+      "seifhussien",
+      "muschuang123",
+      "pablolee789",
+      "akhyar2612",
+      "msvzss",
+      "keerthikumarkj",
+      "romanrozen",
+      "harikrishnand004",
+      "ektarr",
+      "etsushiyamamoto",
+      "govarsha",
+      "i3abd1",
+      "brunoromerogarca"
+     ],
+     "userCount": 28
+    },
+    {
+     "emoji": "KAGGLE",
+     "featuredUserNames": [
+      "yunusgmsoy",
+      "naveedlihazi",
+      "pablolee789",
+      "joylemon",
+      "ektarr",
+      "etsushiyamamoto"
+     ],
+     "userCount": 6
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Harsh_2035",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+     "url": "/harsh2035",
+     "userName": "harsh2035",
+     "tier": "EXPERT",
+     "id": 27313120,
+     "profileUrl": "/harsh2035",
+     "performanceTier": "EXPERT",
+     "userId": 27313120,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3509820,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733497,
+  "name": "I got a perfect usecase for this competition.",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-07T05:43:30.002041500Z",
+  "totalVotes": 40,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733497",
+  "totalMessages": 20,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Harsh_2035",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+   "url": "/harsh2035",
+   "tier": "EXPERT",
+   "id": 27313120,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 20,
+  "firstForumMessageId": 3509820,
+  "id": 733497,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Harsh_2035",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733497#3523444",
+  "lastCommentPostDate": "2026-09-11T15:21:00.360Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-07T05:43:30.002041500Z",
+  "title": "I got a perfect usecase for this competition.",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733497",
+  "votes": 40,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Harsh_2035",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27313120-kg.jpeg?t=2025-10-19-05-21-27",
+    "url": "/harsh2035",
+    "userName": "harsh2035",
+    "tier": "EXPERT",
+    "id": 27313120,
+    "profileUrl": "/harsh2035",
+    "performanceTier": "EXPERT",
+    "userId": 27313120,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

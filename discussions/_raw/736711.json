@@ -1,0 +1,141 @@
+{
+ "forumTopic": {
+  "authorId": 15620263,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "doheon114",
+  "authorUserName": "doheon114",
+  "comments": [
+   {
+    "id": 3515671,
+    "postDate": "2026-08-22T08:58:37.677Z",
+    "rawMarkdown": "The straight forward way to utilize the reports is definitely by simply using them as pseudo labels, when you do that, there are mainly two things to keep in mind:\n1. Weight the gold labels much higher\n2. If you are using multiple models, you can use their disagreement as a metric of how accurate those labels are, roughly at least, and use that again to weight those pseudo labels better. \n\nI don't believe we should be aligning image with the text features for various reasons, and reports are not available at test time any way so its better to stick with image only to keep the local eval clean. ",
+    "content": "<p>The straight forward way to utilize the reports is definitely by simply using them as pseudo labels, when you do that, there are mainly two things to keep in mind:</p>\n<ol>\n<li>Weight the gold labels much higher</li>\n<li>If you are using multiple models, you can use their disagreement as a metric of how accurate those labels are, roughly at least, and use that again to weight those pseudo labels better. </li>\n</ol>\n<p>I don't believe we should be aligning image with the text features for various reasons, and reports are not available at test time any way so its better to stick with image only to keep the local eval clean. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Komil Parmar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+     "url": "/komilparmar",
+     "tier": "EXPERT",
+     "id": 11351811,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 59,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Komil Parmar",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+      "url": "/komilparmar",
+      "userName": "komilparmar",
+      "tier": "EXPERT",
+      "id": 11351811,
+      "profileUrl": "/komilparmar",
+      "performanceTier": "EXPERT",
+      "userId": 11351811,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515638,
+   "postDate": "2026-08-22T07:50:19.157Z",
+   "rawMarkdown": "Hi, I’ve been thinking a lot about how to make the best use of the available reports.\n\nI guess there are two main ways we could leverage them:\n\n1. Use the reports only to extract pseudo-labels.\n2. Use the reports directly for model training, e.g., by aligning image and text features.\n\nHow are you planning to make use of the reports in your approach?",
+   "content": "<p>Hi, I’ve been thinking a lot about how to make the best use of the available reports.</p>\n<p>I guess there are two main ways we could leverage them:</p>\n<ol>\n<li>Use the reports only to extract pseudo-labels.</li>\n<li>Use the reports directly for model training, e.g., by aligning image and text features.</li>\n</ol>\n<p>How are you planning to make use of the reports in your approach?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "doheon114",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/doheon114",
+    "tier": "EXPERT",
+    "id": 15620263,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2998,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "doheon114",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/doheon114",
+     "userName": "doheon114",
+     "tier": "EXPERT",
+     "id": 15620263,
+     "profileUrl": "/doheon114",
+     "performanceTier": "EXPERT",
+     "userId": 15620263,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3515638,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736711,
+  "name": "How to use multilingual reports",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-22T07:50:19.157055800Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736711",
+  "totalMessages": 1,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "doheon114",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/doheon114",
+   "tier": "EXPERT",
+   "id": 15620263,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3515638,
+  "id": 736711,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Komil Parmar",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736711#3515671",
+  "lastCommentPostDate": "2026-08-22T08:58:37.676666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-22T07:50:19.157055800Z",
+  "title": "How to use multilingual reports",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736711",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "doheon114",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/doheon114",
+    "userName": "doheon114",
+    "tier": "EXPERT",
+    "id": 15620263,
+    "profileUrl": "/doheon114",
+    "performanceTier": "EXPERT",
+    "userId": 15620263,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

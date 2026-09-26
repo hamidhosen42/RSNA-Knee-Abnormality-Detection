@@ -1,0 +1,234 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+0.00s - to python to disable frozen modules.
+
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+0.00s - to python to disable frozen modules.
+
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+cuda:0 probe PASS (compute 7.5)
+
+cuda:1 probe PASS (compute 7.5)
+
+devices: ['cuda:0', 'cuda:1']
+
+[startup] imports+GPU preflight: 8.25s
+
+[    0.1s] input root: /kaggle/input/rsna-knee-abnormality-detection
+
+[startup] competition-root preflight: 0.06s
+
+[    0.2s] memory: 29.5 GB available, 13.3 GB to the cache; sizing for 4407 train + 1322 test studies -> 1 group(s) of 3 = 3 slices per slot
+
+[    0.2s] cache layout: 1 groups x 3 slices = 3 per slot
+
+[phase] {"a5_without_matching_acquisition": 0, "elapsed_seconds": 1.6360926628112793, "gpus": [{"allocated_bytes": 0, "id": 0, "reserved_bytes": 0}, {"allocated_bytes": 0, "id": 1, "reserved_bytes": 0}], "max_rss_kib": 1059888, "memory.current": "1435176960", "memory.max": "32212254720", "missing_fluid_flags": 0, "stage": "input_metadata", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 2.015221357345581, "gpus": [{"allocated_bytes": 0, "id": 0, "reserved_bytes": 0}, {"allocated_bytes": 0, "id": 1, "reserved_bytes": 0}], "max_rss_kib": 1059888, "memory.current": "1440256000", "memory.max": "32212254720", "stage": "dinov2", "status": "START"}
+
+[    2.0s] weights package: 20 member(s) from /kaggle/input/rsna-knee-weights; 2 device(s)
+
+[    2.1s] test header pass: 15 series
+
+[    2.1s] decode group 1/1: 336px x 12 slices, crop 130.0 mm -> 20 member(s)
+
+[    2.2s] test laterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+
+[    2.2s] test g1: 3 studies, 12 slot-series, 0.02 GiB pixels
+
+[    5.0s] test g1: COMPLETE 12/12; reused ordering for 0 series
+
+[   30.2s] backbone: 12 blocks, last 6 trainable (10.7M params), feature dim 768
+
+[   31.4s] e5427d6c21: fingerprint matches within 2.8e-06
+
+[   33.0s] ea3fbf6edf: fingerprint matches within 3.8e-06
+
+[   34.5s] 013dc75703: fingerprint matches within 3.3e-06
+
+[   36.2s] 8baecb9d1b: fingerprint matches within 2.4e-06
+
+[   37.5s] 44128e3ff3: fingerprint matches within 4.3e-06
+
+[   38.9s] ed427aa10a: fingerprint matches within 4.6e-06
+
+[   40.2s] 3d1f4c48fc: fingerprint matches within 1.3e-06
+
+[   41.6s] 8476b29285: fingerprint matches within 4.4e-06
+
+[   43.0s] 7f8321affc: fingerprint matches within 2.9e-06
+
+[   44.3s] b7c37cc80e: fingerprint matches within 1.1e-06
+
+[   45.6s] d47313baef: fingerprint matches within 2.1e-06
+
+[   46.9s] 5f8ba4c5ea: fingerprint matches within 3.3e-06
+
+[   48.5s] 2f7e785e82: fingerprint matches within 1.1e-06
+
+[   49.7s] 44bc3c6f14: fingerprint matches within 3.8e-06
+
+[   50.9s] 84079fe8cb: fingerprint matches within 1.2e-06
+
+[   52.2s] 2dce50ebd9: fingerprint matches within 3.8e-06
+
+[   53.7s] 91f171fe6f: fingerprint matches within 2.6e-06
+
+[   55.0s] 72081758ce: fingerprint matches within 2.9e-06
+
+[   56.2s] 1e553ba481: fingerprint matches within 1.7e-06
+
+[   57.4s] f335c812fe: fingerprint matches within 2.9e-06
+
+[   61.1s] shared first 6 DINOv2 blocks for 20 members; original views computed once per 2 device(s)
+
+[   61.1s]   banked e5427d6c21 fold 2 (10 window(s); 1 member(s)
+
+[   61.1s]   banked d47313baef fold 2 (10 window(s); 2 member(s)
+
+[   61.1s]   banked ea3fbf6edf fold 2 (10 window(s); 3 member(s)
+
+[   61.1s]   banked 5f8ba4c5ea fold 2 (10 window(s); 4 member(s)
+
+[   61.1s]   banked 013dc75703 fold 4 (10 window(s); 5 member(s)
+
+[   61.1s]   banked 2f7e785e82 fold 4 (10 window(s); 6 member(s)
+
+[   61.1s]   banked 8baecb9d1b fold 4 (10 window(s); 7 member(s)
+
+[   61.1s]   banked 44bc3c6f14 fold 0 (10 window(s); 8 member(s)
+
+[   61.1s]   banked 44128e3ff3 fold 0 (10 window(s); 9 member(s)
+
+[   61.1s]   banked 84079fe8cb fold 3 (10 window(s); 10 member(s)
+
+[   61.1s]   banked ed427aa10a fold 0 (10 window(s); 11 member(s)
+
+[   61.1s]   banked 2dce50ebd9 fold 0 (10 window(s); 12 member(s)
+
+[   61.1s]   banked 3d1f4c48fc fold 4 (10 window(s); 13 member(s)
+
+[   61.1s]   banked 91f171fe6f fold 1 (10 window(s); 14 member(s)
+
+[   61.1s]   banked 8476b29285 fold 1 (10 window(s); 15 member(s)
+
+[   61.1s]   banked 72081758ce fold 3 (10 window(s); 16 member(s)
+
+[   61.1s]   banked 7f8321affc fold 3 (10 window(s); 17 member(s)
+
+[   61.1s]   banked 1e553ba481 fold 1 (10 window(s); 18 member(s)
+
+[   61.1s]   banked b7c37cc80e fold 3 (10 window(s); 19 member(s)
+
+[   61.1s]   banked f335c812fe fold 1 (10 window(s); 20 member(s)
+
+[   61.3s] DINOv2 fail-closed gate PASS: 20/20 fingerprints and members
+
+[   61.3s] submission.csv = exact no-jitter public-frontier rank mean of 20 member(s); (3, 13)
+
+[   61.3s] done
+
+[phase] {"elapsed_seconds": 61.55417037010193, "gpus": [{"allocated_bytes": 9568256, "id": 0, "reserved_bytes": 23068672}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 150994944}], "max_rss_kib": 3688720, "memory.current": "6642802688", "memory.max": "32212254720", "stage": "dinov2", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 61.61203145980835, "gpus": [{"allocated_bytes": 9568256, "id": 0, "reserved_bytes": 23068672}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 150994944}], "max_rss_kib": 3688720, "memory.current": "6643167232", "memory.max": "32212254720", "stage": "a5", "status": "START"}
+
+series root: /kaggle/input/rsna-knee-abnormality-detection/test_series
+
+3 test studies, 3 with series metadata
+
+A5 strict-loaded m_f0.pt; all encoder and head tensors present
+
+A5 strict-loaded m_f1.pt; all encoder and head tensors present
+
+A5 strict-loaded m_f2.pt; all encoder and head tensors present
+
+A5 strict-loaded m_f3.pt; all encoder and head tensors present
+
+A5 strict-loaded m_f4.pt; all encoder and head tensors present
+
+device cuda | amp bfloat16 (on=True) | workers 4 | chunk 48 | micro 8
+
+  3/3  0.1m  eta 0.0m
+
+
+
+inference done in 0.1 min
+
+[phase] {"absent": 0, "applicable": 3, "elapsed_seconds": 78.06000518798828, "gpus": [{"allocated_bytes": 9568256, "id": 0, "reserved_bytes": 23068672}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 4377252, "memory.current": "7976394752", "memory.max": "32212254720", "stage": "a5", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 78.20794916152954, "gpus": [{"allocated_bytes": 9568256, "id": 0, "reserved_bytes": 23068672}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 4377252, "memory.current": "7976615936", "memory.max": "32212254720", "stage": "radimagenet", "status": "START"}
+
+[   82.2s] rad commonlaterality: 1 from the tag, 2 from geometry, 0 unresolved; tag and geometry disagree on 0 (0.0% of the tagged)
+
+[   84.5s] rad_e10: 3 studies, 8 slot-series, 0.00 GiB pixels
+
+[   85.7s] rad_e10: COMPLETE 8/8; reused ordering for 0 series
+
+[   85.7s] rad_e13: 3 studies, 11 slot-series, 0.00 GiB pixels
+
+[   86.4s] rad_e13: COMPLETE 11/11; reused ordering for 8 series
+
+[   86.4s] rad_legacy_second: 3 studies, 7 slot-series, 0.00 GiB pixels
+
+[   86.9s] rad_legacy_second: COMPLETE 7/7; reused ordering for 5 series
+
+[Rad-dual5] BTKD reference Rad/calibrator complete; unused alternate-head branch removed
+
+[phase] {"elapsed_seconds": 87.34880685806274, "gpus": [{"allocated_bytes": 9568256, "id": 0, "reserved_bytes": 23068672}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 4740392, "memory.current": "8837992448", "memory.max": "32212254720", "stage": "radimagenet", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 87.52333474159241, "gpus": [{"allocated_bytes": 9568256, "id": 0, "reserved_bytes": 23068672}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 4740392, "memory.current": "8838578176", "memory.max": "32212254720", "stage": "public_raptor", "status": "START"}
+
+[raptor-fast] 3 studies; balanced arm groups cuda:0=[0,2], cuda:1=[1,3]
+
+[raptor-fast] wrote /kaggle/working/_raptor.csv; elapsed 31.1s
+
+[phase] {"elapsed_seconds": 118.59830594062805, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "11130859520", "memory.max": "32212254720", "stage": "public_raptor", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 121.30708193778992, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "11106893824", "memory.max": "32212254720", "stage": "residual_coat", "status": "START"}
+
+[phase] {"elapsed_seconds": 121.30699682235718, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "11106893824", "memory.max": "32212254720", "stage": "d4", "status": "START"}
+
+[phase] {"elapsed_seconds": 173.7968029975891, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "15964782592", "memory.max": "32212254720", "ok": true, "stage": "d4", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 181.03386282920837, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "12755525632", "memory.max": "32212254720", "ok": true, "stage": "residual_coat", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 181.04101848602295, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "12755718144", "memory.max": "32212254720", "stage": "global96_coat", "status": "START"}
+
+[phase] {"elapsed_seconds": 181.041401386261, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "12755718144", "memory.max": "32212254720", "stage": "repairv1_coat", "status": "START"}
+
+[phase] {"elapsed_seconds": 245.8547568321228, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "16581308416", "memory.max": "32212254720", "ok": true, "stage": "repairv1_coat", "status": "COMPLETE"}
+
+[phase] {"elapsed_seconds": 248.71317839622498, "gpus": [{"allocated_bytes": 19136512, "id": 0, "reserved_bytes": 62914560}, {"allocated_bytes": 9568256, "id": 1, "reserved_bytes": 23068672}], "max_rss_kib": 7379548, "memory.current": "14572953600", "memory.max": "32212254720", "ok": true, "stage": "global96_coat", "status": "COMPLETE"}
+
+[coat-arm] family reduction: rank_of_member_probability_mean
+
+[coat-arm] CoAt family members: resgated_top3, global96_top3, d4_swa3, repairv1_top3
+
+[coat-arm] equal-rank CoAt family; BTKD32 no-inner-rerank; 3 studies
+
+COMPLETE: /kaggle/working/submission.csv, 3 studies, SHA256=8f0c5e7b2b561538dae55439a4d2e9173141096da3defd9bc0a4bac351eef37a
+
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+[NbConvertApp] Writing 319342 bytes to __notebook__.ipynb
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+[NbConvertApp] Writing 1520836 bytes to __results__.html
+

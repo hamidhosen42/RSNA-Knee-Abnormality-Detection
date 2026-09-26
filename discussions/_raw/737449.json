@@ -1,0 +1,595 @@
+{
+ "forumTopic": {
+  "authorId": 28775210,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Dnyanesh",
+  "authorUserName": "dnyaneshbharambe",
+  "comments": [
+   {
+    "id": 3516896,
+    "postDate": "2026-08-25T15:55:05.803Z",
+    "rawMarkdown": "The compute requirements of this competition is still very much affordable. More resources if anything would help do the experiments faster, but there is nothing in this competition like the more you train the more you score stuff. \n\nIf you want to realize this, try ARC agi. ",
+    "content": "<p>The compute requirements of this competition is still very much affordable. More resources if anything would help do the experiments faster, but there is nothing in this competition like the more you train the more you score stuff. </p>\n<p>If you want to realize this, try ARC agi. </p>",
+    "replies": [
+     {
+      "id": 3516911,
+      "postDate": "2026-08-25T16:47:07.237Z",
+      "rawMarkdown": "ya sure , will give it a try",
+      "content": "<p>ya sure , will give it a try</p>",
+      "replies": [
+       {
+        "id": 3516970,
+        "postDate": "2026-08-25T18:54:29.610Z",
+        "rawMarkdown": "@dnyaneshbharambe don't do that, ARC needs too much GPU",
+        "content": "<p><a href=\"https://www.kaggle.com/dnyaneshbharambe\" target=\"_blank\">@dnyaneshbharambe</a> don't do that, ARC needs too much GPU</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ravi Ramakrishnan",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+         "url": "/ravi20076",
+         "tier": "GRANDMASTER",
+         "id": 8273630,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 292,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "komilparmar"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ravi Ramakrishnan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+          "url": "/ravi20076",
+          "userName": "ravi20076",
+          "tier": "GRANDMASTER",
+          "id": 8273630,
+          "profileUrl": "/ravi20076",
+          "performanceTier": "GRANDMASTER",
+          "userId": 8273630,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3516979,
+        "postDate": "2026-08-25T19:32:22.227Z",
+        "rawMarkdown": "@dnyaneshbharambe I think you didn't understand it. I said if you want to realize how cheap are the compute requirements of this competition, try ARC AGI.\n\nThe last year winning team's solution model was trained on H100 for ~900 GPU hours, and the rate of H100 at the moment is around $4 per hour per gpu. Let alone be the cost of experimentations and ablations.",
+        "content": "<p><a href=\"https://www.kaggle.com/dnyaneshbharambe\" target=\"_blank\">@dnyaneshbharambe</a> I think you didn't understand it. I said if you want to realize how cheap are the compute requirements of this competition, try ARC AGI.</p>\n<p>The last year winning team's solution model was trained on H100 for ~900 GPU hours, and the rate of H100 at the moment is around $4 per hour per gpu. Let alone be the cost of experimentations and ablations.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Komil Parmar",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+         "url": "/komilparmar",
+         "tier": "EXPERT",
+         "id": 11351811,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 59,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Komil Parmar",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+          "url": "/komilparmar",
+          "userName": "komilparmar",
+          "tier": "EXPERT",
+          "id": 11351811,
+          "profileUrl": "/komilparmar",
+          "performanceTier": "EXPERT",
+          "userId": 11351811,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3517630,
+        "postDate": "2026-08-27T18:15:48.390Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Dnyanesh",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/dnyaneshbharambe",
+       "tier": "EXPERT",
+       "id": 28775210,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dnyanesh",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/dnyaneshbharambe",
+        "userName": "dnyaneshbharambe",
+        "tier": "EXPERT",
+        "id": 28775210,
+        "profileUrl": "/dnyaneshbharambe",
+        "performanceTier": "EXPERT",
+        "userId": 28775210,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Komil Parmar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+     "url": "/komilparmar",
+     "tier": "EXPERT",
+     "id": 11351811,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 59,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Komil Parmar",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+      "url": "/komilparmar",
+      "userName": "komilparmar",
+      "tier": "EXPERT",
+      "id": 11351811,
+      "profileUrl": "/komilparmar",
+      "performanceTier": "EXPERT",
+      "userId": 11351811,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516934,
+    "postDate": "2026-08-25T17:27:45.133Z",
+    "rawMarkdown": "Most of these totally doable, I do on cpu first preprocessing, labelers, folds, and ablations. Once it's reduced you can use the quota where need. I personally will keep with cpu all the way through. In this one the biggest levers look to be cpu friendly. ",
+    "content": "<p>Most of these totally doable, I do on cpu first preprocessing, labelers, folds, and ablations. Once it's reduced you can use the quota where need. I personally will keep with cpu all the way through. In this one the biggest levers look to be cpu friendly. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "John Taylor (AI)",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3365714-kg.jpeg?t=2024-11-10-23-39-24",
+     "url": "/johntaylorai",
+     "tier": "CONTRIBUTOR",
+     "id": 3365714,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 792,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "John Taylor (AI)",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3365714-kg.jpeg?t=2024-11-10-23-39-24",
+      "url": "/johntaylorai",
+      "userName": "johntaylorai",
+      "tier": "CONTRIBUTOR",
+      "id": 3365714,
+      "profileUrl": "/johntaylorai",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 3365714,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516907,
+    "postDate": "2026-08-25T16:29:40.890Z",
+    "rawMarkdown": "Feel this too — same queues, same 30h wall, same P100 crash (switch to T4). But my biggest gains cost zero GPU: rank-mean ensembling already-trained models (+0.015 LB) and picking a better label source (a 2-min CPU check). Also: cache decoded DICOMs in RAM (3x more experiments per quota), validate ideas locally before training them, run at off-peak hours, and there's 20 TPU-hrs/week nobody touches. Money buys the ceiling, but discipline covers most of the gap. Still agree free quotas should be higher for Featured comps.\n",
+    "content": "<p>Feel this too — same queues, same 30h wall, same P100 crash (switch to T4). But my biggest gains cost zero GPU: rank-mean ensembling already-trained models (+0.015 LB) and picking a better label source (a 2-min CPU check). Also: cache decoded DICOMs in RAM (3x more experiments per quota), validate ideas locally before training them, run at off-peak hours, and there's 20 TPU-hrs/week nobody touches. Money buys the ceiling, but discipline covers most of the gap. Still agree free quotas should be higher for Featured comps.</p>",
+    "replies": [
+     {
+      "id": 3516912,
+      "postDate": "2026-08-25T16:47:43.540Z",
+      "rawMarkdown": "ya discipline covers most of the gap i agree on this ",
+      "content": "<p>ya discipline covers most of the gap i agree on this </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Dnyanesh",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/dnyaneshbharambe",
+       "tier": "EXPERT",
+       "id": 28775210,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "KAGGLE",
+        "featuredUserNames": [
+         "pcjimmmy",
+         "nktthegreat",
+         "starkhushi"
+        ],
+        "userCount": 3
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dnyanesh",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/dnyaneshbharambe",
+        "userName": "dnyaneshbharambe",
+        "tier": "EXPERT",
+        "id": 28775210,
+        "profileUrl": "/dnyaneshbharambe",
+        "performanceTier": "EXPERT",
+        "userId": 28775210,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "starkhushi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+     "url": "/starkhushi",
+     "tier": "EXPERT",
+     "id": 14548749,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 609,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "starkhushi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+      "url": "/starkhushi",
+      "userName": "starkhushi",
+      "tier": "EXPERT",
+      "id": 14548749,
+      "profileUrl": "/starkhushi",
+      "performanceTier": "EXPERT",
+      "userId": 14548749,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516961,
+    "postDate": "2026-08-25T18:17:21.500Z",
+    "rawMarkdown": "Having good hardware does give you an edge, that is the truth. But by trying to reduce the \"problem\" into a reduce-able search space  of cheap experiments and being efficient with your data and training you can get ahead a lot. Here's some \"free\" GPU resources that you can use to train models:\n\nhttps://modal.com/ (gives $30 of compute if you link a CC)}\nhttps://www.beam.cloud/ (gives $30 of compute refreshed monthly if you link a CC)\n\n(I am in no way affiliated to the above orgs, just something i use for my experiments)",
+    "content": "<p>Having good hardware does give you an edge, that is the truth. But by trying to reduce the \"problem\" into a reduce-able search space  of cheap experiments and being efficient with your data and training you can get ahead a lot. Here's some \"free\" GPU resources that you can use to train models:</p>\n<p><a href=\"https://modal.com/\" target=\"_blank\">https://modal.com/</a> (gives $30 of compute if you link a CC)}\n<a href=\"https://www.beam.cloud/\" target=\"_blank\">https://www.beam.cloud/</a> (gives $30 of compute refreshed monthly if you link a CC)</p>\n<p>(I am in no way affiliated to the above orgs, just something i use for my experiments)</p>",
+    "parent": {},
+    "author": {
+     "displayName": "DhawalModi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/860066-kg.jpg?t=2024-01-07-22-04-01",
+     "url": "/daveconnor",
+     "tier": "CONTRIBUTOR",
+     "id": 860066,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 24,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "DhawalModi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/860066-kg.jpg?t=2024-01-07-22-04-01",
+      "url": "/daveconnor",
+      "userName": "daveconnor",
+      "tier": "CONTRIBUTOR",
+      "id": 860066,
+      "profileUrl": "/daveconnor",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 860066,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516976,
+    "postDate": "2026-08-25T19:21:29.980Z",
+    "rawMarkdown": "Love hearing this comment from someone who has been on the site for only a year :)\nBeen here 9 years - pretty sure a version of this post shows up every year multiple times.\n\nI would guess its getting pretty hard for kaggle to find small data set problems.   When I look back over the competitions I spent lots of time working - pretty large percentage of them (in the first 5-7 years) can be solved with a handy open sourced model or one of the LLM's in an hour or two.  So almost a certain expectation that the compute will get more expensive each year, hosts are not going to go thru the effort and cost if the data set can be resolved in Claude by an intern.\n\nI do lots of my work local and for the first 7 or so years I could do a machine upgrade / replacement and keep up with the compute.  My daughter just returned a machine I let her use for a few years that was my first kaggle build 9 years ago.  Its a wimp.  But the cost to build or upgrade has gone crazy - I am now happy if I can add a new graphic card once a year rather than the complete build of a new system.\n\nKaggle has done a decent job over the years of providing better compute power.  If memory serves 9 years ago it was 2 core CPU with 8GB of RAM?   We can hope that they can keep up in the future, as they do realize the need to balance the compute with the data to keep the site going strong.\n\nMy experience suggests you can be a lot less efficent and maybe even on the sloppy side if you have a lot of local compute.  While my team mate in a recent competition was a marvel at maximizing the use of kaggle resources.\n\nIf fact, I am finding it a bit like the use of Claude/ChatGPT etc for coding.  I am writing much higher level code than last year but I am a whole lot dumber doing it.  I am skipping most of the steps that use to inform my brain.    \n\nMy belief, your going to be better off long term operating within the kaggle limits than you would be if you had Elon's Nashville facility available for your use, assuming your object is to learn.\n",
+    "content": "<p>Love hearing this comment from someone who has been on the site for only a year :)\nBeen here 9 years - pretty sure a version of this post shows up every year multiple times.</p>\n<p>I would guess its getting pretty hard for kaggle to find small data set problems.   When I look back over the competitions I spent lots of time working - pretty large percentage of them (in the first 5-7 years) can be solved with a handy open sourced model or one of the LLM's in an hour or two.  So almost a certain expectation that the compute will get more expensive each year, hosts are not going to go thru the effort and cost if the data set can be resolved in Claude by an intern.</p>\n<p>I do lots of my work local and for the first 7 or so years I could do a machine upgrade / replacement and keep up with the compute.  My daughter just returned a machine I let her use for a few years that was my first kaggle build 9 years ago.  Its a wimp.  But the cost to build or upgrade has gone crazy - I am now happy if I can add a new graphic card once a year rather than the complete build of a new system.</p>\n<p>Kaggle has done a decent job over the years of providing better compute power.  If memory serves 9 years ago it was 2 core CPU with 8GB of RAM?   We can hope that they can keep up in the future, as they do realize the need to balance the compute with the data to keep the site going strong.</p>\n<p>My experience suggests you can be a lot less efficent and maybe even on the sloppy side if you have a lot of local compute.  While my team mate in a recent competition was a marvel at maximizing the use of kaggle resources.</p>\n<p>If fact, I am finding it a bit like the use of Claude/ChatGPT etc for coding.  I am writing much higher level code than last year but I am a whole lot dumber doing it.  I am skipping most of the steps that use to inform my brain.    </p>\n<p>My belief, your going to be better off long term operating within the kaggle limits than you would be if you had Elon's Nashville facility available for your use, assuming your object is to learn.</p>",
+    "replies": [
+     {
+      "id": 3517193,
+      "postDate": "2026-08-26T12:11:34.473Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 643,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516977,
+    "postDate": "2026-08-25T19:31:04.760Z",
+    "rawMarkdown": "kinda makes me wonder if having less compute actually makes you better at this lol. like you have to think more about what’s worth testing instead of just running everything",
+    "content": "<p>kinda makes me wonder if having less compute actually makes you better at this lol. like you have to think more about what’s worth testing instead of just running everything</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Dana",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18653801-kg.jpeg?t=2026-05-10-12-48-11",
+     "url": "/de3xie",
+     "tier": "CONTRIBUTOR",
+     "id": 18653801,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4144,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "christofhenkel"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dana",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18653801-kg.jpeg?t=2026-05-10-12-48-11",
+      "url": "/de3xie",
+      "userName": "de3xie",
+      "tier": "CONTRIBUTOR",
+      "id": 18653801,
+      "profileUrl": "/de3xie",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18653801,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516888,
+   "postDate": "2026-08-25T15:42:35.630Z",
+   "rawMarkdown": "Free‑tier users often face long notebook queues, while competitions like these demand heavy compute resources, which makes participation feel skewed toward those with premium GPUs or Colab Pro accounts. What strategies or alternative resources can help free‑tier participants stay competitive despite these limitations?",
+   "content": "<p>Free‑tier users often face long notebook queues, while competitions like these demand heavy compute resources, which makes participation feel skewed toward those with premium GPUs or Colab Pro accounts. What strategies or alternative resources can help free‑tier participants stay competitive despite these limitations?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Dnyanesh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/dnyaneshbharambe",
+    "tier": "EXPERT",
+    "id": 28775210,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Dnyanesh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/dnyaneshbharambe",
+     "userName": "dnyaneshbharambe",
+     "tier": "EXPERT",
+     "id": 28775210,
+     "profileUrl": "/dnyaneshbharambe",
+     "performanceTier": "EXPERT",
+     "userId": 28775210,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516888,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737449,
+  "name": "Why do I feel that competitions like these are increasingly becoming accessible only to people with premium GPUs or Colab Pro subscriptions?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-25T15:42:35.628670600Z",
+  "tags": [
+   {
+    "id": 16580,
+    "name": "gpu",
+    "listingUrl": "/search?q=gpu+tag%3A%22gpu%22",
+    "tagUrl": "/tags/gpu",
+    "displayName": "GPU"
+   },
+   {
+    "id": 16574,
+    "name": "tpu",
+    "listingUrl": "/search?q=tpu+tag%3A%22tpu%22",
+    "tagUrl": "/tags/tpu",
+    "displayName": "TPU"
+   }
+  ],
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737449",
+  "totalMessages": 12,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Dnyanesh",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/dnyaneshbharambe",
+   "tier": "EXPERT",
+   "id": 28775210,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 12,
+  "firstForumMessageId": 3516888,
+  "id": 737449,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737449#3517630",
+  "lastCommentPostDate": "2026-08-27T18:15:48.390Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-25T15:42:35.628670600Z",
+  "tags": [
+   {
+    "id": 16574,
+    "name": "tpu",
+    "listingUrl": "/tags/tpu",
+    "displayName": "TPU"
+   },
+   {
+    "id": 16580,
+    "name": "gpu",
+    "listingUrl": "/tags/gpu",
+    "displayName": "GPU"
+   }
+  ],
+  "title": "Why do I feel that competitions like these are increasingly becoming accessible only to people with premium GPUs or Colab Pro subscriptions?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737449",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Dnyanesh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/dnyaneshbharambe",
+    "userName": "dnyaneshbharambe",
+    "tier": "EXPERT",
+    "id": 28775210,
+    "profileUrl": "/dnyaneshbharambe",
+    "performanceTier": "EXPERT",
+    "userId": 28775210,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

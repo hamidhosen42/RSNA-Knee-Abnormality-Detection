@@ -1,0 +1,120 @@
+{
+ "forumTopic": {
+  "authorId": 27271854,
+  "authorThumbnailName": "27271854-kg.jpeg?t=2026-06-10-15-37-39",
+  "authorUserDisplayName": "Zeynep Ceyhun",
+  "authorUserName": "zeynepceyhun",
+  "comments": [
+   {
+    "id": 3510975,
+    "postDate": "2026-08-10T03:45:45.017Z",
+    "rawMarkdown": "We welcome participation of competitors between 13-18 years of age after the following forms are submitted and approved.\n\nForm #1: Parent/Guardian Consent for Minor's Use of Kaggle.com Submitted one time by a parent or guardian to authorize a minor child (between ages 13 and 16) to create and use a Kaggle account. https://www.kaggle.com/guardian-consent-minor-use \nForm #2: Parent/Guardian Consent for Minor's Participation in a Kaggle Competition Submitted on a per-competition basis for the minor to enter and participate in a specific, eligible Kaggle competition. https://www.kaggle.com/consent-minors-process\n\nThank you and good luck!",
+    "content": "<p>We welcome participation of competitors between 13-18 years of age after the following forms are submitted and approved.</p>\n<p>Form #1: Parent/Guardian Consent for Minor's Use of Kaggle.com Submitted one time by a parent or guardian to authorize a minor child (between ages 13 and 16) to create and use a Kaggle account. <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">https://www.kaggle.com/guardian-consent-minor-use</a> \nForm #2: Parent/Guardian Consent for Minor's Participation in a Kaggle Competition Submitted on a per-competition basis for the minor to enter and participate in a specific, eligible Kaggle competition. <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">https://www.kaggle.com/consent-minors-process</a></p>\n<p>Thank you and good luck!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Michelle Riopel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/michelleriopel",
+     "tier": "CONTRIBUTOR",
+     "id": 7441439,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3510704,
+   "postDate": "2026-08-09T10:33:09.847Z",
+   "rawMarkdown": "Hi RSNA team / organizers,\n\nQuick eligibility question — I'm a high school student under 18 with a strong background in medical imaging AI (prior placements in international AI health competitions) and I'd like to compete here.\n\nSection 3.1.a.ii of the rules allows for minors to participate \"unless otherwise agreed to by Competition Sponsor and appropriate parental/guardian consents have been obtained.\"\n\nCould someone confirm:\n1. Is this exception something RSNA is open to granting?\n2. What's the process/documentation needed for parental consent?\n\nMy parents are supportive and ready to sign off on whatever's required. Would appreciate any guidance — thanks!",
+   "content": "<p>Hi RSNA team / organizers,</p>\n<p>Quick eligibility question — I'm a high school student under 18 with a strong background in medical imaging AI (prior placements in international AI health competitions) and I'd like to compete here.</p>\n<p>Section 3.1.a.ii of the rules allows for minors to participate \"unless otherwise agreed to by Competition Sponsor and appropriate parental/guardian consents have been obtained.\"</p>\n<p>Could someone confirm:</p>\n<ol>\n<li>Is this exception something RSNA is open to granting?</li>\n<li>What's the process/documentation needed for parental consent?</li>\n</ol>\n<p>My parents are supportive and ready to sign off on whatever's required. Would appreciate any guidance — thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Zeynep Ceyhun",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27271854-kg.jpeg?t=2026-06-10-15-37-39",
+    "url": "/zeynepceyhun",
+    "tier": "CONTRIBUTOR",
+    "id": 27271854,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Zeynep Ceyhun",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27271854-kg.jpeg?t=2026-06-10-15-37-39",
+     "url": "/zeynepceyhun",
+     "userName": "zeynepceyhun",
+     "tier": "CONTRIBUTOR",
+     "id": 27271854,
+     "profileUrl": "/zeynepceyhun",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27271854,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3510704,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733971,
+  "name": "Eligibility question: minor participant + parental consent (Section 3.1.a.ii)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-09T10:33:09.847110900Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733971",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Zeynep Ceyhun",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27271854-kg.jpeg?t=2026-06-10-15-37-39",
+   "url": "/zeynepceyhun",
+   "tier": "CONTRIBUTOR",
+   "id": 27271854,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3510704,
+  "id": 733971,
+  "lastCommenterType": "HOST",
+  "lastCommenterName": "Michelle Riopel",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733971#3510975",
+  "lastCommentPostDate": "2026-08-10T03:45:45.016666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-09T10:33:09.847110900Z",
+  "title": "Eligibility question: minor participant + parental consent (Section 3.1.a.ii)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733971",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Zeynep Ceyhun",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27271854-kg.jpeg?t=2026-06-10-15-37-39",
+    "url": "/zeynepceyhun",
+    "userName": "zeynepceyhun",
+    "tier": "CONTRIBUTOR",
+    "id": 27271854,
+    "profileUrl": "/zeynepceyhun",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27271854,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

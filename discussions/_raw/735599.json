@@ -1,0 +1,316 @@
+{
+ "forumTopic": {
+  "authorId": 27702808,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Muhammad Bilal",
+  "authorUserName": "bilal110",
+  "comments": [
+   {
+    "id": 3513775,
+    "postDate": "2026-08-17T15:15:01.660Z",
+    "rawMarkdown": "When you want to get into teams it's always a good idea to have your bio updated.  Right now yours is a blank slate.  \n\nOne issue that folks have with \"team mates\" is you often end up getting ghosted by someone who thought kaggle was fun but decided later not so much fun.  Team mates can get you disqualified, so signing up with random strangers is risky.  Put the team wanted icon - so change the setting to show your looking for team maters.  \n\nWith your blank profile the odds of a top team wanting you are pretty slim.\n\nHere are some reasons I would join up with a person.\n\n1.  They come from the same country / University / Football team, etc.\n2.  The have LinkedIn / Github etc showing where I can go look at more about you.\n3.  They have lots of current year kaggle activity - this is a big one for me, I need to know that your really into kaggle and have worked hard on one or more competitions.\n4.  They have placed in a decent number of competitions in the metal.  \n5.  They have a work schedule close to mine.  Hard to team up if my working hours and yours never overlap.\n6.  You have worked on competitions as a team member.  Small teams can really gel or it can be three months of havoc.  If you have worked on multiple teams I understand that you at least understand team dynamics.\n\n",
+    "content": "<p>When you want to get into teams it's always a good idea to have your bio updated.  Right now yours is a blank slate.  </p>\n<p>One issue that folks have with \"team mates\" is you often end up getting ghosted by someone who thought kaggle was fun but decided later not so much fun.  Team mates can get you disqualified, so signing up with random strangers is risky.  Put the team wanted icon - so change the setting to show your looking for team maters.  </p>\n<p>With your blank profile the odds of a top team wanting you are pretty slim.</p>\n<p>Here are some reasons I would join up with a person.</p>\n<ol>\n<li>They come from the same country / University / Football team, etc.</li>\n<li>The have LinkedIn / Github etc showing where I can go look at more about you.</li>\n<li>They have lots of current year kaggle activity - this is a big one for me, I need to know that your really into kaggle and have worked hard on one or more competitions.</li>\n<li>They have placed in a decent number of competitions in the metal.  </li>\n<li>They have a work schedule close to mine.  Hard to team up if my working hours and yours never overlap.</li>\n<li>You have worked on competitions as a team member.  Small teams can really gel or it can be three months of havoc.  If you have worked on multiple teams I understand that you at least understand team dynamics.</li>\n</ol>",
+    "replies": [
+     {
+      "id": 3513967,
+      "postDate": "2026-08-18T04:52:53.410Z",
+      "rawMarkdown": "I have worked in hackathons and I know how is it to work with a team but I haven't added much information on my linkedln or github I have worked in hackahons outside  kaggle as well in which I found some very good teammates and that was Steph first time of being a team leader myself now I know how to run a tea very efficiently. Thanks for your Advice\n",
+      "content": "<p>I have worked in hackathons and I know how is it to work with a team but I haven't added much information on my linkedln or github I have worked in hackahons outside  kaggle as well in which I found some very good teammates and that was Steph first time of being a team leader myself now I know how to run a tea very efficiently. Thanks for your Advice</p>",
+      "replies": [
+       {
+        "id": 3514123,
+        "postDate": "2026-08-18T14:42:51.470Z",
+        "rawMarkdown": "My advice was kind of specific to your question - **how to get a top 20 team interested**.  A blank bio and a few comments about past experience are not going to get a top 20 team inviting you to the party.  It would be a bit like applying for a job in a top rated company with a great cover letter but zero provided evidence to support the letter.\n\nWhen you write a cover letter it's tempting to over sell your skill set.  For example, for over 20 years I helped teach small team leadership for a large corporation.  We trained folks with the same setup as kaggle using today - 5 person teams.  I spent almost 45 years working in environments where small teams handled the challenges, often as a team leader.  I can easily make the claim that I have run a team very efficiently.  I would be happier adding you to my team if you had stated you have been a team leader, rather than the unsupported statement that you know how to run a team.  \n\nBut my suggestions would also apply forming a team with folks in the lower ranks.\n\nI did forget one - its something I always include when I ask to join a team - How much compute power can you provide.  I have 4 Ubuntu machines I can run with dual GPU's which is pretty useful for a competition like this one were I can promise to be the work horse in compute for a team.\n\nPerhaps a new one from this year that should also be added - how many LLM's to you have subscriptions for?   If you have a subscription to claude, gemmi pro and ChatGPT I would want you on my team.  \n\nYou did add another that has worked well for me - do you know or have you worked with a person who is on one of the top 20 teams.   Having someone vouch for your work ethnic and skill always valuable for any job in the world your trying to get.\n\nBest of luck in this competition - hope to see you in the medals at the end.",
+        "content": "<p>My advice was kind of specific to your question - <strong>how to get a top 20 team interested</strong>.  A blank bio and a few comments about past experience are not going to get a top 20 team inviting you to the party.  It would be a bit like applying for a job in a top rated company with a great cover letter but zero provided evidence to support the letter.</p>\n<p>When you write a cover letter it's tempting to over sell your skill set.  For example, for over 20 years I helped teach small team leadership for a large corporation.  We trained folks with the same setup as kaggle using today - 5 person teams.  I spent almost 45 years working in environments where small teams handled the challenges, often as a team leader.  I can easily make the claim that I have run a team very efficiently.  I would be happier adding you to my team if you had stated you have been a team leader, rather than the unsupported statement that you know how to run a team.  </p>\n<p>But my suggestions would also apply forming a team with folks in the lower ranks.</p>\n<p>I did forget one - its something I always include when I ask to join a team - How much compute power can you provide.  I have 4 Ubuntu machines I can run with dual GPU's which is pretty useful for a competition like this one were I can promise to be the work horse in compute for a team.</p>\n<p>Perhaps a new one from this year that should also be added - how many LLM's to you have subscriptions for?   If you have a subscription to claude, gemmi pro and ChatGPT I would want you on my team.  </p>\n<p>You did add another that has worked well for me - do you know or have you worked with a person who is on one of the top 20 teams.   Having someone vouch for your work ethnic and skill always valuable for any job in the world your trying to get.</p>\n<p>Best of luck in this competition - hope to see you in the medals at the end.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "PC Jimmmy",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+         "url": "/pcjimmmy",
+         "tier": "MASTER",
+         "id": 1062256,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 642,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "PC Jimmmy",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+          "url": "/pcjimmmy",
+          "userName": "pcjimmmy",
+          "tier": "MASTER",
+          "id": 1062256,
+          "profileUrl": "/pcjimmmy",
+          "performanceTier": "MASTER",
+          "userId": 1062256,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Muhammad Bilal",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/bilal110",
+       "tier": "CONTRIBUTOR",
+       "id": 27702808,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Muhammad Bilal",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/bilal110",
+        "userName": "bilal110",
+        "tier": "CONTRIBUTOR",
+        "id": 27702808,
+        "profileUrl": "/bilal110",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27702808,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 7,
+     "canUpvote": true,
+     "totalUpvotes": 7
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3514770,
+    "postDate": "2026-08-20T04:30:20.087Z",
+    "rawMarkdown": "Guess I did not answer your specific question - how to email.\n\nA team active in looking for members - they will have the icon showing on the Leader board.  When you click on it there is a box to contact the lead.\n\nIf not looking for members - on the leader board click on the persons icon.  It should take you to profile which has a contact button.\n\nYou have a budget of contacts you can make per month - I think the number is still based on your kaggle experience level.  It might not be a very large number for a fresh face like yourself.  I have been here 9 years and allowed only 20 emails per month.\n\nI did not mention this before but one other issue - your message needs to have spelling correct, punctuation, some paragraphs, ie, it needs to look professional.  I think your getting all those down votes because your message is a bit of a mess.",
+    "content": "<p>Guess I did not answer your specific question - how to email.</p>\n<p>A team active in looking for members - they will have the icon showing on the Leader board.  When you click on it there is a box to contact the lead.</p>\n<p>If not looking for members - on the leader board click on the persons icon.  It should take you to profile which has a contact button.</p>\n<p>You have a budget of contacts you can make per month - I think the number is still based on your kaggle experience level.  It might not be a very large number for a fresh face like yourself.  I have been here 9 years and allowed only 20 emails per month.</p>\n<p>I did not mention this before but one other issue - your message needs to have spelling correct, punctuation, some paragraphs, ie, it needs to look professional.  I think your getting all those down votes because your message is a bit of a mess.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 642,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3513608,
+   "postDate": "2026-08-17T05:29:41.903Z",
+   "rawMarkdown": "Anyone in the top 20 do you want teammates I'm a developer an I can help you with it tomorrow I could see a person aksing for team BT I got late so no he isn't and now I want to send people emails o ask I they want to enter me in there team and list my specifications but how to email people I can really help with this competetion thanks for reading this,\nMuhammad Bilal",
+   "content": "<p>Anyone in the top 20 do you want teammates I'm a developer an I can help you with it tomorrow I could see a person aksing for team BT I got late so no he isn't and now I want to send people emails o ask I they want to enter me in there team and list my specifications but how to email people I can really help with this competetion thanks for reading this,\nMuhammad Bilal</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Muhammad Bilal",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/bilal110",
+    "tier": "CONTRIBUTOR",
+    "id": 27702808,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -9,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Muhammad Bilal",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/bilal110",
+     "userName": "bilal110",
+     "tier": "CONTRIBUTOR",
+     "id": 27702808,
+     "profileUrl": "/bilal110",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27702808,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3513608,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735599,
+  "name": "Team Finding",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-17T05:29:41.902262Z",
+  "tags": [
+   {
+    "id": 14104,
+    "name": "text",
+    "listingUrl": "/search?q=text+tag%3A%22text%22",
+    "tagUrl": "/tags/text-data",
+    "displayName": "Text"
+   },
+   {
+    "id": 13104,
+    "name": "advanced",
+    "listingUrl": "/search?q=advanced+tag%3A%22advanced%22",
+    "tagUrl": "/tags/advanced",
+    "displayName": "Advanced"
+   },
+   {
+    "id": 12107,
+    "name": "computer science",
+    "listingUrl": "/search?q=computer+science+tag%3A%22computer+science%22",
+    "tagUrl": "/tags/computer-science",
+    "displayName": "Computer Science"
+   },
+   {
+    "id": 16895,
+    "name": "english",
+    "listingUrl": "/search?q=english+tag%3A%22english%22",
+    "tagUrl": "/tags/english",
+    "displayName": "English"
+   }
+  ],
+  "totalVotes": -9,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735599",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Muhammad Bilal",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/bilal110",
+   "tier": "CONTRIBUTOR",
+   "id": 27702808,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3513608,
+  "id": 735599,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735599#3514770",
+  "lastCommentPostDate": "2026-08-20T04:30:20.086666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-17T05:29:41.902262Z",
+  "tags": [
+   {
+    "id": 12107,
+    "name": "computer science",
+    "listingUrl": "/tags/computer-science",
+    "displayName": "Computer Science"
+   },
+   {
+    "id": 13104,
+    "name": "advanced",
+    "listingUrl": "/tags/advanced",
+    "displayName": "Advanced"
+   },
+   {
+    "id": 14104,
+    "name": "text",
+    "listingUrl": "/tags/text-data",
+    "displayName": "Text"
+   },
+   {
+    "id": 16895,
+    "name": "english",
+    "listingUrl": "/tags/english",
+    "displayName": "English"
+   }
+  ],
+  "title": "Team Finding",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735599",
+  "votes": -9,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Muhammad Bilal",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/bilal110",
+    "userName": "bilal110",
+    "tier": "CONTRIBUTOR",
+    "id": 27702808,
+    "profileUrl": "/bilal110",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27702808,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

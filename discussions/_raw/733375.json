@@ -1,0 +1,132 @@
+{
+ "forumTopic": {
+  "authorId": 413040,
+  "authorThumbnailName": "413040-gp.jpg",
+  "authorUserDisplayName": "Po-Hao \"Howard\" Chen",
+  "authorUserName": "javaduke95",
+  "comments": [
+   {
+    "id": 3515482,
+    "postDate": "2026-08-21T20:27:28.497Z",
+    "rawMarkdown": "It was great to read about it but i difinetly dont have any idea how to start with 500 gb dataset and 300 gb ssd drive). I would be glad if you can remove me from competition lists and thank you for great opportunity to read about ml medical research since it was just was partly covered by med engineering course in my university... ",
+    "content": "<p>It was great to read about it but i difinetly dont have any idea how to start with 500 gb dataset and 300 gb ssd drive). I would be glad if you can remove me from competition lists and thank you for great opportunity to read about ml medical research since it was just was partly covered by med engineering course in my university… </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Maksym Malin",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/maksymmalin",
+     "tier": "CONTRIBUTOR",
+     "id": 35027228,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Maksym Malin",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/maksymmalin",
+      "userName": "maksymmalin",
+      "tier": "CONTRIBUTOR",
+      "id": 35027228,
+      "profileUrl": "/maksymmalin",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35027228,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3509601,
+   "postDate": "2026-08-06T17:17:57.863Z",
+   "rawMarkdown": "The knee is the largest joint in the human body, and MRI is central to diagnosing major sports injuries, trauma, and degenerative disease, but interpretation is demanding and access to subspecialty musculoskeletal expertise is uneven. \n\nThis challenge invites the RSNA and Kaggle community to build models that detect 12 clinically important knee abnormalities, spanning ligament and meniscal tears, osteoarthritis, effusion, synovitis, fracture, and more.\n\nThis is also RSNA’s first AI Challenge to pair MRI examinations with original multilingual radiology reports. We hope that combination encourages creative, rigorous work that reflects the **real **clinical task: connecting images, language, and meaningful patient care.\n\nAnd don't forget the efficiency prizes!   \"Real world\" here also means striking a balance between label-level accuracy and efficient use of resources.\n\nA challenge dataset can make a large collaborative effort look deceptively simple. We are deeply grateful to the contributing institutions, radiologists, data and privacy teams, RSNA colleagues, and Kaggle team who made this possible.  \n\nAbove all, we owe it to you... every participant who will bring curiosity, technical skill, and healthy skepticism to the work. Whether this is your first Kaggle competition or your hundredth, we hope you will share reproducible ideas, learn from one another, and help move imaging AI forward thoughtfully. \n\nGood luck, and welcome.\n\nLearn more about the challenge and [RSNA’s AI Challenge program](https://www.rsna.org/artificial-intelligence/ai-image-challenge).",
+   "content": "<p>The knee is the largest joint in the human body, and MRI is central to diagnosing major sports injuries, trauma, and degenerative disease, but interpretation is demanding and access to subspecialty musculoskeletal expertise is uneven. </p>\n<p>This challenge invites the RSNA and Kaggle community to build models that detect 12 clinically important knee abnormalities, spanning ligament and meniscal tears, osteoarthritis, effusion, synovitis, fracture, and more.</p>\n<p>This is also RSNA’s first AI Challenge to pair MRI examinations with original multilingual radiology reports. We hope that combination encourages creative, rigorous work that reflects the **real **clinical task: connecting images, language, and meaningful patient care.</p>\n<p>And don't forget the efficiency prizes!   \"Real world\" here also means striking a balance between label-level accuracy and efficient use of resources.</p>\n<p>A challenge dataset can make a large collaborative effort look deceptively simple. We are deeply grateful to the contributing institutions, radiologists, data and privacy teams, RSNA colleagues, and Kaggle team who made this possible.  </p>\n<p>Above all, we owe it to you… every participant who will bring curiosity, technical skill, and healthy skepticism to the work. Whether this is your first Kaggle competition or your hundredth, we hope you will share reproducible ideas, learn from one another, and help move imaging AI forward thoughtfully. </p>\n<p>Good luck, and welcome.</p>\n<p>Learn more about the challenge and <a href=\"https://www.rsna.org/artificial-intelligence/ai-image-challenge\" target=\"_blank\">RSNA’s AI Challenge program</a>.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Po-Hao \"Howard\" Chen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+    "url": "/javaduke95",
+    "tier": "CONTRIBUTOR",
+    "id": 413040,
+    "progressionOptOut": false
+   },
+   "authorType": "HOST",
+   "votes": {
+    "totalVotes": 17,
+    "canUpvote": true,
+    "totalUpvotes": 17
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "KAGGLE",
+     "featuredUserNames": [
+      "cakiki",
+      "rishabhr0y",
+      "spyrosap",
+      "sararomia",
+      "oscaryezfeijo",
+      "pranavjain95",
+      "charlieolsim",
+      "alfonso1234",
+      "deelipsolanki",
+      "neuralnetdev",
+      "maksymmalin",
+      "klaussamson",
+      "i3abd1"
+     ],
+     "userCount": 13
+    }
+   ]
+  },
+  "firstMessageId": 3509601,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 733375,
+  "isStickied": true,
+  "name": "Welcome to Knee Abnormality Detection Challenge!",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-06T17:17:57.863947900Z",
+  "totalVotes": 17,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/733375",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Po-Hao \"Howard\" Chen",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/413040-gp.jpg",
+   "url": "/javaduke95",
+   "tier": "CONTRIBUTOR",
+   "id": 413040,
+   "progressionOptOut": false
+  },
+  "authorType": "HOST",
+  "commentCount": 1,
+  "firstForumMessageId": 3509601,
+  "id": 733375,
+  "isSticky": true,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Maksym Malin",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733375#3515482",
+  "lastCommentPostDate": "2026-08-21T20:27:28.496666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-06T17:17:57.863947900Z",
+  "title": "Welcome to Knee Abnormality Detection Challenge!",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733375",
+  "votes": 17
+ }
+}

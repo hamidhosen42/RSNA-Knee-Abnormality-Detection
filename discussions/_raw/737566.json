@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 14548749,
+  "authorThumbnailName": "14548749-kg.png?t=2026-09-09-05-06-05",
+  "authorUserDisplayName": "starkhushi",
+  "authorUserName": "starkhushi",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3517086,
+   "postDate": "2026-08-26T04:42:49.070Z",
+   "rawMarkdown": "Looking at public notebooks, Synovitis is consistently the worst of the 12 labels — mine included (0.62-0.72 across four different architectures). I dug into why, and I'm now fairly convinced it's the supervision, not the models:\n\n1. Only ~16% of the 4,407 reports mention any synovitis term at all — I searched synovit/sinovit/υμεν/синови/sinovyal across the nine report languages. For the other ~84% of studies, whatever label table you train on has inferred the target rather than read it.\n\n2. The label tables themselves agree with the radiologist-annotated studies at only ~0.79 AUC on Synovitis, versus ~0.99 for ACL. Your model is learning from a teacher that's barely better than a coin flip with a lean.\n\n3. The one thing that moved it for me: an encoder pretrained on medical images (RadImageNet) hit 0.78 on Synovitis where all my ImageNet-pretrained models sat at 0.62-0.72 — suggesting the image signal exists, but natural-image features can't see it.\n\nPractical takeaways: don't burn architecture-tuning time on Synovitis expecting parity with other labels; a medically-pretrained member in an ensemble specifically helps here; and if anyone has a labeling approach that reads Synovitis better from the reports (e.g., inferring it from effusion co-mentions), that might be worth more than any model change.\n\nEffusion↔Synovitis correlate at ~0.5 in the annotated studies, so there's signal to borrow. Curious if anyone has tried it.\n",
+   "content": "<p>Looking at public notebooks, Synovitis is consistently the worst of the 12 labels — mine included (0.62-0.72 across four different architectures). I dug into why, and I'm now fairly convinced it's the supervision, not the models:</p>\n<ol>\n<li><p>Only ~16% of the 4,407 reports mention any synovitis term at all — I searched synovit/sinovit/υμεν/синови/sinovyal across the nine report languages. For the other ~84% of studies, whatever label table you train on has inferred the target rather than read it.</p></li>\n<li><p>The label tables themselves agree with the radiologist-annotated studies at only ~0.79 AUC on Synovitis, versus ~0.99 for ACL. Your model is learning from a teacher that's barely better than a coin flip with a lean.</p></li>\n<li><p>The one thing that moved it for me: an encoder pretrained on medical images (RadImageNet) hit 0.78 on Synovitis where all my ImageNet-pretrained models sat at 0.62-0.72 — suggesting the image signal exists, but natural-image features can't see it.</p></li>\n</ol>\n<p>Practical takeaways: don't burn architecture-tuning time on Synovitis expecting parity with other labels; a medically-pretrained member in an ensemble specifically helps here; and if anyone has a labeling approach that reads Synovitis better from the reports (e.g., inferring it from effusion co-mentions), that might be worth more than any model change.</p>\n<p>Effusion↔Synovitis correlate at ~0.5 in the annotated studies, so there's signal to borrow. Curious if anyone has tried it.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "starkhushi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+    "url": "/starkhushi",
+    "tier": "EXPERT",
+    "id": 14548749,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 6,
+    "canUpvote": true,
+    "totalUpvotes": 7
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 601,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "starkhushi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+     "url": "/starkhushi",
+     "userName": "starkhushi",
+     "tier": "EXPERT",
+     "id": 14548749,
+     "profileUrl": "/starkhushi",
+     "performanceTier": "EXPERT",
+     "userId": 14548749,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3517086,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737566,
+  "name": "Why everyone's Synovitis AUC is stuck around 0.6-0.7 (it's not your model)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-26T04:42:49.070605200Z",
+  "totalVotes": 6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737566",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "starkhushi",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+   "url": "/starkhushi",
+   "tier": "EXPERT",
+   "id": 14548749,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3517086,
+  "id": 737566,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "starkhushi",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737566#3517086",
+  "lastCommentPostDate": "2026-08-26T04:42:49.070Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-26T04:42:49.070605200Z",
+  "title": "Why everyone's Synovitis AUC is stuck around 0.6-0.7 (it's not your model)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737566",
+  "votes": 6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "starkhushi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+    "url": "/starkhushi",
+    "userName": "starkhushi",
+    "tier": "EXPERT",
+    "id": 14548749,
+    "profileUrl": "/starkhushi",
+    "performanceTier": "EXPERT",
+    "userId": 14548749,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

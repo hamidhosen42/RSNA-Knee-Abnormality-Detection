@@ -1,0 +1,244 @@
+{
+ "forumTopic": {
+  "authorId": 2084214,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Nicolai Karcher",
+  "authorUserName": "pejophylo",
+  "comments": [
+   {
+    "id": 3515561,
+    "postDate": "2026-08-22T00:58:09.460Z",
+    "rawMarkdown": "I'm seeing the same trend.\n\nOne of my points is an especially extreme outlier. That particular run used a CV scheme where leakage is impossible, so I have high confidence in that CV number — which suggests the public LB is simply quite a bit easier than our local validation.\n\nAs for the gold labels: with so few samples, it's only reasonable that they don't correlate. And the weak labels obviously aren't trustworthy either. So my read is that the gold set just contains a lot of hard cases. Alternatively, the gold subset alone may come from a different domain than the rest of the data — something that has come up repeatedly in other threads.\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F17784323%2F5b32197fa3d4e05c370583cbe9dc74a0%2Fcv_lb_5fold_public.png?generation=1787359820132203&alt=media)",
+    "content": "<p>I'm seeing the same trend.</p>\n<p>One of my points is an especially extreme outlier. That particular run used a CV scheme where leakage is impossible, so I have high confidence in that CV number — which suggests the public LB is simply quite a bit easier than our local validation.</p>\n<p>As for the gold labels: with so few samples, it's only reasonable that they don't correlate. And the weak labels obviously aren't trustworthy either. So my read is that the gold set just contains a lot of hard cases. Alternatively, the gold subset alone may come from a different domain than the rest of the data — something that has come up repeatedly in other threads.\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F17784323%2F5b32197fa3d4e05c370583cbe9dc74a0%2Fcv_lb_5fold_public.png?generation=1787359820132203&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1952,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "pejophylo",
+       "komilparmar",
+       "osakanateishoku",
+       "ggayoayogg"
+      ],
+      "userCount": 4
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515633,
+    "postDate": "2026-08-22T07:22:18.473Z",
+    "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F921947%2F1a75ade05b7c38431c4ca64150fd0010%2Fimage-1787383055275.png?generation=1787383065178482&alt=media)\n\nVery similar pattern for me too. For local validation I expect or even hope for it, since the labels are report-derived and contain noise and error that I don't think the image labels should. As others say for gold, it's a small sample and clearly not representative of the larger training corpus, so not surprising, though it is nice that it is at least a somewhat consistent delta over time.",
+    "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F921947%2F1a75ade05b7c38431c4ca64150fd0010%2Fimage-1787383055275.png?generation=1787383065178482&amp;alt=media\" alt=\"\"></p>\n<p>Very similar pattern for me too. For local validation I expect or even hope for it, since the labels are report-derived and contain noise and error that I don't think the image labels should. As others say for gold, it's a small sample and clearly not representative of the larger training corpus, so not surprising, though it is nice that it is at least a somewhat consistent delta over time.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tom Aindow",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+     "url": "/taindow",
+     "tier": "MASTER",
+     "id": 921947,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 83,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "pejophylo",
+       "komilparmar",
+       "k256net"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tom Aindow",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/921947-kg.jpeg",
+      "url": "/taindow",
+      "userName": "taindow",
+      "tier": "MASTER",
+      "id": 921947,
+      "profileUrl": "/taindow",
+      "performanceTier": "MASTER",
+      "userId": 921947,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516188,
+    "postDate": "2026-08-23T13:16:21.517Z",
+    "rawMarkdown": "Unfortunately I only have 3 self trained models so far. What I see is gold at least for me is much more aligned with the LB, whereas val is quite noisy. Its surely because my val labels are not that accurate. \n\n![OOF-vs-LB plot](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F11351811%2Fad1bbbbed9c0706eafb6767149ffa495%2Ffold0_val_gold_lb.png?generation=1787490850250271&alt=media)",
+    "content": "<p>Unfortunately I only have 3 self trained models so far. What I see is gold at least for me is much more aligned with the LB, whereas val is quite noisy. Its surely because my val labels are not that accurate. </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F11351811%2Fad1bbbbed9c0706eafb6767149ffa495%2Ffold0_val_gold_lb.png?generation=1787490850250271&amp;alt=media\" alt=\"OOF-vs-LB plot\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Komil Parmar",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+     "url": "/komilparmar",
+     "tier": "EXPERT",
+     "id": 11351811,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 59,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Komil Parmar",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+      "url": "/komilparmar",
+      "userName": "komilparmar",
+      "tier": "EXPERT",
+      "id": 11351811,
+      "profileUrl": "/komilparmar",
+      "performanceTier": "EXPERT",
+      "userId": 11351811,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3515490,
+   "postDate": "2026-08-21T21:16:38.150Z",
+   "rawMarkdown": "Hi,\n\nas in the recent ROGI wellbore challenge, I'm seeing an *underestimation* of my model performances in local OOF wrt LB (which is extra weird because I feel, if anything, I probably have local *leakage* since my folds are not that well stratified). Especially for weak macro-AUC the relationship is particularly strange (looks nonlinear)\n\n\n\nDo other people observe the same for their models?![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2084214%2F75ec73da1cdd5c5e619848da24b776a2%2FScreenshot%202026-08-21%20at%2023.18.00.png?generation=1787347114987816&alt=media)",
+   "content": "<p>Hi,</p>\n<p>as in the recent ROGI wellbore challenge, I'm seeing an <em>underestimation</em> of my model performances in local OOF wrt LB (which is extra weird because I feel, if anything, I probably have local <em>leakage</em> since my folds are not that well stratified). Especially for weak macro-AUC the relationship is particularly strange (looks nonlinear)</p>\n<p>Do other people observe the same for their models?<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2084214%2F75ec73da1cdd5c5e619848da24b776a2%2FScreenshot%202026-08-21%20at%2023.18.00.png?generation=1787347114987816&amp;alt=media\" alt=\"\"></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Nicolai Karcher",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/pejophylo",
+    "tier": "CONTRIBUTOR",
+    "id": 2084214,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 7,
+    "canUpvote": true,
+    "totalUpvotes": 7
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 793,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Nicolai Karcher",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/pejophylo",
+     "userName": "pejophylo",
+     "tier": "CONTRIBUTOR",
+     "id": 2084214,
+     "profileUrl": "/pejophylo",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 2084214,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3515490,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 736635,
+  "name": "LB OOF relationship",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-21T21:16:38.148432900Z",
+  "totalVotes": 7,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/736635",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Nicolai Karcher",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/pejophylo",
+   "tier": "CONTRIBUTOR",
+   "id": 2084214,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3515490,
+  "id": 736635,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Komil Parmar",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736635#3516188",
+  "lastCommentPostDate": "2026-08-23T13:16:21.516666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-21T21:16:38.148432900Z",
+  "title": "LB OOF relationship",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/736635",
+  "votes": 7,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Nicolai Karcher",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/pejophylo",
+    "userName": "pejophylo",
+    "tier": "CONTRIBUTOR",
+    "id": 2084214,
+    "profileUrl": "/pejophylo",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 2084214,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

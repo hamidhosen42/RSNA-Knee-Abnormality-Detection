@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 14548749,
+  "authorThumbnailName": "14548749-kg.png?t=2026-09-09-05-06-05",
+  "authorUserDisplayName": "starkhushi",
+  "authorUserName": "starkhushi",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516894,
+   "postDate": "2026-08-25T15:52:10.670Z",
+   "rawMarkdown": "Since only 58/4,407 studies carry radiologist labels, everyone is training on report-derived tables — but I couldn't find a comparison of them, so I measured each against those 58 studies.\n\nMacro AUC vs radiologists: stevenleehans v4 blend 0.893, stevenleehans v2 0.887, pilkwang report_labels_v2 0.870. Averaging two independent tables beats either alone on several labels.\n\nPer-label the spread is huge — ACL ~0.99, Synovitis ~0.79 (only ~16% of reports mention synovitis in any of the nine languages, so it's largely inferred). Worth knowing before you blame your architecture for a weak Synovitis score.\n\nNotebook with the code and per-label table: [https://www.kaggle.com/code/starkhushi/rsna-knee-which-report-labels-should-you-train-on]\n\nThanks to both dataset authors — all credit for the tables is theirs.",
+   "content": "<p>Since only 58/4,407 studies carry radiologist labels, everyone is training on report-derived tables — but I couldn't find a comparison of them, so I measured each against those 58 studies.</p>\n<p>Macro AUC vs radiologists: stevenleehans v4 blend 0.893, stevenleehans v2 0.887, pilkwang report_labels_v2 0.870. Averaging two independent tables beats either alone on several labels.</p>\n<p>Per-label the spread is huge — ACL ~0.99, Synovitis ~0.79 (only ~16% of reports mention synovitis in any of the nine languages, so it's largely inferred). Worth knowing before you blame your architecture for a weak Synovitis score.</p>\n<p>Notebook with the code and per-label table: [<a href=\"https://www.kaggle.com/code/starkhushi/rsna-knee-which-report-labels-should-you-train-on\" target=\"_blank\">https://www.kaggle.com/code/starkhushi/rsna-knee-which-report-labels-should-you-train-on</a>]</p>\n<p>Thanks to both dataset authors — all credit for the tables is theirs.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "starkhushi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+    "url": "/starkhushi",
+    "tier": "EXPERT",
+    "id": 14548749,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 609,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "starkhushi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+     "url": "/starkhushi",
+     "userName": "starkhushi",
+     "tier": "EXPERT",
+     "id": 14548749,
+     "profileUrl": "/starkhushi",
+     "performanceTier": "EXPERT",
+     "userId": 14548749,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516894,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737454,
+  "name": " Benchmarked the public report-label tables against the 58 annotated studies",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-25T15:52:10.669290700Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737454",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "starkhushi",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+   "url": "/starkhushi",
+   "tier": "EXPERT",
+   "id": 14548749,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3516894,
+  "id": 737454,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "starkhushi",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737454#3516894",
+  "lastCommentPostDate": "2026-08-25T15:52:10.670Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-25T15:52:10.669290700Z",
+  "title": " Benchmarked the public report-label tables against the 58 annotated studies",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737454",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "starkhushi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/14548749-kg.png?t=2026-09-09-05-06-05",
+    "url": "/starkhushi",
+    "userName": "starkhushi",
+    "tier": "EXPERT",
+    "id": 14548749,
+    "profileUrl": "/starkhushi",
+    "performanceTier": "EXPERT",
+    "userId": 14548749,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

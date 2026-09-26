@@ -1,0 +1,363 @@
+{
+ "forumTopic": {
+  "authorId": 22860070,
+  "authorThumbnailName": "22860070-gr.jpg",
+  "authorUserDisplayName": "JAYASURYA R",
+  "authorUserName": "suryar261",
+  "comments": [
+   {
+    "id": 3516738,
+    "postDate": "2026-08-25T05:55:30.897Z",
+    "rawMarkdown": "9950x\nrog 5090\n64g\n2t + 1t\n0.938：）",
+    "content": "<p>9950x\nrog 5090\n64g\n2t + 1t\n0.938：）</p>",
+    "replies": [
+     {
+      "id": 3516741,
+      "postDate": "2026-08-25T05:59:11.920Z",
+      "rawMarkdown": "He is a total whale in this game.",
+      "content": "<p>He is a total whale in this game.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "GG Ayo (AyoGG)",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.jpg?t=2026-09-14-08-34-50",
+       "url": "/ggayoayogg",
+       "tier": "EXPERT",
+       "id": 15255201,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 928,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "tingyi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+        "url": "/chengtingyi",
+        "userName": "chengtingyi",
+        "tier": "CONTRIBUTOR",
+        "id": 8788200,
+        "profileUrl": "/chengtingyi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 8788200,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "tingyi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+     "url": "/chengtingyi",
+     "tier": "CONTRIBUTOR",
+     "id": 8788200,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 928,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "tingyi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+      "url": "/chengtingyi",
+      "userName": "chengtingyi",
+      "tier": "CONTRIBUTOR",
+      "id": 8788200,
+      "profileUrl": "/chengtingyi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 8788200,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516677,
+    "postDate": "2026-08-24T23:44:21.527Z",
+    "rawMarkdown": "GPU: RTX5070\nCPU: Ryzen 7 7700\nmemory 32GB\nstorage 1TB + 2TB(external)\n\nefficiency LB 18th (0.929)\n\n5-fold training takes around 3 to 15 hours, depending on the setup.\nPersonally, I think this level of performance is competitive enough to fight with.",
+    "content": "<p>GPU: RTX5070\nCPU: Ryzen 7 7700\nmemory 32GB\nstorage 1TB + 2TB(external)</p>\n<p>efficiency LB 18th (0.929)</p>\n<p>5-fold training takes around 3 to 15 hours, depending on the setup.\nPersonally, I think this level of performance is competitive enough to fight with.</p>",
+    "replies": [
+     {
+      "id": 3516739,
+      "postDate": "2026-08-25T05:58:20.417Z",
+      "rawMarkdown": "Based on my current results, 16GB of VRAM is sufficient.",
+      "content": "<p>Based on my current results, 16GB of VRAM is sufficient.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "GG Ayo (AyoGG)",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.jpg?t=2026-09-14-08-34-50",
+       "url": "/ggayoayogg",
+       "tier": "EXPERT",
+       "id": 15255201,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 928,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "tingyi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+        "url": "/chengtingyi",
+        "userName": "chengtingyi",
+        "tier": "CONTRIBUTOR",
+        "id": 8788200,
+        "profileUrl": "/chengtingyi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 8788200,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1952,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "daveconnor",
+       "ggayoayogg",
+       "kentorio",
+       "nicolascayuela9"
+      ],
+      "userCount": 4
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3516736,
+    "postDate": "2026-08-25T05:46:46.577Z",
+    "rawMarkdown": "This competition does seem borderline, but can run on kaggle resources - however, starting from scratch not sure you could get to a 0.95 you must use some of the shared work, for sure, the label files that have been shared.\n\nMy label making has been a huge local compute - and not done yet.  Dual 16GB graphics with I9 and 128RAM.  \n\nI sent Elon Musk a note asking if I could borrow the Nashville facility but so far no returned message.",
+    "content": "<p>This competition does seem borderline, but can run on kaggle resources - however, starting from scratch not sure you could get to a 0.95 you must use some of the shared work, for sure, the label files that have been shared.</p>\n<p>My label making has been a huge local compute - and not done yet.  Dual 16GB graphics with I9 and 128RAM.  </p>\n<p>I sent Elon Musk a note asking if I could borrow the Nashville facility but so far no returned message.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 643,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "enaimaan",
+       "komilparmar",
+       "biancy12",
+       "mediumguy"
+      ],
+      "userCount": 4
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3517333,
+    "postDate": "2026-08-26T21:10:25.970Z",
+    "rawMarkdown": "4050 laptop gpu, i7 13th gen, 16 gb ram, and 8gb vram. ",
+    "content": "<p>4050 laptop gpu, i7 13th gen, 16 gb ram, and 8gb vram. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Kareem Khazal",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/kareemkhazal",
+     "tier": "CONTRIBUTOR",
+     "id": 27912774,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1179,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Kareem Khazal",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/kareemkhazal",
+      "userName": "kareemkhazal",
+      "tier": "CONTRIBUTOR",
+      "id": 27912774,
+      "profileUrl": "/kareemkhazal",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27912774,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3516640,
+   "postDate": "2026-08-24T21:14:28.197Z",
+   "rawMarkdown": "what kind of hardware are you guys using for this competition and how much score you guys getting for that hardware?",
+   "content": "<p>what kind of hardware are you guys using for this competition and how much score you guys getting for that hardware?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "JAYASURYA R",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22860070-gr.jpg",
+    "url": "/suryar261",
+    "tier": "CONTRIBUTOR",
+    "id": 22860070,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -2,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4360,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "JAYASURYA R",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22860070-gr.jpg",
+     "url": "/suryar261",
+     "userName": "suryar261",
+     "tier": "CONTRIBUTOR",
+     "id": 22860070,
+     "profileUrl": "/suryar261",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 22860070,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3516640,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 737333,
+  "name": "What kind of Hardware are using?(GPU,CPU,RAM,VRAM)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-24T21:14:28.195224400Z",
+  "totalVotes": -2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/737333",
+  "totalMessages": 6,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "JAYASURYA R",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22860070-gr.jpg",
+   "url": "/suryar261",
+   "tier": "CONTRIBUTOR",
+   "id": 22860070,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 6,
+  "firstForumMessageId": 3516640,
+  "id": 737333,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Kareem Khazal",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737333#3517333",
+  "lastCommentPostDate": "2026-08-26T21:10:25.970Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-24T21:14:28.195224400Z",
+  "title": "What kind of Hardware are using?(GPU,CPU,RAM,VRAM)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737333",
+  "votes": -2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "JAYASURYA R",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22860070-gr.jpg",
+    "url": "/suryar261",
+    "userName": "suryar261",
+    "tier": "CONTRIBUTOR",
+    "id": 22860070,
+    "profileUrl": "/suryar261",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 22860070,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

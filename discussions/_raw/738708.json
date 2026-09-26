@@ -1,0 +1,141 @@
+{
+ "forumTopic": {
+  "authorId": 34187125,
+  "authorThumbnailName": "34187125-kg.png?t=2026-08-27-17-52-57",
+  "authorUserDisplayName": "Tahmid Tawsif",
+  "authorUserName": "tahmidtawsif",
+  "comments": [
+   {
+    "id": 3519448,
+    "postDate": "2026-09-01T18:14:04.647Z",
+    "rawMarkdown": "See earlier [discussion](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737163l)\n\nI tried to use MedGemma to look at the DICOMs - I needed to error trap and ended up with the same 6 in that discussion not working on that LLM.\n\nPS - it was a pretty useless effort.  After lots of tweaks to the code it took 6 days to run on local version of the model and the results were worse than the regrex code shared in lots of notebooks.  It's always possible I goofed on the label making.  I was surprised that it produced around 1500 to 2000 different text outputs per label - I had hoped it would be cleaner.  ",
+    "content": "<p>See earlier <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737163l\" target=\"_blank\">discussion</a></p>\n<p>I tried to use MedGemma to look at the DICOMs - I needed to error trap and ended up with the same 6 in that discussion not working on that LLM.</p>\n<p>PS - it was a pretty useless effort.  After lots of tweaks to the code it took 6 days to run on local version of the model and the results were worse than the regrex code shared in lots of notebooks.  It's always possible I goofed on the label making.  I was surprised that it produced around 1500 to 2000 different text outputs per label - I had hoped it would be cleaner.  </p>",
+    "parent": {},
+    "author": {
+     "displayName": "PC Jimmmy",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+     "url": "/pcjimmmy",
+     "tier": "MASTER",
+     "id": 1062256,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 641,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "PC Jimmmy",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1062256-kg.JPG",
+      "url": "/pcjimmmy",
+      "userName": "pcjimmmy",
+      "tier": "MASTER",
+      "id": 1062256,
+      "profileUrl": "/pcjimmmy",
+      "performanceTier": "MASTER",
+      "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3519260,
+   "postDate": "2026-09-01T11:48:56.317Z",
+   "rawMarkdown": "Hi Everyone,\n\nWhile building and decoding the volume cache for the training set using pydicom, I encountered pipeline crashes caused by corrupted pixel buffer sizes in 2 specific DICOM studies.\n\n Problem Description\nThe pydicom decoder fails when calling dcm.pixel_array due to a byte mismatch between the metadata header (Group 0028) and the actual pixel payload. The actual byte count in the buffer is exactly half of what is expected.\n\nAffected Study UIDs & Errors:\nStudy UID: 1.2.826.0.1.3680043.8.498.34685905030370793639196564723935583035\n\nValueError: The number of bytes of pixel data is less than expected (409600 vs 819200 bytes)\n\nStudy UID: 1.2.826.0.1.3680043.8.498.37833587429731221455928642963031995680\n\nValueError: The number of bytes of pixel data is less than expected (173056 vs 346112 bytes)\n\nHopefully, the host team can inspect or patch these two DICOM volumes if necessary.",
+   "content": "<p>Hi Everyone,</p>\n<p>While building and decoding the volume cache for the training set using pydicom, I encountered pipeline crashes caused by corrupted pixel buffer sizes in 2 specific DICOM studies.</p>\n<p>Problem Description\nThe pydicom decoder fails when calling dcm.pixel_array due to a byte mismatch between the metadata header (Group 0028) and the actual pixel payload. The actual byte count in the buffer is exactly half of what is expected.</p>\n<p>Affected Study UIDs &amp; Errors:\nStudy UID: 1.2.826.0.1.3680043.8.498.34685905030370793639196564723935583035</p>\n<p>ValueError: The number of bytes of pixel data is less than expected (409600 vs 819200 bytes)</p>\n<p>Study UID: 1.2.826.0.1.3680043.8.498.37833587429731221455928642963031995680</p>\n<p>ValueError: The number of bytes of pixel data is less than expected (173056 vs 346112 bytes)</p>\n<p>Hopefully, the host team can inspect or patch these two DICOM volumes if necessary.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Tahmid Tawsif",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34187125-kg.png?t=2026-08-27-17-52-57",
+    "url": "/tahmidtawsif",
+    "tier": "CONTRIBUTOR",
+    "id": 34187125,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3403,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Tahmid Tawsif",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34187125-kg.png?t=2026-08-27-17-52-57",
+     "url": "/tahmidtawsif",
+     "userName": "tahmidtawsif",
+     "tier": "CONTRIBUTOR",
+     "id": 34187125,
+     "profileUrl": "/tahmidtawsif",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 34187125,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3519260,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 738708,
+  "name": "Corrupted DICOM Pixel Data Found in 2 Training Studies (ValueError Traceback)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-01T11:48:56.318320400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/738708",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Tahmid Tawsif",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34187125-kg.png?t=2026-08-27-17-52-57",
+   "url": "/tahmidtawsif",
+   "tier": "CONTRIBUTOR",
+   "id": 34187125,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3519260,
+  "id": 738708,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "PC Jimmmy",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738708#3519448",
+  "lastCommentPostDate": "2026-09-01T18:14:04.646666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-01T11:48:56.318320400Z",
+  "title": "Corrupted DICOM Pixel Data Found in 2 Training Studies (ValueError Traceback)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/738708",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Tahmid Tawsif",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34187125-kg.png?t=2026-08-27-17-52-57",
+    "url": "/tahmidtawsif",
+    "userName": "tahmidtawsif",
+    "tier": "CONTRIBUTOR",
+    "id": 34187125,
+    "profileUrl": "/tahmidtawsif",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 34187125,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

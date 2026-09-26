@@ -1,0 +1,247 @@
+{
+ "forumTopic": {
+  "authorId": 11479618,
+  "authorThumbnailName": "11479618-kg.jpg?t=2026-05-15-03-22-51",
+  "authorUserDisplayName": "stevenleehans",
+  "authorUserName": "stevenleehans",
+  "comments": [
+   {
+    "id": 3513356,
+    "postDate": "2026-08-16T07:58:31.900Z",
+    "rawMarkdown": "Hi OG, thanks for sharing this! May I ask how you reduced each series to 9 slices? Did you randomly sample the slices, or use interpolation? Thank you!",
+    "content": "<p>Hi OG, thanks for sharing this! May I ask how you reduced each series to 9 slices? Did you randomly sample the slices, or use interpolation? Thank you!</p>",
+    "replies": [
+     {
+      "id": 3513374,
+      "postDate": "2026-08-16T08:59:25.113Z",
+      "rawMarkdown": "Hi Tony — neither, actually. No random sampling and no interpolation; it's a deterministic pick of 9 real slices, in three steps.\n\n1. Sort the stack physically first. This one matters more than the sampling. The filenames in this dataset are SOP Instance UIDs, i.e. random — sorted filename order matches true anatomical order only about 5% of the time on this corpus. So before anything else I re-sort each series by projecting ImagePositionPatient onto the normal of ImageOrientationPatient, with fallbacks to SliceLocation → InstanceNumber → filename. That resolves by geometry on 100% of series here.\n\n2. Place 3 anchors across a window of the sorted stack, evenly spaced with linspace (not random). I clip the ends rather than use the full stack, since the outermost slices are mostly off-joint.\n\n3. Take the 3 physically adjacent slices around each anchor — so 3 × 3 = 9.\n\nThe reason for the 3+3+3 layout rather than 9 evenly spread slices: each group of 3 becomes the R/G/B channels of one encoder input. Adjacent slices make that triplet a genuine ~10 mm depth neighbourhood at this dataset's slice gaps. Nine evenly spread slices would cover more of the joint but hand the encoder three views ~20 mm apart, which is a slab, not a 2.5D triplet.\n\nTwo caveats worth knowing:\n\nInterpolation isn't used because MRI slice gaps here vary a lot; I'd rather feed real slices and fix scale in-plane instead (I crop to a fixed physical extent in mm before resizing, since field of view ranges over 71 distinct values with a median of 160 mm — so a fixed pixel size alone does not fix physical scale).\nOn my CV, 3 slices actually beat 9 by a margin ~4× my noise floor. But that result confounds two things — with one anchor the code takes the window centre, with three it spreads them to the window edges — so I can't yet tell you whether it's the slice count or the slice position doing the work. Don't take 9 as tuned.",
+      "content": "<p>Hi Tony — neither, actually. No random sampling and no interpolation; it's a deterministic pick of 9 real slices, in three steps.</p>\n<ol>\n<li><p>Sort the stack physically first. This one matters more than the sampling. The filenames in this dataset are SOP Instance UIDs, i.e. random — sorted filename order matches true anatomical order only about 5% of the time on this corpus. So before anything else I re-sort each series by projecting ImagePositionPatient onto the normal of ImageOrientationPatient, with fallbacks to SliceLocation → InstanceNumber → filename. That resolves by geometry on 100% of series here.</p></li>\n<li><p>Place 3 anchors across a window of the sorted stack, evenly spaced with linspace (not random). I clip the ends rather than use the full stack, since the outermost slices are mostly off-joint.</p></li>\n<li><p>Take the 3 physically adjacent slices around each anchor — so 3 × 3 = 9.</p></li>\n</ol>\n<p>The reason for the 3+3+3 layout rather than 9 evenly spread slices: each group of 3 becomes the R/G/B channels of one encoder input. Adjacent slices make that triplet a genuine ~10 mm depth neighbourhood at this dataset's slice gaps. Nine evenly spread slices would cover more of the joint but hand the encoder three views ~20 mm apart, which is a slab, not a 2.5D triplet.</p>\n<p>Two caveats worth knowing:</p>\n<p>Interpolation isn't used because MRI slice gaps here vary a lot; I'd rather feed real slices and fix scale in-plane instead (I crop to a fixed physical extent in mm before resizing, since field of view ranges over 71 distinct values with a median of 160 mm — so a fixed pixel size alone does not fix physical scale).\nOn my CV, 3 slices actually beat 9 by a margin ~4× my noise floor. But that result confounds two things — with one anchor the code takes the window centre, with three it spreads them to the window edges — so I can't yet tell you whether it's the slice count or the slice position doing the work. Don't take 9 as tuned.</p>",
+      "replies": [
+       {
+        "id": 3513756,
+        "postDate": "2026-08-17T14:45:57.777Z",
+        "rawMarkdown": "Thanks for sharing my friend!",
+        "content": "<p>Thanks for sharing my friend!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dung Duong (Tony) Huynh",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/dungduongtonyhuynh",
+         "tier": "CONTRIBUTOR",
+         "id": 20400086,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "stevenleehans"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dung Duong (Tony) Huynh",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/dungduongtonyhuynh",
+          "userName": "dungduongtonyhuynh",
+          "tier": "CONTRIBUTOR",
+          "id": 20400086,
+          "profileUrl": "/dungduongtonyhuynh",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 20400086,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "stevenleehans",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+       "url": "/stevenleehans",
+       "tier": "EXPERT",
+       "id": 11479618,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1902,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "stevenleehans",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+        "url": "/stevenleehans",
+        "userName": "stevenleehans",
+        "tier": "EXPERT",
+        "id": 11479618,
+        "profileUrl": "/stevenleehans",
+        "performanceTier": "EXPERT",
+        "userId": 11479618,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dung Duong (Tony) Huynh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/dungduongtonyhuynh",
+     "tier": "CONTRIBUTOR",
+     "id": 20400086,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dung Duong (Tony) Huynh",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/dungduongtonyhuynh",
+      "userName": "dungduongtonyhuynh",
+      "tier": "CONTRIBUTOR",
+      "id": 20400086,
+      "profileUrl": "/dungduongtonyhuynh",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 20400086,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3512730,
+   "postDate": "2026-08-14T08:05:01.210Z",
+   "rawMarkdown": "## TL;DR\n\n- Swapping **DINOv2-Small → DINOv2-Base** (22M → 87M params, 3.9× the compute per step)\n  moved our CV by **+0.0011** against a measured noise floor of **0.0020**. A null.\n- Only **5 of 12** labels moved in Base's favour, and the whole macro gain rests on our\n  weakest label. Capacity is not what's binding here.\n- Persisting the decoded pixels turns the ~500 GB of DICOM into an **11.12 GiB** array,\n  which fits on a laptop. A fold now runs in **67 min on an M4 Pro at zero GPU quota**,\n  versus 76 min on a Kaggle T4.\n- The one genuinely transferable lesson: **a checkpoint carries its own preprocessing\n  contract.** Swapping encoder weights without swapping the normalisation constants is a\n  silent handicap that produces a plausible, wrong result.\n\nYou can see the process of turning the data here. feel free to fork :) \nhttps://www.kaggle.com/code/stevenleehans/rsna-knee-500gb-to-11gib-cpu-pixel-cache\n\n---\n\n## 1. Why the 500 GB isn't really 500 GB\n\nThe dataset is large, but the model never sees most of it. After slice selection,\nwindowing, the physical-scale crop, and the resize to 224 px, the entire visual input to\nour model is:\n\n```\n4,407 studies × 6 slots × 9 slices × 224 × 224, uint8  =  11.12 GiB\n```\n\nThat's it. Everything else is decode work that gets thrown away when the kernel ends —\nand then paid again on the next run.\n\nWe measured that decode at **55 minutes per run**, which was **72% of a single fold**.\nWriting the array to disk once (sharded `.npy`, memory-mapped on load) removes it\npermanently.\n\n**This has a side effect worth more than the speed:** 11 GiB fits on a laptop.\n\n| | Kaggle T4 (fp16) | Apple M4 Pro (fp32) |\n|---|---|---|\n| per training step | 0.227 s | 0.436 s |\n| cache build | 55 min, every run | 0 |\n| **one fold, wall clock** | **76 min** | **67 min** |\n| GPU quota consumed | 21 min | **0** |\n\nThe laptop is 1.9× slower per step and still finishes sooner, because it never rebuilds\nthe cache. Our weekly GPU quota had been exhausted for five days when we ran these.\n\n**⚠ Caveat we can't resolve:** the same config scored **0.7931** locally vs **0.7957** on\nKaggle — Δ = −0.0026, just outside our floor. We can't separate fp32-vs-fp16 numerics from\na small real deficit. So **every arm below is compared to a local control**, never\ncross-machine. If you try this, do the same.\n\n---\n\n## 2. The experiment: does a bigger encoder help?\n\nEvery experiment we'd run to that point changed how the **pictures** were prepared —\ncrop geometry, slice position, sampling window. None had changed the encoder itself.\n\nSo: identical data, identical seed, identical folds, identical batch size. Only ViT-S → ViT-B.\n\n| Encoder | Params | Trainable | s/step | Derived OOF (2,652 studies) |\n|---|---|---|---|---|\n| dinov2-small *(control)* | 22M | 10.7M | 0.436 | **0.7931** |\n| dinov2-base | 87M | 42.5M | 1.710 | **0.7942** |\n\n**Δ = +0.0011.** Our paired noise floor at 3 folds is **0.0020**. So this is inside the\nnoise — 4× the parameters for nothing measurable.\n\n### The per-label view is worse than the average\n\n| Target | n pos | small | base | Δ |\n|---|---|---|---|---|\n| MCL | 342 | 0.7529 | 0.7729 | **+0.0200** |\n| Lateral OA | 401 | 0.7603 | 0.7708 | +0.0105 |\n| Lateral Meniscus | 485 | 0.7385 | 0.7439 | +0.0054 |\n| PF OA | 796 | 0.7423 | 0.7462 | +0.0039 |\n| Medial Meniscus | 1073 | 0.7726 | 0.7761 | +0.0035 |\n| Effusion | 1457 | 0.8106 | 0.8105 | −0.0001 |\n| Medial OA | 525 | 0.8121 | 0.8109 | −0.0012 |\n| Synovitis | 881 | 0.8206 | 0.8191 | −0.0015 |\n| ACL | 573 | 0.7968 | 0.7942 | −0.0026 |\n| Baker's cyst | 637 | 0.8614 | 0.8582 | −0.0032 |\n| Contusion | 613 | 0.8010 | 0.7935 | −0.0075 |\n| Fracture | 177 | 0.8484 | 0.8341 | −0.0143 |\n\n**Only 5 of 12 labels move in Base's favour.** For comparison, when a crop-geometry fix\nearlier in our log paid +0.0059, it moved **10 of 12** — that's what a real effect looks\nlike. Here the entire macro gain rests on MCL, which has only **9 expert positives** in the\n58 labelled studies, i.e. our least reliable label.\n\nNo label clears our per-label gate of 0.03. This is the shape of noise, not of capacity.\n\n---\n\n## 3. The bug: a checkpoint carries its own preprocessing contract\n\nThe next arm was **RAD-DINO** (`microsoft/rad-dino`) — a ViT-B/14 finetuned from\n`dinov2-base` on 882,775 chest radiographs. Since capacity is now priced at zero, and\nRAD-DINO is architecturally identical to `dinov2-base` (same 87M params, same 12 blocks,\nsame patch 14), a gain could only be attributed to **what it was pretrained on**. Clean\nsingle-lever test.\n\nIt started losing immediately and the gap widened every epoch:\n\n| fold 0 epoch | small | base | rad-dino |\n|---|---|---|---|\n| 1 | 0.6997 | 0.6984 | 0.6820 |\n| 3 | 0.7399 | 0.7292 | 0.7226 |\n| 5 | 0.7666 | 0.7695 | **0.7352** |\n\nTraining loss was also *higher* (0.3531 vs 0.3461), so it was fitting worse, not overfitting.\n\nThe obvious reading is \"medical pretraining doesn't transfer to MRI\". **The actual reason\nwas in a config file:**\n\n| checkpoint | `image_mean` | `image_std` | native px |\n|---|---|---|---|\n| dinov2-small / base | 0.485, 0.456, 0.406 | 0.229, 0.224, 0.225 | 224 |\n| **rad-dino** | **0.5307** (greyscale) | **0.2583** | **518** |\n\nOur model hardcoded the ImageNet constants as buffers:\n\n```python\nself.register_buffer(\"mean\", torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1))\nself.register_buffer(\"std\",  torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1))\n```\n\nCorrect for DINOv2. **Wrong for RAD-DINO**, which was pretrained on greyscale radiographs —\nso it was receiving inputs shifted ~0.2 std from its pretraining distribution with a 12%\nscale error on top.\n\nThe fix is to read it from the checkpoint instead of assuming it:\n\n```python\ncfg = json.loads((ckpt_dir / \"preprocessor_config.json\").read_text())\nmean, std = cfg.get(\"image_mean\"), cfg.get(\"image_std\")\n```\n\nWe verified both DINOv2 checkpoints resolve to byte-identical ImageNet constants\nafterwards, so the results in §2 were unaffected and didn't need re-running.\n\n**Why this is the most useful thing in this post:** left to finish, that run would have\nproduced a real number, from a real 11-hour experiment, supporting a false conclusion about\nthe exact hypothesis we most wanted to test. It fails *silently* — no error, no warning,\njust a plausible curve pointing the wrong way. If you're swapping encoders in this\ncompetition (and plenty of us are), check `preprocessor_config.json` before you trust the\ncomparison.\n\n---\n\n## 4. Four other ways our measurements lied\n\nOffered because they're all cheap to hit:\n\n1. **The silent backbone fallback.** Off Kaggle there's no `/kaggle/input`, so our weights\n   lookup returned `None` and the builder fell back to **ResNet-18** — which trains fine and\n   logs a plausible score. Any run that doesn't *print* which backbone it loaded is not\n   evidence about that backbone.\n\n2. **The narrow probe.** Timing training steps predicted 0.64 h per fold; the fold took\n   **1.11 h**, because the probe ignored validation, memory-mapped reads and augmentation.\n   That was our third consecutive underestimate from a narrow probe. A probe that times one\n   part of a loop does not time the loop — treat it as go/no-go, never as a schedule.\n\n3. **Non-deterministic hardware.** On Apple's MPS backend, identical config *and* identical\n   seed agreed to four decimals for two epochs and then diverged. A noise floor measured on\n   one backend does not transfer to another. Measure it where you run.\n\n4. **A tool that answered the wrong question.** Our comparison script prints its absolute\n   difference under the heading `NOISE FLOOR`, because it was written to compare two seeds\n   of one config. Fed a control and a treatment, it labels the **effect** as the floor —\n   it reported \"floor = 0.0011\" for a result that sits *under* the real floor of 0.0020.\n\n---\n\n## 5. Where this leaves us\n\nThe encoder's **size** is not the binding constraint on this problem. That's consistent\nwith everything else we've measured: our gains came from crop geometry and slice position —\nfrom how the images are prepared, not from how much model is pointed at them.\n\nThe RAD-DINO arm is re-running with correct normalisation as of writing; we'll post the\nnumber either way, including if it's a null.\n\n**One limitation we'll state up front so we don't overclaim later:** RAD-DINO's native\ninput is 518 px and we feed it 224, so it sees 16×16 patches instead of 37×37 with\ninterpolated position embeddings. That confound isn't cheap to fix (518 px is ~5× the\ncompute, and 336 px already scored nothing on our pipeline). So whatever we get, the honest\nclaim is about RAD-DINO **at 224 px**, not RAD-DINO in general.\n\n---\n\n### Notes on validation\n\nAll figures are out-of-fold on report-derived targets, 3 folds, 2,652 studies, paired\n(same studies, same seed, same folds). Noise floor of 0.0020 macro was measured, not\nassumed — same config, different training seed. Only 58 of 4,407 studies carry expert\nlabels, so that subset is a sanity check and cannot rank two models; a per-label standard\nerror there is 0.04–0.09.\n\nNothing above is a leaderboard claim. Happy to answer questions or be told we've got\nsomething wrong — particularly if anyone has run a ViT-B encoder here and seen it pay.\n",
+   "content": "<h2>TL;DR</h2>\n<ul>\n<li>Swapping <strong>DINOv2-Small → DINOv2-Base</strong> (22M → 87M params, 3.9× the compute per step)\nmoved our CV by <strong>+0.0011</strong> against a measured noise floor of <strong>0.0020</strong>. A null.</li>\n<li>Only <strong>5 of 12</strong> labels moved in Base's favour, and the whole macro gain rests on our\nweakest label. Capacity is not what's binding here.</li>\n<li>Persisting the decoded pixels turns the ~500 GB of DICOM into an <strong>11.12 GiB</strong> array,\nwhich fits on a laptop. A fold now runs in <strong>67 min on an M4 Pro at zero GPU quota</strong>,\nversus 76 min on a Kaggle T4.</li>\n<li>The one genuinely transferable lesson: <strong>a checkpoint carries its own preprocessing\ncontract.</strong> Swapping encoder weights without swapping the normalisation constants is a\nsilent handicap that produces a plausible, wrong result.</li>\n</ul>\n<p>You can see the process of turning the data here. feel free to fork :) \n<a href=\"https://www.kaggle.com/code/stevenleehans/rsna-knee-500gb-to-11gib-cpu-pixel-cache\" target=\"_blank\">https://www.kaggle.com/code/stevenleehans/rsna-knee-500gb-to-11gib-cpu-pixel-cache</a></p>\n<hr>\n<h2>1. Why the 500 GB isn't really 500 GB</h2>\n<p>The dataset is large, but the model never sees most of it. After slice selection,\nwindowing, the physical-scale crop, and the resize to 224 px, the entire visual input to\nour model is:</p>\n<pre><code>4,407 studies × 6 slots × 9 slices × 224 × 224, uint8  =  11.12 GiB\n</code></pre>\n<p>That's it. Everything else is decode work that gets thrown away when the kernel ends —\nand then paid again on the next run.</p>\n<p>We measured that decode at <strong>55 minutes per run</strong>, which was <strong>72% of a single fold</strong>.\nWriting the array to disk once (sharded <code>.npy</code>, memory-mapped on load) removes it\npermanently.</p>\n<p><strong>This has a side effect worth more than the speed:</strong> 11 GiB fits on a laptop.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Kaggle T4 (fp16)</th>\n<th>Apple M4 Pro (fp32)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>per training step</td>\n<td>0.227 s</td>\n<td>0.436 s</td>\n</tr>\n<tr>\n<td>cache build</td>\n<td>55 min, every run</td>\n<td>0</td>\n</tr>\n<tr>\n<td><strong>one fold, wall clock</strong></td>\n<td><strong>76 min</strong></td>\n<td><strong>67 min</strong></td>\n</tr>\n<tr>\n<td>GPU quota consumed</td>\n<td>21 min</td>\n<td><strong>0</strong></td>\n</tr>\n</tbody>\n</table>\n<p>The laptop is 1.9× slower per step and still finishes sooner, because it never rebuilds\nthe cache. Our weekly GPU quota had been exhausted for five days when we ran these.</p>\n<p><strong>⚠ Caveat we can't resolve:</strong> the same config scored <strong>0.7931</strong> locally vs <strong>0.7957</strong> on\nKaggle — Δ = −0.0026, just outside our floor. We can't separate fp32-vs-fp16 numerics from\na small real deficit. So <strong>every arm below is compared to a local control</strong>, never\ncross-machine. If you try this, do the same.</p>\n<hr>\n<h2>2. The experiment: does a bigger encoder help?</h2>\n<p>Every experiment we'd run to that point changed how the <strong>pictures</strong> were prepared —\ncrop geometry, slice position, sampling window. None had changed the encoder itself.</p>\n<p>So: identical data, identical seed, identical folds, identical batch size. Only ViT-S → ViT-B.</p>\n<table>\n<thead>\n<tr>\n<th>Encoder</th>\n<th>Params</th>\n<th>Trainable</th>\n<th>s/step</th>\n<th>Derived OOF (2,652 studies)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>dinov2-small <em>(control)</em></td>\n<td>22M</td>\n<td>10.7M</td>\n<td>0.436</td>\n<td><strong>0.7931</strong></td>\n</tr>\n<tr>\n<td>dinov2-base</td>\n<td>87M</td>\n<td>42.5M</td>\n<td>1.710</td>\n<td><strong>0.7942</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>Δ = +0.0011.</strong> Our paired noise floor at 3 folds is <strong>0.0020</strong>. So this is inside the\nnoise — 4× the parameters for nothing measurable.</p>\n<h3>The per-label view is worse than the average</h3>\n<table>\n<thead>\n<tr>\n<th>Target</th>\n<th>n pos</th>\n<th>small</th>\n<th>base</th>\n<th>Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>MCL</td>\n<td>342</td>\n<td>0.7529</td>\n<td>0.7729</td>\n<td><strong>+0.0200</strong></td>\n</tr>\n<tr>\n<td>Lateral OA</td>\n<td>401</td>\n<td>0.7603</td>\n<td>0.7708</td>\n<td>+0.0105</td>\n</tr>\n<tr>\n<td>Lateral Meniscus</td>\n<td>485</td>\n<td>0.7385</td>\n<td>0.7439</td>\n<td>+0.0054</td>\n</tr>\n<tr>\n<td>PF OA</td>\n<td>796</td>\n<td>0.7423</td>\n<td>0.7462</td>\n<td>+0.0039</td>\n</tr>\n<tr>\n<td>Medial Meniscus</td>\n<td>1073</td>\n<td>0.7726</td>\n<td>0.7761</td>\n<td>+0.0035</td>\n</tr>\n<tr>\n<td>Effusion</td>\n<td>1457</td>\n<td>0.8106</td>\n<td>0.8105</td>\n<td>−0.0001</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td>525</td>\n<td>0.8121</td>\n<td>0.8109</td>\n<td>−0.0012</td>\n</tr>\n<tr>\n<td>Synovitis</td>\n<td>881</td>\n<td>0.8206</td>\n<td>0.8191</td>\n<td>−0.0015</td>\n</tr>\n<tr>\n<td>ACL</td>\n<td>573</td>\n<td>0.7968</td>\n<td>0.7942</td>\n<td>−0.0026</td>\n</tr>\n<tr>\n<td>Baker's cyst</td>\n<td>637</td>\n<td>0.8614</td>\n<td>0.8582</td>\n<td>−0.0032</td>\n</tr>\n<tr>\n<td>Contusion</td>\n<td>613</td>\n<td>0.8010</td>\n<td>0.7935</td>\n<td>−0.0075</td>\n</tr>\n<tr>\n<td>Fracture</td>\n<td>177</td>\n<td>0.8484</td>\n<td>0.8341</td>\n<td>−0.0143</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Only 5 of 12 labels move in Base's favour.</strong> For comparison, when a crop-geometry fix\nearlier in our log paid +0.0059, it moved <strong>10 of 12</strong> — that's what a real effect looks\nlike. Here the entire macro gain rests on MCL, which has only <strong>9 expert positives</strong> in the\n58 labelled studies, i.e. our least reliable label.</p>\n<p>No label clears our per-label gate of 0.03. This is the shape of noise, not of capacity.</p>\n<hr>\n<h2>3. The bug: a checkpoint carries its own preprocessing contract</h2>\n<p>The next arm was <strong>RAD-DINO</strong> (<code>microsoft/rad-dino</code>) — a ViT-B/14 finetuned from\n<code>dinov2-base</code> on 882,775 chest radiographs. Since capacity is now priced at zero, and\nRAD-DINO is architecturally identical to <code>dinov2-base</code> (same 87M params, same 12 blocks,\nsame patch 14), a gain could only be attributed to <strong>what it was pretrained on</strong>. Clean\nsingle-lever test.</p>\n<p>It started losing immediately and the gap widened every epoch:</p>\n<table>\n<thead>\n<tr>\n<th>fold 0 epoch</th>\n<th>small</th>\n<th>base</th>\n<th>rad-dino</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>0.6997</td>\n<td>0.6984</td>\n<td>0.6820</td>\n</tr>\n<tr>\n<td>3</td>\n<td>0.7399</td>\n<td>0.7292</td>\n<td>0.7226</td>\n</tr>\n<tr>\n<td>5</td>\n<td>0.7666</td>\n<td>0.7695</td>\n<td><strong>0.7352</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Training loss was also <em>higher</em> (0.3531 vs 0.3461), so it was fitting worse, not overfitting.</p>\n<p>The obvious reading is \"medical pretraining doesn't transfer to MRI\". <strong>The actual reason\nwas in a config file:</strong></p>\n<table>\n<thead>\n<tr>\n<th>checkpoint</th>\n<th><code>image_mean</code></th>\n<th><code>image_std</code></th>\n<th>native px</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>dinov2-small / base</td>\n<td>0.485, 0.456, 0.406</td>\n<td>0.229, 0.224, 0.225</td>\n<td>224</td>\n</tr>\n<tr>\n<td><strong>rad-dino</strong></td>\n<td><strong>0.5307</strong> (greyscale)</td>\n<td><strong>0.2583</strong></td>\n<td><strong>518</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Our model hardcoded the ImageNet constants as buffers:</p>\n<pre><code>self.register_buffer(\"mean\", torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1))\nself.register_buffer(\"std\",  torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1))\n</code></pre>\n<p>Correct for DINOv2. <strong>Wrong for RAD-DINO</strong>, which was pretrained on greyscale radiographs —\nso it was receiving inputs shifted ~0.2 std from its pretraining distribution with a 12%\nscale error on top.</p>\n<p>The fix is to read it from the checkpoint instead of assuming it:</p>\n<pre><code>cfg = json.loads((ckpt_dir / \"preprocessor_config.json\").read_text())\nmean, std = cfg.get(\"image_mean\"), cfg.get(\"image_std\")\n</code></pre>\n<p>We verified both DINOv2 checkpoints resolve to byte-identical ImageNet constants\nafterwards, so the results in §2 were unaffected and didn't need re-running.</p>\n<p><strong>Why this is the most useful thing in this post:</strong> left to finish, that run would have\nproduced a real number, from a real 11-hour experiment, supporting a false conclusion about\nthe exact hypothesis we most wanted to test. It fails <em>silently</em> — no error, no warning,\njust a plausible curve pointing the wrong way. If you're swapping encoders in this\ncompetition (and plenty of us are), check <code>preprocessor_config.json</code> before you trust the\ncomparison.</p>\n<hr>\n<h2>4. Four other ways our measurements lied</h2>\n<p>Offered because they're all cheap to hit:</p>\n<ol>\n<li><p><strong>The silent backbone fallback.</strong> Off Kaggle there's no <code>/kaggle/input</code>, so our weights\nlookup returned <code>None</code> and the builder fell back to <strong>ResNet-18</strong> — which trains fine and\nlogs a plausible score. Any run that doesn't <em>print</em> which backbone it loaded is not\nevidence about that backbone.</p></li>\n<li><p><strong>The narrow probe.</strong> Timing training steps predicted 0.64 h per fold; the fold took\n<strong>1.11 h</strong>, because the probe ignored validation, memory-mapped reads and augmentation.\nThat was our third consecutive underestimate from a narrow probe. A probe that times one\npart of a loop does not time the loop — treat it as go/no-go, never as a schedule.</p></li>\n<li><p><strong>Non-deterministic hardware.</strong> On Apple's MPS backend, identical config <em>and</em> identical\nseed agreed to four decimals for two epochs and then diverged. A noise floor measured on\none backend does not transfer to another. Measure it where you run.</p></li>\n<li><p><strong>A tool that answered the wrong question.</strong> Our comparison script prints its absolute\ndifference under the heading <code>NOISE FLOOR</code>, because it was written to compare two seeds\nof one config. Fed a control and a treatment, it labels the <strong>effect</strong> as the floor —\nit reported \"floor = 0.0011\" for a result that sits <em>under</em> the real floor of 0.0020.</p></li>\n</ol>\n<hr>\n<h2>5. Where this leaves us</h2>\n<p>The encoder's <strong>size</strong> is not the binding constraint on this problem. That's consistent\nwith everything else we've measured: our gains came from crop geometry and slice position —\nfrom how the images are prepared, not from how much model is pointed at them.</p>\n<p>The RAD-DINO arm is re-running with correct normalisation as of writing; we'll post the\nnumber either way, including if it's a null.</p>\n<p><strong>One limitation we'll state up front so we don't overclaim later:</strong> RAD-DINO's native\ninput is 518 px and we feed it 224, so it sees 16×16 patches instead of 37×37 with\ninterpolated position embeddings. That confound isn't cheap to fix (518 px is ~5× the\ncompute, and 336 px already scored nothing on our pipeline). So whatever we get, the honest\nclaim is about RAD-DINO <strong>at 224 px</strong>, not RAD-DINO in general.</p>\n<hr>\n<h3>Notes on validation</h3>\n<p>All figures are out-of-fold on report-derived targets, 3 folds, 2,652 studies, paired\n(same studies, same seed, same folds). Noise floor of 0.0020 macro was measured, not\nassumed — same config, different training seed. Only 58 of 4,407 studies carry expert\nlabels, so that subset is a sanity check and cannot rank two models; a per-label standard\nerror there is 0.04–0.09.</p>\n<p>Nothing above is a leaderboard claim. Happy to answer questions or be told we've got\nsomething wrong — particularly if anyone has run a ViT-B encoder here and seen it pay.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "stevenleehans",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+    "url": "/stevenleehans",
+    "tier": "EXPERT",
+    "id": 11479618,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 14,
+    "canUpvote": true,
+    "totalUpvotes": 14
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1902,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "THANK_YOU",
+     "featuredUserNames": [
+      "mattiaangeli",
+      "adaluvu"
+     ],
+     "userCount": 2
+    },
+    {
+     "emoji": "KAGGLE",
+     "featuredUserNames": [
+      "adaluvu"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "stevenleehans",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+     "url": "/stevenleehans",
+     "userName": "stevenleehans",
+     "tier": "EXPERT",
+     "id": 11479618,
+     "profileUrl": "/stevenleehans",
+     "performanceTier": "EXPERT",
+     "userId": 11479618,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3512730,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 735154,
+  "name": "Scaling the encoder bought us nothing (+0.0011)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-08-14T08:05:01.209543500Z",
+  "totalVotes": 14,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/735154",
+  "totalMessages": 3,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "stevenleehans",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+   "url": "/stevenleehans",
+   "tier": "EXPERT",
+   "id": 11479618,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3512730,
+  "id": 735154,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Dung Duong (Tony) Huynh",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735154#3513756",
+  "lastCommentPostDate": "2026-08-17T14:45:57.776666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-08-14T08:05:01.209543500Z",
+  "title": "Scaling the encoder bought us nothing (+0.0011)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735154",
+  "votes": 14,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "stevenleehans",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11479618-kg.jpg?t=2026-05-15-03-22-51",
+    "url": "/stevenleehans",
+    "userName": "stevenleehans",
+    "tier": "EXPERT",
+    "id": 11479618,
+    "profileUrl": "/stevenleehans",
+    "performanceTier": "EXPERT",
+    "userId": 11479618,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "forumTopic": {
+  "authorId": 9945255,
+  "authorThumbnailName": "9945255-kg.png?t=2025-06-03-19-18-29",
+  "authorUserDisplayName": "Chikuwabu",
+  "authorUserName": "prgckwb",
+  "comments": [
+   {
+    "id": 3528361,
+    "postDate": "2026-09-26T00:04:27.803Z",
+    "rawMarkdown": "![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/refs/heads/main/Sep-2026/labels.png)",
+    "content": "<p><img src=\"https://raw.githubusercontent.com/cdeotte/Kaggle_Images/refs/heads/main/Sep-2026/labels.png\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 92,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "tuckerarrants",
+       "prgckwb",
+       "wayne127"
+      ],
+      "userCount": 3
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3525881,
+    "postDate": "2026-09-19T10:11:39.907Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3525870,
+   "postDate": "2026-09-19T08:40:54.363Z",
+   "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F9945255%2Fa7bf1b066c1364c14557d1fee682f4a6%2Fb1itd2.jpg?generation=1789807042489453&alt=media)",
+   "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F9945255%2Fa7bf1b066c1364c14557d1fee682f4a6%2Fb1itd2.jpg?generation=1789807042489453&amp;alt=media\" alt=\"\"></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Chikuwabu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+    "url": "/prgckwb",
+    "tier": "MASTER",
+    "id": 9945255,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 3,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 28,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "javaduke95"
+     ],
+     "userCount": 1
+    },
+    {
+     "emoji": "FUNNY",
+     "featuredUserNames": [
+      "daveconnor",
+      "taindow",
+      "aniroula",
+      "tuckerarrants",
+      "mattiaangeli",
+      "ggayoayogg",
+      "shivsatyam",
+      "xiaoyan12",
+      "laymond"
+     ],
+     "userCount": 9
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Chikuwabu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+     "url": "/prgckwb",
+     "userName": "prgckwb",
+     "tier": "MASTER",
+     "id": 9945255,
+     "profileUrl": "/prgckwb",
+     "performanceTier": "MASTER",
+     "userId": 9945255,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3525870,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 742053,
+  "name": "Meme thread",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-19T08:40:54.364949200Z",
+  "totalVotes": 3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/742053",
+  "totalMessages": 2,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Chikuwabu",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+   "url": "/prgckwb",
+   "tier": "MASTER",
+   "id": 9945255,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3525870,
+  "id": 742053,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742053#3528361",
+  "lastCommentPostDate": "2026-09-26T00:04:27.803333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-19T08:40:54.364949200Z",
+  "title": "Meme thread",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742053",
+  "votes": 3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Chikuwabu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9945255-kg.png?t=2025-06-03-19-18-29",
+    "url": "/prgckwb",
+    "userName": "prgckwb",
+    "tier": "MASTER",
+    "id": 9945255,
+    "profileUrl": "/prgckwb",
+    "performanceTier": "MASTER",
+    "userId": 9945255,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

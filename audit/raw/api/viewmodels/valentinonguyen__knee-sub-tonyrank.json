@@ -1,0 +1,219 @@
+{
+  "kernel": {
+    "id": 133952629,
+    "title": "knee sub tonyrank",
+    "currentRunId": 349522447,
+    "mostRecentRunId": 349522447,
+    "url": "/code/valentinonguyen/knee-sub-tonyrank",
+    "tags": [
+      {
+        "name": "gpu",
+        "slug": "gpu",
+        "url": "/tags/gpu"
+      }
+    ],
+    "upvoteCount": 6,
+    "viewCount": 63,
+    "forkCount": 4,
+    "bestPublicScore": 0.941,
+    "author": {
+      "id": 15702362,
+      "displayName": "Duc-Anh Nguyen",
+      "userName": "valentinonguyen",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "profileUrl": "/valentinonguyen",
+      "performanceTier": "CONTRIBUTOR",
+      "progressionOptOut": false
+    },
+    "updatedTime": "2026-09-13T13:08:04.806666700Z",
+    "selfLink": "/kernels/133952629",
+    "dockerImagePinningType": "DOCKER_IMAGE_PINNING_TYPE_ORIGINAL",
+    "originalDockerImageId": 31430,
+    "slug": "knee-sub-tonyrank",
+    "hasLinkedSubmission": true,
+    "canToggleVisibility": true
+  },
+  "kernelRun": {
+    "id": 349522447,
+    "kernelId": 133952629,
+    "status": "COMPLETE",
+    "kernelVersionType": "BATCH",
+    "sourceType": "EDITOR_TYPE_NOTEBOOK",
+    "language": "LANGUAGE_PYTHON",
+    "title": "knee sub tonyrank",
+    "dateCreated": "2026-09-13T13:08:03.193Z",
+    "dateEvaluated": "2026-09-13T13:08:04.807Z",
+    "workerUptimeSeconds": 397,
+    "workerIpAddress": "172.21.128.149 ",
+    "workerIpAddressExternal": "35.227.155.88  ",
+    "scriptLanguageId": 9,
+    "scriptLanguageName": "IPython Notebook HTML",
+    "renderedOutputUrl": "https://www.kaggleusercontent.com/kf/349522447/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..VlTstbkXEOOa0EnVEPVKeQ.9CNEmyypkptruqydbi7UjIggkHNjJK2z25mzfM3CLFD6kVXEDnYhRBEVr_VkD3uyb2V1UmJ6Y_h7QSC2UuYdokAsFnIrwB8SadyyMosbd9wcF_pgOfi1gj2UtbBvDI74SpES3a_VTgILxXg1aLSXYzmqN1ikyvHt8SfvYM98REbr_PKyRTpazSzV8lKzE8i8hOiUMaS5IkuU_FgS6cLwFUi1wgOK6DaMj3uld501zq4pMmNJ869jYkEplLHCr64Medmlt7w9hpSBa_OwylQjYNlIWNYiVUQy3Zpb3E9qqKLdgJxLwzcn35J0EUMl6sd7e7X_5dXegBGABZFG29QjN8BSh25TBvsAlSrG73_IxCznOrp2I2MHCPCwi45DXbwUd5HuPzShnvmjtcAQQvrzhpl7gozpWwD88-81EmZnC6Ixy4fqQ8ybPcGK5boItDb-ZlwxtpZizGHuMVwIJTI5IHIQbj3lZ13qmMAlzWezu-5h-8Mju696vmmpeqyLwFu_yX7FLtn8sngge_19nXKoVBDbjFzECM4UnBd0vMYC-MukuLas3BNdT7v44VQCltwc9UC_MAAVGcpQ-Cix_yl1OfOZjKzTSI6nJwyo_I-Mb0YbxxqNGrEvaZGGhcyqZy1l.5T0fy4s4w4EXpXATHkSmPw/__results__.html?sharingControls=true",
+    "isolatorResults": "<results><dockerfile_url>gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</dockerfile_url><docker_image_digest>37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</docker_image_digest><docker_image_id>sha256:c72831376c5485ec652a6f4a771bf091ae0726310e1b9db3db064387e173e941</docker_image_id><docker_image_name>gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461</docker_image_name><exit_code>0</exit_code><output_size_bytes>22023</output_size_bytes><run_time_seconds>221.1117136</run_time_seconds><used_all_space>false</used_all_space><timeout_exceeded>false</timeout_exceeded><out_of_memory>false</out_of_memory><invalid_path_errors>false</invalid_path_errors><succeeded>true</succeeded><was_killed>false</was_killed><infra_container_error>false</infra_container_error></results>",
+    "runInfo": {
+      "dockerfileUrl": "https://github.com/Kaggle/docker-python/blob/main/Dockerfile.tmpl",
+      "dockerHubUrl": "https://gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "dockerImageDigest": "37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "dockerImageId": "sha256:c72831376c5485ec652a6f4a771bf091ae0726310e1b9db3db064387e173e941",
+      "dockerImageName": "gcr.io/kaggle-gpu-images/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "outputSizeBytes": 22023,
+      "runTimeSeconds": 221.1117136,
+      "succeeded": true
+    },
+    "dockerImageVersionId": 31430,
+    "dataSources": [
+      {
+        "sourceId": 154281,
+        "databundleVersionId": 19681077,
+        "mountSlug": "competitions/rsna-knee-abnormality-detection"
+      },
+      {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19613118,
+        "datasetId": 11687294,
+        "mountSlug": "datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+      }
+    ],
+    "useNewKernelsBackend": true,
+    "isGpuEnabled": true,
+    "acceleratorType": "NVIDIA_TESLA_T4",
+    "authorUserId": 15702362,
+    "kernelVersionNumber": 2
+  },
+  "author": {
+    "id": 15702362,
+    "displayName": "Duc-Anh Nguyen",
+    "userName": "valentinonguyen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "profileUrl": "/valentinonguyen",
+    "performanceTier": "CONTRIBUTOR",
+    "progressionOptOut": false
+  },
+  "baseUrl": "/code/valentinonguyen/knee-sub-tonyrank",
+  "collaborators": {
+    "owner": {
+      "userId": 15702362,
+      "profileUrl": "/valentinonguyen",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "name": "Duc-Anh Nguyen",
+      "slug": "valentinonguyen",
+      "userTier": "CONTRIBUTOR",
+      "type": "OWNER",
+      "progressionOptOut": false
+    }
+  },
+  "dataSources": [
+    {
+      "sourceId": 154281,
+      "databundleVersionId": 19681077,
+      "mountSlug": "competitions/rsna-knee-abnormality-detection"
+    },
+    {
+      "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+      "sourceId": 19613118,
+      "datasetId": 11687294,
+      "mountSlug": "datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+    }
+  ],
+  "renderableDataSources": [
+    {
+      "reference": {
+        "sourceType": "DATA_SOURCE_TYPE_DATASET_VERSION",
+        "sourceId": 19613118
+      },
+      "name": "RSNA Knee DINO RadImageNet Raptor Assets",
+      "dataSourceUrl": "/datasets/tonylica/rsna-knee-bend-dinov3-0917-repro-assets",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-9.png-22938014/dataset-thumbnail.png"
+    },
+    {
+      "reference": {
+        "sourceId": 154281
+      },
+      "name": "RSNA Knee Abnormality Detection",
+      "dataSourceUrl": "/competitions/rsna-knee-abnormality-detection",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-competitions/kaggle/154281/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1790498127&Signature=X8gWYev47H4AuDYjMS42LWH5aHxJrHTpmSa5fHFkgEa3BGHa3zO6BPwTxnlOOhO5Qtc6fvGXs7nC%2F4rlxabJjKK5z3bs0USJtyNJcSSa4JRReGBUbsORPXQKBQeovhjC%2FZcFUV5rgQlQriMBa35pjYemRDFDogqmzElHLtNoIXD9RCi1Ob1qE5cWelOVol05FL48R7eiTF5TAJQuNBpw95TiKKh1gMqBbkRfBnz1XPoA7JaIqW3bWnn1X1JFptjRE4AThZnP6R6I0yK%2BD4%2FTYVN96bYA0MpKzxo7%2BX%2BuXwFaLnWZpK6NHLUUpQvOGkeHcQ8T9JuJsZedV3EIVmiVOA%3D%3D&t=2026-07-14-02-42-13"
+    }
+  ],
+  "downloadAllFilesUrl": "/code/svzip/349522447",
+  "submission": {
+    "id": 56207639,
+    "sourceScriptVersionId": 349522447,
+    "scoreFormatted": "0.941"
+  },
+  "bestSubmissionScore": {
+    "scoreFormatted": "0.941",
+    "kernelVersionNumber": 2,
+    "kernelSessionUrl": "/code/valentinonguyen/knee-sub-tonyrank?scriptVersionId=349522447"
+  },
+  "menuLinks": [
+    {
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/code",
+      "tab": "code",
+      "text": "Code",
+      "title": "Code"
+    },
+    {
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/notebook",
+      "tab": "notebook",
+      "text": "Notebook",
+      "title": "Notebook"
+    },
+    {
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/execution",
+      "showOnMobile": false,
+      "tab": "execution",
+      "text": "Execution Info",
+      "title": "Execution Info"
+    },
+    {
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/log",
+      "showOnMobile": false,
+      "tab": "log",
+      "text": "Log",
+      "title": "Log"
+    },
+    {
+      "count": 0,
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/data",
+      "tab": "data",
+      "text": "Input",
+      "title": "Input"
+    },
+    {
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/output",
+      "showOnMobile": false,
+      "tab": "output",
+      "text": "Output",
+      "title": "Output"
+    },
+    {
+      "count": 0,
+      "href": "/code/valentinonguyen/knee-sub-tonyrank/comments",
+      "showZeroCountExplicitly": true,
+      "tab": "comments",
+      "text": "Comments",
+      "title": "Comments"
+    }
+  ],
+  "voteButton": {
+    "totalVotes": 6,
+    "medalVotes": 1,
+    "canUpvote": true,
+    "currentUserInfo": {
+      "id": 2374911,
+      "displayName": "scratchpad",
+      "userName": "scratchpad",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "profileUrl": "/scratchpad",
+      "performanceTier": "CONTRIBUTOR"
+    },
+    "showVoters": true,
+    "alwaysShowVoters": true,
+    "kernelId": 133952629
+  },
+  "showSharingControls": true,
+  "moderationStatus": "PRIVATED_MODERATION_STATUS_NO_ABUSE",
+  "description": "",
+  "totalVersionCount": 2,
+  "currentVersionNumber": 2
+}
