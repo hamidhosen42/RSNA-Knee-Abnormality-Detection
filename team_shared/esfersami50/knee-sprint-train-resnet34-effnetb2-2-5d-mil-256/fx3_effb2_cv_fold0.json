@@ -1,0 +1,74 @@
+{
+ "arch": "efficientnet_b2.ra_in1k",
+ "res": 256,
+ "lab": [
+  "ACL",
+  "MCL",
+  "Medial Meniscus",
+  "Lateral Meniscus",
+  "Medial OA",
+  "Lateral OA",
+  "PF OA",
+  "Effusion",
+  "Synovitis",
+  "Baker's",
+  "Contusion",
+  "Fracture"
+ ],
+ "norm": "imagenet",
+ "avg_epochs": 3,
+ "gold_auc": 0.8657203319907266,
+ "aucs": {
+  "ACL": 0.8982843137254902,
+  "MCL": 0.8208616780045351,
+  "Medial Meniscus": 0.9122596153846154,
+  "Lateral Meniscus": 0.7776397515527951,
+  "Medial OA": 0.9705426356589147,
+  "Lateral OA": 0.7911025145067698,
+  "PF OA": 0.797940797940798,
+  "Effusion": 0.9503105590062112,
+  "Synovitis": 0.7275985663082437,
+  "Baker's": 0.9655797101449275,
+  "Contusion": 0.9001349527665317,
+  "Fracture": 0.8763888888888889
+ },
+ "stopped_early": false,
+ "hist": [
+  {
+   "ep": 0,
+   "loss": 0.6832148070401769,
+   "gold_monitor": NaN,
+   "min": 3.4477773944536847
+  },
+  {
+   "ep": 1,
+   "loss": 0.6657593413461389,
+   "gold_monitor": NaN,
+   "min": 3.168848967552185
+  },
+  {
+   "ep": 2,
+   "loss": 0.6492976016622132,
+   "gold_monitor": NaN,
+   "min": 3.1712854504585266
+  },
+  {
+   "ep": 3,
+   "loss": 0.6383536603223974,
+   "gold_monitor": NaN,
+   "min": 3.1776214996973673
+  },
+  {
+   "ep": 4,
+   "loss": 0.6305993239453663,
+   "gold_monitor": NaN,
+   "min": 3.1791244904200235
+  },
+  {
+   "ep": 5,
+   "loss": 0.6296363903032378,
+   "gold_monitor": NaN,
+   "min": 3.206151493390401
+  }
+ ]
+}

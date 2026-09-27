@@ -1,0 +1,16 @@
+corpus 4407 studies | gold in corpus 58/58
+labelled pool 4349 (gold excluded)
+[fx2_effb2_cv_fold0] train 3455 | oof 894 | gold 58 | efficientnet_b2.ra_in1k@224 k 8/42 bs 8 ep 10 amp torch.float16 | steps/epoch 431
+[fx2_effb2_cv_fold0] WARM START from fx1_effb2_cv_fold0.pt (its gold58 0.8685)
+[fx2_effb2_cv_fold0] timing: 0.23s/step (measured over 36 steps) -> about 1.6 min/epoch, 0.27 h of training for this run
+[fx2_effb2_cv_fold0] ep0 loss 0.7109 gold(monitor) nan 2.0 min
+[fx2_effb2_cv_fold0] ep1 loss 0.7025 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep2 loss 0.6807 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep3 loss 0.6626 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep4 loss 0.6490 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep5 loss 0.6397 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep6 loss 0.6327 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep7 loss 0.6330 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep8 loss 0.6361 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] ep9 loss 0.6463 gold(monitor) nan 1.8 min
+[fx2_effb2_cv_fold0] DONE gold macro-AUC 0.8707 (avg of 3 epochs)

@@ -1,0 +1,164 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+0.00s - to python to disable frozen modules.
+
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+0.00s - to python to disable frozen modules.
+
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+train 4407 | gold 58 | report-only 4349
+
+gold positives: {'ACL': 24, 'MCL': 9, 'Medial Meniscus': 26, 'Lateral Meniscus': 23, 'Medial OA': 15, 'Lateral OA': 11, 'PF OA': 21, 'Effusion': 35, 'Synovitis': 27, "Baker's": 12, 'Contusion': 19, 'Fracture': 18}
+
+19 candidate label tables
+
+                                                              source  coverage  gold_macro  gold_copy
+
+0          rsna-knee-2026-calibrated-soft-targets/train_targets_hard  1.000000    1.000000       True
+
+1              rsna-knee-llm-labels-4-source-merged/report_labels_v5  1.000000    1.000000       True
+
+2          rsna-knee-2026-calibrated-soft-targets/train_targets_soft  1.000000    1.000000       True
+
+3                        rsna-knee-mri-balanced-labels-public/labels  1.000000    0.912351      False
+
+4                               jev-knee-labels/HYBRID_labels_scores  1.000000    0.903653      False
+
+5              rsna-knee-hybrid-report-labels/report_labels_v4hybrid  1.000000    0.899131      False
+
+6                    rsna-knee-llm-report-labels/llm_labels_v4_blend  1.000000    0.892707      False
+
+7                          rsna-knee-llm-report-labels/llm_labels_v2  1.000000    0.887349      False
+
+8                        rsna-knee-llm-report-labels/llm_labels_full  1.000000    0.877991      False
+
+9                               jev-knee-labels/FINAL2_labels_scores  1.000000    0.874478      False
+
+10                             rsna-knee-llm-labels/report_labels_v2  1.000000    0.870040      False
+
+11                              jev-knee-labels/HYBRID_labels_binary  1.000000    0.861920      False
+
+12             rsna-knee-llm-report-labels-sol56/labels_llm_gpt56sol  1.000000    0.835194      False
+
+13          rsna-knee-llm-report-labels-sol56/report_labels_gpt56sol  1.000000    0.835194      False
+
+14  rsna-knee-abnormality-qwen3-8b-weak-labels/qwen_knee_weak_labels  0.999540    0.817907      False
+
+15  rsna-knee-abnormality-qwen3-8b-weak-labels/weak_labels_v2_filled  1.000000    0.811991      False
+
+16     rsna-knee-abnormality-qwen3-8b-weak-labels/weak_labels_v2_raw  1.000000    0.811991      False
+
+17                               rsna-knee-report-labels/weak_labels  0.967349         NaN      False
+
+18                                  rsna-knee-labels/labels_llm_soft  1.000000         NaN      False
+
+eligible: ['rsna-knee-mri-balanced-labels-public/labels', 'jev-knee-labels/HYBRID_labels_scores', 'rsna-knee-hybrid-report-labels/report_labels_v4hybrid', 'rsna-knee-llm-report-labels/llm_labels_v4_blend', 'rsna-knee-llm-labels/report_labels_v2', 'rsna-knee-llm-report-labels-sol56/labels_llm_gpt56sol', 'rsna-knee-abnormality-qwen3-8b-weak-labels/qwen_knee_weak_labels', 'rsna-knee-report-labels/weak_labels', 'rsna-knee-labels/labels_llm_soft']
+
+accepted: ['rsna-knee-mri-balanced-labels-public/labels', 'jev-knee-labels/HYBRID_labels_scores', 'rsna-knee-hybrid-report-labels/report_labels_v4hybrid', 'rsna-knee-llm-report-labels/llm_labels_v4_blend'] | best single: rsna-knee-mri-balanced-labels-public/labels (0.9124)
+
+{
+
+ "silence_indicator": "rsna-knee-llm-report-labels/llm_labels_full",
+
+ "silence_share_synovitis": 0.8388135203495056,
+
+ "synovitis_from_effusion": {
+
+  "cells": 3689,
+
+  "gold_before": 0.7945041816009558,
+
+  "gold_after": 0.6750298685782556,
+
+  "kept": false
+
+ },
+
+ "silence_cap_Baker's": {
+
+  "cells": 2126,
+
+  "gold_before": 0.9764492753623188,
+
+  "gold_after": 0.9492753623188406,
+
+  "kept": false
+
+ },
+
+ "silence_cap_Medial OA": {
+
+  "cells": 896,
+
+  "gold_before": 0.9503875968992248,
+
+  "gold_after": 0.9751937984496124,
+
+  "kept": true
+
+ }
+
+}
+
+consensus 0.9205 [0.8929, 0.9427]  vs  best single 0.9124 [0.8848, 0.9360]
+
+P(consensus > single) over paired bootstrap: 0.83 | worse on 4 targets: ['Medial OA', 'Lateral OA', 'Contusion', 'Fracture']
+
+G1 FAIL | LABEL_CHOICE = consensus
+
+training labels -> consensus
+
+                  consensus  best_single
+
+ACL                  0.9841       0.9338
+
+MCL                  0.9773       0.9592
+
+Medial Meniscus      0.9627       0.9507
+
+Lateral Meniscus     0.9006       0.8807
+
+Medial OA            0.9752       0.9767
+
+Lateral OA           0.8569       0.8646
+
+PF OA                0.8996       0.8468
+
+Effusion             0.9453       0.9292
+
+Synovitis            0.7945       0.7885
+
+Baker's              0.9764       0.9710
+
+Contusion            0.8812       0.9190
+
+Fracture             0.8917       0.9278
+
+wrote labels_v1.parquet (4349, 12), folds_v1.json, label_benchmark.csv, labels_v1_report.json (filled 0 missing cells)
+
+fold sizes: {0: 894, 1: 865, 2: 866, 3: 865, 4: 859}
+
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+[NbConvertApp] Writing 32727 bytes to __notebook__.ipynb
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+[NbConvertApp] Writing 372265 bytes to __results__.html
+

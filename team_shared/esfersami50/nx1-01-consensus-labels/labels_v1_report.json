@@ -1,0 +1,91 @@
+{
+ "n_report_only": 4349,
+ "n_gold": 58,
+ "accepted": [
+  "rsna-knee-mri-balanced-labels-public/labels",
+  "jev-knee-labels/HYBRID_labels_scores",
+  "rsna-knee-hybrid-report-labels/report_labels_v4hybrid",
+  "rsna-knee-llm-report-labels/llm_labels_v4_blend"
+ ],
+ "best_single": "rsna-knee-mri-balanced-labels-public/labels",
+ "g1_pass": false,
+ "label_choice": "consensus",
+ "labels_v1_is": "consensus",
+ "consensus_macro": 0.9204693277406096,
+ "best_single_macro": 0.9123509863338645,
+ "p_consensus_better": 0.832,
+ "per_target": {
+  "consensus": {
+   "ACL": 0.9841,
+   "MCL": 0.9773,
+   "Medial Meniscus": 0.9627,
+   "Lateral Meniscus": 0.9006,
+   "Medial OA": 0.9752,
+   "Lateral OA": 0.8569,
+   "PF OA": 0.8996,
+   "Effusion": 0.9453,
+   "Synovitis": 0.7945,
+   "Baker's": 0.9764,
+   "Contusion": 0.8812,
+   "Fracture": 0.8917
+  },
+  "best_single": {
+   "ACL": 0.9338,
+   "MCL": 0.9592,
+   "Medial Meniscus": 0.9507,
+   "Lateral Meniscus": 0.8807,
+   "Medial OA": 0.9767,
+   "Lateral OA": 0.8646,
+   "PF OA": 0.8468,
+   "Effusion": 0.9292,
+   "Synovitis": 0.7885,
+   "Baker's": 0.971,
+   "Contusion": 0.919,
+   "Fracture": 0.9278
+  }
+ },
+ "decisions": {
+  "silence_indicator": "rsna-knee-llm-report-labels/llm_labels_full",
+  "silence_share_synovitis": 0.8388135203495056,
+  "synovitis_from_effusion": {
+   "cells": 3689,
+   "gold_before": 0.7945041816009558,
+   "gold_after": 0.6750298685782556,
+   "kept": false
+  },
+  "silence_cap_Baker's": {
+   "cells": 2126,
+   "gold_before": 0.9764492753623188,
+   "gold_after": 0.9492753623188406,
+   "kept": false
+  },
+  "silence_cap_Medial OA": {
+   "cells": 896,
+   "gold_before": 0.9503875968992248,
+   "gold_after": 0.9751937984496124,
+   "kept": true
+  }
+ },
+ "filled_missing_cells": 0,
+ "fold_sizes": {
+  "0": 894,
+  "1": 865,
+  "2": 866,
+  "3": 865,
+  "4": 859
+ },
+ "label_means": {
+  "ACL": 0.27230000495910645,
+  "MCL": 0.20399999618530273,
+  "Medial Meniscus": 0.45350000262260437,
+  "Lateral Meniscus": 0.23680000007152557,
+  "Medial OA": 0.3668000102043152,
+  "Lateral OA": 0.3278999924659729,
+  "PF OA": 0.47760000824928284,
+  "Effusion": 0.5724999904632568,
+  "Synovitis": 0.3296999931335449,
+  "Baker's": 0.36160001158714294,
+  "Contusion": 0.26589998602867126,
+  "Fracture": 0.2199999988079071
+ }
+}

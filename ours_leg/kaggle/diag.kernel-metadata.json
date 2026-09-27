@@ -1,0 +1,16 @@
+{
+  "id": "hosen42/rsna-knee-ours-leg-diag",
+  "title": "rsna-knee-ours-leg-diag",
+  "code_file": "diag_kaggle.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["dreaddevelopment/knee-raptor-corpus/2"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

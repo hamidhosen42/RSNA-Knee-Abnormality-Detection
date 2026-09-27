@@ -1,0 +1,18 @@
+corpus 4407 studies | gold in corpus 58/58
+labelled pool 4349 (gold excluded)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[fx1_effb2_cv_fold0] train 3455 | oof 894 | gold 58 | efficientnet_b2.ra_in1k@224 k 8/42 bs 8 ep 12 amp torch.float16 | steps/epoch 431
+[fx1_effb2_cv_fold0] timing: 0.23s/step (measured over 36 steps) -> about 1.7 min/epoch, 0.33 h of training for this run
+[fx1_effb2_cv_fold0] ep0 loss 0.8994 gold(monitor) nan 2.0 min
+[fx1_effb2_cv_fold0] ep1 loss 0.8629 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep2 loss 0.8358 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep3 loss 0.8175 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep4 loss 0.7985 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep5 loss 0.7797 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep6 loss 0.7591 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep7 loss 0.7419 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep8 loss 0.7242 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep9 loss 0.7125 gold(monitor) nan 1.9 min
+[fx1_effb2_cv_fold0] ep10 loss 0.7031 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] ep11 loss 0.6992 gold(monitor) nan 1.8 min
+[fx1_effb2_cv_fold0] DONE gold macro-AUC 0.8685 (avg of 3 epochs)

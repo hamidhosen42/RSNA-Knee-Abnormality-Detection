@@ -1,0 +1,221 @@
+{
+ "cfg": {
+  "TAG": "fx3",
+  "FOLD": 0,
+  "K_EVAL": 42,
+  "WD": 0.02,
+  "WORKERS": 2,
+  "LABELS_FILE": "labels_v1.parquet",
+  "FOLDS_FILE": "folds_v1.json",
+  "MODE": "hr256",
+  "SMOKE": false,
+  "PCT_START": 0.05,
+  "WARM_START_TAG": "fx2",
+  "RESUME": false,
+  "SAVE_STATE": true,
+  "EPOCHS_THIS_RUN": 0,
+  "K": 12,
+  "AVG_LAST": 3,
+  "TIME_LIMIT_H": 0.4,
+  "PARITY_N": 4,
+  "PARITY_BUDGET_S": 60,
+  "POLL_S": 30,
+  "BOOT": 500,
+  "WATCHDOG_MIN": 29,
+  "RUNS": [
+   {
+    "name": "r34",
+    "arch": "resnet34.a1_in1k",
+    "res": 256,
+    "bs": 8,
+    "epochs": 8,
+    "bb_lr": 0.0001,
+    "head_lr": 0.0005
+   },
+   {
+    "name": "effb2",
+    "arch": "efficientnet_b2.ra_in1k",
+    "res": 256,
+    "bs": 8,
+    "epochs": 6,
+    "bb_lr": 0.0001,
+    "head_lr": 0.0005
+   }
+  ]
+ },
+ "parity": {
+  "median_mean_abs_diff": 0.0,
+  "masks_equal": 1.0,
+  "median_pixels_identical": 1.0,
+  "pass": true
+ },
+ "parity_rows": [
+  {
+   "study": "208607685717",
+   "mean_abs_diff": 0.0,
+   "pixels_identical": 1.0,
+   "pixels_within_2": 1.0,
+   "mask_equal": true,
+   "slot_mean_abs_diff": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "study": "732036115764",
+   "mean_abs_diff": 0.0,
+   "pixels_identical": 1.0,
+   "pixels_within_2": 1.0,
+   "mask_equal": true,
+   "slot_mean_abs_diff": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "study": "266001620445",
+   "mean_abs_diff": 0.0,
+   "pixels_identical": 1.0,
+   "pixels_within_2": 1.0,
+   "mask_equal": true,
+   "slot_mean_abs_diff": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "study": "022054347955",
+   "mean_abs_diff": 0.0,
+   "pixels_identical": 1.0,
+   "pixels_within_2": 1.0,
+   "mask_equal": true,
+   "slot_mean_abs_diff": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "results": {
+  "r34": {
+   "gold58": 0.8594911312289092,
+   "gold58_ci95": [
+    0.8284,
+    0.8891
+   ],
+   "oof_vs_labels": 0.8947678102176752,
+   "per_gold": {
+    "ACL": 0.8921568627450981,
+    "MCL": 0.8480725623582767,
+    "Medial Meniscus": 0.8569711538461539,
+    "Lateral Meniscus": 0.8173913043478261,
+    "Medial OA": 0.9550387596899225,
+    "Lateral OA": 0.7988394584139265,
+    "PF OA": 0.8236808236808236,
+    "Effusion": 0.9552795031055901,
+    "Synovitis": 0.7622461170848268,
+    "Baker's": 0.947463768115942,
+    "Contusion": 0.863697705802969,
+    "Fracture": 0.7930555555555555
+   },
+   "per_oof": {
+    "ACL": 0.9005423715538847,
+    "MCL": 0.8161453716601241,
+    "Medial Meniscus": 0.9247163830497164,
+    "Lateral Meniscus": 0.844301889709008,
+    "Medial OA": 0.8933342514805124,
+    "Lateral OA": 0.9066933532679029,
+    "PF OA": 0.8769244186046512,
+    "Effusion": 0.8939900679031114,
+    "Synovitis": 0.9738378378378378,
+    "Baker's": 0.8946922358687065,
+    "Contusion": 0.8926116189468913,
+    "Fracture": 0.9194239227297554
+   }
+  },
+  "effb2": {
+   "gold58": 0.8657203319907266,
+   "gold58_ci95": [
+    0.8342,
+    0.8943
+   ],
+   "oof_vs_labels": 0.9041407874518548,
+   "per_gold": {
+    "ACL": 0.8982843137254902,
+    "MCL": 0.8208616780045351,
+    "Medial Meniscus": 0.9122596153846154,
+    "Lateral Meniscus": 0.7776397515527951,
+    "Medial OA": 0.9705426356589147,
+    "Lateral OA": 0.7911025145067698,
+    "PF OA": 0.797940797940798,
+    "Effusion": 0.9503105590062112,
+    "Synovitis": 0.7275985663082437,
+    "Baker's": 0.9655797101449275,
+    "Contusion": 0.9001349527665317,
+    "Fracture": 0.8763888888888889
+   },
+   "per_oof": {
+    "ACL": 0.9268581610275689,
+    "MCL": 0.8757376218817272,
+    "Medial Meniscus": 0.9304512846179512,
+    "Lateral Meniscus": 0.85325449884711,
+    "Medial OA": 0.8878425836661616,
+    "Lateral OA": 0.8980041316003119,
+    "PF OA": 0.8833837209302325,
+    "Effusion": 0.8949866558562211,
+    "Synovitis": 0.9758336798336799,
+    "Baker's": 0.9012425483013718,
+    "Contusion": 0.8875500491047821,
+    "Fracture": 0.9345445137551384
+   }
+  },
+  "average": {
+   "gold58": 0.8753182162587972,
+   "gold58_ci95": [
+    0.8426,
+    0.8997
+   ],
+   "oof_vs_labels": 0.9101677842401776,
+   "per_gold": {
+    "ACL": 0.8970588235294118,
+    "MCL": 0.8435374149659864,
+    "Medial Meniscus": 0.8942307692307693,
+    "Lateral Meniscus": 0.8211180124223603,
+    "Medial OA": 0.9751937984496124,
+    "Lateral OA": 0.8065764023210832,
+    "PF OA": 0.8120978120978121,
+    "Effusion": 0.986335403726708,
+    "Synovitis": 0.7514934289127837,
+    "Baker's": 0.967391304347826,
+    "Contusion": 0.8987854251012146,
+    "Fracture": 0.85
+   },
+   "per_oof": {
+    "ACL": 0.9250078320802005,
+    "MCL": 0.8661643662150184,
+    "Medial Meniscus": 0.9370481592703815,
+    "Lateral Meniscus": 0.8642294959487834,
+    "Medial OA": 0.8958419409631364,
+    "Lateral OA": 0.9117493388635688,
+    "PF OA": 0.8908081395348837,
+    "Effusion": 0.9018726844813801,
+    "Synovitis": 0.9786444906444907,
+    "Baker's": 0.9104862457803634,
+    "Contusion": 0.9016204578076603,
+    "Fracture": 0.9385402592922644
+   }
+  }
+ },
+ "minutes": 21.221885911623637
+}

@@ -1,0 +1,134 @@
+{
+ "arch": "resnet34.a1_in1k",
+ "res": 224,
+ "lab": [
+  "ACL",
+  "MCL",
+  "Medial Meniscus",
+  "Lateral Meniscus",
+  "Medial OA",
+  "Lateral OA",
+  "PF OA",
+  "Effusion",
+  "Synovitis",
+  "Baker's",
+  "Contusion",
+  "Fracture"
+ ],
+ "norm": "imagenet",
+ "avg_epochs": 3,
+ "gold_auc": 0.8470725157403933,
+ "aucs": {
+  "ACL": 0.8762254901960784,
+  "MCL": 0.7777777777777778,
+  "Medial Meniscus": 0.8161057692307693,
+  "Lateral Meniscus": 0.7739130434782608,
+  "Medial OA": 0.9596899224806201,
+  "Lateral OA": 0.7988394584139265,
+  "PF OA": 0.824967824967825,
+  "Effusion": 0.9664596273291925,
+  "Synovitis": 0.7777777777777778,
+  "Baker's": 0.9510869565217391,
+  "Contusion": 0.844804318488529,
+  "Fracture": 0.7972222222222223
+ },
+ "stopped_early": false,
+ "hist": [
+  {
+   "ep": 0,
+   "loss": 0.9125440868866692,
+   "gold_monitor": NaN,
+   "min": 1.1674052556355794
+  },
+  {
+   "ep": 1,
+   "loss": 0.8766942892716268,
+   "gold_monitor": NaN,
+   "min": 1.116929300626119
+  },
+  {
+   "ep": 2,
+   "loss": 0.8540407178573431,
+   "gold_monitor": NaN,
+   "min": 1.1106621146202087
+  },
+  {
+   "ep": 3,
+   "loss": 0.8346433328365228,
+   "gold_monitor": NaN,
+   "min": 1.116484570503235
+  },
+  {
+   "ep": 4,
+   "loss": 0.8211619963225522,
+   "gold_monitor": NaN,
+   "min": 1.113202174504598
+  },
+  {
+   "ep": 5,
+   "loss": 0.8089992885246631,
+   "gold_monitor": NaN,
+   "min": 1.1174285928408305
+  },
+  {
+   "ep": 6,
+   "loss": 0.7966441774866144,
+   "gold_monitor": NaN,
+   "min": 1.1169885357220968
+  },
+  {
+   "ep": 7,
+   "loss": 0.7879894825256064,
+   "gold_monitor": NaN,
+   "min": 1.1182744781176248
+  },
+  {
+   "ep": 8,
+   "loss": 0.7784611311700117,
+   "gold_monitor": NaN,
+   "min": 1.1157891551653545
+  },
+  {
+   "ep": 9,
+   "loss": 0.7703996678239509,
+   "gold_monitor": NaN,
+   "min": 1.1150564551353455
+  },
+  {
+   "ep": 10,
+   "loss": 0.7597976401621117,
+   "gold_monitor": NaN,
+   "min": 1.1164162357648213
+  },
+  {
+   "ep": 11,
+   "loss": 0.7536657473327389,
+   "gold_monitor": NaN,
+   "min": 1.1192512432734172
+  },
+  {
+   "ep": 12,
+   "loss": 0.7466162858042529,
+   "gold_monitor": NaN,
+   "min": 1.118939956029256
+  },
+  {
+   "ep": 13,
+   "loss": 0.7415705978732098,
+   "gold_monitor": NaN,
+   "min": 1.1199512203534445
+  },
+  {
+   "ep": 14,
+   "loss": 0.7398603035789632,
+   "gold_monitor": NaN,
+   "min": 1.1218298236529032
+  },
+  {
+   "ep": 15,
+   "loss": 0.7388777915396989,
+   "gold_monitor": NaN,
+   "min": 1.120367952187856
+  }
+ ]
+}

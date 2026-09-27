@@ -1,0 +1,350 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+0.00s - to python to disable frozen modules.
+
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+0.00s - to python to disable frozen modules.
+
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+{
+
+ "TAG": "fx1",
+
+ "FOLD": 0,
+
+ "K_EVAL": 42,
+
+ "WD": 0.02,
+
+ "WORKERS": 2,
+
+ "LABELS_FILE": "labels_v1.parquet",
+
+ "FOLDS_FILE": "folds_v1.json",
+
+ "MODE": "b30",
+
+ "SMOKE": false,
+
+ "K": 8,
+
+ "AVG_LAST": 3,
+
+ "TIME_LIMIT_H": 0.4,
+
+ "PARITY_N": 8,
+
+ "PARITY_BUDGET_S": 120,
+
+ "POLL_S": 30,
+
+ "BOOT": 500,
+
+ "WATCHDOG_MIN": 29,
+
+ "RUNS": [
+
+  {
+
+   "name": "r34",
+
+   "arch": "resnet34.a1_in1k",
+
+   "res": 224,
+
+   "bs": 8,
+
+   "epochs": 16,
+
+   "bb_lr": 0.0002,
+
+   "head_lr": 0.001
+
+  },
+
+  {
+
+   "name": "effb2",
+
+   "arch": "efficientnet_b2.ra_in1k",
+
+   "res": 224,
+
+   "bs": 8,
+
+   "epochs": 12,
+
+   "bb_lr": 0.0002,
+
+   "head_lr": 0.001
+
+  }
+
+ ]
+
+}
+
+Writing /kaggle/working/fx_train.py
+
+Writing /kaggle/working/fx_prep.py
+
+labels: /kaggle/input/notebooks/esfersami50/nx1-01-consensus-labels/labels_v1.parquet | folds: /kaggle/input/notebooks/esfersami50/nx1-01-consensus-labels/folds_v1.json | competition: /kaggle/input/competitions/rsna-knee-abnormality-detection
+
+GPU0: r34 (resnet34.a1_in1k @ 224) -> /kaggle/working/log_fx1_r34.txt
+
+GPU1: effb2 (efficientnet_b2.ra_in1k @ 224) -> /kaggle/working/log_fx1_effb2.txt
+
+          study  mean_abs_diff  pixels_identical  pixels_within_2  mask_equal         slot_mean_abs_diff
+
+0  753473646773            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+1  978532746117            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+2  860276069606            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+3  364359588752            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+4  988453660857            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+5  938741061358            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+6  633497607680            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+7  320026807282            0.0               1.0              1.0        True  [0.0, 0.0, 0.0, 0.0, 0.0]
+
+PARITY PASS: median |diff| 0.000 of 255, masks equal 100%, pixels identical (median study) 100.0% | 21s
+
+--- 0.8 min
+
+   
+
+    [fx1_r34_cv_fold0] train 3455 | oof 894 | gold 58 | resnet34.a1_in1k@224 k 8/42 bs 8 ep 16 amp torch.float16 | steps/epoch 431
+
+    [fx1_r34_cv_fold0] timing: 0.15s/step (measured over 36 steps) -> about 1.1 min/epoch, 0.28 h of training for this run
+
+   
+
+    [fx1_effb2_cv_fold0] train 3455 | oof 894 | gold 58 | efficientnet_b2.ra_in1k@224 k 8/42 bs 8 ep 12 amp torch.float16 | steps/epoch 431
+
+    [fx1_effb2_cv_fold0] timing: 0.23s/step (measured over 36 steps) -> about 1.7 min/epoch, 0.33 h of training for this run
+
+--- 2.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep0 loss 0.9125 gold(monitor) nan 1.2 min
+
+    [fx1_r34_cv_fold0] ep1 loss 0.8767 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] timing: 0.23s/step (measured over 36 steps) -> about 1.7 min/epoch, 0.33 h of training for this run
+
+    [fx1_effb2_cv_fold0] ep0 loss 0.8994 gold(monitor) nan 2.0 min
+
+--- 4.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep1 loss 0.8767 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep2 loss 0.8540 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep0 loss 0.8994 gold(monitor) nan 2.0 min
+
+    [fx1_effb2_cv_fold0] ep1 loss 0.8629 gold(monitor) nan 1.8 min
+
+--- 6.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep3 loss 0.8346 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep4 loss 0.8212 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep1 loss 0.8629 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep2 loss 0.8358 gold(monitor) nan 1.8 min
+
+--- 8.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep5 loss 0.8090 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep6 loss 0.7966 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep2 loss 0.8358 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep3 loss 0.8175 gold(monitor) nan 1.8 min
+
+--- 10.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep7 loss 0.7880 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep8 loss 0.7785 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep3 loss 0.8175 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep4 loss 0.7985 gold(monitor) nan 1.8 min
+
+--- 12.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep9 loss 0.7704 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep10 loss 0.7598 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep4 loss 0.7985 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep5 loss 0.7797 gold(monitor) nan 1.8 min
+
+--- 14.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep10 loss 0.7598 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep11 loss 0.7537 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep5 loss 0.7797 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep6 loss 0.7591 gold(monitor) nan 1.8 min
+
+--- 16.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep12 loss 0.7466 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep13 loss 0.7416 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep6 loss 0.7591 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep7 loss 0.7419 gold(monitor) nan 1.8 min
+
+--- 18.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep14 loss 0.7399 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] ep15 loss 0.7389 gold(monitor) nan 1.1 min
+
+   
+
+    [fx1_effb2_cv_fold0] ep7 loss 0.7419 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep8 loss 0.7242 gold(monitor) nan 1.8 min
+
+--- 20.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep15 loss 0.7389 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] DONE gold macro-AUC 0.8471 (avg of 3 epochs)
+
+   
+
+    [fx1_effb2_cv_fold0] ep9 loss 0.7125 gold(monitor) nan 1.9 min
+
+    [fx1_effb2_cv_fold0] ep10 loss 0.7031 gold(monitor) nan 1.8 min
+
+--- 22.8 min
+
+   
+
+    [fx1_r34_cv_fold0] ep15 loss 0.7389 gold(monitor) nan 1.1 min
+
+    [fx1_r34_cv_fold0] DONE gold macro-AUC 0.8471 (avg of 3 epochs)
+
+   
+
+    [fx1_effb2_cv_fold0] ep10 loss 0.7031 gold(monitor) nan 1.8 min
+
+    [fx1_effb2_cv_fold0] ep11 loss 0.6992 gold(monitor) nan 1.8 min
+
+log_fx1_r34.txt exit code 0
+
+log_fx1_effb2.txt exit code 0
+
+training finished in 24 min
+
+           gold58     gold58 95% CI OOF vs labels
+
+r34      0.847073  [0.8147, 0.8767]      0.887998
+
+effb2    0.868541  [0.8329, 0.8988]       0.90669
+
+average   0.86863  [0.8319, 0.8979]      0.905948
+
+                    r34  effb2  average
+
+ACL               0.876  0.895    0.896
+
+MCL               0.778  0.814    0.812
+
+Medial Meniscus   0.816  0.877    0.865
+
+Lateral Meniscus  0.774  0.769    0.779
+
+Medial OA         0.960  0.949    0.961
+
+Lateral OA        0.799  0.764    0.783
+
+PF OA             0.825  0.848    0.843
+
+Effusion          0.966  0.958    0.968
+
+Synovitis         0.778  0.753    0.768
+
+Baker's           0.951  0.971    0.973
+
+Contusion         0.845  0.904    0.893
+
+Fracture          0.797  0.921    0.882
+
+reference: the public Raptor CoAtNet-384 scores 0.905-0.917 on the same 58 gold studies (its own notes)
+
+/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+
+/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+[NbConvertApp] Writing 65662 bytes to __notebook__.ipynb
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+[NbConvertApp] Writing 532821 bytes to __results__.html
+
