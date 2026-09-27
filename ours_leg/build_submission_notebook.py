@@ -41,7 +41,7 @@ _OV_INPUT = _o.environ.get("RSNA_INPUT_ROOT", "/kaggle/input")
 _OV_LEG_SRC = _pl.Path(_o.environ.get("RSNA_OURS_SRC", "/kaggle/tmp/ours_leg/infer_kernel.py"))
 _OV_LEG_OUT = _pl.Path(_o.environ.get("RSNA_OURS_OUT", "/kaggle/tmp/ours_leg_out"))
 _OV_OURS = _OV_LEG_OUT / "submission.csv"
-_OV_CKPT_GLOB = _o.environ.get("RSNA_OURS_CKPT_GLOB", "*_best.pt")
+_OV_CKPT_GLOB = _o.environ.get("RSNA_OURS_CKPT_GLOB", "*_swa.pt")
 
 
 def _proc_age_h():

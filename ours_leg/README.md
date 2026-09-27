@@ -57,7 +57,22 @@ D4-এর মডেলের সেটিং (384px, ৯৬ slice, MAX_WIN 36) R
 | v1 | 2026-09-27 12:42 | **ব্যর্থ, ~৩০ মিনিটে।** প্রথম মূল্যায়নের শুরুতে host RAM শেষ হয়ে "Killed"। গতি ছিল মাত্র 2.1 স্টাডি/সেকেন্ড, কারণ `/kaggle/input`-এ memmap-এর page fault। setup ঠিক ছিল: 2×T4, fold checksum মিলেছে, train 3479 / OOF 870 / gold 58 |
 | v2 | 2026-09-27 13:21 | **ব্যর্থ, ~৫৬ মিনিটে ("Killed")।** ডেটার অপেক্ষা 0%, তবু গতি 1.4 স্টাডি/সেকেন্ড। RAM প্রতি স্টাডিতে ~৫ MB করে বেড়েছে (4 → 20 GB) |
 | diag v1/v2 | 2026-09-27 14:20–14:45 | **কারণ মাপা গেছে।** (১) GPU সুস্থ (fp16 matmul 24 TFLOPS, ResNet-50 292 ছবি/সেকেন্ড), কিন্তু এই মডেলে DataParallel এক GPU-র চেয়ে ৩ গুণ ধীর (1.46 বনাম 4.46 স্টাডি/সেকেন্ড; forward-এ ১০ গুণ)। (২) NFS page cache ছাড়ানো যায়, আসল সমস্যা DataLoader worker-এ glibc malloc: প্রতি স্টাডিতে ~1.5–1.75 MB বাড়ে, worker বন্ধ হলে ফেরত আসে |
-| v3 | 2026-09-27 14:57 | চলছে। বদল: DataParallel বাদ, প্রতিটা GPU-তে আলাদা fold (fold 0 আর fold 1 একসাথে); worker একটাই buffer বারবার ব্যবহার করে (`preadv`), সাথে `mallopt`; pin_memory বন্ধ; log-এ main আর worker-এর RSS আলাদা। আনুমানিক এক epoch ~১৫ মিনিট, মোট ~৪ ঘণ্টা |
+| v3 | 2026-09-27 14:57 | **সফল, 4.67 ঘণ্টা।** বদল: DataParallel বাদ, প্রতিটা GPU-তে আলাদা fold (fold 0 আর fold 1 একসাথে); worker একটাই buffer বারবার ব্যবহার করে (`preadv`), সাথে `mallopt`; pin_memory বন্ধ। RAM পুরো সময় 5.5–6 GB-এ স্থির; প্রতিটা GPU-তে 3.8 স্টাডি/সেকেন্ড; এক epoch 17.3 মিনিট |
+
+### v3-এর ফল (fold 0 + 1; অনিশ্চিত band বাদ দিয়ে soft label-এর বিপরীতে OOF)
+
+| | fold 0 | fold 1 | দুটো fold একসাথে (n=1740) |
+|---|---|---|---|
+| best epoch (OOF দিয়ে বাছা) | ep13: 0.8728 | ep6: 0.8668 | 0.8684 |
+| **SWA** (top-3 epoch, BN পুনর্গণনাসহ) | 0.8724 | 0.8729 | **0.8721**, তাই এটাই বাছা হলো |
+| gold-58 (শুধু যাচাই, বাছাইয়ে ব্যবহৃত নয়) | 0.8858 | 0.8943 | দুটো মডেলের গড় 0.9000 |
+
+- **finding অনুযায়ী (একসাথে OOF):** ACL 0.890, MCL 0.846, Med. Meniscus 0.918, Lat. Meniscus 0.838, Med. OA 0.885, Lat. OA 0.832, PF OA 0.845, Effusion 0.908, Synovitis 0.848, Baker's 0.926, Contusion 0.829, Fracture 0.903।
+- **দুটো fold মডেলের মিল:** gold-58-এ rank correlation 0.85।
+- **তুলনা, সতর্কভাবে পড়ুন:** Raptor-এর একক CoAtNet gold-58-এ 0.905 আর LB-তে 0.914। কিন্তু ওটা gold দেখে বাছা ছিল, আমাদেরটা নয়।
+- আমাদের মডেল একা LB-তে কত পাবে, তা জানা নেই।
+- **ফাইল:** `results/train_v3/`-এ json, OOF আর gold npz, আর Kaggle log। checkpoint আছে Kaggle-এ, `hosen42/rsna-knee-ours-leg-train-effv2s` v3-এর আউটপুটে।
+- **সাবমিশন নোটবুক:** এটা ওই version 3-এ আটকানো। পরে fold 2–4 অন্য version-এ train হলে যাতে f0/f1 হারিয়ে না যায়, সেজন্য ওগুলো আলাদা kernel-এ চালাতে হবে।
 
 ## ৪. চালানোর পরিকল্পনা আর সিদ্ধান্তের নিয়ম
 

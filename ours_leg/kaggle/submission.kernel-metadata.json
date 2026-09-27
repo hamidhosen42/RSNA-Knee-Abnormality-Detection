@@ -31,7 +31,7 @@
   "kernel_sources": [
     "sofiaanjenje/rsna-knee-e11-train/2",
     "sofiaanjenje/rsna-knee-e13-train/1",
-    "hosen42/rsna-knee-ours-leg-train-effv2s"
+    "hosen42/rsna-knee-ours-leg-train-effv2s/3"
   ],
   "model_sources": ["metaresearch/dinov2/PyTorch/small/1"]
 }
