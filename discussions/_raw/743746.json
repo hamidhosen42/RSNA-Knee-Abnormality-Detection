@@ -1,0 +1,256 @@
+{
+ "forumTopic": {
+  "authorId": 32302810,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Adel Zebiche",
+  "authorUserName": "adelzebiche",
+  "comments": [
+   {
+    "id": 3529202,
+    "postDate": "2026-09-27T16:12:00.143Z",
+    "rawMarkdown": "Same, happened many times since last Sunday. I usually just wait for a 10 - 15 min and try pushing again until it runs. Leaving it in queued state didn't work. ",
+    "content": "<p>Same, happened many times since last Sunday. I usually just wait for a 10 - 15 min and try pushing again until it runs. Leaving it in queued state didn't work. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3334,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529199,
+    "postDate": "2026-09-27T15:58:17.760Z",
+    "rawMarkdown": "same here, been stuck in the queue for hours trying to save my infer notebook",
+    "content": "<p>same here, been stuck in the queue for hours trying to save my infer notebook</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Stefan87",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/stefan87",
+     "tier": "EXPERT",
+     "id": 42272,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 229,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Stefan87",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/stefan87",
+      "userName": "stefan87",
+      "tier": "EXPERT",
+      "id": 42272,
+      "profileUrl": "/stefan87",
+      "performanceTier": "EXPERT",
+      "userId": 42272,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529191,
+    "postDate": "2026-09-27T15:47:32.667Z",
+    "rawMarkdown": "same here, my infer notebook can't save any new version.",
+    "content": "<p>same here, my infer notebook can't save any new version.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Wayne_127",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15801225-kg.jpg?t=2025-03-10-02-59-51",
+     "url": "/wayne127",
+     "tier": "EXPERT",
+     "id": 15801225,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1194,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Wayne_127",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15801225-kg.jpg?t=2025-03-10-02-59-51",
+      "url": "/wayne127",
+      "userName": "wayne127",
+      "tier": "EXPERT",
+      "id": 15801225,
+      "profileUrl": "/wayne127",
+      "performanceTier": "EXPERT",
+      "userId": 15801225,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528909,
+    "postDate": "2026-09-26T20:12:32.853Z",
+    "rawMarkdown": "Same for me, unfortunately. Still issues with queues even hours later",
+    "content": "<p>Same for me, unfortunately. Still issues with queues even hours later</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Roger",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/19689615-kg.jpg?t=2025-08-06-21-13-23",
+     "url": "/oannes13",
+     "tier": "CONTRIBUTOR",
+     "id": 19689615,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3529615,
+    "postDate": "2026-09-28T16:29:51.730Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528884,
+   "postDate": "2026-09-26T19:06:20.507Z",
+   "rawMarkdown": "Hi everyone !\n\nMy GPU batch kernel has been stuck in QUEUED for several hours, no error message. No other kernel or notebook session is active on my account, and my weekly GPU quota is well above zero. The same happened to a second kernel. Is anyone else seeing long T4 queues ? And does any one know where this problem come from and how to solve it ?\n\nThanks in advance for any hint ))",
+   "content": "<p>Hi everyone !</p>\n<p>My GPU batch kernel has been stuck in QUEUED for several hours, no error message. No other kernel or notebook session is active on my account, and my weekly GPU quota is well above zero. The same happened to a second kernel. Is anyone else seeing long T4 queues ? And does any one know where this problem come from and how to solve it ?</p>\n<p>Thanks in advance for any hint ))</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Adel Zebiche",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/adelzebiche",
+    "tier": "CONTRIBUTOR",
+    "id": 32302810,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2187,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Adel Zebiche",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/adelzebiche",
+     "userName": "adelzebiche",
+     "tier": "CONTRIBUTOR",
+     "id": 32302810,
+     "profileUrl": "/adelzebiche",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 32302810,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528884,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743746,
+  "name": "Kernel Stuck in queued for hours on GPU T4 -anyone else ?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-26T19:06:20.506925500Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743746",
+  "totalMessages": 5,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Adel Zebiche",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/adelzebiche",
+   "tier": "CONTRIBUTOR",
+   "id": 32302810,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3528884,
+  "id": 743746,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743746#3529615",
+  "lastCommentPostDate": "2026-09-28T16:29:51.730Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-26T19:06:20.506925500Z",
+  "title": "Kernel Stuck in queued for hours on GPU T4 -anyone else ?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743746",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Adel Zebiche",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/adelzebiche",
+    "userName": "adelzebiche",
+    "tier": "CONTRIBUTOR",
+    "id": 32302810,
+    "profileUrl": "/adelzebiche",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 32302810,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

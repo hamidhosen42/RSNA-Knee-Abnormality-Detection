@@ -6,6 +6,86 @@
   "authorUserName": "muttahir",
   "comments": [
    {
+    "id": 3529304,
+    "postDate": "2026-09-27T22:25:34.150Z",
+    "rawMarkdown": "I have found that having models that disagree with each other outperform models that agree within ensembles.",
+    "content": "<p>I have found that having models that disagree with each other outperform models that agree within ensembles.</p>",
+    "replies": [
+     {
+      "id": 3529328,
+      "postDate": "2026-09-28T00:13:32.267Z",
+      "rawMarkdown": "Yes, this is the secret to ensembles. It is said well by Paul [here][1] (in Kaggle playground competition)\n\n[1]: https://www.kaggle.com/competitions/playground-series-s6e9/discussion/743860",
+      "content": "<p>Yes, this is the secret to ensembles. It is said well by Paul <a href=\"https://www.kaggle.com/competitions/playground-series-s6e9/discussion/743860\" target=\"_blank\">here</a> (in Kaggle playground competition)</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Chris Deotte",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+       "url": "/cdeotte",
+       "tier": "GRANDMASTER",
+       "id": 1723677,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 100,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Chris Deotte",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+        "url": "/cdeotte",
+        "userName": "cdeotte",
+        "tier": "GRANDMASTER",
+        "id": 1723677,
+        "profileUrl": "/cdeotte",
+        "performanceTier": "GRANDMASTER",
+        "userId": 1723677,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dread Development",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+     "url": "/dreaddevelopment",
+     "tier": "EXPERT",
+     "id": 35987882,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 205,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dread Development",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+      "url": "/dreaddevelopment",
+      "userName": "dreaddevelopment",
+      "tier": "EXPERT",
+      "id": 35987882,
+      "profileUrl": "/dreaddevelopment",
+      "performanceTier": "EXPERT",
+      "userId": 35987882,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3528357,
     "postDate": "2026-09-25T23:53:40.313Z",
     "rawMarkdown": "All of these things can help\n* improve train labels\n* change image preprocess\n* change the representation we input into our model\n* change model architecture\n* change backbone\n* change data augmentation\n* change learning schedule",
@@ -32,7 +112,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 1272,
+      "competitionRanking": 1608,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -72,7 +152,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 1272,
+      "competitionRanking": 1608,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -108,7 +188,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 85,
+    "competitionRanking": 100,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -138,6 +218,47 @@
       "postDate": "2026-09-25T06:32:11.183Z",
       "rawMarkdown": "Thanks, Lavin! I already have a blended ensemble with DINO-family MRI models and RadImageNet heads, so I’ll focus on adding a genuinely complementary model and validate the blend with OOF predictions rather than tuning to the public leaderboard. Did you have a particular backbone or checkpoint that worked well for this dataset?",
       "content": "<p>Thanks, Lavin! I already have a blended ensemble with DINO-family MRI models and RadImageNet heads, so I’ll focus on adding a genuinely complementary model and validate the blend with OOF predictions rather than tuning to the public leaderboard. Did you have a particular backbone or checkpoint that worked well for this dataset?</p>",
+      "replies": [
+       {
+        "id": 3529009,
+        "postDate": "2026-09-27T06:22:42.040Z",
+        "rawMarkdown": "Relying on OOF predictions rather than chasing the public leaderboard is absolutely the right move, especially for preventing overfitting on medical datasets.\nSince the current ensemble relies heavily on self-supervised, vision-transformer-based representations via DINO and RadImageNet, the most effective way to gain a genuine performance boost is by introducing a backbone with a completely different structural bias.\nA ConvNeXt-V2 (specifically convnextv2_huge or large) or a Swin Transformer V2 initialized with masked autoencoder (MAE) weights would be excellent complementary choices.",
+        "content": "<p>Relying on OOF predictions rather than chasing the public leaderboard is absolutely the right move, especially for preventing overfitting on medical datasets.\nSince the current ensemble relies heavily on self-supervised, vision-transformer-based representations via DINO and RadImageNet, the most effective way to gain a genuine performance boost is by introducing a backbone with a completely different structural bias.\nA ConvNeXt-V2 (specifically convnextv2_huge or large) or a Swin Transformer V2 initialized with masked autoencoder (MAE) weights would be excellent complementary choices.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Lavin Wins",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+         "url": "/lavinwins",
+         "tier": "CONTRIBUTOR",
+         "id": 27284910,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 410,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Lavin Wins",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+          "url": "/lavinwins",
+          "userName": "lavinwins",
+          "tier": "CONTRIBUTOR",
+          "id": 27284910,
+          "profileUrl": "/lavinwins",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 27284910,
+          "progressionOptOut": false
+         },
+         "intro": "Someone who is rich "
+        }
+       }
+      ],
       "parent": {},
       "author": {
        "displayName": "MUTTAHIR",
@@ -152,7 +273,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1272,
+      "competitionRanking": 1608,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -187,7 +308,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 280,
+    "competitionRanking": 410,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -225,12 +346,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": -5,
+    "totalVotes": -4,
     "canUpvote": true,
-    "totalUpvotes": 1
+    "totalUpvotes": 2
    },
    "kernelVersion": 0,
-   "competitionRanking": 1272,
+   "competitionRanking": 1608,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -257,9 +378,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-24T06:48:22.907131800Z",
-  "totalVotes": -5,
+  "totalVotes": -4,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/742926",
-  "totalMessages": 5,
+  "totalMessages": 8,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -273,19 +394,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 5,
+  "commentCount": 8,
   "firstForumMessageId": 3527582,
   "id": 742926,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "MUTTAHIR",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742926#3528624",
-  "lastCommentPostDate": "2026-09-26T09:12:30.156666700Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742926#3529328",
+  "lastCommentPostDate": "2026-09-28T00:13:32.266666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-24T06:48:22.907131800Z",
   "title": "Suggestions for improving a 0.940 RSNA Knee ensemble",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742926",
-  "votes": -5,
+  "votes": -4,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "MUTTAHIR",

@@ -10,6 +10,47 @@
     "postDate": "2026-09-25T23:41:45.013Z",
     "rawMarkdown": "Yes (sort of). Let me clarify. We select 2 final submissions. Both will be considered for main track and both will be consider for efficiency track. (So, you could select your best main track and best efficiency as your final 2 subs).",
     "content": "<p>Yes (sort of). Let me clarify. We select 2 final submissions. Both will be considered for main track and both will be consider for efficiency track. (So, you could select your best main track and best efficiency as your final 2 subs).</p>",
+    "replies": [
+     {
+      "id": 3528840,
+      "postDate": "2026-09-26T16:53:03.527Z",
+      "rawMarkdown": "Thanks Chris for clarifying",
+      "content": "<p>Thanks Chris for clarifying</p>",
+      "parent": {},
+      "author": {
+       "displayName": "nahusha",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/nahusha123",
+       "tier": "CONTRIBUTOR",
+       "id": 2262016,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Harshil Maheta",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/harshilmaheta",
+        "userName": "harshilmaheta",
+        "tier": "CONTRIBUTOR",
+        "id": 36454097,
+        "profileUrl": "/harshilmaheta",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36454097,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
     "parent": {},
     "author": {
      "displayName": "Chris Deotte",
@@ -26,7 +67,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 93,
+    "competitionRanking": 101,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -63,7 +104,9 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "canUpvote": true
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
    },
    "kernelVersion": 0,
    "feedbackTrackingData": {},
@@ -92,8 +135,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-25T18:11:50.042694600Z",
+  "totalVotes": 1,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743356",
-  "totalMessages": 1,
+  "totalMessages": 2,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -107,18 +151,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 1,
+  "commentCount": 2,
   "firstForumMessageId": 3528260,
   "id": 743356,
-  "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Chris Deotte",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743356#3528352",
-  "lastCommentPostDate": "2026-09-25T23:41:45.013333300Z",
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "nahusha",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743356#3528840",
+  "lastCommentPostDate": "2026-09-26T16:53:03.526666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-25T18:11:50.042694600Z",
   "title": "Can we select 2 final submissions?",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743356",
+  "votes": 1,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Harshil Maheta",

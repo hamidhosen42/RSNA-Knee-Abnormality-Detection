@@ -32,7 +32,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 1128,
+      "competitionRanking": 129,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -68,7 +68,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 92,
+    "competitionRanking": 100,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -112,7 +112,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1128,
+      "competitionRanking": 129,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -148,7 +148,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 70,
+    "competitionRanking": 83,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -192,7 +192,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1128,
+      "competitionRanking": 129,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -250,7 +250,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2223,
+    "competitionRanking": 606,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -300,7 +300,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 76,
+        "competitionRanking": 38,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -315,18 +315,18 @@
         "teamUpInfo": {
          "enabled": true,
          "teamLeader": {
-          "displayName": "Raymond Yuen",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-          "url": "/laymond",
-          "userName": "laymond",
-          "tier": "CONTRIBUTOR",
-          "id": 28874055,
-          "profileUrl": "/laymond",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 28874055,
+          "displayName": "Tanuki_boosting",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/miyamotodaiya",
+          "userName": "miyamotodaiya",
+          "tier": "EXPERT",
+          "id": 11621780,
+          "profileUrl": "/miyamotodaiya",
+          "performanceTier": "EXPERT",
+          "userId": 11621780,
           "progressionOptOut": false
          },
-         "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+         "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
         }
        },
        {
@@ -348,7 +348,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 241,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -387,7 +387,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 241,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -428,7 +428,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 76,
+        "competitionRanking": 38,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -444,18 +444,18 @@
         "teamUpInfo": {
          "enabled": true,
          "teamLeader": {
-          "displayName": "Raymond Yuen",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-          "url": "/laymond",
-          "userName": "laymond",
-          "tier": "CONTRIBUTOR",
-          "id": 28874055,
-          "profileUrl": "/laymond",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 28874055,
+          "displayName": "Tanuki_boosting",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/miyamotodaiya",
+          "userName": "miyamotodaiya",
+          "tier": "EXPERT",
+          "id": 11621780,
+          "profileUrl": "/miyamotodaiya",
+          "performanceTier": "EXPERT",
+          "userId": 11621780,
           "progressionOptOut": false
          },
-         "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+         "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
         }
        },
        {
@@ -477,7 +477,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1128,
+        "competitionRanking": 129,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -516,7 +516,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 76,
+        "competitionRanking": 38,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -533,18 +533,18 @@
         "teamUpInfo": {
          "enabled": true,
          "teamLeader": {
-          "displayName": "Raymond Yuen",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-          "url": "/laymond",
-          "userName": "laymond",
-          "tier": "CONTRIBUTOR",
-          "id": 28874055,
-          "profileUrl": "/laymond",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 28874055,
+          "displayName": "Tanuki_boosting",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/miyamotodaiya",
+          "userName": "miyamotodaiya",
+          "tier": "EXPERT",
+          "id": 11621780,
+          "profileUrl": "/miyamotodaiya",
+          "performanceTier": "EXPERT",
+          "userId": 11621780,
           "progressionOptOut": false
          },
-         "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+         "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
         }
        },
        {
@@ -566,7 +566,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1128,
+        "competitionRanking": 129,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -605,7 +605,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1128,
+        "competitionRanking": 129,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -644,7 +644,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 76,
+        "competitionRanking": 38,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -660,18 +660,18 @@
         "teamUpInfo": {
          "enabled": true,
          "teamLeader": {
-          "displayName": "Raymond Yuen",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-          "url": "/laymond",
-          "userName": "laymond",
-          "tier": "CONTRIBUTOR",
-          "id": 28874055,
-          "profileUrl": "/laymond",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 28874055,
+          "displayName": "Tanuki_boosting",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/miyamotodaiya",
+          "userName": "miyamotodaiya",
+          "tier": "EXPERT",
+          "id": 11621780,
+          "profileUrl": "/miyamotodaiya",
+          "performanceTier": "EXPERT",
+          "userId": 11621780,
           "progressionOptOut": false
          },
-         "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+         "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
         }
        }
       ],
@@ -690,7 +690,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 2223,
+      "competitionRanking": 606,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -734,7 +734,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1128,
+        "competitionRanking": 129,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -772,7 +772,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 241,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -811,7 +811,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1128,
+        "competitionRanking": 129,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -850,7 +850,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 620,
+        "competitionRanking": 1043,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -865,6 +865,45 @@
           "profileUrl": "/zhenglei001",
           "performanceTier": "CONTRIBUTOR",
           "userId": 32441981,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3529262,
+        "postDate": "2026-09-27T18:56:26.650Z",
+        "rawMarkdown": "Wow, 50 epochs is a lot! you must have used a lot of augmentations? care to share a bit?\n",
+        "content": "<p>Wow, 50 epochs is a lot! you must have used a lot of augmentations? care to share a bit?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Enai",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+         "url": "/enaimaan",
+         "tier": "CONTRIBUTOR",
+         "id": 2630633,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3327,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Enai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+          "url": "/enaimaan",
+          "userName": "enaimaan",
+          "tier": "CONTRIBUTOR",
+          "id": 2630633,
+          "profileUrl": "/enaimaan",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2630633,
           "progressionOptOut": false
          },
          "intro": ""
@@ -885,7 +924,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1128,
+      "competitionRanking": 129,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -919,6 +958,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
+    "competitionRanking": 2164,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -960,7 +1000,7 @@
     "totalUpvotes": 4
    },
    "kernelVersion": 0,
-   "competitionRanking": 1128,
+   "competitionRanking": 129,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -989,7 +1029,7 @@
   "postDate": "2026-09-25T02:51:39.537139800Z",
   "totalVotes": 4,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743148",
-  "totalMessages": 23,
+  "totalMessages": 24,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -1003,13 +1043,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 23,
+  "commentCount": 24,
   "firstForumMessageId": 3527932,
   "id": 743148,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "zhenglei_001",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743148#3528393",
-  "lastCommentPostDate": "2026-09-26T02:49:01.906666700Z",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743148#3529262",
+  "lastCommentPostDate": "2026-09-27T18:56:26.650Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-25T02:51:39.537139800Z",

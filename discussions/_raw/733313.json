@@ -36,7 +36,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 1080,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -74,7 +74,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 3033,
+        "competitionRanking": 3374,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -108,7 +108,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 3033,
+      "competitionRanking": 3374,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -144,7 +144,7 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 1206,
+    "competitionRanking": 1558,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -205,7 +205,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 1080,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -245,7 +245,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 670,
+        "competitionRanking": 1017,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -286,7 +286,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 670,
+        "competitionRanking": 1017,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -325,7 +325,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 670,
+        "competitionRanking": 1017,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -402,7 +402,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 1080,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -443,7 +443,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 1206,
+        "competitionRanking": 1558,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -484,7 +484,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 58,
+        "competitionRanking": 51,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -534,7 +534,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 641,
+        "competitionRanking": 1080,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -580,7 +580,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 641,
+      "competitionRanking": 1080,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -616,7 +616,7 @@
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 641,
+    "competitionRanking": 1080,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -630,6 +630,44 @@
       "profileUrl": "/pcjimmmy",
       "performanceTier": "MASTER",
       "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531218,
+    "postDate": "2026-10-01T13:56:28.303Z",
+    "rawMarkdown": "@javaduke95 Are the official Meta DINOv3 weights (which are closed, with access requiring approval that some participants report having been denied) permitted under the accessibility criteria you described in 733965? Also, are third-party re-uploads of checkpoints derived from DINOv3 acceptable?",
+    "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> Are the official Meta DINOv3 weights (which are closed, with access requiring approval that some participants report having been denied) permitted under the accessibility criteria you described in 733965? Also, are third-party re-uploads of checkpoints derived from DINOv3 acceptable?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rubens Sosa",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/rubenssosa",
+     "tier": "CONTRIBUTOR",
+     "id": 31000103,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4719,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rubens Sosa",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/rubenssosa",
+      "userName": "rubenssosa",
+      "tier": "CONTRIBUTOR",
+      "id": 31000103,
+      "profileUrl": "/rubenssosa",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31000103,
       "progressionOptOut": false
      },
      "intro": ""
@@ -654,7 +692,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1164,
+    "competitionRanking": 1521,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -696,7 +734,7 @@
     "totalUpvotes": 9
    },
    "kernelVersion": 0,
-   "competitionRanking": 670,
+   "competitionRanking": 1017,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -725,7 +763,7 @@
   "postDate": "2026-08-06T12:50:30.527314600Z",
   "totalVotes": 9,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/733313",
-  "totalMessages": 16,
+  "totalMessages": 17,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -739,13 +777,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 16,
+  "commentCount": 17,
   "firstForumMessageId": 3509477,
   "id": 733313,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "phongtintruongg",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733313#3523875",
-  "lastCommentPostDate": "2026-09-13T07:57:14.953333300Z",
+  "lastCommenterName": "Rubens Sosa",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733313#3531218",
+  "lastCommentPostDate": "2026-10-01T13:56:28.303333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-06T12:50:30.527314600Z",

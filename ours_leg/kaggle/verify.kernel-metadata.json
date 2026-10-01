@@ -1,0 +1,18 @@
+{
+  "id": "hosen42/rsna-knee-ours-leg-verify-corpus",
+  "title": "rsna-knee-ours-leg-verify-corpus",
+  "code_file": "verify_corpus_rebuild.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "dreaddevelopment/knee-raptor-corpus/2",
+    "dreaddevelopment/knee-raptor-corpus-ext/1"
+  ],
+  "competition_sources": ["rsna-knee-abnormality-detection"],
+  "kernel_sources": ["hosen42/rsna-knee-ours-leg-train-effv2s/3"],
+  "model_sources": []
+}

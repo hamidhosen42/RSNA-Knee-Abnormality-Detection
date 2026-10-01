@@ -1,0 +1,183 @@
+{
+ "forumTopic": {
+  "authorId": 11894386,
+  "authorThumbnailName": "11894386-kg.png",
+  "authorUserDisplayName": "Michael Egle",
+  "authorUserName": "michaelegle",
+  "comments": [
+   {
+    "id": 3529305,
+    "postDate": "2026-09-27T22:26:03.153Z",
+    "rawMarkdown": "This is difficult to diagnosis. One trick is to infer 1300 train studies in a Kaggle commit notebook and see if that completes successfully because that is more similar to actual Kaggle submit then just commiting the few test examples.\n\nThe two common errors I have seen are NAN values in predictions and malformed DICOM files. So maybe try catching and dealing with both of these errors.",
+    "content": "<p>This is difficult to diagnosis. One trick is to infer 1300 train studies in a Kaggle commit notebook and see if that completes successfully because that is more similar to actual Kaggle submit then just commiting the few test examples.</p>\n<p>The two common errors I have seen are NAN values in predictions and malformed DICOM files. So maybe try catching and dealing with both of these errors.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 100,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529205,
+    "postDate": "2026-09-27T16:20:13.813Z",
+    "rawMarkdown": "Had a few similar issues in the past. Since there is no way to debug using logs when scoring, you will perhaps need to spend a few submissions to debug it. \nWhat helped me: first check what error message you get, is it \"Notebook Threw Exception\", or something else? Then, if you already have a successful submission, check what is actually different in terms of code vs the new failed one, this can help you reduce search space. otherwise, just comment out functional sections of code, and submit, if it works, then the commented out  section is the culprit, if it doesn't then the issue is somewhere else. \n",
+    "content": "<p>Had a few similar issues in the past. Since there is no way to debug using logs when scoring, you will perhaps need to spend a few submissions to debug it. \nWhat helped me: first check what error message you get, is it \"Notebook Threw Exception\", or something else? Then, if you already have a successful submission, check what is actually different in terms of code vs the new failed one, this can help you reduce search space. otherwise, just comment out functional sections of code, and submit, if it works, then the commented out  section is the culprit, if it doesn't then the issue is somewhere else. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3323,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3528957,
+   "postDate": "2026-09-27T01:46:22.500Z",
+   "rawMarkdown": "Newcomer. I've had no trouble with my submission running when I hit save and commit, but the last few times I've tried to submit, it's run for about the same time as it took for my initial notebook to run (if not longer) and then says that there was an unhandled exception in the notebook. Is there a way to see what the issue was?",
+   "content": "<p>Newcomer. I've had no trouble with my submission running when I hit save and commit, but the last few times I've tried to submit, it's run for about the same time as it took for my initial notebook to run (if not longer) and then says that there was an unhandled exception in the notebook. Is there a way to see what the issue was?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Michael Egle",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11894386-kg.png",
+    "url": "/michaelegle",
+    "tier": "CONTRIBUTOR",
+    "id": 11894386,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4357,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Michael Egle",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11894386-kg.png",
+     "url": "/michaelegle",
+     "userName": "michaelegle",
+     "tier": "CONTRIBUTOR",
+     "id": 11894386,
+     "profileUrl": "/michaelegle",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 11894386,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3528957,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743779,
+  "name": "How to find issue with failed submission",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-27T01:46:22.501599400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743779",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Michael Egle",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11894386-kg.png",
+   "url": "/michaelegle",
+   "tier": "CONTRIBUTOR",
+   "id": 11894386,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3528957,
+  "id": 743779,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743779#3529305",
+  "lastCommentPostDate": "2026-09-27T22:26:03.153333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-27T01:46:22.501599400Z",
+  "title": "How to find issue with failed submission",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743779",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Michael Egle",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11894386-kg.png",
+    "url": "/michaelegle",
+    "userName": "michaelegle",
+    "tier": "CONTRIBUTOR",
+    "id": 11894386,
+    "profileUrl": "/michaelegle",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 11894386,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

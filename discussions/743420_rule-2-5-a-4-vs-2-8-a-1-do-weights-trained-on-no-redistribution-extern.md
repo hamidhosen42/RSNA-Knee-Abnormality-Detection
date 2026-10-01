@@ -1,10 +1,10 @@
 # Rule 2.5.a.4 vs 2.8.a.1 — do weights trained on no-redistribution external data have to be published? (yes/no)
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743420
-- **Author:** **Richard_61** (@yiliu15, Contributor) · _topic author_ · 2026-09-26 03:15 UTC · ▲1 · LB rank 26
-- **Topic votes:** 1 · **Comments/replies:** 0 · **Pinned:** no
-- **Last comment:** 2026-09-26 03:15 UTC by Richard_61
-- **Cloned:** 2026-09-26 16:24 UTC (topic id 743420, raw JSON `_raw/743420.json`)
+- **Author:** **Richard_61** (@yiliu15, Contributor) · _topic author_ · 2026-09-26 03:15 UTC · ▲3 · LB rank 40
+- **Topic votes:** 3 · **Comments/replies:** 1 · **Pinned:** no
+- **Last comment:** 2026-09-29 02:15 UTC by Richard_61
+- **Cloned:** 2026-10-01 19:24 UTC (topic id 743420, raw JSON `_raw/743420.json`)
 
 ---
 
@@ -23,6 +23,10 @@ A yes/no on each would settle this for everyone before the deadline. Thank you.
 
 ---
 
-## Comments (0, threaded, oldest first)
+## Comments (1, threaded, oldest first)
 
-_No comments._
+### [1] Richard_61
+
+**Richard_61** (@yiliu15, Contributor) · _topic author_ · 2026-09-29 02:15 UTC · LB rank 40
+
+@javaduke95 Gentle follow-up on Q1 and Q2 above. Final selections are due by Oct 22 and depend on the answer, so a brief yes/no on each would let every team using no-redistribution external data (KneeMRI, MRNet, fastMRI) choose its submissions correctly. Thank you!

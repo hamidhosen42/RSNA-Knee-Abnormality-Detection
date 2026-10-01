@@ -21,11 +21,11 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": -4,
+     "totalVotes": -7,
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 278,
+    "competitionRanking": 412,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -70,7 +70,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1897,
+      "competitionRanking": 2222,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -106,7 +106,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 150,
+    "competitionRanking": 220,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -120,6 +120,44 @@
       "profileUrl": "/farshidamira",
       "performanceTier": "CONTRIBUTOR",
       "userId": 31234056,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531007,
+    "postDate": "2026-10-01T06:42:17.653Z",
+    "rawMarkdown": "I just participated this comp and found this discussion really helpful to someone like me who just participated lately...\nhuge thanks! ",
+    "content": "<p>I just participated this comp and found this discussion really helpful to someone like me who just participated lately…\nhuge thanks! </p>",
+    "parent": {},
+    "author": {
+     "displayName": "junlee789",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25623169-kg.jpg?t=2026-07-08-04-39-01",
+     "url": "/pablolee789",
+     "tier": "EXPERT",
+     "id": 25623169,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2403,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "junlee789",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25623169-kg.jpg?t=2026-07-08-04-39-01",
+      "url": "/pablolee789",
+      "userName": "pablolee789",
+      "tier": "EXPERT",
+      "id": 25623169,
+      "profileUrl": "/pablolee789",
+      "performanceTier": "EXPERT",
+      "userId": 25623169,
       "progressionOptOut": false
      },
      "intro": ""
@@ -147,10 +185,11 @@
       },
       "authorType": "COMMENT",
       "votes": {
+       "totalVotes": -4,
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 278,
+      "competitionRanking": 412,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -185,7 +224,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 92,
+    "competitionRanking": 101,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -260,7 +299,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 3000,
+    "competitionRanking": 3340,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -298,7 +337,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2841,
+    "competitionRanking": 3015,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -359,12 +398,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 55,
+    "totalVotes": 56,
     "canUpvote": true,
-    "totalUpvotes": 55
+    "totalUpvotes": 56
    },
    "kernelVersion": 0,
-   "competitionRanking": 1897,
+   "competitionRanking": 2222,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "reactions": [
@@ -377,11 +416,21 @@
       "osakanateishoku",
       "uomml23msc239362l",
       "promiseekpo",
+      "pablolee789",
       "lixin73",
       "dharaawasthi",
       "tgeliot"
      ],
-     "userCount": 9
+     "userCount": 10
+    },
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "stevenleehans",
+      "gatsukeichida",
+      "pablolee789"
+     ],
+     "userCount": 3
     }
    ],
    "teamUpInfo": {
@@ -408,9 +457,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-09T05:54:36.206763100Z",
-  "totalVotes": 55,
+  "totalVotes": 56,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/733932",
-  "totalMessages": 9,
+  "totalMessages": 10,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -424,19 +473,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 9,
+  "commentCount": 10,
   "firstForumMessageId": 3510628,
   "id": 733932,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Lavin Wins",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932#3528597",
-  "lastCommentPostDate": "2026-09-26T08:50:03.813333300Z",
+  "lastCommenterName": "junlee789",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932#3531007",
+  "lastCommentPostDate": "2026-10-01T06:42:17.653333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-09T05:54:36.206763100Z",
   "title": "\"Not addressed\" is a label too — what we learned reading 4,407 knee reports with an LLM",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932",
-  "votes": 55,
+  "votes": 57,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "stevenleehans",

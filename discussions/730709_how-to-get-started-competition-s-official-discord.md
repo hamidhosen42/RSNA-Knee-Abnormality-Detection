@@ -2,9 +2,9 @@
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/730709
 - **Author:** **María Cruz** (@macruzbar, Staff) · 2026-07-30 03:29 UTC · ▲6
-- **Topic votes:** 6 · **Comments/replies:** 1 · **Pinned:** yes
-- **Last comment:** 2026-08-06 17:00 UTC by Ali Ahmad
-- **Cloned:** 2026-09-26 16:24 UTC (topic id 730709, raw JSON `_raw/730709.json`)
+- **Topic votes:** 6 · **Comments/replies:** 2 · **Pinned:** yes
+- **Last comment:** 2026-10-01 14:11 UTC by Rubens Sosa
+- **Cloned:** 2026-10-01 19:24 UTC (topic id 730709, raw JSON `_raw/730709.json`)
 
 ---
 
@@ -35,10 +35,16 @@ Happy modeling!
 
 ---
 
-## Comments (1, threaded, oldest first)
+## Comments (2, threaded, oldest first)
 
 ### [1] Ali Ahmad
 
-**Ali Ahmad** (@aliahmadmphil, Contributor) · 2026-08-06 17:00 UTC · LB rank 1646
+**Ali Ahmad** (@aliahmadmphil, Contributor) · 2026-08-06 17:00 UTC · LB rank 1968
 
 Thank you for the helpful introduction and resources! I'm excited to join this competition and learn from the community. The multimodal nature of this challenge looks both interesting and challenging. Looking forward to experimenting with different approaches, following the discussions, and improving my skills throughout the competition. Best of luck to everyone participating!
+
+### [2] Rubens Sosa
+
+**Rubens Sosa** (@rubenssosa, Contributor) · 2026-10-01 14:11 UTC · LB rank 4693
+
+Thanks @macruzbar!!!!

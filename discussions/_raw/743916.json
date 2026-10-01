@@ -1,0 +1,651 @@
+{
+ "forumTopic": {
+  "authorId": 2832287,
+  "authorThumbnailName": "2832287-kg.jpeg?t=2025-02-13-07-47-08",
+  "authorUserDisplayName": "Quan Vu",
+  "authorUserName": "quan0095",
+  "comments": [
+   {
+    "id": 3530518,
+    "postDate": "2026-09-30T10:38:28.823Z",
+    "rawMarkdown": "On a personal note, I’ve tried participating in a few competitions where I had absolutely no domain knowledge, and the results weren’t very promising. Even with the help of the AI agent, it was still highly challenging to compete, mainly because I lacked a strong enough starting point to build upon. I couldn't provide high-quality guidance to help the agent iterate further, which left me mostly stagnating. Moreover, letting the agent search for solutions fully autonomously raises concerns about budget control and GPU resource constraints. The key takeaway is that humans still need to learn how to effectively collaborate with agents.",
+    "content": "<p>On a personal note, I’ve tried participating in a few competitions where I had absolutely no domain knowledge, and the results weren’t very promising. Even with the help of the AI agent, it was still highly challenging to compete, mainly because I lacked a strong enough starting point to build upon. I couldn't provide high-quality guidance to help the agent iterate further, which left me mostly stagnating. Moreover, letting the agent search for solutions fully autonomously raises concerns about budget control and GPU resource constraints. The key takeaway is that humans still need to learn how to effectively collaborate with agents.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Quan Vu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+     "url": "/quan0095",
+     "tier": "MASTER",
+     "id": 2832287,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 14,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Quan Vu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+      "url": "/quan0095",
+      "userName": "quan0095",
+      "tier": "MASTER",
+      "id": 2832287,
+      "profileUrl": "/quan0095",
+      "performanceTier": "MASTER",
+      "userId": 2832287,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529303,
+    "postDate": "2026-09-27T22:22:59.270Z",
+    "rawMarkdown": "I would suspect that currently \"minimal human in the loop\" would do better. But every months, agents are working better and better without human guidance.\n\nI think there is some overlap between the expressions \"fully autonomous\" and \"minimal human in the loop\". (i.e. some people call the second the first and vice versa). I wonder how many Kagglers are doing \"fully autonomous\" which means we give our agent one prompt \"Here is the URL of a Kaggle competition, please join and compete\". And then humans offer no additional guidance.\n\nI have been using \"minimal human in the loop\". I give an auto run agent a competition URL and say \"join and compete\" but I also ask the agent to display dashboards and write mini news briefs regularly explaining what it is doing and what it did do. I check in about once a day. And offer some guidance. So for the most part, the agents are working autonomously, but I do steer them here and there.",
+    "content": "<p>I would suspect that currently \"minimal human in the loop\" would do better. But every months, agents are working better and better without human guidance.</p>\n<p>I think there is some overlap between the expressions \"fully autonomous\" and \"minimal human in the loop\". (i.e. some people call the second the first and vice versa). I wonder how many Kagglers are doing \"fully autonomous\" which means we give our agent one prompt \"Here is the URL of a Kaggle competition, please join and compete\". And then humans offer no additional guidance.</p>\n<p>I have been using \"minimal human in the loop\". I give an auto run agent a competition URL and say \"join and compete\" but I also ask the agent to display dashboards and write mini news briefs regularly explaining what it is doing and what it did do. I check in about once a day. And offer some guidance. So for the most part, the agents are working autonomously, but I do steer them here and there.</p>",
+    "replies": [
+     {
+      "id": 3529311,
+      "postDate": "2026-09-27T23:13:05.647Z",
+      "rawMarkdown": "I don't think it will be a 'minimal human-in-the-loop' scenario. When GPU resources for model training and Agent tokens are strictly limited—and the type of agent I'm using is identical to every other competitor's—the only lever left to pull is human effort. As a result, humans will inevitably spend more time trying to create a competitive edge 🫠",
+      "content": "<p>I don't think it will be a 'minimal human-in-the-loop' scenario. When GPU resources for model training and Agent tokens are strictly limited—and the type of agent I'm using is identical to every other competitor's—the only lever left to pull is human effort. As a result, humans will inevitably spend more time trying to create a competitive edge 🫠</p>",
+      "replies": [
+       {
+        "id": 3529325,
+        "postDate": "2026-09-28T00:09:56.447Z",
+        "rawMarkdown": "Good point for now. However as agents get smarter and smarter (i.e. one million times smarter than humans), collaboration may be like a kindergardener (i.e. 5 year old) teaming with an adult (where the adult is agent is kindergardener is human) 😀 We are not there yet, but this day is coming.",
+        "content": "<p>Good point for now. However as agents get smarter and smarter (i.e. one million times smarter than humans), collaboration may be like a kindergardener (i.e. 5 year old) teaming with an adult (where the adult is agent is kindergardener is human) 😀 We are not there yet, but this day is coming.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Chris Deotte",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+         "url": "/cdeotte",
+         "tier": "GRANDMASTER",
+         "id": 1723677,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Chris Deotte",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+          "url": "/cdeotte",
+          "userName": "cdeotte",
+          "tier": "GRANDMASTER",
+          "id": 1723677,
+          "profileUrl": "/cdeotte",
+          "performanceTier": "GRANDMASTER",
+          "userId": 1723677,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3529331,
+        "postDate": "2026-09-28T00:17:03.870Z",
+        "rawMarkdown": "What you're describing is like ensembling an underfitted model with a strong model—the underfitted model will just drag the strong one down 😂",
+        "content": "<p>What you're describing is like ensembling an underfitted model with a strong model—the underfitted model will just drag the strong one down 😂</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Quan Vu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+         "url": "/quan0095",
+         "tier": "MASTER",
+         "id": 2832287,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 14,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Quan Vu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+          "url": "/quan0095",
+          "userName": "quan0095",
+          "tier": "MASTER",
+          "id": 2832287,
+          "profileUrl": "/quan0095",
+          "performanceTier": "MASTER",
+          "userId": 2832287,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Quan Vu",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+       "url": "/quan0095",
+       "tier": "MASTER",
+       "id": 2832287,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 14,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "KAGGLE",
+        "featuredUserNames": [
+         "enaimaan"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Quan Vu",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+        "url": "/quan0095",
+        "userName": "quan0095",
+        "tier": "MASTER",
+        "id": 2832287,
+        "profileUrl": "/quan0095",
+        "performanceTier": "MASTER",
+        "userId": 2832287,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3529443,
+      "postDate": "2026-09-28T09:24:57.523Z",
+      "rawMarkdown": "I have joined this competition willing to try a \"no code\" approach, I did not write a single line myself. It feels great to be able to test a lot of ideas just by discussing them, but it is still a lot of work and human brain power for me (which is keeping things fun).\n\nBefore we reach the kindergardener mode, which is essentially a Kaggle artefact since a very simple prompt says it all : \"join and win the competition\" (even then, if every one has access to the same model/compute this will become a baseline, not a winning solution), I am wondering what type of people benefit the most from LLM agents?\n\nIs it domain experts which can join without much knowledge on modelling? Or on the contrary, expert in AI which gain understanding of the specificity of the task?\n\nWhat are the best qualities to have according to you to maximize human-machine interaction? Curiosity? Methodology (context, harness, prompting) ? Coding skills ? Critical thinking ? Does it benefits to organized people or messy geniuses ?\n\nI would really be curious to know other people thoughts on this. For example @cdeotte, as a recognized world level grandmaster, do you feel like your are slowly losing your edge or on the contrary you feel like you are on a great spot to keep winning? What do you do to stay competitive ?",
+      "content": "<p>I have joined this competition willing to try a \"no code\" approach, I did not write a single line myself. It feels great to be able to test a lot of ideas just by discussing them, but it is still a lot of work and human brain power for me (which is keeping things fun).</p>\n<p>Before we reach the kindergardener mode, which is essentially a Kaggle artefact since a very simple prompt says it all : \"join and win the competition\" (even then, if every one has access to the same model/compute this will become a baseline, not a winning solution), I am wondering what type of people benefit the most from LLM agents?</p>\n<p>Is it domain experts which can join without much knowledge on modelling? Or on the contrary, expert in AI which gain understanding of the specificity of the task?</p>\n<p>What are the best qualities to have according to you to maximize human-machine interaction? Curiosity? Methodology (context, harness, prompting) ? Coding skills ? Critical thinking ? Does it benefits to organized people or messy geniuses ?</p>\n<p>I would really be curious to know other people thoughts on this. For example <a href=\"/cdeotte\" target=\"_blank\">@cdeotte</a>, as a recognized world level grandmaster, do you feel like your are slowly losing your edge or on the contrary you feel like you are on a great spot to keep winning? What do you do to stay competitive ?</p>",
+      "replies": [
+       {
+        "id": 3529506,
+        "postDate": "2026-09-28T11:59:56.217Z",
+        "rawMarkdown": "I’m in the same boat as you. I went with a 'no-code' approach but had to discuss things so extensively with the agent that it eventually claimed there were no more feasible paths left to try. Even when retrieving external research papers, the bottleneck is that those methods still need to be verified—which in turn consumes valuable GPU resources. While domain experts can now build models without knowing how to code, the flip side is also true: as a software developer, I can now easily grasp domain-specific knowledge without any formal training.",
+        "content": "<p>I’m in the same boat as you. I went with a 'no-code' approach but had to discuss things so extensively with the agent that it eventually claimed there were no more feasible paths left to try. Even when retrieving external research papers, the bottleneck is that those methods still need to be verified—which in turn consumes valuable GPU resources. While domain experts can now build models without knowing how to code, the flip side is also true: as a software developer, I can now easily grasp domain-specific knowledge without any formal training.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Quan Vu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+         "url": "/quan0095",
+         "tier": "MASTER",
+         "id": 2832287,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 14,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Quan Vu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+          "url": "/quan0095",
+          "userName": "quan0095",
+          "tier": "MASTER",
+          "id": 2832287,
+          "profileUrl": "/quan0095",
+          "performanceTier": "MASTER",
+          "userId": 2832287,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3529542,
+        "postDate": "2026-09-28T13:16:04.300Z",
+        "rawMarkdown": "Additionally, I’ve noticed an interesting trend: while the number of competition participants is skyrocketing, the volume of discussions remains very low, especially technical ones. It might be that LLM agents are now so capable of answering technical questions that people no longer feel the need to post on the forums 😄",
+        "content": "<p>Additionally, I’ve noticed an interesting trend: while the number of competition participants is skyrocketing, the volume of discussions remains very low, especially technical ones. It might be that LLM agents are now so capable of answering technical questions that people no longer feel the need to post on the forums 😄</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Quan Vu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+         "url": "/quan0095",
+         "tier": "MASTER",
+         "id": 2832287,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 5
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 14,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Quan Vu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+          "url": "/quan0095",
+          "userName": "quan0095",
+          "tier": "MASTER",
+          "id": 2832287,
+          "profileUrl": "/quan0095",
+          "performanceTier": "MASTER",
+          "userId": 2832287,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3529669,
+        "postDate": "2026-09-28T18:16:10.217Z",
+        "rawMarkdown": "There's lot more AI generated responses / posts on the forums - even though there are no medals.  ",
+        "content": "<p>There's lot more AI generated responses / posts on the forums - even though there are no medals.  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "RB",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/183046-kg.png",
+         "url": "/rashmibanthia",
+         "tier": "MASTER",
+         "id": 183046,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 131,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "RB",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/183046-kg.png",
+          "url": "/rashmibanthia",
+          "userName": "rashmibanthia",
+          "tier": "MASTER",
+          "id": 183046,
+          "profileUrl": "/rashmibanthia",
+          "performanceTier": "MASTER",
+          "userId": 183046,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3529864,
+        "postDate": "2026-09-29T04:52:49.070Z",
+        "rawMarkdown": "```\nAdditionally, I’ve noticed an interesting trend: while the number of competition participants is skyrocketing, the volume of discussions remains very low, especially technical ones\n```\n\nPreviously computer vision competition is like 1000+ teams at most. I'm really surprised it's already 4500 teams here and almost 4000 teams in biohub. And it's really confused me about why the discussions are still low too. My expectation for now is people can quickly share what they find by html or md file and knowing what the idea is without spending lots of time on it.  However, it turns out that this place becomes the study room in \"cram school\" or \"味集中カウンター\" in ICHIRAN.  I don't think that's a good trend for the community.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4310004%2F4b9f2c63fee4bc31e5a1ec1e84c55fe3%2Fimages.jpg?generation=1790657763530614&alt=media)",
+        "content": "<pre><code>Additionally, I’ve noticed an interesting trend: while the number of competition participants is skyrocketing, the volume of discussions remains very low, especially technical ones\n</code></pre>\n<p>Previously computer vision competition is like 1000+ teams at most. I'm really surprised it's already 4500 teams here and almost 4000 teams in biohub. And it's really confused me about why the discussions are still low too. My expectation for now is people can quickly share what they find by html or md file and knowing what the idea is without spending lots of time on it.  However, it turns out that this place becomes the study room in \"cram school\" or \"味集中カウンター\" in ICHIRAN.  I don't think that's a good trend for the community.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4310004%2F4b9f2c63fee4bc31e5a1ec1e84c55fe3%2Fimages.jpg?generation=1790657763530614&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tom",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2025-12-30-09-11-55",
+         "url": "/tom99763",
+         "tier": "MASTER",
+         "id": 4310004,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 6,
+         "canUpvote": true,
+         "totalUpvotes": 6
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1315,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "ren4yu",
+           "quan0095",
+           "prgckwb"
+          ],
+          "userCount": 3
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "tingyi",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+          "url": "/chengtingyi",
+          "userName": "chengtingyi",
+          "tier": "CONTRIBUTOR",
+          "id": 8788200,
+          "profileUrl": "/chengtingyi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 8788200,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3530025,
+        "postDate": "2026-09-29T11:53:05.290Z",
+        "rawMarkdown": "I think there are a few reasons. First, frontier models have leveled out skill across the community, and the gaps on the leaderboard are now very small. Second, LLMs are extremely good at reading and absorbing information: any finding posted on the forum gets picked up by almost every team right away. When the margins are only a few thousandths, sharing during a competition basically means giving away your own edge. Players still have to balance self-interest against the community's interest, but the scale has clearly tipped. Third, technical discussion is shifting from the forum to direct conversations with AI agents. These days, the most common question on the forum is \"what does the host want?\", which is something an agent can't answer. So I think the trend will be to share findings after a competition ends, rather than while it's still running.",
+        "content": "<p>I think there are a few reasons. First, frontier models have leveled out skill across the community, and the gaps on the leaderboard are now very small. Second, LLMs are extremely good at reading and absorbing information: any finding posted on the forum gets picked up by almost every team right away. When the margins are only a few thousandths, sharing during a competition basically means giving away your own edge. Players still have to balance self-interest against the community's interest, but the scale has clearly tipped. Third, technical discussion is shifting from the forum to direct conversations with AI agents. These days, the most common question on the forum is \"what does the host want?\", which is something an agent can't answer. So I think the trend will be to share findings after a competition ends, rather than while it's still running.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Quan Vu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+         "url": "/quan0095",
+         "tier": "MASTER",
+         "id": 2832287,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 14,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Quan Vu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+          "url": "/quan0095",
+          "userName": "quan0095",
+          "tier": "MASTER",
+          "id": 2832287,
+          "profileUrl": "/quan0095",
+          "performanceTier": "MASTER",
+          "userId": 2832287,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3530028,
+        "postDate": "2026-09-29T12:00:11.607Z",
+        "rawMarkdown": "There's so much of AI generated text and solutions after the competition ends - I used to read lot more solutions (before they were written by AI) and now I often find myself either asking AI to explain solutions or sadly simply skip it.  ",
+        "content": "<p>There's so much of AI generated text and solutions after the competition ends - I used to read lot more solutions (before they were written by AI) and now I often find myself either asking AI to explain solutions or sadly simply skip it.  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "RB",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/183046-kg.png",
+         "url": "/rashmibanthia",
+         "tier": "MASTER",
+         "id": 183046,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 131,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "quan0095",
+           "tuckerarrants"
+          ],
+          "userCount": 2
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "RB",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/183046-kg.png",
+          "url": "/rashmibanthia",
+          "userName": "rashmibanthia",
+          "tier": "MASTER",
+          "id": 183046,
+          "profileUrl": "/rashmibanthia",
+          "performanceTier": "MASTER",
+          "userId": 183046,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Optimo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+       "url": "/optimo",
+       "tier": "MASTER",
+       "id": 190923,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 57,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Optimo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+        "url": "/optimo",
+        "userName": "optimo",
+        "tier": "MASTER",
+        "id": 190923,
+        "profileUrl": "/optimo",
+        "performanceTier": "MASTER",
+        "userId": 190923,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 100,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530259,
+    "postDate": "2026-09-29T20:46:03.553Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1
+    },
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3529247,
+   "postDate": "2026-09-27T18:26:55.777Z",
+   "rawMarkdown": "In June, Meta's AIRA placed 8th / 4,185 in NVIDIA's Nemotron challenge — reportedly the first Kaggle\ngold won by an autonomous research system, graded on the same private LB as everyone else\n([thread](https://threadreaderapp.com/thread/2096271545589190927.html)). Systems like ScientistTwo\n([site](https://scientist-two.github.io/)) and KAPSO now claim expert-level results end-to-end.\nI'm really curious to see whether a human-agent collaboration or fully autonomous research has more of an advantage, if allocated the same amount of GPU resources 😄\n",
+   "content": "<p>In June, Meta's AIRA placed 8th / 4,185 in NVIDIA's Nemotron challenge — reportedly the first Kaggle\ngold won by an autonomous research system, graded on the same private LB as everyone else\n(<a href=\"https://threadreaderapp.com/thread/2096271545589190927.html\" target=\"_blank\">thread</a>). Systems like ScientistTwo\n(<a href=\"https://scientist-two.github.io/\" target=\"_blank\">site</a>) and KAPSO now claim expert-level results end-to-end.\nI'm really curious to see whether a human-agent collaboration or fully autonomous research has more of an advantage, if allocated the same amount of GPU resources 😄</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Quan Vu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+    "url": "/quan0095",
+    "tier": "MASTER",
+    "id": 2832287,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 6,
+    "canUpvote": true,
+    "totalUpvotes": 6
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 14,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Quan Vu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+     "url": "/quan0095",
+     "userName": "quan0095",
+     "tier": "MASTER",
+     "id": 2832287,
+     "profileUrl": "/quan0095",
+     "performanceTier": "MASTER",
+     "userId": 2832287,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3529247,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 743916,
+  "name": "Autonomous Researchers on the Kaggle Leaderboard",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-27T18:26:55.777229700Z",
+  "totalVotes": 6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/743916",
+  "totalMessages": 13,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Quan Vu",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+   "url": "/quan0095",
+   "tier": "MASTER",
+   "id": 2832287,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 13,
+  "firstForumMessageId": 3529247,
+  "id": 743916,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Quan Vu",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743916#3530518",
+  "lastCommentPostDate": "2026-09-30T10:38:28.823333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-27T18:26:55.777229700Z",
+  "title": "Autonomous Researchers on the Kaggle Leaderboard",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743916",
+  "votes": 6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Quan Vu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+    "url": "/quan0095",
+    "userName": "quan0095",
+    "tier": "MASTER",
+    "id": 2832287,
+    "profileUrl": "/quan0095",
+    "performanceTier": "MASTER",
+    "userId": 2832287,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

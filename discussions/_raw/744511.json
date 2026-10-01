@@ -1,0 +1,381 @@
+{
+ "forumTopic": {
+  "authorId": 26421714,
+  "authorThumbnailName": "26421714-kg.jpg?t=2026-03-21-03-20-15",
+  "authorUserDisplayName": "SpeedSci",
+  "authorUserName": "caoyupeng",
+  "comments": [
+   {
+    "id": 3530467,
+    "postDate": "2026-09-30T08:17:58.243Z",
+    "rawMarkdown": "Bro,I have a CoAtNet singel model at 0.936，and I have 8 gpus，my score is a little bit low，I have some experiments now，I think I can get to about 0.938 singel CoAtNet model。",
+    "content": "<p>Bro,I have a CoAtNet singel model at 0.936，and I have 8 gpus，my score is a little bit low，I have some experiments now，I think I can get to about 0.938 singel CoAtNet model。</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Renmq",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+     "url": "/renmingqian",
+     "tier": "EXPERT",
+     "id": 31041949,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1648,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Renmq",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+      "url": "/renmingqian",
+      "userName": "renmingqian",
+      "tier": "EXPERT",
+      "id": 31041949,
+      "profileUrl": "/renmingqian",
+      "performanceTier": "EXPERT",
+      "userId": 31041949,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530462,
+    "postDate": "2026-09-30T08:08:05.420Z",
+    "rawMarkdown": "I haven't started this competition, but can I join? I have a lot of spare time in the next month.",
+    "content": "<p>I haven't started this competition, but can I join? I have a lot of spare time in the next month.</p>",
+    "replies": [
+     {
+      "id": 3530487,
+      "postDate": "2026-09-30T08:55:25.320Z",
+      "rawMarkdown": "Sorry man,you're strong and I trust you, but right now we're looking to merge with teams that already have results on the board.",
+      "content": "<p>Sorry man,you're strong and I trust you, but right now we're looking to merge with teams that already have results on the board.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 128,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Myo Min Htet(wnp)🇲🇲",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+        "url": "/myominhtet",
+        "userName": "myominhtet",
+        "tier": "EXPERT",
+        "id": 4600631,
+        "profileUrl": "/myominhtet",
+        "performanceTier": "EXPERT",
+        "userId": 4600631,
+        "progressionOptOut": false
+       },
+       "intro": "Need some who can support GPU, "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "madmax0404",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+     "url": "/max6296",
+     "tier": "EXPERT",
+     "id": 3273392,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "madmax0404",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+      "url": "/max6296",
+      "userName": "max6296",
+      "tier": "EXPERT",
+      "id": 3273392,
+      "profileUrl": "/max6296",
+      "performanceTier": "EXPERT",
+      "userId": 3273392,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530655,
+    "postDate": "2026-09-30T16:39:39.547Z",
+    "rawMarkdown": "Hey! This is the kind of clean, scratch-built progress that deserves a gold. We love that you avoided the public notebook trap and built a robust, diverse stack (Enet + ResNet + DINOv2 + CoAtNet is a killer foundation).\n\nWe are on the exact same trajectory, sitting at 0.943 ceiling (no public notebook!!!), and we’ve been tackling heavy test-time augmentation / advanced pseudo-labeling / custom post-processing.\n\nMathematically, your architecture mix combined with our stack creates a massive diversity boost—which is practically a cheat code for breaking past 0.950 and locking in gold.\n\nLet’s not waste time competing instead we should connect and build better model fit for the competition...",
+    "content": "<p>Hey! This is the kind of clean, scratch-built progress that deserves a gold. We love that you avoided the public notebook trap and built a robust, diverse stack (Enet + ResNet + DINOv2 + CoAtNet is a killer foundation).</p>\n<p>We are on the exact same trajectory, sitting at 0.943 ceiling (no public notebook!!!), and we’ve been tackling heavy test-time augmentation / advanced pseudo-labeling / custom post-processing.</p>\n<p>Mathematically, your architecture mix combined with our stack creates a massive diversity boost—which is practically a cheat code for breaking past 0.950 and locking in gold.</p>\n<p>Let’s not waste time competing instead we should connect and build better model fit for the competition…</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -4,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 406,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3531186,
+    "postDate": "2026-10-01T13:00:33.703Z",
+    "rawMarkdown": "hi, solo here. i have a 5 fold coatnet at 0.943, another coatnet variant at 0.940, convnext at 0.937 and resnet at 0.933, plus a radimagenet model . blend is at 0.948, interested to talk ?",
+    "content": "<p>hi, solo here. i have a 5 fold coatnet at 0.943, another coatnet variant at 0.940, convnext at 0.937 and resnet at 0.933, plus a radimagenet model . blend is at 0.948, interested to talk ?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "ringbearer",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mehmetbarankrat",
+     "tier": "CONTRIBUTOR",
+     "id": 26695464,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 108,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "ringbearer",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mehmetbarankrat",
+      "userName": "mehmetbarankrat",
+      "tier": "CONTRIBUTOR",
+      "id": 26695464,
+      "profileUrl": "/mehmetbarankrat",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 26695464,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530469,
+    "postDate": "2026-09-30T08:20:51.133Z",
+    "rawMarkdown": "Hi, I'd be interested. I'm solo at 0.942.\n\nQuick summary of what I have: my best own model is a 5-fold ResNet50 (RadImageNet init, 2.5D at 288px) that scores 0.924 by itself, trained only on my own LLM report labels. I also have a CoAtNet at 0.935 and a ConvNeXt-T at 0.930 from earlier label experiments, and a bunch of other trained variants I never bothered to submit.\n\nTo be honest my models never gave the public stack anything, but they were trained on different labels than yours so they might blend better with your ensemble than with the public stuff. \n\nFor the compute I have a 5070 locally and I barely use my kaggle GPU quota, so I can help with training.\n\nIf you're ok with that, ping me and we can move to email/discord.",
+    "content": "<p>Hi, I'd be interested. I'm solo at 0.942.</p>\n<p>Quick summary of what I have: my best own model is a 5-fold ResNet50 (RadImageNet init, 2.5D at 288px) that scores 0.924 by itself, trained only on my own LLM report labels. I also have a CoAtNet at 0.935 and a ConvNeXt-T at 0.930 from earlier label experiments, and a bunch of other trained variants I never bothered to submit.</p>\n<p>To be honest my models never gave the public stack anything, but they were trained on different labels than yours so they might blend better with your ensemble than with the public stuff. </p>\n<p>For the compute I have a 5070 locally and I barely use my kaggle GPU quota, so I can help with training.</p>\n<p>If you're ok with that, ping me and we can move to email/discord.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "KalyanG17",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35996489-kg.png?t=2026-08-14-19-56-40",
+     "url": "/kalyang17",
+     "tier": "CONTRIBUTOR",
+     "id": 35996489,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 999,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "KalyanG17",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35996489-kg.png?t=2026-08-14-19-56-40",
+      "url": "/kalyang17",
+      "userName": "kalyang17",
+      "tier": "CONTRIBUTOR",
+      "id": 35996489,
+      "profileUrl": "/kalyang17",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35996489,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3530395,
+   "postDate": "2026-09-30T05:13:17.297Z",
+   "rawMarkdown": "We have a 5-fold Enet at 0.940, a 5-fold ResNet at 0.940, and a 5-fold DINOv2 at 0.931. We also used a public single-model CoAtNet at 0.928. By ensembling them, we reached 0.947, without using any public notebook models.\n\nWe still have some experiments training, and our team's current score ceiling is around 0.948–0.950.\n\nWe've done a lot of work on model optimization, model ensembling, and labels, but we're stuck. If your goal is a gold medal and you think our teams can help each other, please comment below.",
+   "content": "<p>We have a 5-fold Enet at 0.940, a 5-fold ResNet at 0.940, and a 5-fold DINOv2 at 0.931. We also used a public single-model CoAtNet at 0.928. By ensembling them, we reached 0.947, without using any public notebook models.</p>\n<p>We still have some experiments training, and our team's current score ceiling is around 0.948–0.950.</p>\n<p>We've done a lot of work on model optimization, model ensembling, and labels, but we're stuck. If your goal is a gold medal and you think our teams can help each other, please comment below.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "SpeedSci",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+    "url": "/caoyupeng",
+    "tier": "EXPERT",
+    "id": 26421714,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 128,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "kingkong153",
+      "caoyupeng",
+      "dreaddevelopment"
+     ],
+     "userCount": 3
+    },
+    {
+     "emoji": "YAY",
+     "featuredUserNames": [
+      "caoyupeng"
+     ],
+     "userCount": 1
+    },
+    {
+     "emoji": "SURPRISE",
+     "featuredUserNames": [
+      "kalyang17"
+     ],
+     "userCount": 1
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Myo Min Htet(wnp)🇲🇲",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+     "url": "/myominhtet",
+     "userName": "myominhtet",
+     "tier": "EXPERT",
+     "id": 4600631,
+     "profileUrl": "/myominhtet",
+     "performanceTier": "EXPERT",
+     "userId": 4600631,
+     "progressionOptOut": false
+    },
+    "intro": "Need some who can support GPU, "
+   }
+  },
+  "firstMessageId": 3530395,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744511,
+  "name": "Looking for teammates—open to merging or collaborating.",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-30T05:13:17.296313700Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744511",
+  "totalMessages": 6,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "SpeedSci",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+   "url": "/caoyupeng",
+   "tier": "EXPERT",
+   "id": 26421714,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 6,
+  "firstForumMessageId": 3530395,
+  "id": 744511,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "ringbearer",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744511#3531186",
+  "lastCommentPostDate": "2026-10-01T13:00:33.703333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-30T05:13:17.296313700Z",
+  "title": "Looking for teammates—open to merging or collaborating.",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744511",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Myo Min Htet(wnp)🇲🇲",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+    "url": "/myominhtet",
+    "userName": "myominhtet",
+    "tier": "EXPERT",
+    "id": 4600631,
+    "profileUrl": "/myominhtet",
+    "performanceTier": "EXPERT",
+    "userId": 4600631,
+    "progressionOptOut": false
+   },
+   "intro": "Need some who can support GPU, "
+  }
+ }
+}

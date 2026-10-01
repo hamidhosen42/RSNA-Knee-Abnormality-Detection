@@ -2,9 +2,9 @@
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743534
 - **Author:** **Yogesh Krishna** (@yogeshkrishna1709, Contributor) · _topic author_ · 2026-09-26 06:50 UTC
-- **Topic votes:** 0 · **Comments/replies:** 2 · **Pinned:** no
-- **Last comment:** 2026-09-26 09:32 UTC by Yogesh Krishna
-- **Cloned:** 2026-09-26 16:24 UTC (topic id 743534, raw JSON `_raw/743534.json`)
+- **Topic votes:** 0 · **Comments/replies:** 3 · **Pinned:** no
+- **Last comment:** 2026-09-28 16:25 UTC
+- **Cloned:** 2026-10-01 19:24 UTC (topic id 743534, raw JSON `_raw/743534.json`)
 
 ---
 
@@ -14,11 +14,11 @@ Also does 1 study mean a single MRI only or multiple MRIs? (Ofcourse, represente
 
 ---
 
-## Comments (2, threaded, oldest first)
+## Comments (3, threaded, oldest first)
 
 ### [1] Wisdom Aduah
 
-**Wisdom Aduah** (@anaphase21, Contributor) · 2026-09-26 08:42 UTC · ▲2 · LB rank 2998
+**Wisdom Aduah** (@anaphase21, Contributor) · 2026-09-26 08:42 UTC · ▲2 · LB rank 3347
 
 I will offer my layman understanding of this. All the series within a study represents a single person. So why multiple series? Well, each series tries to provide different evidence, or makes it easier to identify different abnormalities.
 
@@ -35,3 +35,9 @@ In order to make a judgment about a knee abnormality, the reviewer will need to 
 **Yogesh Krishna** (@yogeshkrishna1709, Contributor) · _topic author_ · 2026-09-26 09:32 UTC
 
 Thanks man great explaination
+
+### [2] (unknown)
+
+**(unknown)** · 2026-09-28 16:25 UTC
+
+_(no content — deleted or empty)_

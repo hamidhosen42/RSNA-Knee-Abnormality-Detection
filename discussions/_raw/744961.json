@@ -1,0 +1,95 @@
+{
+ "forumTopic": {
+  "authorId": 21752725,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Rishavendra Sharma",
+  "authorUserName": "rishavendrasharma",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3531279,
+   "postDate": "2026-10-01T15:45:01.233Z",
+   "rawMarkdown": "1. How well does your local validation track the public leaderboard?\nIf you’re comfortable sharing, what local CV and public LB scores do you see, and how did you construct your validation split? For example, if local CV is around 0.960, what public score does it correspond to? Are you validating against expert labels or report-derived labels?\n\n2. What checks do you use before adopting public checkpoints and label datasets?\nHow do you establish whether they include your validation studies or were tuned using those labels? Have improvements from these resources been consistent locally and on the public leaderboard?",
+   "content": "<ol>\n<li><p>How well does your local validation track the public leaderboard?\nIf you’re comfortable sharing, what local CV and public LB scores do you see, and how did you construct your validation split? For example, if local CV is around 0.960, what public score does it correspond to? Are you validating against expert labels or report-derived labels?</p></li>\n<li><p>What checks do you use before adopting public checkpoints and label datasets?\nHow do you establish whether they include your validation studies or were tuned using those labels? Have improvements from these resources been consistent locally and on the public leaderboard?</p></li>\n</ol>",
+   "parent": {},
+   "author": {
+    "displayName": "Rishavendra Sharma",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/rishavendrasharma",
+    "tier": "CONTRIBUTOR",
+    "id": 21752725,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3463,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Rishavendra Sharma",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/rishavendrasharma",
+     "userName": "rishavendrasharma",
+     "tier": "CONTRIBUTOR",
+     "id": 21752725,
+     "profileUrl": "/rishavendrasharma",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 21752725,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3531279,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744961,
+  "name": "Local validation vs public LB, and validating public resources",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-01T15:45:01.231767Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744961",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Rishavendra Sharma",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/rishavendrasharma",
+   "tier": "CONTRIBUTOR",
+   "id": 21752725,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3531279,
+  "id": 744961,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Rishavendra Sharma",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744961#3531279",
+  "lastCommentPostDate": "2026-10-01T15:45:01.233333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-01T15:45:01.231767Z",
+  "title": "Local validation vs public LB, and validating public resources",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744961",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Rishavendra Sharma",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/rishavendrasharma",
+    "userName": "rishavendrasharma",
+    "tier": "CONTRIBUTOR",
+    "id": 21752725,
+    "profileUrl": "/rishavendrasharma",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 21752725,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

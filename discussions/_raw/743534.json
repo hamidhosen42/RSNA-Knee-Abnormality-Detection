@@ -65,7 +65,7 @@
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 2998,
+    "competitionRanking": 3347,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -83,6 +83,24 @@
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3529610,
+    "postDate": "2026-09-28T16:25:09.030Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
@@ -133,7 +151,7 @@
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-26T06:50:08.275686100Z",
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743534",
-  "totalMessages": 2,
+  "totalMessages": 3,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -147,13 +165,12 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 2,
+  "commentCount": 3,
   "firstForumMessageId": 3528540,
   "id": 743534,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "Yogesh Krishna",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743534#3528661",
-  "lastCommentPostDate": "2026-09-26T09:32:12.393333300Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743534#3529610",
+  "lastCommentPostDate": "2026-09-28T16:25:09.030Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-26T06:50:08.275686100Z",

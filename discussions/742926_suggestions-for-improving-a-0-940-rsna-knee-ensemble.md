@@ -1,10 +1,10 @@
 # Suggestions for improving a 0.940 RSNA Knee ensemble
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/742926
-- **Author:** **MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-24 06:48 UTC · ▲-5 · LB rank 1272
-- **Topic votes:** -5 · **Comments/replies:** 5 · **Pinned:** no
-- **Last comment:** 2026-09-26 09:12 UTC by MUTTAHIR
-- **Cloned:** 2026-09-26 16:24 UTC (topic id 742926, raw JSON `_raw/742926.json`)
+- **Author:** **MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-24 06:48 UTC · ▲-4 · LB rank 1608
+- **Topic votes:** -4 · **Comments/replies:** 8 · **Pinned:** no
+- **Last comment:** 2026-09-28 00:13 UTC by Chris Deotte
+- **Cloned:** 2026-10-01 19:24 UTC (topic id 742926, raw JSON `_raw/742926.json`)
 
 ---
 
@@ -12,23 +12,31 @@ Hi everyone. I’m looking for a controlled next experiment to improve my curren
 
 ---
 
-## Comments (5, threaded, oldest first)
+## Comments (8, threaded, oldest first)
 
 ### [1] Lavin Wins
 
-**Lavin Wins** (@lavinwins, Contributor) · 2026-09-24 11:35 UTC · ▲-3 · LB rank 280
+**Lavin Wins** (@lavinwins, Contributor) · 2026-09-24 11:35 UTC · ▲-3 · LB rank 410
 
 Try blending some other model with this to increase the score
 
 #### ↳ [1.1] MUTTAHIR
 
-**MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-25 06:32 UTC · LB rank 1272
+**MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-25 06:32 UTC · LB rank 1608
 
 Thanks, Lavin! I already have a blended ensemble with DINO-family MRI models and RadImageNet heads, so I’ll focus on adding a genuinely complementary model and validate the blend with OOF predictions rather than tuning to the public leaderboard. Did you have a particular backbone or checkpoint that worked well for this dataset?
 
+##### ↳ ↳ [1.1.1] Lavin Wins
+
+**Lavin Wins** (@lavinwins, Contributor) · 2026-09-27 06:22 UTC · LB rank 410
+
+Relying on OOF predictions rather than chasing the public leaderboard is absolutely the right move, especially for preventing overfitting on medical datasets.
+Since the current ensemble relies heavily on self-supervised, vision-transformer-based representations via DINO and RadImageNet, the most effective way to gain a genuine performance boost is by introducing a backbone with a completely different structural bias.
+A ConvNeXt-V2 (specifically convnextv2_huge or large) or a Swin Transformer V2 initialized with masked autoencoder (MAE) weights would be excellent complementary choices.
+
 ### [2] Chris Deotte
 
-**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-25 23:53 UTC · ▲1 · LB rank 85
+**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-25 23:53 UTC · ▲1 · LB rank 100
 
 All of these things can help
 * improve train labels
@@ -41,13 +49,13 @@ All of these things can help
 
 #### ↳ [2.1] MUTTAHIR
 
-**MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-26 06:49 UTC · ▲1 · LB rank 1272
+**MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-26 06:49 UTC · ▲1 · LB rank 1608
 
 Thanks, Chris—this is a helpful list. I’ll test one change at a time, starting with train-label quality and image preprocessing, then try a different input representation or backbone if validation supports it. I’ll keep the same study-level folds and compare macro AUC/OOF predictions rather than chasing the public leaderboard. For this dataset, which single change would you test first?
 
 #### ↳ [2.2] MUTTAHIR
 
-**MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-26 09:12 UTC · ▲1 · LB rank 1272
+**MUTTAHIR** (@muttahir, Contributor) · _topic author_ · 2026-09-26 09:12 UTC · ▲1 · LB rank 1608
 
 Thanks, Chris. I tested the report/E11 signals as a small, controlled first step. Only 57 matched gold-labeled studies were available per finding across the 12 targets, so these local results are noisy and are not leaderboard scores. They also do not measure my complete ensemble, whose current public score is 0.940.
 
@@ -64,3 +72,17 @@ The weight-tuned rank blend was worse than the fixed blend. Raw averaging was on
 Next I plan to audit report labels, then test one MRI preprocessing or input-representation change at a time, followed by a different backbone or augmentation/schedule if validation supports it. Practical tips: keep all slices/series from each study in one fold; inspect per-target AUC as well as macro AUC; generate full-ensemble OOF predictions before blending; tune weights only inside training folds; and repeat apparent gains across folds/seeds before trusting them. I’ll avoid choosing changes based only on public leaderboard movement.
 
 Which preprocessing or representation change would you try first for this dataset?
+
+### [3] Dread Development
+
+**Dread Development** (@dreaddevelopment, Expert) · 2026-09-27 22:25 UTC · ▲2 · LB rank 205
+
+I have found that having models that disagree with each other outperform models that agree within ensembles.
+
+#### ↳ [3.1] Chris Deotte
+
+**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-28 00:13 UTC · LB rank 100
+
+Yes, this is the secret to ensembles. It is said well by Paul [here][1] (in Kaggle playground competition)
+
+[1]: https://www.kaggle.com/competitions/playground-series-s6e9/discussion/743860

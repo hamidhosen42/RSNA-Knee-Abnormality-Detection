@@ -22,7 +22,20 @@ case ${1:-} in
     "$PY" "$LEG/build_submission_notebook.py"
     cp "$LEG/submission/rsna-knee-base-plus-ours.ipynb" "$DIR/"
     cp "$HERE/submission.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
-  *) echo "usage: $0 train|submission" >&2; rm -rf "$DIR"; exit 2 ;;
+  verify)
+    # CPU check that infer_kernel.py's DICOM rebuild matches the training corpus (E11 diagnosis).
+    # infer_kernel.py is embedded verbatim so the check runs the exact code the submission ran.
+    "$PY" - "$LEG/verify_corpus_rebuild.py" "$LEG/infer_kernel.py" "$DIR/verify_corpus_rebuild.py" <<'EOF'
+import base64, sys
+src, ik, dst = sys.argv[1:4]
+text = open(src).read()
+assert text.count("__INFER_KERNEL_B64__") == 1
+text = text.replace("__INFER_KERNEL_B64__", base64.b64encode(open(ik, "rb").read()).decode())
+compile(text, dst, "exec")
+open(dst, "w").write(text)
+EOF
+    cp "$HERE/verify.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
+  *) echo "usage: $0 train|submission|verify" >&2; rm -rf "$DIR"; exit 2 ;;
 esac
 if [[ -n ${DRY_RUN:-} ]]; then
   echo "DRY RUN: would run: ${KAGGLE[*]} kernels push -p $DIR"

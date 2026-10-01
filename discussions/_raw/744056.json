@@ -1,0 +1,177 @@
+{
+ "forumTopic": {
+  "authorId": 17289764,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Shalini S",
+  "authorUserName": "shals14",
+  "comments": [
+   {
+    "id": 3529608,
+    "postDate": "2026-09-28T16:12:51.007Z",
+    "rawMarkdown": "Adding a closely related case, since it changes how a solution is built.\n\nKnowledge distillation: a team runs publicly shared weights (trained on this competition's data by other participants, released in public Kaggle datasets and notebooks under Apache 2.0) only offline, to produce soft labels on the training set. It then trains its own smaller model on those soft labels. The submitted notebook contains only the team's own model.\n\n1. Is that allowed for prize eligibility?\n2. For Winner's Obligations (2.8), is it enough to deliver our distillation training code, the teacher inference code with links to the public teacher weights, and our own weights? Or would the teachers' original training code also be required?\n3. Related and still open in https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905 : which winner licence applies to such weights, CC BY-NC 4.0 or an OSI-approved licence that does not limit commercial use?\n\nThank you.",
+    "content": "<p>Adding a closely related case, since it changes how a solution is built.</p>\n<p>Knowledge distillation: a team runs publicly shared weights (trained on this competition's data by other participants, released in public Kaggle datasets and notebooks under Apache 2.0) only offline, to produce soft labels on the training set. It then trains its own smaller model on those soft labels. The submitted notebook contains only the team's own model.</p>\n<ol>\n<li>Is that allowed for prize eligibility?</li>\n<li>For Winner's Obligations (2.8), is it enough to deliver our distillation training code, the teacher inference code with links to the public teacher weights, and our own weights? Or would the teachers' original training code also be required?</li>\n<li>Related and still open in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905</a> : which winner licence applies to such weights, CC BY-NC 4.0 or an OSI-approved licence that does not limit commercial use?</li>\n</ol>\n<p>Thank you.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lutfiya",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25081002-kg.jpeg?t=2026-09-26-23-13-27",
+     "url": "/lutfiya",
+     "tier": "CONTRIBUTOR",
+     "id": 25081002,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2271,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris-Steven Müller (Chris-Steven)",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30636212-gr.jpg",
+      "url": "/chrisstevenmueller",
+      "userName": "chrisstevenmueller",
+      "tier": "CONTRIBUTOR",
+      "id": 30636212,
+      "profileUrl": "/chrisstevenmueller",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 30636212,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531215,
+    "postDate": "2026-10-01T13:54:07.407Z",
+    "rawMarkdown": "@javaduke95 Could you clarify whether a prize-eligible submission may use publicly released Kaggle weights that another participant trained on this competition's data (e.g., by ensembling them or distilling them into our own model)? If so, does posting a link to that public dataset satisfy the weight submission requirement in Section 2.8 for that component?",
+    "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> Could you clarify whether a prize-eligible submission may use publicly released Kaggle weights that another participant trained on this competition's data (e.g., by ensembling them or distilling them into our own model)? If so, does posting a link to that public dataset satisfy the weight submission requirement in Section 2.8 for that component?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rubens Sosa",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/rubenssosa",
+     "tier": "CONTRIBUTOR",
+     "id": 31000103,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4722,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rubens Sosa",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/rubenssosa",
+      "userName": "rubenssosa",
+      "tier": "CONTRIBUTOR",
+      "id": 31000103,
+      "profileUrl": "/rubenssosa",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31000103,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3529543,
+   "postDate": "2026-09-28T13:16:14.267Z",
+   "rawMarkdown": "Could the hosts clarify how the rules apply to a practice that's become common in\nthis competition?\n\nSeveral public Kaggle datasets contain model weights trained on this competition's\ndata by other participants, and a number of public notebooks blend them.\n\nThe rules appear to permit using them:\n\n  - 2.6.b: \"The use of external data and models is acceptable unless specifically\n    prohibited by the Host.\"\n  - 3.6.b: code shared publicly on the competition forum or notebooks is \"deemed to\n    have licensed the shared code under an Open Source Initiative-approved license\"\n    for the benefit of all competitors.\n\nWhat I can't resolve is how that sits with Winner's Obligations. Section 2.8 requires\na prize winner to deliver \"training code, inference code, model weights\" for the\nwinning submission. A participant whose submission includes another team's publicly\nshared checkpoints has no training code for that portion. Section 3.14.a also warrants\nthat the submission is \"your own original work.\"\n\nTwo questions:\n\n1. Is a submission incorporating publicly shared weights that were trained on the\n   competition data by other participants eligible for a prize?\n\n2. If so, what satisfies the 2.8 training-code requirement for the third-party\n   portion — citing the source dataset, or is the winner expected to be able to\n   reproduce that training?\n\nI'd guess the answer matters to a fair number of teams, so thanks in advance for\nputting it on the record.\n",
+   "content": "<p>Could the hosts clarify how the rules apply to a practice that's become common in\nthis competition?</p>\n<p>Several public Kaggle datasets contain model weights trained on this competition's\ndata by other participants, and a number of public notebooks blend them.</p>\n<p>The rules appear to permit using them:</p>\n<ul>\n<li>2.6.b: \"The use of external data and models is acceptable unless specifically\nprohibited by the Host.\"</li>\n<li>3.6.b: code shared publicly on the competition forum or notebooks is \"deemed to\nhave licensed the shared code under an Open Source Initiative-approved license\"\nfor the benefit of all competitors.</li>\n</ul>\n<p>What I can't resolve is how that sits with Winner's Obligations. Section 2.8 requires\na prize winner to deliver \"training code, inference code, model weights\" for the\nwinning submission. A participant whose submission includes another team's publicly\nshared checkpoints has no training code for that portion. Section 3.14.a also warrants\nthat the submission is \"your own original work.\"</p>\n<p>Two questions:</p>\n<ol>\n<li><p>Is a submission incorporating publicly shared weights that were trained on the\ncompetition data by other participants eligible for a prize?</p></li>\n<li><p>If so, what satisfies the 2.8 training-code requirement for the third-party\nportion — citing the source dataset, or is the winner expected to be able to\nreproduce that training?</p></li>\n</ol>\n<p>I'd guess the answer matters to a fair number of teams, so thanks in advance for\nputting it on the record.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Shalini S",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/shals14",
+    "tier": "CONTRIBUTOR",
+    "id": 17289764,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2180,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Shalini S",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/shals14",
+     "userName": "shals14",
+     "tier": "CONTRIBUTOR",
+     "id": 17289764,
+     "profileUrl": "/shals14",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 17289764,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3529543,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744056,
+  "name": "Prize eligibility when using publicly shared weights trained on the competition data",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-28T13:16:14.267371400Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744056",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Shalini S",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/shals14",
+   "tier": "CONTRIBUTOR",
+   "id": 17289764,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3529543,
+  "id": 744056,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Rubens Sosa",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056#3531215",
+  "lastCommentPostDate": "2026-10-01T13:54:07.406666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-28T13:16:14.267371400Z",
+  "title": "Prize eligibility when using publicly shared weights trained on the competition data",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Shalini S",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/shals14",
+    "userName": "shals14",
+    "tier": "CONTRIBUTOR",
+    "id": 17289764,
+    "profileUrl": "/shals14",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 17289764,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

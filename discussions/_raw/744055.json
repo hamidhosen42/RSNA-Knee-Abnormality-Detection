@@ -1,0 +1,98 @@
+{
+ "forumTopic": {
+  "authorId": 27284910,
+  "authorThumbnailName": "27284910-kg.jpg?t=2026-09-14-09-46-56",
+  "authorUserDisplayName": "Lavin Wins",
+  "authorUserName": "lavinwins",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3529536,
+   "postDate": "2026-09-28T13:02:40.560Z",
+   "rawMarkdown": "As we head into the final stretch, I’m incredibly excited to see how the leaderboard wraps up and what kind of innovative solutions the community brings to light.\n\nBalancing 3D DICOM volumes alongside multilingual radiology reports has made this a phenomenal real-world challenge. The unique multimodal nature of this problem—handling everything from cross-site domain shifts to text-derived labels—means there is so much room for creative pipeline engineering and clever architecture design.\n\nI’m highly anticipating the post-competition write-ups to see what truly moved the needle, whether it was advanced 3D backbones, vision-language alignment, or novel ensembling strategies.\n\n\n\nBest of luck to everyone finalizing their submissions and preparing for the final shakeup!",
+   "content": "<p>As we head into the final stretch, I’m incredibly excited to see how the leaderboard wraps up and what kind of innovative solutions the community brings to light.</p>\n<p>Balancing 3D DICOM volumes alongside multilingual radiology reports has made this a phenomenal real-world challenge. The unique multimodal nature of this problem—handling everything from cross-site domain shifts to text-derived labels—means there is so much room for creative pipeline engineering and clever architecture design.</p>\n<p>I’m highly anticipating the post-competition write-ups to see what truly moved the needle, whether it was advanced 3D backbones, vision-language alignment, or novel ensembling strategies.</p>\n<p>Best of luck to everyone finalizing their submissions and preparing for the final shakeup!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 409,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "userName": "lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "profileUrl": "/lavinwins",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 27284910,
+     "progressionOptOut": false
+    },
+    "intro": "Someone who is rich "
+   }
+  },
+  "firstMessageId": 3529536,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744055,
+  "name": "Can't wait to see how the competition wraps up and check out all the new solutions!",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-28T13:02:40.561088500Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744055",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Lavin Wins",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+   "url": "/lavinwins",
+   "tier": "CONTRIBUTOR",
+   "id": 27284910,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3529536,
+  "id": 744055,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744055#3529536",
+  "lastCommentPostDate": "2026-09-28T13:02:40.560Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-28T13:02:40.561088500Z",
+  "title": "Can't wait to see how the competition wraps up and check out all the new solutions!",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744055",
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Lavin Wins",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+    "url": "/lavinwins",
+    "userName": "lavinwins",
+    "tier": "CONTRIBUTOR",
+    "id": 27284910,
+    "profileUrl": "/lavinwins",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 27284910,
+    "progressionOptOut": false
+   },
+   "intro": "Someone who is rich "
+  }
+ }
+}

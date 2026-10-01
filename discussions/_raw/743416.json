@@ -6,46 +6,126 @@
   "authorUserName": "yosukeyama",
   "comments": [
    {
-    "id": 3528398,
-    "postDate": "2026-09-26T03:25:50.803Z",
-    "rawMarkdown": "This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get \"caught\" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.",
-    "content": "<p>This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get \"caught\" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.</p>",
+    "id": 3530730,
+    "postDate": "2026-09-30T19:10:33.850Z",
+    "rawMarkdown": "Based on all my past kaggle experience, the most 'safe' action of host is to ignore the dataset clearance questions competely. \nSince to do it \"the right way\" requires involvement of legal department and I imagine it's tedious process.  I would be happy to proven wrong and get clear answer. But before that the best course of action is to use common sense: public registration is ok, non-commerial/research license is ok; gated dataset _requiring_ academia email - probably less ok, but if top 10 solutions will end up using it - also ok ;) ",
+    "content": "<p>Based on all my past kaggle experience, the most 'safe' action of host is to ignore the dataset clearance questions competely. \nSince to do it \"the right way\" requires involvement of legal department and I imagine it's tedious process.  I would be happy to proven wrong and get clear answer. But before that the best course of action is to use common sense: public registration is ok, non-commerial/research license is ok; gated dataset <em>requiring</em> academia email - probably less ok, but if top 10 solutions will end up using it - also ok ;) </p>",
     "replies": [
      {
-      "id": 3528497,
-      "postDate": "2026-09-26T05:50:04.413Z",
-      "rawMarkdown": "I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.\n\nWhat particularly concerns me is that relevant external knee MRI data could allow even a fairly simple approach to achieve a dramatic improvement in score. If some teams use those datasets while others refrain because the rules are unclear, the competition becomes substantially unequal. I would appreciate explicit guidance from the hosts on which datasets are allowed.",
-      "content": "<p>I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.</p>\n<p>What particularly concerns me is that relevant external knee MRI data could allow even a fairly simple approach to achieve a dramatic improvement in score. If some teams use those datasets while others refrain because the rules are unclear, the competition becomes substantially unequal. I would appreciate explicit guidance from the hosts on which datasets are allowed.</p>",
+      "id": 3530964,
+      "postDate": "2026-10-01T04:46:26.300Z",
+      "rawMarkdown": "@bloodaxe \n\nAre you aware of any past instances in similar competitions where the same external dataset was used in a gold medalist's write-up and didn't result in a ban?\n\nI'm gonna also do my analysis once I scraped write-ups in the previous competitions. I'll post the result here.",
+      "content": "<p><a href=\"/bloodaxe\" target=\"_blank\">@bloodaxe</a> </p>\n<p>Are you aware of any past instances in similar competitions where the same external dataset was used in a gold medalist's write-up and didn't result in a ban?</p>\n<p>I'm gonna also do my analysis once I scraped write-ups in the previous competitions. I'll post the result here.</p>",
       "parent": {},
       "author": {
-       "displayName": "YYama",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
-       "url": "/yosukeyama",
-       "tier": "MASTER",
-       "id": 2593251,
+       "displayName": "pompom555",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+       "url": "/pompom555",
+       "tier": "EXPERT",
+       "id": 4855941,
        "progressionOptOut": false
       },
-      "authorType": "TOPIC",
+      "authorType": "COMMENT",
       "votes": {
-       "totalVotes": 3,
-       "canUpvote": true,
-       "totalUpvotes": 3
+       "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 52,
+      "competitionRanking": 103,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
        "teamLeader": {
-        "displayName": "Takashi Someya",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
-        "url": "/takashisomeya",
-        "userName": "takashisomeya",
-        "tier": "GRANDMASTER",
-        "id": 6102861,
-        "profileUrl": "/takashisomeya",
-        "performanceTier": "GRANDMASTER",
-        "userId": 6102861,
+        "displayName": "pompom555",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+        "url": "/pompom555",
+        "userName": "pompom555",
+        "tier": "EXPERT",
+        "id": 4855941,
+        "profileUrl": "/pompom555",
+        "performanceTier": "EXPERT",
+        "userId": 4855941,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Eugene Khvedchenya",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1504864-kg.png",
+     "url": "/bloodaxe",
+     "tier": "GRANDMASTER",
+     "id": 1504864,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 5,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 466,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Eugene Khvedchenya",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1504864-kg.png",
+      "url": "/bloodaxe",
+      "userName": "bloodaxe",
+      "tier": "GRANDMASTER",
+      "id": 1504864,
+      "profileUrl": "/bloodaxe",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1504864,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530838,
+    "postDate": "2026-09-30T22:59:48.650Z",
+    "rawMarkdown": "I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to \"improve the score\" and that is what it will try to do. \n\nIf people are minimally \"in the loop\" or fully out of it, it is hard to catch. I've had to paste verbatim the host comments and the content of the Rules tab multiple times for LLMs to finally accept that most of these sources do not strictly comply with usage requirements, either from the host's perspective, Kaggle's perspective, or the data owner's perspective...\n\nNot sure what the solution is but the host has no reason to check solutions other than the prize eligible ones, the data providers themselves are unlikely to respond, so what to do? \"Cheat\" and hope you don't place in top 10 but otherwise secure a medal? Play it safe and wonder if the people that placed above you weren't as conservative?",
+    "content": "<p>I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to \"improve the score\" and that is what it will try to do. </p>\n<p>If people are minimally \"in the loop\" or fully out of it, it is hard to catch. I've had to paste verbatim the host comments and the content of the Rules tab multiple times for LLMs to finally accept that most of these sources do not strictly comply with usage requirements, either from the host's perspective, Kaggle's perspective, or the data owner's perspective…</p>\n<p>Not sure what the solution is but the host has no reason to check solutions other than the prize eligible ones, the data providers themselves are unlikely to respond, so what to do? \"Cheat\" and hope you don't place in top 10 but otherwise secure a medal? Play it safe and wonder if the people that placed above you weren't as conservative?</p>",
+    "replies": [
+     {
+      "id": 3530957,
+      "postDate": "2026-10-01T04:40:59.317Z",
+      "rawMarkdown": "We're now at the point where we're basically \"jumping at shadows.\" Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.",
+      "content": "<p>We're now at the point where we're basically \"jumping at shadows.\" Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "pompom555",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+       "url": "/pompom555",
+       "tier": "EXPERT",
+       "id": 4855941,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 103,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "pompom555",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+        "url": "/pompom555",
+        "userName": "pompom555",
+        "tier": "EXPERT",
+        "id": 4855941,
+        "profileUrl": "/pompom555",
+        "performanceTier": "EXPERT",
+        "userId": 4855941,
         "progressionOptOut": false
        },
        "intro": ""
@@ -68,16 +148,302 @@
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 19,
+    "competitionRanking": 34,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tucker Arrants",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+      "url": "/tuckerarrants",
+      "userName": "tuckerarrants",
+      "tier": "MASTER",
+      "id": 4379159,
+      "profileUrl": "/tuckerarrants",
+      "performanceTier": "MASTER",
+      "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530726,
+    "postDate": "2026-09-30T19:08:19.573Z",
+    "rawMarkdown": "MRNet’s user agreement says we’re not allowed to modify, reverse engineer, decompile, or create derivative works from the dataset, so that might be an issue too.",
+    "content": "<p>MRNet’s user agreement says we’re not allowed to modify, reverse engineer, decompile, or create derivative works from the dataset, so that might be an issue too.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ali Ozan Memetoglu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
+     "url": "/aliozanmemetoglu",
+     "tier": "EXPERT",
+     "id": 3502073,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 226,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ali Ozan Memetoglu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
+      "url": "/aliozanmemetoglu",
+      "userName": "aliozanmemetoglu",
+      "tier": "EXPERT",
+      "id": 3502073,
+      "profileUrl": "/aliozanmemetoglu",
+      "performanceTier": "EXPERT",
+      "userId": 3502073,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530682,
+    "postDate": "2026-09-30T17:25:08.863Z",
+    "rawMarkdown": "++ This is really important, please provide clarification",
+    "content": "<p>++ This is really important, please provide clarification</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Pratham Lahoti",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/prathamlahoti2",
+     "tier": "CONTRIBUTOR",
+     "id": 27733824,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 551,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Pratham Lahoti",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/prathamlahoti2",
+      "userName": "prathamlahoti2",
+      "tier": "CONTRIBUTOR",
+      "id": 27733824,
+      "profileUrl": "/prathamlahoti2",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27733824,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530459,
+    "postDate": "2026-09-30T08:03:51.747Z",
+    "rawMarkdown": "4 days and still no answer. is that a yes?",
+    "content": "<p>4 days and still no answer. is that a yes?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "madmax0404",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+     "url": "/max6296",
+     "tier": "EXPERT",
+     "id": 3273392,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "madmax0404",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+      "url": "/max6296",
+      "userName": "max6296",
+      "tier": "EXPERT",
+      "id": 3273392,
+      "profileUrl": "/max6296",
+      "performanceTier": "EXPERT",
+      "userId": 3273392,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529114,
+    "postDate": "2026-09-27T11:19:57.487Z",
+    "rawMarkdown": "This is really important. I have a similar question for the hosts. Can we use publicly released pretrained models (MIT license and all) that were trained on OAI-derived data? ",
+    "content": "<p>This is really important. I have a similar question for the hosts. Can we use publicly released pretrained models (MIT license and all) that were trained on OAI-derived data? </p>",
+    "replies": [
+     {
+      "id": 3529492,
+      "postDate": "2026-09-28T11:22:00.937Z",
+      "rawMarkdown": "I agree. Clear guidance on this point is important to ensure a level playing field for all participants.",
+      "content": "<p>I agree. Clear guidance on this point is important to ensure a level playing field for all participants.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "YYama",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+       "url": "/yosukeyama",
+       "tier": "MASTER",
+       "id": 2593251,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 12,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "YYama",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+        "url": "/yosukeyama",
+        "userName": "yosukeyama",
+        "tier": "MASTER",
+        "id": 2593251,
+        "profileUrl": "/yosukeyama",
+        "performanceTier": "MASTER",
+        "userId": 2593251,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Cemal Atas",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/cemalata",
+     "tier": "CONTRIBUTOR",
+     "id": 17107284,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 22,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cemal Atas",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/cemalata",
+      "userName": "cemalata",
+      "tier": "CONTRIBUTOR",
+      "id": 17107284,
+      "profileUrl": "/cemalata",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 17107284,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528398,
+    "postDate": "2026-09-26T03:25:50.803Z",
+    "rawMarkdown": "This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get \"caught\" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.",
+    "content": "<p>This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get \"caught\" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.</p>",
+    "replies": [
+     {
+      "id": 3528497,
+      "postDate": "2026-09-26T05:50:04.413Z",
+      "rawMarkdown": "I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.\n\nWhat particularly concerns me is that relevant external knee MRI data could allow even a fairly simple approach to achieve a dramatic improvement in score. If some teams use those datasets while others refrain because the rules are unclear, the competition becomes substantially unequal. I would appreciate explicit guidance from the hosts on which datasets are allowed.",
+      "content": "<p>I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.</p>\n<p>What particularly concerns me is that relevant external knee MRI data could allow even a fairly simple approach to achieve a dramatic improvement in score. If some teams use those datasets while others refrain because the rules are unclear, the competition becomes substantially unequal. I would appreciate explicit guidance from the hosts on which datasets are allowed.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "YYama",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+       "url": "/yosukeyama",
+       "tier": "MASTER",
+       "id": 2593251,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 5,
+       "canUpvote": true,
+       "totalUpvotes": 5
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 12,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "YYama",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+        "url": "/yosukeyama",
+        "userName": "yosukeyama",
+        "tier": "MASTER",
+        "id": 2593251,
+        "profileUrl": "/yosukeyama",
+        "performanceTier": "MASTER",
+        "userId": 2593251,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 5,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 34,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
      {
       "emoji": "SURPRISE",
       "featuredUserNames": [
+       "keakohv",
+       "ggayoayogg",
+       "pablolee789",
        "laymond"
       ],
-      "userCount": 1
+      "userCount": 4
      }
     ],
     "teamUpInfo": {
@@ -91,6 +457,44 @@
       "profileUrl": "/tuckerarrants",
       "performanceTier": "MASTER",
       "userId": 4379159,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531046,
+    "postDate": "2026-10-01T07:56:26.583Z",
+    "rawMarkdown": "Have you seen improvements by using external data? I haven't tried yet but this discussion makes me want to give it a try...",
+    "content": "<p>Have you seen improvements by using external data? I haven't tried yet but this discussion makes me want to give it a try…</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Optimo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+     "url": "/optimo",
+     "tier": "MASTER",
+     "id": 190923,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 57,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Optimo",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+      "url": "/optimo",
+      "userName": "optimo",
+      "tier": "MASTER",
+      "id": 190923,
+      "profileUrl": "/optimo",
+      "performanceTier": "MASTER",
+      "userId": 190923,
       "progressionOptOut": false
      },
      "intro": ""
@@ -114,25 +518,25 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 15,
+    "totalVotes": 55,
     "canUpvote": true,
-    "totalUpvotes": 15
+    "totalUpvotes": 55
    },
    "kernelVersion": 0,
-   "competitionRanking": 52,
+   "competitionRanking": 12,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
     "teamLeader": {
-     "displayName": "Takashi Someya",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
-     "url": "/takashisomeya",
-     "userName": "takashisomeya",
-     "tier": "GRANDMASTER",
-     "id": 6102861,
-     "profileUrl": "/takashisomeya",
-     "performanceTier": "GRANDMASTER",
-     "userId": 6102861,
+     "displayName": "YYama",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+     "url": "/yosukeyama",
+     "userName": "yosukeyama",
+     "tier": "MASTER",
+     "id": 2593251,
+     "profileUrl": "/yosukeyama",
+     "performanceTier": "MASTER",
+     "userId": 2593251,
      "progressionOptOut": false
     },
     "intro": ""
@@ -146,9 +550,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-26T01:52:06.163949500Z",
-  "totalVotes": 15,
+  "totalVotes": 55,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743416",
-  "totalMessages": 2,
+  "totalMessages": 12,
   "authorPerformanceTier": "MASTER",
   "authorProgressionOptOut": false
  },
@@ -162,30 +566,30 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 2,
+  "commentCount": 12,
   "firstForumMessageId": 3528387,
   "id": 743416,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "YYama",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416#3528497",
-  "lastCommentPostDate": "2026-09-26T05:50:04.413333300Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Optimo",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416#3531046",
+  "lastCommentPostDate": "2026-10-01T07:56:26.583333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-26T01:52:06.163949500Z",
   "title": "Please clarify which external knee MRI datasets are allowed",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416",
-  "votes": 19,
+  "votes": 55,
   "teamUpInfo": {
    "teamLeader": {
-    "displayName": "Takashi Someya",
-    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6102861-kg.png",
-    "url": "/takashisomeya",
-    "userName": "takashisomeya",
-    "tier": "GRANDMASTER",
-    "id": 6102861,
-    "profileUrl": "/takashisomeya",
-    "performanceTier": "GRANDMASTER",
-    "userId": 6102861,
+    "displayName": "YYama",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+    "url": "/yosukeyama",
+    "userName": "yosukeyama",
+    "tier": "MASTER",
+    "id": 2593251,
+    "profileUrl": "/yosukeyama",
+    "performanceTier": "MASTER",
+    "userId": 2593251,
     "progressionOptOut": false
    },
    "intro": ""

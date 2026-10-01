@@ -6,86 +6,76 @@
   "authorUserName": "laymond",
   "comments": [
    {
-    "id": 3526643,
-    "postDate": "2026-09-21T22:13:36.547Z",
-    "rawMarkdown": "It's hard to say, but Top 50, everyone is now over 0.95 - so I believe they all do indeed have separate models outperforming the public stack's 0.941 number. (atleast I do). \n\nPerhaps in a couple of weeks, when teams start forming ensembles - we'll see atleast the entire Top 10 go over 0.96, and they should remain there with the Private LB too.",
-    "content": "<p>It's hard to say, but Top 50, everyone is now over 0.95 - so I believe they all do indeed have separate models outperforming the public stack's 0.941 number. (atleast I do). </p>\n<p>Perhaps in a couple of weeks, when teams start forming ensembles - we'll see atleast the entire Top 10 go over 0.96, and they should remain there with the Private LB too.</p>",
-    "replies": [
-     {
-      "id": 3526708,
-      "postDate": "2026-09-22T04:15:24.810Z",
-      "rawMarkdown": "Hopefully we’re not overfitting, and hopefully we won’t be🫣. It’s just that with this structure, it feels hard to actually tell whether a model is genuinely better or just happens to line up with the public LB.",
-      "content": "<p>Hopefully we’re not overfitting, and hopefully we won’t be🫣. It’s just that with this structure, it feels hard to actually tell whether a model is genuinely better or just happens to line up with the public LB.</p>",
-      "parent": {},
-      "author": {
-       "displayName": "Raymond Yuen",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-       "url": "/laymond",
-       "tier": "CONTRIBUTOR",
-       "id": 28874055,
-       "progressionOptOut": false
-      },
-      "authorType": "TOPIC",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 76,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "enabled": true,
-       "teamLeader": {
-        "displayName": "Raymond Yuen",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-        "url": "/laymond",
-        "userName": "laymond",
-        "tier": "CONTRIBUTOR",
-        "id": 28874055,
-        "profileUrl": "/laymond",
-        "performanceTier": "CONTRIBUTOR",
-        "userId": 28874055,
-        "progressionOptOut": false
-       },
-       "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
-      }
-     }
-    ],
+    "id": 3530018,
+    "postDate": "2026-09-29T11:40:47.930Z",
+    "rawMarkdown": "The public notebook is overfit blend scoring 0.945, and is in the silver range. I suspect if you are at 0.935+ and not using the public notebook then you could shake up into silver",
+    "content": "<p>The public notebook is overfit blend scoring 0.945, and is in the silver range. I suspect if you are at 0.935+ and not using the public notebook then you could shake up into silver</p>",
     "parent": {},
     "author": {
-     "displayName": "Prateek Grover",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-     "url": "/prateekgroverin",
-     "tier": "CONTRIBUTOR",
-     "id": 10604833,
+     "displayName": "CoreyJamesLevinson",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1238844-kg.jpg",
+     "url": "/returnofsputnik",
+     "tier": "GRANDMASTER",
+     "id": 1238844,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 1,
+     "totalVotes": 2,
      "canUpvote": true,
-     "totalUpvotes": 1
+     "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 129,
+    "competitionRanking": 2811,
     "feedbackTrackingData": {},
     "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "lavinwins"
+      ],
+      "userCount": 1
+     }
+    ],
     "teamUpInfo": {
-     "enabled": true,
      "teamLeader": {
-      "displayName": "Prateek Grover",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-      "url": "/prateekgroverin",
-      "userName": "prateekgroverin",
-      "tier": "CONTRIBUTOR",
-      "id": 10604833,
-      "profileUrl": "/prateekgroverin",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 10604833,
+      "displayName": "CoreyJamesLevinson",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1238844-kg.jpg",
+      "url": "/returnofsputnik",
+      "userName": "returnofsputnik",
+      "tier": "GRANDMASTER",
+      "id": 1238844,
+      "profileUrl": "/returnofsputnik",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1238844,
       "progressionOptOut": false
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3529510,
+    "postDate": "2026-09-28T12:14:30.603Z",
+    "rawMarkdown": "Around the bronze line, usually a lot. At today's 4,500 teams bronze ends at place 450. I looked at the 11 medal competitions since 2022 with 3,000 to 6,750 teams and an ordinary public/private split. Teams just inside the line on the public board (places 338 to 450 here) finished with a medal 24% of the time, and teams just outside it (451 to 562) also 24%, so the public line made little difference.\n\nThis one could be worse than that, or milder: across those competitions the rate just inside the line ran from 2% to 51%, and in 10 of the 11 it was under half.\n\nMy notebook computes these rates for any rank and team count: [How safe is your medal spot on the public board?](https://www.kaggle.com/code/georgymamarin/how-safe-is-your-medal-spot-on-the-public-board)",
+    "content": "<p>Around the bronze line, usually a lot. At today's 4,500 teams bronze ends at place 450. I looked at the 11 medal competitions since 2022 with 3,000 to 6,750 teams and an ordinary public/private split. Teams just inside the line on the public board (places 338 to 450 here) finished with a medal 24% of the time, and teams just outside it (451 to 562) also 24%, so the public line made little difference.</p>\n<p>This one could be worse than that, or milder: across those competitions the rate just inside the line ran from 2% to 51%, and in 10 of the 11 it was under half.</p>\n<p>My notebook computes these rates for any rank and team count: <a href=\"https://www.kaggle.com/code/georgymamarin/how-safe-is-your-medal-spot-on-the-public-board\" target=\"_blank\">How safe is your medal spot on the public board?</a></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Georgy Mamarin",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9407128-kg.jpg?t=2026-04-01-15-02-02",
+     "url": "/georgymamarin",
+     "tier": "MASTER",
+     "id": 9407128,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    },
    {
     "id": 3526524,
@@ -112,24 +102,24 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 76,
+      "competitionRanking": 38,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
        "enabled": true,
        "teamLeader": {
-        "displayName": "Raymond Yuen",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-        "url": "/laymond",
-        "userName": "laymond",
-        "tier": "CONTRIBUTOR",
-        "id": 28874055,
-        "profileUrl": "/laymond",
-        "performanceTier": "CONTRIBUTOR",
-        "userId": 28874055,
+        "displayName": "Tanuki_boosting",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/miyamotodaiya",
+        "userName": "miyamotodaiya",
+        "tier": "EXPERT",
+        "id": 11621780,
+        "profileUrl": "/miyamotodaiya",
+        "performanceTier": "EXPERT",
+        "userId": 11621780,
         "progressionOptOut": false
        },
-       "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+       "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
       }
      }
     ],
@@ -144,12 +134,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 2,
+     "totalVotes": 3,
      "canUpvote": true,
-     "totalUpvotes": 2
+     "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 636,
+    "competitionRanking": 1066,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -167,6 +157,106 @@
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3526643,
+    "postDate": "2026-09-21T22:13:36.547Z",
+    "rawMarkdown": "It's hard to say, but Top 50, everyone is now over 0.95 - so I believe they all do indeed have separate models outperforming the public stack's 0.941 number. (atleast I do). \n\nPerhaps in a couple of weeks, when teams start forming ensembles - we'll see atleast the entire Top 10 go over 0.96, and they should remain there with the Private LB too.",
+    "content": "<p>It's hard to say, but Top 50, everyone is now over 0.95 - so I believe they all do indeed have separate models outperforming the public stack's 0.941 number. (atleast I do). </p>\n<p>Perhaps in a couple of weeks, when teams start forming ensembles - we'll see atleast the entire Top 10 go over 0.96, and they should remain there with the Private LB too.</p>",
+    "replies": [
+     {
+      "id": 3526708,
+      "postDate": "2026-09-22T04:15:24.810Z",
+      "rawMarkdown": "Hopefully we’re not overfitting, and hopefully we won’t be🫣. It’s just that with this structure, it feels hard to actually tell whether a model is genuinely better or just happens to line up with the public LB.",
+      "content": "<p>Hopefully we’re not overfitting, and hopefully we won’t be🫣. It’s just that with this structure, it feels hard to actually tell whether a model is genuinely better or just happens to line up with the public LB.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Raymond Yuen",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+       "url": "/laymond",
+       "tier": "CONTRIBUTOR",
+       "id": 28874055,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 38,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Tanuki_boosting",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/miyamotodaiya",
+        "userName": "miyamotodaiya",
+        "tier": "EXPERT",
+        "id": 11621780,
+        "profileUrl": "/miyamotodaiya",
+        "performanceTier": "EXPERT",
+        "userId": 11621780,
+        "progressionOptOut": false
+       },
+       "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Prateek Grover",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/prateekgroverin",
+     "tier": "CONTRIBUTOR",
+     "id": 10604833,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 184,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Prateek Grover",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/prateekgroverin",
+      "userName": "prateekgroverin",
+      "tier": "CONTRIBUTOR",
+      "id": 10604833,
+      "profileUrl": "/prateekgroverin",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 10604833,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529613,
+    "postDate": "2026-09-28T16:29:03.310Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
@@ -191,24 +281,24 @@
     "totalUpvotes": 3
    },
    "kernelVersion": 0,
-   "competitionRanking": 76,
+   "competitionRanking": 38,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
     "enabled": true,
     "teamLeader": {
-     "displayName": "Raymond Yuen",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-     "url": "/laymond",
-     "userName": "laymond",
-     "tier": "CONTRIBUTOR",
-     "id": 28874055,
-     "profileUrl": "/laymond",
-     "performanceTier": "CONTRIBUTOR",
-     "userId": 28874055,
+     "displayName": "Tanuki_boosting",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/miyamotodaiya",
+     "userName": "miyamotodaiya",
+     "tier": "EXPERT",
+     "id": 11621780,
+     "profileUrl": "/miyamotodaiya",
+     "performanceTier": "EXPERT",
+     "userId": 11621780,
      "progressionOptOut": false
     },
-    "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+    "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
    }
   },
   "firstMessageId": 3526467,
@@ -221,7 +311,7 @@
   "postDate": "2026-09-21T13:46:50.778972800Z",
   "totalVotes": 3,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/742327",
-  "totalMessages": 4,
+  "totalMessages": 7,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -235,13 +325,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 4,
+  "commentCount": 7,
   "firstForumMessageId": 3526467,
   "id": 742327,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "Raymond Yuen",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742327#3526708",
-  "lastCommentPostDate": "2026-09-22T04:15:24.810Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "CoreyJamesLevinson",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742327#3530018",
+  "lastCommentPostDate": "2026-09-29T11:40:47.930Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-21T13:46:50.778972800Z",
@@ -251,18 +341,18 @@
   "teamUpInfo": {
    "enabled": true,
    "teamLeader": {
-    "displayName": "Raymond Yuen",
-    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
-    "url": "/laymond",
-    "userName": "laymond",
-    "tier": "CONTRIBUTOR",
-    "id": 28874055,
-    "profileUrl": "/laymond",
-    "performanceTier": "CONTRIBUTOR",
-    "userId": 28874055,
+    "displayName": "Tanuki_boosting",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/miyamotodaiya",
+    "userName": "miyamotodaiya",
+    "tier": "EXPERT",
+    "id": 11621780,
+    "profileUrl": "/miyamotodaiya",
+    "performanceTier": "EXPERT",
+    "userId": 11621780,
     "progressionOptOut": false
    },
-   "intro": "Hi. 0.949 single coatnet model. i have a laptop 4060 and two cloud 2080tis. contact me if you intend to collaborate. please include a brief description of your pipeline."
+   "intro": "I’m looking to merge with someone who has achieved a score of 0.95+ with a single model."
   }
  }
 }

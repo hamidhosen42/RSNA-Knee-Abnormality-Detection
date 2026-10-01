@@ -24,7 +24,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1646,
+    "competitionRanking": 1968,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -47,6 +47,44 @@
       "profileUrl": "/aliahmadmphil",
       "performanceTier": "CONTRIBUTOR",
       "userId": 35508511,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531229,
+    "postDate": "2026-10-01T14:11:45.400Z",
+    "rawMarkdown": "Thanks @macruzbar!!!!",
+    "content": "<p>Thanks <a href=\"/macruzbar\" target=\"_blank\">@macruzbar</a>!!!!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rubens Sosa",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/rubenssosa",
+     "tier": "CONTRIBUTOR",
+     "id": 31000103,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4693,
+    "feedbackTrackingData": {},
+    "isThankYou": true,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rubens Sosa",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/rubenssosa",
+      "userName": "rubenssosa",
+      "tier": "CONTRIBUTOR",
+      "id": 31000103,
+      "profileUrl": "/rubenssosa",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31000103,
       "progressionOptOut": false
      },
      "intro": ""
@@ -116,7 +154,7 @@
   "postDate": "2026-07-30T03:29:19.177106Z",
   "totalVotes": 6,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/730709",
-  "totalMessages": 1,
+  "totalMessages": 2,
   "authorPerformanceTier": "STAFF",
   "authorProgressionOptOut": false
  },
@@ -130,20 +168,20 @@
    "progressionOptOut": false
   },
   "authorType": "ADMIN",
-  "commentCount": 1,
+  "commentCount": 2,
   "firstForumMessageId": 3505387,
   "id": 730709,
   "isSticky": true,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Ali Ahmad",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/730709#3509587",
-  "lastCommentPostDate": "2026-08-06T17:00:15.156666700Z",
+  "lastCommenterName": "Rubens Sosa",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/730709#3531229",
+  "lastCommentPostDate": "2026-10-01T14:11:45.400Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-07-30T03:29:19.177106Z",
   "title": "How to get started + Competition's Official Discord",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/730709",
-  "votes": 6,
+  "votes": 7,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "María Cruz",

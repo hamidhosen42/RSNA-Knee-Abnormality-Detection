@@ -4,6 +4,225 @@
   "authorThumbnailName": "13669554-kg.jpg?t=2025-03-11-02-27-49",
   "authorUserDisplayName": "Dhiyanesh Babu C V",
   "authorUserName": "dhiyaneshbabu",
+  "comments": [
+   {
+    "id": 3530360,
+    "postDate": "2026-09-30T03:30:39.240Z",
+    "rawMarkdown": "I think it is enough to achieve a medal but may not be enough to get Gold and/or top positions. Using Kaggle GPUs we can do lots of experiments with smaller backbones and/or subset of train data. We can explore diverse models from public notebooks. Using ensemble between your work and public notebooks can usually always achieve medal. When using public notebooks, you will need to use your common sense and/or local validate public notebooks to determine what is legitimate and what is overfitting public LB.\n\nIn conclusion, using Kaggle GPU is enough to learn data science, explore competition models, and have a good time. Have fun, participate, and good luck!",
+    "content": "<p>I think it is enough to achieve a medal but may not be enough to get Gold and/or top positions. Using Kaggle GPUs we can do lots of experiments with smaller backbones and/or subset of train data. We can explore diverse models from public notebooks. Using ensemble between your work and public notebooks can usually always achieve medal. When using public notebooks, you will need to use your common sense and/or local validate public notebooks to determine what is legitimate and what is overfitting public LB.</p>\n<p>In conclusion, using Kaggle GPU is enough to learn data science, explore competition models, and have a good time. Have fun, participate, and good luck!</p>",
+    "replies": [
+     {
+      "id": 3530593,
+      "postDate": "2026-09-30T14:24:25.153Z",
+      "rawMarkdown": "Hi! I am obsessed with asking questions to like-minded people as you .\nSo here is my questions :-\n\nWhich GPU do you use ?",
+      "content": "<p>Hi! I am obsessed with asking questions to like-minded people as you .\nSo here is my questions :-</p>\n<p>Which GPU do you use ?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 412,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 100,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530093,
+    "postDate": "2026-09-29T14:17:54.903Z",
+    "rawMarkdown": "Kaggle GPU is enough for learning and experimentation.\nIf you are concerned about big data and how GPU handles it, you can probably split the data preparation and model training phase.\ndata preparation is CPU intensive task where you can prepare your dataset without consuming GPU quota.\nGPU quota can be exclusively used for model training. \nIf your theory is good enough and deep learning understanding is descent, you can get a good score even with kaggle GPU by optimizing the pipeline as much as you can.\n\nIf you just want to sweep every hyperparameter across range , then that will fall in blind search category where you can burn through any GPU if you are not careful enough.  \n\nSo understand the strategies from open kaggle code notebooks and community discussions , you will get some ideas. Experiment with those ideas.",
+    "content": "<p>Kaggle GPU is enough for learning and experimentation.\nIf you are concerned about big data and how GPU handles it, you can probably split the data preparation and model training phase.\ndata preparation is CPU intensive task where you can prepare your dataset without consuming GPU quota.\nGPU quota can be exclusively used for model training. \nIf your theory is good enough and deep learning understanding is descent, you can get a good score even with kaggle GPU by optimizing the pipeline as much as you can.</p>\n<p>If you just want to sweep every hyperparameter across range , then that will fall in blind search category where you can burn through any GPU if you are not careful enough.  </p>\n<p>So understand the strategies from open kaggle code notebooks and community discussions , you will get some ideas. Experiment with those ideas.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rohit Chaudhari",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/rohitchaudhari25",
+     "tier": "CONTRIBUTOR",
+     "id": 10192946,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2660,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rohit Chaudhari",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/rohitchaudhari25",
+      "userName": "rohitchaudhari25",
+      "tier": "CONTRIBUTOR",
+      "id": 10192946,
+      "profileUrl": "/rohitchaudhari25",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 10192946,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529912,
+    "postDate": "2026-09-29T07:00:23.343Z",
+    "rawMarkdown": "Not enough for competitions like RSNA",
+    "content": "<p>Not enough for competitions like RSNA</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Seeing Times",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6625861-kg.jpg?t=2023-10-19-06-40-07",
+     "url": "/seeingtimes",
+     "tier": "EXPERT",
+     "id": 6625861,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Seeing Times",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6625861-kg.jpg?t=2023-10-19-06-40-07",
+      "url": "/seeingtimes",
+      "userName": "seeingtimes",
+      "tier": "EXPERT",
+      "id": 6625861,
+      "profileUrl": "/seeingtimes",
+      "performanceTier": "EXPERT",
+      "userId": 6625861,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529533,
+    "postDate": "2026-09-28T12:57:20.110Z",
+    "rawMarkdown": "if you are just here for experience kaggle GPU is enough , however if you are here to win or secure a medal then you need to be rich and which RTX series are you talking about cause if you have above 4090 you are good to go",
+    "content": "<p>if you are just here for experience kaggle GPU is enough , however if you are here to win or secure a medal then you need to be rich and which RTX series are you talking about cause if you have above 4090 you are good to go</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 412,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3529612,
+    "postDate": "2026-09-28T16:28:36.393Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
   "firstMessage": {
    "id": 3528778,
@@ -24,6 +243,7 @@
     "canUpvote": true
    },
    "kernelVersion": 0,
+   "competitionRanking": 2563,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -51,6 +271,7 @@
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-26T13:44:02.705841900Z",
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743698",
+  "totalMessages": 6,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -64,12 +285,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
+  "commentCount": 6,
   "firstForumMessageId": 3528778,
   "id": 743698,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "Dhiyanesh Babu C V",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743698#3528778",
-  "lastCommentPostDate": "2026-09-26T13:44:02.706666700Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743698#3530593",
+  "lastCommentPostDate": "2026-09-30T14:24:25.153333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-26T13:44:02.705841900Z",

@@ -21,11 +21,11 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": -1,
-     "canUpvote": true
+     "canUpvote": true,
+     "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 93,
+    "competitionRanking": 100,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -43,6 +43,144 @@
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3528986,
+    "postDate": "2026-09-27T04:37:14.730Z",
+    "rawMarkdown": "Hey! I read your post about optimizing inference down to under 10 minutes—that's seriously impressive work, especially the custom DICOM parsing and bypassing pydicom overhead.\n\nI'd love to team up. I meet your requirements because I currently have a robust single model submission scoring 0.943 and deep experience working with target engineering and noisy labels for this type of medical imaging data.\n\nWith your infrastructure and speed optimizations combined with my model performance and label strategy, I think we'd make a really strong team for the leaderboard. Let me know if you're down to merge forces!",
+    "content": "<p>Hey! I read your post about optimizing inference down to under 10 minutes—that's seriously impressive work, especially the custom DICOM parsing and bypassing pydicom overhead.</p>\n<p>I'd love to team up. I meet your requirements because I currently have a robust single model submission scoring 0.943 and deep experience working with target engineering and noisy labels for this type of medical imaging data.</p>\n<p>With your infrastructure and speed optimizations combined with my model performance and label strategy, I think we'd make a really strong team for the leaderboard. Let me know if you're down to merge forces!</p>",
+    "replies": [
+     {
+      "id": 3529534,
+      "postDate": "2026-09-28T12:57:56.013Z",
+      "rawMarkdown": "Are you there @prateekgroverin ",
+      "content": "<p>Are you there <a href=\"/prateekgroverin\" target=\"_blank\">@prateekgroverin</a> </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Lavin Wins",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+       "url": "/lavinwins",
+       "tier": "CONTRIBUTOR",
+       "id": 27284910,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 410,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Lavin Wins",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+        "url": "/lavinwins",
+        "userName": "lavinwins",
+        "tier": "CONTRIBUTOR",
+        "id": 27284910,
+        "profileUrl": "/lavinwins",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 27284910,
+        "progressionOptOut": false
+       },
+       "intro": "Someone who is rich "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 410,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3529611,
+    "postDate": "2026-09-28T16:26:57.700Z",
+    "rawMarkdown": "Niceeeeeee!",
+    "content": "<p>Niceeeeeee!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Volkopat",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9459975-kg.PNG?t=2025-09-08-12-48-00",
+     "url": "/volkopat",
+     "tier": "CONTRIBUTOR",
+     "id": 9459975,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 10,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Volkopat",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9459975-kg.PNG?t=2025-09-08-12-48-00",
+      "url": "/volkopat",
+      "userName": "volkopat",
+      "tier": "CONTRIBUTOR",
+      "id": 9459975,
+      "profileUrl": "/volkopat",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 9459975,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3528985,
+    "postDate": "2026-09-27T04:36:22.720Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
@@ -62,12 +200,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 2,
+    "totalVotes": 9,
     "canUpvote": true,
-    "totalUpvotes": 2
+    "totalUpvotes": 9
    },
    "kernelVersion": 0,
-   "competitionRanking": 131,
+   "competitionRanking": 185,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -95,9 +233,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-25T19:18:57.669583500Z",
-  "totalVotes": 2,
+  "totalVotes": 9,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
-  "totalMessages": 1,
+  "totalMessages": 5,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -111,19 +249,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 1,
+  "commentCount": 5,
   "firstForumMessageId": 3528293,
   "id": 743374,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Chris Deotte",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3528356",
-  "lastCommentPostDate": "2026-09-25T23:51:52.850Z",
+  "lastCommenterName": "Volkopat",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3529611",
+  "lastCommentPostDate": "2026-09-28T16:26:57.700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-25T19:18:57.669583500Z",
   "title": "Optimizations for blazingly fast submissions (<10 minutes!) + Looking for teammates :)",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
-  "votes": 2,
+  "votes": 9,
   "teamUpInfo": {
    "enabled": true,
    "teamLeader": {

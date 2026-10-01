@@ -1,0 +1,179 @@
+{
+ "forumTopic": {
+  "authorId": 506080,
+  "authorThumbnailName": "506080-gp.jpg",
+  "authorUserDisplayName": "Md Kishor Morol",
+  "authorUserName": "kishormorol",
+  "comments": [
+   {
+    "id": 3531176,
+    "postDate": "2026-10-01T12:27:30.753Z",
+    "rawMarkdown": "As far as I understand, the P100 and T4 GPUs do not support bfloat16.",
+    "content": "<p>As far as I understand, the P100 and T4 GPUs do not support bfloat16.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Quan Vu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+     "url": "/quan0095",
+     "tier": "MASTER",
+     "id": 2832287,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 14,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Quan Vu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+      "url": "/quan0095",
+      "userName": "quan0095",
+      "tier": "MASTER",
+      "id": 2832287,
+      "profileUrl": "/quan0095",
+      "performanceTier": "MASTER",
+      "userId": 2832287,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531161,
+    "postDate": "2026-10-01T11:32:39.323Z",
+    "rawMarkdown": "Good catch! You need to use `torch.cuda.is_bf16_supported(including_emulation=False)` though as the default may still output `true` depending on torch version.",
+    "content": "<p>Good catch! You need to use <code>torch.cuda.is_bf16_supported(including_emulation=False)</code> though as the default may still output <code>true</code> depending on torch version.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Roman Vuskov",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17870789-kg.jpg?t=2025-08-13-10-09-37",
+     "url": "/romanvuskov",
+     "tier": "CONTRIBUTOR",
+     "id": 17870789,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 31,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Roman Vuskov",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17870789-kg.jpg?t=2025-08-13-10-09-37",
+      "url": "/romanvuskov",
+      "userName": "romanvuskov",
+      "tier": "CONTRIBUTOR",
+      "id": 17870789,
+      "profileUrl": "/romanvuskov",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 17870789,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3529827,
+   "postDate": "2026-09-29T02:54:02.310Z",
+   "rawMarkdown": "My own model scored **0.710** public, while held-out evaluation on the 58 annotated studies said ~0.86. It wasn't the model. Here's what happened, in case it saves someone a week.\n\n**What went wrong**\n- My inference kernel used `torch.autocast(dtype=torch.bfloat16)`, copied from training on an A100.\n- T4 and P100 have no bf16 units. PyTorch doesn't error: it **emulates**, and each forward pass got ~50x slower (~0.9 s per model pass per study for a ViT-S with 24 images).\n- 10 checkpoints x 5 TTA views = 50 passes per study, x 1,322 hidden studies = ~17 hours.\n- My kernel has a time guard (stop at 8 h and write a prior of 0.5 for whatever isn't done). It hit the guard after ~620 studies, so **more than half the test got a constant 0.5**. That scores ~0.71 for a model that's really ~0.86.\n- On the 3 visible test studies, everything looked fine. The failure only exists at hidden-test scale.\n\n**The fix:** `dtype=torch.float16` (T4 has fp16 tensor cores). Same model, resubmitted: **0.851**.\n\n**Checklist for your own kernel**\n1. `torch.cuda.is_bf16_supported()` on the scoring GPU. If it's False, don't autocast to bf16.\n2. Log seconds per study, and extrapolate to ~1,300 hidden studies *plus* headroom, before trusting a public score.\n3. If you have a time guard with a fallback, log how many studies hit the fallback. A silent partial fallback looks exactly like a bad model.\n4. To tell \"bad model\" from \"bad pipeline\", run your exact inference path on held-out *train* studies (DICOM -> decode -> TTA -> rank) and score it against the annotated ones. Mine gave 0.858 there, which is how I knew the leaderboard number was wrong.\n\n---\n\nSeparately: I have an **independent arm** (DINOv2 ViT-S, 6 series x 16 slices over 140 mm at 336 px, fully fine-tuned, 5 folds) that shares no weights with the public ensemble. If you're at **0.945+** and want an uncorrelated component before the 15 Oct merge deadline, happy to talk.",
+   "content": "<p>My own model scored <strong>0.710</strong> public, while held-out evaluation on the 58 annotated studies said ~0.86. It wasn't the model. Here's what happened, in case it saves someone a week.</p>\n<p><strong>What went wrong</strong></p>\n<ul>\n<li>My inference kernel used <code>torch.autocast(dtype=torch.bfloat16)</code>, copied from training on an A100.</li>\n<li>T4 and P100 have no bf16 units. PyTorch doesn't error: it <strong>emulates</strong>, and each forward pass got ~50x slower (~0.9 s per model pass per study for a ViT-S with 24 images).</li>\n<li>10 checkpoints x 5 TTA views = 50 passes per study, x 1,322 hidden studies = ~17 hours.</li>\n<li>My kernel has a time guard (stop at 8 h and write a prior of 0.5 for whatever isn't done). It hit the guard after ~620 studies, so <strong>more than half the test got a constant 0.5</strong>. That scores ~0.71 for a model that's really ~0.86.</li>\n<li>On the 3 visible test studies, everything looked fine. The failure only exists at hidden-test scale.</li>\n</ul>\n<p><strong>The fix:</strong> <code>dtype=torch.float16</code> (T4 has fp16 tensor cores). Same model, resubmitted: <strong>0.851</strong>.</p>\n<p><strong>Checklist for your own kernel</strong></p>\n<ol>\n<li><code>torch.cuda.is_bf16_supported()</code> on the scoring GPU. If it's False, don't autocast to bf16.</li>\n<li>Log seconds per study, and extrapolate to ~1,300 hidden studies <em>plus</em> headroom, before trusting a public score.</li>\n<li>If you have a time guard with a fallback, log how many studies hit the fallback. A silent partial fallback looks exactly like a bad model.</li>\n<li>To tell \"bad model\" from \"bad pipeline\", run your exact inference path on held-out <em>train</em> studies (DICOM -&gt; decode -&gt; TTA -&gt; rank) and score it against the annotated ones. Mine gave 0.858 there, which is how I knew the leaderboard number was wrong.</li>\n</ol>\n<hr>\n<p>Separately: I have an <strong>independent arm</strong> (DINOv2 ViT-S, 6 series x 16 slices over 140 mm at 336 px, fully fine-tuned, 5 folds) that shares no weights with the public ensemble. If you're at <strong>0.945+</strong> and want an uncorrelated component before the 15 Oct merge deadline, happy to talk.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Md Kishor Morol",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/506080-gp.jpg",
+    "url": "/kishormorol",
+    "tier": "CONTRIBUTOR",
+    "id": 506080,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 824,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Md Kishor Morol",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/506080-gp.jpg",
+     "url": "/kishormorol",
+     "userName": "kishormorol",
+     "tier": "CONTRIBUTOR",
+     "id": 506080,
+     "profileUrl": "/kishormorol",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 506080,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3529827,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744230,
+  "name": "PSA: bf16 on Kaggle's T4/P100 silently cost me 0.14 AUC (0.851 → 0.710). How to spot it.",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-29T02:54:02.310448300Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744230",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Md Kishor Morol",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/506080-gp.jpg",
+   "url": "/kishormorol",
+   "tier": "CONTRIBUTOR",
+   "id": 506080,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3529827,
+  "id": 744230,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Quan Vu",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744230#3531176",
+  "lastCommentPostDate": "2026-10-01T12:27:30.753333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-29T02:54:02.310448300Z",
+  "title": "PSA: bf16 on Kaggle's T4/P100 silently cost me 0.14 AUC (0.851 → 0.710). How to spot it.",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744230",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Md Kishor Morol",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/506080-gp.jpg",
+    "url": "/kishormorol",
+    "userName": "kishormorol",
+    "tier": "CONTRIBUTOR",
+    "id": 506080,
+    "profileUrl": "/kishormorol",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 506080,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,10 +1,10 @@
 # From AlexNet to DINOv3: A Practical Backbone History for the RSNA Knee MRI 2026 Challenge
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/740164
-- **Author:** **Seung Sup Lee** (@seungsuplee, Contributor) · _topic author_ · 2026-09-08 14:35 UTC · ▲1 · LB rank 2633
-- **Topic votes:** 1 · **Comments/replies:** 1 · **Pinned:** no
-- **Last comment:** 2026-09-26 14:34 UTC by Seung Sup Lee
-- **Cloned:** 2026-09-26 16:24 UTC (topic id 740164, raw JSON `_raw/740164.json`)
+- **Author:** **Seung Sup Lee** (@seungsuplee, Contributor) · _topic author_ · 2026-09-08 14:35 UTC · ▲2 · LB rank 2979
+- **Topic votes:** 2 · **Comments/replies:** 3 · **Pinned:** no
+- **Last comment:** 2026-09-27 05:21 UTC by Shivansh
+- **Cloned:** 2026-10-01 19:24 UTC (topic id 740164, raw JSON `_raw/740164.json`)
 
 ---
 
@@ -492,10 +492,22 @@ Comments, contradictory ablations and alternative interpretations are welcome.
 
 ---
 
-## Comments (1, threaded, oldest first)
+## Comments (3, threaded, oldest first)
 
 ### [1] Chris Deotte
 
-**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-26 00:22 UTC · LB rank 92
+**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-26 00:22 UTC · ▲1 · LB rank 101
 
 Nice history. The current SOTA are working best for this competition.
+
+#### ↳ [1.1] Shivansh
+
+**Shivansh** (@shivsatyam, Expert) · 2026-09-27 05:21 UTC · LB rank 2286
+
+They are only working well if you have strong labels. The public `GPT 5.6` labelled data got me to .910 with a simple Resnet34 using a mundane linear head with no augmentations.
+
+### [2] Seung Sup Lee
+
+**Seung Sup Lee** (@seungsuplee, Contributor) · _topic author_ · 2026-09-26 14:34 UTC · LB rank 2979
+
+Thank you. Many other image-processing backbones are also being actively developed. It is important to choose the right backbone for your specific purpose and application. In practice, rather than relying on a single backbone, combining and blending multiple complementary models often delivers better overall performance.

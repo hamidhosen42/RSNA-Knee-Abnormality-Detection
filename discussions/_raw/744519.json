@@ -1,0 +1,141 @@
+{
+ "forumTopic": {
+  "authorId": 3459992,
+  "authorThumbnailName": "3459992-kg.jpg?t=2025-11-13-11-42-38",
+  "authorUserDisplayName": "Satwik",
+  "authorUserName": "p4rallax",
+  "comments": [
+   {
+    "id": 3531214,
+    "postDate": "2026-10-01T13:53:16.653Z",
+    "rawMarkdown": "@javaduke95 Following up on this topic: can you confirm whether every hidden test scan contains all three planes (sagittal/coronal/axial) and at least one fluid-sensitive series, or should the pipelines be prepared for scans with missing planes/sequences? A yes/no answer regarding whether \"all three planes are always present\" would suffice",
+    "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> Following up on this topic: can you confirm whether every hidden test scan contains all three planes (sagittal/coronal/axial) and at least one fluid-sensitive series, or should the pipelines be prepared for scans with missing planes/sequences? A yes/no answer regarding whether \"all three planes are always present\" would suffice</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rubens Sosa",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/rubenssosa",
+     "tier": "CONTRIBUTOR",
+     "id": 31000103,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4691,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rubens Sosa",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/rubenssosa",
+      "userName": "rubenssosa",
+      "tier": "CONTRIBUTOR",
+      "id": 31000103,
+      "profileUrl": "/rubenssosa",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 31000103,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3530408,
+   "postDate": "2026-09-30T05:50:32.287Z",
+   "rawMarkdown": "Apologies if this has already been mentioned / answered somewhere else, but do all studies in the test set have all planes / modalities (T2/ FS / PD, etc)? Or are there cases where one/many of these is unavailable in the test set?",
+   "content": "<p>Apologies if this has already been mentioned / answered somewhere else, but do all studies in the test set have all planes / modalities (T2/ FS / PD, etc)? Or are there cases where one/many of these is unavailable in the test set?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Satwik",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+    "url": "/p4rallax",
+    "tier": "MASTER",
+    "id": 3459992,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1304,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "tingyi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+     "url": "/chengtingyi",
+     "userName": "chengtingyi",
+     "tier": "CONTRIBUTOR",
+     "id": 8788200,
+     "profileUrl": "/chengtingyi",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 8788200,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3530408,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744519,
+  "name": "Imaging modalities / planes in private test set",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-30T05:50:32.285808600Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744519",
+  "totalMessages": 1,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Satwik",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+   "url": "/p4rallax",
+   "tier": "MASTER",
+   "id": 3459992,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3530408,
+  "id": 744519,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Rubens Sosa",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744519#3531214",
+  "lastCommentPostDate": "2026-10-01T13:53:16.653333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-30T05:50:32.285808600Z",
+  "title": "Imaging modalities / planes in private test set",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744519",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "tingyi",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+    "url": "/chengtingyi",
+    "userName": "chengtingyi",
+    "tier": "CONTRIBUTOR",
+    "id": 8788200,
+    "profileUrl": "/chengtingyi",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 8788200,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

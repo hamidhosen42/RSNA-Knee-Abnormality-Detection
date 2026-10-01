@@ -1,10 +1,10 @@
 # "Not addressed" is a label too — what we learned reading 4,407 knee reports with an LLM
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733932
-- **Author:** **stevenleehans** (@stevenleehans, Expert) · _topic author_ · 2026-08-09 05:54 UTC · ▲55 · LB rank 1897
-- **Topic votes:** 55 · **Comments/replies:** 9 · **Pinned:** no
-- **Last comment:** 2026-09-26 08:50 UTC by Lavin Wins
-- **Cloned:** 2026-09-26 16:24 UTC (topic id 733932, raw JSON `_raw/733932.json`)
+- **Author:** **stevenleehans** (@stevenleehans, Expert) · _topic author_ · 2026-08-09 05:54 UTC · ▲56 · LB rank 2222
+- **Topic votes:** 56 · **Comments/replies:** 10 · **Pinned:** no
+- **Last comment:** 2026-10-01 06:42 UTC by junlee789
+- **Cloned:** 2026-10-01 19:24 UTC (topic id 733932, raw JSON `_raw/733932.json`)
 
 ---
 
@@ -177,7 +177,7 @@ Labels and weights are public; questions and corrections welcome.
 
 ---
 
-## Comments (9, threaded, oldest first)
+## Comments (10, threaded, oldest first)
 
 ### [1] imtayhan
 
@@ -187,33 +187,33 @@ Interesting!
 
 ### [2] OpPrime
 
-**OpPrime** (@farshidamira, Contributor) · 2026-08-14 15:25 UTC · ▲1 · LB rank 150
+**OpPrime** (@farshidamira, Contributor) · 2026-08-14 15:25 UTC · ▲1 · LB rank 220
 
 Thank you for doing this work, I lost a day trying to first identify language source and then get to some degree of acceptable extraction, then found your post with a review of what others have done and what could be the "I don't know" effect.
 
 #### ↳ [2.1] stevenleehans
 
-**stevenleehans** (@stevenleehans, Expert) · _topic author_ · 2026-08-14 15:42 UTC · LB rank 1897
+**stevenleehans** (@stevenleehans, Expert) · _topic author_ · 2026-08-14 15:42 UTC · LB rank 2222
 
 Happy to help! i was helped a lot in the last comp by fellow kagglers. it's my way to give back!
 Feel free to use my Knee Report LLM Labels
 
 ### [3] Promise Ekpo
 
-**Promise Ekpo** (@promiseekpo, Contributor) · 2026-08-15 23:53 UTC · LB rank 2841
+**Promise Ekpo** (@promiseekpo, Contributor) · 2026-08-15 23:53 UTC · LB rank 3015
 
 Thanks for this article, I set my LLM extraction phase to explicitly ignore any study with no clear diagnosis and set it 0 across all 12 labels, but with this your findings in Effusion and synovitis it just proves I was throwing in lots of false negatives into my work
 
 ### [4] Mahyar Dana
 
-**Mahyar Dana** (@mahyardana, Contributor) · 2026-08-18 20:59 UTC · LB rank 3000
+**Mahyar Dana** (@mahyardana, Contributor) · 2026-08-18 20:59 UTC · LB rank 3340
 
 Thanks a lot for sharing labels
 I was pulling my hair out for just doing this task
 
 ### [5] Lavin Wins
 
-**Lavin Wins** (@lavinwins, Contributor) · 2026-09-13 17:11 UTC · ▲-4 · LB rank 278
+**Lavin Wins** (@lavinwins, Contributor) · 2026-09-13 17:11 UTC · ▲-7 · LB rank 412
 
 Bro , we can team up if you want I have some crazy idea and already prepared it and has 70-85% of getting a CV of 0.952+ if you are interested please reply here.
 
@@ -227,12 +227,19 @@ intresting😊
 
 ### [7] Chris Deotte
 
-**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-26 00:19 UTC · LB rank 92
+**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-26 00:19 UTC · LB rank 101
 
 Great insight, this is true
 
 #### ↳ [7.1] Lavin Wins
 
-**Lavin Wins** (@lavinwins, Contributor) · 2026-09-26 08:50 UTC · LB rank 278
+**Lavin Wins** (@lavinwins, Contributor) · 2026-09-26 08:50 UTC · ▲-4 · LB rank 412
 
 ooh ! damn I am competiting with NVIDIA engineer lol!!
+
+### [8] junlee789
+
+**junlee789** (@pablolee789, Expert) · 2026-10-01 06:42 UTC · LB rank 2403
+
+I just participated this comp and found this discussion really helpful to someone like me who just participated lately...
+huge thanks!

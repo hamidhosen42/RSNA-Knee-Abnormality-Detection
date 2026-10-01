@@ -1,0 +1,279 @@
+{
+ "forumTopic": {
+  "authorId": 36100692,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "TheMightiestMan",
+  "authorUserName": "themightiestman",
+  "comments": [
+   {
+    "id": 3530385,
+    "postDate": "2026-09-30T04:56:20.257Z",
+    "rawMarkdown": "If we don't rely on the public LB, RSNA probably won't shake much\n",
+    "content": "<p>If we don't rely on the public LB, RSNA probably won't shake much</p>",
+    "parent": {},
+    "author": {
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 129,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "themightiestman"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Myo Min Htet(wnp)🇲🇲",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+      "url": "/myominhtet",
+      "userName": "myominhtet",
+      "tier": "EXPERT",
+      "id": 4600631,
+      "profileUrl": "/myominhtet",
+      "performanceTier": "EXPERT",
+      "userId": 4600631,
+      "progressionOptOut": false
+     },
+     "intro": "Need some who can support GPU, "
+    }
+   },
+   {
+    "id": 3530358,
+    "postDate": "2026-09-30T03:26:42.763Z",
+    "rawMarkdown": "The best way to maintain rank on private LB compared to public LB is to \"trust your CV\". Set up a local CV scheme which mimics the relationship between Kaggle test and Kaggle train. (i.e. if Kaggle test has different studies than train, them make your kfold validation have different studies than kfold train).\n\nThe next technique is more advanced. If there are differences in your LB score versus your CV score, you need to do detective work to understand what is different between test and train. And you then extrapolate this conclusion to what may be different between private and public test. Then you adjust/adapt your local validation and model training to handle/accomdate this.",
+    "content": "<p>The best way to maintain rank on private LB compared to public LB is to \"trust your CV\". Set up a local CV scheme which mimics the relationship between Kaggle test and Kaggle train. (i.e. if Kaggle test has different studies than train, them make your kfold validation have different studies than kfold train).</p>\n<p>The next technique is more advanced. If there are differences in your LB score versus your CV score, you need to do detective work to understand what is different between test and train. And you then extrapolate this conclusion to what may be different between private and public test. Then you adjust/adapt your local validation and model training to handle/accomdate this.</p>",
+    "replies": [
+     {
+      "id": 3530363,
+      "postDate": "2026-09-30T03:42:27.457Z",
+      "rawMarkdown": "thanks for your help",
+      "content": "<p>thanks for your help</p>",
+      "parent": {},
+      "author": {
+       "displayName": "TheMightiestMan",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/themightiestman",
+       "tier": "CONTRIBUTOR",
+       "id": 36100692,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 758,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "TheMightiestMan",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/themightiestman",
+        "userName": "themightiestman",
+        "tier": "CONTRIBUTOR",
+        "id": 36100692,
+        "profileUrl": "/themightiestman",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36100692,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 100,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "themightiestman"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3530348,
+    "postDate": "2026-09-30T02:20:08.163Z",
+    "rawMarkdown": "I usually improve the code and then test on my local data to see whether it runs, then submit to Kaggle to check whether the score improves. If it improves, I keep improving the code on top of that new version. My experience from two competitions tells me that local test scores can't reflect the public leaderboard score, but the private leaderboard has a big gap from the public leaderboard score.",
+    "content": "<p>I usually improve the code and then test on my local data to see whether it runs, then submit to Kaggle to check whether the score improves. If it improves, I keep improving the code on top of that new version. My experience from two competitions tells me that local test scores can't reflect the public leaderboard score, but the private leaderboard has a big gap from the public leaderboard score.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "TheMightiestMan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/themightiestman",
+     "tier": "CONTRIBUTOR",
+     "id": 36100692,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 758,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "TheMightiestMan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/themightiestman",
+      "userName": "themightiestman",
+      "tier": "CONTRIBUTOR",
+      "id": 36100692,
+      "profileUrl": "/themightiestman",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36100692,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3530347,
+   "postDate": "2026-09-30T02:16:34.113Z",
+   "rawMarkdown": "I’ve joined two similar competitions. In both cases I landed in the silver range on the public LB, but fell out of bronze on the private LB. How can I prevent this? Is the score from my local dataset during training just as important as the public leaderboard score?",
+   "content": "<p>I’ve joined two similar competitions. In both cases I landed in the silver range on the public LB, but fell out of bronze on the private LB. How can I prevent this? Is the score from my local dataset during training just as important as the public leaderboard score?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "TheMightiestMan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/themightiestman",
+    "tier": "CONTRIBUTOR",
+    "id": 36100692,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 758,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "TheMightiestMan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/themightiestman",
+     "userName": "themightiestman",
+     "tier": "CONTRIBUTOR",
+     "id": 36100692,
+     "profileUrl": "/themightiestman",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36100692,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3530347,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 744495,
+  "name": "looking for help",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-09-30T02:16:34.112076400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/744495",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "TheMightiestMan",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/themightiestman",
+   "tier": "CONTRIBUTOR",
+   "id": 36100692,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3530347,
+  "id": 744495,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "SpeedSci",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744495#3530385",
+  "lastCommentPostDate": "2026-09-30T04:56:20.256666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-09-30T02:16:34.112076400Z",
+  "title": "looking for help",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744495",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "TheMightiestMan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/themightiestman",
+    "userName": "themightiestman",
+    "tier": "CONTRIBUTOR",
+    "id": 36100692,
+    "profileUrl": "/themightiestman",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36100692,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}
