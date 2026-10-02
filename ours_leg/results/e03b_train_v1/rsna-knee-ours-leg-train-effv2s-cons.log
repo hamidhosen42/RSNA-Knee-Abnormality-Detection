@@ -1,0 +1,400 @@
+[{"stream_name":"stdout","time":25.49895096,"data":"folds [0, 1] | gpus 2 | script /kaggle/src/script.py\n"}
+,{"stream_name":"stdout","time":31.962648857,"data":"[f0] device cuda x1 | amp torch.float16 | arch tf_efficientnetv2_s.in21k_ft_in1k @ 384 | k 12/24 | bs 8 | epochs 16 | fold 0 | tag effv2s_cons_f0\n"}
+,{"stream_name":"stdout","time":32.031683317,"data":"[f1] device cuda x1 | amp torch.float16 | arch tf_efficientnetv2_s.in21k_ft_in1k @ 384 | k 12/24 | bs 8 | epochs 16 | fold 1 | tag effv2s_cons_f1\n"}
+,{"stream_name":"stdout","time":32.929833303,"data":"[f0] training target: /kaggle/input/notebooks/esfersami50/nx1-01-consensus-labels/labels_consensus.parquet (folds still from /kaggle/input/datasets/dreaddevelopment/rsna-knee-labels/labels_llm_soft.parquet)\n"}
+,{"stream_name":"stdout","time":32.929868944,"data":"[f1] training target: /kaggle/input/notebooks/esfersami50/nx1-01-consensus-labels/labels_consensus.parquet (folds still from /kaggle/input/datasets/dreaddevelopment/rsna-knee-labels/labels_llm_soft.parquet)\n"}
+,{"stream_name":"stdout","time":34.223070912,"data":"[f0] train 3479 | oof 870 | gold 58 | folds sha f4292c4a2dca\n"}
+,{"stream_name":"stdout","time":34.250888763,"data":"[f1] train 3479 | oof 870 | gold 58 | folds sha f4292c4a2dca\n"}
+,{"stream_name":"stdout","time":34.770617674,"data":"[f1] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":38.317261396,"data":"[f1] backbone tf_efficientnetv2_s.in21k_ft_in1k: 20.2M params, features 1280, norm mean [0.5, 0.5, 0.5] std [0.5, 0.5, 0.5]\n"}
+,{"stream_name":"stdout","time":38.318519682,"data":"[f0] backbone tf_efficientnetv2_s.in21k_ft_in1k: 20.2M params, features 1280, norm mean [0.5, 0.5, 0.5] std [0.5, 0.5, 0.5]\n"}
+,{"stream_name":"stdout","time":84.49264674,"data":"[f1]   ep0 it0/434 loss 0.9876 | 0.2 studies/s | waiting on data 2% | RAM 5.3/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":84.492682594,"data":"[f0]   ep0 it0/434 loss 0.9371 | 0.2 studies/s | waiting on data 2% | RAM 5.3/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":175.558162349,"data":"[f0]   ep0 it50/434 loss 0.9287 | 3.0 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":178.535109622,"data":"[f1]   ep0 it50/434 loss 0.9413 | 2.9 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":268.95199526,"data":"[f0]   ep0 it100/434 loss 0.9248 | 3.5 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":275.917132545,"data":"[f1]   ep0 it100/434 loss 0.9333 | 3.4 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":362.402357049,"data":"[f0]   ep0 it150/434 loss 0.9222 | 3.7 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":373.52698415,"data":"[f1]   ep0 it150/434 loss 0.9251 | 3.6 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":455.804452439,"data":"[f0]   ep0 it200/434 loss 0.9172 | 3.9 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":471.339385997,"data":"[f1]   ep0 it200/434 loss 0.9179 | 3.7 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":549.067048145,"data":"[f0]   ep0 it250/434 loss 0.9084 | 3.9 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":569.034295445,"data":"[f1]   ep0 it250/434 loss 0.9127 | 3.8 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":642.323095711,"data":"[f0]   ep0 it300/434 loss 0.9035 | 4.0 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":666.821329784,"data":"[f1]   ep0 it300/434 loss 0.9060 | 3.8 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":735.397986467,"data":"[f0]   ep0 it350/434 loss 0.9002 | 4.0 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":764.333294041,"data":"[f1]   ep0 it350/434 loss 0.9010 | 3.9 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":828.734442151,"data":"[f0]   ep0 it400/434 loss 0.8974 | 4.1 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":862.29824876,"data":"[f1]   ep0 it400/434 loss 0.8969 | 3.9 studies/s | waiting on data 1% | RAM 5.4/31.3 GB (main 2.1 G, workers 1.3 G)\n"}
+,{"stream_name":"stdout","time":999.912587849,"data":"[f0]   ep0 eval 1.8 min | RAM 5.4/31.3 GB (main 2.1 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":1000.318429998,"data":"[f0] ep0 loss 0.8952 | OOF 0.8085 | gold(diag) 0.7257 | best ep0 | 16.0 min | 0.27 h\n"}
+,{"stream_name":"stdout","time":1002.63657435,"data":"[f0]   ep1 it0/434 loss 0.7817 | 3.5 studies/s | waiting on data 20% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1039.544629823,"data":"[f1]   ep0 eval 1.9 min | RAM 5.5/31.3 GB (main 2.1 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":1039.906647375,"data":"[f1] ep0 loss 0.8946 | OOF 0.7919 | gold(diag) 0.7314 | best ep0 | 16.7 min | 0.28 h\n"}
+,{"stream_name":"stdout","time":1042.310966606,"data":"[f1]   ep1 it0/434 loss 0.8397 | 3.3 studies/s | waiting on data 20% | RAM 5.8/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1095.753277922,"data":"[f0]   ep1 it50/434 loss 0.8468 | 4.3 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1140.135757674,"data":"[f1]   ep1 it50/434 loss 0.8621 | 4.1 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1189.127151835,"data":"[f0]   ep1 it100/434 loss 0.8465 | 4.3 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1237.960171061,"data":"[f1]   ep1 it100/434 loss 0.8530 | 4.1 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1282.457331639,"data":"[f0]   ep1 it150/434 loss 0.8461 | 4.3 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1335.929968845,"data":"[f1]   ep1 it150/434 loss 0.8484 | 4.1 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1375.860601116,"data":"[f0]   ep1 it200/434 loss 0.8452 | 4.3 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1433.743811379,"data":"[f1]   ep1 it200/434 loss 0.8491 | 4.1 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1469.104558704,"data":"[f0]   ep1 it250/434 loss 0.8441 | 4.3 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1531.659258042,"data":"[f1]   ep1 it250/434 loss 0.8494 | 4.1 studies/s | waiting on data 1% | RAM 5.7/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1562.493489454,"data":"[f0]   ep1 it300/434 loss 0.8417 | 4.3 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1629.8220804,"data":"[f1]   ep1 it300/434 loss 0.8471 | 4.1 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1656.007821781,"data":"[f0]   ep1 it350/434 loss 0.8425 | 4.3 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1728.106452901,"data":"[f1]   ep1 it350/434 loss 0.8476 | 4.1 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1749.553553324,"data":"[f0]   ep1 it400/434 loss 0.8439 | 4.3 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1825.950638916,"data":"[f1]   ep1 it400/434 loss 0.8456 | 4.1 studies/s | waiting on data 1% | RAM 5.6/31.3 GB (main 2.2 G, workers 3.3 G)\n"}
+,{"stream_name":"stdout","time":1915.764346298,"data":"[f0]   ep1 eval 1.7 min | RAM 5.6/31.3 GB (main 2.2 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":1916.184995672,"data":"[f0] ep1 loss 0.8431 | OOF 0.8652 | gold(diag) 0.8314 | best ep1 | 15.3 min | 0.52 h\n"}
+,{"stream_name":"stdout","time":1918.629188367,"data":"[f0]   ep2 it0/434 loss 0.7495 | 3.3 studies/s | waiting on data 24% | RAM 5.9/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":1998.396240181,"data":"[f1]   ep1 eval 1.8 min | RAM 5.6/31.3 GB (main 2.2 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":1998.835042419,"data":"[f1] ep1 loss 0.8443 | OOF 0.8463 | gold(diag) 0.7926 | best ep1 | 16.0 min | 0.55 h\n"}
+,{"stream_name":"stdout","time":2001.263124708,"data":"[f1]   ep2 it0/434 loss 0.8053 | 3.3 studies/s | waiting on data 21% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2011.57843417,"data":"[f0]   ep2 it50/434 loss 0.8041 | 4.3 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2099.609196783,"data":"[f1]   ep2 it50/434 loss 0.8046 | 4.0 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2105.321685755,"data":"[f0]   ep2 it100/434 loss 0.8057 | 4.3 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2197.800720298,"data":"[f1]   ep2 it100/434 loss 0.8056 | 4.1 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2198.875061987,"data":"[f0]   ep2 it150/434 loss 0.8075 | 4.3 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2292.397150369,"data":"[f0]   ep2 it200/434 loss 0.8096 | 4.3 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2295.80106756,"data":"[f1]   ep2 it150/434 loss 0.8068 | 4.1 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2385.844684442,"data":"[f0]   ep2 it250/434 loss 0.8085 | 4.3 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2393.89016864,"data":"[f1]   ep2 it200/434 loss 0.8035 | 4.1 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2479.225290323,"data":"[f0]   ep2 it300/434 loss 0.8084 | 4.3 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2491.875821932,"data":"[f1]   ep2 it250/434 loss 0.8057 | 4.1 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2572.570724104,"data":"[f0]   ep2 it350/434 loss 0.8099 | 4.3 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2589.8293303,"data":"[f1]   ep2 it300/434 loss 0.8063 | 4.1 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2665.820089968,"data":"[f0]   ep2 it400/434 loss 0.8095 | 4.3 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.2 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2687.604433016,"data":"[f1]   ep2 it350/434 loss 0.8066 | 4.1 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2785.749695171,"data":"[f1]   ep2 it400/434 loss 0.8070 | 4.1 studies/s | waiting on data 1% | RAM 5.8/31.3 GB (main 2.3 G, workers 3.5 G)\n"}
+,{"stream_name":"stdout","time":2832.135312689,"data":"[f0]   ep2 eval 1.7 min | RAM 5.7/31.3 GB (main 2.2 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":2832.519770751,"data":"[f0] ep2 loss 0.8092 | OOF 0.8877 | gold(diag) 0.8475 | best ep2 | 15.3 min | 0.78 h\n"}
+,{"stream_name":"stdout","time":2835.003592819,"data":"[f0]   ep3 it0/434 loss 0.7766 | 3.2 studies/s | waiting on data 25% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":2928.158272197,"data":"[f0]   ep3 it50/434 loss 0.7777 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":2958.37743997,"data":"[f1]   ep2 eval 1.8 min | RAM 5.9/31.3 GB (main 2.3 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":2958.808429141,"data":"[f1] ep2 loss 0.8074 | OOF 0.8718 | gold(diag) 0.8431 | best ep2 | 16.0 min | 0.81 h\n"}
+,{"stream_name":"stdout","time":2961.501462794,"data":"[f1]   ep3 it0/434 loss 0.7983 | 3.0 studies/s | waiting on data 28% | RAM 6.1/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3021.326405209,"data":"[f0]   ep3 it100/434 loss 0.7820 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3059.273844805,"data":"[f1]   ep3 it50/434 loss 0.7725 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3114.913570177,"data":"[f0]   ep3 it150/434 loss 0.7743 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3157.386060418,"data":"[f1]   ep3 it100/434 loss 0.7771 | 4.1 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3208.303784462,"data":"[f0]   ep3 it200/434 loss 0.7780 | 4.3 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3255.220476943,"data":"[f1]   ep3 it150/434 loss 0.7785 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3301.565862229,"data":"[f0]   ep3 it250/434 loss 0.7760 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3352.991166083,"data":"[f1]   ep3 it200/434 loss 0.7786 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3394.889849125,"data":"[f0]   ep3 it300/434 loss 0.7741 | 4.3 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3450.925368764,"data":"[f1]   ep3 it250/434 loss 0.7785 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3488.331411001,"data":"[f0]   ep3 it350/434 loss 0.7742 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3549.120784307,"data":"[f1]   ep3 it300/434 loss 0.7780 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3581.877191561,"data":"[f0]   ep3 it400/434 loss 0.7753 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3646.916244803,"data":"[f1]   ep3 it350/434 loss 0.7780 | 4.1 studies/s | waiting on data 1% | RAM 5.9/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3744.779418267,"data":"[f1]   ep3 it400/434 loss 0.7784 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.3 G, workers 3.6 G)\n"}
+,{"stream_name":"stdout","time":3748.07509555,"data":"[f0]   ep3 eval 1.7 min | RAM 5.9/31.3 GB (main 2.3 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":3748.48049467,"data":"[f0] ep3 loss 0.7767 | OOF 0.8948 | gold(diag) 0.8339 | best ep3 | 15.3 min | 1.03 h\n"}
+,{"stream_name":"stdout","time":3750.918701431,"data":"[f0]   ep4 it0/434 loss 0.7801 | 3.3 studies/s | waiting on data 23% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":3844.211239404,"data":"[f0]   ep4 it50/434 loss 0.7478 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":3917.318580965,"data":"[f1]   ep3 eval 1.8 min | RAM 5.9/31.3 GB (main 2.3 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":3917.732844651,"data":"[f1] ep3 loss 0.7791 | OOF 0.8851 | gold(diag) 0.8659 | best ep3 | 16.0 min | 1.08 h\n"}
+,{"stream_name":"stdout","time":3920.155137408,"data":"[f1]   ep4 it0/434 loss 0.7241 | 3.3 studies/s | waiting on data 20% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":3937.163186629,"data":"[f0]   ep4 it100/434 loss 0.7447 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4017.772319006,"data":"[f1]   ep4 it50/434 loss 0.7440 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4030.629974511,"data":"[f0]   ep4 it150/434 loss 0.7468 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4115.427620262,"data":"[f1]   ep4 it100/434 loss 0.7400 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4123.800517708,"data":"[f0]   ep4 it200/434 loss 0.7487 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4212.812174439,"data":"[f1]   ep4 it150/434 loss 0.7385 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4216.897284169,"data":"[f0]   ep4 it250/434 loss 0.7489 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4310.322867366,"data":"[f0]   ep4 it300/434 loss 0.7494 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4310.817929605,"data":"[f1]   ep4 it200/434 loss 0.7421 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4403.722783908,"data":"[f0]   ep4 it350/434 loss 0.7492 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4408.75573245,"data":"[f1]   ep4 it250/434 loss 0.7445 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4497.091838537,"data":"[f0]   ep4 it400/434 loss 0.7500 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4506.602108328,"data":"[f1]   ep4 it300/434 loss 0.7435 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4604.456094178,"data":"[f1]   ep4 it350/434 loss 0.7449 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4663.245566063,"data":"[f0]   ep4 eval 1.7 min | RAM 5.9/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":4663.676822159,"data":"[f0] ep4 loss 0.7503 | OOF 0.9103 | gold(diag) 0.8616 | best ep4 | 15.2 min | 1.29 h\n"}
+,{"stream_name":"stdout","time":4666.044559386,"data":"[f0]   ep5 it0/434 loss 0.7064 | 3.4 studies/s | waiting on data 22% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4702.433082924,"data":"[f1]   ep4 it400/434 loss 0.7465 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4759.178258371,"data":"[f0]   ep5 it50/434 loss 0.7228 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4852.47161331,"data":"[f0]   ep5 it100/434 loss 0.7132 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4874.874027235,"data":"[f1]   ep4 eval 1.8 min | RAM 6.1/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":4875.296144613,"data":"[f1] ep4 loss 0.7477 | OOF 0.8918 | gold(diag) 0.8473 | best ep4 | 16.0 min | 1.35 h\n"}
+,{"stream_name":"stdout","time":4877.801971055,"data":"[f1]   ep5 it0/434 loss 0.7142 | 3.2 studies/s | waiting on data 23% | RAM 6.3/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4945.883892561,"data":"[f0]   ep5 it150/434 loss 0.7170 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":4975.7024559,"data":"[f1]   ep5 it50/434 loss 0.7258 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5039.303999597,"data":"[f0]   ep5 it200/434 loss 0.7200 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5073.619852668,"data":"[f1]   ep5 it100/434 loss 0.7253 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5132.740969453,"data":"[f0]   ep5 it250/434 loss 0.7191 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5171.388870077,"data":"[f1]   ep5 it150/434 loss 0.7255 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5226.115600297,"data":"[f0]   ep5 it300/434 loss 0.7228 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5269.311428285,"data":"[f1]   ep5 it200/434 loss 0.7252 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5319.409328547,"data":"[f0]   ep5 it350/434 loss 0.7246 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5367.243494377,"data":"[f1]   ep5 it250/434 loss 0.7260 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5412.782287694,"data":"[f0]   ep5 it400/434 loss 0.7257 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5465.134313905,"data":"[f1]   ep5 it300/434 loss 0.7249 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5562.961328554,"data":"[f1]   ep5 it350/434 loss 0.7244 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5578.798195935,"data":"[f0]   ep5 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":5579.173064289,"data":"[f0] ep5 loss 0.7278 | OOF 0.9123 | gold(diag) 0.8792 | best ep5 | 15.3 min | 1.54 h\n"}
+,{"stream_name":"stdout","time":5581.65290575,"data":"[f0]   ep6 it0/434 loss 0.7598 | 3.2 studies/s | waiting on data 24% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5660.87855744,"data":"[f1]   ep5 it400/434 loss 0.7257 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5674.804729414,"data":"[f0]   ep6 it50/434 loss 0.7081 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5768.104306673,"data":"[f0]   ep6 it100/434 loss 0.7063 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5833.245826032,"data":"[f1]   ep5 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":5833.63068236,"data":"[f1] ep5 loss 0.7254 | OOF 0.8970 | gold(diag) 0.8652 | best ep5 | 16.0 min | 1.61 h\n"}
+,{"stream_name":"stdout","time":5836.241955931,"data":"[f1]   ep6 it0/434 loss 0.6524 | 3.1 studies/s | waiting on data 26% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5861.205249225,"data":"[f0]   ep6 it150/434 loss 0.7078 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5934.264109027,"data":"[f1]   ep6 it50/434 loss 0.7051 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":5954.844523766,"data":"[f0]   ep6 it200/434 loss 0.7064 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6032.219292643,"data":"[f1]   ep6 it100/434 loss 0.7034 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6048.282705541,"data":"[f0]   ep6 it250/434 loss 0.7061 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6130.350654711,"data":"[f1]   ep6 it150/434 loss 0.7047 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6141.70957174,"data":"[f0]   ep6 it300/434 loss 0.7079 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6228.506149499,"data":"[f1]   ep6 it200/434 loss 0.7038 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6235.226792088,"data":"[f0]   ep6 it350/434 loss 0.7055 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6326.686963836,"data":"[f1]   ep6 it250/434 loss 0.7028 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6328.7758201,"data":"[f0]   ep6 it400/434 loss 0.7051 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6424.902823404,"data":"[f1]   ep6 it300/434 loss 0.7038 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6495.123007862,"data":"[f0]   ep6 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":6495.273359623,"data":"[f0] ep6 loss 0.7050 | OOF 0.9102 | gold(diag) 0.8790 | best ep5 | 15.3 min | 1.80 h\n"}
+,{"stream_name":"stdout","time":6497.755057394,"data":"[f0]   ep7 it0/434 loss 0.6122 | 3.2 studies/s | waiting on data 25% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6523.002829782,"data":"[f1]   ep6 it350/434 loss 0.7055 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6590.953860828,"data":"[f0]   ep7 it50/434 loss 0.6932 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6621.035744375,"data":"[f1]   ep6 it400/434 loss 0.7068 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6684.284186849,"data":"[f0]   ep7 it100/434 loss 0.6872 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6777.301244703,"data":"[f0]   ep7 it150/434 loss 0.6866 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6792.92552551,"data":"[f1]   ep6 eval 1.8 min | RAM 5.9/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":6793.29693241,"data":"[f1] ep6 loss 0.7061 | OOF 0.9051 | gold(diag) 0.8702 | best ep6 | 16.0 min | 1.88 h\n"}
+,{"stream_name":"stdout","time":6795.669229842,"data":"[f1]   ep7 it0/434 loss 0.6233 | 3.4 studies/s | waiting on data 18% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6870.817813738,"data":"[f0]   ep7 it200/434 loss 0.6871 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6893.60009912,"data":"[f1]   ep7 it50/434 loss 0.6885 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6964.243120158,"data":"[f0]   ep7 it250/434 loss 0.6874 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":6991.448975665,"data":"[f1]   ep7 it100/434 loss 0.6895 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7057.592944815,"data":"[f0]   ep7 it300/434 loss 0.6874 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7089.289099329,"data":"[f1]   ep7 it150/434 loss 0.6841 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7151.156377473,"data":"[f0]   ep7 it350/434 loss 0.6870 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7187.426579686,"data":"[f1]   ep7 it200/434 loss 0.6826 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7244.676370958,"data":"[f0]   ep7 it400/434 loss 0.6875 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7285.598259117,"data":"[f1]   ep7 it250/434 loss 0.6837 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7383.68326507,"data":"[f1]   ep7 it300/434 loss 0.6838 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7411.027556541,"data":"[f0]   ep7 eval 1.7 min | RAM 6.1/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":7411.172756816,"data":"[f0] ep7 loss 0.6874 | OOF 0.9091 | gold(diag) 0.8769 | best ep5 | 15.3 min | 2.05 h\n"}
+,{"stream_name":"stdout","time":7413.650916307,"data":"[f0]   ep8 it0/434 loss 0.6676 | 3.2 studies/s | waiting on data 25% | RAM 6.3/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7481.748351295,"data":"[f1]   ep7 it350/434 loss 0.6852 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7506.96558679,"data":"[f0]   ep8 it50/434 loss 0.6644 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7579.922528687,"data":"[f1]   ep7 it400/434 loss 0.6851 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7600.367265758,"data":"[f0]   ep8 it100/434 loss 0.6678 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7693.784272917,"data":"[f0]   ep8 it150/434 loss 0.6678 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7752.260538811,"data":"[f1]   ep7 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":7752.39360222,"data":"[f1] ep7 loss 0.6861 | OOF 0.9026 | gold(diag) 0.8675 | best ep6 | 16.0 min | 2.14 h\n"}
+,{"stream_name":"stdout","time":7755.035578533,"data":"[f1]   ep8 it0/434 loss 0.6510 | 3.0 studies/s | waiting on data 27% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7786.865427937,"data":"[f0]   ep8 it200/434 loss 0.6677 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7852.961105531,"data":"[f1]   ep8 it50/434 loss 0.6690 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7880.385402595,"data":"[f0]   ep8 it250/434 loss 0.6687 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7950.678647928,"data":"[f1]   ep8 it100/434 loss 0.6683 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":7973.784305806,"data":"[f0]   ep8 it300/434 loss 0.6685 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8048.829945509,"data":"[f1]   ep8 it150/434 loss 0.6659 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8067.300087992,"data":"[f0]   ep8 it350/434 loss 0.6694 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8147.097850911,"data":"[f1]   ep8 it200/434 loss 0.6675 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8160.883327878,"data":"[f0]   ep8 it400/434 loss 0.6712 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8245.111471157,"data":"[f1]   ep8 it250/434 loss 0.6668 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8326.874707692,"data":"[f0]   ep8 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":8326.976061289,"data":"[f0] ep8 loss 0.6707 | OOF 0.9097 | gold(diag) 0.8812 | best ep5 | 15.3 min | 2.30 h\n"}
+,{"stream_name":"stdout","time":8329.408909293,"data":"[f0]   ep9 it0/434 loss 0.6344 | 3.3 studies/s | waiting on data 23% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8343.127485494,"data":"[f1]   ep8 it300/434 loss 0.6659 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8422.585657561,"data":"[f0]   ep9 it50/434 loss 0.6530 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8440.796268107,"data":"[f1]   ep8 it350/434 loss 0.6659 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8515.922970549,"data":"[f0]   ep9 it100/434 loss 0.6516 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8538.897108841,"data":"[f1]   ep8 it400/434 loss 0.6668 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8609.091641667,"data":"[f0]   ep9 it150/434 loss 0.6541 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8702.444612966,"data":"[f0]   ep9 it200/434 loss 0.6566 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8710.961301156,"data":"[f1]   ep8 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":8711.112314865,"data":"[f1] ep8 loss 0.6660 | OOF 0.9043 | gold(diag) 0.8778 | best ep6 | 16.0 min | 2.41 h\n"}
+,{"stream_name":"stdout","time":8713.540541818,"data":"[f1]   ep9 it0/434 loss 0.6443 | 3.3 studies/s | waiting on data 20% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8795.965831649,"data":"[f0]   ep9 it250/434 loss 0.6571 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8811.294468853,"data":"[f1]   ep9 it50/434 loss 0.6447 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8889.320891589,"data":"[f0]   ep9 it300/434 loss 0.6543 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8908.988154324,"data":"[f1]   ep9 it100/434 loss 0.6515 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":8982.751863184,"data":"[f0]   ep9 it350/434 loss 0.6554 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9006.993102697,"data":"[f1]   ep9 it150/434 loss 0.6548 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9075.981928115,"data":"[f0]   ep9 it400/434 loss 0.6557 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9104.446324454,"data":"[f1]   ep9 it200/434 loss 0.6526 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9202.199011426,"data":"[f1]   ep9 it250/434 loss 0.6536 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9242.041009584,"data":"[f0]   ep9 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":9242.35805633,"data":"[f0] ep9 loss 0.6556 | OOF 0.9125 | gold(diag) 0.8823 | best ep9 | 15.3 min | 2.56 h\n"}
+,{"stream_name":"stdout","time":9244.659316407,"data":"[f0]   ep10 it0/434 loss 0.7494 | 3.5 studies/s | waiting on data 19% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9300.417701696,"data":"[f1]   ep9 it300/434 loss 0.6540 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9337.977036325,"data":"[f0]   ep10 it50/434 loss 0.6503 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9398.678478344,"data":"[f1]   ep9 it350/434 loss 0.6544 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9431.479725751,"data":"[f0]   ep10 it100/434 loss 0.6518 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9496.761797931,"data":"[f1]   ep9 it400/434 loss 0.6546 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9524.745516267,"data":"[f0]   ep10 it150/434 loss 0.6496 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9617.910287501,"data":"[f0]   ep10 it200/434 loss 0.6478 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9668.31507553,"data":"[f1]   ep9 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":9668.435459262,"data":"[f1] ep9 loss 0.6545 | OOF 0.9049 | gold(diag) 0.8737 | best ep6 | 16.0 min | 2.68 h\n"}
+,{"stream_name":"stdout","time":9671.081934493,"data":"[f1]   ep10 it0/434 loss 0.7554 | 3.0 studies/s | waiting on data 27% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9711.152074534,"data":"[f0]   ep10 it250/434 loss 0.6477 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9768.859411221,"data":"[f1]   ep10 it50/434 loss 0.6513 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9804.712137403,"data":"[f0]   ep10 it300/434 loss 0.6477 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9866.857989332,"data":"[f1]   ep10 it100/434 loss 0.6488 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9898.151814928,"data":"[f0]   ep10 it350/434 loss 0.6478 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9964.808580112,"data":"[f1]   ep10 it150/434 loss 0.6462 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":9991.578608157,"data":"[f0]   ep10 it400/434 loss 0.6469 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10062.594272783,"data":"[f1]   ep10 it200/434 loss 0.6463 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10157.529429625,"data":"[f0]   ep10 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":10157.918728252,"data":"[f0] ep10 loss 0.6466 | OOF 0.9132 | gold(diag) 0.8833 | best ep10 | 15.3 min | 2.81 h\n"}
+,{"stream_name":"stdout","time":10160.336007646,"data":"[f0]   ep11 it0/434 loss 0.6641 | 3.3 studies/s | waiting on data 23% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10160.529767591,"data":"[f1]   ep10 it250/434 loss 0.6472 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10253.508367291,"data":"[f0]   ep11 it50/434 loss 0.6370 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10258.48777549,"data":"[f1]   ep10 it300/434 loss 0.6442 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10346.816894221,"data":"[f0]   ep11 it100/434 loss 0.6339 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10356.396554752,"data":"[f1]   ep10 it350/434 loss 0.6442 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10440.084270746,"data":"[f0]   ep11 it150/434 loss 0.6356 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10454.218254783,"data":"[f1]   ep10 it400/434 loss 0.6442 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10533.391346291,"data":"[f0]   ep11 it200/434 loss 0.6360 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10626.000820976,"data":"[f1]   ep10 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":10626.356526751,"data":"[f1] ep10 loss 0.6446 | OOF 0.9060 | gold(diag) 0.8699 | best ep10 | 16.0 min | 2.94 h\n"}
+,{"stream_name":"stdout","time":10626.598747782,"data":"[f0]   ep11 it250/434 loss 0.6346 | 4.3 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10628.813930396,"data":"[f1]   ep11 it0/434 loss 0.6830 | 3.3 studies/s | waiting on data 21% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10720.226826518,"data":"[f0]   ep11 it300/434 loss 0.6354 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10726.89585682,"data":"[f1]   ep11 it50/434 loss 0.6378 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10813.646069444,"data":"[f0]   ep11 it350/434 loss 0.6365 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10824.732252407,"data":"[f1]   ep11 it100/434 loss 0.6409 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10907.099556408,"data":"[f0]   ep11 it400/434 loss 0.6365 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":10922.765411293,"data":"[f1]   ep11 it150/434 loss 0.6402 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11020.891201202,"data":"[f1]   ep11 it200/434 loss 0.6409 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11073.340235512,"data":"[f0]   ep11 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":11073.462302481,"data":"[f0] ep11 loss 0.6374 | OOF 0.9124 | gold(diag) 0.8799 | best ep10 | 15.3 min | 3.07 h\n"}
+,{"stream_name":"stdout","time":11075.869365538,"data":"[f0]   ep12 it0/434 loss 0.6134 | 3.3 studies/s | waiting on data 23% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11118.796273893,"data":"[f1]   ep11 it250/434 loss 0.6378 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11168.98184771,"data":"[f0]   ep12 it50/434 loss 0.6308 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11216.508916297,"data":"[f1]   ep11 it300/434 loss 0.6373 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11262.192872566,"data":"[f0]   ep12 it100/434 loss 0.6285 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11314.585434827,"data":"[f1]   ep11 it350/434 loss 0.6370 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11355.762266767,"data":"[f0]   ep12 it150/434 loss 0.6306 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11412.767250389,"data":"[f1]   ep11 it400/434 loss 0.6346 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11449.140088585,"data":"[f0]   ep12 it200/434 loss 0.6299 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11542.449248757,"data":"[f0]   ep12 it250/434 loss 0.6323 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11585.118850966,"data":"[f1]   ep11 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":11585.231303777,"data":"[f1] ep11 loss 0.6347 | OOF 0.9053 | gold(diag) 0.8674 | best ep10 | 16.0 min | 3.21 h\n"}
+,{"stream_name":"stdout","time":11587.811102105,"data":"[f1]   ep12 it0/434 loss 0.6317 | 3.1 studies/s | waiting on data 25% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11635.819627452,"data":"[f0]   ep12 it300/434 loss 0.6308 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11685.485476318,"data":"[f1]   ep12 it50/434 loss 0.6203 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11729.254796316,"data":"[f0]   ep12 it350/434 loss 0.6320 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11783.634168118,"data":"[f1]   ep12 it100/434 loss 0.6248 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11823.007171643,"data":"[f0]   ep12 it400/434 loss 0.6318 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11881.524954793,"data":"[f1]   ep12 it150/434 loss 0.6264 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11979.920074111,"data":"[f1]   ep12 it200/434 loss 0.6272 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":11989.277913663,"data":"[f0]   ep12 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":11989.422412146,"data":"[f0] ep12 loss 0.6321 | OOF 0.9119 | gold(diag) 0.8773 | best ep10 | 15.3 min | 3.32 h\n"}
+,{"stream_name":"stdout","time":11991.869971347,"data":"[f0]   ep13 it0/434 loss 0.6408 | 3.3 studies/s | waiting on data 24% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12077.964715825,"data":"[f1]   ep12 it250/434 loss 0.6288 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12085.016256583,"data":"[f0]   ep13 it50/434 loss 0.6336 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12175.791332005,"data":"[f1]   ep12 it300/434 loss 0.6283 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12178.315368351,"data":"[f0]   ep13 it100/434 loss 0.6312 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12271.518182339,"data":"[f0]   ep13 it150/434 loss 0.6289 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12273.430466193,"data":"[f1]   ep12 it350/434 loss 0.6283 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12364.756789821,"data":"[f0]   ep13 it200/434 loss 0.6302 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12371.162477252,"data":"[f1]   ep12 it400/434 loss 0.6283 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12458.308569177,"data":"[f0]   ep13 it250/434 loss 0.6308 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12543.620386214,"data":"[f1]   ep12 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":12543.76868857,"data":"[f1] ep12 loss 0.6286 | OOF 0.9056 | gold(diag) 0.8668 | best ep10 | 16.0 min | 3.48 h\n"}
+,{"stream_name":"stdout","time":12546.231678065,"data":"[f1]   ep13 it0/434 loss 0.6101 | 3.3 studies/s | waiting on data 21% | RAM 6.3/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12551.440697017,"data":"[f0]   ep13 it300/434 loss 0.6289 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12644.219272932,"data":"[f1]   ep13 it50/434 loss 0.6324 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12644.973035574,"data":"[f0]   ep13 it350/434 loss 0.6294 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12738.377777446,"data":"[f0]   ep13 it400/434 loss 0.6280 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12742.033356885,"data":"[f1]   ep13 it100/434 loss 0.6307 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12840.355582431,"data":"[f1]   ep13 it150/434 loss 0.6301 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12904.753926628,"data":"[f0]   ep13 eval 1.7 min | RAM 5.9/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":12904.897481164,"data":"[f0] ep13 loss 0.6279 | OOF 0.9118 | gold(diag) 0.8793 | best ep10 | 15.3 min | 3.58 h\n"}
+,{"stream_name":"stdout","time":12907.278765004,"data":"[f0]   ep14 it0/434 loss 0.6390 | 3.4 studies/s | waiting on data 22% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":12938.121762249,"data":"[f1]   ep13 it200/434 loss 0.6274 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13000.389759,"data":"[f0]   ep14 it50/434 loss 0.6229 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13035.766146091,"data":"[f1]   ep13 it250/434 loss 0.6261 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13093.505050781,"data":"[f0]   ep14 it100/434 loss 0.6237 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13133.571380147,"data":"[f1]   ep13 it300/434 loss 0.6258 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13186.840442526,"data":"[f0]   ep14 it150/434 loss 0.6267 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13231.485576564,"data":"[f1]   ep13 it350/434 loss 0.6256 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13280.299073416,"data":"[f0]   ep14 it200/434 loss 0.6248 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13329.599429624,"data":"[f1]   ep13 it400/434 loss 0.6266 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13373.859542579,"data":"[f0]   ep14 it250/434 loss 0.6238 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13467.242494416,"data":"[f0]   ep14 it300/434 loss 0.6248 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13502.220599849,"data":"[f1]   ep13 eval 1.8 min | RAM 5.9/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":13502.572900941,"data":"[f1] ep13 loss 0.6258 | OOF 0.9069 | gold(diag) 0.8719 | best ep13 | 16.0 min | 3.74 h\n"}
+,{"stream_name":"stdout","time":13505.106006738,"data":"[f1]   ep14 it0/434 loss 0.6130 | 3.2 studies/s | waiting on data 24% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13560.624741396,"data":"[f0]   ep14 it350/434 loss 0.6255 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13602.848843053,"data":"[f1]   ep14 it50/434 loss 0.6228 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13654.091643124,"data":"[f0]   ep14 it400/434 loss 0.6263 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13700.64457256,"data":"[f1]   ep14 it100/434 loss 0.6181 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13798.738000329,"data":"[f1]   ep14 it150/434 loss 0.6219 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13820.153090989,"data":"[f0]   ep14 eval 1.7 min | RAM 6.1/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":13820.298583549,"data":"[f0] ep14 loss 0.6261 | OOF 0.9121 | gold(diag) 0.8801 | best ep10 | 15.3 min | 3.83 h\n"}
+,{"stream_name":"stdout","time":13822.836652936,"data":"[f0]   ep15 it0/434 loss 0.6150 | 3.2 studies/s | waiting on data 26% | RAM 6.3/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13896.682388815,"data":"[f1]   ep14 it200/434 loss 0.6236 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13916.037291904,"data":"[f0]   ep15 it50/434 loss 0.6259 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":13994.458303522,"data":"[f1]   ep14 it250/434 loss 0.6230 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14009.21733911,"data":"[f0]   ep15 it100/434 loss 0.6287 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14092.247332688,"data":"[f1]   ep14 it300/434 loss 0.6224 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14102.501908933,"data":"[f0]   ep15 it150/434 loss 0.6274 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14190.32040166,"data":"[f1]   ep14 it350/434 loss 0.6231 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14195.911058224,"data":"[f0]   ep15 it200/434 loss 0.6252 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14288.255459583,"data":"[f1]   ep14 it400/434 loss 0.6226 | 4.1 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14289.279376668,"data":"[f0]   ep15 it250/434 loss 0.6261 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14382.756048515,"data":"[f0]   ep15 it300/434 loss 0.6252 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14460.340941741,"data":"[f1]   ep14 eval 1.8 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":14460.471924411,"data":"[f1] ep14 loss 0.6230 | OOF 0.9069 | gold(diag) 0.8713 | best ep13 | 16.0 min | 4.01 h\n"}
+,{"stream_name":"stdout","time":14462.986477772,"data":"[f1]   ep15 it0/434 loss 0.6198 | 3.2 studies/s | waiting on data 23% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14475.748048193,"data":"[f0]   ep15 it350/434 loss 0.6248 | 4.3 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14561.065489395,"data":"[f1]   ep15 it50/434 loss 0.6218 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14569.399242214,"data":"[f0]   ep15 it400/434 loss 0.6252 | 4.3 studies/s | waiting on data 1% | RAM 6.1/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14658.737714499,"data":"[f1]   ep15 it100/434 loss 0.6271 | 4.1 studies/s | waiting on data 1% | RAM 6.0/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14735.49595116,"data":"[f0]   ep15 eval 1.7 min | RAM 6.0/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":14735.660952547,"data":"[f0] ep15 loss 0.6253 | OOF 0.9116 | gold(diag) 0.8820 | best ep10 | 15.3 min | 4.08 h\n"}
+,{"stream_name":"stdout","time":14756.794203874,"data":"[f1]   ep15 it150/434 loss 0.6227 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14855.300665185,"data":"[f1]   ep15 it200/434 loss 0.6193 | 4.1 studies/s | waiting on data 1% | RAM 6.2/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":14891.340501009,"data":"[f0] SWA over epochs [10, 9, 11]: OOF 0.9145 | gold(diag) 0.8816\n"}
+,{"stream_name":"stdout","time":14891.342370446,"data":"[f0] \n"}
+,{"stream_name":"stdout","time":14891.342570124,"data":"[f0] DONE effv2s_cons_f0 in 4.128 h | best ep10 OOF 0.9132 gold(diag) 0.8833\n"}
+,{"stream_name":"stdout","time":14891.342732841,"data":"[f0]    ACL               OOF 0.909 | gold 0.922\n"}
+,{"stream_name":"stdout","time":14891.342929627,"data":"[f0]    MCL               OOF 0.866 | gold 0.912\n"}
+,{"stream_name":"stdout","time":14891.343645182,"data":"[f0]    Medial Meniscus   OOF 0.950 | gold 0.957\n"}
+,{"stream_name":"stdout","time":14891.343665257,"data":"[f0]    Lateral Meniscus  OOF 0.868 | gold 0.814\n"}
+,{"stream_name":"stdout","time":14891.343670915,"data":"[f0]    Medial OA         OOF 0.915 | gold 0.984\n"}
+,{"stream_name":"stdout","time":14891.343676208,"data":"[f0]    Lateral OA        OOF 0.909 | gold 0.760\n"}
+,{"stream_name":"stdout","time":14891.34368257,"data":"[f0]    PF OA             OOF 0.903 | gold 0.792\n"}
+,{"stream_name":"stdout","time":14891.343711384,"data":"[f0]    Effusion          OOF 0.904 | gold 0.934\n"}
+,{"stream_name":"stdout","time":14891.343717013,"data":"[f0]    Synovitis         OOF 0.975 | gold 0.786\n"}
+,{"stream_name":"stdout","time":14891.343722648,"data":"[f0]    Baker's           OOF 0.914 | gold 0.969\n"}
+,{"stream_name":"stdout","time":14891.343727759,"data":"[f0]    Contusion         OOF 0.904 | gold 0.916\n"}
+,{"stream_name":"stdout","time":14891.343746695,"data":"[f0]    Fracture          OOF 0.940 | gold 0.854\n"}
+,{"stream_name":"stdout","time":14953.447733798,"data":"[f1]   ep15 it250/434 loss 0.6193 | 4.1 studies/s | waiting on data 1% | RAM 3.8/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":15051.431201629,"data":"[f1]   ep15 it300/434 loss 0.6187 | 4.1 studies/s | waiting on data 1% | RAM 3.8/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":15149.321489626,"data":"[f1]   ep15 it350/434 loss 0.6209 | 4.1 studies/s | waiting on data 1% | RAM 3.8/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":15247.518028969,"data":"[f1]   ep15 it400/434 loss 0.6217 | 4.1 studies/s | waiting on data 1% | RAM 3.8/31.3 GB (main 2.4 G, workers 3.7 G)\n"}
+,{"stream_name":"stdout","time":15419.885759551,"data":"[f1]   ep15 eval 1.8 min | RAM 3.9/31.3 GB (main 2.4 G, workers 0.0 G)\n"}
+,{"stream_name":"stdout","time":15420.189478431,"data":"[f1] ep15 loss 0.6225 | OOF 0.9075 | gold(diag) 0.8748 | best ep15 | 16.0 min | 4.27 h\n"}
+,{"stream_name":"stdout","time":15580.151829315,"data":"[f1] SWA over epochs [15, 13, 14]: OOF 0.9074 | gold(diag) 0.8703\n"}
+,{"stream_name":"stdout","time":15580.153659909,"data":"[f1] \n"}
+,{"stream_name":"stdout","time":15580.154074967,"data":"[f1] DONE effv2s_cons_f1 in 4.319 h | best ep15 OOF 0.9075 gold(diag) 0.8748\n"}
+,{"stream_name":"stdout","time":15580.154094254,"data":"[f1]    ACL               OOF 0.914 | gold 0.942\n"}
+,{"stream_name":"stdout","time":15580.15409793,"data":"[f1]    MCL               OOF 0.865 | gold 0.882\n"}
+,{"stream_name":"stdout","time":15580.154101233,"data":"[f1]    Medial Meniscus   OOF 0.940 | gold 0.910\n"}
+,{"stream_name":"stdout","time":15580.154105523,"data":"[f1]    Lateral Meniscus  OOF 0.871 | gold 0.840\n"}
+,{"stream_name":"stdout","time":15580.15410952,"data":"[f1]    Medial OA         OOF 0.888 | gold 0.980\n"}
+,{"stream_name":"stdout","time":15580.15411244,"data":"[f1]    Lateral OA        OOF 0.883 | gold 0.747\n"}
+,{"stream_name":"stdout","time":15580.15411523,"data":"[f1]    PF OA             OOF 0.878 | gold 0.829\n"}
+,{"stream_name":"stdout","time":15580.154118019,"data":"[f1]    Effusion          OOF 0.894 | gold 0.916\n"}
+,{"stream_name":"stdout","time":15580.154120794,"data":"[f1]    Synovitis         OOF 0.984 | gold 0.784\n"}
+,{"stream_name":"stdout","time":15580.154123502,"data":"[f1]    Baker's           OOF 0.926 | gold 0.969\n"}
+,{"stream_name":"stdout","time":15580.154126128,"data":"[f1]    Contusion         OOF 0.890 | gold 0.896\n"}
+,{"stream_name":"stdout","time":15580.154128844,"data":"[f1]    Fracture          OOF 0.957 | gold 0.804\n"}
+,{"stream_name":"stdout","time":15581.672348807,"data":"fold exit codes: {0: 0, 1: 0}\n"}
+,{"stream_name":"stderr","time":15584.975455286,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":15584.975483525,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":15585.283484544,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":15585.283511964,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":15586.049052027,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":15587.559094317,"data":"[NbConvertApp] Writing 484388 bytes to __results__.html\n"}
+]

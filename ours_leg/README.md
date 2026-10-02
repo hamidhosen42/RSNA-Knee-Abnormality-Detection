@@ -120,3 +120,23 @@ D4-এর মডেলের সেটিং (384px, ৯৬ slice, MAX_WIN 36) R
   - এর জন্য একটা submission লাগবে।
   - gold-58 শুধু diagnostic হিসেবে দেখা হবে।
 - **চালু হয়েছে (2026-10-02, তোমার অনুমতিতে):** kernel `esfersami50/rsna-knee-ours-leg-train-effv2s-cons` v1, esfersami50-এর GPU quota-তে (`KAGGLE_OWNER=esfersami50 KAGGLE_TOKEN_FILE=../../token1.txt ./push.sh train-cons`)।
+
+## E11a-এর ফল (2026-10-02): leg একা public LB **0.896**
+
+- সাবমিশন 56764382: শুধু E11-এর EffNetV2-S leg (f0+f1 SWA), কোনো blend নেই, CPU-তে চালানো। inference-এ ~৪.৭ ঘণ্টা লেগেছে।
+- OOF 0.8721 থেকে LB 0.896, অর্থাৎ LB ≈ OOF + 0.024। forum-এ যে "LB, CV-র চেয়ে ~0.02 বেশি" বলা হয়েছিল, তার সাথে মেলে।
+- anchor 0.943 আর আমাদের leg 0.896, পার্থক্য ~0.05। এত দুর্বল leg 0.30 ওজনে মেশালে স্কোর কমবে, 0.935 সেটারই ফল।
+- E03b-এর তুলনার ভিত্তি এটাই: একই notebook-এ consensus leg কে ≥ 0.899 পেতে হবে।
+
+### E03b-এর training ফল (2026-10-02)
+
+| | OOF (dd label) | OOF (consensus label) | gold-58 (diag) |
+|---|---|---|---|
+| E11 (dd label-এ train) | 0.8721 | 0.8910 | 0.9000 |
+| **E03b (consensus label-এ train)** | 0.8733 | **0.9107** | 0.8826 |
+
+- offline তিনটা মাপ তিন রকম কথা বলছে:
+  - dd label দিয়ে মাপলে দুটো মডেল প্রায় সমান।
+  - consensus label দিয়ে মাপলে E03b +0.020 এগিয়ে। তবে E03b ঠিক এই label-এই train হয়েছে, তাই ফলটা নিজের পক্ষে ঝুঁকে থাকার কথা।
+  - gold-58-এ E03b −0.017 পিছিয়ে। তবে সেখানে মাত্র ৫৮টা স্টাডি, তাই সংখ্যাটা অনেক নড়বড়ে।
+- ঠিক এই কারণেই নিয়ম ছিল সিদ্ধান্ত LB দিয়ে নেওয়া। পরের ধাপ `submission/e03b-alone` দিয়ে leg-এর একক LB মাপা: E03b ≥ 0.899 পেলে consensus label রাখা হবে।
