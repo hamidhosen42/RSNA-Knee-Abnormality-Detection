@@ -1,0 +1,1 @@
+{"arm": "e13r34", "arch": "resnet34.a1_in1k", "res": 224, "k_eval": 24, "corpus": {"clip_pct": [0.5, 99.5], "crop_mm": 140.0, "n_slices": 32, "res": 224, "version": "e13-prep-v1", "views": [["Axial", 1], ["Sagittal", 0], ["Coronal", 1], ["Sagittal", 1]]}, "marker": "ours_leg_arm"}

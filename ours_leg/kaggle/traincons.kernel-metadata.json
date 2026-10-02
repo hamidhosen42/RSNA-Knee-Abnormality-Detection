@@ -1,0 +1,20 @@
+{
+  "id": "hosen42/rsna-knee-ours-leg-train-effv2s-cons",
+  "title": "rsna-knee-ours-leg-train-effv2s-cons",
+  "code_file": "train_ours_leg.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "dreaddevelopment/knee-raptor-corpus/2",
+    "dreaddevelopment/knee-raptor-corpus-ext/1",
+    "dreaddevelopment/rsna-knee-labels/3"
+  ],
+  "competition_sources": ["rsna-knee-abnormality-detection"],
+  "kernel_sources": ["esfersami50/nx1-01-consensus-labels/2"],
+  "model_sources": []
+}

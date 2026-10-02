@@ -97,3 +97,26 @@ D4-এর মডেলের সেটিং (384px, ৯৬ slice, MAX_WIN 36) R
 - 0.008 কমেছে। এটা rounding আর নয়েজের চেয়ে বড়, তাই আগে থেকে ঠিক করা নিয়ম অনুযায়ী **থামানো হলো**: fold 2–4 বা w=0.45 নয়।
 - সন্দেহ: test-এর preprocessing-এ অমিল। আমরা DICOM থেকে 44-slice stack নিজেরা বানিয়েছি dataset-এর বিবরণ দেখে; লেখকের আসল corpus-builder কোড (`knee_corpus_v2.py`) প্রকাশিত নয়। esfersami50-এর আরও দুর্বল মডেলও (0.889) 0.30-এ মিশিয়ে মাত্র 0.003 কমিয়েছিল, আমাদেরটা কমিয়েছে 0.008। তাই মনে হচ্ছে test-এ আমাদের মডেল OOF-এর তুলনায় অনেক খারাপ করছে।
 - পরের যাচাই (CPU, GPU quota লাগবে না): train-এর DICOM থেকে আমাদের `build_study` দিয়ে stack বানিয়ে corpus-এর একই স্টাডির row-এর সাথে pixel-by-pixel মেলানো, আর দুই input-এ মডেলের prediction-এর পার্থক্য মাপা।
+
+### verify রানের ফল (2026-10-02): preprocessing-এর অমিল **নয়**
+
+`hosen42/rsna-knee-ours-leg-verify-corpus`, ২১৮টা train স্টাডি (সব gold-58-সহ):
+- DICOM থেকে আমাদের rebuild আর corpus: প্রতিটা slot-এ pixel পার্থক্যের median 0.0। প্রতিটা finding-এ দুই পথের prediction rank agreement 1.0, আর gold-58-এ দুই পথেই AUC 0.9001।
+- তাই E11-এর 0.935 test-এর input-এর কারণে নয়। মডেলটা নিজেই LB-তে দুর্বল ছিল, আর মেশালে ক্ষতি করেছে। OOF 0.872 আর gold 0.900 LB-র শক্তির ভালো সূচক হয়নি।
+- শিক্ষা: OOF-এর সাথে LB-র সম্পর্ক না জেনে blend ওজন বা "যথেষ্ট শক্তিশালী" বিচার করা যায় না। আমাদের মডেল একা LB-তে কত পায়, তা মাপা দরকার।
+
+## E03b (প্রস্তুত, চালানো হয়নি): শুধু label বদল
+
+- একটাই পরিবর্তন: training target dd `labels_llm_soft` থেকে team consensus labels-এ। ফাইল হলো `esfersami50/nx1-01-consensus-labels` v2-এর `labels_consensus.parquet`, sha `af415873`, যা লোকাল কপির সাথে হুবহু এক। fold আগের মতো dd label থেকেই তৈরি হয় (folds_v1)।
+- কোডে যা যোগ হয়েছে:
+  - `train_ours_leg.py`-এ `OURS_LABELS` (`--labels`) সুইচ।
+  - `kaggle/push.sh train-cons`: pushed কপিতে শুধু দুটো default বদলায়, label আর arm `effv2s_cons`।
+  - kernel `hosen42/rsna-knee-ours-leg-train-effv2s-cons`।
+  - synthetic data-তে smoke test পাস করেছে: OOF truth এখন consensus label, আর default (dd) পথ আগের মতোই কাজ করে।
+- **কেন সিদ্ধান্ত OOF দিয়ে নেওয়া যাবে না:** কোনো retraining ছাড়াই E11-এর একই prediction dd label দিয়ে মাপলে OOF 0.8721, আর consensus label দিয়ে মাপলে 0.8910। E13-এর ক্ষেত্রে সংখ্যা দুটো 0.8433 আর 0.8607। মানে label সেট বদলালে মাপার মানদণ্ডও বদলে যায়।
+- **আগে থেকে ঠিক করা নিয়ম:**
+  - E11a-এর একই notebook দিয়ে leg একা চালিয়ে LB নেওয়া হবে, শুধু checkpoint বদলে।
+  - consensus label E11a-কে ≥ 0.003 ছাড়ালে তবেই এগোবে, নাহলে dd label থাকবে।
+  - এর জন্য একটা submission লাগবে।
+  - gold-58 শুধু diagnostic হিসেবে দেখা হবে।
+- **চালু হয়েছে (2026-10-02, তোমার অনুমতিতে):** kernel `esfersami50/rsna-knee-ours-leg-train-effv2s-cons` v1, esfersami50-এর GPU quota-তে (`KAGGLE_OWNER=esfersami50 KAGGLE_TOKEN_FILE=../../token1.txt ./push.sh train-cons`)।

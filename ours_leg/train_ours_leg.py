@@ -8,6 +8,8 @@ This script builds our own leg of that kind from public parts only:
   corpus  dreaddevelopment/knee-raptor-corpus + knee-raptor-corpus-ext (CC0):
           4,407 studies x 44 slices x 336 x 336 uint8
   labels  dreaddevelopment/rsna-knee-labels, labels_llm_soft.parquet (CC0): 4,349 soft-labelled
+          (OURS_LABELS swaps the training target only, e.g. labels_consensus.parquet for E03b;
+          folds are always built from labels_llm_soft so the split stays folds_v1)
   recipe  dreaddevelopment "Knee MRI: training the twelve-finding model" v8: 2.5D three-slice
           windows and a per-finding attention-MIL head
 
@@ -406,6 +408,8 @@ def main():
     ap.add_argument("--topk", type=int, default=env("OURS_TOPK", 3, int))
     ap.add_argument("--grad_ckpt", type=int, default=env("OURS_GRAD_CKPT", 1, int))
     ap.add_argument("--channels_last", type=int, default=env("OURS_CHANNELS_LAST", 0, int))
+    ap.add_argument("--labels", default=env("OURS_LABELS", "labels_llm_soft.parquet"),
+                    help="training/OOF target file; folds always come from labels_llm_soft.parquet")
     ap.add_argument("--fold", type=int, default=env("OURS_FOLD", 0, int), help="-1 = fit on all folds")
     ap.add_argument("--seed", type=int, default=env("OURS_SEED", 42, int))
     ap.add_argument("--budget_h", type=float, default=env("OURS_BUDGET_H", 11.0, float))
@@ -453,6 +457,17 @@ def main():
             raise SystemExit(msg)
         print("WARNING (local test): " + msg, flush=True)
     soft = soft_df.set_index("StudyInstanceUID")
+    if a.labels != "labels_llm_soft.parquet":
+        tgt_path = find(a.input_root, a.labels)
+        if not tgt_path:
+            raise SystemExit(f"need {a.labels}")
+        soft = pd.read_parquet(tgt_path)
+        soft["StudyInstanceUID"] = soft["StudyInstanceUID"].astype(str)
+        soft = soft.set_index("StudyInstanceUID")
+        missing = [u for u in folds if u not in soft.index]
+        if missing or soft.loc[list(folds), LAB].isna().any().any():
+            raise SystemExit(f"{a.labels}: {len(missing)} fold studies missing or NaN targets")
+        print(f"training target: {tgt_path} (folds still from {lab_path})", flush=True)
     gold = train_df.set_index("StudyInstanceUID").loc[gold_ids, LAB].astype(np.float32)
     in_corpus = set(ids)
     pool = [u for u in sorted(folds) if u in in_corpus]
@@ -595,7 +610,7 @@ def main():
                   open(os.path.join(a.out, f"train_{tag}.json"), "w"), indent=1)
 
     summary = {"tag": tag, "arch": a.arch, "res": a.res, "fold": a.fold, "folds_sha256": digest,
-               "n_train": len(tr_ids), "n_oof": len(oof_ids), "n_gold": len(gold_ids),
+               "labels": a.labels, "n_train": len(tr_ids), "n_oof": len(oof_ids), "n_gold": len(gold_ids),
                "hist": hist, "best": best, "hours": None, "partial": False}
     # ---- top-k weight average + fresh BN statistics ------------------------------------------
     if len(topk) > 1:

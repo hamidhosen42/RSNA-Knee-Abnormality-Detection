@@ -1,0 +1,90 @@
+[{"stream_name":"stdout","time":21.195342007,"data":"[verify    12.7s] corpus studies 4407 | train studies 4407 | gold 58 in corpus: 58\n"}
+,{"stream_name":"stdout","time":22.256693004,"data":"[verify    13.8s] loaded effv2s_f0_swa.pt fold 0 res 384 k_eval 24\n"}
+,{"stream_name":"stdout","time":23.257005535,"data":"[verify    14.8s] loaded effv2s_f1_swa.pt fold 1 res 384 k_eval 24\n"}
+,{"stream_name":"stdout","time":23.263633846,"data":"[verify    14.8s] spec {\"slots\": [[\"Sagittal\", 1, 12], [\"Sagittal\", 0, 10], [\"Coronal\", 1, 8], [\"Coronal\", 0, 6], [\"Axial\", -1, 8]], \"span\": [0.15, 0.85], \"img\": 336, \"crop_mm\": 140.0, \"clip_pct\": [2.0, 98.0], \"source\": \"dreaddevelopment/knee-raptor-corpus v2 + knee-raptor-corpus-ext v1\"} | slot edges [0, 12, 22, 30, 36, 44] | sample 218\n"}
+,{"stream_name":"stdout","time":521.721672909,"data":"[verify   513.2s] 20/218 studies\n"}
+,{"stream_name":"stdout","time":1008.063448023,"data":"[verify   999.6s] 40/218 studies\n"}
+,{"stream_name":"stdout","time":1502.81645935,"data":"[verify  1494.3s] 60/218 studies\n"}
+,{"stream_name":"stdout","time":1528.761381122,"data":"[verify  1520.3s] 80/218 studies\n"}
+,{"stream_name":"stdout","time":1557.560702846,"data":"[verify  1549.1s] 100/218 studies\n"}
+,{"stream_name":"stdout","time":1592.111413764,"data":"[verify  1583.6s] 120/218 studies\n"}
+,{"stream_name":"stdout","time":1625.67001346,"data":"[verify  1617.2s] 140/218 studies\n"}
+,{"stream_name":"stdout","time":1655.721476324,"data":"[verify  1647.2s] 160/218 studies\n"}
+,{"stream_name":"stdout","time":2159.101581584,"data":"[verify  2150.6s] 180/218 studies\n"}
+,{"stream_name":"stdout","time":2697.558738397,"data":"[verify  2689.1s] 200/218 studies\n"}
+,{"stream_name":"stdout","time":3158.600217545,"data":"[verify  3150.1s] 218/218 studies\n"}
+,{"stream_name":"stdout","time":3161.851755991,"data":"[verify  3153.3s] REPORT {\n"}
+,{"stream_name":"stdout","time":3161.85181578,"data":" \"n_studies\": 218,\n"}
+,{"stream_name":"stdout","time":3161.85182282,"data":" \"n_scored\": 118,\n"}
+,{"stream_name":"stdout","time":3161.851827891,"data":" \"n_errors\": 0,\n"}
+,{"stream_name":"stdout","time":3161.85183254,"data":" \"pixel\": {\n"}
+,{"stream_name":"stdout","time":3161.851836931,"data":"  \"studies_all_slots_exact\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85186562,"data":"  \"mad_all_median\": 0.0,\n"}
+,{"stream_name":"stdout","time":3161.85187082,"data":"  \"mad_all_p90\": 0.0,\n"}
+,{"stream_name":"stdout","time":3161.85187488,"data":"  \"per_slot\": {\n"}
+,{"stream_name":"stdout","time":3161.85187962,"data":"   \"slot0:Sagittal/1\": {\n"}
+,{"stream_name":"stdout","time":3161.85188397,"data":"    \"mask_equal\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85188795,"data":"    \"exact\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85189221,"data":"    \"mad_median\": 0.0\n"}
+,{"stream_name":"stdout","time":3161.8518968,"data":"   },\n"}
+,{"stream_name":"stdout","time":3161.85190114,"data":"   \"slot1:Sagittal/0\": {\n"}
+,{"stream_name":"stdout","time":3161.85190578,"data":"    \"mask_equal\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85191046,"data":"    \"exact\": 0.9724770642201835,\n"}
+,{"stream_name":"stdout","time":3161.85191534,"data":"    \"mad_median\": 0.0\n"}
+,{"stream_name":"stdout","time":3161.85191974,"data":"   },\n"}
+,{"stream_name":"stdout","time":3161.85192418,"data":"   \"slot2:Coronal/1\": {\n"}
+,{"stream_name":"stdout","time":3161.85192877,"data":"    \"mask_equal\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85193336,"data":"    \"exact\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85193775,"data":"    \"mad_median\": 0.0\n"}
+,{"stream_name":"stdout","time":3161.85196775,"data":"   },\n"}
+,{"stream_name":"stdout","time":3161.85197058,"data":"   \"slot3:Coronal/0\": {\n"}
+,{"stream_name":"stdout","time":3161.85197347,"data":"    \"mask_equal\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85197622,"data":"    \"exact\": 0.7431192660550459,\n"}
+,{"stream_name":"stdout","time":3161.8519796,"data":"    \"mad_median\": 0.0\n"}
+,{"stream_name":"stdout","time":3161.85198285,"data":"   },\n"}
+,{"stream_name":"stdout","time":3161.85198593,"data":"   \"slot4:Axial/-1\": {\n"}
+,{"stream_name":"stdout","time":3161.85198932,"data":"    \"mask_equal\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85199218,"data":"    \"exact\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85199493,"data":"    \"mad_median\": 0.0\n"}
+,{"stream_name":"stdout","time":3161.85199787,"data":"   }\n"}
+,{"stream_name":"stdout","time":3161.85200062,"data":"  }\n"}
+,{"stream_name":"stdout","time":3161.85200364,"data":" },\n"}
+,{"stream_name":"stdout","time":3161.85200678,"data":" \"prediction_rank_agreement_corpus_vs_dicom\": {\n"}
+,{"stream_name":"stdout","time":3161.85201009,"data":"  \"ACL\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85201333,"data":"  \"MCL\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85201648,"data":"  \"Medial Meniscus\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85201966,"data":"  \"Lateral Meniscus\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85202328,"data":"  \"Medial OA\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85202709,"data":"  \"Lateral OA\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85203007,"data":"  \"PF OA\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85203298,"data":"  \"Effusion\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85203581,"data":"  \"Synovitis\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85203859,"data":"  \"Baker's\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85204165,"data":"  \"Contusion\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85204462,"data":"  \"Fracture\": 1.0\n"}
+,{"stream_name":"stdout","time":3161.85204748,"data":" },\n"}
+,{"stream_name":"stdout","time":3161.85205023,"data":" \"prediction_rank_agreement_macro\": 1.0,\n"}
+,{"stream_name":"stdout","time":3161.85205315,"data":" \"gold58_auc_diagnostic\": {\n"}
+,{"stream_name":"stdout","time":3161.85205591,"data":"  \"corpus_path\": 0.9001405633044604,\n"}
+,{"stream_name":"stdout","time":3161.85205882,"data":"  \"dicom_path\": 0.9001405633044604,\n"}
+,{"stream_name":"stdout","time":3161.85206168,"data":"  \"n\": 58\n"}
+,{"stream_name":"stdout","time":3161.85206443,"data":" }\n"}
+,{"stream_name":"stdout","time":3161.85206719,"data":"}\n"}
+,{"stream_name":"stdout","time":3512.67789894,"data":"[verify  3504.2s] VARIANTS (median per-slot MAD vs corpus; lower = closer)\n"}
+,{"stream_name":"stdout","time":3512.67797389,"data":"                  s0_mad  s1_mad  s2_mad  s3_mad  s4_mad\n"}
+,{"stream_name":"stdout","time":3512.67798204,"data":"variant                                                 \n"}
+,{"stream_name":"stdout","time":3512.677987,"data":"as_infer_kernel    0.000   0.000   0.000   0.000   0.000\n"}
+,{"stream_name":"stdout","time":3512.67799117,"data":"clip_0.5_99.5     25.182  10.610  26.050   8.117  19.891\n"}
+,{"stream_name":"stdout","time":3512.67799528,"data":"clip_1_99         13.339   5.786  13.163   4.595  10.141\n"}
+,{"stream_name":"stdout","time":3512.67799935,"data":"minmax            64.714  36.991  60.502  28.163  50.937\n"}
+,{"stream_name":"stdout","time":3512.67800369,"data":"order_desc        40.715  47.793  61.659  66.898  41.722\n"}
+,{"stream_name":"stdout","time":3512.67802991,"data":"pick_most_slices   0.000   0.000   0.000   0.000   0.000\n"}
+,{"stream_name":"stdout","time":3512.67803349,"data":"span_round        11.978  12.660  12.531  11.458   8.501\n"}
+,{"stream_name":"stdout","time":3512.67803641,"data":"[verify  3504.2s] done\n"}
+,{"stream_name":"stderr","time":3517.725066651,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3517.725119832,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3518.205985841,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3518.206015321,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3519.359368613,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3520.988020041,"data":"[NbConvertApp] Writing 372717 bytes to __results__.html\n"}
+]

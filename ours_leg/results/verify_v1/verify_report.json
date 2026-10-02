@@ -1,0 +1,109 @@
+{
+ "n_studies": 218,
+ "n_scored": 118,
+ "n_errors": 0,
+ "pixel": {
+  "studies_all_slots_exact": 1.0,
+  "mad_all_median": 0.0,
+  "mad_all_p90": 0.0,
+  "per_slot": {
+   "slot0:Sagittal/1": {
+    "mask_equal": 1.0,
+    "exact": 1.0,
+    "mad_median": 0.0
+   },
+   "slot1:Sagittal/0": {
+    "mask_equal": 1.0,
+    "exact": 0.9724770642201835,
+    "mad_median": 0.0
+   },
+   "slot2:Coronal/1": {
+    "mask_equal": 1.0,
+    "exact": 1.0,
+    "mad_median": 0.0
+   },
+   "slot3:Coronal/0": {
+    "mask_equal": 1.0,
+    "exact": 0.7431192660550459,
+    "mad_median": 0.0
+   },
+   "slot4:Axial/-1": {
+    "mask_equal": 1.0,
+    "exact": 1.0,
+    "mad_median": 0.0
+   }
+  }
+ },
+ "prediction_rank_agreement_corpus_vs_dicom": {
+  "ACL": 1.0,
+  "MCL": 1.0,
+  "Medial Meniscus": 1.0,
+  "Lateral Meniscus": 1.0,
+  "Medial OA": 1.0,
+  "Lateral OA": 1.0,
+  "PF OA": 1.0,
+  "Effusion": 1.0,
+  "Synovitis": 1.0,
+  "Baker's": 1.0,
+  "Contusion": 1.0,
+  "Fracture": 1.0
+ },
+ "prediction_rank_agreement_macro": 1.0,
+ "gold58_auc_diagnostic": {
+  "corpus_path": 0.9001405633044604,
+  "dicom_path": 0.9001405633044604,
+  "n": 58
+ },
+ "variants_median_mad_per_slot": {
+  "as_infer_kernel": {
+   "s0_mad": 0.0,
+   "s1_mad": 0.0,
+   "s2_mad": 0.0,
+   "s3_mad": 0.0,
+   "s4_mad": 0.0
+  },
+  "clip_0.5_99.5": {
+   "s0_mad": 25.182,
+   "s1_mad": 10.61,
+   "s2_mad": 26.05,
+   "s3_mad": 8.117,
+   "s4_mad": 19.891
+  },
+  "clip_1_99": {
+   "s0_mad": 13.339,
+   "s1_mad": 5.786,
+   "s2_mad": 13.163,
+   "s3_mad": 4.595,
+   "s4_mad": 10.141
+  },
+  "minmax": {
+   "s0_mad": 64.714,
+   "s1_mad": 36.991,
+   "s2_mad": 60.502,
+   "s3_mad": 28.163,
+   "s4_mad": 50.937
+  },
+  "order_desc": {
+   "s0_mad": 40.715,
+   "s1_mad": 47.793,
+   "s2_mad": 61.659,
+   "s3_mad": 66.898,
+   "s4_mad": 41.722
+  },
+  "pick_most_slices": {
+   "s0_mad": 0.0,
+   "s1_mad": 0.0,
+   "s2_mad": 0.0,
+   "s3_mad": 0.0,
+   "s4_mad": 0.0
+  },
+  "span_round": {
+   "s0_mad": 11.978,
+   "s1_mad": 12.66,
+   "s2_mad": 12.531,
+   "s3_mad": 11.458,
+   "s4_mad": 8.501
+  }
+ },
+ "variant_reimplementation_check": "see as_infer_kernel row: must equal the build_study MADs above"
+}

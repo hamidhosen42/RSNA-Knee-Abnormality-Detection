@@ -2,11 +2,19 @@
 # Push the E13 cache builder with knee_prep.py embedded verbatim (CPU kernels, no GPU quota).
 #   ./push_e13.sh cache [LIMIT]   probe: first LIMIT train studies, kernel rsna-knee-e13-cache
 #   ./push_e13.sh shard <0|1>     full build of one half, kernel rsna-knee-e13-cache-<a|b>
+#   ./push_e13.sh train           GPU training (OURS_FOLDS default "0,1"), kernel rsna-knee-e13-train
 set -euo pipefail
 HERE=${0:A:h}; E13=${HERE:h}/e13
 PY=${PYTHON:-$HOME/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/bin/python3.12}
 UVX=${UVX:-$(command -v uvx || echo $HOME/Library/Python/3.9/bin/uvx)}
 MODE=${1:-}; ARG=${2:-0}
+if [[ $MODE == train ]]; then
+  DIR=$(mktemp -d)
+  cp "$E13/train_e13.py" "$DIR/" && cp "$HERE/e13train.kernel-metadata.json" "$DIR/kernel-metadata.json"
+  export KAGGLE_API_TOKEN=$(tr -d '\n\r ' < ~/.kaggle/access_token)
+  [[ -n ${DRY_RUN:-} ]] && { ls -la "$DIR"; rm -rf "$DIR"; exit 0; }
+  $UVX --from 'kaggle>=2.2' kaggle kernels push -p "$DIR"; rm -rf "$DIR"; exit 0
+fi
 [[ $MODE == cache || $MODE == shard ]] || { echo "usage: $0 cache [LIMIT] | shard <0|1>" >&2; exit 2; }
 DIR=$(mktemp -d)
 "$PY" - "$E13/build_cache.py" "$E13/knee_prep.py" "$HERE/e13cache.kernel-metadata.json" "$DIR" "$MODE" "$ARG" <<'PYEOF'

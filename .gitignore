@@ -1,5 +1,5 @@
 # secrets
-token.txt
+token*.txt
 *.token
 access_token
 kaggle.json

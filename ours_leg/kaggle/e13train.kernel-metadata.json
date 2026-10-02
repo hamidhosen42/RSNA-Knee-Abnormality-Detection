@@ -1,0 +1,16 @@
+{
+  "id": "hosen42/rsna-knee-e13-train",
+  "title": "rsna-knee-e13-train",
+  "code_file": "train_e13.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["dreaddevelopment/rsna-knee-labels/3"],
+  "competition_sources": ["rsna-knee-abnormality-detection"],
+  "kernel_sources": ["hosen42/rsna-knee-e13-cache-a/1", "hosen42/rsna-knee-e13-cache-b/1"],
+  "model_sources": []
+}

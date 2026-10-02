@@ -2,6 +2,7 @@
 # Push one of our kernels to Kaggle. Each real push creates a new kernel version and starts a run
 # on your GPU quota, so run it only when you mean it. DRY_RUN=1 assembles and shows, pushes nothing.
 #   ./push.sh train        EfficientNetV2-S leg training (fold = OURS_FOLD in the script, default 0)
+#   ./push.sh train-cons   E03b: same training, team consensus labels as the target (arm effv2s_cons)
 #   ./push.sh submission   the 0.943 base + our leg notebook (rebuilt from the base first)
 set -euo pipefail
 HERE=${0:A:h}
@@ -18,6 +19,22 @@ case ${1:-} in
   train)
     cp "$LEG/train_ours_leg.py" "$DIR/"
     cp "$HERE/train.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
+  train-cons)
+    # E03b: identical to `train` except the training target (team consensus labels, shared kernel
+    # esfersami50/nx1-01-consensus-labels v2) and the arm name. Script kernels take no arguments,
+    # so the two defaults are rewritten in the pushed copy.
+    "$PY" - "$LEG/train_ours_leg.py" "$DIR/train_ours_leg.py" <<'EOF'
+import sys
+src, dst = sys.argv[1:3]
+text = open(src).read()
+for old, new in (('env("OURS_LABELS", "labels_llm_soft.parquet")', 'env("OURS_LABELS", "labels_consensus.parquet")'),
+                 ('env("OURS_ARM", "effv2s")', 'env("OURS_ARM", "effv2s_cons")')):
+    assert text.count(old) == 1, old
+    text = text.replace(old, new)
+compile(text, dst, "exec")
+open(dst, "w").write(text)
+EOF
+    cp "$HERE/traincons.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
   submission)
     "$PY" "$LEG/build_submission_notebook.py"
     cp "$LEG/submission/rsna-knee-base-plus-ours.ipynb" "$DIR/"
@@ -35,14 +52,20 @@ compile(text, dst, "exec")
 open(dst, "w").write(text)
 EOF
     cp "$HERE/verify.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
-  *) echo "usage: $0 train|submission|verify" >&2; rm -rf "$DIR"; exit 2 ;;
+  *) echo "usage: $0 train|train-cons|submission|verify" >&2; rm -rf "$DIR"; exit 2 ;;
 esac
+# Teammate's account: KAGGLE_OWNER=esfersami50 KAGGLE_TOKEN_FILE=<first line = their KGAT token>
+# pushes the kernel under their namespace, on their GPU quota.
+if [[ -n ${KAGGLE_OWNER:-} ]]; then
+  sed -i '' "s|\"id\": \"hosen42/|\"id\": \"$KAGGLE_OWNER/|" "$DIR/kernel-metadata.json"
+fi
+grep '"id"' "$DIR/kernel-metadata.json"
 if [[ -n ${DRY_RUN:-} ]]; then
   echo "DRY RUN: would run: ${KAGGLE[*]} kernels push -p $DIR"
   ls -la "$DIR"
   rm -rf "$DIR"
   exit 0
 fi
-export KAGGLE_API_TOKEN=$(tr -d '\n\r ' < ~/.kaggle/access_token)
+export KAGGLE_API_TOKEN=$(head -1 "${KAGGLE_TOKEN_FILE:-$HOME/.kaggle/access_token}" | tr -d '\n\r ')
 "${KAGGLE[@]}" kernels push -p "$DIR"
 rm -rf "$DIR"
