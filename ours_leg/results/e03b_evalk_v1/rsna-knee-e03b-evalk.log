@@ -1,0 +1,25 @@
+[{"stream_name":"stdout","time":19.166246284,"data":"folds [0, 1] | gpus 2 | script /kaggle/src/script.py\n"}
+,{"stream_name":"stdout","time":24.602705467,"data":"[f0] device cuda x1 | amp torch.float16 | arch tf_efficientnetv2_s.in21k_ft_in1k @ 384 | k 12/24 | bs 8 | epochs 16 | fold 0 | tag effv2s_cons_f0\n"}
+,{"stream_name":"stdout","time":24.653326444,"data":"[f1] device cuda x1 | amp torch.float16 | arch tf_efficientnetv2_s.in21k_ft_in1k @ 384 | k 12/24 | bs 8 | epochs 16 | fold 1 | tag effv2s_cons_f1\n"}
+,{"stream_name":"stdout","time":25.511105729,"data":"[f0] training target: /kaggle/input/notebooks/esfersami50/nx1-01-consensus-labels/labels_consensus.parquet (folds still from /kaggle/input/datasets/dreaddevelopment/rsna-knee-labels/labels_llm_soft.parquet)\n"}
+,{"stream_name":"stdout","time":25.511139118,"data":"[f1] training target: /kaggle/input/notebooks/esfersami50/nx1-01-consensus-labels/labels_consensus.parquet (folds still from /kaggle/input/datasets/dreaddevelopment/rsna-knee-labels/labels_llm_soft.parquet)\n"}
+,{"stream_name":"stdout","time":26.873245947,"data":"[f0] train 3479 | oof 870 | gold 58 | folds sha f4292c4a2dca\n"}
+,{"stream_name":"stdout","time":26.911831713,"data":"[f1] train 3479 | oof 870 | gold 58 | folds sha f4292c4a2dca\n"}
+,{"stream_name":"stdout","time":27.678388922,"data":"[f1] backbone tf_efficientnetv2_s.in21k_ft_in1k: 20.2M params, features 1280, norm mean [0.5, 0.5, 0.5] std [0.5, 0.5, 0.5]\n"}
+,{"stream_name":"stdout","time":27.681307905,"data":"[f0] backbone tf_efficientnetv2_s.in21k_ft_in1k: 20.2M params, features 1280, norm mean [0.5, 0.5, 0.5] std [0.5, 0.5, 0.5]\n"}
+,{"stream_name":"stdout","time":397.306378143,"data":"[f0] effv2s_cons_f0_swa.pt k=24: OOF 0.9146 | gold(diag) 0.8817 | 112.7s\n"}
+,{"stream_name":"stdout","time":414.332285442,"data":"[f1] effv2s_cons_f1_swa.pt k=24: OOF 0.9074 | gold(diag) 0.8703 | 129.7s\n"}
+,{"stream_name":"stdout","time":537.308354041,"data":"[f0] effv2s_cons_f0_swa.pt k=32: OOF 0.9176 | gold(diag) 0.8776 | 140.0s\n"}
+,{"stream_name":"stdout","time":576.791616119,"data":"[f1] effv2s_cons_f1_swa.pt k=32: OOF 0.9105 | gold(diag) 0.8779 | 162.5s\n"}
+,{"stream_name":"stdout","time":726.167041946,"data":"[f0] effv2s_cons_f0_swa.pt k=42: OOF 0.9200 | gold(diag) 0.8804 | 188.9s\n"}
+,{"stream_name":"stdout","time":799.81928014,"data":"[f1] effv2s_cons_f1_swa.pt k=42: OOF 0.9135 | gold(diag) 0.8790 | 223.0s\n"}
+,{"stream_name":"stdout","time":1009.740462013,"data":"[f0] effv2s_cons_f0_swa.pt k=64: OOF 0.9192 | gold(diag) 0.8798 | 283.6s\n"}
+,{"stream_name":"stdout","time":1130.843754858,"data":"[f1] effv2s_cons_f1_swa.pt k=64: OOF 0.9126 | gold(diag) 0.8780 | 331.0s\n"}
+,{"stream_name":"stdout","time":1132.285736451,"data":"fold exit codes: {0: 0, 1: 0}\n"}
+,{"stream_name":"stderr","time":1135.443223233,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1135.443250523,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1135.69928242,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1135.699307603,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1136.531945365,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1137.64842819,"data":"[NbConvertApp] Writing 498463 bytes to __results__.html\n"}
+]

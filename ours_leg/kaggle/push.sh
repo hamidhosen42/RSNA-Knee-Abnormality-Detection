@@ -3,6 +3,7 @@
 # on your GPU quota, so run it only when you mean it. DRY_RUN=1 assembles and shows, pushes nothing.
 #   ./push.sh train        EfficientNetV2-S leg training (fold = OURS_FOLD in the script, default 0)
 #   ./push.sh train-cons   E03b: same training, team consensus labels as the target (arm effv2s_cons)
+#   ./push.sh eval-k       E03b-k: re-score E03b checkpoints at k_eval 24/32/42/64 (no training)
 #   ./push.sh submission   the 0.943 base + our leg notebook (rebuilt from the base first)
 set -euo pipefail
 HERE=${0:A:h}
@@ -35,6 +36,24 @@ compile(text, dst, "exec")
 open(dst, "w").write(text)
 EOF
     cp "$HERE/traincons.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
+  eval-k)
+    # E03b-k: no training. Re-score E03b's fold 0/1 SWA checkpoints (OOF + gold-58) at several eval
+    # window counts with the same window code; only these defaults differ from `train-cons`.
+    "$PY" - "$LEG/train_ours_leg.py" "$DIR/train_ours_leg.py" <<'EOF'
+import sys
+src, dst = sys.argv[1:3]
+text = open(src).read()
+for old, new in (('env("OURS_LABELS", "labels_llm_soft.parquet")', 'env("OURS_LABELS", "labels_consensus.parquet")'),
+                 ('env("OURS_ARM", "effv2s")', 'env("OURS_ARM", "effv2s_cons")'),
+                 ('env("OURS_CKPT", "timm")', 'env("OURS_CKPT", "none")'),
+                 ('env("OURS_EVAL_CKPTS", "")', 'env("OURS_EVAL_CKPTS", "/kaggle/input/**/arms/effv2s_cons/weights/*_swa.pt")'),
+                 ('env("OURS_K_EVALS", "24")', 'env("OURS_K_EVALS", "24,32,42,64")')):
+    assert text.count(old) == 1, old
+    text = text.replace(old, new)
+compile(text, dst, "exec")
+open(dst, "w").write(text)
+EOF
+    cp "$HERE/evalk.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
   submission)
     "$PY" "$LEG/build_submission_notebook.py"
     cp "$LEG/submission/rsna-knee-base-plus-ours.ipynb" "$DIR/"
@@ -52,7 +71,7 @@ compile(text, dst, "exec")
 open(dst, "w").write(text)
 EOF
     cp "$HERE/verify.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
-  *) echo "usage: $0 train|train-cons|submission|verify" >&2; rm -rf "$DIR"; exit 2 ;;
+  *) echo "usage: $0 train|train-cons|eval-k|submission|verify" >&2; rm -rf "$DIR"; exit 2 ;;
 esac
 # Teammate's account: KAGGLE_OWNER=esfersami50 KAGGLE_TOKEN_FILE=<first line = their KGAT token>
 # pushes the kernel under their namespace, on their GPU quota.

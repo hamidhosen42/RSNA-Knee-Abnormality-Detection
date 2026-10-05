@@ -345,6 +345,38 @@ def predict(model, loader, prep, dev, amp_dtype):
     return np.concatenate(out) if out else np.zeros((0, len(LAB)), np.float32)
 
 
+def eval_only(a, core, mk, oof_ids, gold_ids, T_oof, T_gold, dev, amp_dtype, ebs, ew):
+    """Re-score this fold's checkpoints at several eval window counts (E03b-k ablation)."""
+    paths = [p for p in sorted(glob.glob(a.eval_ckpts, recursive=True)) if f"_f{a.fold}_" in os.path.basename(p)]
+    if not paths:
+        raise SystemExit(f"no checkpoint for fold {a.fold} in {a.eval_ckpts}")
+    res = []
+    for p in paths:
+        ck = torch.load(p, map_location="cpu", weights_only=False)
+        core.load_state_dict(ck["model"])
+        mean_t = torch.tensor(ck["norm_mean"], dtype=torch.float32, device=dev).view(1, 1, 3, 1, 1)
+        std_t = torch.tensor(ck["norm_std"], dtype=torch.float32, device=dev).view(1, 1, 3, 1, 1)
+        prep = lambda xb, train, r=int(ck["res"]): to_input(xb, r, mean_t, std_t, dev, train)
+        kind = os.path.basename(p).rsplit("_", 1)[-1].replace(".pt", "")
+        tag = os.path.basename(p).rsplit("_", 1)[0]
+        for k in [int(x) for x in a.k_evals.split(",")]:
+            t = time.time()
+            r = {"ckpt": os.path.basename(p), "kind": kind, "k_eval": k, "fold": a.fold}
+            for name, ids, T, aucf in (("oof", oof_ids, T_oof, soft_auc), ("gold", gold_ids, T_gold, hard_auc)):
+                if not ids:
+                    continue
+                dl = DataLoader(StudyWindows(ids=ids, k=k, train=False, **mk), batch_size=ebs, shuffle=False,
+                                num_workers=ew, collate_fn=collate, pin_memory=False, worker_init_fn=tame_malloc)
+                P = predict(core, dl, prep, dev, amp_dtype)
+                r[f"{name}_auc"], r[f"{name}_aucs"] = aucf(T, P)
+                np.savez(os.path.join(a.out, f"{name}_{tag}_{kind}_k{k}.npz"), pred=P, truth=T, ids=np.array(ids))
+            r["seconds"] = round(time.time() - t, 1)
+            print(f"{r['ckpt']} k={k}: OOF {r.get('oof_auc', float('nan')):.4f} | gold(diag) "
+                  f"{r.get('gold_auc', float('nan')):.4f} | {r['seconds']}s", flush=True)
+            res.append(r)
+    json.dump(res, open(os.path.join(a.out, f"eval_k_f{a.fold}.json"), "w"), indent=1)
+
+
 @torch.no_grad()
 def recalibrate_bn(core, loader, prep, dev, amp_dtype, max_batches):
     """Averaged weights need fresh BatchNorm statistics; single-device pass, no gradients."""
@@ -410,6 +442,9 @@ def main():
     ap.add_argument("--channels_last", type=int, default=env("OURS_CHANNELS_LAST", 0, int))
     ap.add_argument("--labels", default=env("OURS_LABELS", "labels_llm_soft.parquet"),
                     help="training/OOF target file; folds always come from labels_llm_soft.parquet")
+    ap.add_argument("--eval_ckpts", default=env("OURS_EVAL_CKPTS", ""),
+                    help="glob of trained checkpoints: no training, re-score OOF + gold at each of --k_evals")
+    ap.add_argument("--k_evals", default=env("OURS_K_EVALS", "24"))
     ap.add_argument("--fold", type=int, default=env("OURS_FOLD", 0, int), help="-1 = fit on all folds")
     ap.add_argument("--seed", type=int, default=env("OURS_SEED", 42, int))
     ap.add_argument("--budget_h", type=float, default=env("OURS_BUDGET_H", 11.0, float))
@@ -521,6 +556,8 @@ def main():
     gl = eval_loader(gold_ids) if gold_ids else None
     T_oof = np.stack([labels[u] for u in oof_ids]) if oof_ids else None
     T_gold = np.stack([labels[u] for u in gold_ids]) if gold_ids else None
+    if a.eval_ckpts:                       # eval-only: same folds, same windows code, only k changes
+        return eval_only(a, core, mk, oof_ids, gold_ids, T_oof, T_gold, dev, amp_dtype, ebs, ew)
 
     prev = np.clip(np.stack([labels[u] for u in tr_ids]).mean(0), 0.03, 0.7)
     lossf = nn.BCEWithLogitsLoss(pos_weight=torch.tensor(np.clip((1 - prev) / prev, 1, 10),
