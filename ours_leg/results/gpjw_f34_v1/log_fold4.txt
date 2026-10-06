@@ -1,0 +1,76 @@
+{"backbone": "convnext_tiny", "res": 256, "k": 8, "k_eval": 12, "epochs": 14, "bs": 8, "micro_bs": 2, "lr": 0.0001, "lr_head": 0.0005, "wd": 0.02, "ema": 0.998, "workers": 2, "seed": 0, "limit": 0, "fold": 4}
+fold sizes {"-1": 58, "0": 870, "1": 870, "2": 870, "3": 870, "4": 869}
+studies without any cached slot: 0
+train 3480  val 869  gold 58
+  ep 0 step 100/435 loss 0.5869 3.23s/it mem 8.7GB
+  ep 0 step 200/435 loss 0.5767 2.86s/it mem 8.7GB
+  ep 0 step 300/435 loss 0.5672 2.75s/it mem 8.7GB
+  ep 0 step 400/435 loss 0.5605 2.69s/it mem 8.7GB
+ep  0 loss 0.5584 time 1165s | eval 402s | gold 0.7748 | val 0.7810 [0.739 0.653 0.819 0.717 0.824 0.769 0.774 0.847 0.846 0.792 0.819 0.774]
+  ep 1 step 100/435 loss 0.5218 2.48s/it mem 8.7GB
+  ep 1 step 200/435 loss 0.5194 2.49s/it mem 8.7GB
+  ep 1 step 300/435 loss 0.5161 2.50s/it mem 8.7GB
+  ep 1 step 400/435 loss 0.5125 2.51s/it mem 8.7GB
+ep  1 loss 0.5112 time 1091s
+  ep 2 step 100/435 loss 0.4999 2.60s/it mem 8.7GB
+  ep 2 step 200/435 loss 0.4949 2.57s/it mem 8.7GB
+  ep 2 step 300/435 loss 0.4910 2.57s/it mem 8.7GB
+  ep 2 step 400/435 loss 0.4879 2.56s/it mem 8.7GB
+ep  2 loss 0.4879 time 1115s
+  ep 3 step 100/435 loss 0.4688 2.51s/it mem 8.7GB
+  ep 3 step 200/435 loss 0.4700 2.50s/it mem 8.7GB
+  ep 3 step 300/435 loss 0.4730 2.50s/it mem 8.7GB
+  ep 3 step 400/435 loss 0.4736 2.51s/it mem 8.7GB
+ep  3 loss 0.4730 time 1093s
+  ep 4 step 100/435 loss 0.4651 2.48s/it mem 8.7GB
+  ep 4 step 200/435 loss 0.4683 2.51s/it mem 8.7GB
+  ep 4 step 300/435 loss 0.4671 2.51s/it mem 8.7GB
+  ep 4 step 400/435 loss 0.4663 2.52s/it mem 8.7GB
+ep  4 loss 0.4658 time 1095s | eval 361s | gold 0.8797 | val 0.8674 [0.820 0.763 0.931 0.830 0.874 0.853 0.819 0.880 0.876 0.934 0.894 0.934]
+  ep 5 step 100/435 loss 0.4541 2.52s/it mem 8.7GB
+  ep 5 step 200/435 loss 0.4515 2.53s/it mem 8.7GB
+  ep 5 step 300/435 loss 0.4528 2.52s/it mem 8.7GB
+  ep 5 step 400/435 loss 0.4505 2.53s/it mem 8.7GB
+ep  5 loss 0.4515 time 1099s
+  ep 6 step 100/435 loss 0.4455 2.49s/it mem 8.7GB
+  ep 6 step 200/435 loss 0.4449 2.48s/it mem 8.7GB
+  ep 6 step 300/435 loss 0.4459 2.49s/it mem 8.7GB
+  ep 6 step 400/435 loss 0.4429 2.50s/it mem 8.7GB
+ep  6 loss 0.4420 time 1086s
+  ep 7 step 100/435 loss 0.4291 2.48s/it mem 8.7GB
+  ep 7 step 200/435 loss 0.4313 2.50s/it mem 8.7GB
+  ep 7 step 300/435 loss 0.4285 2.52s/it mem 8.7GB
+  ep 7 step 400/435 loss 0.4301 2.53s/it mem 8.7GB
+ep  7 loss 0.4309 time 1101s
+  ep 8 step 100/435 loss 0.4181 2.48s/it mem 8.7GB
+  ep 8 step 200/435 loss 0.4204 2.50s/it mem 8.7GB
+  ep 8 step 300/435 loss 0.4198 2.51s/it mem 8.7GB
+  ep 8 step 400/435 loss 0.4204 2.52s/it mem 8.7GB
+ep  8 loss 0.4201 time 1096s | eval 365s | gold 0.9001 | val 0.8911 [0.870 0.839 0.948 0.885 0.893 0.876 0.846 0.883 0.886 0.931 0.895 0.941]
+  ep 9 step 100/435 loss 0.4114 2.49s/it mem 8.7GB
+  ep 9 step 200/435 loss 0.4106 2.50s/it mem 8.7GB
+  ep 9 step 300/435 loss 0.4101 2.50s/it mem 8.7GB
+  ep 9 step 400/435 loss 0.4102 2.51s/it mem 8.7GB
+ep  9 loss 0.4091 time 1090s
+  ep 10 step 100/435 loss 0.3996 2.47s/it mem 8.7GB
+  ep 10 step 200/435 loss 0.3988 2.48s/it mem 8.7GB
+  ep 10 step 300/435 loss 0.3990 2.50s/it mem 8.7GB
+  ep 10 step 400/435 loss 0.3989 2.50s/it mem 8.7GB
+ep 10 loss 0.3986 time 1091s
+  ep 11 step 100/435 loss 0.3930 2.51s/it mem 8.7GB
+  ep 11 step 200/435 loss 0.3901 2.51s/it mem 8.7GB
+  ep 11 step 300/435 loss 0.3884 2.52s/it mem 8.7GB
+  ep 11 step 400/435 loss 0.3891 2.52s/it mem 8.7GB
+ep 11 loss 0.3892 time 1098s | eval 368s | gold 0.8998 | val 0.8934 [0.884 0.852 0.946 0.887 0.893 0.876 0.855 0.877 0.889 0.927 0.899 0.936]
+  ep 12 step 100/435 loss 0.3800 2.50s/it mem 8.7GB
+  ep 12 step 200/435 loss 0.3809 2.49s/it mem 8.7GB
+  ep 12 step 300/435 loss 0.3830 2.50s/it mem 8.7GB
+  ep 12 step 400/435 loss 0.3839 2.51s/it mem 8.7GB
+ep 12 loss 0.3830 time 1090s | eval 371s | gold 0.9005 | val 0.8935 [0.885 0.854 0.946 0.888 0.893 0.877 0.856 0.874 0.889 0.926 0.898 0.937]
+  ep 13 step 100/435 loss 0.3819 2.48s/it mem 8.7GB
+  ep 13 step 200/435 loss 0.3775 2.52s/it mem 8.7GB
+  ep 13 step 300/435 loss 0.3799 2.52s/it mem 8.7GB
+  ep 13 step 400/435 loss 0.3796 2.52s/it mem 8.7GB
+ep 13 loss 0.3799 time 1098s | eval 381s | gold 0.8993 | val 0.8933 [0.886 0.855 0.946 0.887 0.893 0.878 0.856 0.871 0.889 0.925 0.897 0.936]
+gold per class: ACL=0.962 MCL=0.934 Medial=0.952 Latera=0.860 Medial=0.972 Latera=0.867 PF OA=0.848 Effusi=0.893 Synovi=0.700 Baker'=0.973 Contus=0.947 Fractu=0.883
+DONE fold 4 in 4.99 h

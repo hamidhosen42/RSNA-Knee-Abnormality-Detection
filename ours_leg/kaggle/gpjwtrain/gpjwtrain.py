@@ -167,8 +167,9 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import GroupKFold
 
 FOLDS = [3, 4]
+EVAL_EPOCHS = {0, 4, 8, 11, 12, 13}
 PROBE = False
-ARGS = dict(backbone="convnext_tiny", res=256, k=8, k_eval=12, epochs=1 if PROBE else 14, bs=8, lr=1e-4,
+ARGS = dict(backbone="convnext_tiny", res=256, k=8, k_eval=12, epochs=1 if PROBE else 14, bs=8, micro_bs=2, lr=1e-4,
             lr_head=5e-4, wd=0.02, ema=0.998, workers=2, seed=0, limit=400 if PROBE else 0)
 OUT = "/kaggle/working"
 T0 = time.time()
@@ -293,9 +294,12 @@ def train_fold(fold):
         va = va.iloc[:a["limit"] // 2]
     say(f"train {len(tr)}  val {len(va)}  gold {len(gold)}")
     dl_kw = dict(num_workers=a["workers"], pin_memory=True, persistent_workers=True)
+    # bs 8 does not fit a 16 GB T4 (8 studies x 6 slots x 8 windows = 384 images): micro-batches of 4 with
+    # gradient accumulation; no BatchNorm anywhere in the model, so the update equals the bs-8 one
+    accum = a["bs"] // a["micro_bs"]
     train_dl = torch.utils.data.DataLoader(
         StudyDataset(tr.index, table, None, tr[LABELS].values.astype(np.float32), a["k"], train=True, loader=loader),
-        batch_size=a["bs"], shuffle=True, drop_last=True, **dl_kw)
+        batch_size=a["micro_bs"], shuffle=True, drop_last=True, **dl_kw)
     eval_sets = {"gold": gold, "val": va}
     eval_dl = {k: torch.utils.data.DataLoader(StudyDataset(v.index, table, None, None, a["k_eval"], loader=loader),
                                               batch_size=a["bs"], shuffle=False, **dl_kw) for k, v in eval_sets.items()}
@@ -310,7 +314,8 @@ def train_fold(fold):
     head_params = [p for n, p in model.named_parameters() if not n.startswith("enc.")]
     opt = torch.optim.AdamW([{"params": enc_params, "lr": a["lr"]}, {"params": head_params, "lr": a["lr_head"]}],
                             weight_decay=a["wd"])
-    steps, warm = a["epochs"] * len(train_dl), len(train_dl)
+    per_ep = len(train_dl) // accum
+    steps, warm = a["epochs"] * per_ep, per_ep
     sched = torch.optim.lr_scheduler.LambdaLR(
         opt, lambda s: min(1.0, (s + 1) / warm) * (0.5 * (1 + math.cos(math.pi * min(1.0, s / steps)))))
     scaler = torch.amp.GradScaler("cuda")
@@ -318,17 +323,23 @@ def train_fold(fold):
     for ep in range(a["epochs"]):
         model.train()
         t0, tot, n = time.time(), 0.0, 0
-        for x, mask, pos, y in train_dl:
+        opt.zero_grad(set_to_none=True)
+        for it, (x, mask, pos, y) in enumerate(train_dl):
+            if it >= per_ep * accum:
+                break
             x, mask, pos, y = x.cuda(non_blocking=True), mask.cuda(), pos.cuda(), y.cuda()
             with torch.autocast("cuda", dtype=torch.float16):
                 logit = model(x, mask, pos, res=a["res"], train=True)
             loss = F.binary_cross_entropy_with_logits(logit.float(), y)
-            opt.zero_grad(set_to_none=True)
-            scaler.scale(loss).backward()
+            scaler.scale(loss / accum).backward()
+            tot += loss.item() / accum
+            if (it + 1) % accum:
+                continue
             scaler.unscale_(opt)
             torch.nn.utils.clip_grad_norm_(model.parameters(), 3.0)
             scaler.step(opt)
             scaler.update()
+            opt.zero_grad(set_to_none=True)
             sched.step()
             step += 1
             d = min(a["ema"], (1 + step) / (10 + step))
@@ -337,10 +348,14 @@ def train_fold(fold):
                     pe.lerp_(pm, 1 - d)
                 for be, bm in zip(ema.buffers(), model.buffers()):
                     be.copy_(bm)
-            tot += loss.item(); n += 1
+            n += 1
             if n % 100 == 0 or (PROBE and n % 10 == 0):
-                say(f"  ep {ep} step {n}/{len(train_dl)} loss {tot / n:.4f} {(time.time() - t0) / n:.2f}s/it")
+                say(f"  ep {ep} step {n}/{per_ep} loss {tot / n:.4f} {(time.time() - t0) / n:.2f}s/it "
+                    f"mem {torch.cuda.max_memory_allocated() / 1e9:.1f}GB")
         msg = f"ep {ep:2d} loss {tot / n:.4f} time {time.time() - t0:.0f}s"
+        if ep not in EVAL_EPOCHS and ep != a["epochs"] - 1:
+            say(msg)             # evaluation only logs; skipping some epochs leaves the final EMA model unchanged
+            continue
         te = time.time()
         preds = {k: predict(ema, dl, a["res"]) for k, dl in eval_dl.items()}
         g_auc, g_each = macro_auc(gold_y, preds["gold"])
@@ -363,6 +378,7 @@ def script_path():
 
 
 if __name__ == "__main__":
+    os.environ.setdefault("PYTORCH_ALLOC_CONF", "expandable_segments:True")
     if os.environ.get("GPJW_FOLD"):
         train_fold(int(os.environ["GPJW_FOLD"]))
         sys.exit(0)
