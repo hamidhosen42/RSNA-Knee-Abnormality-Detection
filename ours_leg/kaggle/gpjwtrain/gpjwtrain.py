@@ -167,6 +167,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import GroupKFold
 
 FOLDS = [3, 4]
+CKPT_PREFIX = "cnxt_v0"
 EVAL_EPOCHS = {0, 4, 8, 11, 12, 13}
 PROBE = False
 ARGS = dict(backbone="convnext_tiny", res=256, k=8, k_eval=12, epochs=1 if PROBE else 14, bs=8, micro_bs=2, lr=1e-4,
@@ -361,7 +362,7 @@ def train_fold(fold):
         g_auc, g_each = macro_auc(gold_y, preds["gold"])
         v_auc, v_each = macro_auc(val_y, preds["val"])
         say(msg + f" | eval {time.time() - te:.0f}s | gold {g_auc:.4f} | val {v_auc:.4f} [" + " ".join(f"{x:.3f}" for x in v_each) + "]")
-    torch.save({"model": ema.state_dict(), "args": a}, f"{OUT}/cnxt_v0_fold{fold}.pt")
+    torch.save({"model": ema.state_dict(), "args": a}, f"{OUT}/{CKPT_PREFIX}_fold{fold}.pt")
     rows = []
     for k, v in eval_sets.items():
         df = pd.DataFrame(preds[k], index=v.index, columns=LABELS)

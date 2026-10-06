@@ -21,7 +21,10 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROBE = "--probe" in sys.argv
-OWNER = "esfersami50"
+# E17: --backbone convnext_small (default convnext_tiny = the author's reader, E16)
+BACKBONE = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--backbone=")), "convnext_tiny")
+TAG = "" if BACKBONE == "convnext_tiny" else "-" + BACKBONE.replace("convnext_", "")
+OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 N_SHARDS = 5
 DOCKER = "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
 
@@ -38,9 +41,10 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import GroupKFold
 
 FOLDS = [3, 4]
+CKPT_PREFIX = "__CKPT_PREFIX__"
 EVAL_EPOCHS = {0, 4, 8, 11, 12, 13}
 PROBE = __PROBE__
-ARGS = dict(backbone="convnext_tiny", res=256, k=8, k_eval=12, epochs=1 if PROBE else 14, bs=8, micro_bs=2, lr=1e-4,
+ARGS = dict(backbone="__BACKBONE__", res=256, k=8, k_eval=12, epochs=1 if PROBE else 14, bs=8, micro_bs=2, lr=1e-4,
             lr_head=5e-4, wd=0.02, ema=0.998, workers=2, seed=0, limit=400 if PROBE else 0)
 OUT = "/kaggle/working"
 T0 = time.time()
@@ -232,7 +236,7 @@ def train_fold(fold):
         g_auc, g_each = macro_auc(gold_y, preds["gold"])
         v_auc, v_each = macro_auc(val_y, preds["val"])
         say(msg + f" | eval {time.time() - te:.0f}s | gold {g_auc:.4f} | val {v_auc:.4f} [" + " ".join(f"{x:.3f}" for x in v_each) + "]")
-    torch.save({"model": ema.state_dict(), "args": a}, f"{OUT}/cnxt_v0_fold{fold}.pt")
+    torch.save({"model": ema.state_dict(), "args": a}, f"{OUT}/{CKPT_PREFIX}_fold{fold}.pt")
     rows = []
     for k, v in eval_sets.items():
         df = pd.DataFrame(preds[k], index=v.index, columns=LABELS)
@@ -269,12 +273,14 @@ if __name__ == "__main__":
         raise SystemExit(1)
 '''
 
-src = knee + MAIN.replace("__PROBE__", "True" if PROBE else "False")
+src = knee + (MAIN.replace("__PROBE__", "True" if PROBE else "False").replace("__BACKBONE__", BACKBONE)
+               .replace("__CKPT_PREFIX__", "cnxt_v0" if not TAG else "cnxt" + TAG.replace("-", "_")))
 compile(src, "gpjwtrain.py", "exec")
-d = os.path.join(HERE, "..", "kaggle", "gpjwtrain_probe" if PROBE else "gpjwtrain")
+d = os.path.join(HERE, "..", "kaggle", ("gpjwtrain_probe" if PROBE else "gpjwtrain") + TAG.replace("-", "_")
+                 + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
 open(os.path.join(d, "gpjwtrain.py"), "w").write(src)
-slug = "rsna-knee-gpjw-train-probe" if PROBE else "rsna-knee-gpjw-train-f34"
+slug = ("rsna-knee-gpjw-train-probe" if PROBE else "rsna-knee-gpjw-train-f34") + TAG
 meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "gpjwtrain.py", "language": "python",
         "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": True,
         "machine_shape": "NvidiaTeslaT4", "docker_image": DOCKER, "docker_image_pinning_type": "original",

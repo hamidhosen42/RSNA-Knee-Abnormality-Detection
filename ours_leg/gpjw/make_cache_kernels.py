@@ -17,8 +17,8 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-N = int(sys.argv[1]) if len(sys.argv) > 1 else 5
-OWNER = "esfersami50"
+N = next((int(a) for a in sys.argv[1:] if a.isdigit()), 5)
+OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 DOCKER = "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
 
 prep = open(os.path.join(HERE, "src", "preprocess.py")).read()
@@ -104,7 +104,7 @@ if __name__ == "__main__":
 '''
 
 for i in range(N):
-    d = os.path.join(HERE, "..", "kaggle", f"gpjwcache_{i}")
+    d = os.path.join(HERE, "..", "kaggle", f"gpjwcache_{i}" if OWNER == "esfersami50" else f"gpjwcache_{OWNER}_{i}")
     os.makedirs(d, exist_ok=True)
     src = prep + MAIN.replace("__SHARD__", str(i)).replace("__NSHARDS__", str(N))
     compile(src, "gpjwcache.py", "exec")
