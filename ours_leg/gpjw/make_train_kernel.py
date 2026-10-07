@@ -25,6 +25,8 @@ PROBE = "--probe" in sys.argv
 BACKBONE = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--backbone=")), "convnext_tiny")
 TAG = "" if BACKBONE == "convnext_tiny" else "-" + BACKBONE.replace("convnext_", "")
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
+# whose cache shard kernels to mount (sami's are shared with hosen42)
+CACHE_OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--cache-owner=")), OWNER)
 N_SHARDS = 5
 DOCKER = "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
 
@@ -288,6 +290,6 @@ meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "gpjwtrain.py", "la
                             "lixin73/rsna-knee-llm-report-labels-sol56/1",
                             "laymond/rsna-knee-abnormality-qwen3-8b-weak-labels/2"],
         "competition_sources": ["rsna-knee-abnormality-detection"],
-        "kernel_sources": [f"{OWNER}/rsna-knee-gpjw-cache-{i}" for i in range(N_SHARDS)], "model_sources": []}
+        "kernel_sources": [f"{CACHE_OWNER}/rsna-knee-gpjw-cache-{i}/1" for i in range(N_SHARDS)], "model_sources": []}
 json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
 print("wrote", d)

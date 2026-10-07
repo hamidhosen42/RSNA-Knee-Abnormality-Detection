@@ -1,0 +1,166 @@
+[{"stream_name":"stdout","time":26.641120604,"data":"gpus 2 | script /kaggle/src/script.py | folds [3, 4] | probe False\n"}
+,{"stream_name":"stdout","time":33.403528569,"data":"[f3 0m] {\"backbone\": \"convnext_small\", \"res\": 256, \"k\": 8, \"k_eval\": 12, \"epochs\": 14, \"bs\": 8, \"micro_bs\": 2, \"lr\": 0.0001, \"lr_head\": 0.0005, \"wd\": 0.02, \"ema\": 0.998, \"workers\": 2, \"seed\": 0, \"limit\": 0, \"fold\": 3}\n"}
+,{"stream_name":"stdout","time":33.493565145,"data":"[f4 0m] {\"backbone\": \"convnext_small\", \"res\": 256, \"k\": 8, \"k_eval\": 12, \"epochs\": 14, \"bs\": 8, \"micro_bs\": 2, \"lr\": 0.0001, \"lr_head\": 0.0005, \"wd\": 0.02, \"ema\": 0.998, \"workers\": 2, \"seed\": 0, \"limit\": 0, \"fold\": 4}\n"}
+,{"stream_name":"stdout","time":34.356029953,"data":"label sources vs gold-58 (macro): {'steven': 0.893, 'pilkwang': 0.866, 'lixin': 0.835, 'qwen': 0.818, 'consensus': 0.896}\n"}
+,{"stream_name":"stdout","time":34.356956395,"data":"label sources vs gold-58 (macro): {'steven': 0.893, 'pilkwang': 0.866, 'lixin': 0.835, 'qwen': 0.818, 'consensus': 0.896}\n"}
+,{"stream_name":"stdout","time":34.757324532,"data":"[f3 0m] fold sizes {\"-1\": 58, \"0\": 870, \"1\": 870, \"2\": 870, \"3\": 870, \"4\": 869}\n"}
+,{"stream_name":"stdout","time":34.757354263,"data":"[f4 0m] fold sizes {\"-1\": 58, \"0\": 870, \"1\": 870, \"2\": 870, \"3\": 870, \"4\": 869}\n"}
+,{"stream_name":"stdout","time":490.623056332,"data":"cache: 5 shard metas, 24371 series, 4407 studies\n"}
+,{"stream_name":"stdout","time":490.623683869,"data":"cache: 5 shard metas, 24371 series, 4407 studies\n"}
+,{"stream_name":"stdout","time":490.984062496,"data":"[f4 8m] studies without any cached slot: 0\n"}
+,{"stream_name":"stdout","time":490.984092024,"data":"[f4 8m] train 3480  val 869  gold 58\n"}
+,{"stream_name":"stdout","time":490.999502656,"data":"[f3 8m] studies without any cached slot: 0\n"}
+,{"stream_name":"stdout","time":490.999527258,"data":"[f3 8m] train 3479  val 870  gold 58\n"}
+,{"stream_name":"stdout","time":492.307895266,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":908.592926774,"data":"[f4 15m]   ep 0 step 100/435 loss 0.5838 4.10s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":911.772059284,"data":"[f3 15m]   ep 0 step 100/434 loss 0.5868 4.14s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":1225.468975604,"data":"[f4 20m]   ep 0 step 200/435 loss 0.5734 3.64s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":1230.465119925,"data":"[f3 20m]   ep 0 step 200/434 loss 0.5734 3.66s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":1546.642317328,"data":"[f4 25m]   ep 0 step 300/435 loss 0.5683 3.50s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":1547.855260538,"data":"[f3 25m]   ep 0 step 300/434 loss 0.5629 3.50s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":1866.431446164,"data":"[f3 31m]   ep 0 step 400/434 loss 0.5554 3.42s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":1866.831677874,"data":"[f4 31m]   ep 0 step 400/435 loss 0.5622 3.42s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":2470.195406316,"data":"[f4 41m] ep  0 loss 0.5598 time 1482s | eval 490s | gold 0.7458 | val 0.7698 [0.726 0.636 0.814 0.715 0.802 0.776 0.768 0.853 0.842 0.824 0.726 0.756]\n"}
+,{"stream_name":"stdout","time":2477.633153898,"data":"[f3 41m] ep  0 loss 0.5532 time 1479s | eval 500s | gold 0.8006 | val 0.7891 [0.744 0.725 0.760 0.687 0.831 0.749 0.749 0.847 0.855 0.830 0.843 0.848]\n"}
+,{"stream_name":"stdout","time":2797.306965417,"data":"[f4 46m]   ep 1 step 100/435 loss 0.5313 3.27s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":2810.075955685,"data":"[f3 46m]   ep 1 step 100/434 loss 0.5197 3.32s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3131.685911782,"data":"[f4 52m]   ep 1 step 200/435 loss 0.5301 3.31s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3137.979195342,"data":"[f3 52m]   ep 1 step 200/434 loss 0.5133 3.30s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3459.600502615,"data":"[f4 57m]   ep 1 step 300/435 loss 0.5209 3.30s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3467.942407804,"data":"[f3 57m]   ep 1 step 300/434 loss 0.5119 3.30s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3786.587794903,"data":"[f4 63m]   ep 1 step 400/435 loss 0.5169 3.29s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3794.853195045,"data":"[f3 63m]   ep 1 step 400/434 loss 0.5076 3.29s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":3898.956066635,"data":"[f4 64m] ep  1 loss 0.5149 time 1429s\n"}
+,{"stream_name":"stdout","time":3905.517526709,"data":"[f3 65m] ep  1 loss 0.5076 time 1428s\n"}
+,{"stream_name":"stdout","time":4224.27494974,"data":"[f4 70m]   ep 2 step 100/435 loss 0.5034 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":4228.970164597,"data":"[f3 70m]   ep 2 step 100/434 loss 0.4871 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":4548.911992776,"data":"[f4 75m]   ep 2 step 200/435 loss 0.5006 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":4554.237377606,"data":"[f3 75m]   ep 2 step 200/434 loss 0.4869 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":4888.806061384,"data":"[f4 81m]   ep 2 step 300/435 loss 0.4948 3.30s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":4892.652066034,"data":"[f3 81m]   ep 2 step 300/434 loss 0.4849 3.29s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":5217.852530134,"data":"[f4 86m]   ep 2 step 400/435 loss 0.4909 3.30s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":5221.242254402,"data":"[f3 86m]   ep 2 step 400/434 loss 0.4837 3.29s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":5332.994007141,"data":"[f3 88m] ep  2 loss 0.4841 time 1427s\n"}
+,{"stream_name":"stdout","time":5333.61029912,"data":"[f4 88m] ep  2 loss 0.4902 time 1435s\n"}
+,{"stream_name":"stdout","time":5658.177116217,"data":"[f3 94m]   ep 3 step 100/434 loss 0.4682 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":5658.836525566,"data":"[f4 94m]   ep 3 step 100/435 loss 0.4684 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":5980.91004502,"data":"[f4 99m]   ep 3 step 200/435 loss 0.4724 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":5982.80318202,"data":"[f3 99m]   ep 3 step 200/434 loss 0.4762 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":6307.056501233,"data":"[f3 105m]   ep 3 step 300/434 loss 0.4764 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":6308.195250311,"data":"[f4 105m]   ep 3 step 300/435 loss 0.4745 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":6635.660616128,"data":"[f3 110m]   ep 3 step 400/434 loss 0.4764 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":6638.684637765,"data":"[f4 110m]   ep 3 step 400/435 loss 0.4755 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":6746.948935772,"data":"[f3 112m] ep  3 loss 0.4753 time 1414s\n"}
+,{"stream_name":"stdout","time":6754.775664971,"data":"[f4 112m] ep  3 loss 0.4758 time 1421s\n"}
+,{"stream_name":"stdout","time":7071.20998188,"data":"[f3 117m]   ep 4 step 100/434 loss 0.4627 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":7082.571261789,"data":"[f4 117m]   ep 4 step 100/435 loss 0.4693 3.28s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":7391.268483226,"data":"[f3 123m]   ep 4 step 200/434 loss 0.4632 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":7403.471050921,"data":"[f4 123m]   ep 4 step 200/435 loss 0.4661 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":7708.371257356,"data":"[f3 128m]   ep 4 step 300/434 loss 0.4625 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":7724.370470609,"data":"[f4 128m]   ep 4 step 300/435 loss 0.4652 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":8031.590023874,"data":"[f3 133m]   ep 4 step 400/434 loss 0.4630 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":8048.941980782,"data":"[f4 134m]   ep 4 step 400/435 loss 0.4660 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":8581.068995719,"data":"[f3 142m] ep  4 loss 0.4633 time 1395s | eval 439s | gold 0.8849 | val 0.8566 [0.820 0.791 0.906 0.801 0.890 0.816 0.840 0.873 0.887 0.917 0.878 0.861]\n"}
+,{"stream_name":"stdout","time":8586.55500695,"data":"[f4 143m] ep  4 loss 0.4657 time 1406s | eval 426s | gold 0.8772 | val 0.8641 [0.831 0.772 0.930 0.819 0.871 0.842 0.828 0.872 0.874 0.927 0.879 0.925]\n"}
+,{"stream_name":"stdout","time":8901.33911231,"data":"[f3 148m]   ep 5 step 100/434 loss 0.4510 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":8908.555740668,"data":"[f4 148m]   ep 5 step 100/435 loss 0.4588 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9222.781526833,"data":"[f3 153m]   ep 5 step 200/434 loss 0.4535 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9229.894944931,"data":"[f4 153m]   ep 5 step 200/435 loss 0.4573 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9549.221580291,"data":"[f3 159m]   ep 5 step 300/434 loss 0.4531 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9555.119289211,"data":"[f4 159m]   ep 5 step 300/435 loss 0.4552 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9875.05866221,"data":"[f3 164m]   ep 5 step 400/434 loss 0.4510 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9880.267178696,"data":"[f4 164m]   ep 5 step 400/435 loss 0.4563 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":9984.385981087,"data":"[f3 166m] ep  5 loss 0.4507 time 1403s\n"}
+,{"stream_name":"stdout","time":9991.840215902,"data":"[f4 166m] ep  5 loss 0.4557 time 1405s\n"}
+,{"stream_name":"stdout","time":10305.693099014,"data":"[f3 171m]   ep 6 step 100/434 loss 0.4432 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":10311.314044595,"data":"[f4 171m]   ep 6 step 100/435 loss 0.4455 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":10621.93755766,"data":"[f3 176m]   ep 6 step 200/434 loss 0.4447 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":10627.58228079,"data":"[f4 177m]   ep 6 step 200/435 loss 0.4461 3.18s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":10943.998896885,"data":"[f3 182m]   ep 6 step 300/434 loss 0.4421 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":10949.389345015,"data":"[f4 182m]   ep 6 step 300/435 loss 0.4443 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":11265.447552418,"data":"[f3 187m]   ep 6 step 400/434 loss 0.4400 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":11271.337395446,"data":"[f4 187m]   ep 6 step 400/435 loss 0.4433 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":11376.098871254,"data":"[f3 189m] ep  6 loss 0.4396 time 1392s\n"}
+,{"stream_name":"stdout","time":11383.013057918,"data":"[f4 189m] ep  6 loss 0.4430 time 1391s\n"}
+,{"stream_name":"stdout","time":11698.300889253,"data":"[f3 194m]   ep 7 step 100/434 loss 0.4243 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":11709.705873739,"data":"[f4 195m]   ep 7 step 100/435 loss 0.4319 3.27s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12024.633315234,"data":"[f3 200m]   ep 7 step 200/434 loss 0.4299 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12035.843344463,"data":"[f4 200m]   ep 7 step 200/435 loss 0.4335 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12349.701084546,"data":"[f3 205m]   ep 7 step 300/434 loss 0.4280 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12366.857281781,"data":"[f4 206m]   ep 7 step 300/435 loss 0.4345 3.28s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12677.097554277,"data":"[f3 211m]   ep 7 step 400/434 loss 0.4279 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12694.5376025,"data":"[f4 211m]   ep 7 step 400/435 loss 0.4333 3.28s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":12789.228389099,"data":"[f3 213m] ep  7 loss 0.4285 time 1413s\n"}
+,{"stream_name":"stdout","time":12811.150377599,"data":"[f4 213m] ep  7 loss 0.4327 time 1428s\n"}
+,{"stream_name":"stdout","time":13113.2296464,"data":"[f3 218m]   ep 8 step 100/434 loss 0.4072 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":13137.790663944,"data":"[f4 218m]   ep 8 step 100/435 loss 0.4252 3.27s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":13439.117274234,"data":"[f3 223m]   ep 8 step 200/434 loss 0.4152 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":13462.325946965,"data":"[f4 224m]   ep 8 step 200/435 loss 0.4242 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":13764.204399454,"data":"[f3 229m]   ep 8 step 300/434 loss 0.4167 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":13792.280602575,"data":"[f4 229m]   ep 8 step 300/435 loss 0.4213 3.27s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":14086.59298059,"data":"[f3 234m]   ep 8 step 400/434 loss 0.4163 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":14120.398145038,"data":"[f4 235m]   ep 8 step 400/435 loss 0.4210 3.27s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":14655.805696588,"data":"[f3 244m] ep  8 loss 0.4172 time 1407s | eval 460s | gold 0.8973 | val 0.8818 [0.880 0.834 0.920 0.885 0.902 0.838 0.867 0.878 0.886 0.934 0.872 0.887]\n"}
+,{"stream_name":"stdout","time":14684.707105655,"data":"[f4 244m] ep  8 loss 0.4206 time 1424s | eval 450s | gold 0.8989 | val 0.8899 [0.855 0.844 0.944 0.886 0.890 0.871 0.852 0.880 0.895 0.937 0.888 0.937]\n"}
+,{"stream_name":"stdout","time":14985.237064005,"data":"[f3 249m]   ep 9 step 100/434 loss 0.4007 3.29s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15015.33037348,"data":"[f4 250m]   ep 9 step 100/435 loss 0.4089 3.31s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15307.355092205,"data":"[f3 255m]   ep 9 step 200/434 loss 0.4016 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15340.471488719,"data":"[f4 255m]   ep 9 step 200/435 loss 0.4134 3.28s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15627.225671198,"data":"[f3 260m]   ep 9 step 300/434 loss 0.3996 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15662.047799713,"data":"[f4 260m]   ep 9 step 300/435 loss 0.4107 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15947.808279301,"data":"[f3 265m]   ep 9 step 400/434 loss 0.4008 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":15982.685760904,"data":"[f4 266m]   ep 9 step 400/435 loss 0.4092 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":16058.331973841,"data":"[f3 267m] ep  9 loss 0.4016 time 1403s\n"}
+,{"stream_name":"stdout","time":16096.983956937,"data":"[f4 268m] ep  9 loss 0.4091 time 1412s\n"}
+,{"stream_name":"stdout","time":16378.014041717,"data":"[f3 272m]   ep 10 step 100/434 loss 0.3915 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":16416.427054328,"data":"[f4 273m]   ep 10 step 100/435 loss 0.4006 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":16697.170637908,"data":"[f3 278m]   ep 10 step 200/434 loss 0.3925 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":16737.182781227,"data":"[f4 278m]   ep 10 step 200/435 loss 0.3944 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":17021.950257063,"data":"[f3 283m]   ep 10 step 300/434 loss 0.3935 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":17060.773432929,"data":"[f4 284m]   ep 10 step 300/435 loss 0.3957 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":17342.563313804,"data":"[f3 288m]   ep 10 step 400/434 loss 0.3928 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":17383.545373305,"data":"[f4 289m]   ep 10 step 400/435 loss 0.3975 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":17451.474861845,"data":"[f3 290m] ep 10 loss 0.3926 time 1393s\n"}
+,{"stream_name":"stdout","time":17496.35393028,"data":"[f4 291m] ep 10 loss 0.3978 time 1399s\n"}
+,{"stream_name":"stdout","time":17770.741101944,"data":"[f3 296m]   ep 11 step 100/434 loss 0.3851 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":17817.425897863,"data":"[f4 296m]   ep 11 step 100/435 loss 0.3930 3.21s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":18089.219808202,"data":"[f3 301m]   ep 11 step 200/434 loss 0.3855 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":18136.476863875,"data":"[f4 302m]   ep 11 step 200/435 loss 0.3927 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":18407.965119175,"data":"[f3 306m]   ep 11 step 300/434 loss 0.3817 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":18453.335967591,"data":"[f4 307m]   ep 11 step 300/435 loss 0.3912 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":18730.991890074,"data":"[f3 312m]   ep 11 step 400/434 loss 0.3820 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":18773.666360612,"data":"[f4 312m]   ep 11 step 400/435 loss 0.3882 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":19285.106950936,"data":"[f3 321m] ep 11 loss 0.3817 time 1389s | eval 445s | gold 0.8916 | val 0.8813 [0.885 0.835 0.923 0.889 0.905 0.836 0.871 0.870 0.879 0.926 0.861 0.894]\n"}
+,{"stream_name":"stdout","time":19319.503512834,"data":"[f4 321m] ep 11 loss 0.3883 time 1389s | eval 434s | gold 0.9001 | val 0.8928 [0.883 0.851 0.946 0.890 0.893 0.878 0.857 0.877 0.894 0.925 0.885 0.934]\n"}
+,{"stream_name":"stdout","time":19611.035982695,"data":"[f3 326m]   ep 12 step 100/434 loss 0.3692 3.26s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":19644.191992859,"data":"[f4 327m]   ep 12 step 100/435 loss 0.3799 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":19932.118502714,"data":"[f3 332m]   ep 12 step 200/434 loss 0.3748 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":19967.597186706,"data":"[f4 332m]   ep 12 step 200/435 loss 0.3828 3.24s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":20251.034682356,"data":"[f3 337m]   ep 12 step 300/434 loss 0.3734 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":20287.736499532,"data":"[f4 338m]   ep 12 step 300/435 loss 0.3832 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":20574.129480562,"data":"[f3 342m]   ep 12 step 400/434 loss 0.3738 3.22s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":20612.435897924,"data":"[f4 343m]   ep 12 step 400/435 loss 0.3821 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":21124.996255796,"data":"[f3 352m] ep 12 loss 0.3744 time 1398s | eval 442s | gold 0.8917 | val 0.8802 [0.886 0.833 0.923 0.887 0.905 0.837 0.868 0.867 0.876 0.925 0.861 0.894]\n"}
+,{"stream_name":"stdout","time":21159.424617452,"data":"[f4 352m] ep 12 loss 0.3814 time 1405s | eval 435s | gold 0.8986 | val 0.8915 [0.883 0.850 0.946 0.888 0.893 0.879 0.856 0.874 0.895 0.920 0.884 0.931]\n"}
+,{"stream_name":"stdout","time":21450.030933568,"data":"[f3 357m]   ep 13 step 100/434 loss 0.3719 3.25s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":21478.410848093,"data":"[f4 357m]   ep 13 step 100/435 loss 0.3731 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":21770.736176746,"data":"[f3 362m]   ep 13 step 200/434 loss 0.3712 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":21798.32918452,"data":"[f4 363m]   ep 13 step 200/435 loss 0.3773 3.19s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":22093.4777993,"data":"[f3 368m]   ep 13 step 300/434 loss 0.3711 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":22118.251306166,"data":"[f4 368m]   ep 13 step 300/435 loss 0.3781 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":22415.773341161,"data":"[f3 373m]   ep 13 step 400/434 loss 0.3712 3.23s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":22439.110268654,"data":"[f4 373m]   ep 13 step 400/435 loss 0.3778 3.20s/it mem 13.6GB\n"}
+,{"stream_name":"stdout","time":22966.530592267,"data":"[f3 382m] ep 13 loss 0.3710 time 1401s | eval 441s | gold 0.8912 | val 0.8796 [0.886 0.833 0.922 0.886 0.905 0.837 0.866 0.865 0.874 0.925 0.860 0.895]\n"}
+,{"stream_name":"stdout","time":22967.404299,"data":"[f3 382m] gold per class: ACL=0.964 MCL=0.952 Medial=0.954 Latera=0.884 Medial=0.963 Latera=0.843 PF OA=0.869 Effusi=0.909 Synovi=0.631 Baker'=0.971 Contus=0.938 Fractu=0.815\n"}
+,{"stream_name":"stdout","time":22967.404407658,"data":"[f3 382m] DONE fold 3 in 6.37 h\n"}
+,{"stream_name":"stdout","time":22981.090851215,"data":"[f4 382m] ep 13 loss 0.3775 time 1393s | eval 429s | gold 0.8995 | val 0.8906 [0.883 0.849 0.945 0.886 0.892 0.879 0.855 0.872 0.896 0.918 0.883 0.928]\n"}
+,{"stream_name":"stdout","time":22981.364109625,"data":"[f4 382m] gold per class: ACL=0.946 MCL=0.905 Medial=0.931 Latera=0.873 Medial=0.969 Latera=0.826 PF OA=0.851 Effusi=0.914 Synovi=0.746 Baker'=0.982 Contus=0.960 Fractu=0.892\n"}
+,{"stream_name":"stdout","time":22981.364138322,"data":"[f4 382m] DONE fold 4 in 6.37 h\n"}
+,{"stream_name":"stdout","time":22985.433782883,"data":"fold exit codes: {3: 0, 4: 0}\n"}
+,{"stream_name":"stderr","time":22989.974076548,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":22989.974102239,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":22990.427232463,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":22990.427273734,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":22991.692807665,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":22993.365398586,"data":"[NbConvertApp] Writing 404098 bytes to __results__.html\n"}
+]
