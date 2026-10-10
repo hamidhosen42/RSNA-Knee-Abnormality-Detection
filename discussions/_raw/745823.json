@@ -1,0 +1,221 @@
+{
+ "forumTopic": {
+  "authorId": 31041949,
+  "authorThumbnailName": "31041949-kg.jpeg?t=2026-03-29-07-11-17",
+  "authorUserDisplayName": "Renmq",
+  "authorUserName": "renmingqian",
+  "comments": [
+   {
+    "id": 3533457,
+    "postDate": "2026-10-06T05:31:34.823Z",
+    "rawMarkdown": "you only have 58 gold labels. Maybe you need to rethink of the validation method in this competition.\n\nThis competition is mainly about creating supervision (from medical records). Instead of the normal split of data for validation, how about the split of label types for validation .... assuming you have many created label types.",
+    "content": "<p>you only have 58 gold labels. Maybe you need to rethink of the validation method in this competition.</p>\n<p>This competition is mainly about creating supervision (from medical records). Instead of the normal split of data for validation, how about the split of label types for validation …. assuming you have many created label types.</p>",
+    "replies": [
+     {
+      "id": 3533459,
+      "postDate": "2026-10-06T05:36:33.763Z",
+      "rawMarkdown": "chatgpt explain better than i do, so i just cut and paste his comment\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F953c088d72b698d65869604c69be6437%2FSelection_5101.png?generation=1791264991069254&alt=media)",
+      "content": "<p>chatgpt explain better than i do, so i just cut and paste his comment\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F953c088d72b698d65869604c69be6437%2FSelection_5101.png?generation=1791264991069254&amp;alt=media\" alt=\"\"></p>",
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 693,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 693,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3533259,
+    "postDate": "2026-10-05T19:32:53.597Z",
+    "rawMarkdown": "I think your approach is fine (though i would skip manually balancing labels across folds). I would look at how you're feeding the training data into the model. Different image parameters can produce different outputs. ",
+    "content": "<p>I think your approach is fine (though i would skip manually balancing labels across folds). I would look at how you're feeding the training data into the model. Different image parameters can produce different outputs. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Steve421471",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/steve421471",
+     "tier": "CONTRIBUTOR",
+     "id": 18618211,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 604,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Steve421471",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/steve421471",
+      "userName": "steve421471",
+      "tier": "CONTRIBUTOR",
+      "id": 18618211,
+      "profileUrl": "/steve421471",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18618211,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532763,
+   "postDate": "2026-10-04T16:26:48.230Z",
+   "rawMarkdown": "Hi everyone,\n\nI have a question about how to properly perform 5-fold cross-validation for this competition. I would really appreciate it if anyone could share their experience or suggestions.\n\nI currently have a single CoAtNet model that achieves around 0.940 on the leaderboard. This model was trained using all available training studies except for the 58 officially labeled studies. I kept those 58 studies completely out of training and used them only as a local validation set, where the model achieves a macro AUC of approximately 0.93.\n\nI have been trying to improve this model using 5-fold cross-validation. However, despite running several experiments, I have not been able to obtain a better result.\n\nI am wondering whether the validation strategy is especially important here. So far, I have tried the following approaches:\n\n- Splitting the training data into five folds while continuing to use the same 58 officially labeled studies as the validation set for every fold.\n- Using the held-out portion of each fold as that fold’s validation set.\n- Creating the folds with a simple random split.\n- Creating the folds while trying to balance the distributions of all 12 labels across the five folds.\n\nUnfortunately, none of these approaches has produced a meaningful improvement for me.\n\nHas anyone encountered a similar situation? May I ask how you construct your folds and choose the validation set? Do you include the 58 officially labeled studies in training, keep them as a separate validation set, or handle them in another way?\n\nI may be misunderstanding or overlooking something important in my cross-validation setup, so any advice or shared experience would be greatly appreciated.\n\nThank you very much!",
+   "content": "<p>Hi everyone,</p>\n<p>I have a question about how to properly perform 5-fold cross-validation for this competition. I would really appreciate it if anyone could share their experience or suggestions.</p>\n<p>I currently have a single CoAtNet model that achieves around 0.940 on the leaderboard. This model was trained using all available training studies except for the 58 officially labeled studies. I kept those 58 studies completely out of training and used them only as a local validation set, where the model achieves a macro AUC of approximately 0.93.</p>\n<p>I have been trying to improve this model using 5-fold cross-validation. However, despite running several experiments, I have not been able to obtain a better result.</p>\n<p>I am wondering whether the validation strategy is especially important here. So far, I have tried the following approaches:</p>\n<ul>\n<li>Splitting the training data into five folds while continuing to use the same 58 officially labeled studies as the validation set for every fold.</li>\n<li>Using the held-out portion of each fold as that fold’s validation set.</li>\n<li>Creating the folds with a simple random split.</li>\n<li>Creating the folds while trying to balance the distributions of all 12 labels across the five folds.</li>\n</ul>\n<p>Unfortunately, none of these approaches has produced a meaningful improvement for me.</p>\n<p>Has anyone encountered a similar situation? May I ask how you construct your folds and choose the validation set? Do you include the 58 officially labeled studies in training, keep them as a separate validation set, or handle them in another way?</p>\n<p>I may be misunderstanding or overlooking something important in my cross-validation setup, so any advice or shared experience would be greatly appreciated.</p>\n<p>Thank you very much!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Renmq",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+    "url": "/renmingqian",
+    "tier": "EXPERT",
+    "id": 31041949,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 194,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Renmq",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+     "url": "/renmingqian",
+     "userName": "renmingqian",
+     "tier": "EXPERT",
+     "id": 31041949,
+     "profileUrl": "/renmingqian",
+     "performanceTier": "EXPERT",
+     "userId": 31041949,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532763,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745823,
+  "name": " A Question About 5-Fold Cross-Validation Strategy",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-04T16:26:48.231260500Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745823",
+  "totalMessages": 3,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Renmq",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+   "url": "/renmingqian",
+   "tier": "EXPERT",
+   "id": 31041949,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3532763,
+  "id": 745823,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "hengck23",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745823#3533459",
+  "lastCommentPostDate": "2026-10-06T05:36:33.763333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-04T16:26:48.231260500Z",
+  "title": " A Question About 5-Fold Cross-Validation Strategy",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745823",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Renmq",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+    "url": "/renmingqian",
+    "userName": "renmingqian",
+    "tier": "EXPERT",
+    "id": 31041949,
+    "profileUrl": "/renmingqian",
+    "performanceTier": "EXPERT",
+    "userId": 31041949,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

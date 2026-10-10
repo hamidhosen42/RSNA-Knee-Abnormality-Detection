@@ -1,0 +1,12 @@
+{
+ "ref": "heliosli/rsna-knee-abnormality-detection",
+ "version": 1,
+ "score": 0.954,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007",
+  "datasets/heliosli/rsna-knee-compact-v1"
+ ],
+ "code_sha": "ad2167eb929f68d9"
+}

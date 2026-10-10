@@ -1,0 +1,12 @@
+{
+ "ref": "rian55/rsna-floor-apex-v5",
+ "version": 1,
+ "score": 0.948,
+ "sources": [
+  "rsna-knee-abnormality-detection",
+  "rsna-knee-coat-resgated-ep10-top3",
+  "rsna-knee-2-5d-convnext-reader",
+  "rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "54286643f3507f9d"
+}

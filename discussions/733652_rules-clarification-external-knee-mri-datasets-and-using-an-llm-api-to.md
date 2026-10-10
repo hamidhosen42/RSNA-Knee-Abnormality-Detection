@@ -1,10 +1,10 @@
 # Rules clarification: external knee-MRI datasets, and using an LLM API to derive labels from the reports
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652
-- **Author:** **Fernando Faria** (@fernandoadefaria, Contributor) · _topic author_ · 2026-08-07 18:25 UTC · ▲21 · LB rank 1307
-- **Topic votes:** 21 · **Comments/replies:** 7 · **Pinned:** no
-- **Last comment:** 2026-08-20 09:27 UTC by Mazzutti
-- **Cloned:** 2026-10-01 19:24 UTC (topic id 733652, raw JSON `_raw/733652.json`)
+- **Author:** **Fernando Faria** (@fernandoadefaria, Contributor) · _topic author_ · 2026-08-07 18:25 UTC · ▲23 · LB rank 194
+- **Topic votes:** 23 · **Comments/replies:** 8 · **Pinned:** no
+- **Last comment:** 2026-10-02 23:37 UTC by Amanie El-Hajj
+- **Cloned:** 2026-10-09 09:46 UTC (topic id 733652, raw JSON `_raw/733652.json`)
 
 ---
 
@@ -30,11 +30,11 @@ Thanks. Also thanks for the label-criteria post, which was unusually detailed an
 
 ---
 
-## Comments (7, threaded, oldest first)
+## Comments (8, threaded, oldest first)
 
 ### [1] Oleksii Zhukov
 
-**Oleksii Zhukov** (@zhukovoleksiy, Master) · 2026-08-07 20:22 UTC · ▲1 · LB rank 2850
+**Oleksii Zhukov** (@zhukovoleksiy, Master) · 2026-08-07 20:22 UTC · ▲1 · LB rank 1897
 
 @fernandoadefaria Good questions, and I'd like hosts answers to both.  
 
@@ -71,7 +71,7 @@ This point is worth settling clearly.  Thank you for pointing it out.
 
 ### [3] k256.dev
 
-**k256.dev** (@k256net, Master) · 2026-08-08 11:54 UTC · ▲2 · LB rank 1946
+**k256.dev** (@k256net, Master) · 2026-08-08 11:54 UTC · ▲2 · LB rank 3049
 
 I believe that sending the report text to commercial LLMs (OpenAI, Anthropic, Google, etc.) is not permitted under the rules. For that reason, I believe labeling has to be done either with locally hosted LLMs (such as Qwen) or by human annotation.
 
@@ -79,7 +79,7 @@ However, there is already a problem: label datasets derived using GPT have been 
 
 #### ↳ [3.1] k256.dev
 
-**k256.dev** (@k256net, Master) · 2026-08-09 10:11 UTC · ▲1 · LB rank 1946
+**k256.dev** (@k256net, Master) · 2026-08-09 10:11 UTC · ▲1 · LB rank 3049
 
 The host just made an announcement to everyone.
 
@@ -87,13 +87,13 @@ For more details, please see https://www.kaggle.com/competitions/rsna-knee-abnor
 
 ### [4] Nicolai Karcher
 
-**Nicolai Karcher** (@pejophylo, Contributor) · 2026-08-09 08:25 UTC · LB rank 785
+**Nicolai Karcher** (@pejophylo, Contributor) · 2026-08-09 08:25 UTC · LB rank 1902
 
 any verdict on any of this? :)
 
 ### [5] Mazzutti
 
-**Mazzutti** (@profmazzutti, Contributor) · 2026-08-20 09:27 UTC · LB rank 18
+**Mazzutti** (@profmazzutti, Contributor) · 2026-08-20 09:27 UTC · LB rank 36
 
 I pulled the actual rule text, and I think this thread (and [#735497](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497), [#734109](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109), [#735121](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121)) may be asking about the wrong branch of 2.6(a).
 
@@ -111,3 +111,10 @@ So the question I'd ask the Host is narrower:
 **2. Section 2.8(a)(1) requires winners to publish model weights as a public Kaggle dataset, and 2.8(a)(2) requires representing an "unrestricted right to grant" the winners licence.** Can weights whose training data carried a non-commercial or no-derivatives licence (CC BY-NC, CC BY-NC-ND) satisfy that representation? 2.6(a) explicitly says permission to use External Data "does not limit your other obligations ... including Section 2.8."
 
 Question 2 is the one that actually gates decisions: permission to train and eligibility to win may differ, and teams are committing pretraining compute now against an October 22 deadline.
+
+### [6] Amanie El-Hajj
+
+**Amanie El-Hajj** (@aelhajj, Contributor) · 2026-10-02 23:37 UTC · LB rank 851
+
+Bumping this, still no answer from the competition host, and it would be helpful. In other thread: https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819 
+they said we can use external, so I just want to be sure.

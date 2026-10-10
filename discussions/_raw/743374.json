@@ -25,7 +25,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 100,
+    "competitionRanking": 138,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -70,7 +70,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 410,
+      "competitionRanking": 602,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -106,7 +106,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 410,
+    "competitionRanking": 602,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -124,6 +124,44 @@
       "progressionOptOut": false
      },
      "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3532758,
+    "postDate": "2026-10-04T16:14:35.060Z",
+    "rawMarkdown": "Hi Prateek, you asked for someone strong on labels/targets — that's what I've been working on. I'm Nikita (truenikita), solo. To be upfront: my best 0.943 on the board is the public blend, and I have no Kaggle medals.\n\nWhat I'd bring:\n- An independent label set re-extracted from all 4,407 reports (9 languages) with Claude (Haiku 4.5 on every report, Sonnet on ~1,300 ambiguous ones). Honest numbers on the 58 gold: macro-AUC is on par with the public mm3 labels (±0.01 depending on the CV split), but calibration is much better (Brier and log-loss, P≈1.00) — mm3 are poorly calibrated, which matters for soft targets. I also did a manual error analysis of the 20 most disputed studies: e.g. degenerative / insufficiency-fracture edema read as contusion, \"small\" effusion under-called, impaction read as fracture; in ~6 of 39 cells the gold label contradicts the report text (image-only findings) — a ceiling for any text labels.\n- A single CoAtNet-2 (384, ImageNet init, no public competition weights) trained on a mix of these labels and a second LLM relabel, scores **0.937 on the public LB** on its own — 0.006 below the public blend (0.943) — so it's a genuinely different strong member for an ensemble, not a copy of the public graph.\n- Validation discipline: I lead retail credit-risk decisioning, where leakage and honest validation are the daily job. In my current pipeline gold is kept out of every choice, and I gate each new blend member with a 1,000-sample bootstrap on gold — useful protection against shake-up with a 0.001–0.002 margin over the medal line.\n- GPU outside the Kaggle quota (RTX 4090 on vast.ai; a 16-epoch CoAtNet-2 at 384 takes ~3.7 h), so we can afford more seeds/folds of your model.\n\nWhat I'm asking: a merge before the deadline. Submissions are fine — I've used 4, you 44. Happy to go through the approach here first; labels and code only after the merge, per the rules.",
+    "content": "<p>Hi Prateek, you asked for someone strong on labels/targets — that's what I've been working on. I'm Nikita (truenikita), solo. To be upfront: my best 0.943 on the board is the public blend, and I have no Kaggle medals.</p>\n<p>What I'd bring:</p>\n<ul>\n<li>An independent label set re-extracted from all 4,407 reports (9 languages) with Claude (Haiku 4.5 on every report, Sonnet on ~1,300 ambiguous ones). Honest numbers on the 58 gold: macro-AUC is on par with the public mm3 labels (±0.01 depending on the CV split), but calibration is much better (Brier and log-loss, P≈1.00) — mm3 are poorly calibrated, which matters for soft targets. I also did a manual error analysis of the 20 most disputed studies: e.g. degenerative / insufficiency-fracture edema read as contusion, \"small\" effusion under-called, impaction read as fracture; in ~6 of 39 cells the gold label contradicts the report text (image-only findings) — a ceiling for any text labels.</li>\n<li>A single CoAtNet-2 (384, ImageNet init, no public competition weights) trained on a mix of these labels and a second LLM relabel, scores <strong>0.937 on the public LB</strong> on its own — 0.006 below the public blend (0.943) — so it's a genuinely different strong member for an ensemble, not a copy of the public graph.</li>\n<li>Validation discipline: I lead retail credit-risk decisioning, where leakage and honest validation are the daily job. In my current pipeline gold is kept out of every choice, and I gate each new blend member with a 1,000-sample bootstrap on gold — useful protection against shake-up with a 0.001–0.002 margin over the medal line.</li>\n<li>GPU outside the Kaggle quota (RTX 4090 on vast.ai; a 16-epoch CoAtNet-2 at 384 takes ~3.7 h), so we can afford more seeds/folds of your model.</li>\n</ul>\n<p>What I'm asking: a merge before the deadline. Submissions are fine — I've used 4, you 44. Happy to go through the approach here first; labels and code only after the merge, per the rules.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Nikita Ageev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1410857-kg.JPG",
+     "url": "/truenikita",
+     "tier": "CONTRIBUTOR",
+     "id": 1410857,
+     "progressionOptOut": true
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 695,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nikita Ageev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1410857-kg.JPG",
+      "url": "/truenikita",
+      "userName": "truenikita",
+      "tier": "CONTRIBUTOR",
+      "id": 1410857,
+      "profileUrl": "/truenikita",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 1410857,
+      "progressionOptOut": true
+     },
+     "intro": ""
     }
    },
    {
@@ -145,7 +183,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 10,
+    "competitionRanking": 11,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -200,12 +238,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 9,
+    "totalVotes": 10,
     "canUpvote": true,
-    "totalUpvotes": 9
+    "totalUpvotes": 10
    },
    "kernelVersion": 0,
-   "competitionRanking": 185,
+   "competitionRanking": 367,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -233,9 +271,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-25T19:18:57.669583500Z",
-  "totalVotes": 9,
+  "totalVotes": 10,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
-  "totalMessages": 5,
+  "totalMessages": 6,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -249,19 +287,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 5,
+  "commentCount": 6,
   "firstForumMessageId": 3528293,
   "id": 743374,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Volkopat",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3529611",
-  "lastCommentPostDate": "2026-09-28T16:26:57.700Z",
+  "lastCommenterName": "Nikita Ageev",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3532758",
+  "lastCommentPostDate": "2026-10-04T16:14:35.060Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-25T19:18:57.669583500Z",
   "title": "Optimizations for blazingly fast submissions (<10 minutes!) + Looking for teammates :)",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
-  "votes": 9,
+  "votes": 10,
   "teamUpInfo": {
    "enabled": true,
    "teamLeader": {

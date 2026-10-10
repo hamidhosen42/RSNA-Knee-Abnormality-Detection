@@ -1,0 +1,14 @@
+{
+ "ref": "kiyoshiohno/rsna-knee-template",
+ "version": 9,
+ "score": 0.951,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007",
+  "rsna-knee-compact-v1",
+  "private-data-source"
+ ],
+ "code_sha": "a839e539f081fb9a"
+}

@@ -6,6 +6,95 @@
   "authorUserName": "caoyupeng",
   "comments": [
    {
+    "id": 3531186,
+    "postDate": "2026-10-01T13:00:33.703Z",
+    "rawMarkdown": "hi, solo here. i have a 5 fold coatnet at 0.943, another coatnet variant at 0.940, convnext at 0.937 and resnet at 0.933, plus a radimagenet model . blend is at 0.948, interested to talk ?",
+    "content": "<p>hi, solo here. i have a 5 fold coatnet at 0.943, another coatnet variant at 0.940, convnext at 0.937 and resnet at 0.933, plus a radimagenet model . blend is at 0.948, interested to talk ?</p>",
+    "replies": [
+     {
+      "id": 3531473,
+      "postDate": "2026-10-01T23:22:41.573Z",
+      "rawMarkdown": "We'll consider it, but let me run a few more experiments first. My DINOv2 is at 0.942. (without using public models) The ensemble reached 0.949. Still have some experiments optimizing—should improve further.",
+      "content": "<p>We'll consider it, but let me run a few more experiments first. My DINOv2 is at 0.942. (without using public models) The ensemble reached 0.949. Still have some experiments optimizing—should improve further.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 118,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Myo Min Htet(wnp)🇲🇲",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+        "url": "/myominhtet",
+        "userName": "myominhtet",
+        "tier": "EXPERT",
+        "id": 4600631,
+        "profileUrl": "/myominhtet",
+        "performanceTier": "EXPERT",
+        "userId": 4600631,
+        "progressionOptOut": false
+       },
+       "intro": "Need some who can support GPU, "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "ringbearer",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mehmetbarankrat",
+     "tier": "CONTRIBUTOR",
+     "id": 26695464,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 129,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "ringbearer",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mehmetbarankrat",
+      "userName": "mehmetbarankrat",
+      "tier": "CONTRIBUTOR",
+      "id": 26695464,
+      "profileUrl": "/mehmetbarankrat",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 26695464,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3530467,
     "postDate": "2026-09-30T08:17:58.243Z",
     "rawMarkdown": "Bro,I have a CoAtNet singel model at 0.936，and I have 8 gpus，my score is a little bit low，I have some experiments now，I think I can get to about 0.938 singel CoAtNet model。",
@@ -26,7 +115,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 1648,
+    "competitionRanking": 200,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -79,7 +168,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 128,
+      "competitionRanking": 118,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -115,8 +204,18 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
+    "competitionRanking": 881,
     "feedbackTrackingData": {},
     "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
     "teamUpInfo": {
      "teamLeader": {
       "displayName": "madmax0404",
@@ -149,13 +248,22 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": -4,
+     "totalVotes": -5,
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 406,
+    "competitionRanking": 590,
     "feedbackTrackingData": {},
     "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
     "teamUpInfo": {
      "enabled": true,
      "teamLeader": {
@@ -174,17 +282,147 @@
     }
    },
    {
-    "id": 3531186,
-    "postDate": "2026-10-01T13:00:33.703Z",
-    "rawMarkdown": "hi, solo here. i have a 5 fold coatnet at 0.943, another coatnet variant at 0.940, convnext at 0.937 and resnet at 0.933, plus a radimagenet model . blend is at 0.948, interested to talk ?",
-    "content": "<p>hi, solo here. i have a 5 fold coatnet at 0.943, another coatnet variant at 0.940, convnext at 0.937 and resnet at 0.933, plus a radimagenet model . blend is at 0.948, interested to talk ?</p>",
+    "id": 3532829,
+    "postDate": "2026-10-04T20:48:53.463Z",
+    "rawMarkdown": "we need most is a good label",
+    "content": "<p>we need most is a good label</p>",
+    "replies": [
+     {
+      "id": 3532860,
+      "postDate": "2026-10-04T23:31:13.030Z",
+      "rawMarkdown": "i have really good labelling, i just reached around 96% correct on expert labels (didnt use a model trained on expert labels as well), I just have to test a few models now, I submitted a model for control earlier tho",
+      "content": "<p>i have really good labelling, i just reached around 96% correct on expert labels (didnt use a model trained on expert labels as well), I just have to test a few models now, I submitted a model for control earlier tho</p>",
+      "parent": {},
+      "author": {
+       "displayName": "OmerZalman",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/omerzalman",
+       "tier": "CONTRIBUTOR",
+       "id": 29641607,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 4708,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OmerZalman",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/omerzalman",
+        "userName": "omerzalman",
+        "tier": "CONTRIBUTOR",
+        "id": 29641607,
+        "profileUrl": "/omerzalman",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 29641607,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
     "parent": {},
     "author": {
-     "displayName": "ringbearer",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-     "url": "/mehmetbarankrat",
-     "tier": "CONTRIBUTOR",
-     "id": 26695464,
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 118,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Myo Min Htet(wnp)🇲🇲",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+      "url": "/myominhtet",
+      "userName": "myominhtet",
+      "tier": "EXPERT",
+      "id": 4600631,
+      "profileUrl": "/myominhtet",
+      "performanceTier": "EXPERT",
+      "userId": 4600631,
+      "progressionOptOut": false
+     },
+     "intro": "Need some who can support GPU, "
+    }
+   },
+   {
+    "id": 3531749,
+    "postDate": "2026-10-02T14:49:53.240Z",
+    "rawMarkdown": "路过，看看大佬，还是做的很不错的，加油！！冲击金牌！！！\n",
+    "content": "<p>路过，看看大佬，还是做的很不错的，加油！！冲击金牌！！！</p>",
+    "replies": [
+     {
+      "id": 3531804,
+      "postDate": "2026-10-02T16:26:29.537Z",
+      "rawMarkdown": "已成困兽🫠，你们更是强啊！！！加油加油",
+      "content": "<p>已成困兽🫠，你们更是强啊！！！加油加油</p>",
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 118,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "davidsarrat"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Myo Min Htet(wnp)🇲🇲",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+        "url": "/myominhtet",
+        "userName": "myominhtet",
+        "tier": "EXPERT",
+        "id": 4600631,
+        "profileUrl": "/myominhtet",
+        "performanceTier": "EXPERT",
+        "userId": 4600631,
+        "progressionOptOut": false
+       },
+       "intro": "Need some who can support GPU, "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "CoolinLai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-05-12-20-25",
+     "url": "/coolinlai",
+     "tier": "EXPERT",
+     "id": 31887183,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
@@ -192,20 +430,59 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 108,
+    "competitionRanking": 22,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "ringbearer",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-      "url": "/mehmetbarankrat",
-      "userName": "mehmetbarankrat",
+      "displayName": "CoolinLai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-05-12-20-25",
+      "url": "/coolinlai",
+      "userName": "coolinlai",
+      "tier": "EXPERT",
+      "id": 31887183,
+      "profileUrl": "/coolinlai",
+      "performanceTier": "EXPERT",
+      "userId": 31887183,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531566,
+    "postDate": "2026-10-02T05:20:05.983Z",
+    "rawMarkdown": "Thanks for sharing your results! I’m currently plateauing at 0.935 with a CoAtNet-based ensemble, so your 0.940 five-fold ResNet result caught my attention.\nI’ve found that the input pipeline makes a substantial difference. Would you be comfortable sharing a little about your slice sampling strategy—for example, whether you build inputs from neighboring native slices or sample/resample each series to a fixed number of slices?\nEven a high-level answer would be very helpful. Thanks!",
+    "content": "<p>Thanks for sharing your results! I’m currently plateauing at 0.935 with a CoAtNet-based ensemble, so your 0.940 five-fold ResNet result caught my attention.\nI’ve found that the input pipeline makes a substantial difference. Would you be comfortable sharing a little about your slice sampling strategy—for example, whether you build inputs from neighboring native slices or sample/resample each series to a fixed number of slices?\nEven a high-level answer would be very helpful. Thanks!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Will",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+     "url": "/pareru806",
+     "tier": "CONTRIBUTOR",
+     "id": 21681832,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2625,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Will",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+      "url": "/pareru806",
+      "userName": "pareru806",
       "tier": "CONTRIBUTOR",
-      "id": 26695464,
-      "profileUrl": "/mehmetbarankrat",
+      "id": 21681832,
+      "profileUrl": "/pareru806",
       "performanceTier": "CONTRIBUTOR",
-      "userId": 26695464,
+      "userId": 21681832,
       "progressionOptOut": false
      },
      "intro": ""
@@ -230,7 +507,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 999,
+    "competitionRanking": 1849,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -281,7 +558,7 @@
     "totalUpvotes": 2
    },
    "kernelVersion": 0,
-   "competitionRanking": 128,
+   "competitionRanking": 118,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "reactions": [
@@ -335,7 +612,7 @@
   "postDate": "2026-09-30T05:13:17.296313700Z",
   "totalVotes": 2,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/744511",
-  "totalMessages": 6,
+  "totalMessages": 12,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -349,13 +626,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 6,
+  "commentCount": 12,
   "firstForumMessageId": 3530395,
   "id": 744511,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "ringbearer",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744511#3531186",
-  "lastCommentPostDate": "2026-10-01T13:00:33.703333300Z",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744511#3532860",
+  "lastCommentPostDate": "2026-10-04T23:31:13.030Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-30T05:13:17.296313700Z",

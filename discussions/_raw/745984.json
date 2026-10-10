@@ -1,0 +1,404 @@
+{
+ "forumTopic": {
+  "authorId": 17555594,
+  "authorThumbnailName": "17555594-kg.jpg?t=2026-03-31-11-54-04",
+  "authorUserDisplayName": "Serendipity",
+  "authorUserName": "stringyixuxi",
+  "comments": [
+   {
+    "id": 3533464,
+    "postDate": "2026-10-06T06:32:40.220Z",
+    "rawMarkdown": "I’ve had the same thing happen to me too, and it’s happened many times.",
+    "content": "<p>I’ve had the same thing happen to me too, and it’s happened many times.</p>",
+    "replies": [
+     {
+      "id": 3533917,
+      "postDate": "2026-10-07T03:14:38.213Z",
+      "rawMarkdown": "你是怎么解决这种问题的呢，求指教",
+      "content": "<p>你是怎么解决这种问题的呢，求指教</p>",
+      "replies": [
+       {
+        "id": 3534806,
+        "postDate": "2026-10-08T02:07:15.917Z",
+        "rawMarkdown": "我现在都没有解决掉这个问题，昨天五次提交我有四次都评分失败了\n",
+        "content": "<p>我现在都没有解决掉这个问题，昨天五次提交我有四次都评分失败了</p>",
+        "parent": {},
+        "author": {
+         "displayName": "zhuo wamg",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
+         "url": "/zhuowamg",
+         "tier": "CONTRIBUTOR",
+         "id": 30816763,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 160,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "zhuo wamg",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
+          "url": "/zhuowamg",
+          "userName": "zhuowamg",
+          "tier": "CONTRIBUTOR",
+          "id": 30816763,
+          "profileUrl": "/zhuowamg",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 30816763,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Serendipity",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+       "url": "/stringyixuxi",
+       "tier": "CONTRIBUTOR",
+       "id": 17555594,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1011,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Serendipity",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+        "url": "/stringyixuxi",
+        "userName": "stringyixuxi",
+        "tier": "CONTRIBUTOR",
+        "id": 17555594,
+        "profileUrl": "/stringyixuxi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 17555594,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "zhuo wamg",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
+     "url": "/zhuowamg",
+     "tier": "CONTRIBUTOR",
+     "id": 30816763,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 160,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "zhuo wamg",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
+      "url": "/zhuowamg",
+      "userName": "zhuowamg",
+      "tier": "CONTRIBUTOR",
+      "id": 30816763,
+      "profileUrl": "/zhuowamg",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 30816763,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535104,
+    "postDate": "2026-10-08T10:23:42.063Z",
+    "rawMarkdown": "先看失败的那次提交日志里第一条 traceback，而不是只看编辑器中交互运行的结果。提交会从保存的版本在干净环境重跑；草稿会话里已有的变量或临时文件，不能当作提交时一定存在。\n\n我在这个比赛复现 Notebook 时会依次查：① Input 是否附上比赛数据和所有模型权重；比赛数据可能挂在 /kaggle/input/competitions/rsna-knee-abnormality-detection，也可能是 /kaggle/input/rsna-knee-abnormality-detection，先用 Path.exists() 确认；② 保存版本后从头 Run All 是否成功；③ 日志是否显示 GPU/内存不足或依赖安装失败；④ 最终 submission 文件是否按要求生成。\n\n如果方便，贴出失败版本日志中最早的异常类型和附近几行（隐去个人信息/密钥），才能判断这次到底是哪一步失败。单凭 ‘Notebook Threw Exception’ 无法确定原因。",
+    "content": "<p>先看失败的那次提交日志里第一条 traceback，而不是只看编辑器中交互运行的结果。提交会从保存的版本在干净环境重跑；草稿会话里已有的变量或临时文件，不能当作提交时一定存在。</p>\n<p>我在这个比赛复现 Notebook 时会依次查：① Input 是否附上比赛数据和所有模型权重；比赛数据可能挂在 /kaggle/input/competitions/rsna-knee-abnormality-detection，也可能是 /kaggle/input/rsna-knee-abnormality-detection，先用 Path.exists() 确认；② 保存版本后从头 Run All 是否成功；③ 日志是否显示 GPU/内存不足或依赖安装失败；④ 最终 submission 文件是否按要求生成。</p>\n<p>如果方便，贴出失败版本日志中最早的异常类型和附近几行（隐去个人信息/密钥），才能判断这次到底是哪一步失败。单凭 ‘Notebook Threw Exception’ 无法确定原因。</p>",
+    "replies": [
+     {
+      "id": 3535205,
+      "postDate": "2026-10-08T13:18:18.060Z",
+      "rawMarkdown": "run all是正常可以的logs中也是successfully，只是在提交运行后一两小时的时候直接Threw Exception，在保存运行是成功的",
+      "content": "<p>run all是正常可以的logs中也是successfully，只是在提交运行后一两小时的时候直接Threw Exception，在保存运行是成功的</p>",
+      "replies": [
+       {
+        "id": 3535660,
+        "postDate": "2026-10-09T02:05:23.337Z",
+        "rawMarkdown": "明白了：你说的是保存版本的 Run All 和 logs 都显示成功，但提交任务过一两小时才失败。这时要把两次运行分开查。请在比赛的 Submissions 页面打开失败的那条记录，核对它绑定的 Notebook 版本/运行编号是否就是成功保存的版本，再看那条失败提交自己的日志（尤其末尾和第一条 traceback），不要只看保存版本页面的 “Successfully”。如果失败记录没有可见异常，建议保留失败提交链接、版本号、提交时间和脱敏后的日志/截图，发给比赛组织者或 Kaggle Support。单凭 “Notebook Threw Exception” 还无法判断是代码、资源限制还是评测侧问题；查清前也可以先避免连续消耗每日提交次数。",
+        "content": "<p>明白了：你说的是保存版本的 Run All 和 logs 都显示成功，但提交任务过一两小时才失败。这时要把两次运行分开查。请在比赛的 Submissions 页面打开失败的那条记录，核对它绑定的 Notebook 版本/运行编号是否就是成功保存的版本，再看那条失败提交自己的日志（尤其末尾和第一条 traceback），不要只看保存版本页面的 “Successfully”。如果失败记录没有可见异常，建议保留失败提交链接、版本号、提交时间和脱敏后的日志/截图，发给比赛组织者或 Kaggle Support。单凭 “Notebook Threw Exception” 还无法判断是代码、资源限制还是评测侧问题；查清前也可以先避免连续消耗每日提交次数。</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Mingquan Zhuang",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/mingquanzhuang",
+         "tier": "CONTRIBUTOR",
+         "id": 36271475,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2712,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Mingquan Zhuang",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/mingquanzhuang",
+          "userName": "mingquanzhuang",
+          "tier": "CONTRIBUTOR",
+          "id": 36271475,
+          "profileUrl": "/mingquanzhuang",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 36271475,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535680,
+        "postDate": "2026-10-09T03:28:23.447Z",
+        "rawMarkdown": "好的感谢您，我已经给主办方发了邮件有后续我会发在评论区",
+        "content": "<p>好的感谢您，我已经给主办方发了邮件有后续我会发在评论区</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Serendipity",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+         "url": "/stringyixuxi",
+         "tier": "CONTRIBUTOR",
+         "id": 17555594,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1011,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Serendipity",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+          "url": "/stringyixuxi",
+          "userName": "stringyixuxi",
+          "tier": "CONTRIBUTOR",
+          "id": 17555594,
+          "profileUrl": "/stringyixuxi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 17555594,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Serendipity",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+       "url": "/stringyixuxi",
+       "tier": "CONTRIBUTOR",
+       "id": 17555594,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1011,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Serendipity",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+        "url": "/stringyixuxi",
+        "userName": "stringyixuxi",
+        "tier": "CONTRIBUTOR",
+        "id": 17555594,
+        "profileUrl": "/stringyixuxi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 17555594,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Mingquan Zhuang",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mingquanzhuang",
+     "tier": "CONTRIBUTOR",
+     "id": 36271475,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2712,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mingquan Zhuang",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mingquanzhuang",
+      "userName": "mingquanzhuang",
+      "tier": "CONTRIBUTOR",
+      "id": 36271475,
+      "profileUrl": "/mingquanzhuang",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36271475,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535725,
+    "postDate": "2026-10-09T05:22:00.440Z",
+    "rawMarkdown": "Thank you for Exception @stringyixuxi ",
+    "content": "<p>Thank you for Exception <a href=\"/stringyixuxi\" target=\"_blank\">@stringyixuxi</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": true
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3533165,
+   "postDate": "2026-10-05T16:36:12.413Z",
+   "rawMarkdown": "连续多次提交测评出现Notebook Threw Exception问题是因为什么呢，在notebook中运行是没有问题的，交给ai修改后还是出现相同的问题，该如何解决",
+   "content": "<p>连续多次提交测评出现Notebook Threw Exception问题是因为什么呢，在notebook中运行是没有问题的，交给ai修改后还是出现相同的问题，该如何解决</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Serendipity",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+    "url": "/stringyixuxi",
+    "tier": "CONTRIBUTOR",
+    "id": 17555594,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1011,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Serendipity",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+     "url": "/stringyixuxi",
+     "userName": "stringyixuxi",
+     "tier": "CONTRIBUTOR",
+     "id": 17555594,
+     "profileUrl": "/stringyixuxi",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 17555594,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3533165,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745984,
+  "name": "Notebook Threw Exception",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-05T16:36:12.413062800Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745984",
+  "totalMessages": 8,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Serendipity",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+   "url": "/stringyixuxi",
+   "tier": "CONTRIBUTOR",
+   "id": 17555594,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 8,
+  "firstForumMessageId": 3533165,
+  "id": 745984,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Navneet",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745984#3535725",
+  "lastCommentPostDate": "2026-10-09T05:22:00.440Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-05T16:36:12.413062800Z",
+  "title": "Notebook Threw Exception",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745984",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Serendipity",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17555594-kg.jpg?t=2026-03-31-11-54-04",
+    "url": "/stringyixuxi",
+    "userName": "stringyixuxi",
+    "tier": "CONTRIBUTOR",
+    "id": 17555594,
+    "profileUrl": "/stringyixuxi",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 17555594,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

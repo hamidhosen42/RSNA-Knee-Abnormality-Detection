@@ -1,0 +1,11 @@
+{
+ "ref": "kozykappa/rsna-knee-gold-gated-triple-reader",
+ "version": 2,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "d7856d5f5ded9823"
+}

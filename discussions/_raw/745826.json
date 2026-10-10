@@ -1,0 +1,97 @@
+{
+ "forumTopic": {
+  "authorId": 32673608,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "joshi malav",
+  "authorUserName": "joshimalav",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532768,
+   "postDate": "2026-10-04T16:43:18.737Z",
+   "rawMarkdown": "My latest submission (Version 4) fails with \"Notebook Threw Exception\", but the visible saved-notebook logs only show a successful run on the three example test studies. I have not found a traceback from the hidden scoring run.\n\nThe submission uses GPU with internet disabled, loads attached weights and offline decoder wheels, predicts every row in test.csv, and validates submission.csv (study IDs/order, all 12 columns, finite probabilities in [0, 1]). Training and diagnostic execution cells were removed from Version 4.\n\nChecks completed separately:\n- Inference on 100 training studies: no failures.\n- Header audit of 1,868 training series and decoding checks on 68 selected series: no failures, but all inspected series were uncompressed.\n- Actual pydicom sample decoding passed for JPEG Lossless SV1 and JPEG 2000 lossless/lossy using pylibjpeg.\n- Environment: Python 3.12, pydicom 3.0.2, NumPy 2.0.2, pylibjpeg 2.1.0, pylibjpeg-libjpeg 2.4.0, pylibjpeg-openjpeg 2.6.0.\n\nThese checks have not reproduced the hidden-test exception, and I am not claiming a platform-wide issue. Is there a way to view the hidden-run exception or failing stage? Are there documented differences in test-series metadata or DICOM structure that should be checked beyond the examples? Suggestions for a targeted diagnostic would be appreciated.\n\nNo competition images, reports, or weights are included in this post.",
+   "content": "<p>My latest submission (Version 4) fails with \"Notebook Threw Exception\", but the visible saved-notebook logs only show a successful run on the three example test studies. I have not found a traceback from the hidden scoring run.</p>\n<p>The submission uses GPU with internet disabled, loads attached weights and offline decoder wheels, predicts every row in test.csv, and validates submission.csv (study IDs/order, all 12 columns, finite probabilities in [0, 1]). Training and diagnostic execution cells were removed from Version 4.</p>\n<p>Checks completed separately:</p>\n<ul>\n<li>Inference on 100 training studies: no failures.</li>\n<li>Header audit of 1,868 training series and decoding checks on 68 selected series: no failures, but all inspected series were uncompressed.</li>\n<li>Actual pydicom sample decoding passed for JPEG Lossless SV1 and JPEG 2000 lossless/lossy using pylibjpeg.</li>\n<li>Environment: Python 3.12, pydicom 3.0.2, NumPy 2.0.2, pylibjpeg 2.1.0, pylibjpeg-libjpeg 2.4.0, pylibjpeg-openjpeg 2.6.0.</li>\n</ul>\n<p>These checks have not reproduced the hidden-test exception, and I am not claiming a platform-wide issue. Is there a way to view the hidden-run exception or failing stage? Are there documented differences in test-series metadata or DICOM structure that should be checked beyond the examples? Suggestions for a targeted diagnostic would be appreciated.</p>\n<p>No competition images, reports, or weights are included in this post.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "joshi malav",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/joshimalav",
+    "tier": "CONTRIBUTOR",
+    "id": 32673608,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "joshi malav",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/joshimalav",
+     "userName": "joshimalav",
+     "tier": "CONTRIBUTOR",
+     "id": 32673608,
+     "profileUrl": "/joshimalav",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 32673608,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532768,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745826,
+  "name": "Notebook Threw Exception on hidden test: how to diagnose when example run passes?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-04T16:43:18.737751400Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745826",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "joshi malav",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/joshimalav",
+   "tier": "CONTRIBUTOR",
+   "id": 32673608,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3532768,
+  "id": 745826,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "joshi malav",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745826#3532768",
+  "lastCommentPostDate": "2026-10-04T16:43:18.736666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-04T16:43:18.737751400Z",
+  "title": "Notebook Threw Exception on hidden test: how to diagnose when example run passes?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745826",
+  "votes": -1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "joshi malav",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/joshimalav",
+    "userName": "joshimalav",
+    "tier": "CONTRIBUTOR",
+    "id": 32673608,
+    "profileUrl": "/joshimalav",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 32673608,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

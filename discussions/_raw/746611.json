@@ -1,0 +1,197 @@
+{
+ "forumTopic": {
+  "authorId": 13074375,
+  "authorThumbnailName": "13074375-kg.jpg?t=2025-03-30-18-30-15",
+  "authorUserDisplayName": "Phil Gear",
+  "authorUserName": "philgear",
+  "comments": [
+   {
+    "id": 3535257,
+    "postDate": "2026-10-08T14:47:19.717Z",
+    "rawMarkdown": "I added a game too to help teach patients, one for the waiting room.",
+    "content": "<p>I added a game too to help teach patients, one for the waiting room.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Phil Gear",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13074375-kg.jpg?t=2025-03-30-18-30-15",
+     "url": "/philgear",
+     "tier": "CONTRIBUTOR",
+     "id": 13074375,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1996,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Phil Gear",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13074375-kg.jpg?t=2025-03-30-18-30-15",
+      "url": "/philgear",
+      "userName": "philgear",
+      "tier": "CONTRIBUTOR",
+      "id": 13074375,
+      "profileUrl": "/philgear",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 13074375,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3534278,
+   "postDate": "2026-10-07T16:03:20.700Z",
+   "rawMarkdown": "**Live Interactive 3D Simulator**: [https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator](https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator)\n\n(Sorry for the scroll)\n\n---\n\n### Hi everyone,\n\nLike many of you, we started this competition treating knee MRIs primarily as bags of 2D slices (MIL pooling, 2.5D channel stacking, multi-view convolutions). \n\nHowever, as we pushed past the ~0.93 mark, we noticed our models were occasionally treating visually similar textures as interchangeable, ignoring the fact that **an MRI scanner samples a continuous 3D physical volume**.\n\nTo test whether our anatomical intuition aligns with clinical reality, we built a **zero-dependency interactive 3D WebGL Knee Anatomy & MRI Slicing Simulator** right inside a Kaggle notebook. \n\n👉 **You can orbit the 3D model and scrub slice depth controls here**: [https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator](https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator)\n\nBefore we push further into this architectural direction, **we'd love to ask the community: are we on the right track with these three core hypotheses?**\n\n---\n\n### ❓ Question 1: Continuous Slice Depth ($z$) vs. Standard Pooling\n\nIn the 3D simulator, scrubbing the sagittal slicing plane demonstrates how deterministic anatomical landmarks are:\n- $z \\in [0.10, 0.25]$: Medial Meniscus (posterior & anterior horns)\n- $z \\in [0.42, 0.58]$: Intercondylar Notch (ACL & PCL crossing)\n- $z \\in [0.75, 0.90]$: Lateral Meniscus & Popliteus\n\nWhen we injected continuous slice depth $z \\in [0.0, 1.0]$ into a 2.5D feature extractor via a simple sinusoidal + MLP gating module (shared in the notebook), our cross-validation jumped from **0.8208 to 0.8782 Macro AUC**.\n\n👉 **Our Question**: Are other top teams explicitly conditioning on physical slice depth (e.g., from `ImagePositionPatient` or normalized slice index), or are your 3D/MIL pooling heads learning this implicitly? Does physical depth conditioning help prevent false-positive tears in peripheral slices on your validation sets?\n\n---\n\n### ❓ Question 2: Laterality Canonicalization (Left vs. Right Knee Mirroring)\n\nA subtle spatial trap we noticed when aligning coordinate frames:\n- In a **Right Knee**, $z = 0.15$ is **Medial** and $z = 0.85$ is **Lateral**.\n- In a **Left Knee**, $z = 0.15$ is **Lateral** and $z = 0.85$ is **Medial**!\n\nWithout laterality canonicalization, feeding a non-mirrored Left Knee into a depth-conditioned model inverts the spatial meaning of the features for roughly 50% of patients. When we canonicalized all studies to a standard Right Knee orientation (mirroring left knees based on DICOM metadata), spatial alignment snapped into place.\n\n👉 **Our Question**: Have others found that laterality canonicalization provides a clean boost, or does standard random horizontal flip augmentation during training already make your models invariant to this?\n\n---\n\n### ❓ Question 3: Kinematic Triads & Biomechanical Co-Occurrence\n\nIn the simulator's findings carousel, selecting an abnormality reveals its **Companion Triad**:\n- **ACL Tear** $\\rightarrow$ Co-occurs with **Bone Contusion (~88%)** (pivot-shift impaction of the lateral femoral condyle against the posterior tibial plateau) and **Medial Meniscus Tear (~64%)** (O'Donoghue's Triad).\n- **Baker's Cyst** $\\rightarrow$ Co-occurs with **Joint Effusion (~72%)** (unidirectional fluid valve into the popliteal fossa).\n\nWe've been experimenting with **Asymmetric Loss (ASL)** ($\\gamma_- = 4.0, \\gamma_+ = 1.0$) and Bayesian prior smoothing to handle sparse positive findings and sharpen borderline predictions.\n\n👉 **Our Question**: Are teams using explicit graph neural networks, Bayesian priors, or multi-task loss weightings to capture these physical dependencies? Or does standard multi-label cross-entropy already capture enough co-occurrence signal in practice?\n\n---\n\n### 🎨 Features in the Simulator:\n\nIf you want to test these anatomical relationships yourself in the notebook (runs 100% locally in browser, zero GPU required):\n1. **Interactive Plane Slicing**: Sagittal, Coronal, and Axial planes with real-time clipping.\n2. **Procedural Tissue Layers**: Toggle Bone, Musculotendinous units, and Skin envelopes.\n3. **Kaizen Visual Management (*Mieruka*)**: \n   - 🔴 **Andon Red**: Acute mechanical tears (ACL, bucket-handle meniscal tears, fractures)\n   - 🟡 **Kaizen Amber**: Secondary reactive effusion, bone marrow edema contusion, Baker's cysts\n   - 🟢 **Kaizen Green**: Intact baseline homeostatic architecture\n4. **Doctor ⟷ Patient Mode Switch**: Toggle between high-density radiological heuristics (*Blumensaat Line*, *Bow-Tie 2-Slice Rule*) and patient-facing 3-Act recovery narratives.\n\nWe'd love to hear your thoughts, feedback, and whether this matches what you're seeing in your own validation splits! 🚀",
+   "content": "<p><strong>Live Interactive 3D Simulator</strong>: <a href=\"https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator\" target=\"_blank\">https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator</a></p>\n<p>(Sorry for the scroll)</p>\n<hr>\n<h3>Hi everyone,</h3>\n<p>Like many of you, we started this competition treating knee MRIs primarily as bags of 2D slices (MIL pooling, 2.5D channel stacking, multi-view convolutions). </p>\n<p>However, as we pushed past the ~0.93 mark, we noticed our models were occasionally treating visually similar textures as interchangeable, ignoring the fact that <strong>an MRI scanner samples a continuous 3D physical volume</strong>.</p>\n<p>To test whether our anatomical intuition aligns with clinical reality, we built a <strong>zero-dependency interactive 3D WebGL Knee Anatomy &amp; MRI Slicing Simulator</strong> right inside a Kaggle notebook. </p>\n<p>👉 <strong>You can orbit the 3D model and scrub slice depth controls here</strong>: <a href=\"https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator\" target=\"_blank\">https://www.kaggle.com/code/philgear/3d-knee-anatomy-slicing-simulator</a></p>\n<p>Before we push further into this architectural direction, <strong>we'd love to ask the community: are we on the right track with these three core hypotheses?</strong></p>\n<hr>\n<h3>❓ Question 1: Continuous Slice Depth ($z$) vs. Standard Pooling</h3>\n<p>In the 3D simulator, scrubbing the sagittal slicing plane demonstrates how deterministic anatomical landmarks are:</p>\n<ul>\n<li>$z \\in [0.10, 0.25]$: Medial Meniscus (posterior &amp; anterior horns)</li>\n<li>$z \\in [0.42, 0.58]$: Intercondylar Notch (ACL &amp; PCL crossing)</li>\n<li>$z \\in [0.75, 0.90]$: Lateral Meniscus &amp; Popliteus</li>\n</ul>\n<p>When we injected continuous slice depth $z \\in [0.0, 1.0]$ into a 2.5D feature extractor via a simple sinusoidal + MLP gating module (shared in the notebook), our cross-validation jumped from <strong>0.8208 to 0.8782 Macro AUC</strong>.</p>\n<p>👉 <strong>Our Question</strong>: Are other top teams explicitly conditioning on physical slice depth (e.g., from <code>ImagePositionPatient</code> or normalized slice index), or are your 3D/MIL pooling heads learning this implicitly? Does physical depth conditioning help prevent false-positive tears in peripheral slices on your validation sets?</p>\n<hr>\n<h3>❓ Question 2: Laterality Canonicalization (Left vs. Right Knee Mirroring)</h3>\n<p>A subtle spatial trap we noticed when aligning coordinate frames:</p>\n<ul>\n<li>In a <strong>Right Knee</strong>, $z = 0.15$ is <strong>Medial</strong> and $z = 0.85$ is <strong>Lateral</strong>.</li>\n<li>In a <strong>Left Knee</strong>, $z = 0.15$ is <strong>Lateral</strong> and $z = 0.85$ is <strong>Medial</strong>!</li>\n</ul>\n<p>Without laterality canonicalization, feeding a non-mirrored Left Knee into a depth-conditioned model inverts the spatial meaning of the features for roughly 50% of patients. When we canonicalized all studies to a standard Right Knee orientation (mirroring left knees based on DICOM metadata), spatial alignment snapped into place.</p>\n<p>👉 <strong>Our Question</strong>: Have others found that laterality canonicalization provides a clean boost, or does standard random horizontal flip augmentation during training already make your models invariant to this?</p>\n<hr>\n<h3>❓ Question 3: Kinematic Triads &amp; Biomechanical Co-Occurrence</h3>\n<p>In the simulator's findings carousel, selecting an abnormality reveals its <strong>Companion Triad</strong>:</p>\n<ul>\n<li><strong>ACL Tear</strong> $\\rightarrow$ Co-occurs with <strong>Bone Contusion (~88%)</strong> (pivot-shift impaction of the lateral femoral condyle against the posterior tibial plateau) and <strong>Medial Meniscus Tear (~64%)</strong> (O'Donoghue's Triad).</li>\n<li><strong>Baker's Cyst</strong> $\\rightarrow$ Co-occurs with <strong>Joint Effusion (~72%)</strong> (unidirectional fluid valve into the popliteal fossa).</li>\n</ul>\n<p>We've been experimenting with <strong>Asymmetric Loss (ASL)</strong> ($\\gamma_- = 4.0, \\gamma_+ = 1.0$) and Bayesian prior smoothing to handle sparse positive findings and sharpen borderline predictions.</p>\n<p>👉 <strong>Our Question</strong>: Are teams using explicit graph neural networks, Bayesian priors, or multi-task loss weightings to capture these physical dependencies? Or does standard multi-label cross-entropy already capture enough co-occurrence signal in practice?</p>\n<hr>\n<h3>🎨 Features in the Simulator:</h3>\n<p>If you want to test these anatomical relationships yourself in the notebook (runs 100% locally in browser, zero GPU required):</p>\n<ol>\n<li><strong>Interactive Plane Slicing</strong>: Sagittal, Coronal, and Axial planes with real-time clipping.</li>\n<li><strong>Procedural Tissue Layers</strong>: Toggle Bone, Musculotendinous units, and Skin envelopes.</li>\n<li><strong>Kaizen Visual Management (<em>Mieruka</em>)</strong>: <ul>\n<li>🔴 <strong>Andon Red</strong>: Acute mechanical tears (ACL, bucket-handle meniscal tears, fractures)</li>\n<li>🟡 <strong>Kaizen Amber</strong>: Secondary reactive effusion, bone marrow edema contusion, Baker's cysts</li>\n<li>🟢 <strong>Kaizen Green</strong>: Intact baseline homeostatic architecture</li></ul></li>\n<li><strong>Doctor ⟷ Patient Mode Switch</strong>: Toggle between high-density radiological heuristics (<em>Blumensaat Line</em>, <em>Bow-Tie 2-Slice Rule</em>) and patient-facing 3-Act recovery narratives.</li>\n</ol>\n<p>We'd love to hear your thoughts, feedback, and whether this matches what you're seeing in your own validation splits! 🚀</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Phil Gear",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13074375-kg.jpg?t=2025-03-30-18-30-15",
+    "url": "/philgear",
+    "tier": "CONTRIBUTOR",
+    "id": 13074375,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1996,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Phil Gear",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13074375-kg.jpg?t=2025-03-30-18-30-15",
+     "url": "/philgear",
+     "userName": "philgear",
+     "tier": "CONTRIBUTOR",
+     "id": 13074375,
+     "profileUrl": "/philgear",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 13074375,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3534278,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 746611,
+  "name": "[Interactive 3D Tool] Are we on the right track? Using 3D Knee Anatomy & Continuous Depth Slicing to test our ML assumptions",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-07T16:03:20.699598300Z",
+  "tags": [
+   {
+    "id": 13207,
+    "name": "computer vision",
+    "listingUrl": "/search?q=computer+vision+tag%3A%22computer+vision%22",
+    "tagUrl": "/tags/image-processing",
+    "displayName": "Computer Vision"
+   },
+   {
+    "id": 13208,
+    "name": "data visualization",
+    "listingUrl": "/search?q=data+visualization+tag%3A%22data+visualization%22",
+    "tagUrl": "/tags/data-visualization",
+    "displayName": "Data Visualization"
+   },
+   {
+    "id": 13310,
+    "name": "deep learning",
+    "listingUrl": "/search?q=deep+learning+tag%3A%22deep+learning%22",
+    "tagUrl": "/tags/deep-learning",
+    "displayName": "Deep Learning"
+   },
+   {
+    "id": 16631,
+    "name": "pytorch",
+    "listingUrl": "/search?q=pytorch+tag%3A%22pytorch%22",
+    "tagUrl": "/tags/torch",
+    "displayName": "PyTorch"
+   }
+  ],
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/746611",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Phil Gear",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13074375-kg.jpg?t=2025-03-30-18-30-15",
+   "url": "/philgear",
+   "tier": "CONTRIBUTOR",
+   "id": 13074375,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3534278,
+  "id": 746611,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Phil Gear",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746611#3535257",
+  "lastCommentPostDate": "2026-10-08T14:47:19.716666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-07T16:03:20.699598300Z",
+  "tags": [
+   {
+    "id": 13207,
+    "name": "computer vision",
+    "listingUrl": "/tags/image-processing",
+    "displayName": "Computer Vision"
+   },
+   {
+    "id": 13208,
+    "name": "data visualization",
+    "listingUrl": "/tags/data-visualization",
+    "displayName": "Data Visualization"
+   },
+   {
+    "id": 13310,
+    "name": "deep learning",
+    "listingUrl": "/tags/deep-learning",
+    "displayName": "Deep Learning"
+   },
+   {
+    "id": 16631,
+    "name": "pytorch",
+    "listingUrl": "/tags/torch",
+    "displayName": "PyTorch"
+   }
+  ],
+  "title": "[Interactive 3D Tool] Are we on the right track? Using 3D Knee Anatomy & Continuous Depth Slicing to test our ML assumptions",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746611",
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Phil Gear",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13074375-kg.jpg?t=2025-03-30-18-30-15",
+    "url": "/philgear",
+    "userName": "philgear",
+    "tier": "CONTRIBUTOR",
+    "id": 13074375,
+    "profileUrl": "/philgear",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 13074375,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 24311334,
+  "authorThumbnailName": "24311334-kg.png?t=2026-06-28-11-54-02",
+  "authorUserDisplayName": "Yan Zhou",
+  "authorUserName": "yanzhou06",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535821,
+   "postDate": "2026-10-09T09:34:26.553Z",
+   "rawMarkdown": "@macruzbar The Code section is now flooded with low-effort ensemble notebooks that offer little to no originality, making it increasingly difficult to find genuinely valuable notebooks.\n\nCould Kaggle give users the ability to downvote this kind of low-quality content?",
+   "content": "<p><a href=\"/macruzbar\" target=\"_blank\">@macruzbar</a> The Code section is now flooded with low-effort ensemble notebooks that offer little to no originality, making it increasingly difficult to find genuinely valuable notebooks.</p>\n<p>Could Kaggle give users the ability to downvote this kind of low-quality content?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Yan Zhou",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+    "url": "/yanzhou06",
+    "tier": "EXPERT",
+    "id": 24311334,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 3926,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Yan Zhou",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+     "url": "/yanzhou06",
+     "userName": "yanzhou06",
+     "tier": "EXPERT",
+     "id": 24311334,
+     "profileUrl": "/yanzhou06",
+     "performanceTier": "EXPERT",
+     "userId": 24311334,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535821,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747676,
+  "name": "Can We Get a Downvote Button in the Code Section?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-09T09:34:26.554036300Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747676",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Yan Zhou",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+   "url": "/yanzhou06",
+   "tier": "EXPERT",
+   "id": 24311334,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3535821,
+  "id": 747676,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Yan Zhou",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747676#3535821",
+  "lastCommentPostDate": "2026-10-09T09:34:26.553333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-09T09:34:26.554036300Z",
+  "title": "Can We Get a Downvote Button in the Code Section?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747676",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Yan Zhou",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+    "url": "/yanzhou06",
+    "userName": "yanzhou06",
+    "tier": "EXPERT",
+    "id": 24311334,
+    "profileUrl": "/yanzhou06",
+    "performanceTier": "EXPERT",
+    "userId": 24311334,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

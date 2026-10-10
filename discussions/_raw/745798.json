@@ -1,0 +1,446 @@
+{
+ "forumTopic": {
+  "authorId": 761393,
+  "authorThumbnailName": "761393-kg.jpeg?t=2026-07-08-06-36-41",
+  "authorUserDisplayName": "Nils",
+  "authorUserName": "nilsfl",
+  "comments": [
+   {
+    "id": 3533309,
+    "postDate": "2026-10-05T21:02:40.613Z",
+    "rawMarkdown": "This is the best thing I've seen on Kaggle in my 8 years here! Using fun videos to explain how a competition works and how baseline model makes predictions should be available in every competition. Thank you @nilsfl for sharing this. I hope more Kagglers make fun videos and/or you make more videos in more future competitions!",
+    "content": "<p>This is the best thing I've seen on Kaggle in my 8 years here! Using fun videos to explain how a competition works and how baseline model makes predictions should be available in every competition. Thank you <a href=\"/nilsfl\" target=\"_blank\">@nilsfl</a> for sharing this. I hope more Kagglers make fun videos and/or you make more videos in more future competitions!</p>",
+    "replies": [
+     {
+      "id": 3533478,
+      "postDate": "2026-10-06T07:10:37.970Z",
+      "rawMarkdown": "Thanks @cdeotte for your kind words! I am stuck at 0.943 and this is my way to deal with my frustrations :D",
+      "content": "<p>Thanks <a href=\"/cdeotte\" target=\"_blank\">@cdeotte</a> for your kind words! I am stuck at 0.943 and this is my way to deal with my frustrations :D</p>",
+      "replies": [
+       {
+        "id": 3533488,
+        "postDate": "2026-10-06T07:47:54.903Z",
+        "rawMarkdown": "Very healthy way to deal with frustration, keep at it and you will get there at some point!",
+        "content": "<p>Very healthy way to deal with frustration, keep at it and you will get there at some point!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Yassine Alouini",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/172860-kg.png",
+         "url": "/yassinealouini",
+         "tier": "GRANDMASTER",
+         "id": 172860,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3017,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "nilsfl"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Yassine Alouini",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/172860-kg.png",
+          "url": "/yassinealouini",
+          "userName": "yassinealouini",
+          "tier": "GRANDMASTER",
+          "id": 172860,
+          "profileUrl": "/yassinealouini",
+          "performanceTier": "GRANDMASTER",
+          "userId": 172860,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Nils",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+       "url": "/nilsfl",
+       "tier": "CONTRIBUTOR",
+       "id": 761393,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1508,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Nils",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+        "url": "/nilsfl",
+        "userName": "nilsfl",
+        "tier": "CONTRIBUTOR",
+        "id": 761393,
+        "profileUrl": "/nilsfl",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 761393,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3533504,
+      "postDate": "2026-10-06T08:39:29.047Z",
+      "rawMarkdown": "Just added ep. 3 :)",
+      "content": "<p>Just added ep. 3 :)</p>",
+      "replies": [
+       {
+        "id": 3535268,
+        "postDate": "2026-10-08T15:08:30.497Z",
+        "rawMarkdown": "Thanks, I look forward to each new episode! So much fun!",
+        "content": "<p>Thanks, I look forward to each new episode! So much fun!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Chris Deotte",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+         "url": "/cdeotte",
+         "tier": "GRANDMASTER",
+         "id": 1723677,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 134,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Chris Deotte",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+          "url": "/cdeotte",
+          "userName": "cdeotte",
+          "tier": "GRANDMASTER",
+          "id": 1723677,
+          "profileUrl": "/cdeotte",
+          "performanceTier": "GRANDMASTER",
+          "userId": 1723677,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Nils",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+       "url": "/nilsfl",
+       "tier": "CONTRIBUTOR",
+       "id": 761393,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1508,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "yassinealouini",
+         "cdeotte"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Nils",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+        "url": "/nilsfl",
+        "userName": "nilsfl",
+        "tier": "CONTRIBUTOR",
+        "id": 761393,
+        "profileUrl": "/nilsfl",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 761393,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 134,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "yassinealouini",
+       "nilsfl",
+       "crtproduction",
+       "wassimdobbi"
+      ],
+      "userCount": 4
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532727,
+    "postDate": "2026-10-04T14:23:58.300Z",
+    "rawMarkdown": "These are great! So much fun and clearly explain everything!",
+    "content": "<p>These are great! So much fun and clearly explain everything!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 134,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "nilsfl"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3533507,
+    "postDate": "2026-10-06T08:49:19.627Z",
+    "rawMarkdown": "This put a smile on my face",
+    "content": "<p>This put a smile on my face</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Namra Desai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/namra001",
+     "tier": "CONTRIBUTOR",
+     "id": 2484247,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1919,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Namra Desai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/namra001",
+      "userName": "namra001",
+      "tier": "CONTRIBUTOR",
+      "id": 2484247,
+      "profileUrl": "/namra001",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2484247,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532709,
+   "postDate": "2026-10-04T13:33:05.817Z",
+   "rawMarkdown": "Hi all,\n\nTaking a break from staring at fold scores, I made three little paper-cutout animations about this competition. Partly for fun, partly because when I joined I had to google half the labels.\n\n**Ep. 1: Twelve Little Troubles: what the 12 findings actually are.**\n[Link](https://www.kaggle.com/code/nilsfl/twelve-little-troubles-a-60-second-knee-film)\n\n**Ep. 2: Inside the Machine: the technical side: slices, 2.5D input, CNN + attention, report labels, folds and ensembles.**\n[Link](https://www.kaggle.com/code/nilsfl/inside-the-machine-a-60-second-knee-film-ep-2)\n\n**Ep. 3: The Big Vote: what's inside the public 0.943 notebook: six model families, scores turned into ranks, and a mixing recipe per finding.**\n[Link](https://www.kaggle.com/code/nilsfl/the-big-vote-a-one-minute-knee-film-ep-3)\n\nIf you're new here, ep. 1 is probably the quicker way in than the data page. If you've been here a while, ep. 2 won't teach you anything, but maybe the robot makes you smile. Ep. 3 is for everyone who forked the 0.943 stack and wondered what all those cells actually do. The notebook below the video has a table with the real weights and slice counts.\n\nTo be upfront: voices, music and drawings were generated with open models (eps. 1 and 2 on my laptop, ep. 3 on a cloud GPU). The animation itself is hand-written JavaScript. No competition images were used; the \"MRIs\" are made from 1918 Gray's Anatomy plates.\n\nThey're one-minute cartoons, so things are simplified (the ep. 2 and ep. 3 notebooks list where). If a radiologist here sees something that makes them wince, please tell me and I'll fix it ;)\n\nGood luck in the last weeks!",
+   "content": "<p>Hi all,</p>\n<p>Taking a break from staring at fold scores, I made three little paper-cutout animations about this competition. Partly for fun, partly because when I joined I had to google half the labels.</p>\n<p><strong>Ep. 1: Twelve Little Troubles: what the 12 findings actually are.</strong>\n<a href=\"https://www.kaggle.com/code/nilsfl/twelve-little-troubles-a-60-second-knee-film\" target=\"_blank\">Link</a></p>\n<p><strong>Ep. 2: Inside the Machine: the technical side: slices, 2.5D input, CNN + attention, report labels, folds and ensembles.</strong>\n<a href=\"https://www.kaggle.com/code/nilsfl/inside-the-machine-a-60-second-knee-film-ep-2\" target=\"_blank\">Link</a></p>\n<p><strong>Ep. 3: The Big Vote: what's inside the public 0.943 notebook: six model families, scores turned into ranks, and a mixing recipe per finding.</strong>\n<a href=\"https://www.kaggle.com/code/nilsfl/the-big-vote-a-one-minute-knee-film-ep-3\" target=\"_blank\">Link</a></p>\n<p>If you're new here, ep. 1 is probably the quicker way in than the data page. If you've been here a while, ep. 2 won't teach you anything, but maybe the robot makes you smile. Ep. 3 is for everyone who forked the 0.943 stack and wondered what all those cells actually do. The notebook below the video has a table with the real weights and slice counts.</p>\n<p>To be upfront: voices, music and drawings were generated with open models (eps. 1 and 2 on my laptop, ep. 3 on a cloud GPU). The animation itself is hand-written JavaScript. No competition images were used; the \"MRIs\" are made from 1918 Gray's Anatomy plates.</p>\n<p>They're one-minute cartoons, so things are simplified (the ep. 2 and ep. 3 notebooks list where). If a radiologist here sees something that makes them wince, please tell me and I'll fix it ;)</p>\n<p>Good luck in the last weeks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Nils",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+    "url": "/nilsfl",
+    "tier": "CONTRIBUTOR",
+    "id": 761393,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 27,
+    "canUpvote": true,
+    "totalUpvotes": 27
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1508,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "reactions": [
+    {
+     "emoji": "LOVE",
+     "featuredUserNames": [
+      "gchauhan",
+      "daveconnor",
+      "ajisamudra",
+      "cdeotte",
+      "oldwine357",
+      "feargalosullivan",
+      "ubiquity123",
+      "twtqwp",
+      "aliyelbekov",
+      "maoxin123",
+      "rafeedau"
+     ],
+     "userCount": 11
+    }
+   ],
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Nils",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+     "url": "/nilsfl",
+     "userName": "nilsfl",
+     "tier": "CONTRIBUTOR",
+     "id": 761393,
+     "profileUrl": "/nilsfl",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 761393,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532709,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745798,
+  "name": "Made three short cartoons about this competition",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-04T13:33:05.815216900Z",
+  "totalVotes": 27,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745798",
+  "totalMessages": 7,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Nils",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+   "url": "/nilsfl",
+   "tier": "CONTRIBUTOR",
+   "id": 761393,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 7,
+  "firstForumMessageId": 3532709,
+  "id": 745798,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745798#3535268",
+  "lastCommentPostDate": "2026-10-08T15:08:30.496666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-04T13:33:05.815216900Z",
+  "title": "Made three short cartoons about this competition",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745798",
+  "votes": 27,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Nils",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/761393-kg.jpeg?t=2026-07-08-06-36-41",
+    "url": "/nilsfl",
+    "userName": "nilsfl",
+    "tier": "CONTRIBUTOR",
+    "id": 761393,
+    "profileUrl": "/nilsfl",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 761393,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

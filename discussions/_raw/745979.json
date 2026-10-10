@@ -1,0 +1,98 @@
+{
+ "forumTopic": {
+  "authorId": 29641607,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "OmerZalman",
+  "authorUserName": "omerzalman",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3533154,
+   "postDate": "2026-10-05T15:54:21.923Z",
+   "rawMarkdown": "I saw that some people were finetuning ai models and I got curious, did anyone see a certain amount of parameters that was best to finetune. I saw 4Bs and 8Bs but I was wondering if there was a optimal amount, like where doing so many parameters more wouldn't help you that much but also to reduce the amount of compute as much as possible?",
+   "content": "<p>I saw that some people were finetuning ai models and I got curious, did anyone see a certain amount of parameters that was best to finetune. I saw 4Bs and 8Bs but I was wondering if there was a optimal amount, like where doing so many parameters more wouldn't help you that much but also to reduce the amount of compute as much as possible?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4718,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "userName": "omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "profileUrl": "/omerzalman",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 29641607,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3533154,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745979,
+  "name": "Finetuning ai models",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-05T15:54:21.924871600Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745979",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "OmerZalman",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/omerzalman",
+   "tier": "CONTRIBUTOR",
+   "id": 29641607,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3533154,
+  "id": 745979,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745979#3533154",
+  "lastCommentPostDate": "2026-10-05T15:54:21.923333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-05T15:54:21.924871600Z",
+  "title": "Finetuning ai models",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745979",
+  "votes": -1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "userName": "omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "profileUrl": "/omerzalman",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 29641607,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

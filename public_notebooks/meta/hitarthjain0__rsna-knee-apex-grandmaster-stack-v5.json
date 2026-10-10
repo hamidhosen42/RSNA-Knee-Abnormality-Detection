@@ -1,0 +1,11 @@
+{
+ "ref": "hitarthjain0/rsna-knee-apex-grandmaster-stack-v5",
+ "version": 1,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "beaf95754b57a1eb"
+}

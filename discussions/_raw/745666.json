@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 167048,
+  "authorThumbnailName": "167048-kg.jpg",
+  "authorUserDisplayName": "Kuan-Chieh Huang",
+  "authorUserName": "kchuang",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532445,
+   "postDate": "2026-10-03T15:05:55.107Z",
+   "rawMarkdown": "For RSNA Knee Abnormality Detection, are models fine-tuned from official torchvision `ConvNeXt_Tiny_Weights.IMAGENET1K_V1` eligible under §2.6, assuming the participant separately establishes upstream permission? Could you clarify §2.5 pretrained-component exceptions and §2.8's final-model/public-weight delivery obligations for this case? Some nested clauses do not appear in our rendered rules view. We are asking for eligibility and delivery interpretation, not for the host to grant third-party rights.",
+   "content": "<p>For RSNA Knee Abnormality Detection, are models fine-tuned from official torchvision <code>ConvNeXt_Tiny_Weights.IMAGENET1K_V1</code> eligible under §2.6, assuming the participant separately establishes upstream permission? Could you clarify §2.5 pretrained-component exceptions and §2.8's final-model/public-weight delivery obligations for this case? Some nested clauses do not appear in our rendered rules view. We are asking for eligibility and delivery interpretation, not for the host to grant third-party rights.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Kuan-Chieh Huang",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/167048-kg.jpg",
+    "url": "/kchuang",
+    "tier": "EXPERT",
+    "id": 167048,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1074,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Kuan-Chieh Huang",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/167048-kg.jpg",
+     "url": "/kchuang",
+     "userName": "kchuang",
+     "tier": "EXPERT",
+     "id": 167048,
+     "profileUrl": "/kchuang",
+     "performanceTier": "EXPERT",
+     "userId": 167048,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532445,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745666,
+  "name": "Clarification request: eligibility and delivery obligations for models fine-tuned from official torchvision ConvNeXt-Tiny (IMAGENET1K_V1)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-03T15:05:55.106688100Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745666",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Kuan-Chieh Huang",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/167048-kg.jpg",
+   "url": "/kchuang",
+   "tier": "EXPERT",
+   "id": 167048,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3532445,
+  "id": 745666,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Kuan-Chieh Huang",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745666#3532445",
+  "lastCommentPostDate": "2026-10-03T15:05:55.106666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-03T15:05:55.106688100Z",
+  "title": "Clarification request: eligibility and delivery obligations for models fine-tuned from official torchvision ConvNeXt-Tiny (IMAGENET1K_V1)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745666",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Kuan-Chieh Huang",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/167048-kg.jpg",
+    "url": "/kchuang",
+    "userName": "kchuang",
+    "tier": "EXPERT",
+    "id": 167048,
+    "profileUrl": "/kchuang",
+    "performanceTier": "EXPERT",
+    "userId": 167048,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

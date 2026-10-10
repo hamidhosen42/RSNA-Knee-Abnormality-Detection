@@ -1,0 +1,11 @@
+{
+ "ref": "sameerk2004/rsna-knee-sil-d5c-latoa32",
+ "version": 1,
+ "score": 0.949,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "16ebcca88dd92d32"
+}

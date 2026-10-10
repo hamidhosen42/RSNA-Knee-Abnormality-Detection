@@ -1,0 +1,98 @@
+{
+ "forumTopic": {
+  "authorId": 28555968,
+  "authorThumbnailName": "28555968-kg.jpg?t=2026-09-30-06-17-19",
+  "authorUserDisplayName": "Hitarth Jain",
+  "authorUserName": "hitarthjain0",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535244,
+   "postDate": "2026-10-08T14:27:47.917Z",
+   "rawMarkdown": "  Hi everyone,\n\n  Following the 0.949 / 0.950 baselines, we've upgraded the public stack with critical empirical enhancements that push beyond the plateau:\n\n    1. **Multi-Scale Spatial Dual-Resolution (256px + 320px)**: Captures both global knee geometry and fine ligament micro-fibrils.\n    2. **Dual-Stride Interleaved Volumetric Sampling (Offset 0 & Offset +1)**: Eliminates slice gaps across 3D volumes.\n    3. **Bilateral Horizontal Mirror TTA**: Reduces boundary artifacts and rotational noise.\n    4. **Pathology Routing 2.0 (The Lateral OA Breakthrough)**: Re-tuned ConvNeXt weights on Lateral OA (+0.079 AUC gain) and 3D fluid\n  pathologies.\n    5. **Anti-Tie Micro-Rank Calibration**: Resolves zero-rank clustering in negative cohorts.\n\n    Check out the full live code and weights:\n    👉 **Notebook:** https://www.kaggle.com/code/hitarthjain0/rsna-knee-apex-grandmaster-stack-v5\n\n    Feedback and discussion are welcome! If you find it helpful for your pipeline, please consider upvoting the notebook!                       ",
+   "content": "<p>Hi everyone,\n Following the 0.949 / 0.950 baselines, we've upgraded the public stack with critical empirical enhancements that push beyond the plateau:</p>\n<ol>\n<li><strong>Multi-Scale Spatial Dual-Resolution (256px + 320px)</strong>: Captures both global knee geometry and fine ligament micro-fibrils.<ol>\n<li><strong>Dual-Stride Interleaved Volumetric Sampling (Offset 0 &amp; Offset +1)</strong>: Eliminates slice gaps across 3D volumes.</li>\n<li><strong>Bilateral Horizontal Mirror TTA</strong>: Reduces boundary artifacts and rotational noise.</li>\n<li><strong>Pathology Routing 2.0 (The Lateral OA Breakthrough)</strong>: Re-tuned ConvNeXt weights on Lateral OA (+0.079 AUC gain) and 3D fluid\npathologies.</li>\n<li><strong>Anti-Tie Micro-Rank Calibration</strong>: Resolves zero-rank clustering in negative cohorts.\nCheck out the full live code and weights:\n👉 <strong>Notebook:</strong> <a href=\"https://www.kaggle.com/code/hitarthjain0/rsna-knee-apex-grandmaster-stack-v5\" target=\"_blank\">https://www.kaggle.com/code/hitarthjain0/rsna-knee-apex-grandmaster-stack-v5</a>\nFeedback and discussion are welcome! If you find it helpful for your pipeline, please consider upvoting the notebook!                       </li></ol></li>\n</ol>",
+   "parent": {},
+   "author": {
+    "displayName": "Hitarth Jain",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28555968-kg.jpg?t=2026-09-30-06-17-19",
+    "url": "/hitarthjain0",
+    "tier": "CONTRIBUTOR",
+    "id": 28555968,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -21,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 283,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "karttikjangid05",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28739526-kg.png?t=2026-10-03-10-08-37",
+     "url": "/karttikjangid05",
+     "userName": "karttikjangid05",
+     "tier": "CONTRIBUTOR",
+     "id": 28739526,
+     "profileUrl": "/karttikjangid05",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 28739526,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535244,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747289,
+  "name": "⚡ [LB 0.954+] RSNA Knee Grandmaster Apex Stack V5: Multi-Scale TTA + Pathology Routing 2.0                                                 ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-08T14:27:47.915374Z",
+  "totalVotes": -21,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747289",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Hitarth Jain",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28555968-kg.jpg?t=2026-09-30-06-17-19",
+   "url": "/hitarthjain0",
+   "tier": "CONTRIBUTOR",
+   "id": 28555968,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3535244,
+  "id": 747289,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Hitarth Jain",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747289#3535244",
+  "lastCommentPostDate": "2026-10-08T14:27:47.916666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-08T14:27:47.915374Z",
+  "title": "⚡ [LB 0.954+] RSNA Knee Grandmaster Apex Stack V5: Multi-Scale TTA + Pathology Routing 2.0                                                 ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747289",
+  "votes": -21,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "karttikjangid05",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28739526-kg.png?t=2026-10-03-10-08-37",
+    "url": "/karttikjangid05",
+    "userName": "karttikjangid05",
+    "tier": "CONTRIBUTOR",
+    "id": 28739526,
+    "profileUrl": "/karttikjangid05",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 28739526,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

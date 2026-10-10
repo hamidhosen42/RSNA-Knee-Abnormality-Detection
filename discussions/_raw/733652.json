@@ -32,7 +32,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 1946,
+      "competitionRanking": 3049,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -68,7 +68,7 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 1946,
+    "competitionRanking": 3049,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -173,7 +173,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 2850,
+    "competitionRanking": 1897,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -187,6 +187,45 @@
       "profileUrl": "/zhukovoleksiy",
       "performanceTier": "MASTER",
       "userId": 6082025,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531972,
+    "postDate": "2026-10-02T23:37:33.640Z",
+    "rawMarkdown": "Bumping this, still no answer from the competition host, and it would be helpful. In other thread: https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819 \nthey said we can use external, so I just want to be sure. ",
+    "content": "<p>Bumping this, still no answer from the competition host, and it would be helpful. In other thread: <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819</a> \nthey said we can use external, so I just want to be sure. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Amanie El-Hajj",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1668870-kg.jpg",
+     "url": "/aelhajj",
+     "tier": "CONTRIBUTOR",
+     "id": 1668870,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 851,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Amanie El-Hajj",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1668870-kg.jpg",
+      "url": "/aelhajj",
+      "userName": "aelhajj",
+      "tier": "CONTRIBUTOR",
+      "id": 1668870,
+      "profileUrl": "/aelhajj",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 1668870,
       "progressionOptOut": false
      },
      "intro": ""
@@ -211,7 +250,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 18,
+    "competitionRanking": 36,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -249,7 +288,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 785,
+    "competitionRanking": 1902,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -286,12 +325,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 21,
+    "totalVotes": 23,
     "canUpvote": true,
-    "totalUpvotes": 21
+    "totalUpvotes": 23
    },
    "kernelVersion": 0,
-   "competitionRanking": 1307,
+   "competitionRanking": 194,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -318,9 +357,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-07T18:25:02.787271400Z",
-  "totalVotes": 21,
+  "totalVotes": 23,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/733652",
-  "totalMessages": 7,
+  "totalMessages": 8,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -334,19 +373,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 7,
+  "commentCount": 8,
   "firstForumMessageId": 3510118,
   "id": 733652,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Mazzutti",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733652#3514862",
-  "lastCommentPostDate": "2026-08-20T09:27:03.900Z",
+  "lastCommenterName": "Amanie El-Hajj",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733652#3531972",
+  "lastCommentPostDate": "2026-10-02T23:37:33.640Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-07T18:25:02.787271400Z",
   "title": "Rules clarification: external knee-MRI datasets, and using an LLM API to derive labels from the reports",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733652",
-  "votes": 21,
+  "votes": 23,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Fernando Faria",

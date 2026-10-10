@@ -1,0 +1,11 @@
+{
+ "ref": "romantamrazov/rsna-knee-dinosaur-v5",
+ "version": 41,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "ca61c3166cae6aa9"
+}

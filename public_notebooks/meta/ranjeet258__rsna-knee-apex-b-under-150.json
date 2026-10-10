@@ -1,0 +1,11 @@
+{
+ "ref": "ranjeet258/rsna-knee-apex-b-under-150",
+ "version": 1,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "fb0551b6eb471089"
+}

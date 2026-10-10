@@ -1,0 +1,97 @@
+{
+ "forumTopic": {
+  "authorId": 4874667,
+  "authorThumbnailName": "4874667-kg.png",
+  "authorUserDisplayName": "Sunil Krishnan",
+  "authorUserName": "sunilkrishnan",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3533988,
+   "postDate": "2026-10-07T05:38:16.677Z",
+   "rawMarkdown": "what happens when you use a model from HF in kaggle ? somewhere I read model will be downladed as usual while using Tranformers library and kaggle will automatically create a model page and your notebook will be attached or rather model will be attached to notebook AND which you can use even WITHOUT INTERNET CONNECTION later. Is this true ? My experience seem to be different. The same notebook later needs INERNET CONNECTION. \n\nCan someone help ?",
+   "content": "<p>what happens when you use a model from HF in kaggle ? somewhere I read model will be downladed as usual while using Tranformers library and kaggle will automatically create a model page and your notebook will be attached or rather model will be attached to notebook AND which you can use even WITHOUT INTERNET CONNECTION later. Is this true ? My experience seem to be different. The same notebook later needs INERNET CONNECTION. </p>\n<p>Can someone help ?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Sunil Krishnan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+    "url": "/sunilkrishnan",
+    "tier": "CONTRIBUTOR",
+    "id": 4874667,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -1,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Sunil Krishnan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+     "url": "/sunilkrishnan",
+     "userName": "sunilkrishnan",
+     "tier": "CONTRIBUTOR",
+     "id": 4874667,
+     "profileUrl": "/sunilkrishnan",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 4874667,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3533988,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 746443,
+  "name": "Models from HF",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-07T05:38:16.676819100Z",
+  "totalVotes": -1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/746443",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Sunil Krishnan",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+   "url": "/sunilkrishnan",
+   "tier": "CONTRIBUTOR",
+   "id": 4874667,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3533988,
+  "id": 746443,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Sunil Krishnan",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746443#3533988",
+  "lastCommentPostDate": "2026-10-07T05:38:16.676666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-07T05:38:16.676819100Z",
+  "title": "Models from HF",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746443",
+  "votes": -1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Sunil Krishnan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4874667-kg.png",
+    "url": "/sunilkrishnan",
+    "userName": "sunilkrishnan",
+    "tier": "CONTRIBUTOR",
+    "id": 4874667,
+    "profileUrl": "/sunilkrishnan",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 4874667,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -32,7 +32,7 @@
        "totalUpvotes": 2
       },
       "kernelVersion": 0,
-      "competitionRanking": 413,
+      "competitionRanking": 590,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -74,12 +74,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 1,
+         "totalVotes": 3,
          "canUpvote": true,
-         "totalUpvotes": 1
+         "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 101,
+        "competitionRanking": 135,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -128,7 +128,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 14,
+        "competitionRanking": 42,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -168,7 +168,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 14,
+        "competitionRanking": 42,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -199,12 +199,12 @@
       },
       "authorType": "COMMENT",
       "votes": {
-       "totalVotes": 2,
+       "totalVotes": 3,
        "canUpvote": true,
-       "totalUpvotes": 2
+       "totalUpvotes": 3
       },
       "kernelVersion": 0,
-      "competitionRanking": 14,
+      "competitionRanking": 42,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -240,7 +240,7 @@
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 101,
+    "competitionRanking": 135,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -280,7 +280,7 @@
      "totalUpvotes": 6
     },
     "kernelVersion": 0,
-    "competitionRanking": 1093,
+    "competitionRanking": 1911,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -319,7 +319,7 @@
         "parent": {},
         "author": {
          "displayName": "Tom",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2025-12-30-09-11-55",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2026-10-05-04-22-09",
          "url": "/tom99763",
          "tier": "MASTER",
          "id": 4310004,
@@ -332,7 +332,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 1333,
+        "competitionRanking": 49,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -368,7 +368,7 @@
        "totalUpvotes": 2
       },
       "kernelVersion": 0,
-      "competitionRanking": 395,
+      "competitionRanking": 266,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -386,12 +386,50 @@
        },
        "intro": ""
       }
+     },
+     {
+      "id": 3532868,
+      "postDate": "2026-10-05T00:09:39.703Z",
+      "rawMarkdown": "i dont agree, I think that it would be atleast first place, maybe we are stretching it if we say top 3, 4, or 5",
+      "content": "<p>i dont agree, I think that it would be atleast first place, maybe we are stretching it if we say top 3, 4, or 5</p>",
+      "parent": {},
+      "author": {
+       "displayName": "OmerZalman",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/omerzalman",
+       "tier": "CONTRIBUTOR",
+       "id": 29641607,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 4708,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OmerZalman",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/omerzalman",
+        "userName": "omerzalman",
+        "tier": "CONTRIBUTOR",
+        "id": 29641607,
+        "profileUrl": "/omerzalman",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 29641607,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
      }
     ],
     "parent": {},
     "author": {
      "displayName": "Tom",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2025-12-30-09-11-55",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2026-10-05-04-22-09",
      "url": "/tom99763",
      "tier": "MASTER",
      "id": 4310004,
@@ -404,7 +442,7 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 1333,
+    "competitionRanking": 49,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -444,7 +482,7 @@
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 1569,
+    "competitionRanking": 2341,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -504,12 +542,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 16,
+    "totalVotes": 17,
     "canUpvote": true,
-    "totalUpvotes": 17
+    "totalUpvotes": 18
    },
    "kernelVersion": 0,
-   "competitionRanking": 883,
+   "competitionRanking": 17,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -536,9 +574,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-18T00:05:14.912469500Z",
-  "totalVotes": 16,
+  "totalVotes": 17,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/735767",
-  "totalMessages": 12,
+  "totalMessages": 13,
   "authorPerformanceTier": "MASTER",
   "authorProgressionOptOut": false
  },
@@ -552,19 +590,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 12,
+  "commentCount": 13,
   "firstForumMessageId": 3513916,
   "id": 735767,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Quan Vu",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735767#3530512",
-  "lastCommentPostDate": "2026-09-30T10:24:20.533333300Z",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735767#3532868",
+  "lastCommentPostDate": "2026-10-05T00:09:39.703333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-18T00:05:14.912469500Z",
   "title": "What Could the Final Ceiling Be for RSNA 2026?",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735767",
-  "votes": 16,
+  "votes": 17,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Tony Li",

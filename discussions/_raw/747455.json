@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 11012043,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Anay Chauhan",
+  "authorUserName": "anaychauhan",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535495,
+   "postDate": "2026-10-08T19:16:00.317Z",
+   "rawMarkdown": "Question for the host: are public weights trained on OAI knee MRI allowed?\nSeveral public notebooks attach a Kaggle dataset of weights whose description says they were trained with OAI (Osteoarthritis Initiative) knee MRIs as external supervision. OAI is free but requires registration and a data-use agreement. Under the External Data rules (“publicly available and equally accessible… at no cost”), can participants use these OAI-trained public weights, or OAI data directly? A clear ruling would help many teams. Thank you!",
+   "content": "<p>Question for the host: are public weights trained on OAI knee MRI allowed?\nSeveral public notebooks attach a Kaggle dataset of weights whose description says they were trained with OAI (Osteoarthritis Initiative) knee MRIs as external supervision. OAI is free but requires registration and a data-use agreement. Under the External Data rules (“publicly available and equally accessible… at no cost”), can participants use these OAI-trained public weights, or OAI data directly? A clear ruling would help many teams. Thank you!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Anay Chauhan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/anaychauhan",
+    "tier": "CONTRIBUTOR",
+    "id": 11012043,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 6,
+    "canUpvote": true,
+    "totalUpvotes": 7
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 214,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Anay Chauhan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/anaychauhan",
+     "userName": "anaychauhan",
+     "tier": "CONTRIBUTOR",
+     "id": 11012043,
+     "profileUrl": "/anaychauhan",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 11012043,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535495,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747455,
+  "name": "are public weights trained on OAI knee MRI allowed?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-08T19:16:00.316923700Z",
+  "totalVotes": 6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747455",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Anay Chauhan",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/anaychauhan",
+   "tier": "CONTRIBUTOR",
+   "id": 11012043,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3535495,
+  "id": 747455,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Anay Chauhan",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747455#3535495",
+  "lastCommentPostDate": "2026-10-08T19:16:00.316666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-08T19:16:00.316923700Z",
+  "title": "are public weights trained on OAI knee MRI allowed?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747455",
+  "votes": 6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Anay Chauhan",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/anaychauhan",
+    "userName": "anaychauhan",
+    "tier": "CONTRIBUTOR",
+    "id": 11012043,
+    "profileUrl": "/anaychauhan",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 11012043,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

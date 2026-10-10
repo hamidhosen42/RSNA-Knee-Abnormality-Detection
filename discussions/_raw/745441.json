@@ -1,0 +1,220 @@
+{
+ "forumTopic": {
+  "authorId": 13669554,
+  "authorThumbnailName": "13669554-kg.jpg?t=2025-03-11-02-27-49",
+  "authorUserDisplayName": "Dhiyanesh Babu C V",
+  "authorUserName": "dhiyaneshbabu",
+  "comments": [
+   {
+    "id": 3532705,
+    "postDate": "2026-10-04T13:10:20.953Z",
+    "rawMarkdown": "Bro I guess you seriously are new.\n\nIt take people even 9 Hours to get the submission ",
+    "content": "<p>Bro I guess you seriously are new.</p>\n<p>It take people even 9 Hours to get the submission </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lavin Wins",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+     "url": "/lavinwins",
+     "tier": "CONTRIBUTOR",
+     "id": 27284910,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 602,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Lavin Wins",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/27284910-kg.jpg?t=2026-09-14-09-46-56",
+      "url": "/lavinwins",
+      "userName": "lavinwins",
+      "tier": "CONTRIBUTOR",
+      "id": 27284910,
+      "profileUrl": "/lavinwins",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27284910,
+      "progressionOptOut": false
+     },
+     "intro": "Someone who is rich "
+    }
+   },
+   {
+    "id": 3532151,
+    "postDate": "2026-10-03T05:27:54.830Z",
+    "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13669554%2F497644ebd87aff7bb2ff82300d2c5d74%2FScreenshot%202026-10-03%20105717.png?generation=1791005269962358&alt=media)",
+    "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13669554%2F497644ebd87aff7bb2ff82300d2c5d74%2FScreenshot%202026-10-03%20105717.png?generation=1791005269962358&amp;alt=media\" alt=\"\"></p>",
+    "replies": [
+     {
+      "id": 3532265,
+      "postDate": "2026-10-03T07:34:47.390Z",
+      "rawMarkdown": "If the notebook runs for 5 minutes, the LB score does take a few hours to come back.",
+      "content": "<p>If the notebook runs for 5 minutes, the LB score does take a few hours to come back.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 121,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Myo Min Htet(wnp)🇲🇲",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+        "url": "/myominhtet",
+        "userName": "myominhtet",
+        "tier": "EXPERT",
+        "id": 4600631,
+        "profileUrl": "/myominhtet",
+        "performanceTier": "EXPERT",
+        "userId": 4600631,
+        "progressionOptOut": false
+       },
+       "intro": "Need some who can support GPU, "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Dhiyanesh Babu C V",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+     "url": "/dhiyaneshbabu",
+     "tier": "CONTRIBUTOR",
+     "id": 13669554,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1138,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Dhiyanesh Babu C V",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+      "url": "/dhiyaneshbabu",
+      "userName": "dhiyaneshbabu",
+      "tier": "CONTRIBUTOR",
+      "id": 13669554,
+      "profileUrl": "/dhiyaneshbabu",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 13669554,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532149,
+   "postDate": "2026-10-03T05:26:22.783Z",
+   "rawMarkdown": "I made a submission, but the notebook failed due to a path error. However, in the **Submission** tab, it is still showing as Running even after 1 hour.\n\nI then made another submission. The notebook ran successfully on 3 test studies in about 5 minutes, but the submission has now been loading for more than 1.5 hours and is still showing as running.\n\nDoes Kaggle allow only one submission to run at a time? If the previous submission is stuck, could that be preventing my new submission from completing?\n\nWhen I open the submission, it shows “Notebook failed and terminated”, but in the main **Submission** screen, it still shows Running.\n\nHow can I terminate or cancel the stuck submission? Any help would be appreciated.\n",
+   "content": "<p>I made a submission, but the notebook failed due to a path error. However, in the <strong>Submission</strong> tab, it is still showing as Running even after 1 hour.</p>\n<p>I then made another submission. The notebook ran successfully on 3 test studies in about 5 minutes, but the submission has now been loading for more than 1.5 hours and is still showing as running.</p>\n<p>Does Kaggle allow only one submission to run at a time? If the previous submission is stuck, could that be preventing my new submission from completing?</p>\n<p>When I open the submission, it shows “Notebook failed and terminated”, but in the main <strong>Submission</strong> screen, it still shows Running.</p>\n<p>How can I terminate or cancel the stuck submission? Any help would be appreciated.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Dhiyanesh Babu C V",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+    "url": "/dhiyaneshbabu",
+    "tier": "CONTRIBUTOR",
+    "id": 13669554,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -2,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1138,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Dhiyanesh Babu C V",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+     "url": "/dhiyaneshbabu",
+     "userName": "dhiyaneshbabu",
+     "tier": "CONTRIBUTOR",
+     "id": 13669554,
+     "profileUrl": "/dhiyaneshbabu",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 13669554,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532149,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745441,
+  "name": "The submission is stuck somehow. I need help.",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-03T05:26:22.783130800Z",
+  "totalVotes": -2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745441",
+  "totalMessages": 3,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Dhiyanesh Babu C V",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+   "url": "/dhiyaneshbabu",
+   "tier": "CONTRIBUTOR",
+   "id": 13669554,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3532149,
+  "id": 745441,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Lavin Wins",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745441#3532705",
+  "lastCommentPostDate": "2026-10-04T13:10:20.953333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-03T05:26:22.783130800Z",
+  "title": "The submission is stuck somehow. I need help.",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745441",
+  "votes": -2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Dhiyanesh Babu C V",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13669554-kg.jpg?t=2025-03-11-02-27-49",
+    "url": "/dhiyaneshbabu",
+    "userName": "dhiyaneshbabu",
+    "tier": "CONTRIBUTOR",
+    "id": 13669554,
+    "profileUrl": "/dhiyaneshbabu",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 13669554,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

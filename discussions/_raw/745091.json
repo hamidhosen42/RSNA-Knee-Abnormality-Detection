@@ -1,0 +1,279 @@
+{
+ "forumTopic": {
+  "authorId": 35996489,
+  "authorThumbnailName": "35996489-kg.png?t=2026-08-14-19-56-40",
+  "authorUserDisplayName": "KalyanG17",
+  "authorUserName": "kalyang17",
+  "comments": [
+   {
+    "id": 3533084,
+    "postDate": "2026-10-05T12:39:46.380Z",
+    "rawMarkdown": "Hey  I currently have a 93.4 ViT small pretrained with DINOv2 and a ResNet-50 w RadImageNet at 92.8, and I'm also looking for a team",
+    "content": "<p>Hey  I currently have a 93.4 ViT small pretrained with DINOv2 and a ResNet-50 w RadImageNet at 92.8, and I'm also looking for a team</p>",
+    "replies": [
+     {
+      "id": 3534008,
+      "postDate": "2026-10-07T06:23:28.487Z",
+      "rawMarkdown": "ive got 5-fold bag on pretrained labels at 0.945, contact me :)\nDiscord: p.and; officialpand@gmail.com",
+      "content": "<p>ive got 5-fold bag on pretrained labels at 0.945, contact me :)\nDiscord: p.and; <a href=\"mailto:officialpand@gmail.com\">officialpand@gmail.com</a></p>",
+      "parent": {},
+      "author": {
+       "displayName": "Pand",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
+       "url": "/pand999",
+       "tier": "CONTRIBUTOR",
+       "id": 33249962,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 159,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "adelzebiche"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Pand",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
+        "url": "/pand999",
+        "userName": "pand999",
+        "tier": "CONTRIBUTOR",
+        "id": 33249962,
+        "profileUrl": "/pand999",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 33249962,
+        "progressionOptOut": false
+       },
+       "intro": "lmk what models u've got :) Discord: p.and, officialpand@gmail.com"
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Adel Zebiche",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/adelzebiche",
+     "tier": "CONTRIBUTOR",
+     "id": 32302810,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 836,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Adel Zebiche",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/adelzebiche",
+      "userName": "adelzebiche",
+      "tier": "CONTRIBUTOR",
+      "id": 32302810,
+      "profileUrl": "/adelzebiche",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 32302810,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532981,
+    "postDate": "2026-10-05T07:49:53.950Z",
+    "rawMarkdown": "Hey I am looking to team up (solo). Currently have LLM labels and trained Dino and radimagenet and got 0.92 on single model. I have got some online compute units. \nDiscord:  tnshp4162",
+    "content": "<p>Hey I am looking to team up (solo). Currently have LLM labels and trained Dino and radimagenet and got 0.92 on single model. I have got some online compute units. \nDiscord:  tnshp4162</p>",
+    "parent": {},
+    "author": {
+     "displayName": "tnshpp",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/tnshpp",
+     "tier": "CONTRIBUTOR",
+     "id": 27967229,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1851,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "tnshpp",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/tnshpp",
+      "userName": "tnshpp",
+      "tier": "CONTRIBUTOR",
+      "id": 27967229,
+      "profileUrl": "/tnshpp",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 27967229,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531863,
+    "postDate": "2026-10-02T18:01:32.797Z",
+    "rawMarkdown": "Hi. I'd be up for merging. Im currently trying to build models from scratch.\nI have full OOF for all training studies, so we could set blend weights offline.\nPublic LB for the latest version 0.945.\nIve got 4060, extra compute is always a good thing.\nDiscord: p.and; officialpand@gmail.com",
+    "content": "<p>Hi. I'd be up for merging. Im currently trying to build models from scratch.\nI have full OOF for all training studies, so we could set blend weights offline.\nPublic LB for the latest version 0.945.\nIve got 4060, extra compute is always a good thing.\nDiscord: p.and; <a href=\"mailto:officialpand@gmail.com\">officialpand@gmail.com</a></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Pand",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
+     "url": "/pand999",
+     "tier": "CONTRIBUTOR",
+     "id": 33249962,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 159,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "kalyang17"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Pand",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
+      "url": "/pand999",
+      "userName": "pand999",
+      "tier": "CONTRIBUTOR",
+      "id": 33249962,
+      "profileUrl": "/pand999",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 33249962,
+      "progressionOptOut": false
+     },
+     "intro": "lmk what models u've got :) Discord: p.and, officialpand@gmail.com"
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3531605,
+   "postDate": "2026-10-02T07:34:46.417Z",
+   "rawMarkdown": "Hello, I'm looking for a team to merge with before the Oct 15 deadline.\nI'm at 0.942 solo. My own models are a CoAtNet @384 (0.935), a ConvNeXt-T (0.930) and a RadImageNet ResNet-50 trained on my own report labels (0.924); two of them have 5-fold OOF. I also have my own LLM label sets, an RTX 5070 and spare Kaggle GPU hours, so I can run training for the team.\nWould especially like to team up with someone whose model is built differently from the public notebooks. If you are interested reply here with your Discord/Email ID. Thanks!",
+   "content": "<p>Hello, I'm looking for a team to merge with before the Oct 15 deadline.\nI'm at 0.942 solo. My own models are a CoAtNet <a href=\"/384\" target=\"_blank\">@384</a> (0.935), a ConvNeXt-T (0.930) and a RadImageNet ResNet-50 trained on my own report labels (0.924); two of them have 5-fold OOF. I also have my own LLM label sets, an RTX 5070 and spare Kaggle GPU hours, so I can run training for the team.\nWould especially like to team up with someone whose model is built differently from the public notebooks. If you are interested reply here with your Discord/Email ID. Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "KalyanG17",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35996489-kg.png?t=2026-08-14-19-56-40",
+    "url": "/kalyang17",
+    "tier": "CONTRIBUTOR",
+    "id": 35996489,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1862,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "KalyanG17",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35996489-kg.png?t=2026-08-14-19-56-40",
+     "url": "/kalyang17",
+     "userName": "kalyang17",
+     "tier": "CONTRIBUTOR",
+     "id": 35996489,
+     "profileUrl": "/kalyang17",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 35996489,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3531605,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745091,
+  "name": "Looking for teammates: 0.942 solo, own 5-fold models + a GPU to share",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-02T07:34:46.417338900Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745091",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "KalyanG17",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35996489-kg.png?t=2026-08-14-19-56-40",
+   "url": "/kalyang17",
+   "tier": "CONTRIBUTOR",
+   "id": 35996489,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3531605,
+  "id": 745091,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Pand",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745091#3534008",
+  "lastCommentPostDate": "2026-10-07T06:23:28.486666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-02T07:34:46.417338900Z",
+  "title": "Looking for teammates: 0.942 solo, own 5-fold models + a GPU to share",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745091",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "KalyanG17",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35996489-kg.png?t=2026-08-14-19-56-40",
+    "url": "/kalyang17",
+    "userName": "kalyang17",
+    "tier": "CONTRIBUTOR",
+    "id": 35996489,
+    "profileUrl": "/kalyang17",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 35996489,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

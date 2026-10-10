@@ -1,0 +1,11 @@
+{
+ "ref": "newwang12/rsna-versia-5",
+ "version": 1,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "d483d7df310d68df"
+}

@@ -1,0 +1,261 @@
+{
+ "forumTopic": {
+  "authorId": 29641607,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "OmerZalman",
+  "authorUserName": "omerzalman",
+  "comments": [
+   {
+    "id": 3533108,
+    "postDate": "2026-10-05T14:09:26.670Z",
+    "rawMarkdown": "I joined this competition about a week ago and I'm still struggling with the same two labels. Here are my results on the 58 expert-labelled studies (accuracy uses a 50% confidence threshold):\n\n| | Effusion AUC / Acc | Synovitis AUC / Acc |\n|---|---|---|\n| LLM, reports only | 0.835 / 0.707 | 0.799 / 0.741 |\n| LLM, reports + MRI | ~0.91-0.92 / 0.845 | ~0.84-0.86 / 0.69-0.72 |\n| Image model trained on my pseudo-labels | 0.986 / 0.931 | 0.859 / 0.776 |\n\nAn AUC of around 0.7 with ~75% accuracy makes me wonder whether your pipeline outputs hard 0/1 labels. Since AUC measures ranking, asking for probabilities might help, e.g. ranking roughly \"explicitly present\" > \"equivocal\" > \"not mentioned\" > \"explicitly absent\". This could improve AUC without necessarily changing accuracy.\n\nIn my extraction, ~73% of the training reports say nothing about synovitis. My prompt treats silence as weak evidence of absence, while using effusion, trauma, degeneration, and age as context rather than simply defaulting to a negative label.\n\nThe report negatives also don't always agree with the expert labels. Among the 58 studies:\n\n- Synovitis not mentioned: 11/36 (31%) were positive according to the experts.\n- Effusion reported as absent/normal: 10/26 (38%) were positive.\n- Effusion reported as equivocal/small: 14/18 (78%) were positive.\n\nThe expert panel calls fluid positive more often than the reports do. Adding images helped substantially with effusion: 0.835 -> ~0.92 for the LLM, and 0.986 for the image model trained on the pseudo-labels. Synovitis improved much less. My guess is that synovium and fluid are difficult to distinguish on non-contrast MRI, so the image input may have led the LLM to predict synovitis more often than the experts did.",
+    "content": "<p>I joined this competition about a week ago and I'm still struggling with the same two labels. Here are my results on the 58 expert-labelled studies (accuracy uses a 50% confidence threshold):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Effusion AUC / Acc</th>\n<th>Synovitis AUC / Acc</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>LLM, reports only</td>\n<td>0.835 / 0.707</td>\n<td>0.799 / 0.741</td>\n</tr>\n<tr>\n<td>LLM, reports + MRI</td>\n<td>~0.91-0.92 / 0.845</td>\n<td>~0.84-0.86 / 0.69-0.72</td>\n</tr>\n<tr>\n<td>Image model trained on my pseudo-labels</td>\n<td>0.986 / 0.931</td>\n<td>0.859 / 0.776</td>\n</tr>\n</tbody>\n</table>\n<p>An AUC of around 0.7 with ~75% accuracy makes me wonder whether your pipeline outputs hard 0/1 labels. Since AUC measures ranking, asking for probabilities might help, e.g. ranking roughly \"explicitly present\" &gt; \"equivocal\" &gt; \"not mentioned\" &gt; \"explicitly absent\". This could improve AUC without necessarily changing accuracy.</p>\n<p>In my extraction, ~73% of the training reports say nothing about synovitis. My prompt treats silence as weak evidence of absence, while using effusion, trauma, degeneration, and age as context rather than simply defaulting to a negative label.</p>\n<p>The report negatives also don't always agree with the expert labels. Among the 58 studies:</p>\n<ul>\n<li>Synovitis not mentioned: 11/36 (31%) were positive according to the experts.</li>\n<li>Effusion reported as absent/normal: 10/26 (38%) were positive.</li>\n<li>Effusion reported as equivocal/small: 14/18 (78%) were positive.</li>\n</ul>\n<p>The expert panel calls fluid positive more often than the reports do. Adding images helped substantially with effusion: 0.835 -&gt; ~0.92 for the LLM, and 0.986 for the image model trained on the pseudo-labels. Synovitis improved much less. My guess is that synovium and fluid are difficult to distinguish on non-contrast MRI, so the image input may have led the LLM to predict synovitis more often than the experts did.</p>",
+    "replies": [
+     {
+      "id": 3533117,
+      "postDate": "2026-10-05T14:26:35.853Z",
+      "rawMarkdown": "Thank you so much, also, im assuming that you are using pseudolabelling to train a better model. How would you trust the synovitis labels when most models usually get around 70-80% accuracy on the synovitis labels?",
+      "content": "<p>Thank you so much, also, im assuming that you are using pseudolabelling to train a better model. How would you trust the synovitis labels when most models usually get around 70-80% accuracy on the synovitis labels?</p>",
+      "replies": [
+       {
+        "id": 3533121,
+        "postDate": "2026-10-05T14:38:21.887Z",
+        "rawMarkdown": "Yes, it's pseudo-labelling. To be honest, I don't fully trust the synovitis labels either, and it's my weakest label as well.\n\nI train on soft probabilities rather than 0/1, so uncertain cases stay around 0.3-0.6 instead of being forced to one side. Since the metric is AUC, ranking matters more than accuracy at 0.5, and labels with ~75% accuracy can still rank reasonably well.\n\nFor effusion, the noise largely averages out and the image model ends up better than its labels. Synovitis doesn't benefit as much, so I'm still looking for ways to reduce the noise in the synovitis labels and make them more accurate.",
+        "content": "<p>Yes, it's pseudo-labelling. To be honest, I don't fully trust the synovitis labels either, and it's my weakest label as well.</p>\n<p>I train on soft probabilities rather than 0/1, so uncertain cases stay around 0.3-0.6 instead of being forced to one side. Since the metric is AUC, ranking matters more than accuracy at 0.5, and labels with ~75% accuracy can still rank reasonably well.</p>\n<p>For effusion, the noise largely averages out and the image model ends up better than its labels. Synovitis doesn't benefit as much, so I'm still looking for ways to reduce the noise in the synovitis labels and make them more accurate.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "colum2131",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+         "url": "/columbia2131",
+         "tier": "MASTER",
+         "id": 3858775,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 63,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "colum2131",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+          "url": "/columbia2131",
+          "userName": "columbia2131",
+          "tier": "MASTER",
+          "id": 3858775,
+          "profileUrl": "/columbia2131",
+          "performanceTier": "MASTER",
+          "userId": 3858775,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "OmerZalman",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/omerzalman",
+       "tier": "CONTRIBUTOR",
+       "id": 29641607,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 4704,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OmerZalman",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/omerzalman",
+        "userName": "omerzalman",
+        "tier": "CONTRIBUTOR",
+        "id": 29641607,
+        "profileUrl": "/omerzalman",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 29641607,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3533119,
+      "postDate": "2026-10-05T14:37:45.797Z",
+      "rawMarkdown": "Also, How did you get effusion accuracy so high?",
+      "content": "<p>Also, How did you get effusion accuracy so high?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "OmerZalman",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/omerzalman",
+       "tier": "CONTRIBUTOR",
+       "id": 29641607,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 4704,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OmerZalman",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/omerzalman",
+        "userName": "omerzalman",
+        "tier": "CONTRIBUTOR",
+        "id": 29641607,
+        "profileUrl": "/omerzalman",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 29641607,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "colum2131",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+     "url": "/columbia2131",
+     "tier": "MASTER",
+     "id": 3858775,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 63,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "colum2131",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+      "url": "/columbia2131",
+      "userName": "columbia2131",
+      "tier": "MASTER",
+      "id": 3858775,
+      "profileUrl": "/columbia2131",
+      "performanceTier": "MASTER",
+      "userId": 3858775,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3533086,
+   "postDate": "2026-10-05T12:49:49.683Z",
+   "rawMarkdown": "My worst labelling issues have been with synovitis and effusion. I tested few pipelines against the expert labels and have been getting around 0.7 AUC/75% accuracy no matter how hard I try. Could anyone spare some advice on how to increase AUC and accuracy?",
+   "content": "<p>My worst labelling issues have been with synovitis and effusion. I tested few pipelines against the expert labels and have been getting around 0.7 AUC/75% accuracy no matter how hard I try. Could anyone spare some advice on how to increase AUC and accuracy?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 4,
+    "canUpvote": true,
+    "totalUpvotes": 4
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4704,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "userName": "omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "profileUrl": "/omerzalman",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 29641607,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3533086,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745949,
+  "name": "Synovitis and Effusion Help",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-05T12:49:49.684633700Z",
+  "totalVotes": 4,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745949",
+  "totalMessages": 4,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "OmerZalman",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/omerzalman",
+   "tier": "CONTRIBUTOR",
+   "id": 29641607,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3533086,
+  "id": 745949,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "colum2131",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745949#3533121",
+  "lastCommentPostDate": "2026-10-05T14:38:21.886666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-05T12:49:49.684633700Z",
+  "title": "Synovitis and Effusion Help",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745949",
+  "votes": 4,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "userName": "omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "profileUrl": "/omerzalman",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 29641607,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

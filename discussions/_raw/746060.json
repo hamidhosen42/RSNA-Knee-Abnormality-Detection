@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 36083038,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Christoffer Thimsen",
+  "authorUserName": "lowasitgoes",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3533318,
+   "postDate": "2026-10-05T21:17:16.787Z",
+   "rawMarkdown": "Hi everyone,\nI'm looking for one or two teammates who want to go for the prize range here, not just a medal. We are a team of two at 0.940 on the public LB. Our models are built quite differently from the public notebooks, so a merge should add real diversity to the ensemble.\nWhat we bring:\n- Our own label tables for all 4,407 training studies, built from the reports with structured fields per finding (location, compartment, grade) and refined with nested teacher models.\n- Attention-MIL models (CoAtNet and ConvNeXt) on our own dense slice cache, a separate per-series model family, and an fp16 inference kernel with room for a large ensemble within the 9 hours.\n- My track record: 2nd of 3,575 in Playground S6E9 and 13th of 3,947 in Biohub Cell Tracking (both with teams), and currently 18th of 10,246 in Kaggriculture.\nWhat I'm looking for:\n- Someone near the top of the board, or with a strong model that is built differently from ours.\n- Real motivation to push until October 22.\n- GPU capacity we can use as a team (H100/A100 class or a multi-GPU machine), with weights and predictions shared inside the team. Right now compute is our bottleneck, not ideas.\nIf you're interested, contact me. (Discord or email).\nThanks!",
+   "content": "<p>Hi everyone,\nI'm looking for one or two teammates who want to go for the prize range here, not just a medal. We are a team of two at 0.940 on the public LB. Our models are built quite differently from the public notebooks, so a merge should add real diversity to the ensemble.\nWhat we bring:</p>\n<ul>\n<li>Our own label tables for all 4,407 training studies, built from the reports with structured fields per finding (location, compartment, grade) and refined with nested teacher models.</li>\n<li>Attention-MIL models (CoAtNet and ConvNeXt) on our own dense slice cache, a separate per-series model family, and an fp16 inference kernel with room for a large ensemble within the 9 hours.</li>\n<li>My track record: 2nd of 3,575 in Playground S6E9 and 13th of 3,947 in Biohub Cell Tracking (both with teams), and currently 18th of 10,246 in Kaggriculture.\nWhat I'm looking for:</li>\n<li>Someone near the top of the board, or with a strong model that is built differently from ours.</li>\n<li>Real motivation to push until October 22.</li>\n<li>GPU capacity we can use as a team (H100/A100 class or a multi-GPU machine), with weights and predictions shared inside the team. Right now compute is our bottleneck, not ideas.\nIf you're interested, contact me. (Discord or email).\nThanks!</li>\n</ul>",
+   "parent": {},
+   "author": {
+    "displayName": "Christoffer Thimsen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/lowasitgoes",
+    "tier": "EXPERT",
+    "id": 36083038,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -6,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2329,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Christoffer Thimsen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/lowasitgoes",
+     "userName": "lowasitgoes",
+     "tier": "EXPERT",
+     "id": 36083038,
+     "profileUrl": "/lowasitgoes",
+     "performanceTier": "EXPERT",
+     "userId": 36083038,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3533318,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 746060,
+  "name": "Looking for strong teammates with GPU capacity, aiming for the prize range",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-05T21:17:16.787366200Z",
+  "totalVotes": -6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/746060",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Christoffer Thimsen",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/lowasitgoes",
+   "tier": "EXPERT",
+   "id": 36083038,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3533318,
+  "id": 746060,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Christoffer Thimsen",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746060#3533318",
+  "lastCommentPostDate": "2026-10-05T21:17:16.786666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-05T21:17:16.787366200Z",
+  "title": "Looking for strong teammates with GPU capacity, aiming for the prize range",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746060",
+  "votes": -6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Christoffer Thimsen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/lowasitgoes",
+    "userName": "lowasitgoes",
+    "tier": "EXPERT",
+    "id": 36083038,
+    "profileUrl": "/lowasitgoes",
+    "performanceTier": "EXPERT",
+    "userId": 36083038,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "ref": "spark328/rsna-dinosaur-v5-top",
+ "version": 1,
+ "score": 0.949,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007",
+  "datasets/heliosli/rsna-knee-compact-v1"
+ ],
+ "code_sha": "615b7e7a93ff3970"
+}

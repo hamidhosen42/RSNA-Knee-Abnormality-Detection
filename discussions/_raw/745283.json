@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 33786588,
+  "authorThumbnailName": "33786588-kg.jpeg?t=2026-06-06-00-01-55",
+  "authorUserDisplayName": "Anirudh",
+  "authorUserName": "aniruduh9",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3531954,
+   "postDate": "2026-10-02T22:22:49.960Z",
+   "rawMarkdown": "Rule 6.c requires external models to be OSI-licensed without commercial restrictions. The RadImageNet ResNet-50 weights used in several public notebooks are listed as CC-BY-NC-SA-4.0 on the Kaggle dataset marwanmath/resnet-50-radimagenet-marwan, but the same file on Hugging Face (Lab-Rasool/RadImageNet) is listed as MIT. Can hosts confirm whether submissions using these weights are eligible for prizes?",
+   "content": "<p>Rule 6.c requires external models to be OSI-licensed without commercial restrictions. The RadImageNet ResNet-50 weights used in several public notebooks are listed as CC-BY-NC-SA-4.0 on the Kaggle dataset marwanmath/resnet-50-radimagenet-marwan, but the same file on Hugging Face (Lab-Rasool/RadImageNet) is listed as MIT. Can hosts confirm whether submissions using these weights are eligible for prizes?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Anirudh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33786588-kg.jpeg?t=2026-06-06-00-01-55",
+    "url": "/aniruduh9",
+    "tier": "CONTRIBUTOR",
+    "id": 33786588,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 119,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Anirudh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33786588-kg.jpeg?t=2026-06-06-00-01-55",
+     "url": "/aniruduh9",
+     "userName": "aniruduh9",
+     "tier": "CONTRIBUTOR",
+     "id": 33786588,
+     "profileUrl": "/aniruduh9",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 33786588,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3531954,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745283,
+  "name": "Title: Are RadImageNet ResNet-50 weights allowed for prize-eligible submissions?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-02T22:22:49.958817300Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745283",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Anirudh",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33786588-kg.jpeg?t=2026-06-06-00-01-55",
+   "url": "/aniruduh9",
+   "tier": "CONTRIBUTOR",
+   "id": 33786588,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3531954,
+  "id": 745283,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Anirudh",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745283#3531954",
+  "lastCommentPostDate": "2026-10-02T22:22:49.960Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-02T22:22:49.958817300Z",
+  "title": "Title: Are RadImageNet ResNet-50 weights allowed for prize-eligible submissions?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745283",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Anirudh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33786588-kg.jpeg?t=2026-06-06-00-01-55",
+    "url": "/aniruduh9",
+    "userName": "aniruduh9",
+    "tier": "CONTRIBUTOR",
+    "id": 33786588,
+    "profileUrl": "/aniruduh9",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 33786588,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

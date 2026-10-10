@@ -1,0 +1,1462 @@
+{
+ "forumTopic": {
+  "authorId": 4495635,
+  "authorThumbnailName": "4495635-kg.jpeg?t=2024-01-22-16-52-06",
+  "authorUserDisplayName": "Danial Zakaria",
+  "authorUserName": "nartaa",
+  "comments": [
+   {
+    "id": 3535081,
+    "postDate": "2026-10-08T09:34:57.393Z",
+    "rawMarkdown": "Haven't seen such detailed and useful work in a long time.",
+    "content": "<p>Haven't seen such detailed and useful work in a long time.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 121,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Myo Min Htet(wnp)🇲🇲",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+      "url": "/myominhtet",
+      "userName": "myominhtet",
+      "tier": "EXPERT",
+      "id": 4600631,
+      "profileUrl": "/myominhtet",
+      "performanceTier": "EXPERT",
+      "userId": 4600631,
+      "progressionOptOut": false
+     },
+     "intro": "Need some who can support GPU, "
+    }
+   },
+   {
+    "id": 3535050,
+    "postDate": "2026-10-08T08:40:11.277Z",
+    "rawMarkdown": "i end up using chatgpt to teach me how to download data from OAI ...i cannot imagine how long i would take without agent help ... the signup, login ... what and how to download is pretty complicated!!! Now i understand why several singapore gov projects aim to simplify data access using AI.",
+    "content": "<p>i end up using chatgpt to teach me how to download data from OAI …i cannot imagine how long i would take without agent help … the signup, login … what and how to download is pretty complicated!!! Now i understand why several singapore gov projects aim to simplify data access using AI.</p>",
+    "replies": [
+     {
+      "id": 3535123,
+      "postDate": "2026-10-08T11:05:10.233Z",
+      "rawMarkdown": "As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one",
+      "content": "<p>As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one</p>",
+      "replies": [
+       {
+        "id": 3535172,
+        "postDate": "2026-10-08T12:37:54.590Z",
+        "rawMarkdown": "Any one receiving \"403 Forbidden\" when clicking on \"Sign in\" ?",
+        "content": "<p>Any one receiving \"403 Forbidden\" when clicking on \"Sign in\" ?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Optimo",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+         "url": "/optimo",
+         "tier": "MASTER",
+         "id": 190923,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 37,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Optimo",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+          "url": "/optimo",
+          "userName": "optimo",
+          "tier": "MASTER",
+          "id": 190923,
+          "profileUrl": "/optimo",
+          "performanceTier": "MASTER",
+          "userId": 190923,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535176,
+        "postDate": "2026-10-08T12:40:24.317Z",
+        "rawMarkdown": "After some difficulties with the sign-up process, I am finally able to access it. But I am currently held up at the downloading stage, as it requires a dedicated client and further registration 🫠",
+        "content": "<p>After some difficulties with the sign-up process, I am finally able to access it. But I am currently held up at the downloading stage, as it requires a dedicated client and further registration 🫠</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Quan Vu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+         "url": "/quan0095",
+         "tier": "MASTER",
+         "id": 2832287,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 42,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Quan Vu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+          "url": "/quan0095",
+          "userName": "quan0095",
+          "tier": "MASTER",
+          "id": 2832287,
+          "profileUrl": "/quan0095",
+          "performanceTier": "MASTER",
+          "userId": 2832287,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535177,
+        "postDate": "2026-10-08T12:42:09.843Z",
+        "rawMarkdown": "~~i now get \"403 Forbidden\" after https://nda.nih.gov/api/ras/signin?   ~~\n~~Previously it was ok from Singapore.~~\n\n\nok again !!!!\ni look at the data, it  is very good and with labels.\ni think OAI changes the competition!",
+        "content": "<p>\n</p>\n<p>ok again !!!!\ni look at the data, it  is very good and with labels.\ni think OAI changes the competition!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 740,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535178,
+        "postDate": "2026-10-08T12:43:55.353Z",
+        "rawMarkdown": "I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。\n",
+        "content": "<p>I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。</p>",
+        "parent": {},
+        "author": {
+         "displayName": "xun1993",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
+         "url": "/www051586401319",
+         "tier": "EXPERT",
+         "id": 5819194,
+         "progressionOptOut": true
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 99,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "xun1993",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
+          "url": "/www051586401319",
+          "userName": "www051586401319",
+          "tier": "EXPERT",
+          "id": 5819194,
+          "profileUrl": "/www051586401319",
+          "performanceTier": "EXPERT",
+          "userId": 5819194,
+          "progressionOptOut": true
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535183,
+        "postDate": "2026-10-08T12:46:46.017Z",
+        "rawMarkdown": "1) make data package ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54970770a5aaf405b3512908cfc23301%2FSelection_5127.png?generation=1791463543543269&alt=media)\"  \n\n2) NDADownloadManager-2.5.2.AppImage\".  (there is also download using python cli : https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?)\n\n3) then ask chatgpt.",
+        "content": "<p>1) make data package <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54970770a5aaf405b3512908cfc23301%2FSelection_5127.png?generation=1791463543543269&amp;alt=media\" alt=\"\">\"  </p>\n<p>2) NDADownloadManager-2.5.2.AppImage\".  (there is also download using python cli : <a href=\"https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?\" target=\"_blank\">https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?</a>)</p>\n<p>3) then ask chatgpt.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 740,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "quan0095"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535186,
+        "postDate": "2026-10-08T12:51:54.847Z",
+        "rawMarkdown": "I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right @nartaa idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download. ",
+        "content": "<p>I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right <a href=\"/nartaa\" target=\"_blank\">@nartaa</a> idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 877,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535274,
+        "postDate": "2026-10-08T15:14:49.870Z",
+        "rawMarkdown": "@cody11null you can download the data without building your own data package using this link:\nhttps://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&type=shared_packages\n\nHonestly, I don't even remember how I (or my claude) found this link in the first place. But when I went back to download the extra 24M data, I spent ages poking around the web trying to find it again with no luck, and in the end I had to dig through my browser history to track it down instead",
+        "content": "<p><a href=\"/cody11null\" target=\"_blank\">@cody11null</a> you can download the data without building your own data package using this link:\n<a href=\"https://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&amp;type=shared_packages\" target=\"_blank\">https://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&amp;type=shared_packages</a></p>\n<p>Honestly, I don't even remember how I (or my claude) found this link in the first place. But when I went back to download the extra 24M data, I spent ages poking around the web trying to find it again with no luck, and in the end I had to dig through my browser history to track it down instead</p>",
+        "parent": {},
+        "author": {
+         "displayName": "minhtu.mt.mt",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+         "url": "/minhtu123",
+         "tier": "MASTER",
+         "id": 1023686,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 26,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "quan0095"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "minhtu.mt.mt",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+          "url": "/minhtu123",
+          "userName": "minhtu123",
+          "tier": "MASTER",
+          "id": 1023686,
+          "profileUrl": "/minhtu123",
+          "performanceTier": "MASTER",
+          "userId": 1023686,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535309,
+        "postDate": "2026-10-08T15:48:36.717Z",
+        "rawMarkdown": "Thats odd that is pulling this for me, rather than a download. And I assume all of these in full arent needed as well haha  ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13672938%2F2f5e0ee246baab89fd13de2715f92656%2FScreenshot%202026-10-08%20114751.png?generation=1791474490856795&alt=media)",
+        "content": "<p>Thats odd that is pulling this for me, rather than a download. And I assume all of these in full arent needed as well haha  <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13672938%2F2f5e0ee246baab89fd13de2715f92656%2FScreenshot%202026-10-08%20114751.png?generation=1791474490856795&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 877,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535340,
+        "postDate": "2026-10-08T16:18:19.017Z",
+        "rawMarkdown": "Ah, you should use the nda-tools, give it the ID and it will download the data packages for you",
+        "content": "<p>Ah, you should use the nda-tools, give it the ID and it will download the data packages for you</p>",
+        "parent": {},
+        "author": {
+         "displayName": "minhtu.mt.mt",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+         "url": "/minhtu123",
+         "tier": "MASTER",
+         "id": 1023686,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 26,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "minhtu.mt.mt",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+          "url": "/minhtu123",
+          "userName": "minhtu123",
+          "tier": "MASTER",
+          "id": 1023686,
+          "profileUrl": "/minhtu123",
+          "performanceTier": "MASTER",
+          "userId": 1023686,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535418,
+        "postDate": "2026-10-08T17:38:49.770Z",
+        "rawMarkdown": "It wasnt pretty but I think I got it now. Thank you!",
+        "content": "<p>It wasnt pretty but I think I got it now. Thank you!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 877,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535452,
+        "postDate": "2026-10-08T18:16:22.867Z",
+        "rawMarkdown": "if you want it to be fast:  \n1) use python command line (the gui is very slow to sync the files and create  a thread per file for 100 thousands of files?)  \n2) use --verfiy to get all file list  \n3) use python to write a list of file to download (you can skip all visualisation images ,2x2, 1x1 jpgs, xray data, ...  and just download the mri gz files)  \n4) use command line to download with input filelist flag  \n",
+        "content": "<p>if you want it to be fast:<br>\n1) use python command line (the gui is very slow to sync the files and create  a thread per file for 100 thousands of files?)<br>\n2) use --verfiy to get all file list<br>\n3) use python to write a list of file to download (you can skip all visualisation images ,2x2, 1x1 jpgs, xray data, …  and just download the mri gz files)<br>\n4) use command line to download with input filelist flag  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 740,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 877,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "FUNNY",
+        "featuredUserNames": [
+         "daveconnor",
+         "tuckerarrants"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 740,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3534591,
+    "postDate": "2026-10-07T20:34:16.957Z",
+    "rawMarkdown": "Be careful - OAI may not be an allowed external data source. I’d read the host comments about dataset accessibility and then OAI’s own rules before risking using it in model training. ",
+    "content": "<p>Be careful - OAI may not be an allowed external data source. I’d read the host comments about dataset accessibility and then OAI’s own rules before risking using it in model training. </p>",
+    "replies": [
+     {
+      "id": 3534622,
+      "postDate": "2026-10-07T21:14:29.050Z",
+      "rawMarkdown": "I checked OAI's rules, as long as I publish what's been done it's fine. Regarding the host, well they see this post now so we might get the direct answer from them.",
+      "content": "<p>I checked OAI's rules, as long as I publish what's been done it's fine. Regarding the host, well they see this post now so we might get the direct answer from them.</p>",
+      "replies": [
+       {
+        "id": 3534666,
+        "postDate": "2026-10-07T21:55:41.647Z",
+        "rawMarkdown": "How did you get access to OAI? It seems to be gated on a Login.gov account, for which one needs a US passport and a social security number. I am in the US so I do not know what this looks like for someone in another country, but could be problematic from the [hosts statement about OAI.](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495) ",
+        "content": "<p>How did you get access to OAI? It seems to be gated on a Login.gov account, for which one needs a US passport and a social security number. I am in the US so I do not know what this looks like for someone in another country, but could be problematic from the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495\" target=\"_blank\">hosts statement about OAI.</a> </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534689,
+        "postDate": "2026-10-07T22:16:15.020Z",
+        "rawMarkdown": "It doesn't require what you've stated to sign up. From OAI'S side, I didn't have any issues, and actually included what I've done as a case study on their portal, which is something they welcome.\nIf interested check out the links at the very end of this post.",
+        "content": "<p>It doesn't require what you've stated to sign up. From OAI'S side, I didn't have any issues, and actually included what I've done as a case study on their portal, which is something they welcome.\nIf interested check out the links at the very end of this post.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Danial Zakaria",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+         "url": "/nartaa",
+         "tier": "EXPERT",
+         "id": 4495635,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 728,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Danial Zakaria",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+          "url": "/nartaa",
+          "userName": "nartaa",
+          "tier": "EXPERT",
+          "id": 4495635,
+          "profileUrl": "/nartaa",
+          "performanceTier": "EXPERT",
+          "userId": 4495635,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534760,
+        "postDate": "2026-10-08T00:36:25.247Z",
+        "rawMarkdown": "You don't need any of that. Creating the login.gov account (for the purpose of getting access to this data) just requires your email id. And regarding use of the dataset, I reached out to the team at UMass and here is their response-![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3459992%2Ffd8be9724e954edfb46e07add2200ffb%2FScreenshot%202026-10-08%20110454.png?generation=1791419753969983&alt=media)",
+        "content": "<p>You don't need any of that. Creating the login.gov account (for the purpose of getting access to this data) just requires your email id. And regarding use of the dataset, I reached out to the team at UMass and here is their response-<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3459992%2Ffd8be9724e954edfb46e07add2200ffb%2FScreenshot%202026-10-08%20110454.png?generation=1791419753969983&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "Satwik",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+         "url": "/p4rallax",
+         "tier": "MASTER",
+         "id": 3459992,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 4
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 49,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "tingyi",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+          "url": "/chengtingyi",
+          "userName": "chengtingyi",
+          "tier": "CONTRIBUTOR",
+          "id": 8788200,
+          "profileUrl": "/chengtingyi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 8788200,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534774,
+        "postDate": "2026-10-08T01:05:32.333Z",
+        "rawMarkdown": "Yes, that is my mistake, unrelated usage of login.gov. I created new account with different email and got through just fine. Appreciate the correction and you sharing that email reponse. Finally a little clarity about external data. ",
+        "content": "<p>Yes, that is my mistake, unrelated usage of login.gov. I created new account with different email and got through just fine. Appreciate the correction and you sharing that email reponse. Finally a little clarity about external data. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534783,
+        "postDate": "2026-10-08T01:21:39.100Z",
+        "rawMarkdown": "No worries, I also thought the exact same as you did about the login.gov thing. On the other hand, unfortunately, the email response from UMass only confirms its usage from their end. The hosts might deem it 'not easy enough to gain access' for everyone and it still might be out. ",
+        "content": "<p>No worries, I also thought the exact same as you did about the login.gov thing. On the other hand, unfortunately, the email response from UMass only confirms its usage from their end. The hosts might deem it 'not easy enough to gain access' for everyone and it still might be out. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Satwik",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+         "url": "/p4rallax",
+         "tier": "MASTER",
+         "id": 3459992,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 49,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "tingyi",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+          "url": "/chengtingyi",
+          "userName": "chengtingyi",
+          "tier": "CONTRIBUTOR",
+          "id": 8788200,
+          "profileUrl": "/chengtingyi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 8788200,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534798,
+        "postDate": "2026-10-08T01:56:10.547Z",
+        "rawMarkdown": "Yes and it looks like NIH has [barred some countries from access](https://www.cancerimagingarchive.net/nih-controlled-data-access-policy/), including China and Russia. Not clear if that is a global rule that applies to OAI or how it is enforced. But if Kagglers in those countries can't access it, well that is obviously an issue. \n\nIf competitors in any of those countries could test their access and report results, that would be quite helpful.\n\nEdit: see [this comment](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3535226)",
+        "content": "<p>Yes and it looks like NIH has <a href=\"https://www.cancerimagingarchive.net/nih-controlled-data-access-policy/\" target=\"_blank\">barred some countries from access</a>, including China and Russia. Not clear if that is a global rule that applies to OAI or how it is enforced. But if Kagglers in those countries can't access it, well that is obviously an issue. </p>\n<p>If competitors in any of those countries could test their access and report results, that would be quite helpful.</p>\n<p>Edit: see <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3535226\" target=\"_blank\">this comment</a></p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534831,
+        "postDate": "2026-10-08T02:51:12.993Z",
+        "rawMarkdown": "I'm in China, and I previously tried to download the OAI data but failed, so using OAI external data is indeed unfair.",
+        "content": "<p>I'm in China, and I previously tried to download the OAI data but failed, so using OAI external data is indeed unfair.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "xun1993",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
+         "url": "/www051586401319",
+         "tier": "EXPERT",
+         "id": 5819194,
+         "progressionOptOut": true
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 6
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 99,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "SURPRISE",
+          "featuredUserNames": [
+           "max6296",
+           "p4rallax",
+           "tuckerarrants",
+           "mattiaangeli",
+           "proptiter",
+           "cody11null",
+           "racket529",
+           "cfs123",
+           "davigbit"
+          ],
+          "userCount": 9
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "xun1993",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
+          "url": "/www051586401319",
+          "userName": "www051586401319",
+          "tier": "EXPERT",
+          "id": 5819194,
+          "profileUrl": "/www051586401319",
+          "performanceTier": "EXPERT",
+          "userId": 5819194,
+          "progressionOptOut": true
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534833,
+        "postDate": "2026-10-08T02:56:08.280Z",
+        "rawMarkdown": "Thank you for your reply, that is helpful to keep the competition fair to all competitors. ",
+        "content": "<p>Thank you for your reply, that is helpful to keep the competition fair to all competitors. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534890,
+        "postDate": "2026-10-08T04:10:57.907Z",
+        "rawMarkdown": "I'm not totally sure how you're defining \"fair\" here, but honestly, if we wanted things to be truly fair, we'd have to ban powerful GPUs altogether and make everyone use Kaggle kernels only. And of course, that's not really practical",
+        "content": "<p>I'm not totally sure how you're defining \"fair\" here, but honestly, if we wanted things to be truly fair, we'd have to ban powerful GPUs altogether and make everyone use Kaggle kernels only. And of course, that's not really practical</p>",
+        "parent": {},
+        "author": {
+         "displayName": "minhtu.mt.mt",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+         "url": "/minhtu123",
+         "tier": "MASTER",
+         "id": 1023686,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 5
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 26,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "gingerbee3"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "minhtu.mt.mt",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+          "url": "/minhtu123",
+          "userName": "minhtu123",
+          "tier": "MASTER",
+          "id": 1023686,
+          "profileUrl": "/minhtu123",
+          "performanceTier": "MASTER",
+          "userId": 1023686,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534895,
+        "postDate": "2026-10-08T04:16:54.333Z",
+        "rawMarkdown": "\"Fair\" as defined by the hosts verbatim phrasing of \"generally accessible to all participants\" when describing allowed external data.",
+        "content": "<p>\"Fair\" as defined by the hosts verbatim phrasing of \"generally accessible to all participants\" when describing allowed external data.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 6
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 19,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3534905,
+        "postDate": "2026-10-08T04:34:11.217Z",
+        "rawMarkdown": "I really wouldnt mind kaggle getting more streamlined and clear with the rulings though. ie, comp data only or hosts can pin extra data upon suggestions if they deem it ok. Without a pin we call it banned. Having GPU in kaggle only would be super nice from a user perspective and my wallets perspective but its also pretty limiting on the projects we could work on. A massive portion of image and language models would be unable to hold a training pipeline on the older gpus kaggle instances use. Unless nearly every comp was suddenly on the 4xL4s (would still suck to train) or the H100 / RTX 6000s I think I might have seen at some point. Generally I think Kaggle is ok with this grey area because they get better models for clients all while not having the clients have to pay for it. If you look at it like education investment then its still a heck of a lot cheaper than other platforms I guess ",
+        "content": "<p>I really wouldnt mind kaggle getting more streamlined and clear with the rulings though. ie, comp data only or hosts can pin extra data upon suggestions if they deem it ok. Without a pin we call it banned. Having GPU in kaggle only would be super nice from a user perspective and my wallets perspective but its also pretty limiting on the projects we could work on. A massive portion of image and language models would be unable to hold a training pipeline on the older gpus kaggle instances use. Unless nearly every comp was suddenly on the 4xL4s (would still suck to train) or the H100 / RTX 6000s I think I might have seen at some point. Generally I think Kaggle is ok with this grey area because they get better models for clients all while not having the clients have to pay for it. If you look at it like education investment then its still a heck of a lot cheaper than other platforms I guess </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 6,
+         "canUpvote": true,
+         "totalUpvotes": 6
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 877,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535070,
+        "postDate": "2026-10-08T09:22:15.730Z",
+        "rawMarkdown": "As @tuckerarrants pointed out, what I’m interested in is fairness as defined by the competition host, not fairness in some broader sense.\n\nThis is a competition, so we have to follow the rules. The host has explicitly prohibited KneeCoT in a separate discussion, even though it was not specifically mentioned in the original rules. That’s why I’d simply like clarification on which external datasets are allowed.\n\nAs for GPU resources, there are no restrictions on them in the competition rules, so I don’t see any issue with using powerful GPUs in this context.",
+        "content": "<p>As <a href=\"/tuckerarrants\" target=\"_blank\">@tuckerarrants</a> pointed out, what I’m interested in is fairness as defined by the competition host, not fairness in some broader sense.</p>\n<p>This is a competition, so we have to follow the rules. The host has explicitly prohibited KneeCoT in a separate discussion, even though it was not specifically mentioned in the original rules. That’s why I’d simply like clarification on which external datasets are allowed.</p>\n<p>As for GPU resources, there are no restrictions on them in the competition rules, so I don’t see any issue with using powerful GPUs in this context.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "YYama",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+         "url": "/yosukeyama",
+         "tier": "MASTER",
+         "id": 2593251,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 6,
+         "canUpvote": true,
+         "totalUpvotes": 7
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 10,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "tuckerarrants",
+           "shin9915",
+           "cfs123"
+          ],
+          "userCount": 3
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "YYama",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+          "url": "/yosukeyama",
+          "userName": "yosukeyama",
+          "tier": "MASTER",
+          "id": 2593251,
+          "profileUrl": "/yosukeyama",
+          "performanceTier": "MASTER",
+          "userId": 2593251,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535454,
+        "postDate": "2026-10-08T18:17:54.353Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Danial Zakaria",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+       "url": "/nartaa",
+       "tier": "EXPERT",
+       "id": 4495635,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 728,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Danial Zakaria",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+        "url": "/nartaa",
+        "userName": "nartaa",
+        "tier": "EXPERT",
+        "id": 4495635,
+        "profileUrl": "/nartaa",
+        "performanceTier": "EXPERT",
+        "userId": 4495635,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3534701,
+      "postDate": "2026-10-07T22:26:44.713Z",
+      "rawMarkdown": "Cool work and glad it was shared but I do kinda wish we just made it simple and said competition data only rather than having this weird gray area. I have been staying comp only and only just now making progress ",
+      "content": "<p>Cool work and glad it was shared but I do kinda wish we just made it simple and said competition data only rather than having this weird gray area. I have been staying comp only and only just now making progress </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 6,
+       "canUpvote": true,
+       "totalUpvotes": 6
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 877,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "tuckerarrants"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 7
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tony Li",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+      "url": "/tonylica",
+      "userName": "tonylica",
+      "tier": "MASTER",
+      "id": 22938014,
+      "profileUrl": "/tonylica",
+      "performanceTier": "MASTER",
+      "userId": 22938014,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3534842,
+    "postDate": "2026-10-08T03:15:34.613Z",
+    "rawMarkdown": "great job for the work, still hoping for the best, my journey is in the same way but without any OAI, the high risk and low reward",
+    "content": "<p>great job for the work, still hoping for the best, my journey is in the same way but without any OAI, the high risk and low reward</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Cà Rốt Production",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+     "url": "/crtproduction",
+     "tier": "CONTRIBUTOR",
+     "id": 20960131,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 118,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cà Rốt Production",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+      "url": "/crtproduction",
+      "userName": "crtproduction",
+      "tier": "CONTRIBUTOR",
+      "id": 20960131,
+      "profileUrl": "/crtproduction",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 20960131,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535771,
+    "postDate": "2026-10-09T07:33:46.803Z",
+    "rawMarkdown": "Thanks for the detailed write-up and for releasing the weights and notebooks. The anatomical mirroring explanation and the “what did not help” table were especially useful.",
+    "content": "<p>Thanks for the detailed write-up and for releasing the weights and notebooks. The anatomical mirroring explanation and the “what did not help” table were especially useful.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Eesh saxena",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+     "url": "/eeshsaxena",
+     "tier": "CONTRIBUTOR",
+     "id": 18231426,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 169,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Eesh saxena",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+      "url": "/eeshsaxena",
+      "userName": "eeshsaxena",
+      "tier": "CONTRIBUTOR",
+      "id": 18231426,
+      "profileUrl": "/eeshsaxena",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18231426,
+      "progressionOptOut": false
+     },
+     "intro": "Hii"
+    }
+   },
+   {
+    "id": 3534698,
+    "postDate": "2026-10-07T22:24:01.300Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3534536,
+   "postDate": "2026-10-07T19:34:51.060Z",
+   "rawMarkdown": "Our best single-model submission scores **0.949 public AUC**. We are sharing the accuracy recipe, our smaller 0.945 model for the efficiency track, and several changes that did not help.\n\nThe accuracy result uses one CoAtNet checkpoint trained at 384 pixels. At inference we take a native 320-pixel center crop and average probabilities from the original view and an anatomical left/right mirror. It is one learned model evaluated twice. The checkpoint itself averages three selected epochs from one training run, called SWA in our code.\n\n## The score history\n\nThese are ordinary, full twelve-finding public leaderboard scores. Rows describe successive pipeline configurations; their differences are not all isolated causal effects.\n\n| Configuration | Public AUC | Change |\n|---|---:|---:|\n| Our all-data CoAtNet, 80 slices and 78 windows | 0.939 | Starting point |\n| 96 slices, native 384-pixel cache, 94 windows | 0.940 | +0.001 |\n| Blend + JEV labels | 0.942 | +0.002 |\n| Smaller 224-pixel crop model with epoch weight averaging | 0.940 | −0.002 |\n| Add external OAI knee examples with masked labels | 0.945 | +0.005 |\n| 384-pixel, full-field external-data recipe | 0.948 | +0.003 |\n| Same weights, native 320-pixel inference crop | 0.948 | 0.000 |\n| Same weights and crop, anatomical mirror probability averaging | **0.949** | **+0.001** |\n\nThe first density change also changed cached resolution and window count. Adding external examples increased training rows and optimizer updates, and the serving precision path changed. The 224-to-384 step also changed training crop geometry and the pretrained architecture variant. Those rows should be read as recipe comparisons rather than additive gains from individual factors.\n\n## Training and labels\n\nThe model is a timm CoAtNet backbone with finding-specific multiple-instance attention pooling. We trained on 4,349 report-labeled competition studies; the 58 expert-labeled studies were excluded from training but reused for selection. The weak targets combine our report-derived soft labels with the public label sources credited below. In the external-data recipe, 2,399 OAI knees brought the training set to 6,748 rows. PF OA, Lateral OA and Synovitis received external supervision; unavailable finding cells were masked rather than treated as negatives. Positive class weights remained based on RSNA labels.\n\nBoth released candidates use seed 42, 16 epochs, backbone learning rate 4.01e−5, head learning rate 0.00195 and weight decay 0.0588. Training used 12 windows per study, batch size 1 and gradient accumulation over 16 studies; gold evaluation used 24 windows. The smaller model averages epochs 15, 13 and 12; the accuracy model averages epochs 14, 11 and 12. These selected averages are called SWA in our code. Adding external examples increased the scheduled optimizer updates from 4,336 to 6,736, so that comparison is not compute-matched.\n\n## The final inference recipe\n\nEach study has 96 preprocessed slices across five sagittal, coronal, and axial series slots. We evaluate 94 three-slice windows, process them in chunks of 16, and use finding-specific attention over the complete window bag.\n\nFor the accuracy model, native 384×384 windows are cropped to pixels `[32:352, 32:352]`. No resize is applied. Sagittal left/right mirroring reverses the three slice channels; coronal and axial mirroring flips image width. We use the center slice to determine the window plane and apply the transform before normalization. We average the two sigmoid probability vectors equally. The existing final per-finding percentile ranking preserves their ordering.\n\nThe smaller model uses a 307-pixel center crop resized to 224 pixels, the same 94-window policy, FP16 autocast, and one view. It scores 0.945. Recorded submit-to-score turnaround was about 7.2 minutes for that entry and 26.1 minutes for the mirrored accuracy entry. These include queueing and orchestration; they are **not official inference runtimes or efficiency ranks**.\n\n## What did not help\n\n| Tested change | Public AUC, reference → result |\n|---|---:|\n| Older model: 94 windows reduced to 24 | 0.940 → 0.934 |\n| Older model: width-flip TTA across every imaging plane | 0.940 → 0.939 |\n| Current weights: native crop reduced from 320 to 304 pixels | 0.948 → 0.947 |\n| Current weights: native crop reduced from 320 to 288 pixels | 0.948 → 0.946 |\n| Epoch 14 instead of averaged weights, same 320-pixel inference | 0.948 → 0.947 |\n| Fresh training with corrected batch-normalization checkpoint replay | 0.948 → 0.944 |\n| Fresh native 320-pixel crop training, anatomical mirror inference | 0.949 → 0.946 |\n\nThe all-plane width flip is different from anatomical mirroring, and it was tested on an older checkpoint. Its failure does not establish a controlled comparison between the mirror implementations. The new crop-trained model also failed to replace the incumbent despite encouraging gold diagnostics.\n\nOur 58 labeled studies were reused for checkpoint selection and development. They are useful diagnostics, not independent cross-validation. For example, epoch 14 improved gold AUC while losing on the public board. Rounded public-score differences, especially +0.001, do not establish statistical significance or a private-test gain.\n\n## Credits and release references\n\nThanks to [dreaddevelopment for the public Raptor CoAtNet/MIL recipe and baseline weights](https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-widedense). That public checkpoint scored 0.924 in our baseline read; it is context, rather than a controlled starting point for the table. Our selected checkpoints were retrained. The public weak-label contributions include [stevenleehans](https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels), [pilkwang](https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels), and [riadmohamed42's JEV labels and verification](https://www.kaggle.com/code/riadmohamed42/jev-knee-labels-verification). We thank RSNA and the competition data contributors.\n\nReproducibility notebooks: [accuracy, 0.949](https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror) and [efficiency, 0.945](https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop). The [selected learned weights](https://www.kaggle.com/datasets/nartaa/rsna-knee-publication-swa-weights-20261007) are a separate minimal dependency. Both notebooks preserve the exact scored scientific inference source and checkpoint hashes, include hardware/environment requirements, and are saved statically without running inference. No OAI images, identifiers, records, raw reports, subject-level labels or predictions are distributed.\n\nBoth models used the same 2,399 baseline OAI knees; the unsuccessful 12-month arm is excluded from these release models. The public Study describes aggregate methods/results while its exact-input linkage manifest remains restricted to qualified researchers.\n\nData and/or research tools used in the preparation of this manuscript were obtained and analyzed from the controlled access datasets distributed from the Osteoarthritis Initiative (OAI), a data repository housed within the NIMH Data Archive (NDA). OAI is a collaborative informatics system created by the National Institute of Mental Health and the National Institute of Arthritis, Musculoskeletal and Skin Diseases (NIAMS) to provide a worldwide resource to quicken the pace of biomarker identification, scientific investigation and OA drug development. Dataset identifier(s): 10.15154/0hcg-f676.\n\n[Shared NDA Study](https://nda.nih.gov/study.html?id=3407) · [DOI: 10.15154/0hcg-f676](https://doi.org/10.15154/0hcg-f676). Official acknowledgement source: [NDA manuscript preparation](https://nda.nih.gov/nda/manuscript-preparation).\n\nWhat worked for your models, and what looked promising locally but failed on the leaderboard? Please share useful negative results as well as improvements—especially experiences with weak labels, crop geometry, and plane-aware augmentation.",
+   "content": "<p>Our best single-model submission scores <strong>0.949 public AUC</strong>. We are sharing the accuracy recipe, our smaller 0.945 model for the efficiency track, and several changes that did not help.</p>\n<p>The accuracy result uses one CoAtNet checkpoint trained at 384 pixels. At inference we take a native 320-pixel center crop and average probabilities from the original view and an anatomical left/right mirror. It is one learned model evaluated twice. The checkpoint itself averages three selected epochs from one training run, called SWA in our code.</p>\n<h2>The score history</h2>\n<p>These are ordinary, full twelve-finding public leaderboard scores. Rows describe successive pipeline configurations; their differences are not all isolated causal effects.</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Public AUC</th>\n<th>Change</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Our all-data CoAtNet, 80 slices and 78 windows</td>\n<td>0.939</td>\n<td>Starting point</td>\n</tr>\n<tr>\n<td>96 slices, native 384-pixel cache, 94 windows</td>\n<td>0.940</td>\n<td>+0.001</td>\n</tr>\n<tr>\n<td>Blend + JEV labels</td>\n<td>0.942</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td>Smaller 224-pixel crop model with epoch weight averaging</td>\n<td>0.940</td>\n<td>−0.002</td>\n</tr>\n<tr>\n<td>Add external OAI knee examples with masked labels</td>\n<td>0.945</td>\n<td>+0.005</td>\n</tr>\n<tr>\n<td>384-pixel, full-field external-data recipe</td>\n<td>0.948</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Same weights, native 320-pixel inference crop</td>\n<td>0.948</td>\n<td>0.000</td>\n</tr>\n<tr>\n<td>Same weights and crop, anatomical mirror probability averaging</td>\n<td><strong>0.949</strong></td>\n<td><strong>+0.001</strong></td>\n</tr>\n</tbody>\n</table>\n<p>The first density change also changed cached resolution and window count. Adding external examples increased training rows and optimizer updates, and the serving precision path changed. The 224-to-384 step also changed training crop geometry and the pretrained architecture variant. Those rows should be read as recipe comparisons rather than additive gains from individual factors.</p>\n<h2>Training and labels</h2>\n<p>The model is a timm CoAtNet backbone with finding-specific multiple-instance attention pooling. We trained on 4,349 report-labeled competition studies; the 58 expert-labeled studies were excluded from training but reused for selection. The weak targets combine our report-derived soft labels with the public label sources credited below. In the external-data recipe, 2,399 OAI knees brought the training set to 6,748 rows. PF OA, Lateral OA and Synovitis received external supervision; unavailable finding cells were masked rather than treated as negatives. Positive class weights remained based on RSNA labels.</p>\n<p>Both released candidates use seed 42, 16 epochs, backbone learning rate 4.01e−5, head learning rate 0.00195 and weight decay 0.0588. Training used 12 windows per study, batch size 1 and gradient accumulation over 16 studies; gold evaluation used 24 windows. The smaller model averages epochs 15, 13 and 12; the accuracy model averages epochs 14, 11 and 12. These selected averages are called SWA in our code. Adding external examples increased the scheduled optimizer updates from 4,336 to 6,736, so that comparison is not compute-matched.</p>\n<h2>The final inference recipe</h2>\n<p>Each study has 96 preprocessed slices across five sagittal, coronal, and axial series slots. We evaluate 94 three-slice windows, process them in chunks of 16, and use finding-specific attention over the complete window bag.</p>\n<p>For the accuracy model, native 384×384 windows are cropped to pixels <code>[32:352, 32:352]</code>. No resize is applied. Sagittal left/right mirroring reverses the three slice channels; coronal and axial mirroring flips image width. We use the center slice to determine the window plane and apply the transform before normalization. We average the two sigmoid probability vectors equally. The existing final per-finding percentile ranking preserves their ordering.</p>\n<p>The smaller model uses a 307-pixel center crop resized to 224 pixels, the same 94-window policy, FP16 autocast, and one view. It scores 0.945. Recorded submit-to-score turnaround was about 7.2 minutes for that entry and 26.1 minutes for the mirrored accuracy entry. These include queueing and orchestration; they are <strong>not official inference runtimes or efficiency ranks</strong>.</p>\n<h2>What did not help</h2>\n<table>\n<thead>\n<tr>\n<th>Tested change</th>\n<th>Public AUC, reference → result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Older model: 94 windows reduced to 24</td>\n<td>0.940 → 0.934</td>\n</tr>\n<tr>\n<td>Older model: width-flip TTA across every imaging plane</td>\n<td>0.940 → 0.939</td>\n</tr>\n<tr>\n<td>Current weights: native crop reduced from 320 to 304 pixels</td>\n<td>0.948 → 0.947</td>\n</tr>\n<tr>\n<td>Current weights: native crop reduced from 320 to 288 pixels</td>\n<td>0.948 → 0.946</td>\n</tr>\n<tr>\n<td>Epoch 14 instead of averaged weights, same 320-pixel inference</td>\n<td>0.948 → 0.947</td>\n</tr>\n<tr>\n<td>Fresh training with corrected batch-normalization checkpoint replay</td>\n<td>0.948 → 0.944</td>\n</tr>\n<tr>\n<td>Fresh native 320-pixel crop training, anatomical mirror inference</td>\n<td>0.949 → 0.946</td>\n</tr>\n</tbody>\n</table>\n<p>The all-plane width flip is different from anatomical mirroring, and it was tested on an older checkpoint. Its failure does not establish a controlled comparison between the mirror implementations. The new crop-trained model also failed to replace the incumbent despite encouraging gold diagnostics.</p>\n<p>Our 58 labeled studies were reused for checkpoint selection and development. They are useful diagnostics, not independent cross-validation. For example, epoch 14 improved gold AUC while losing on the public board. Rounded public-score differences, especially +0.001, do not establish statistical significance or a private-test gain.</p>\n<h2>Credits and release references</h2>\n<p>Thanks to <a href=\"https://www.kaggle.com/datasets/dreaddevelopment/raptor-knee-widedense\" target=\"_blank\">dreaddevelopment for the public Raptor CoAtNet/MIL recipe and baseline weights</a>. That public checkpoint scored 0.924 in our baseline read; it is context, rather than a controlled starting point for the table. Our selected checkpoints were retrained. The public weak-label contributions include <a href=\"https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels\" target=\"_blank\">stevenleehans</a>, <a href=\"https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels\" target=\"_blank\">pilkwang</a>, and <a href=\"https://www.kaggle.com/code/riadmohamed42/jev-knee-labels-verification\" target=\"_blank\">riadmohamed42's JEV labels and verification</a>. We thank RSNA and the competition data contributors.</p>\n<p>Reproducibility notebooks: <a href=\"https://www.kaggle.com/code/nartaa/rsna-knee-0949-anatomical-mirror\" target=\"_blank\">accuracy, 0.949</a> and <a href=\"https://www.kaggle.com/code/nartaa/rsna-knee-0945-efficient-224crop\" target=\"_blank\">efficiency, 0.945</a>. The <a href=\"https://www.kaggle.com/datasets/nartaa/rsna-knee-publication-swa-weights-20261007\" target=\"_blank\">selected learned weights</a> are a separate minimal dependency. Both notebooks preserve the exact scored scientific inference source and checkpoint hashes, include hardware/environment requirements, and are saved statically without running inference. No OAI images, identifiers, records, raw reports, subject-level labels or predictions are distributed.</p>\n<p>Both models used the same 2,399 baseline OAI knees; the unsuccessful 12-month arm is excluded from these release models. The public Study describes aggregate methods/results while its exact-input linkage manifest remains restricted to qualified researchers.</p>\n<p>Data and/or research tools used in the preparation of this manuscript were obtained and analyzed from the controlled access datasets distributed from the Osteoarthritis Initiative (OAI), a data repository housed within the NIMH Data Archive (NDA). OAI is a collaborative informatics system created by the National Institute of Mental Health and the National Institute of Arthritis, Musculoskeletal and Skin Diseases (NIAMS) to provide a worldwide resource to quicken the pace of biomarker identification, scientific investigation and OA drug development. Dataset identifier(s): 10.15154/0hcg-f676.</p>\n<p><a href=\"https://nda.nih.gov/study.html?id=3407\" target=\"_blank\">Shared NDA Study</a> · <a href=\"https://doi.org/10.15154/0hcg-f676\" target=\"_blank\">DOI: 10.15154/0hcg-f676</a>. Official acknowledgement source: <a href=\"https://nda.nih.gov/nda/manuscript-preparation\" target=\"_blank\">NDA manuscript preparation</a>.</p>\n<p>What worked for your models, and what looked promising locally but failed on the leaderboard? Please share useful negative results as well as improvements—especially experiences with weak labels, crop geometry, and plane-aware augmentation.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Danial Zakaria",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+    "url": "/nartaa",
+    "tier": "EXPERT",
+    "id": 4495635,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 22,
+    "canUpvote": true,
+    "totalUpvotes": 25
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 728,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Danial Zakaria",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+     "url": "/nartaa",
+     "userName": "nartaa",
+     "tier": "EXPERT",
+     "id": 4495635,
+     "profileUrl": "/nartaa",
+     "performanceTier": "EXPERT",
+     "userId": 4495635,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3534536,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 746792,
+  "name": "Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-07T19:34:51.060872100Z",
+  "totalVotes": 22,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/746792",
+  "totalMessages": 33,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Danial Zakaria",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+   "url": "/nartaa",
+   "tier": "EXPERT",
+   "id": 4495635,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 33,
+  "firstForumMessageId": 3534536,
+  "id": 746792,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Eesh saxena",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746792#3535771",
+  "lastCommentPostDate": "2026-10-09T07:33:46.803333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-07T19:34:51.060872100Z",
+  "title": "Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746792",
+  "votes": 22,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Danial Zakaria",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+    "url": "/nartaa",
+    "userName": "nartaa",
+    "tier": "EXPERT",
+    "id": 4495635,
+    "profileUrl": "/nartaa",
+    "performanceTier": "EXPERT",
+    "userId": 4495635,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

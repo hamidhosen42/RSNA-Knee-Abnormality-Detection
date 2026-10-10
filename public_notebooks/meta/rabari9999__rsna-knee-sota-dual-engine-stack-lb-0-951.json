@@ -1,0 +1,11 @@
+{
+ "ref": "rabari9999/rsna-knee-sota-dual-engine-stack-lb-0-951",
+ "version": 2,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "8fa069fb9b3ce65f"
+}

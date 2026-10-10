@@ -1,0 +1,137 @@
+{
+ "forumTopic": {
+  "authorId": 29641607,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "OmerZalman",
+  "authorUserName": "omerzalman",
+  "comments": [
+   {
+    "id": 3532982,
+    "postDate": "2026-10-05T07:50:28.760Z",
+    "rawMarkdown": "Take the reports give them to an LLM to produce soft labels with different confidence ranges for each category. And ask it to give you the probability of each category.\nYou should get about 0.9 using those labels, still not leaderboard material but you have not seen the images yet. If you combine both to refine the labels or just use them as soft targets you should be able to go past the soft labels ceiling.",
+    "content": "<p>Take the reports give them to an LLM to produce soft labels with different confidence ranges for each category. And ask it to give you the probability of each category.\nYou should get about 0.9 using those labels, still not leaderboard material but you have not seen the images yet. If you combine both to refine the labels or just use them as soft targets you should be able to go past the soft labels ceiling.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Sotarriva Alvarez Isai Roberto",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+     "url": "/irsotarriva",
+     "tier": "CONTRIBUTOR",
+     "id": 2953982,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1006,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Sotarriva Alvarez Isai Roberto",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+      "url": "/irsotarriva",
+      "userName": "irsotarriva",
+      "tier": "CONTRIBUTOR",
+      "id": 2953982,
+      "profileUrl": "/irsotarriva",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2953982,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532561,
+   "postDate": "2026-10-04T01:00:34.403Z",
+   "rawMarkdown": "How did you guys label your data for the competition?",
+   "content": "<p>How did you guys label your data for the competition?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4718,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "userName": "omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "profileUrl": "/omerzalman",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 29641607,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532561,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745730,
+  "name": "Labelling?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-04T01:00:34.402553100Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745730",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "OmerZalman",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/omerzalman",
+   "tier": "CONTRIBUTOR",
+   "id": 29641607,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3532561,
+  "id": 745730,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Sotarriva Alvarez Isai Roberto",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745730#3532982",
+  "lastCommentPostDate": "2026-10-05T07:50:28.760Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-04T01:00:34.402553100Z",
+  "title": "Labelling?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745730",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "userName": "omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "profileUrl": "/omerzalman",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 29641607,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

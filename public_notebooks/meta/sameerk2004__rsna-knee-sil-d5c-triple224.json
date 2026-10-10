@@ -1,0 +1,11 @@
+{
+ "ref": "sameerk2004/rsna-knee-sil-d5c-triple224",
+ "version": 1,
+ "score": 0.95,
+ "sources": [
+  "rsna-knee-abnormality-detection",
+  "rsna-knee-2-5d-convnext-reader",
+  "rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "d7856d5f5ded9823"
+}

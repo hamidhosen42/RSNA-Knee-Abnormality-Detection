@@ -1,0 +1,165 @@
+{
+ "forumTopic": {
+  "authorId": 2779658,
+  "authorThumbnailName": "2779658-gp.jpg",
+  "authorUserDisplayName": "Rachit Yadav",
+  "authorUserName": "rachiteagles",
+  "comments": [
+   {
+    "id": 3532607,
+    "postDate": "2026-10-04T06:47:30.410Z",
+    "rawMarkdown": "Labels from the reports cap at around 0.9. To get past that the biggest improvements for me came from:\n a) ensembles of models\n b) data augmentation (flipping, zoom, etc).\n\nIf you check the code section there are many posts about how to get to the 0.943 score that is so common on the leaderboard, you could start by checking what they did.\n\nHope it helps you. Regards",
+    "content": "<p>Labels from the reports cap at around 0.9. To get past that the biggest improvements for me came from:\n a) ensembles of models\n b) data augmentation (flipping, zoom, etc).</p>\n<p>If you check the code section there are many posts about how to get to the 0.943 score that is so common on the leaderboard, you could start by checking what they did.</p>\n<p>Hope it helps you. Regards</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Sotarriva Alvarez Isai Roberto",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+     "url": "/irsotarriva",
+     "tier": "CONTRIBUTOR",
+     "id": 2953982,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 975,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Sotarriva Alvarez Isai Roberto",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+      "url": "/irsotarriva",
+      "userName": "irsotarriva",
+      "tier": "CONTRIBUTOR",
+      "id": 2953982,
+      "profileUrl": "/irsotarriva",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2953982,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532663,
+    "postDate": "2026-10-04T11:00:49.967Z",
+    "rawMarkdown": "There is small train dataset, or big and complex dataset? How many data sources? It there domain shift presented in test and train?",
+    "content": "<p>There is small train dataset, or big and complex dataset? How many data sources? It there domain shift presented in test and train?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "ZavodRobotov",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+     "url": "/zavodrobotov",
+     "tier": "EXPERT",
+     "id": 513081,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532317,
+   "postDate": "2026-10-03T09:41:23.387Z",
+   "rawMarkdown": "Hi everyone, I'm training DINOv2 models using labels derived from the reports and aiming for a score above 0.90. Ignoring uncertain labels hasn't helped in my local tests.\n\nWhat changes helped you most: better labels, MRI slice selection, or training settings? Any useful public notebooks or discussions would be appreciated. Thanks!",
+   "content": "<p>Hi everyone, I'm training DINOv2 models using labels derived from the reports and aiming for a score above 0.90. Ignoring uncertain labels hasn't helped in my local tests.</p>\n<p>What changes helped you most: better labels, MRI slice selection, or training settings? Any useful public notebooks or discussions would be appreciated. Thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Rachit Yadav",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2779658-gp.jpg",
+    "url": "/rachiteagles",
+    "tier": "CONTRIBUTOR",
+    "id": 2779658,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1645,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Rachit Yadav",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2779658-gp.jpg",
+     "url": "/rachiteagles",
+     "userName": "rachiteagles",
+     "tier": "CONTRIBUTOR",
+     "id": 2779658,
+     "profileUrl": "/rachiteagles",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 2779658,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532317,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745576,
+  "name": "Tips for improving AUC above 0.90?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-03T09:41:23.386529400Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745576",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Rachit Yadav",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2779658-gp.jpg",
+   "url": "/rachiteagles",
+   "tier": "CONTRIBUTOR",
+   "id": 2779658,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3532317,
+  "id": 745576,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "ZavodRobotov",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745576#3532663",
+  "lastCommentPostDate": "2026-10-04T11:00:49.966666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-03T09:41:23.386529400Z",
+  "title": "Tips for improving AUC above 0.90?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745576",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Rachit Yadav",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2779658-gp.jpg",
+    "url": "/rachiteagles",
+    "userName": "rachiteagles",
+    "tier": "CONTRIBUTOR",
+    "id": 2779658,
+    "profileUrl": "/rachiteagles",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 2779658,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,10 +1,10 @@
 # Question about Winner License and Apache 2.0 Pretrained Models
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905
-- **Author:** **owaowata** (@owaowata, Expert) · _topic author_ · 2026-09-07 05:26 UTC · ▲1 · LB rank 1919
-- **Topic votes:** 1 · **Comments/replies:** 0 · **Pinned:** no
-- **Last comment:** 2026-09-07 05:26 UTC by owaowata
-- **Cloned:** 2026-10-01 19:24 UTC (topic id 739905, raw JSON `_raw/739905.json`)
+- **Author:** **owaowata** (@owaowata, Expert) · _topic author_ · 2026-09-07 05:26 UTC · ▲1 · LB rank 3034
+- **Topic votes:** 1 · **Comments/replies:** 1 · **Pinned:** no
+- **Last comment:** 2026-10-08 02:43 UTC by Akhil
+- **Cloned:** 2026-10-09 09:46 UTC (topic id 739905, raw JSON `_raw/739905.json`)
 
 ---
 
@@ -24,6 +24,10 @@ Thanks for the clarification!
 
 ---
 
-## Comments (0, threaded, oldest first)
+## Comments (1, threaded, oldest first)
 
-_No comments._
+### [1] Akhil
+
+**Akhil** (@akhils009, Contributor) · 2026-10-08 02:43 UTC
+
+Hello competition hosts, could you please clarify the winner-license requirement raised above? The rules specify CC BY-NC 4.0, but Section 2.5 also describes an OSI-approved license that does not limit commercial use. Which requirement governs the original solution code and trained model weights? Please also confirm whether publicly available Apache-2.0 pretrained weights may be fine-tuned, with their original license and notices preserved, and which license should cover the resulting weights. An official clarification would help us choose compliant dependencies and plan the required release. Thank you.

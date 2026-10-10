@@ -6,10 +6,10 @@
   "authorUserName": "shals14",
   "comments": [
    {
-    "id": 3529608,
-    "postDate": "2026-09-28T16:12:51.007Z",
-    "rawMarkdown": "Adding a closely related case, since it changes how a solution is built.\n\nKnowledge distillation: a team runs publicly shared weights (trained on this competition's data by other participants, released in public Kaggle datasets and notebooks under Apache 2.0) only offline, to produce soft labels on the training set. It then trains its own smaller model on those soft labels. The submitted notebook contains only the team's own model.\n\n1. Is that allowed for prize eligibility?\n2. For Winner's Obligations (2.8), is it enough to deliver our distillation training code, the teacher inference code with links to the public teacher weights, and our own weights? Or would the teachers' original training code also be required?\n3. Related and still open in https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905 : which winner licence applies to such weights, CC BY-NC 4.0 or an OSI-approved licence that does not limit commercial use?\n\nThank you.",
-    "content": "<p>Adding a closely related case, since it changes how a solution is built.</p>\n<p>Knowledge distillation: a team runs publicly shared weights (trained on this competition's data by other participants, released in public Kaggle datasets and notebooks under Apache 2.0) only offline, to produce soft labels on the training set. It then trains its own smaller model on those soft labels. The submitted notebook contains only the team's own model.</p>\n<ol>\n<li>Is that allowed for prize eligibility?</li>\n<li>For Winner's Obligations (2.8), is it enough to deliver our distillation training code, the teacher inference code with links to the public teacher weights, and our own weights? Or would the teachers' original training code also be required?</li>\n<li>Related and still open in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905</a> : which winner licence applies to such weights, CC BY-NC 4.0 or an OSI-approved licence that does not limit commercial use?</li>\n</ol>\n<p>Thank you.</p>",
+    "id": 3531970,
+    "postDate": "2026-10-02T23:23:57.887Z",
+    "rawMarkdown": "Correction to my comment above: it described distillation into a smaller model of our own. Our submissions do not do that, so here is the accurate case.\n\nOur model is a fine-tuned public checkpoint: the Repair-v1 e12 CoAtNet weights in mattiaangeli/rsna-knee-coatnet-d4-depthzone-swa3-b2 (CC0-1.0; my earlier comment said Apache 2.0, the dataset page states CC0-1.0), which another participant trained on this competition's training data. We fine-tune those weights on the training studies, with soft labels from a public notebook run offline on the training set plus labels extracted from the reports. The submitted notebook runs only our fine-tuned weights, through that dataset's public inference code, adapted to our reduced input.\n\nFor Winner's Obligations (2.8): is it enough to release our fine-tuning code, our weights, and links to the public base weights and inference code? Or is the training code of the base weights also required? We do not have it.\n\nThe licence question for such weights stays as asked in /discussion/739905. Thank you.",
+    "content": "<p>Correction to my comment above: it described distillation into a smaller model of our own. Our submissions do not do that, so here is the accurate case.</p>\n<p>Our model is a fine-tuned public checkpoint: the Repair-v1 e12 CoAtNet weights in mattiaangeli/rsna-knee-coatnet-d4-depthzone-swa3-b2 (CC0-1.0; my earlier comment said Apache 2.0, the dataset page states CC0-1.0), which another participant trained on this competition's training data. We fine-tune those weights on the training studies, with soft labels from a public notebook run offline on the training set plus labels extracted from the reports. The submitted notebook runs only our fine-tuned weights, through that dataset's public inference code, adapted to our reduced input.</p>\n<p>For Winner's Obligations (2.8): is it enough to release our fine-tuning code, our weights, and links to the public base weights and inference code? Or is the training code of the base weights also required? We do not have it.</p>\n<p>The licence question for such weights stays as asked in /discussion/739905. Thank you.</p>",
     "parent": {},
     "author": {
      "displayName": "Lutfiya",
@@ -25,7 +25,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2271,
+    "competitionRanking": 1567,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -39,6 +39,83 @@
       "profileUrl": "/chrisstevenmueller",
       "performanceTier": "CONTRIBUTOR",
       "userId": 30636212,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529608,
+    "postDate": "2026-09-28T16:12:51.007Z",
+    "rawMarkdown": "Adding a closely related case, since it changes how a solution is built.\n\nKnowledge distillation: a team runs publicly shared weights (trained on this competition's data by other participants, released in public Kaggle datasets and notebooks under Apache 2.0) only offline, to produce soft labels on the training set. It then trains its own smaller model on those soft labels. The submitted notebook contains only the team's own model.\n\n1. Is that allowed for prize eligibility?\n2. For Winner's Obligations (2.8), is it enough to deliver our distillation training code, the teacher inference code with links to the public teacher weights, and our own weights? Or would the teachers' original training code also be required?\n3. Related and still open in https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905 : which winner licence applies to such weights, CC BY-NC 4.0 or an OSI-approved licence that does not limit commercial use?\n\nThank you.",
+    "content": "<p>Adding a closely related case, since it changes how a solution is built.</p>\n<p>Knowledge distillation: a team runs publicly shared weights (trained on this competition's data by other participants, released in public Kaggle datasets and notebooks under Apache 2.0) only offline, to produce soft labels on the training set. It then trains its own smaller model on those soft labels. The submitted notebook contains only the team's own model.</p>\n<ol>\n<li>Is that allowed for prize eligibility?</li>\n<li>For Winner's Obligations (2.8), is it enough to deliver our distillation training code, the teacher inference code with links to the public teacher weights, and our own weights? Or would the teachers' original training code also be required?</li>\n<li>Related and still open in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/739905</a> : which winner licence applies to such weights, CC BY-NC 4.0 or an OSI-approved licence that does not limit commercial use?</li>\n</ol>\n<p>Thank you.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Lutfiya",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25081002-kg.jpeg?t=2026-09-26-23-13-27",
+     "url": "/lutfiya",
+     "tier": "CONTRIBUTOR",
+     "id": 25081002,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -2,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1567,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Chris-Steven Müller (Chris-Steven)",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30636212-gr.jpg",
+      "url": "/chrisstevenmueller",
+      "userName": "chrisstevenmueller",
+      "tier": "CONTRIBUTOR",
+      "id": 30636212,
+      "profileUrl": "/chrisstevenmueller",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 30636212,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532986,
+    "postDate": "2026-10-05T08:03:22.737Z",
+    "rawMarkdown": "+1, a host answer here would decide which final submissions teams can safely select before the deadline. One point not yet covered above: for a submission that ensembles publicly released checkpoints trained on the competition data by other participants (used unmodified, linked as public datasets), would providing our own training code, the full inference notebook and links to those public datasets satisfy Section 2.8 for the third-party components? And is the answer the same for the Leaderboard prizes and the Efficiency prizes? A yes/no would be very helpful. Thank you.",
+    "content": "<p>+1, a host answer here would decide which final submissions teams can safely select before the deadline. One point not yet covered above: for a submission that ensembles publicly released checkpoints trained on the competition data by other participants (used unmodified, linked as public datasets), would providing our own training code, the full inference notebook and links to those public datasets satisfy Section 2.8 for the third-party components? And is the answer the same for the Leaderboard prizes and the Efficiency prizes? A yes/no would be very helpful. Thank you.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Anh-Vu Mai-Nguyen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mainguyenanhvu",
+     "tier": "CONTRIBUTOR",
+     "id": 3210125,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 171,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Anh-Vu Mai-Nguyen",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mainguyenanhvu",
+      "userName": "mainguyenanhvu",
+      "tier": "CONTRIBUTOR",
+      "id": 3210125,
+      "profileUrl": "/mainguyenanhvu",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 3210125,
       "progressionOptOut": false
      },
      "intro": ""
@@ -63,7 +140,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 4722,
+    "competitionRanking": 4475,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -104,7 +181,7 @@
     "totalUpvotes": 1
    },
    "kernelVersion": 0,
-   "competitionRanking": 2180,
+   "competitionRanking": 2959,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -132,7 +209,7 @@
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-28T13:16:14.267371400Z",
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/744056",
-  "totalMessages": 2,
+  "totalMessages": 4,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -146,13 +223,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 2,
+  "commentCount": 4,
   "firstForumMessageId": 3529543,
   "id": 744056,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Rubens Sosa",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056#3531215",
-  "lastCommentPostDate": "2026-10-01T13:54:07.406666700Z",
+  "lastCommenterName": "Anh-Vu Mai-Nguyen",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056#3532986",
+  "lastCommentPostDate": "2026-10-05T08:03:22.736666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-28T13:16:14.267371400Z",

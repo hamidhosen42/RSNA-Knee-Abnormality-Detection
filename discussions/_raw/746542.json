@@ -1,0 +1,277 @@
+{
+ "forumTopic": {
+  "authorId": 13672938,
+  "authorThumbnailName": "13672938-kg.jpeg?t=2024-10-11-01-20-59",
+  "authorUserDisplayName": "Cody_Null",
+  "authorUserName": "cody11null",
+  "comments": [
+   {
+    "id": 3534188,
+    "postDate": "2026-10-07T14:42:55.460Z",
+    "rawMarkdown": "My submission also just failed with a Kaggle error. Resubmitting didn't use up a submission attempt, so the issue seems to be on Kaggle's side.",
+    "content": "<p>My submission also just failed with a Kaggle error. Resubmitting didn't use up a submission attempt, so the issue seems to be on Kaggle's side.</p>",
+    "replies": [
+     {
+      "id": 3534200,
+      "postDate": "2026-10-07T15:00:43.293Z",
+      "rawMarkdown": "Yeah for me its been the last few days but subs take me like 2 hours to get working now sadly",
+      "content": "<p>Yeah for me its been the last few days but subs take me like 2 hours to get working now sadly</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 893,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Quan Vu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+     "url": "/quan0095",
+     "tier": "MASTER",
+     "id": 2832287,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 42,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Quan Vu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+      "url": "/quan0095",
+      "userName": "quan0095",
+      "tier": "MASTER",
+      "id": 2832287,
+      "profileUrl": "/quan0095",
+      "performanceTier": "MASTER",
+      "userId": 2832287,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3534462,
+    "postDate": "2026-10-07T18:17:32.867Z",
+    "rawMarkdown": "same for me!",
+    "content": "<p>same for me!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Enai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+     "url": "/enaimaan",
+     "tier": "CONTRIBUTOR",
+     "id": 2630633,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3160,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Enai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+      "url": "/enaimaan",
+      "userName": "enaimaan",
+      "tier": "CONTRIBUTOR",
+      "id": 2630633,
+      "profileUrl": "/enaimaan",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 2630633,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3534211,
+    "postDate": "2026-10-07T15:16:18.703Z",
+    "rawMarkdown": "I've been dealing with this error for the past three days, and it's incredibly frustrating. I'm running my training notebook on a TPU, so whenever I save and run it, it sits in a queue for 4 to 9 hours just to start due to high demand. And after all that waiting, it just throws this error. 🥲",
+    "content": "<p>I've been dealing with this error for the past three days, and it's incredibly frustrating. I'm running my training notebook on a TPU, so whenever I save and run it, it sits in a queue for 4 to 9 hours just to start due to high demand. And after all that waiting, it just throws this error. 🥲</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Rayan Babur",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+     "url": "/rayanbabur",
+     "tier": "CONTRIBUTOR",
+     "id": 15165210,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1183,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Rayan Babur",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+      "url": "/rayanbabur",
+      "userName": "rayanbabur",
+      "tier": "CONTRIBUTOR",
+      "id": 15165210,
+      "profileUrl": "/rayanbabur",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 15165210,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3534186,
+    "postDate": "2026-10-07T14:42:15.870Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3534184,
+   "postDate": "2026-10-07T14:39:48.360Z",
+   "rawMarkdown": "anyone else repeatedly getting mount data: ERRORED_MOUNTING_DATASET for their notebooks and submissions causing Kaggle Error? ",
+   "content": "<p>anyone else repeatedly getting mount data: ERRORED_MOUNTING_DATASET for their notebooks and submissions causing Kaggle Error? </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Cody_Null",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+    "url": "/cody11null",
+    "tier": "GRANDMASTER",
+    "id": 13672938,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 7,
+    "canUpvote": true,
+    "totalUpvotes": 7
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 893,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Cody_Null",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+     "url": "/cody11null",
+     "userName": "cody11null",
+     "tier": "GRANDMASTER",
+     "id": 13672938,
+     "profileUrl": "/cody11null",
+     "performanceTier": "GRANDMASTER",
+     "userId": 13672938,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3534184,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 746542,
+  "name": "Repeated Kaggle Errors",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-07T14:39:48.361542200Z",
+  "totalVotes": 7,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/746542",
+  "totalMessages": 5,
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Cody_Null",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+   "url": "/cody11null",
+   "tier": "GRANDMASTER",
+   "id": 13672938,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 5,
+  "firstForumMessageId": 3534184,
+  "id": 746542,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Enai",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746542#3534462",
+  "lastCommentPostDate": "2026-10-07T18:17:32.866666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-07T14:39:48.361542200Z",
+  "title": "Repeated Kaggle Errors",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746542",
+  "votes": 7,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Cody_Null",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+    "url": "/cody11null",
+    "userName": "cody11null",
+    "tier": "GRANDMASTER",
+    "id": 13672938,
+    "profileUrl": "/cody11null",
+    "performanceTier": "GRANDMASTER",
+    "userId": 13672938,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

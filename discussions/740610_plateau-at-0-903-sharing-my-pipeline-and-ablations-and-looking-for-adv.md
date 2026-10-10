@@ -1,10 +1,10 @@
 # Plateau at 0.903: sharing my pipeline and ablations, and looking for advice
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/740610
-- **Author:** **Will** (@pareru806, Contributor) · _topic author_ · 2026-09-10 12:48 UTC · ▲15 · LB rank 1498
-- **Topic votes:** 15 · **Comments/replies:** 14 · **Pinned:** no
-- **Last comment:** 2026-09-26 00:21 UTC by Chris Deotte
-- **Cloned:** 2026-10-01 19:24 UTC (topic id 740610, raw JSON `_raw/740610.json`)
+- **Author:** **Will** (@pareru806, Contributor) · _topic author_ · 2026-09-10 12:48 UTC · ▲18 · LB rank 2621
+- **Topic votes:** 18 · **Comments/replies:** 16 · **Pinned:** no
+- **Last comment:** 2026-10-08 14:19 UTC by Arun
+- **Cloned:** 2026-10-09 09:46 UTC (topic id 740610, raw JSON `_raw/740610.json`)
 
 ---
 
@@ -90,11 +90,11 @@ If any of this is useful to you, I'd genuinely enjoy comparing notes — especia
 
 ---
 
-## Comments (14, threaded, oldest first)
+## Comments (16, threaded, oldest first)
 
 ### [1] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-10 17:19 UTC · ▲16 · LB rank 19
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-10 17:19 UTC · ▲19 · LB rank 17
 
 Some thoughts: take the best scoring single model public notebook (ignore the blends) and reproduce it locally. Use public LLM labels if you don't have your own, especially those that have documented extraction processes. Ideally you use your own so you know exactly where they succeed and where they fail. 
 
@@ -114,7 +114,7 @@ Last point - spend a lot of time just thinking about the problem. Have brainstor
 
 #### ↳ [1.1] Tom Aindow
 
-**Tom Aindow** (@taindow, Master) · 2026-09-10 23:21 UTC · ▲5 · LB rank 81
+**Tom Aindow** (@taindow, Master) · 2026-09-10 23:21 UTC · ▲5 · LB rank 130
 
 Excellent advice thank you for taking the time to share. I can also second that a simple baseline will take you far if done carefully OP (also have 0.94+ at 224px with small simple model). Follow this post and you'll get there!
 
@@ -122,7 +122,7 @@ Just reflecting on your comments. It's a shame how polluted the kernel space has
 
 ##### ↳ ↳ [1.1.1] Cody_Null
 
-**Cody_Null** (@cody11null, Grandmaster) · 2026-09-10 23:43 UTC · ▲3
+**Cody_Null** (@cody11null, Grandmaster) · 2026-09-10 23:43 UTC · ▲3 · LB rank 850
 
 The super ensemble ultra pro max. 
 
@@ -130,7 +130,7 @@ The way the system is set up just incentivizes tons of copy paste leaderboard ov
 
 ##### ↳ ↳ [1.1.2] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-10 23:46 UTC · ▲4 · LB rank 19
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-10 23:46 UTC · ▲6 · LB rank 17
 
 Happy to help. 
 
@@ -142,38 +142,38 @@ Now you can spawn up a notebook in a prompt and as long as it has a good public 
 
 ##### ↳ ↳ [1.1.3] Cody_Null
 
-**Cody_Null** (@cody11null, Grandmaster) · 2026-09-10 23:50 UTC · ▲3
+**Cody_Null** (@cody11null, Grandmaster) · 2026-09-10 23:50 UTC · ▲3 · LB rank 850
 
 Yep totally with you, missing the days where you could sort by most votes and find actually useful code at every position
 
 ##### ↳ ↳ [1.1.4] Dread Development
 
-**Dread Development** (@dreaddevelopment, Expert) · 2026-09-11 00:12 UTC · ▲4 · LB rank 144
+**Dread Development** (@dreaddevelopment, Expert) · 2026-09-11 00:12 UTC · ▲4 · LB rank 802
 
 So this is part of the reason I have not dropped my faster or newer weights yet, my team member sean & I were discussing useful code & datasets/other discussions & I couldn't at this point find any without our work wrapped into it.
 
 ##### ↳ ↳ [1.1.5] MengYe
 
-**MengYe** (@konohayui, Expert) · 2026-09-11 20:38 UTC · ▲3 · LB rank 255
+**MengYe** (@konohayui, Expert) · 2026-09-11 20:38 UTC · ▲3 · LB rank 263
 
 i miss the old days, i start kaggle back in high school, and i literally learned machine/deep learning from others notebooks.
 
 ##### ↳ ↳ [1.1.6] Dread Development
 
-**Dread Development** (@dreaddevelopment, Expert) · 2026-09-11 22:20 UTC · ▲2 · LB rank 144
+**Dread Development** (@dreaddevelopment, Expert) · 2026-09-11 22:20 UTC · ▲3 · LB rank 802
 
 I have only recently begun kaggle comps (I had no idea this was a thing) & in the little over a month of competing, I have noticed a lot of people will publish code/notebooks just to snag a medal.. whats even worse is when you read through it & none of it or very little is theirs, makes it hard to tell whom you're actually competing with.
 Also super new with medical models entirely so this is a learning experience for me. Currently juggling this competition, UMUD, Biohub, Solar filament, ARC 2 & 3 & kaggriculture.
 
 #### ↳ [1.2] zhenglei_001
 
-**zhenglei_001** (@zhenglei001, Contributor) · 2026-09-12 10:50 UTC · LB rank 615
+**zhenglei_001** (@zhenglei001, Contributor) · 2026-09-12 10:50 UTC · LB rank 453
 
 My dino model, single fold can reache 0.932. Based on your opinions, I tried resnet50 with the same lables, preproccesed datas , only change the pooling way and head . the pooling is avg and the head is mlp.but the cv only can reache 0.86.I am really curious about the resnet whether  it is efficient like what you said. Maybe I still  don't find the reason why the resnet is worse than dino
 
 ##### ↳ ↳ [1.2.1] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-12 13:44 UTC · ▲1 · LB rank 19
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-12 13:44 UTC · ▲1 · LB rank 17
 
 DINO is not a model, it's a way of pretraining that basically teaches a model to match crops of itself. It works on any architecture. DINO v1 even released a ResNet50. I am guessing you are using DINOv2 which is ViT-only. So comparing DINOv2 to a ResNet changes the backbone, the objective, and the pretraining data all at once.
 
@@ -189,7 +189,7 @@ _(no content — deleted or empty)_
 
 ##### ↳ ↳ [1.2.3] zhenglei_001
 
-**zhenglei_001** (@zhenglei001, Contributor) · 2026-09-13 02:49 UTC · LB rank 615
+**zhenglei_001** (@zhenglei001, Contributor) · 2026-09-13 02:49 UTC · LB rank 453
 
 Hi Tucker, thanks for the detailed reply — this is exactly the kind of clarification I needed.
 
@@ -213,7 +213,7 @@ Hi Tucker, thanks for the detailed reply — this is exactly the kind of clarifi
 
 ##### ↳ ↳ [1.2.4] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-14 02:03 UTC · ▲3 · LB rank 19
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-14 02:03 UTC · ▲3 · LB rank 17
 
 The last medical image project I worked on was before DINO pretraining protocol existed, so I am not an expert. Don't take my word for it - try the experiment you just outlined and change nothing but the init, ImageNet versus DINO (v1, v2, or v3, or all the above if you really want to be thorough).
 
@@ -221,8 +221,22 @@ If you say "well maybe DINOv1 isn't good here but DINOv2 and DINOv3 are", which 
 
 That is about as clean and direct a comparison as you can get. Hope that helps.
 
+#### ↳ [1.3] Arun
+
+**Arun** (@oldwine357, Expert) · 2026-10-08 14:19 UTC · LB rank 532
+
+Great insights, @tuckerarrants! I've trained EfficientNet models up to 0.91 and I'm curious which window size and batch size you used. In my runs, increasing the window from 6 to 12 improved the score, and 288px gave the best results. I'm currently training ResNet34, and it's also landing around 0.91.
+
 ### [2] Chris Deotte
 
-**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-26 00:21 UTC · LB rank 92
+**Chris Deotte** (@cdeotte, Grandmaster) · 2026-09-26 00:21 UTC · LB rank 134
 
 Read public notebooks and discussions. There are many great ideas shared.
+
+### [3] Will
+
+**Will** (@pareru806, Contributor) · _topic author_ · 2026-10-02 05:25 UTC · ▲1 · LB rank 2621
+
+Thanks to everyone’s advice, I’ve improved my public LB score to 0.935.
+The suggestions helped me rethink my input pipeline, training setup, and ensembling strategy. Working through these experiments taught me a lot, and I really appreciate everyone who took the time to share their experience.
+Thank you all for helping me move past that plateau!

@@ -6,6 +6,55 @@
   "authorUserName": "themightiestman",
   "comments": [
    {
+    "id": 3531890,
+    "postDate": "2026-10-02T19:22:50.767Z",
+    "rawMarkdown": "Based on my experience of slipping off the private leaderboard in cell tracking competitions, the first thing to do to avoid this situation is to absolutely not optimize on the basis of public notebook.",
+    "content": "<p>Based on my experience of slipping off the private leaderboard in cell tracking competitions, the first thing to do to avoid this situation is to absolutely not optimize on the basis of public notebook.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Gabriel",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30841000-kg.jpg?t=2026-07-22-01-31-28",
+     "url": "/shawsebastian",
+     "tier": "EXPERT",
+     "id": 30841000,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 832,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Gabriel",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30841000-kg.jpg?t=2026-07-22-01-31-28",
+      "url": "/shawsebastian",
+      "userName": "shawsebastian",
+      "tier": "EXPERT",
+      "id": 30841000,
+      "profileUrl": "/shawsebastian",
+      "performanceTier": "EXPERT",
+      "userId": 30841000,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3530385,
     "postDate": "2026-09-30T04:56:20.257Z",
     "rawMarkdown": "If we don't rely on the public LB, RSNA probably won't shake much\n",
@@ -26,7 +75,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 129,
+    "competitionRanking": 116,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -81,7 +130,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 758,
+      "competitionRanking": 707,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -112,10 +161,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "canUpvote": true
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 100,
+    "competitionRanking": 131,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -162,7 +213,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 758,
+    "competitionRanking": 707,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -204,7 +255,7 @@
     "totalUpvotes": 1
    },
    "kernelVersion": 0,
-   "competitionRanking": 758,
+   "competitionRanking": 707,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -233,7 +284,7 @@
   "postDate": "2026-09-30T02:16:34.112076400Z",
   "totalVotes": 1,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/744495",
-  "totalMessages": 4,
+  "totalMessages": 5,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -247,13 +298,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 4,
+  "commentCount": 5,
   "firstForumMessageId": 3530347,
   "id": 744495,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "SpeedSci",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744495#3530385",
-  "lastCommentPostDate": "2026-09-30T04:56:20.256666700Z",
+  "lastCommenterName": "Gabriel",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744495#3531890",
+  "lastCommentPostDate": "2026-10-02T19:22:50.766666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-30T02:16:34.112076400Z",

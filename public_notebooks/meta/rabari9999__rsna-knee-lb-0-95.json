@@ -1,0 +1,12 @@
+{
+ "ref": "rabari9999/rsna-knee-lb-0-95",
+ "version": 4,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/mattiaangeli/rsna-knee-coat-resgated-ep10-top3",
+  "datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "1dae4147977db3e3"
+}

@@ -1,0 +1,230 @@
+{
+ "forumTopic": {
+  "authorId": 26421714,
+  "authorThumbnailName": "26421714-kg.jpg?t=2026-03-21-03-20-15",
+  "authorUserDisplayName": "SpeedSci",
+  "authorUserName": "caoyupeng",
+  "comments": [
+   {
+    "id": 3531864,
+    "postDate": "2026-10-02T18:11:03.940Z",
+    "rawMarkdown": "The size of the host provided labels is too small to actually resolve anything. The number of samples in the LB is significantly larger than the host provided labels, so is much safer to test actual label extraction differences against. It still cannot resolve much. The 58 provided labels and LB samples are created by the same radiologists, you just lose the ability to see per-label differences and the accompanying report - but you never really had these to begin with, as 58 is too small a sample size.\n\nI use a simple extraction process with Qwen, no frontier models at all, and most of my models are in the low 0.95 range on the LB. I am doubtful that \"improving labels\" matters much here, at least in my experiments. Just make sure you don't have obvious extraction failures (I doubt you do if you are using 3 different frontier models). ",
+    "content": "<p>The size of the host provided labels is too small to actually resolve anything. The number of samples in the LB is significantly larger than the host provided labels, so is much safer to test actual label extraction differences against. It still cannot resolve much. The 58 provided labels and LB samples are created by the same radiologists, you just lose the ability to see per-label differences and the accompanying report - but you never really had these to begin with, as 58 is too small a sample size.</p>\n<p>I use a simple extraction process with Qwen, no frontier models at all, and most of my models are in the low 0.95 range on the LB. I am doubtful that \"improving labels\" matters much here, at least in my experiments. Just make sure you don't have obvious extraction failures (I doubt you do if you are using 3 different frontier models). </p>",
+    "replies": [
+     {
+      "id": 3531877,
+      "postDate": "2026-10-02T18:45:00.540Z",
+      "rawMarkdown": "Appreciate the reply. For my DINOv2, just changing the labels moved LB from 0.931 to 0.942—Gold went up by about 0.01 too.\n\n",
+      "content": "<p>Appreciate the reply. For my DINOv2, just changing the labels moved LB from 0.931 to 0.942—Gold went up by about 0.01 too.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "SpeedSci",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+       "url": "/caoyupeng",
+       "tier": "EXPERT",
+       "id": 26421714,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 118,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Myo Min Htet(wnp)🇲🇲",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+        "url": "/myominhtet",
+        "userName": "myominhtet",
+        "tier": "EXPERT",
+        "id": 4600631,
+        "profileUrl": "/myominhtet",
+        "performanceTier": "EXPERT",
+        "userId": 4600631,
+        "progressionOptOut": false
+       },
+       "intro": "Need some who can support GPU, "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 17,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "caoyupeng"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tony Li",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+      "url": "/tonylica",
+      "userName": "tonylica",
+      "tier": "MASTER",
+      "id": 22938014,
+      "profileUrl": "/tonylica",
+      "performanceTier": "MASTER",
+      "userId": 22938014,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531858,
+    "postDate": "2026-10-02T17:57:08.320Z",
+    "rawMarkdown": "We've optimized a lot on DINOv2, EffNet, and ResNet50. I think the label quality is what's holding us back now. I'd like to ask: how do we achieve label optimization that brings genuinely valuable improvement?",
+    "content": "<p>We've optimized a lot on DINOv2, EffNet, and ResNet50. I think the label quality is what's holding us back now. I'd like to ask: how do we achieve label optimization that brings genuinely valuable improvement?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 118,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Myo Min Htet(wnp)🇲🇲",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+      "url": "/myominhtet",
+      "userName": "myominhtet",
+      "tier": "EXPERT",
+      "id": 4600631,
+      "profileUrl": "/myominhtet",
+      "performanceTier": "EXPERT",
+      "userId": 4600631,
+      "progressionOptOut": false
+     },
+     "intro": "Need some who can support GPU, "
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3531855,
+   "postDate": "2026-10-02T17:53:48.120Z",
+   "rawMarkdown": "I've tried using GPT, Claude, and Gemini to clean labels, then used voting to produce my first version.\n\nAfter that, I used OOF and teacher models based on my trained vision models to further refine the labels. But I've been stuck on this for a long time, and there are some things I don't understand:\n\nMy DINOv2 scores 0.917 on Gold58 and 0.942 on LB\n\nBut EffNet and ResNet only score ~0.89 on Gold, yet also achieve 0.940 on LB\n\n(I haven't explored CoAtNet much) CoAtNet: Gold 0.9149, LB 0.926\n\nOne label version even produced an unusually high Gold of 0.945 on EffNet, but only 0.910 on LB—clearly overfitting\n\nCould top competitors share some insights on how to optimize labels?",
+   "content": "<p>I've tried using GPT, Claude, and Gemini to clean labels, then used voting to produce my first version.</p>\n<p>After that, I used OOF and teacher models based on my trained vision models to further refine the labels. But I've been stuck on this for a long time, and there are some things I don't understand:</p>\n<p>My DINOv2 scores 0.917 on Gold58 and 0.942 on LB</p>\n<p>But EffNet and ResNet only score ~0.89 on Gold, yet also achieve 0.940 on LB</p>\n<p>(I haven't explored CoAtNet much) CoAtNet: Gold 0.9149, LB 0.926</p>\n<p>One label version even produced an unusually high Gold of 0.945 on EffNet, but only 0.910 on LB—clearly overfitting</p>\n<p>Could top competitors share some insights on how to optimize labels?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "SpeedSci",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+    "url": "/caoyupeng",
+    "tier": "EXPERT",
+    "id": 26421714,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 8,
+    "canUpvote": true,
+    "totalUpvotes": 8
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 118,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Myo Min Htet(wnp)🇲🇲",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+     "url": "/myominhtet",
+     "userName": "myominhtet",
+     "tier": "EXPERT",
+     "id": 4600631,
+     "profileUrl": "/myominhtet",
+     "performanceTier": "EXPERT",
+     "userId": 4600631,
+     "progressionOptOut": false
+    },
+    "intro": "Need some who can support GPU, "
+   }
+  },
+  "firstMessageId": 3531855,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745214,
+  "name": "How do you optimize labels?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-02T17:53:48.118589300Z",
+  "totalVotes": 8,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745214",
+  "totalMessages": 3,
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "SpeedSci",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+   "url": "/caoyupeng",
+   "tier": "EXPERT",
+   "id": 26421714,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3531855,
+  "id": 745214,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "SpeedSci",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745214#3531877",
+  "lastCommentPostDate": "2026-10-02T18:45:00.540Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-02T17:53:48.118589300Z",
+  "title": "How do you optimize labels?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745214",
+  "votes": 8,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Myo Min Htet(wnp)🇲🇲",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+    "url": "/myominhtet",
+    "userName": "myominhtet",
+    "tier": "EXPERT",
+    "id": 4600631,
+    "profileUrl": "/myominhtet",
+    "performanceTier": "EXPERT",
+    "userId": 4600631,
+    "progressionOptOut": false
+   },
+   "intro": "Need some who can support GPU, "
+  }
+ }
+}

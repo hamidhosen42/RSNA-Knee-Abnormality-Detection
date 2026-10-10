@@ -65,7 +65,7 @@
      "totalUpvotes": 4
     },
     "kernelVersion": 0,
-    "competitionRanking": 4223,
+    "competitionRanking": 5386,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -82,6 +82,45 @@
       "progressionOptOut": false
      },
      "intro": ""
+    }
+   },
+   {
+    "id": 3533980,
+    "postDate": "2026-10-07T05:17:51.717Z",
+    "rawMarkdown": "Hi study organizers: can you comment on how to deal with bilateral knee mri's in which both left and right side are within the same studyid? If there is only one label per studyid then how should this be resolved? Just report every positive in either knee? For example if left knee ACL is torn but right knee ACL is normal then how should it be labeled if both studies are within same studyid?",
+    "content": "<p>Hi study organizers: can you comment on how to deal with bilateral knee mri's in which both left and right side are within the same studyid? If there is only one label per studyid then how should this be resolved? Just report every positive in either knee? For example if left knee ACL is torn but right knee ACL is normal then how should it be labeled if both studies are within same studyid?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Catrick",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36041926-kg.jpg?t=2026-09-17-06-52-56",
+     "url": "/tachyon34",
+     "tier": "CONTRIBUTOR",
+     "id": 36041926,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1441,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Catrick",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36041926-kg.jpg?t=2026-09-17-06-52-56",
+      "url": "/tachyon34",
+      "userName": "tachyon34",
+      "tier": "CONTRIBUTOR",
+      "id": 36041926,
+      "profileUrl": "/tachyon34",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36041926,
+      "progressionOptOut": false
+     },
+     "intro": "Fellowship trained academic MD msk radiologist with 9 years msk practice experience.  Have background knowledge in Python and pytorch/MONAI tensorflow/keras"
     }
    },
    {
@@ -103,6 +142,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
+    "competitionRanking": 4088,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -140,7 +180,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1965,
+    "competitionRanking": 3071,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -187,7 +227,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2334,
+    "competitionRanking": 3448,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -453,9 +493,9 @@
    },
    "authorType": "HOST",
    "votes": {
-    "totalVotes": 83,
+    "totalVotes": 97,
     "canUpvote": true,
-    "totalUpvotes": 83
+    "totalUpvotes": 97
    },
    "kernelVersion": 0,
    "feedbackTrackingData": {},
@@ -465,6 +505,7 @@
      "emoji": "THANK_YOU",
      "featuredUserNames": [
       "shaikasad",
+      "sugarrr",
       "d17129765",
       "atharvsharma",
       "zosamu",
@@ -475,6 +516,7 @@
       "aneesuddin",
       "yoshitown",
       "philgear",
+      "junhanzangai",
       "thelastsmilodon",
       "yosriketata",
       "kokiando",
@@ -485,13 +527,16 @@
       "rudrpratapsingh",
       "snipergotyou",
       "ishwarghoshrony",
+      "basavarajmali",
       "santopaul",
       "pranavjain95",
       "sergiobear",
       "jamesmukoma",
       "rijanjabhattarai",
       "bajaj30",
+      "sunandanair",
       "hajrupajuu",
+      "bunnywasnothere",
       "aurelius15",
       "ilaydacan26",
       "jmmmmy",
@@ -500,7 +545,7 @@
       "wasanaf",
       "tabassumtoishe"
      ],
-     "userCount": 35
+     "userCount": 40
     }
    ]
   },
@@ -513,9 +558,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-06T15:54:27.876255800Z",
-  "totalVotes": 83,
+  "totalVotes": 97,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/733343",
-  "totalMessages": 12,
+  "totalMessages": 13,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -529,19 +574,19 @@
    "progressionOptOut": false
   },
   "authorType": "HOST",
-  "commentCount": 12,
+  "commentCount": 13,
   "firstForumMessageId": 3509546,
   "id": 733343,
   "isSticky": true,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Ahsan Bin Hasan Pasha",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343#3523462",
-  "lastCommentPostDate": "2026-09-11T16:24:51.620Z",
+  "lastCommenterName": "Catrick",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343#3533980",
+  "lastCommentPostDate": "2026-10-07T05:17:51.716666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-06T15:54:27.876255800Z",
   "title": "Knee Abnormality Detection AI Challenge Overview",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343",
-  "votes": 83
+  "votes": 97
  }
 }

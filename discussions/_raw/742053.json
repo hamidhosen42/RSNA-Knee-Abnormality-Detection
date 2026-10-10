@@ -6,6 +6,160 @@
   "authorUserName": "prgckwb",
   "comments": [
    {
+    "id": 3533193,
+    "postDate": "2026-10-05T17:55:00.940Z",
+    "rawMarkdown": "Old pictures, new memes \n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F6491363%2F23ad57d00335d8dc6eb7a634c69aac32%2Fe76c8311-8e6c-4415-96e3-2cd86b80b083.jpg?generation=1698291227808062&alt=media)",
+    "content": "<p>Old pictures, new memes \n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F6491363%2F23ad57d00335d8dc6eb7a634c69aac32%2Fe76c8311-8e6c-4415-96e3-2cd86b80b083.jpg?generation=1698291227808062&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "DECEM",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6491363-kg.JPG?t=2023-12-04-03-20-10",
+     "url": "/zy1343930734",
+     "tier": "MASTER",
+     "id": 6491363,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2910,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "DECEM",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6491363-kg.JPG?t=2023-12-04-03-20-10",
+      "url": "/zy1343930734",
+      "userName": "zy1343930734",
+      "tier": "MASTER",
+      "id": 6491363,
+      "profileUrl": "/zy1343930734",
+      "performanceTier": "MASTER",
+      "userId": 6491363,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3531750,
+    "postDate": "2026-10-02T14:50:34.747Z",
+    "rawMarkdown": "Me finetuning Qwen\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4379159%2F432d506772006ac2a5c2ccaeb51df95b%2FScreenshot%202026-10-02%20104953.png?generation=1790952612956094&alt=media)",
+    "content": "<p>Me finetuning Qwen</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4379159%2F432d506772006ac2a5c2ccaeb51df95b%2FScreenshot%202026-10-02%20104953.png?generation=1790952612956094&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
+     "tier": "MASTER",
+     "id": 4379159,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 5,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 17,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "aman1391",
+       "daveconnor",
+       "aniroula",
+       "aliozanmemetoglu",
+       "ilyakolb",
+       "prgckwb",
+       "shivsatyam",
+       "huytngo"
+      ],
+      "userCount": 8
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tony Li",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+      "url": "/tonylica",
+      "userName": "tonylica",
+      "tier": "MASTER",
+      "id": 22938014,
+      "profileUrl": "/tonylica",
+      "performanceTier": "MASTER",
+      "userId": 22938014,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532489,
+    "postDate": "2026-10-03T18:23:33.517Z",
+    "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F860066%2Ff7a6db17aeda0cfb36a04996cf46ad84%2Fb2mqjo.jpg?generation=1791051806581395&alt=media)",
+    "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F860066%2Ff7a6db17aeda0cfb36a04996cf46ad84%2Fb2mqjo.jpg?generation=1791051806581395&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "DhawalModi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/860066-kg.jpg?t=2024-01-07-22-04-01",
+     "url": "/daveconnor",
+     "tier": "CONTRIBUTOR",
+     "id": 860066,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 69,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "sumansahoo16",
+       "aliozanmemetoglu",
+       "tuckerarrants",
+       "prgckwb",
+       "nathanaelrk",
+       "huytngo",
+       "jackvd",
+       "omerzalman",
+       "dreaddevelopment"
+      ],
+      "userCount": 9
+     }
+    ],
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "DhawalModi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/860066-kg.jpg?t=2024-01-07-22-04-01",
+      "url": "/daveconnor",
+      "userName": "daveconnor",
+      "tier": "CONTRIBUTOR",
+      "id": 860066,
+      "profileUrl": "/daveconnor",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 860066,
+      "progressionOptOut": false
+     },
+     "intro": "Looking for members who want to win and get into top-10. Also should have a model or ensemble ready."
+    }
+   },
+   {
     "id": 3528361,
     "postDate": "2026-09-26T00:04:27.803Z",
     "rawMarkdown": "![](https://raw.githubusercontent.com/cdeotte/Kaggle_Images/refs/heads/main/Sep-2026/labels.png)",
@@ -21,23 +175,29 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 1,
+     "totalVotes": 2,
      "canUpvote": true,
-     "totalUpvotes": 2
+     "totalUpvotes": 4
     },
     "kernelVersion": 0,
-    "competitionRanking": 92,
+    "competitionRanking": 131,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
      {
       "emoji": "FUNNY",
       "featuredUserNames": [
+       "aman1391",
+       "daveconnor",
+       "aniroula",
+       "quan0095",
        "tuckerarrants",
        "prgckwb",
-       "wayne127"
+       "wayne127",
+       "huytngo",
+       "salemali7"
       ],
-      "userCount": 3
+      "userCount": 9
      }
     ],
     "teamUpInfo": {
@@ -51,6 +211,44 @@
       "profileUrl": "/cdeotte",
       "performanceTier": "GRANDMASTER",
       "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3533160,
+    "postDate": "2026-10-05T16:19:24.483Z",
+    "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F29641607%2F71fc644e6699003ac5c0564003c338fb%2Foe0jwdyzy4zd1.jpeg?generation=1791217161986813&alt=media)",
+    "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F29641607%2F71fc644e6699003ac5c0564003c338fb%2Foe0jwdyzy4zd1.jpeg?generation=1791217161986813&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4700,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "OmerZalman",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/omerzalman",
+      "userName": "omerzalman",
+      "tier": "CONTRIBUTOR",
+      "id": 29641607,
+      "profileUrl": "/omerzalman",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29641607,
       "progressionOptOut": false
      },
      "intro": ""
@@ -92,36 +290,47 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 3,
+    "totalVotes": 11,
     "canUpvote": true,
-    "totalUpvotes": 4
+    "totalUpvotes": 12
    },
    "kernelVersion": 0,
-   "competitionRanking": 28,
+   "competitionRanking": 64,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "reactions": [
     {
      "emoji": "LOVE",
      "featuredUserNames": [
-      "javaduke95"
+      "javaduke95",
+      "quantqt",
+      "dreaddevelopment"
      ],
-     "userCount": 1
+     "userCount": 3
     },
     {
      "emoji": "FUNNY",
      "featuredUserNames": [
+      "aman1391",
       "daveconnor",
       "taindow",
+      "andy2709",
       "aniroula",
+      "quan0095",
+      "aliozanmemetoglu",
       "tuckerarrants",
       "mattiaangeli",
       "ggayoayogg",
       "shivsatyam",
       "xiaoyan12",
-      "laymond"
+      "huytngo",
+      "fishcat37",
+      "hiranorm",
+      "laymond",
+      "salemali7",
+      "dreaddevelopment"
      ],
-     "userCount": 9
+     "userCount": 18
     }
    ],
    "teamUpInfo": {
@@ -148,9 +357,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-19T08:40:54.364949200Z",
-  "totalVotes": 3,
+  "totalVotes": 11,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/742053",
-  "totalMessages": 2,
+  "totalMessages": 6,
   "authorPerformanceTier": "MASTER",
   "authorProgressionOptOut": false
  },
@@ -164,19 +373,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 2,
+  "commentCount": 6,
   "firstForumMessageId": 3525870,
   "id": 742053,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Chris Deotte",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742053#3528361",
-  "lastCommentPostDate": "2026-09-26T00:04:27.803333300Z",
+  "lastCommenterName": "DECEM",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742053#3533193",
+  "lastCommentPostDate": "2026-10-05T17:55:00.940Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-19T08:40:54.364949200Z",
   "title": "Meme thread",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/742053",
-  "votes": 3,
+  "votes": 11,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Chikuwabu",

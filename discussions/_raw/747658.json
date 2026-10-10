@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 3924325,
+  "authorThumbnailName": "3924325-kg.jpg",
+  "authorUserDisplayName": "Kirderf",
+  "authorUserName": "kirderf",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535785,
+   "postDate": "2026-10-09T08:02:00.503Z",
+   "rawMarkdown": "Trying the new Kaggle Benchmark format -- work in progress --\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F5ea13f45e0c0a11f20855af1d2f0df2f%2FSkrmbild%202026-10-09%20095759.png?generation=1791532710655575&alt=media)\nhttps://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark",
+   "content": "<p>Trying the new Kaggle Benchmark format -- work in progress --\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F5ea13f45e0c0a11f20855af1d2f0df2f%2FSkrmbild%202026-10-09%20095759.png?generation=1791532710655575&amp;alt=media\" alt=\"\">\n<a href=\"https://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark\" target=\"_blank\">https://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark</a></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Kirderf",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+    "url": "/kirderf",
+    "tier": "GRANDMASTER",
+    "id": 3924325,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 528,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Kirderf",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+     "url": "/kirderf",
+     "userName": "kirderf",
+     "tier": "GRANDMASTER",
+     "id": 3924325,
+     "profileUrl": "/kirderf",
+     "performanceTier": "GRANDMASTER",
+     "userId": 3924325,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535785,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747658,
+  "name": "RSNA Knee MRI reports — LLM label-extraction benchmark ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-09T08:02:00.503009500Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747658",
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Kirderf",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+   "url": "/kirderf",
+   "tier": "GRANDMASTER",
+   "id": 3924325,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3535785,
+  "id": 747658,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Kirderf",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747658#3535785",
+  "lastCommentPostDate": "2026-10-09T08:02:00.503333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-09T08:02:00.503009500Z",
+  "title": "RSNA Knee MRI reports — LLM label-extraction benchmark ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747658",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Kirderf",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+    "url": "/kirderf",
+    "userName": "kirderf",
+    "tier": "GRANDMASTER",
+    "id": 3924325,
+    "profileUrl": "/kirderf",
+    "performanceTier": "GRANDMASTER",
+    "userId": 3924325,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

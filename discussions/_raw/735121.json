@@ -4,6 +4,48 @@
   "authorThumbnailName": "36097973-gr.jpg",
   "authorUserDisplayName": "dk2lone",
   "authorUserName": "dk2lone",
+  "comments": [
+   {
+    "id": 3532021,
+    "postDate": "2026-10-03T03:03:35.267Z",
+    "rawMarkdown": "Could an RSNA host clarify whether the publicly available RadImageNet ResNet-50 checkpoint (CC BY-NC-SA 4.0) may be used as a pretrained backbone in a competition submission, including a prize-eligible one? If such a solution wins, would publishing its fine-tuned weights under CC BY-NC-SA 4.0 satisfy the winner model-release requirement, or would that conflict with the required license? Please distinguish submission eligibility from the winner release obligation. Thank you.",
+    "content": "<p>Could an RSNA host clarify whether the publicly available RadImageNet ResNet-50 checkpoint (CC BY-NC-SA 4.0) may be used as a pretrained backbone in a competition submission, including a prize-eligible one? If such a solution wins, would publishing its fine-tuned weights under CC BY-NC-SA 4.0 satisfy the winner model-release requirement, or would that conflict with the required license? Please distinguish submission eligibility from the winner release obligation. Thank you.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "quant_kiid",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6272051-kg.jpg",
+     "url": "/quantkiid",
+     "tier": "CONTRIBUTOR",
+     "id": 6272051,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2448,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "quant_kiid",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6272051-kg.jpg",
+      "url": "/quantkiid",
+      "userName": "quantkiid",
+      "tier": "CONTRIBUTOR",
+      "id": 6272051,
+      "profileUrl": "/quantkiid",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 6272051,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
   "firstMessage": {
    "id": 3512669,
@@ -21,12 +63,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 6,
+    "totalVotes": 7,
     "canUpvote": true,
-    "totalUpvotes": 6
+    "totalUpvotes": 7
    },
    "kernelVersion": 0,
-   "competitionRanking": 2331,
+   "competitionRanking": 424,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -53,8 +95,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-14T03:57:10.569146600Z",
-  "totalVotes": 6,
+  "totalVotes": 7,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/735121",
+  "totalMessages": 1,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -68,18 +111,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
+  "commentCount": 1,
   "firstForumMessageId": 3512669,
   "id": 735121,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "dk2lone",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735121#3512669",
-  "lastCommentPostDate": "2026-08-14T03:57:10.570Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "quant_kiid",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735121#3532021",
+  "lastCommentPostDate": "2026-10-03T03:03:35.266666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-14T03:57:10.569146600Z",
   "title": "Are CC-BY-NC pretrained weights compatible with the winners open-licence obligation?",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735121",
-  "votes": 6,
+  "votes": 7,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "dk2lone",

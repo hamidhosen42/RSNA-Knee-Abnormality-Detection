@@ -1,0 +1,142 @@
+{
+ "forumTopic": {
+  "authorId": 33909683,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "willyp74",
+  "authorUserName": "willyp74",
+  "comments": [
+   {
+    "id": 3532749,
+    "postDate": "2026-10-04T15:38:14.553Z",
+    "rawMarkdown": "what seed was best for you?",
+    "content": "<p>what seed was best for you?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4704,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "OmerZalman",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/omerzalman",
+      "userName": "omerzalman",
+      "tier": "CONTRIBUTOR",
+      "id": 29641607,
+      "profileUrl": "/omerzalman",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29641607,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3532620,
+   "postDate": "2026-10-04T07:33:54.203Z",
+   "rawMarkdown": "I was working from one of the shared baselines and ran into something that I think affects most of the forks.\n\nread_slot() builds the slice stack with sorted(filename). The filenames are SOP Instance UIDs, so that order has nothing to do with anatomy.\n\nI checked it on 60 random series, comparing filename order against ImagePositionPatient projected on the axis with most variation:\n\nmedian |Spearman rho| 0.164, 0.0% of series above 0.9, 98.3% below 0.5. Nothing reversed either, so it is not a flipped-stack problem, it is just shuffled.\n\nTwo things follow from that. The \"central 60% of the stack\" that read_slot samples is not the middle of the knee, it is 9 arbitrary positions. And the 3 slices stacked as channels are not neighbours. Also normalise_laterality() flips sagittal stacks for right knees, and that flip only means something if the order was right to begin with.\n\nWhat I measured, one fold, same seed, same folds, 12 epochs, nothing else changed: filename order 0.7695, IPP order 0.7971, so +0.0276.\n\nI also ran the patched version again with a different seed, just to see how much of that is noise: 0.7960. So seed noise is around 0.001 and the effect is about 25x that.\n\nThe fix is just sorting by ImagePositionPatient along the through-plane axis, with InstanceNumber as a fallback. One warning if you try it: do it inside read_slot and cache it per series. I first put it in probe() and it ended up reading headers for all ~820k files, which added about 7 minutes to every run before I noticed.\n\nHappy to share the cell if anyone wants it.\n\n",
+   "content": "<p>I was working from one of the shared baselines and ran into something that I think affects most of the forks.</p>\n<p>read_slot() builds the slice stack with sorted(filename). The filenames are SOP Instance UIDs, so that order has nothing to do with anatomy.</p>\n<p>I checked it on 60 random series, comparing filename order against ImagePositionPatient projected on the axis with most variation:</p>\n<p>median |Spearman rho| 0.164, 0.0% of series above 0.9, 98.3% below 0.5. Nothing reversed either, so it is not a flipped-stack problem, it is just shuffled.</p>\n<p>Two things follow from that. The \"central 60% of the stack\" that read_slot samples is not the middle of the knee, it is 9 arbitrary positions. And the 3 slices stacked as channels are not neighbours. Also normalise_laterality() flips sagittal stacks for right knees, and that flip only means something if the order was right to begin with.</p>\n<p>What I measured, one fold, same seed, same folds, 12 epochs, nothing else changed: filename order 0.7695, IPP order 0.7971, so +0.0276.</p>\n<p>I also ran the patched version again with a different seed, just to see how much of that is noise: 0.7960. So seed noise is around 0.001 and the effect is about 25x that.</p>\n<p>The fix is just sorting by ImagePositionPatient along the through-plane axis, with InstanceNumber as a fallback. One warning if you try it: do it inside read_slot and cache it per series. I first put it in probe() and it ended up reading headers for all ~820k files, which added about 7 minutes to every run before I noticed.</p>\n<p>Happy to share the cell if anyone wants it.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "willyp74",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/willyp74",
+    "tier": "CONTRIBUTOR",
+    "id": 33909683,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 4197,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "willyp74",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/willyp74",
+     "userName": "willyp74",
+     "tier": "CONTRIBUTOR",
+     "id": 33909683,
+     "profileUrl": "/willyp74",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 33909683,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3532620,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 745759,
+  "name": "Slice order in the public baseline is basically random (worth +0.028 AUC)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-04T07:33:54.204121200Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/745759",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "willyp74",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/willyp74",
+   "tier": "CONTRIBUTOR",
+   "id": 33909683,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3532620,
+  "id": 745759,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745759#3532749",
+  "lastCommentPostDate": "2026-10-04T15:38:14.553333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-04T07:33:54.204121200Z",
+  "title": "Slice order in the public baseline is basically random (worth +0.028 AUC)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745759",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "willyp74",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/willyp74",
+    "userName": "willyp74",
+    "tier": "CONTRIBUTOR",
+    "id": 33909683,
+    "profileUrl": "/willyp74",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 33909683,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

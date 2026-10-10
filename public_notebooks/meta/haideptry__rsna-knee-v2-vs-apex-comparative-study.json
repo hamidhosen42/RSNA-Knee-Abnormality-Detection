@@ -1,0 +1,12 @@
+{
+ "ref": "haideptry/rsna-knee-v2-vs-apex-comparative-study",
+ "version": 3,
+ "score": 0.95,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "rsna-knee-coat-resgated-ep10-top3",
+  "rsna-knee-2-5d-convnext-reader",
+  "rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "bc010a15a8ae72cb"
+}

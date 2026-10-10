@@ -6,44 +6,86 @@
   "authorUserName": "suryar261",
   "comments": [
    {
-    "id": 3516738,
-    "postDate": "2026-08-25T05:55:30.897Z",
-    "rawMarkdown": "9950x\nrog 5090\n64g\n2t + 1t\n0.938：）",
-    "content": "<p>9950x\nrog 5090\n64g\n2t + 1t\n0.938：）</p>",
+    "id": 3533282,
+    "postDate": "2026-10-05T20:14:43.277Z",
+    "rawMarkdown": "I'm using 1xL40S GPU 48GB VRAM. It's a sandbox secure VM which allows me to autorun autonomous agents. When building models with small backbones, it can run an experiment in a few hours. So in a loop, it can run about a dozen experiments per day.",
+    "content": "<p>I'm using 1xL40S GPU 48GB VRAM. It's a sandbox secure VM which allows me to autorun autonomous agents. When building models with small backbones, it can run an experiment in a few hours. So in a loop, it can run about a dozen experiments per day.</p>",
     "replies": [
      {
-      "id": 3516741,
-      "postDate": "2026-08-25T05:59:11.920Z",
-      "rawMarkdown": "He is a total whale in this game.",
-      "content": "<p>He is a total whale in this game.</p>",
+      "id": 3533310,
+      "postDate": "2026-10-05T21:09:27.690Z",
+      "rawMarkdown": "Whos your provider? What website are you using?",
+      "content": "<p>Whos your provider? What website are you using?</p>",
+      "replies": [
+       {
+        "id": 3533312,
+        "postDate": "2026-10-05T21:12:47.113Z",
+        "rawMarkdown": "Normally, I use NVIDIA cloud for Kaggle competitions. But for agent security reasons, I am starting to use other cloud providers with my autonomous agents. In this competition, I am using [Crusoe AI][1] (via NVIDIA Brev)\n\n[1]: https://www.crusoe.ai/",
+        "content": "<p>Normally, I use NVIDIA cloud for Kaggle competitions. But for agent security reasons, I am starting to use other cloud providers with my autonomous agents. In this competition, I am using <a href=\"https://www.crusoe.ai/\" target=\"_blank\">Crusoe AI</a> (via NVIDIA Brev)</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Chris Deotte",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+         "url": "/cdeotte",
+         "tier": "GRANDMASTER",
+         "id": 1723677,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 131,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Chris Deotte",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+          "url": "/cdeotte",
+          "userName": "cdeotte",
+          "tier": "GRANDMASTER",
+          "id": 1723677,
+          "profileUrl": "/cdeotte",
+          "performanceTier": "GRANDMASTER",
+          "userId": 1723677,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
       "parent": {},
       "author": {
-       "displayName": "GG Ayo (AyoGG)",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.jpg?t=2026-09-14-08-34-50",
-       "url": "/ggayoayogg",
-       "tier": "EXPERT",
-       "id": 15255201,
+       "displayName": "OmerZalman",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/omerzalman",
+       "tier": "CONTRIBUTOR",
+       "id": 29641607,
        "progressionOptOut": false
       },
       "authorType": "COMMENT",
       "votes": {
-       "canUpvote": true
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 928,
+      "competitionRanking": 4700,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
        "teamLeader": {
-        "displayName": "tingyi",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
-        "url": "/chengtingyi",
-        "userName": "chengtingyi",
+        "displayName": "OmerZalman",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/omerzalman",
+        "userName": "omerzalman",
         "tier": "CONTRIBUTOR",
-        "id": 8788200,
-        "profileUrl": "/chengtingyi",
+        "id": 29641607,
+        "profileUrl": "/omerzalman",
         "performanceTier": "CONTRIBUTOR",
-        "userId": 8788200,
+        "userId": 29641607,
         "progressionOptOut": false
        },
        "intro": ""
@@ -52,11 +94,11 @@
     ],
     "parent": {},
     "author": {
-     "displayName": "tingyi",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
-     "url": "/chengtingyi",
-     "tier": "CONTRIBUTOR",
-     "id": 8788200,
+     "displayName": "Chris Deotte",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+     "url": "/cdeotte",
+     "tier": "GRANDMASTER",
+     "id": 1723677,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
@@ -66,24 +108,47 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 928,
+    "competitionRanking": 131,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "tingyi",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
-      "url": "/chengtingyi",
-      "userName": "chengtingyi",
-      "tier": "CONTRIBUTOR",
-      "id": 8788200,
-      "profileUrl": "/chengtingyi",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 8788200,
+      "displayName": "Chris Deotte",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1723677-kg.jpg",
+      "url": "/cdeotte",
+      "userName": "cdeotte",
+      "tier": "GRANDMASTER",
+      "id": 1723677,
+      "profileUrl": "/cdeotte",
+      "performanceTier": "GRANDMASTER",
+      "userId": 1723677,
       "progressionOptOut": false
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3532912,
+    "postDate": "2026-10-05T04:08:15.107Z",
+    "rawMarkdown": "Please let us know as well what kind of Hardware are using? @suryar261 ",
+    "content": "<p>Please let us know as well what kind of Hardware are using? <a href=\"/suryar261\" target=\"_blank\">@suryar261</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -2,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    },
    {
     "id": 3516677,
@@ -99,7 +164,7 @@
       "parent": {},
       "author": {
        "displayName": "GG Ayo (AyoGG)",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.jpg?t=2026-09-14-08-34-50",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.jpg?t=2026-10-05-06-05-31",
        "url": "/ggayoayogg",
        "tier": "EXPERT",
        "id": 15255201,
@@ -110,7 +175,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 928,
+      "competitionRanking": 48,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -146,7 +211,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 1952,
+    "competitionRanking": 3044,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -178,6 +243,86 @@
     }
    },
    {
+    "id": 3516738,
+    "postDate": "2026-08-25T05:55:30.897Z",
+    "rawMarkdown": "9950x\nrog 5090\n64g\n2t + 1t\n0.938：）",
+    "content": "<p>9950x\nrog 5090\n64g\n2t + 1t\n0.938：）</p>",
+    "replies": [
+     {
+      "id": 3516741,
+      "postDate": "2026-08-25T05:59:11.920Z",
+      "rawMarkdown": "He is a total whale in this game.",
+      "content": "<p>He is a total whale in this game.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "GG Ayo (AyoGG)",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.jpg?t=2026-10-05-06-05-31",
+       "url": "/ggayoayogg",
+       "tier": "EXPERT",
+       "id": 15255201,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 48,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "tingyi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+        "url": "/chengtingyi",
+        "userName": "chengtingyi",
+        "tier": "CONTRIBUTOR",
+        "id": 8788200,
+        "profileUrl": "/chengtingyi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 8788200,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "tingyi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+     "url": "/chengtingyi",
+     "tier": "CONTRIBUTOR",
+     "id": 8788200,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 48,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "tingyi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+      "url": "/chengtingyi",
+      "userName": "chengtingyi",
+      "tier": "CONTRIBUTOR",
+      "id": 8788200,
+      "profileUrl": "/chengtingyi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 8788200,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3516736,
     "postDate": "2026-08-25T05:46:46.577Z",
     "rawMarkdown": "This competition does seem borderline, but can run on kaggle resources - however, starting from scratch not sure you could get to a 0.95 you must use some of the shared work, for sure, the label files that have been shared.\n\nMy label making has been a huge local compute - and not done yet.  Dual 16GB graphics with I9 and 128RAM.  \n\nI sent Elon Musk a note asking if I could borrow the Nashville facility but so far no returned message.",
@@ -197,7 +342,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 643,
+    "competitionRanking": 1901,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -207,9 +352,10 @@
        "enaimaan",
        "komilparmar",
        "biancy12",
-       "mediumguy"
+       "mediumguy",
+       "gengsr"
       ],
-      "userCount": 4
+      "userCount": 5
      }
     ],
     "teamUpInfo": {
@@ -223,6 +369,82 @@
       "profileUrl": "/pcjimmmy",
       "performanceTier": "MASTER",
       "userId": 1062256,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3533240,
+    "postDate": "2026-10-05T19:05:23.943Z",
+    "rawMarkdown": "RTX 3060 but most of my work in this competition is done using Kaggle's free GPU quota. ",
+    "content": "<p>RTX 3060 but most of my work in this competition is done using Kaggle's free GPU quota. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Steve421471",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/steve421471",
+     "tier": "CONTRIBUTOR",
+     "id": 18618211,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 609,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Steve421471",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/steve421471",
+      "userName": "steve421471",
+      "tier": "CONTRIBUTOR",
+      "id": 18618211,
+      "profileUrl": "/steve421471",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18618211,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532901,
+    "postDate": "2026-10-05T03:15:58.163Z",
+    "rawMarkdown": "96gb vram -> rtx 6k, and 96 core cpu,",
+    "content": "<p>96gb vram -&gt; rtx 6k, and 96 core cpu,</p>",
+    "parent": {},
+    "author": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4700,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "OmerZalman",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/omerzalman",
+      "userName": "omerzalman",
+      "tier": "CONTRIBUTOR",
+      "id": 29641607,
+      "profileUrl": "/omerzalman",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29641607,
       "progressionOptOut": false
      },
      "intro": ""
@@ -247,7 +469,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1179,
+    "competitionRanking": 556,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -285,10 +507,11 @@
    "authorType": "TOPIC",
    "votes": {
     "totalVotes": -2,
-    "canUpvote": true
+    "canUpvote": true,
+    "totalUpvotes": 2
    },
    "kernelVersion": 0,
-   "competitionRanking": 4360,
+   "competitionRanking": 5520,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -317,7 +540,7 @@
   "postDate": "2026-08-24T21:14:28.195224400Z",
   "totalVotes": -2,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/737333",
-  "totalMessages": 6,
+  "totalMessages": 12,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -331,13 +554,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 6,
+  "commentCount": 12,
   "firstForumMessageId": 3516640,
   "id": 737333,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Kareem Khazal",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737333#3517333",
-  "lastCommentPostDate": "2026-08-26T21:10:25.970Z",
+  "lastCommenterName": "Chris Deotte",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737333#3533312",
+  "lastCommentPostDate": "2026-10-05T21:12:47.113333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-24T21:14:28.195224400Z",

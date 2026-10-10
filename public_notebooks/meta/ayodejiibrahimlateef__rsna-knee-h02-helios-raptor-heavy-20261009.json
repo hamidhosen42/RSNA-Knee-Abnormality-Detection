@@ -1,0 +1,12 @@
+{
+ "ref": "ayodejiibrahimlateef/rsna-knee-h02-helios-raptor-heavy-20261009",
+ "version": 1,
+ "score": 0.947,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007",
+  "datasets/heliosli/rsna-knee-compact-v1"
+ ],
+ "code_sha": "ddacba702bc2e8ec"
+}

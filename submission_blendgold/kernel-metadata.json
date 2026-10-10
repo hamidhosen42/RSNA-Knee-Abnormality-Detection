@@ -1,0 +1,24 @@
+{
+  "id": "hosen42/rsna-knee-blend-gold",
+  "title": "rsna-knee-blend-gold⭐",
+  "code_file": "rsna-knee-blend-gold.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "docker_image_pinning_type": "original",
+  "dataset_sources": [
+    "heliosli/rsna-knee-compact-v1/9",
+    "nartaa/rsna-knee-publication-swa-weights-20261007/1",
+    "heliosli/rsna-orthofoundation-fold0-epoch7-20261004/1"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

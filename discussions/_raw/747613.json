@@ -1,0 +1,96 @@
+{
+ "forumTopic": {
+  "authorId": 20960131,
+  "authorThumbnailName": "20960131-kg.jpg?t=2026-09-18-09-17-55",
+  "authorUserDisplayName": "Cà Rốt Production",
+  "authorUserName": "crtproduction",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535717,
+   "postDate": "2026-10-09T05:05:07.320Z",
+   "rawMarkdown": "Our team reached 0,95+ with single fold single model, I just want to discuss what is the limitation of the label, it can be improved over the period over time, but running and experiment may lead to the shortage of time when the competition is coming to the end. Hopefully someone with the top score can suggest me \"The AUC peak when it come to the label only\", and \"the main model that u trained on\" mine is RESNET, I would be really appreciate with even small suggestion. (just like the best single model like that) \nBy the way, would really like to ask if any suggestion about the training process to utilize all the sources of the data to have the best score that it can reach (the config of some specific models that can utilize it peak learning rates (Resnet, DINO, in what size, what crop, the slices, the window , escpecially the cache ? ...). I saw 0,96+ is crazy, those seem to be having the techniques or the data that no one could have which is distinctive, however, I can see no reply about the OAI pretrained models rules, but I have never experienced that before even believing it will be helpful to improve the score. Up to date, the limitation is about the GPU limitations, the time, and the frustrating effort to try any available way to improve a model score sometimes it just about, improving a tiny adjustment can help use improve a tiny step. Wanting to hear all the great contestants opinions. ",
+   "content": "<p>Our team reached 0,95+ with single fold single model, I just want to discuss what is the limitation of the label, it can be improved over the period over time, but running and experiment may lead to the shortage of time when the competition is coming to the end. Hopefully someone with the top score can suggest me \"The AUC peak when it come to the label only\", and \"the main model that u trained on\" mine is RESNET, I would be really appreciate with even small suggestion. (just like the best single model like that) \nBy the way, would really like to ask if any suggestion about the training process to utilize all the sources of the data to have the best score that it can reach (the config of some specific models that can utilize it peak learning rates (Resnet, DINO, in what size, what crop, the slices, the window , escpecially the cache ? …). I saw 0,96+ is crazy, those seem to be having the techniques or the data that no one could have which is distinctive, however, I can see no reply about the OAI pretrained models rules, but I have never experienced that before even believing it will be helpful to improve the score. Up to date, the limitation is about the GPU limitations, the time, and the frustrating effort to try any available way to improve a model score sometimes it just about, improving a tiny adjustment can help use improve a tiny step. Wanting to hear all the great contestants opinions. </p>",
+   "parent": {},
+   "author": {
+    "displayName": "Cà Rốt Production",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+    "url": "/crtproduction",
+    "tier": "CONTRIBUTOR",
+    "id": 20960131,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 137,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Cà Rốt Production",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+     "url": "/crtproduction",
+     "userName": "crtproduction",
+     "tier": "CONTRIBUTOR",
+     "id": 20960131,
+     "profileUrl": "/crtproduction",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 20960131,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535717,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747613,
+  "name": "The core to reach top score without any ensemble",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-09T05:05:07.318867100Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747613",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Cà Rốt Production",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+   "url": "/crtproduction",
+   "tier": "CONTRIBUTOR",
+   "id": 20960131,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3535717,
+  "id": 747613,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Cà Rốt Production",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747613#3535717",
+  "lastCommentPostDate": "2026-10-09T05:05:07.320Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-09T05:05:07.318867100Z",
+  "title": "The core to reach top score without any ensemble",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747613",
+  "votes": -2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Cà Rốt Production",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+    "url": "/crtproduction",
+    "userName": "crtproduction",
+    "tier": "CONTRIBUTOR",
+    "id": 20960131,
+    "profileUrl": "/crtproduction",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 20960131,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

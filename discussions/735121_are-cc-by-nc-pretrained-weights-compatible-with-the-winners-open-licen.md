@@ -1,10 +1,10 @@
 # Are CC-BY-NC pretrained weights compatible with the winners open-licence obligation?
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121
-- **Author:** **dk2lone** (@dk2lone, Contributor) · _topic author_ · 2026-08-14 03:57 UTC · ▲6 · LB rank 2331
-- **Topic votes:** 6 · **Comments/replies:** 0 · **Pinned:** no
-- **Last comment:** 2026-08-14 03:57 UTC by dk2lone
-- **Cloned:** 2026-10-01 19:24 UTC (topic id 735121, raw JSON `_raw/735121.json`)
+- **Author:** **dk2lone** (@dk2lone, Contributor) · _topic author_ · 2026-08-14 03:57 UTC · ▲7 · LB rank 424
+- **Topic votes:** 7 · **Comments/replies:** 1 · **Pinned:** no
+- **Last comment:** 2026-10-03 03:03 UTC by quant_kiid
+- **Cloned:** 2026-10-09 09:46 UTC (topic id 735121, raw JSON `_raw/735121.json`)
 
 ---
 
@@ -18,6 +18,10 @@ Thank you.
 
 ---
 
-## Comments (0, threaded, oldest first)
+## Comments (1, threaded, oldest first)
 
-_No comments._
+### [1] quant_kiid
+
+**quant_kiid** (@quantkiid, Contributor) · 2026-10-03 03:03 UTC · ▲1 · LB rank 2448
+
+Could an RSNA host clarify whether the publicly available RadImageNet ResNet-50 checkpoint (CC BY-NC-SA 4.0) may be used as a pretrained backbone in a competition submission, including a prize-eligible one? If such a solution wins, would publishing its fine-tuned weights under CC BY-NC-SA 4.0 satisfy the winner model-release requirement, or would that conflict with the required license? Please distinguish submission eligibility from the winner release obligation. Thank you.

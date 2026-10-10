@@ -1,10 +1,10 @@
 # Knee Abnormality Detection AI Challenge Overview
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343
-- **Author:** **Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-06 15:54 UTC · ▲83
-- **Topic votes:** 83 · **Comments/replies:** 12 · **Pinned:** yes
-- **Last comment:** 2026-09-11 16:24 UTC by Ahsan Bin Hasan Pasha
-- **Cloned:** 2026-10-01 19:24 UTC (topic id 733343, raw JSON `_raw/733343.json`)
+- **Author:** **Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-06 15:54 UTC · ▲97
+- **Topic votes:** 97 · **Comments/replies:** 13 · **Pinned:** yes
+- **Last comment:** 2026-10-07 05:17 UTC by Catrick
+- **Cloned:** 2026-10-09 09:46 UTC (topic id 733343, raw JSON `_raw/733343.json`)
 
 ---
 
@@ -119,7 +119,7 @@ The following annotated examples, drawn from the challenge’s image annotation 
 
 ---
 
-## Comments (12, threaded, oldest first)
+## Comments (13, threaded, oldest first)
 
 ### [1] Mohamed Samir
 
@@ -161,19 +161,19 @@ Does the reports are the GT?
 
 ### [7] Ragheb haddara
 
-**Ragheb haddara** (@l4r3nn, Contributor) · 2026-08-10 21:41 UTC · ▲4 · LB rank 4223
+**Ragheb haddara** (@l4r3nn, Contributor) · 2026-08-10 21:41 UTC · ▲4 · LB rank 5386
 
 Thanks for the overview! For anyone getting started, the key insight is that this is a multi-label classification problem — each study can have multiple abnormalities present simultaneously. The 12 abnormality categories each need their own probability prediction.
 
 ### [8] Oscar Yáñez Feijóo
 
-**Oscar Yáñez Feijóo** (@oscaryezfeijo, Contributor) · 2026-08-18 09:20 UTC · LB rank 2334
+**Oscar Yáñez Feijóo** (@oscaryezfeijo, Contributor) · 2026-08-18 09:20 UTC · LB rank 3448
 
 Great overview. The combination of multi-label MRI classification, multilingual reports, and clinically adjudicated labels makes this a particularly interesting multimodal challenge. Has anyone found the report text to add a clear advantage over image-only models?
 
 ### [9] cm391
 
-**cm391** (@mccocoful, Master) · 2026-09-03 06:53 UTC · LB rank 1965
+**cm391** (@mccocoful, Master) · 2026-09-03 06:53 UTC · LB rank 3071
 
 Hi @javaduke95 - thank you offering such clear explanation to competitors. can i clarify the below in the label description section: should "the same criteria applied" read medial meniscus rather than lateral meniscus?
 
@@ -183,7 +183,7 @@ Hi @javaduke95 - thank you offering such clear explanation to competitors. can i
 
 ### [10] Marie Victoire IPOUK
 
-**Marie Victoire IPOUK** (@marydata, Contributor) · 2026-09-03 21:34 UTC
+**Marie Victoire IPOUK** (@marydata, Contributor) · 2026-09-03 21:34 UTC · LB rank 4088
 
 this details are very important. Thank you
 
@@ -198,3 +198,9 @@ Thank you for the details.
 **Ahsan Bin Hasan Pasha** (@abhpasha, Contributor) · 2026-09-11 16:24 UTC
 
 many Thanks !
+
+### [13] Catrick
+
+**Catrick** (@tachyon34, Contributor) · 2026-10-07 05:17 UTC · LB rank 1441
+
+Hi study organizers: can you comment on how to deal with bilateral knee mri's in which both left and right side are within the same studyid? If there is only one label per studyid then how should this be resolved? Just report every positive in either knee? For example if left knee ACL is torn but right knee ACL is normal then how should it be labeled if both studies are within same studyid?

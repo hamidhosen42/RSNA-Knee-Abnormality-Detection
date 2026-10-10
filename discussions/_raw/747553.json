@@ -1,0 +1,138 @@
+{
+ "forumTopic": {
+  "authorId": 524211,
+  "authorThumbnailName": "524211-kg.jpeg",
+  "authorUserDisplayName": "Jin Park",
+  "authorUserName": "jinspark621",
+  "comments": [
+   {
+    "id": 3535656,
+    "postDate": "2026-10-09T02:00:18.080Z",
+    "rawMarkdown": "Try to do segmentation, supervision is pixel. Visualise results at each epoch. See how fast the loss descends and the predicted pixels show up. This is your baseline oracle.\n\nThen go back to your current slot transformer model. Visualise your attention weights or cam map.\n\nInput my above to chatgpt and ask to improve the algorithm debug",
+    "content": "<p>Try to do segmentation, supervision is pixel. Visualise results at each epoch. See how fast the loss descends and the predicted pixels show up. This is your baseline oracle.</p>\n<p>Then go back to your current slot transformer model. Visualise your attention weights or cam map.</p>\n<p>Input my above to chatgpt and ask to improve the algorithm debug</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 728,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535633,
+   "postDate": "2026-10-09T00:48:34.597Z",
+   "rawMarkdown": "I'm using DINOv3 frozen embeddings as a backbone for my model. My issue is that the model isn't detecting small localized features like those needed for detecting ACL/MCL tears. I've tried increasing resolution and using patch tokens (not only the CLS token), but it's still having trouble detecting the features. Does anyone know how to debug this?",
+   "content": "<p>I'm using DINOv3 frozen embeddings as a backbone for my model. My issue is that the model isn't detecting small localized features like those needed for detecting ACL/MCL tears. I've tried increasing resolution and using patch tokens (not only the CLS token), but it's still having trouble detecting the features. Does anyone know how to debug this?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Jin Park",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/524211-kg.jpeg",
+    "url": "/jinspark621",
+    "tier": "CONTRIBUTOR",
+    "id": 524211,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Jin Park",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/524211-kg.jpeg",
+     "url": "/jinspark621",
+     "userName": "jinspark621",
+     "tier": "CONTRIBUTOR",
+     "id": 524211,
+     "profileUrl": "/jinspark621",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 524211,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535633,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747553,
+  "name": "[Debug] DINOv3 cannot detect ACL/MCL tears",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-09T00:48:34.596668700Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747553",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Jin Park",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/524211-kg.jpeg",
+   "url": "/jinspark621",
+   "tier": "CONTRIBUTOR",
+   "id": 524211,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3535633,
+  "id": 747553,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "hengck23",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747553#3535656",
+  "lastCommentPostDate": "2026-10-09T02:00:18.080Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-09T00:48:34.596668700Z",
+  "title": "[Debug] DINOv3 cannot detect ACL/MCL tears",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747553",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Jin Park",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/524211-kg.jpeg",
+    "url": "/jinspark621",
+    "userName": "jinspark621",
+    "tier": "CONTRIBUTOR",
+    "id": 524211,
+    "profileUrl": "/jinspark621",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 524211,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "forumTopic": {
+  "authorId": 28739526,
+  "authorThumbnailName": "28739526-kg.png?t=2026-10-03-10-08-37",
+  "authorUserDisplayName": "karttikjangid05",
+  "authorUserName": "karttikjangid05",
+  "comments": [
+   {
+    "id": 3535624,
+    "postDate": "2026-10-09T00:29:38.653Z",
+    "rawMarkdown": "Google for papers that can predict OOD performance based on in-distribution data, or predict performance based on limited data in N-shot learning settings, etc ...",
+    "content": "<p>Google for papers that can predict OOD performance based on in-distribution data, or predict performance based on limited data in N-shot learning settings, etc …</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 718,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3535606,
+   "postDate": "2026-10-08T23:45:46.527Z",
+   "rawMarkdown": "Many of us train on LLM labels read from the reports, and there are now several public sets. I scored\n  eight of them on the 58 gold studies, with a 95% bootstrap CI for every source and finding\n  (class-stratified, 2,000 resamples).\n\n  Result: for 11 of 12 findings, the best and the median set are not clearly different. MCL has 9\n  positives, too few to rank. On gold-74 (with JEV's 16 extra studies) all 12 findings show no clear\n\n  A plain mean of six CC0 sets has a CI that overlaps the best single set on all 12 findings. Macro AUC on\n  gold-58: consensus 0.8887, steven_v4 0.8927, steven_v2 0.8873.\n\n  | Finding | Gold-58 positives | Verdict | Best source (AUC, 95% CI) | Consensus (AUC, 95% CI) |\n  |---|---|---|---|---|\n  | ACL | 24 | no clear difference | pilkwang 0.997 (0.988 to 1.000) | 0.993 (0.974 to 1.000) |\n  | MCL | 9 | too few positives to rank sources | yunus 0.984 (0.955 to 1.000) | 0.986 (0.955 to 1.000) |\n  | Medial Meniscus | 26 | no clear difference | steven_v2 0.954 (0.901 to 0.993) | 0.945 (0.885 to 0.989)\n  |\n  | Lateral Meniscus | 23 | no clear difference | steven_v4 0.879 (0.766 to 0.973) | 0.876 (0.759 to 0.971)\n  |\n  | Medial OA | 15 | no clear difference | steven_v4 0.932 (0.830 to 0.995) | 0.928 (0.811 to 0.997) |\n  | Lateral OA | 11 | no clear difference | yunus 0.835 (0.662 to 0.960) | 0.818 (0.613 to 0.971) |\n  | PF OA | 21 | no clear difference | steven_v4 0.902 (0.808 to 0.977) | 0.883 (0.777 to 0.972) |\n  | Effusion | 35 | no clear difference | steven_v4 0.877 (0.771 to 0.955) | 0.873 (0.771 to 0.952) |\n  | Synovitis | 27 | no clear difference | steven_v2 0.790 (0.670 to 0.898) | 0.751 (0.623 to 0.872) |\n  | Baker's | 12 | no clear difference | steven_v2 0.946 (0.868 to 1.000) | 0.932 (0.835 to 0.998) |\n  | Contusion | 19 | no clear difference | steven_v4 0.860 (0.755 to 0.942) | 0.855 (0.750 to 0.945) |\n  | Fracture | 18 | no clear difference | qwen 0.876 (0.774 to 0.965) | 0.824 (0.679 to 0.942) |\n\n  \"Clear winner\" would mean the best source's lower bound is above the median source's upper bound. The\n  rule was set before the first gold run, with no per-finding tuning on gold.\n\n  Limits: 58 studies is a small ruler. steven_v2's Synovitis rule was informed by gold-58, so treat\n  Synovitis with care. This measures agreement with gold, not leaderboard impact.\n\n  Consensus file (CC0) and all metrics:\n  https://www.kaggle.com/datasets/karttikjangid05/rsna-knee-public-llm-label-sets-compared\n, \n  Notebook: https://www.kaggle.com/code/karttikjangid05/rsna-knee-which-llm-labels-can-you-trust\n\n  Thanks to every label author and to JEV for the 74-study set and for showing that per-finding blending on\n  gold overfits.",
+   "content": "<p>Many of us train on LLM labels read from the reports, and there are now several public sets. I scored\n  eight of them on the 58 gold studies, with a 95% bootstrap CI for every source and finding\n  (class-stratified, 2,000 resamples).</p>\n<p>Result: for 11 of 12 findings, the best and the median set are not clearly different. MCL has 9\n  positives, too few to rank. On gold-74 (with JEV's 16 extra studies) all 12 findings show no clear</p>\n<p>A plain mean of six CC0 sets has a CI that overlaps the best single set on all 12 findings. Macro AUC on\n  gold-58: consensus 0.8887, steven_v4 0.8927, steven_v2 0.8873.</p>\n<table>\n<thead>\n<tr>\n<th>Finding</th>\n<th>Gold-58 positives</th>\n<th>Verdict</th>\n<th>Best source (AUC, 95% CI)</th>\n<th>Consensus (AUC, 95% CI)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>ACL</td>\n<td>24</td>\n<td>no clear difference</td>\n<td>pilkwang 0.997 (0.988 to 1.000)</td>\n<td>0.993 (0.974 to 1.000)</td>\n</tr>\n<tr>\n<td>MCL</td>\n<td>9</td>\n<td>too few positives to rank sources</td>\n<td>yunus 0.984 (0.955 to 1.000)</td>\n<td>0.986 (0.955 to 1.000)</td>\n</tr>\n<tr>\n<td>Medial Meniscus</td>\n<td>26</td>\n<td>no clear difference</td>\n<td>steven_v2 0.954 (0.901 to 0.993)</td>\n<td>0.945 (0.885 to 0.989)</td>\n</tr>\n<tr>\n<td>Lateral Meniscus</td>\n<td>23</td>\n<td>no clear difference</td>\n<td>steven_v4 0.879 (0.766 to 0.973)</td>\n<td>0.876 (0.759 to 0.971)</td>\n</tr>\n<tr>\n<td>Medial OA</td>\n<td>15</td>\n<td>no clear difference</td>\n<td>steven_v4 0.932 (0.830 to 0.995)</td>\n<td>0.928 (0.811 to 0.997)</td>\n</tr>\n<tr>\n<td>Lateral OA</td>\n<td>11</td>\n<td>no clear difference</td>\n<td>yunus 0.835 (0.662 to 0.960)</td>\n<td>0.818 (0.613 to 0.971)</td>\n</tr>\n<tr>\n<td>PF OA</td>\n<td>21</td>\n<td>no clear difference</td>\n<td>steven_v4 0.902 (0.808 to 0.977)</td>\n<td>0.883 (0.777 to 0.972)</td>\n</tr>\n<tr>\n<td>Effusion</td>\n<td>35</td>\n<td>no clear difference</td>\n<td>steven_v4 0.877 (0.771 to 0.955)</td>\n<td>0.873 (0.771 to 0.952)</td>\n</tr>\n<tr>\n<td>Synovitis</td>\n<td>27</td>\n<td>no clear difference</td>\n<td>steven_v2 0.790 (0.670 to 0.898)</td>\n<td>0.751 (0.623 to 0.872)</td>\n</tr>\n<tr>\n<td>Baker's</td>\n<td>12</td>\n<td>no clear difference</td>\n<td>steven_v2 0.946 (0.868 to 1.000)</td>\n<td>0.932 (0.835 to 0.998)</td>\n</tr>\n<tr>\n<td>Contusion</td>\n<td>19</td>\n<td>no clear difference</td>\n<td>steven_v4 0.860 (0.755 to 0.942)</td>\n<td>0.855 (0.750 to 0.945)</td>\n</tr>\n<tr>\n<td>Fracture</td>\n<td>18</td>\n<td>no clear difference</td>\n<td>qwen 0.876 (0.774 to 0.965)</td>\n<td>0.824 (0.679 to 0.942)</td>\n</tr>\n</tbody>\n</table>\n<p>\"Clear winner\" would mean the best source's lower bound is above the median source's upper bound. The\n  rule was set before the first gold run, with no per-finding tuning on gold.</p>\n<p>Limits: 58 studies is a small ruler. steven_v2's Synovitis rule was informed by gold-58, so treat\n  Synovitis with care. This measures agreement with gold, not leaderboard impact.</p>\n<p>Consensus file (CC0) and all metrics:\n  <a href=\"https://www.kaggle.com/datasets/karttikjangid05/rsna-knee-public-llm-label-sets-compared\" target=\"_blank\">https://www.kaggle.com/datasets/karttikjangid05/rsna-knee-public-llm-label-sets-compared</a>\n, \n  Notebook: <a href=\"https://www.kaggle.com/code/karttikjangid05/rsna-knee-which-llm-labels-can-you-trust\" target=\"_blank\">https://www.kaggle.com/code/karttikjangid05/rsna-knee-which-llm-labels-can-you-trust</a></p>\n<p>Thanks to every label author and to JEV for the 74-study set and for showing that per-finding blending on\n  gold overfits.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "karttikjangid05",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28739526-kg.png?t=2026-10-03-10-08-37",
+    "url": "/karttikjangid05",
+    "tier": "CONTRIBUTOR",
+    "id": 28739526,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 271,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "karttikjangid05",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28739526-kg.png?t=2026-10-03-10-08-37",
+     "url": "/karttikjangid05",
+     "userName": "karttikjangid05",
+     "tier": "CONTRIBUTOR",
+     "id": 28739526,
+     "profileUrl": "/karttikjangid05",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 28739526,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3535606,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747540,
+  "name": "8 public LLM label sets vs gold-58: 11 of 12 findings show no clear difference",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-08T23:45:46.525015Z",
+  "tags": [
+   {
+    "id": 13202,
+    "name": "data cleaning",
+    "listingUrl": "/search?q=data+cleaning+tag%3A%22data+cleaning%22",
+    "tagUrl": "/tags/data-cleaning",
+    "displayName": "Data Cleaning"
+   },
+   {
+    "id": 13215,
+    "name": "data analytics",
+    "listingUrl": "/search?q=data+analytics+tag%3A%22data+analytics%22",
+    "tagUrl": "/tags/marketing-analytics",
+    "displayName": "Data Analytics"
+   },
+   {
+    "id": 4202,
+    "name": "healthcare",
+    "listingUrl": "/search?q=healthcare+tag%3A%22healthcare%22",
+    "tagUrl": "/tags/healthcare",
+    "displayName": "Healthcare"
+   },
+   {
+    "id": 12028,
+    "name": "medicine",
+    "listingUrl": "/search?q=medicine+tag%3A%22medicine%22",
+    "tagUrl": "/tags/medicine",
+    "displayName": "Medicine"
+   },
+   {
+    "id": 13204,
+    "name": "nlp",
+    "listingUrl": "/search?q=nlp+tag%3A%22nlp%22",
+    "tagUrl": "/tags/nlp",
+    "displayName": "NLP"
+   }
+  ],
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747540",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "karttikjangid05",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28739526-kg.png?t=2026-10-03-10-08-37",
+   "url": "/karttikjangid05",
+   "tier": "CONTRIBUTOR",
+   "id": 28739526,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3535606,
+  "id": 747540,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "hengck23",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747540#3535624",
+  "lastCommentPostDate": "2026-10-09T00:29:38.653333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-08T23:45:46.525015Z",
+  "tags": [
+   {
+    "id": 4202,
+    "name": "healthcare",
+    "listingUrl": "/tags/healthcare",
+    "displayName": "Healthcare"
+   },
+   {
+    "id": 12028,
+    "name": "medicine",
+    "listingUrl": "/tags/medicine",
+    "displayName": "Medicine"
+   },
+   {
+    "id": 13202,
+    "name": "data cleaning",
+    "listingUrl": "/tags/data-cleaning",
+    "displayName": "Data Cleaning"
+   },
+   {
+    "id": 13204,
+    "name": "nlp",
+    "listingUrl": "/tags/nlp",
+    "displayName": "NLP"
+   },
+   {
+    "id": 13215,
+    "name": "data analytics",
+    "listingUrl": "/tags/marketing-analytics",
+    "displayName": "Data Analytics"
+   }
+  ],
+  "title": "8 public LLM label sets vs gold-58: 11 of 12 findings show no clear difference",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747540",
+  "votes": 2,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "karttikjangid05",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28739526-kg.png?t=2026-10-03-10-08-37",
+    "url": "/karttikjangid05",
+    "userName": "karttikjangid05",
+    "tier": "CONTRIBUTOR",
+    "id": 28739526,
+    "profileUrl": "/karttikjangid05",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 28739526,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

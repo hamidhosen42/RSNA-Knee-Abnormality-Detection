@@ -6,6 +6,47 @@
   "authorUserName": "pareru806",
   "comments": [
    {
+    "id": 3531569,
+    "postDate": "2026-10-02T05:25:04.020Z",
+    "rawMarkdown": "Thanks to everyone’s advice, I’ve improved my public LB score to 0.935.\nThe suggestions helped me rethink my input pipeline, training setup, and ensembling strategy. Working through these experiments taught me a lot, and I really appreciate everyone who took the time to share their experience.\nThank you all for helping me move past that plateau!",
+    "content": "<p>Thanks to everyone’s advice, I’ve improved my public LB score to 0.935.\nThe suggestions helped me rethink my input pipeline, training setup, and ensembling strategy. Working through these experiments taught me a lot, and I really appreciate everyone who took the time to share their experience.\nThank you all for helping me move past that plateau!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Will",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+     "url": "/pareru806",
+     "tier": "CONTRIBUTOR",
+     "id": 21681832,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2621,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Will",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21681832-kg.jpg?t=2025-09-18-05-12-18",
+      "url": "/pareru806",
+      "userName": "pareru806",
+      "tier": "CONTRIBUTOR",
+      "id": 21681832,
+      "profileUrl": "/pareru806",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 21681832,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3523148,
     "postDate": "2026-09-10T17:19:45.997Z",
     "rawMarkdown": "Some thoughts: take the best scoring single model public notebook (ignore the blends) and reproduce it locally. Use public LLM labels if you don't have your own, especially those that have documented extraction processes. Ideally you use your own so you know exactly where they succeed and where they fail. \n\nStart with 224px / 288px and a simple CNN encoder, like a ResNet34 or EffNetB0. No attention mechanisms, just use simple pooling operations. You can score in the 0.94+ range with this alone and it allows for efficient experiments at the lower resolutions.\n\nValidate against the report extracted labels, not the provided 58 labels and not against the LB - neither are large enough sample sizes to resolve 0.002-0.003 differences. You want to stack these small improvements. Set a CV threshold for what is a genuine improvement and what is noise. Mine is around 0.003. You can get this tighter running multiple seeds if you need. When you get a real improvement, submit to LB to establish a CV - LB correlation.\n\nThis is your baseline. Then ablate through the standard image augmentation stacks. Many of these are generic and many are MRI specific, which you can get from previous competitions. Change one thing at a time so you can isolate what helped and what did not.\n\nThen, you can try different backbones and resolutions, to see if the additional training time is really worth it.\n\nAfter all of that, you can start trying more \"experimental\" mechanisms like attention and/or newer image encoders. I have yet to try any DINO inits and based on some preliminary experiments, I have a low prior for it matching standard ImageNet init backbones, but I could be wrong.\n\nKaggle public code section has been sullied with AI slop as people medal farm. Be cautious of this. There are only a few useful notebooks out there ([like this one](https://www.kaggle.com/code/dreaddevelopment/knee-mri-training-the-twelve-finding-model)). I generally assume a contrarian position about public notebooks - they are likely overly complex and not properly \"built up\" from simple baselines, using a clean CV protocol. Use them as their own baselines, and prune them to see what is actually useful and what is uneeded. \"Prime\" your own LLM saying something like \"this code is probably over engineered, how can I simplify it?\"\n\nLast point - spend a lot of time just thinking about the problem. Have brainstorm sessions with your LLM of choice, without building anything. Stream of conciousness type chats. These \"vibe chatting\" sessions are where I get most of my ideas - LLMs may not be particularly creative in the context of Kaggle competitions, but they are great for organizing thoughts and finding ideas in that structure, that you might have otherwise not noticed yourself.",
@@ -38,6 +79,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
+        "competitionRanking": 850,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -49,10 +91,12 @@
            "ggayoayogg",
            "ayushkhaire",
            "radwankhondokar",
+           "shivsatyam",
+           "fishcat37",
            "adaluvu",
            "dreaddevelopment"
           ],
-          "userCount": 7
+          "userCount": 9
          }
         ],
         "teamUpInfo": {
@@ -87,26 +131,26 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 4,
+         "totalVotes": 6,
          "canUpvote": true,
-         "totalUpvotes": 4
+         "totalUpvotes": 6
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 17,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
         "teamUpInfo": {
          "teamLeader": {
-          "displayName": "Tucker Arrants",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-          "url": "/tuckerarrants",
-          "userName": "tuckerarrants",
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
           "tier": "MASTER",
-          "id": 4379159,
-          "profileUrl": "/tuckerarrants",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
           "performanceTier": "MASTER",
-          "userId": 4379159,
+          "userId": 22938014,
           "progressionOptOut": false
          },
          "intro": ""
@@ -133,6 +177,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
+        "competitionRanking": 850,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -173,7 +218,7 @@
          "totalUpvotes": 4
         },
         "kernelVersion": 0,
-        "competitionRanking": 144,
+        "competitionRanking": 802,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -214,7 +259,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 255,
+        "competitionRanking": 263,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -250,12 +295,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 2,
+         "totalVotes": 3,
          "canUpvote": true,
-         "totalUpvotes": 2
+         "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 144,
+        "competitionRanking": 802,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -292,7 +337,7 @@
        "totalUpvotes": 5
       },
       "kernelVersion": 0,
-      "competitionRanking": 81,
+      "competitionRanking": 130,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -338,20 +383,20 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 17,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
          "teamLeader": {
-          "displayName": "Tucker Arrants",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-          "url": "/tuckerarrants",
-          "userName": "tuckerarrants",
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
           "tier": "MASTER",
-          "id": 4379159,
-          "profileUrl": "/tuckerarrants",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
           "performanceTier": "MASTER",
-          "userId": 4379159,
+          "userId": 22938014,
           "progressionOptOut": false
          },
          "intro": ""
@@ -398,7 +443,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 615,
+        "competitionRanking": 453,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -439,21 +484,21 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 17,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
         "teamUpInfo": {
          "teamLeader": {
-          "displayName": "Tucker Arrants",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-          "url": "/tuckerarrants",
-          "userName": "tuckerarrants",
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
           "tier": "MASTER",
-          "id": 4379159,
-          "profileUrl": "/tuckerarrants",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
           "performanceTier": "MASTER",
-          "userId": 4379159,
+          "userId": 22938014,
           "progressionOptOut": false
          },
          "intro": ""
@@ -474,7 +519,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 615,
+      "competitionRanking": 453,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -492,6 +537,44 @@
        },
        "intro": ""
       }
+     },
+     {
+      "id": 3535241,
+      "postDate": "2026-10-08T14:19:32.817Z",
+      "rawMarkdown": "Great insights, @tuckerarrants! I've trained EfficientNet models up to 0.91 and I'm curious which window size and batch size you used. In my runs, increasing the window from 6 to 12 improved the score, and 288px gave the best results. I'm currently training ResNet34, and it's also landing around 0.91.",
+      "content": "<p>Great insights, <a href=\"/tuckerarrants\" target=\"_blank\">@tuckerarrants</a>! I've trained EfficientNet models up to 0.91 and I'm curious which window size and batch size you used. In my runs, increasing the window from 6 to 12 improved the score, and 288px gave the best results. I'm currently training ResNet34, and it's also landing around 0.91.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Arun",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6071249-kg.jpg",
+       "url": "/oldwine357",
+       "tier": "EXPERT",
+       "id": 6071249,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 532,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Arun",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6071249-kg.jpg",
+        "url": "/oldwine357",
+        "userName": "oldwine357",
+        "tier": "EXPERT",
+        "id": 6071249,
+        "profileUrl": "/oldwine357",
+        "performanceTier": "EXPERT",
+        "userId": 6071249,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
      }
     ],
     "parent": {},
@@ -505,12 +588,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 16,
+     "totalVotes": 19,
      "canUpvote": true,
-     "totalUpvotes": 17
+     "totalUpvotes": 20
     },
     "kernelVersion": 0,
-    "competitionRanking": 19,
+    "competitionRanking": 17,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -521,6 +604,7 @@
        "taindow",
        "marimo2feet",
        "enaimaan",
+       "loto610",
        "tarunsingh931",
        "chengtingyi",
        "nantohock",
@@ -530,17 +614,19 @@
        "radwankhondokar",
        "bbruijnis",
        "syrmez",
+       "ubiquity123",
        "adaluvu",
        "cmasch",
        "salemali7",
        "dreaddevelopment"
       ],
-      "userCount": 17
+      "userCount": 19
      },
      {
       "emoji": "THANK_YOU",
       "featuredUserNames": [
        "aiwody",
+       "oldwine357",
        "chengtingyi",
        "cody11null",
        "ggayoayogg",
@@ -549,20 +635,20 @@
        "caoyupeng",
        "dreaddevelopment"
       ],
-      "userCount": 8
+      "userCount": 9
      }
     ],
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Tucker Arrants",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-      "url": "/tuckerarrants",
-      "userName": "tuckerarrants",
+      "displayName": "Tony Li",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+      "url": "/tonylica",
+      "userName": "tonylica",
       "tier": "MASTER",
-      "id": 4379159,
-      "profileUrl": "/tuckerarrants",
+      "id": 22938014,
+      "profileUrl": "/tonylica",
       "performanceTier": "MASTER",
-      "userId": 4379159,
+      "userId": 22938014,
       "progressionOptOut": false
      },
      "intro": ""
@@ -587,7 +673,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 92,
+    "competitionRanking": 134,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -624,12 +710,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 15,
+    "totalVotes": 18,
     "canUpvote": true,
-    "totalUpvotes": 15
+    "totalUpvotes": 18
    },
    "kernelVersion": 0,
-   "competitionRanking": 1498,
+   "competitionRanking": 2621,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -657,9 +743,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-10T12:48:08.313523500Z",
-  "totalVotes": 15,
+  "totalVotes": 18,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/740610",
-  "totalMessages": 14,
+  "totalMessages": 16,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -673,19 +759,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 14,
+  "commentCount": 16,
   "firstForumMessageId": 3523046,
   "id": 740610,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Chris Deotte",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740610#3528367",
-  "lastCommentPostDate": "2026-09-26T00:21:04.043333300Z",
+  "lastCommenterName": "Arun",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740610#3535241",
+  "lastCommentPostDate": "2026-10-08T14:19:32.816666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-10T12:48:08.313523500Z",
   "title": "Plateau at 0.903: sharing my pipeline and ablations, and looking for advice",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/740610",
-  "votes": 15,
+  "votes": 18,
   "teamUpInfo": {
    "enabled": true,
    "teamLeader": {

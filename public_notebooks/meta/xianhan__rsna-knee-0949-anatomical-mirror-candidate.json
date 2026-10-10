@@ -1,0 +1,10 @@
+{
+ "ref": "xianhan/rsna-knee-0949-anatomical-mirror-candidate",
+ "version": 1,
+ "score": 0.949,
+ "sources": [
+  "competitions/rsna-knee-abnormality-detection",
+  "datasets/nartaa/rsna-knee-publication-swa-weights-20261007"
+ ],
+ "code_sha": "acd9241f171a8079"
+}

@@ -25,7 +25,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 412,
+    "competitionRanking": 602,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -70,7 +70,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 2222,
+      "competitionRanking": 3007,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -106,7 +106,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 220,
+    "competitionRanking": 687,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -120,6 +120,44 @@
       "profileUrl": "/farshidamira",
       "performanceTier": "CONTRIBUTOR",
       "userId": 31234056,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532866,
+    "postDate": "2026-10-05T00:06:46.190Z",
+    "rawMarkdown": "do you have any other reports like this?",
+    "content": "<p>do you have any other reports like this?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4719,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "OmerZalman",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/omerzalman",
+      "userName": "omerzalman",
+      "tier": "CONTRIBUTOR",
+      "id": 29641607,
+      "profileUrl": "/omerzalman",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 29641607,
       "progressionOptOut": false
      },
      "intro": ""
@@ -144,7 +182,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2403,
+    "competitionRanking": 3186,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -185,11 +223,11 @@
       },
       "authorType": "COMMENT",
       "votes": {
-       "totalVotes": -4,
+       "totalVotes": -6,
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 412,
+      "competitionRanking": 602,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -224,7 +262,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 101,
+    "competitionRanking": 138,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -299,7 +337,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 3340,
+    "competitionRanking": 4116,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -337,7 +375,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 3015,
+    "competitionRanking": 3230,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -398,12 +436,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 56,
+    "totalVotes": 61,
     "canUpvote": true,
-    "totalUpvotes": 56
+    "totalUpvotes": 61
    },
    "kernelVersion": 0,
-   "competitionRanking": 2222,
+   "competitionRanking": 3007,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "reactions": [
@@ -418,10 +456,11 @@
       "promiseekpo",
       "pablolee789",
       "lixin73",
+      "omerzalman",
       "dharaawasthi",
       "tgeliot"
      ],
-     "userCount": 10
+     "userCount": 11
     },
     {
      "emoji": "LOVE",
@@ -457,9 +496,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-09T05:54:36.206763100Z",
-  "totalVotes": 56,
+  "totalVotes": 61,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/733932",
-  "totalMessages": 10,
+  "totalMessages": 11,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -473,19 +512,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 10,
+  "commentCount": 11,
   "firstForumMessageId": 3510628,
   "id": 733932,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "junlee789",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932#3531007",
-  "lastCommentPostDate": "2026-10-01T06:42:17.653333300Z",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932#3532866",
+  "lastCommentPostDate": "2026-10-05T00:06:46.190Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-09T05:54:36.206763100Z",
   "title": "\"Not addressed\" is a label too — what we learned reading 4,407 knee reports with an LLM",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733932",
-  "votes": 57,
+  "votes": 61,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "stevenleehans",
