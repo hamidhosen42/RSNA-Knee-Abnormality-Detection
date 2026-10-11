@@ -21,6 +21,9 @@ ap.add_argument("--parent", default="submission_h954")
 ap.add_argument("--blend3", default="public_notebooks/0.951_2v_samanyu1808__rsna-knee-blend3-please-upvote-if-useful.ipynb")
 ap.add_argument("--out", default="submission_h954r")
 ap.add_argument("--owner", default="hosen42")
+ap.add_argument("--reader", choices=["public", "b"], default="public",
+                help="public = goodpjw2008's 3 v0 folds (blend3 verbatim); b = our pseudo-label reader B "
+                     "(esfersami50/rsna-knee-gpjw-pseudo v1, leg alone 0.939)")
 a = ap.parse_args()
 
 par = os.path.join(ROOT, a.parent)
@@ -33,6 +36,15 @@ assert "".join(b3[9]["source"]).startswith("# Stage 2b: goodpjw2008 ConvNeXt 2.5
 reader_cells = [json.loads(json.dumps(b3[i])) for i in (5, 6, 7, 8, 9)]
 for c in reader_cells:
     c["outputs"], c["execution_count"] = [], None
+if a.reader == "b":
+    _r = "".join(reader_cells[-1]["source"])
+    _old = '_ck = sorted(glob.glob(_assets + "/cnxt_v0_fold*.pt")); print("reader ckpts", _ck, flush=True)'
+    assert _r.count(_old) == 1
+    _r = _r.replace(_old, '# [h954r-B] reader = our full-data pseudo-label reader B instead of the 3 public v0 folds\n'
+                    '_ck = sorted(glob.glob("/kaggle/input/**/rsna-knee-gpjw-pseudo/cnxt_plB_full.pt", recursive=True))\n'
+                    'assert len(_ck) == 1, _ck; print("reader ckpts", _ck, flush=True)')
+    reader_cells[-1]["source"] = _r.splitlines(keepends=True)
+    compile(_r, "reader_cell", "exec")
 
 blend = cells[6]
 s = "".join(blend["source"])
@@ -106,5 +118,7 @@ meta = json.load(open(os.path.join(par, "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 if "goodpjw2008/rsna-knee-2-5d-convnext-reader" not in meta["dataset_sources"]:
     meta["dataset_sources"] = meta["dataset_sources"] + ["goodpjw2008/rsna-knee-2-5d-convnext-reader"]
+if a.reader == "b":
+    meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + ["esfersami50/rsna-knee-gpjw-pseudo/1"]
 json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
 print("wrote", out, "| cells", len(nb["cells"]), "| sources", meta["dataset_sources"])
