@@ -21,9 +21,12 @@ ap.add_argument("--parent", default="submission_h954")
 ap.add_argument("--blend3", default="public_notebooks/0.951_2v_samanyu1808__rsna-knee-blend3-please-upvote-if-useful.ipynb")
 ap.add_argument("--out", default="submission_h954r")
 ap.add_argument("--owner", default="hosen42")
-ap.add_argument("--reader", choices=["public", "b"], default="public",
+ap.add_argument("--reader", choices=["public", "b", "c", "b2"], default="public",
                 help="public = goodpjw2008's 3 v0 folds (blend3 verbatim); b = our pseudo-label reader B "
-                     "(esfersami50/rsna-knee-gpjw-pseudo v1, leg alone 0.939)")
+                     "(esfersami50/rsna-knee-gpjw-pseudo v1, leg alone 0.939); c / b2 = esfersami50/rsna-knee-gpjw-student")
+ap.add_argument("--blend", choices=["blend3", "nested"], default="blend3",
+                help="blend3 = Raptor 0.5 / S6 0.25 / reader 0.25 (samanyu blend3); nested = the public 0.955 recipe: "
+                     "0.8 x rank(the 0.954 notebook's 0.7/0.3 blend) + 0.2 x rank(reader)")
 a = ap.parse_args()
 
 par = os.path.join(ROOT, a.parent)
@@ -36,12 +39,16 @@ assert "".join(b3[9]["source"]).startswith("# Stage 2b: goodpjw2008 ConvNeXt 2.5
 reader_cells = [json.loads(json.dumps(b3[i])) for i in (5, 6, 7, 8, 9)]
 for c in reader_cells:
     c["outputs"], c["execution_count"] = [], None
-if a.reader == "b":
+READER_CKPT = {"b": ("esfersami50/rsna-knee-gpjw-pseudo/1", "cnxt_plB_full.pt"),
+               "c": ("esfersami50/rsna-knee-gpjw-student/1", "cnxt_plC_full.pt"),
+               "b2": ("esfersami50/rsna-knee-gpjw-student/1", "cnxt_plB2_full.pt")}.get(a.reader)
+if READER_CKPT:
+    _kern, _file = READER_CKPT
     _r = "".join(reader_cells[-1]["source"])
     _old = '_ck = sorted(glob.glob(_assets + "/cnxt_v0_fold*.pt")); print("reader ckpts", _ck, flush=True)'
     assert _r.count(_old) == 1
-    _r = _r.replace(_old, '# [h954r-B] reader = our full-data pseudo-label reader B instead of the 3 public v0 folds\n'
-                    '_ck = sorted(glob.glob("/kaggle/input/**/rsna-knee-gpjw-pseudo/cnxt_plB_full.pt", recursive=True))\n'
+    _r = _r.replace(_old, f'# [h954r-{a.reader}] reader = our full-data reader {_file} ({_kern}) instead of the 3 public v0 folds\n'
+                    f'_ck = sorted(glob.glob("/kaggle/input/**/{_kern.split("/")[1]}/{_file}", recursive=True))\n'
                     'assert len(_ck) == 1, _ck; print("reader ckpts", _ck, flush=True)')
     reader_cells[-1]["source"] = _r.splitlines(keepends=True)
     compile(_r, "reader_cell", "exec")
@@ -62,7 +69,10 @@ sub("""# Stage 3: per-finding rank blend with weights fixed before any run: Rapt
     """# Stage 3 [h954r]: 3-way per-finding rank blend, weights copied from samanyu1808/rsna-knee-blend3 v3 (not fitted):
 # Raptor 0.5, compact S6 0.25, goodpjw2008 reader 0.25.  A study that a leg failed on is dropped from that study's
 # mean and the other weights renormalised; more than 3 % Raptor failures stops the notebook.""")
-sub("W_RAPTOR, W_OURS = 0.7, 0.3", "W_RAPTOR, W_OURS, W_READER = 0.5, 0.25, 0.25")
+if a.blend == "blend3":
+    sub("W_RAPTOR, W_OURS = 0.7, 0.3", "W_RAPTOR, W_OURS, W_READER = 0.5, 0.25, 0.25")
+else:
+    sub("W_RAPTOR, W_OURS = 0.7, 0.3", "W_RAPTOR, W_OURS = 0.7, 0.3\nW_PARENT, W_READER = 0.8, 0.2   # [nested] the public 0.955 recipe")
 sub("""if rap_fail.sum() > 0.03 * n:
     raise RuntimeError('Raptor failed on %d of %d studies' % (rap_fail.sum(), n))
 """, """if rap_fail.sum() > 0.03 * n:
@@ -85,6 +95,17 @@ sub("""    rr, ro = pct(raw[c].values), pct(ours[c].values)
     b[rap_fail & our_fail] = 0.5
     out[:, j] = b""", """    rr, ro = pct(raw[c].values), pct(ours[c].values)
     rd = pct(reader[c].values) if reader is not None else np.zeros(n)
+    if NESTED:   # 0.8 x rank(the 0.954 notebook's own 0.7/0.3 blend, its failure rules) + 0.2 x rank(reader)
+        b0 = W_RAPTOR * rr + W_OURS * ro
+        b0[rap_fail] = ro[rap_fail]
+        b0[our_fail] = rr[our_fail]
+        b0[rap_fail & our_fail] = 0.5
+        p0 = pct(b0)
+        out[:, j] = np.where(read_fail, p0, W_PARENT * p0 + W_READER * np.nan_to_num(rd))
+        if n >= 3:
+            rho_rr[c] = round(float(pd.Series(raw[c].values).corr(pd.Series(rsub[c].values), method='spearman')), 4)
+            rho_ro[c] = round(float(pd.Series(raw[c].values).corr(pd.Series(ours[c].values), method='spearman')), 4)
+        continue
     wr = W_RAPTOR * ~rap_fail
     wo = W_OURS * ~our_fail
     wd = W_READER * ~read_fail
@@ -98,6 +119,10 @@ sub("""blend = {'weights': {'raptor': W_RAPTOR, 'ours': W_OURS}, 'rows': n, 'rap
 sub("""         'spearman_raptor_vs_ours': rho_ro}""", """         'spearman_raptor_vs_ours': rho_ro,
          'spearman_raptor_vs_reader': {c: round(float(pd.Series(raw[c].values).corr(pd.Series(reader[c].values),
                                        method='spearman')), 4) for c in labels} if reader is not None else None}""")
+s = s.replace("out = np.zeros((n, len(labels)))", "NESTED = %r\nout = np.zeros((n, len(labels)))" % (a.blend == "nested"), 1)
+if a.blend == "nested":
+    s = s.replace("blend = {'weights': {'raptor': W_RAPTOR, 'ours': W_OURS, 'reader': W_READER}, 'rows': n,",
+                  "blend = {'weights': {'raptor': W_RAPTOR, 'ours': W_OURS, 'parent': W_PARENT, 'reader': W_READER, 'mode': 'nested'}, 'rows': n,", 1)
 blend["source"] = s.splitlines(keepends=True)
 blend["outputs"], blend["execution_count"] = [], None
 
@@ -118,7 +143,7 @@ meta = json.load(open(os.path.join(par, "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 if "goodpjw2008/rsna-knee-2-5d-convnext-reader" not in meta["dataset_sources"]:
     meta["dataset_sources"] = meta["dataset_sources"] + ["goodpjw2008/rsna-knee-2-5d-convnext-reader"]
-if a.reader == "b":
-    meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + ["esfersami50/rsna-knee-gpjw-pseudo/1"]
+if READER_CKPT:
+    meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + [READER_CKPT[0]]
 json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
 print("wrote", out, "| cells", len(nb["cells"]), "| sources", meta["dataset_sources"])

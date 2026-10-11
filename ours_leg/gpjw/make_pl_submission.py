@@ -14,6 +14,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 TRAIN_VERSION = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--train-version=")), "1")
+TRAIN_KERNEL = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--train-kernel=")), "esfersami50/rsna-knee-gpjw-pseudo")
+ARMS = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--arms=")), "A,B").split(",")
+WHAT = {"A": "v0 labels (control)", "B": "0.5 v0 + 0.5 out-of-fold reader targets (pseudo-label)",
+        "C": "0.5 v0 + 0.5 Mirror teacher targets (student of the Mirror)",
+        "B2": "B targets with the convnext_tiny.fb_in22k_ft_in1k backbone"}
 
 e20 = json.load(open(os.path.join(ROOT, "submission_e20", "rsna-knee-e20.ipynb")))["cells"]
 e20_meta = json.load(open(os.path.join(ROOT, "submission_e20", "kernel-metadata.json")))
@@ -48,7 +53,7 @@ def find(name):
 
 
 assets, data = find("cnxt_v0_fold0.pt"), find("test_series.csv")    # goodpjw2008 dataset ships the DICOM decoders
-ckpts = sorted(glob.glob(f"/kaggle/input/**/{CKPT_NAME}", recursive=True))
+ckpts = sorted(glob.glob(f"/kaggle/input/**/{CKPT_NAME}", recursive=True))   # unique per arm
 assert len(ckpts) == 1, f"expected one {CKPT_NAME}, found {ckpts}"
 import torch
 ck = torch.load(ckpts[0], map_location="cpu", weights_only=False)
@@ -78,9 +83,10 @@ print("NOTEBOOK_COMPLETE", sub.shape, flush=True)
 display(sub.head())
 '''
 
-for arm, what in (("A", "v0 labels (control)"), ("B", "0.5 v0 + 0.5 out-of-fold reader targets (pseudo-label)")):
+for arm in ARMS:
+    what = WHAT[arm]
     cells = [md(f"# RSNA Knee R2 arm {arm}: full-data 2.5D ConvNeXt reader, {what}\n\nOne checkpoint "
-                f"(`cnxt_pl{arm}_full.pt`, esfersami50/rsna-knee-gpjw-pseudo) through goodpjw2008's inference code; "
+                f"(`cnxt_pl{arm}_full.pt`, {TRAIN_KERNEL}) through goodpjw2008's inference code; "
                 "leg-alone A/B for the pseudo-label experiment.\n")]
     cells += [json.loads(json.dumps(e20[i])) for i in (34, 35, 36, 37)]
     cells += [code(RUN.replace("__ARM__", arm))]
@@ -99,6 +105,6 @@ for arm, what in (("A", "v0 labels (control)"), ("B", "0.5 v0 + 0.5 out-of-fold 
             "machine_shape": "NvidiaTeslaT4", "docker_image": e20_meta["docker_image"], "docker_image_pinning_type": "original",
             "dataset_sources": ["goodpjw2008/rsna-knee-2-5d-convnext-reader/1"],
             "competition_sources": ["rsna-knee-abnormality-detection"],
-            "kernel_sources": [f"esfersami50/rsna-knee-gpjw-pseudo/{TRAIN_VERSION}"], "model_sources": []}
+            "kernel_sources": [f"{TRAIN_KERNEL}/{TRAIN_VERSION}"], "model_sources": []}
     json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
     print("wrote", out)

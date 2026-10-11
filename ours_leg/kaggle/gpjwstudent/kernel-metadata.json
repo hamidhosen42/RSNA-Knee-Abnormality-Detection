@@ -1,0 +1,33 @@
+{
+ "id": "esfersami50/rsna-knee-gpjw-student",
+ "title": "rsna-knee-gpjw-student",
+ "code_file": "gpjwstudent.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_tpu": false,
+ "enable_internet": true,
+ "machine_shape": "NvidiaTeslaT4",
+ "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+ "docker_image_pinning_type": "original",
+ "dataset_sources": [
+  "stevenleehans/rsna-knee-llm-report-labels/6",
+  "pilkwang/rsna-knee-llm-labels/1",
+  "lixin73/rsna-knee-llm-report-labels-sol56/1",
+  "laymond/rsna-knee-abnormality-qwen3-8b-weak-labels/2"
+ ],
+ "competition_sources": [
+  "rsna-knee-abnormality-detection"
+ ],
+ "kernel_sources": [
+  "esfersami50/rsna-knee-gpjw-cache-0/1",
+  "esfersami50/rsna-knee-gpjw-cache-1/1",
+  "esfersami50/rsna-knee-gpjw-cache-2/1",
+  "esfersami50/rsna-knee-gpjw-cache-3/1",
+  "esfersami50/rsna-knee-gpjw-cache-4/1",
+  "esfersami50/rsna-knee-gpjw-pseudo/1",
+  "esfersami50/rsna-knee-mirror-teacher/2"
+ ],
+ "model_sources": []
+}
