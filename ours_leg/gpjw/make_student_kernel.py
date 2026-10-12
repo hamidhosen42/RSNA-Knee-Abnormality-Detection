@@ -23,6 +23,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 TV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-version=")), "1")
 PV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--pseudo-version=")), "1")
+# round 2 (2026-10-12): --arms=C2,C3 --slug=rsna-knee-gpjw-student2
+ARMS = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--arms=")), "C,B2").split(",")
+SLUG = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--slug=")), "rsna-knee-gpjw-student")
 N_SHARDS = 5
 DOCKER = "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
 
@@ -38,11 +41,14 @@ def sub(old, new):
 
 
 sub('''def train_arm(arm):
-    a = dict(ARGS, arm=arm, alpha=ALPHA if arm == "B" else None)''', '''ARM_CFG = {"C": dict(backbone="convnext_tiny", targets="0.5 v0 + 0.5 Mirror teacher"),
-           "B2": dict(backbone="convnext_tiny.fb_in22k_ft_in1k", targets="B labels_pl.csv (0.5 v0 + 0.5 OOF)")}
+    a = dict(ARGS, arm=arm, alpha=ALPHA if arm == "B" else None)''', '''ARM_CFG = {"C": dict(backbone="convnext_tiny", targets="0.5 v0 + 0.5 Mirror teacher", tw=0.5),
+           "B2": dict(backbone="convnext_tiny.fb_in22k_ft_in1k", targets="B labels_pl.csv (0.5 v0 + 0.5 OOF)"),
+           # round 2: C2 = C with seed 1 (replicate / ensemble member); C3 = C with the teacher weighted 0.75
+           "C2": dict(backbone="convnext_tiny", targets="0.5 v0 + 0.5 Mirror teacher, seed 1", tw=0.5, seed=1),
+           "C3": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher", tw=0.75)}
 
 
-def build_targets_C():
+def build_targets_C(tw=0.5):
     lab = build_labels()
     m = pd.read_csv(find("mirror_train_raw.csv"), dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS]
     m = m.reindex(lab.index.astype(str))
@@ -59,31 +65,31 @@ def build_targets_C():
     if gok.sum() > 10:
         g_auc, _ = macro_auc(gold.loc[gok, [f"gold_{c}" for c in LABELS]].values, m.loc[gold.index[gok]].values)
         say("targets", f"teacher on gold-58 (diagnostic, teacher was selected on gold): {g_auc:.4f}")
-    new = (0.5 * lab.loc[idx, LABELS].values + 0.5 * m.loc[idx].values).clip(0.01, 0.99)
+    new = ((1 - tw) * lab.loc[idx, LABELS].values + tw * m.loc[idx].values).clip(0.01, 0.99)
     say("targets", f"mean |C - v0| {np.abs(new - lab.loc[idx, LABELS].values).mean():.4f}")
     lab.loc[idx, LABELS] = new
-    lab.to_csv(f"{OUT}/labels_C.csv")
+    lab.to_csv(f"{OUT}/labels_C_tw{tw}.csv")
     return lab
 
 
 def train_arm(arm):
     a = dict(ARGS, arm=arm, **ARM_CFG[arm])''')
 sub('''    lab = pd.read_csv(f"{OUT}/labels_pl.csv", index_col=0) if arm == "B" else build_labels()''',
-    '''    lab = build_targets_C() if arm == "C" else pd.read_csv(find("labels_pl.csv"), index_col=0)''')
+    '''    lab = build_targets_C(a["tw"]) if "tw" in a else pd.read_csv(find("labels_pl.csv"), index_col=0)''')
 sub('''    print(f"gpus {torch.cuda.device_count()} | script {script_path()} | probe {PROBE} | alpha {ALPHA}", flush=True)
     codes = run_parallel([("GPJW_OOF", "0,2,4"), ("GPJW_OOF", "1,3")])
     print("oof exit codes:", codes, flush=True)
     if any(c != 0 for c in codes.values()):
         raise SystemExit("OOF phase failed")
     build_targets()
-    codes = run_parallel([("GPJW_ARM", "A"), ("GPJW_ARM", "B")])''', '''    print(f"gpus {torch.cuda.device_count()} | script {script_path()} | probe {PROBE} | arms C, B2", flush=True)
-    codes = run_parallel([("GPJW_ARM", "C"), ("GPJW_ARM", "B2")])''')
-src = knee + MAIN.replace("__PROBE__", "False").replace("__ALPHA__", "0.5")
+    codes = run_parallel([("GPJW_ARM", "A"), ("GPJW_ARM", "B")])''', '''    print(f"gpus {torch.cuda.device_count()} | script {script_path()} | probe {PROBE} | arms __ARMS__", flush=True)
+    codes = run_parallel([("GPJW_ARM", x) for x in __ARMS__])''')
+src = knee + MAIN.replace("__PROBE__", "False").replace("__ALPHA__", "0.5").replace("__ARMS__", repr(ARMS))
 compile(src, "gpjwstudent.py", "exec")
-d = os.path.join(HERE, "..", "kaggle", "gpjwstudent" + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
+d = os.path.join(HERE, "..", "kaggle", SLUG.replace("rsna-knee-gpjw-", "gpjw") + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
 open(os.path.join(d, "gpjwstudent.py"), "w").write(src)
-meta = {"id": f"{OWNER}/rsna-knee-gpjw-student", "title": "rsna-knee-gpjw-student", "code_file": "gpjwstudent.py",
+meta = {"id": f"{OWNER}/{SLUG}", "title": SLUG, "code_file": "gpjwstudent.py",
         "language": "python", "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False,
         "enable_internet": True, "machine_shape": "NvidiaTeslaT4", "docker_image": DOCKER, "docker_image_pinning_type": "original",
         "dataset_sources": ["stevenleehans/rsna-knee-llm-report-labels/6", "pilkwang/rsna-knee-llm-labels/1",

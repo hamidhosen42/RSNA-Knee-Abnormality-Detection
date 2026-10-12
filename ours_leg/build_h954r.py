@@ -24,6 +24,9 @@ ap.add_argument("--owner", default="hosen42")
 ap.add_argument("--reader", choices=["public", "b", "c", "b2"], default="public",
                 help="public = goodpjw2008's 3 v0 folds (blend3 verbatim); b = our pseudo-label reader B "
                      "(esfersami50/rsna-knee-gpjw-pseudo v1, leg alone 0.939); c / b2 = esfersami50/rsna-knee-gpjw-student")
+ap.add_argument("--reader-ckpts", default="",
+                help="overrides --reader: 'owner/kernel/ver:file;owner/kernel/ver:file' - the reader leg is infer.py's "
+                     "probability mean over these checkpoints (e.g. a student ensemble)")
 ap.add_argument("--blend", choices=["blend3", "nested"], default="blend3",
                 help="blend3 = Raptor 0.5 / S6 0.25 / reader 0.25 (samanyu blend3); nested = the public 0.955 recipe: "
                      "0.8 x rank(the 0.954 notebook's 0.7/0.3 blend) + 0.2 x rank(reader)")
@@ -42,7 +45,19 @@ for c in reader_cells:
 READER_CKPT = {"b": ("esfersami50/rsna-knee-gpjw-pseudo/1", "cnxt_plB_full.pt"),
                "c": ("esfersami50/rsna-knee-gpjw-student/1", "cnxt_plC_full.pt"),
                "b2": ("esfersami50/rsna-knee-gpjw-student/1", "cnxt_plB2_full.pt")}.get(a.reader)
-if READER_CKPT:
+MULTI = [tuple(x.split(":")) for x in a.reader_ckpts.split(";") if x]
+if MULTI:
+    _r = "".join(reader_cells[-1]["source"])
+    _old = '_ck = sorted(glob.glob(_assets + "/cnxt_v0_fold*.pt")); print("reader ckpts", _ck, flush=True)'
+    assert _r.count(_old) == 1
+    _lines = [f'# [h954r-ensemble] reader = probability mean of our student checkpoints: {", ".join(f for _, f in MULTI)}', '_ck = []']
+    for _kern, _file in MULTI:
+        _lines.append(f'_ck += sorted(glob.glob("/kaggle/input/**/{_kern.split("/")[1]}/{_file}", recursive=True))')
+    _lines.append(f'assert len(_ck) == {len(MULTI)}, _ck; print("reader ckpts", _ck, flush=True)')
+    _r = _r.replace(_old, "\n".join(_lines))
+    reader_cells[-1]["source"] = _r.splitlines(keepends=True)
+    compile(_r, "reader_cell", "exec")
+elif READER_CKPT:
     _kern, _file = READER_CKPT
     _r = "".join(reader_cells[-1]["source"])
     _old = '_ck = sorted(glob.glob(_assets + "/cnxt_v0_fold*.pt")); print("reader ckpts", _ck, flush=True)'
@@ -143,7 +158,9 @@ meta = json.load(open(os.path.join(par, "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 if "goodpjw2008/rsna-knee-2-5d-convnext-reader" not in meta["dataset_sources"]:
     meta["dataset_sources"] = meta["dataset_sources"] + ["goodpjw2008/rsna-knee-2-5d-convnext-reader"]
-if READER_CKPT:
+if MULTI:
+    meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + sorted({k for k, _ in MULTI})
+elif READER_CKPT:
     meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + [READER_CKPT[0]]
 json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
 print("wrote", out, "| cells", len(nb["cells"]), "| sources", meta["dataset_sources"])

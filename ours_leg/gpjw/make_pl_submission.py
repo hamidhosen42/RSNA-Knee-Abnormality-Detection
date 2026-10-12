@@ -18,7 +18,9 @@ TRAIN_KERNEL = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--tra
 ARMS = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--arms=")), "A,B").split(",")
 WHAT = {"A": "v0 labels (control)", "B": "0.5 v0 + 0.5 out-of-fold reader targets (pseudo-label)",
         "C": "0.5 v0 + 0.5 Mirror teacher targets (student of the Mirror)",
-        "B2": "B targets with the convnext_tiny.fb_in22k_ft_in1k backbone"}
+        "B2": "B targets with the convnext_tiny.fb_in22k_ft_in1k backbone",
+        "C2": "C recipe with seed 1 (0.5 v0 + 0.5 Mirror teacher)",
+        "C3": "0.25 v0 + 0.75 Mirror teacher targets"}
 
 e20 = json.load(open(os.path.join(ROOT, "submission_e20", "rsna-knee-e20.ipynb")))["cells"]
 e20_meta = json.load(open(os.path.join(ROOT, "submission_e20", "kernel-metadata.json")))
