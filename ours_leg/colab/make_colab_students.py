@@ -393,20 +393,89 @@ def shard_ok(i):
     return have >= len(m), have, len(m)
 
 
-def get_shard(i):
-    for attempt in range(4):
-        ok, have, want = shard_ok(i)
-        if ok:
-            return f"shard {i}: {have}/{want} ok"
-        sh(f"kaggle kernels output esfersami50/rsna-knee-gpjw-cache-{i} -p {CACHE}/{i} -q", quiet=True)
+# Robust shard downloader (the kaggle CLI stopped near 4,000 of ~4,870 files per shard and restarted from page 1 on
+# every retry): list every page with retries, skip files already complete (npz opened to catch truncated ones),
+# download the rest with retries / back-off, re-list when signed URLs expire.
+import requests
+import numpy as np
+from kaggle.api.kaggle_api_extended import KaggleApi
+from kagglesdk.kernels.types.kernels_api_service import ApiListKernelSessionOutputRequest
+_api = KaggleApi(); _api.authenticate()
+
+
+def list_outputs(kernel, page_size=100):
+    owner, slug = kernel.split("/")
+    files, tok = [], ""
+    while True:
+        for attempt in range(8):
+            try:
+                with _api.build_kaggle_client() as kc:
+                    req = ApiListKernelSessionOutputRequest()
+                    req.user_name, req.kernel_slug, req.page_size, req.page_token = owner, slug, page_size, tok
+                    resp = kc.kernels.kernels_api_client.list_kernel_session_output(req)
+                break
+            except Exception as e:
+                print(f"  list {slug} retry {attempt}: {type(e).__name__} {str(e)[:100]}", flush=True)
+                time.sleep(min(120, 5 * 2 ** attempt))
+        else:
+            raise RuntimeError(f"listing {kernel} failed")
+        files += [(f.file_name, f.url) for f in (resp.files or [])]
+        tok = resp.next_page_token
+        if not tok:
+            return files
+
+
+def file_ok(path):
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        return False
+    if path.endswith(".npz"):
+        try:
+            with np.load(path) as z:
+                z["off"]
+        except Exception:
+            return False
+    return True
+
+
+def fetch(path, url):
+    for attempt in range(6):
+        try:
+            r = requests.get(url, timeout=180)
+            if r.status_code == 200:
+                tmp = path + ".part"
+                with open(tmp, "wb") as fh:
+                    fh.write(r.content)
+                os.replace(tmp, path)
+                return True
+            if r.status_code in (401, 403, 404):
+                return False                      # signed URL expired: the next round re-lists
+        except Exception:
+            pass
+        time.sleep(min(60, 3 * 2 ** attempt))
+    return False
+
+
+def get_shard(i, workers=8):
+    kernel, root = f"esfersami50/rsna-knee-gpjw-cache-{i}", f"{CACHE}/{i}"
+    for rnd in range(6):
+        files = list_outputs(kernel)
+        todo = [(os.path.join(root, n), u) for n, u in files
+                if n.endswith((".npz", "_meta.csv")) and not file_ok(os.path.join(root, n))]
+        print(f"shard {i}: listed {len(files)} files, {len(todo)} to download (round {rnd}) | {(time.time() - t0) / 60:.0f} min", flush=True)
+        if not todo:
+            break
+        for pth, _ in todo:
+            os.makedirs(os.path.dirname(pth), exist_ok=True)
+        with ThreadPoolExecutor(workers) as ex:
+            got = sum(ex.map(lambda t: fetch(*t), todo))
+        print(f"shard {i}: downloaded {got}/{len(todo)}", flush=True)
     ok, have, want = shard_ok(i)
     return f"shard {i}: {have}/{want} {'ok' if ok else 'INCOMPLETE'}"
 
 
 t0 = time.time()
-with ThreadPoolExecutor(5) as ex:
-    for msg in ex.map(get_shard, range(5)):
-        print(msg, f"| {(time.time() - t0) / 60:.0f} min", flush=True)
+for i in range(5):                                  # one shard at a time (8 parallel downloads) to stay under rate limits
+    print(get_shard(i), flush=True)
 print("cache size:", sh(f"du -sh {CACHE}", quiet=True).stdout.strip())
 assert all(shard_ok(i)[0] for i in range(5)), "a cache shard is incomplete - re-run this cell"
 '''
