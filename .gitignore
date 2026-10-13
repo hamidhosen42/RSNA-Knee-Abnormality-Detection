@@ -8,3 +8,7 @@ kaggle.json
 # misc
 .DS_Store
 __pycache__/
+
+# large model checkpoints staged for Kaggle dataset upload
+students_upload/
+colab_out/

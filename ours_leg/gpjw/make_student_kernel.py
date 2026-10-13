@@ -21,6 +21,9 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
+# round 3 (2026-10-13, hosen42): --cache-owner=hosen42 --teacher-dataset=hosen42/rsna-knee-mirror-teacher-train
+CACHE_OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--cache-owner=")), "esfersami50")
+TEACHER_DS = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-dataset=")), "")
 TV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-version=")), "1")
 PV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--pseudo-version=")), "1")
 # round 2 (2026-10-12): --arms=C2,C3 --slug=rsna-knee-gpjw-student2
@@ -45,7 +48,10 @@ sub('''def train_arm(arm):
            "B2": dict(backbone="convnext_tiny.fb_in22k_ft_in1k", targets="B labels_pl.csv (0.5 v0 + 0.5 OOF)"),
            # round 2: C2 = C with seed 1 (replicate / ensemble member); C3 = C with the teacher weighted 0.75
            "C2": dict(backbone="convnext_tiny", targets="0.5 v0 + 0.5 Mirror teacher, seed 1", tw=0.5, seed=1),
-           "C3": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher", tw=0.75)}
+           "C3": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher", tw=0.75),
+           # round 3 (hosen42): the two Colab arms on Kaggle T4 - a new backbone with C3's targets, and C3 with seed 1
+           "S75": dict(backbone="convnext_small", targets="0.25 v0 + 0.75 Mirror teacher", tw=0.75),
+           "T75s1": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher, seed 1", tw=0.75, seed=1)}
 
 
 def build_targets_C(tw=0.5):
@@ -96,8 +102,10 @@ meta = {"id": f"{OWNER}/{SLUG}", "title": SLUG, "code_file": "gpjwstudent.py",
                             "lixin73/rsna-knee-llm-report-labels-sol56/1",
                             "laymond/rsna-knee-abnormality-qwen3-8b-weak-labels/2"],
         "competition_sources": ["rsna-knee-abnormality-detection"],
-        "kernel_sources": [f"esfersami50/rsna-knee-gpjw-cache-{i}/1" for i in range(N_SHARDS)]
-                          + [f"esfersami50/rsna-knee-gpjw-pseudo/{PV}", f"esfersami50/rsna-knee-mirror-teacher/{TV}"],
+        "kernel_sources": [f"{CACHE_OWNER}/rsna-knee-gpjw-cache-{i}/1" for i in range(N_SHARDS)]
+                          + ([] if TEACHER_DS else [f"esfersami50/rsna-knee-gpjw-pseudo/{PV}", f"esfersami50/rsna-knee-mirror-teacher/{TV}"]),
         "model_sources": []}
+if TEACHER_DS:
+    meta["dataset_sources"] = meta["dataset_sources"] + [TEACHER_DS]
 json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
 print("wrote", d)

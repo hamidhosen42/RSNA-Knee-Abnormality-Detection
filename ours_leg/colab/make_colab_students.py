@@ -506,23 +506,35 @@ print("gold-58:", {a: round(g, 4) for a, g in results.items()}, "| guard", GOLD_
 assert adopted, "no new student passed the guard - nothing to submit"
 '''
 
-UPLOAD = '''# ===== upload the adopted checkpoints as a private Kaggle dataset =====
+UPLOAD = '''# ===== upload the adopted checkpoints as a private Kaggle dataset (tries several metadata variants) =====
+# 2026-10-13: license "unknown" + slug-like title gave the server error "Dataset url's dataset slugs and hashlink are all null"
 up = f"{LOCAL}/upload"
 shutil.rmtree(up, ignore_errors=True); os.makedirs(up)
 for a in adopted:
     shutil.copy(f"{DRIVE_DIR}/out/cnxt_{a}_full.pt", up)
-json.dump({"id": f"{KAGGLE_USER}/{DATASET_SLUG}", "title": DATASET_SLUG, "licenses": [{"name": "unknown"}]},
-          open(f"{up}/dataset-metadata.json", "w"))
-r = sh(f"kaggle datasets version -p {up} -m 'students {adopted}' --dir-mode zip")
-if r.returncode != 0 or "not found" in (r.stdout + r.stderr).lower():
-    sh(f"kaggle datasets create -p {up} --dir-mode zip", check=True)   # private by default
+variants = [(DATASET_SLUG, "RSNA Knee Colab Students", "CC0-1.0"),
+            (DATASET_SLUG, "RSNA Knee Colab Student Readers", "other"),
+            (DATASET_SLUG.replace("students", "readers-v2"), "RSNA Knee Colab Readers v2", "CC0-1.0")]
+made = None
+for slug, title, lic in variants:
+    if "ready" in sh(f"kaggle datasets status {KAGGLE_USER}/{slug}", quiet=True).stdout.lower():
+        made = slug; print("already exists:", slug); break
+    json.dump({"id": f"{KAGGLE_USER}/{slug}", "title": title, "licenses": [{"name": lic}]},
+              open(f"{up}/dataset-metadata.json", "w"))
+    r = sh(f"kaggle datasets create -p {up} --dir-mode zip")
+    if "error" not in (r.stdout + r.stderr).lower():
+        made = slug; break
+    print(f"-> variant ({slug}, {lic}) failed, trying the next one")
+assert made, "dataset creation failed for every variant"
+DATASET_SLUG = made          # the submit cell uses this
 for _ in range(60):
     st = sh(f"kaggle datasets status {KAGGLE_USER}/{DATASET_SLUG}", quiet=True).stdout.strip().lower()
-    print("dataset status:", st)
+    print("dataset status:", st, flush=True)
     if "ready" in st:
         break
     time.sleep(30)
 assert "ready" in st, "dataset not ready"
+print("DATASET READY:", f"{KAGGLE_USER}/{DATASET_SLUG}")
 '''
 
 SUBMIT = '''# ===== H955ENS: pull H955C, swap its reader for the student ensemble, push, verify the commit, submit =====
