@@ -24,6 +24,9 @@ ap.add_argument("--blend3", default="public_notebooks/0.951_2v_samanyu1808__rsna
 ap.add_argument("--owner", default="hosen42")
 ap.add_argument("--readers", default="rsna-knee-student-readers")
 ap.add_argument("--n-ckpt", type=int, default=3)
+ap.add_argument("--pattern", default="cnxt_plC*_full.pt", help="H957: C, C2, C3; H957x5: cnxt_pl*_full.pt (+ S75, T75s1)")
+ap.add_argument("--w-reader", type=float, default=0.2,
+                help="students' rank weight (H957/H957x5: 0.2). 2026-10-14 user: raise the score any way -> LB probes 0.3 / 0.4")
 ap.add_argument("--out", default="submission_h957")
 a = ap.parse_args()
 
@@ -40,8 +43,8 @@ reader = [json.loads(json.dumps(b3[i])) for i in (5, 6, 7, 8, 9)]
 r = src(reader[-1])
 old = '_ck = sorted(glob.glob(_assets + "/cnxt_v0_fold*.pt")); print("reader ckpts", _ck, flush=True)'
 assert r.count(old) == 1
-r = r.replace(old, f'# [h957] reader = probability mean of our Mirror students C, C2, C3 (private dataset {a.readers})\n'
-                   f'_ck = sorted(glob.glob("/kaggle/input/**/{a.readers}/cnxt_plC*_full.pt", recursive=True))\n'
+r = r.replace(old, f'# [h957] reader = probability mean of our Mirror students {a.pattern} (private dataset {a.readers})\n'
+                   f'_ck = sorted(glob.glob("/kaggle/input/**/{a.readers}/{a.pattern}", recursive=True))\n'
                    f'assert len(_ck) == {a.n_ckpt}, _ck; print("reader ckpts", _ck, flush=True)')
 reader[-1]["source"] = r.splitlines(keepends=True)
 compile(r, "reader", "exec")
@@ -51,7 +54,7 @@ FINAL = '''# [h957] final: 0.8 x rank(the R7 notebook's own submission.csv) + 0.
 # a study the reader could not score keeps its R7 rank.
 import json as _hj, shutil as _hs
 import numpy as _hn, pandas as _hp
-W_PARENT, W_READER = 0.8, 0.2
+W_PARENT, W_READER = __WP__, __WR__
 _hw = WORK
 _hs.copyfile(_hw / 'submission.csv', _hw / '_r7_submission.csv')
 _par = _hp.read_csv(_hw / '_r7_submission.csv', dtype={'StudyInstanceUID': str})
@@ -91,6 +94,7 @@ except Exception as _e:
 (_hw / 'h957_receipt.json').write_text(_hj.dumps(_rep, indent=1))
 print('H957_FINAL', _hj.dumps(_rep), flush=True)
 '''
+FINAL = FINAL.replace("__WP__", repr(round(1 - a.w_reader, 4))).replace("__WR__", repr(a.w_reader))
 compile(FINAL, "final", "exec")
 final = {"cell_type": "code", "metadata": {}, "execution_count": None, "outputs": [], "source": FINAL.splitlines(keepends=True)}
 cells[0]["source"] = ("# RSNA Knee H957: heliosli's R7 + Raptor notebook (verbatim) + our Mirror-student readers\n\n"

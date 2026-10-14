@@ -12,3 +12,7 @@ __pycache__/
 # large model checkpoints staged for Kaggle dataset upload
 students_upload/
 colab_out/
+students_staging_teacher/
+
+# teammate Kaggle tokens (never commit)
+*token*.txt
