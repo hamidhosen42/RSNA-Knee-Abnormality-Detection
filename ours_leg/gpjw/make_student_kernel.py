@@ -24,9 +24,9 @@ OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")),
 # round 3 (2026-10-13, hosen42): --cache-owner=hosen42 --teacher-dataset=hosen42/rsna-knee-mirror-teacher-train
 CACHE_OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--cache-owner=")), "esfersami50")
 TEACHER_DS = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-dataset=")), "")
-# round 4 (2026-10-15, final): ensemble teacher = the 0.956 blend's own weights over Mirror384 / M224 / R7 train predictions;
-# --ens-kernels = kernels whose outputs hold m224_train_raw.csv and r7_train_shard*.csv
-ENS_KERNELS = [k for k in next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--ens-kernels=")), "").split(",") if k]
+# round 4 (2026-10-15, final): ensemble teacher T2 = ens_train_raw.csv, written locally by gate_ens_teacher.py (the 0.956
+# blend's rank form over Mirror384 / M224 / R7 train predictions, on Mirror's marginal) and uploaded with
+# --teacher-dataset=hosen42/rsna-knee-ens-teacher-train; never read straight from the teacher kernels (that skips the gate)
 TV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-version=")), "1")
 PV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--pseudo-version=")), "1")
 # round 2 (2026-10-12): --arms=C2,C3 --slug=rsna-knee-gpjw-student2
@@ -59,40 +59,19 @@ sub('''def train_arm(arm):
            "E75t": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 ensemble teacher (Mirror384/M224/R7)", tw=0.75, teacher="ens"),
            "E75s": dict(backbone="convnext_small", targets="0.25 v0 + 0.75 ensemble teacher (Mirror384/M224/R7)", tw=0.75, teacher="ens")}
 
-# the 0.956 blend: Raptor 0.5 = 0.65 x Mirror384 + 0.35 x M224 (with mirror), R7 0.5 -> probability weights
-ENS_WEIGHTS = {"mirror384": 0.325, "m224": 0.175, "r7": 0.5}
-
-
-def _teacher_frame(paths):
-    d = pd.concat([pd.read_csv(p, dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS] for p in paths])
-    d = d[~d.index.duplicated()]
-    return d[~(d == 0.5).all(axis=1)]          # a Raptor study that failed or was not reached stays 0.5 everywhere
-
-
-def ensemble_teacher(index):
-    """Per-study weighted mean of the members that scored the study (weights renormalised); NaN if none did."""
-    members = {"mirror384": [find("mirror_train_raw.csv")], "m224": [find("m224_train_raw.csv")],
-               "r7": sorted(glob.glob("/kaggle/input/**/r7_train_shard*.csv", recursive=True))}
-    num, den = 0.0, 0.0
-    for name, paths in members.items():
-        assert paths, "no files for teacher member " + name
-        d = _teacher_frame(paths).reindex(index)
-        ok = d.notna().all(axis=1).values[:, None]
-        cover = float(ok.mean())
-        say("targets", f"ensemble member {name}: {len(paths)} file(s), covers {cover:.3f} of the train studies")
-        assert cover > 0.9, f"teacher member {name} covers only {cover:.3f}"
-        num = num + ENS_WEIGHTS[name] * np.nan_to_num(d.values) * ok
-        den = den + ENS_WEIGHTS[name] * ok
-    return pd.DataFrame(np.where(den > 0, num / np.maximum(den, 1e-9), np.nan), index=index, columns=LABELS)
+# ens = T2 from gate_ens_teacher.py: the 0.956 blend's rank form (Raptor 0.5 = 0.65 x Mirror384 + 0.35 x M224 with mirror,
+# R7 0.5) on the train studies, mapped onto Mirror384's marginal, so only the teacher's ordering differs from C3's
+TEACHER_FILES = {"mirror": "mirror_train_raw.csv", "ens": "ens_train_raw.csv"}
 
 
 def build_targets_C(tw=0.5, teacher="mirror"):
     lab = build_labels()
+    m = pd.read_csv(find(TEACHER_FILES[teacher]), dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS]
+    m = m.reindex(lab.index.astype(str))
     if teacher == "ens":
-        m = ensemble_teacher(lab.index.astype(str))
-    else:
-        m = pd.read_csv(find("mirror_train_raw.csv"), dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS]
-        m = m.reindex(lab.index.astype(str))
+        cover = float(m.notna().all(axis=1).mean())
+        say("targets", f"ensemble teacher T2 covers {cover:.3f} of the train studies")
+        assert cover > 0.9, f"ensemble teacher file covers only {cover:.3f}"
     m.index = lab.index
     ok = m.notna().all(axis=1) & ~(m == 0.5).all(axis=1)
     weak = lab.is_gold == 0
@@ -142,6 +121,5 @@ meta = {"id": f"{OWNER}/{SLUG}", "title": SLUG, "code_file": "gpjwstudent.py",
         "model_sources": []}
 if TEACHER_DS:
     meta["dataset_sources"] = meta["dataset_sources"] + [TEACHER_DS]
-meta["kernel_sources"] = meta["kernel_sources"] + ENS_KERNELS
 json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
 print("wrote", d)
