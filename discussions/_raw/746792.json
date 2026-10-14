@@ -6,17 +6,17 @@
   "authorUserName": "nartaa",
   "comments": [
    {
-    "id": 3535081,
-    "postDate": "2026-10-08T09:34:57.393Z",
-    "rawMarkdown": "Haven't seen such detailed and useful work in a long time.",
-    "content": "<p>Haven't seen such detailed and useful work in a long time.</p>",
+    "id": 3537933,
+    "postDate": "2026-10-13T11:26:46.937Z",
+    "rawMarkdown": "\nThank you for releasing both checkpoints. One result that might interest you: your 224-pixel / 0.8-crop\ncheckpoint, mixed into the Raptor slot at 35% next to the 384 one, helped in both blends I tried. Displayed score\nunchanged (0.954, then 0.956), but rank 437 → 320 and 233 → 156. Different resolution and field of view seem to\nmake it wrong on different studies. The notebook credits your work throughout:\nhttps://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956",
+    "content": "<p>Thank you for releasing both checkpoints. One result that might interest you: your 224-pixel / 0.8-crop\ncheckpoint, mixed into the Raptor slot at 35% next to the 384 one, helped in both blends I tried. Displayed score\nunchanged (0.954, then 0.956), but rank 437 → 320 and 233 → 156. Different resolution and field of view seem to\nmake it wrong on different studies. The notebook credits your work throughout:\n<a href=\"https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956\" target=\"_blank\">https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956</a></p>",
     "parent": {},
     "author": {
-     "displayName": "SpeedSci",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
-     "url": "/caoyupeng",
-     "tier": "EXPERT",
-     "id": 26421714,
+     "displayName": "varshitha kolupuri",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32868875-kg.jpg?t=2026-09-01-13-44-25",
+     "url": "/varshithakolupuri",
+     "tier": "CONTRIBUTOR",
+     "id": 32868875,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
@@ -26,565 +26,20 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 121,
+    "competitionRanking": 317,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Myo Min Htet(wnp)🇲🇲",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
-      "url": "/myominhtet",
-      "userName": "myominhtet",
-      "tier": "EXPERT",
-      "id": 4600631,
-      "profileUrl": "/myominhtet",
-      "performanceTier": "EXPERT",
-      "userId": 4600631,
-      "progressionOptOut": false
-     },
-     "intro": "Need some who can support GPU, "
-    }
-   },
-   {
-    "id": 3535050,
-    "postDate": "2026-10-08T08:40:11.277Z",
-    "rawMarkdown": "i end up using chatgpt to teach me how to download data from OAI ...i cannot imagine how long i would take without agent help ... the signup, login ... what and how to download is pretty complicated!!! Now i understand why several singapore gov projects aim to simplify data access using AI.",
-    "content": "<p>i end up using chatgpt to teach me how to download data from OAI …i cannot imagine how long i would take without agent help … the signup, login … what and how to download is pretty complicated!!! Now i understand why several singapore gov projects aim to simplify data access using AI.</p>",
-    "replies": [
-     {
-      "id": 3535123,
-      "postDate": "2026-10-08T11:05:10.233Z",
-      "rawMarkdown": "As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one",
-      "content": "<p>As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one</p>",
-      "replies": [
-       {
-        "id": 3535172,
-        "postDate": "2026-10-08T12:37:54.590Z",
-        "rawMarkdown": "Any one receiving \"403 Forbidden\" when clicking on \"Sign in\" ?",
-        "content": "<p>Any one receiving \"403 Forbidden\" when clicking on \"Sign in\" ?</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Optimo",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
-         "url": "/optimo",
-         "tier": "MASTER",
-         "id": 190923,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 37,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Optimo",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
-          "url": "/optimo",
-          "userName": "optimo",
-          "tier": "MASTER",
-          "id": 190923,
-          "profileUrl": "/optimo",
-          "performanceTier": "MASTER",
-          "userId": 190923,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535176,
-        "postDate": "2026-10-08T12:40:24.317Z",
-        "rawMarkdown": "After some difficulties with the sign-up process, I am finally able to access it. But I am currently held up at the downloading stage, as it requires a dedicated client and further registration 🫠",
-        "content": "<p>After some difficulties with the sign-up process, I am finally able to access it. But I am currently held up at the downloading stage, as it requires a dedicated client and further registration 🫠</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Quan Vu",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
-         "url": "/quan0095",
-         "tier": "MASTER",
-         "id": 2832287,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": -1,
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 42,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Quan Vu",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
-          "url": "/quan0095",
-          "userName": "quan0095",
-          "tier": "MASTER",
-          "id": 2832287,
-          "profileUrl": "/quan0095",
-          "performanceTier": "MASTER",
-          "userId": 2832287,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535177,
-        "postDate": "2026-10-08T12:42:09.843Z",
-        "rawMarkdown": "~~i now get \"403 Forbidden\" after https://nda.nih.gov/api/ras/signin?   ~~\n~~Previously it was ok from Singapore.~~\n\n\nok again !!!!\ni look at the data, it  is very good and with labels.\ni think OAI changes the competition!",
-        "content": "<p>\n</p>\n<p>ok again !!!!\ni look at the data, it  is very good and with labels.\ni think OAI changes the competition!</p>",
-        "parent": {},
-        "author": {
-         "displayName": "hengck23",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-         "url": "/hengck23",
-         "tier": "GRANDMASTER",
-         "id": 113660,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 740,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "hengck23",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-          "url": "/hengck23",
-          "userName": "hengck23",
-          "tier": "GRANDMASTER",
-          "id": 113660,
-          "profileUrl": "/hengck23",
-          "performanceTier": "GRANDMASTER",
-          "userId": 113660,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535178,
-        "postDate": "2026-10-08T12:43:55.353Z",
-        "rawMarkdown": "I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。\n",
-        "content": "<p>I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。</p>",
-        "parent": {},
-        "author": {
-         "displayName": "xun1993",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
-         "url": "/www051586401319",
-         "tier": "EXPERT",
-         "id": 5819194,
-         "progressionOptOut": true
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 99,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "xun1993",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
-          "url": "/www051586401319",
-          "userName": "www051586401319",
-          "tier": "EXPERT",
-          "id": 5819194,
-          "profileUrl": "/www051586401319",
-          "performanceTier": "EXPERT",
-          "userId": 5819194,
-          "progressionOptOut": true
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535183,
-        "postDate": "2026-10-08T12:46:46.017Z",
-        "rawMarkdown": "1) make data package ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54970770a5aaf405b3512908cfc23301%2FSelection_5127.png?generation=1791463543543269&alt=media)\"  \n\n2) NDADownloadManager-2.5.2.AppImage\".  (there is also download using python cli : https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?)\n\n3) then ask chatgpt.",
-        "content": "<p>1) make data package <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54970770a5aaf405b3512908cfc23301%2FSelection_5127.png?generation=1791463543543269&amp;alt=media\" alt=\"\">\"  </p>\n<p>2) NDADownloadManager-2.5.2.AppImage\".  (there is also download using python cli : <a href=\"https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?\" target=\"_blank\">https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?</a>)</p>\n<p>3) then ask chatgpt.</p>",
-        "parent": {},
-        "author": {
-         "displayName": "hengck23",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-         "url": "/hengck23",
-         "tier": "GRANDMASTER",
-         "id": 113660,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 740,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "reactions": [
-         {
-          "emoji": "FUNNY",
-          "featuredUserNames": [
-           "quan0095"
-          ],
-          "userCount": 1
-         }
-        ],
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "hengck23",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-          "url": "/hengck23",
-          "userName": "hengck23",
-          "tier": "GRANDMASTER",
-          "id": 113660,
-          "profileUrl": "/hengck23",
-          "performanceTier": "GRANDMASTER",
-          "userId": 113660,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535186,
-        "postDate": "2026-10-08T12:51:54.847Z",
-        "rawMarkdown": "I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right @nartaa idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download. ",
-        "content": "<p>I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right <a href=\"/nartaa\" target=\"_blank\">@nartaa</a> idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download. </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 877,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535274,
-        "postDate": "2026-10-08T15:14:49.870Z",
-        "rawMarkdown": "@cody11null you can download the data without building your own data package using this link:\nhttps://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&type=shared_packages\n\nHonestly, I don't even remember how I (or my claude) found this link in the first place. But when I went back to download the extra 24M data, I spent ages poking around the web trying to find it again with no luck, and in the end I had to dig through my browser history to track it down instead",
-        "content": "<p><a href=\"/cody11null\" target=\"_blank\">@cody11null</a> you can download the data without building your own data package using this link:\n<a href=\"https://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&amp;type=shared_packages\" target=\"_blank\">https://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&amp;type=shared_packages</a></p>\n<p>Honestly, I don't even remember how I (or my claude) found this link in the first place. But when I went back to download the extra 24M data, I spent ages poking around the web trying to find it again with no luck, and in the end I had to dig through my browser history to track it down instead</p>",
-        "parent": {},
-        "author": {
-         "displayName": "minhtu.mt.mt",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
-         "url": "/minhtu123",
-         "tier": "MASTER",
-         "id": 1023686,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 26,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "reactions": [
-         {
-          "emoji": "FUNNY",
-          "featuredUserNames": [
-           "quan0095"
-          ],
-          "userCount": 1
-         }
-        ],
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "minhtu.mt.mt",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
-          "url": "/minhtu123",
-          "userName": "minhtu123",
-          "tier": "MASTER",
-          "id": 1023686,
-          "profileUrl": "/minhtu123",
-          "performanceTier": "MASTER",
-          "userId": 1023686,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535309,
-        "postDate": "2026-10-08T15:48:36.717Z",
-        "rawMarkdown": "Thats odd that is pulling this for me, rather than a download. And I assume all of these in full arent needed as well haha  ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13672938%2F2f5e0ee246baab89fd13de2715f92656%2FScreenshot%202026-10-08%20114751.png?generation=1791474490856795&alt=media)",
-        "content": "<p>Thats odd that is pulling this for me, rather than a download. And I assume all of these in full arent needed as well haha  <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13672938%2F2f5e0ee246baab89fd13de2715f92656%2FScreenshot%202026-10-08%20114751.png?generation=1791474490856795&amp;alt=media\" alt=\"\"></p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 877,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535340,
-        "postDate": "2026-10-08T16:18:19.017Z",
-        "rawMarkdown": "Ah, you should use the nda-tools, give it the ID and it will download the data packages for you",
-        "content": "<p>Ah, you should use the nda-tools, give it the ID and it will download the data packages for you</p>",
-        "parent": {},
-        "author": {
-         "displayName": "minhtu.mt.mt",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
-         "url": "/minhtu123",
-         "tier": "MASTER",
-         "id": 1023686,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 26,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "minhtu.mt.mt",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
-          "url": "/minhtu123",
-          "userName": "minhtu123",
-          "tier": "MASTER",
-          "id": 1023686,
-          "profileUrl": "/minhtu123",
-          "performanceTier": "MASTER",
-          "userId": 1023686,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535418,
-        "postDate": "2026-10-08T17:38:49.770Z",
-        "rawMarkdown": "It wasnt pretty but I think I got it now. Thank you!",
-        "content": "<p>It wasnt pretty but I think I got it now. Thank you!</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 877,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3535452,
-        "postDate": "2026-10-08T18:16:22.867Z",
-        "rawMarkdown": "if you want it to be fast:  \n1) use python command line (the gui is very slow to sync the files and create  a thread per file for 100 thousands of files?)  \n2) use --verfiy to get all file list  \n3) use python to write a list of file to download (you can skip all visualisation images ,2x2, 1x1 jpgs, xray data, ...  and just download the mri gz files)  \n4) use command line to download with input filelist flag  \n",
-        "content": "<p>if you want it to be fast:<br>\n1) use python command line (the gui is very slow to sync the files and create  a thread per file for 100 thousands of files?)<br>\n2) use --verfiy to get all file list<br>\n3) use python to write a list of file to download (you can skip all visualisation images ,2x2, 1x1 jpgs, xray data, …  and just download the mri gz files)<br>\n4) use command line to download with input filelist flag  </p>",
-        "parent": {},
-        "author": {
-         "displayName": "hengck23",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-         "url": "/hengck23",
-         "tier": "GRANDMASTER",
-         "id": 113660,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 740,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "hengck23",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-          "url": "/hengck23",
-          "userName": "hengck23",
-          "tier": "GRANDMASTER",
-          "id": 113660,
-          "profileUrl": "/hengck23",
-          "performanceTier": "GRANDMASTER",
-          "userId": 113660,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       }
-      ],
-      "parent": {},
-      "author": {
-       "displayName": "Cody_Null",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-       "url": "/cody11null",
-       "tier": "GRANDMASTER",
-       "id": 13672938,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 877,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "reactions": [
-       {
-        "emoji": "FUNNY",
-        "featuredUserNames": [
-         "daveconnor",
-         "tuckerarrants"
-        ],
-        "userCount": 2
-       }
-      ],
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Cody_Null",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-        "url": "/cody11null",
-        "userName": "cody11null",
-        "tier": "GRANDMASTER",
-        "id": 13672938,
-        "profileUrl": "/cody11null",
-        "performanceTier": "GRANDMASTER",
-        "userId": 13672938,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     }
-    ],
-    "parent": {},
-    "author": {
-     "displayName": "hengck23",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-     "url": "/hengck23",
-     "tier": "GRANDMASTER",
-     "id": 113660,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": 1,
-     "canUpvote": true,
-     "totalUpvotes": 2
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 740,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "hengck23",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-      "url": "/hengck23",
-      "userName": "hengck23",
-      "tier": "GRANDMASTER",
-      "id": 113660,
-      "profileUrl": "/hengck23",
-      "performanceTier": "GRANDMASTER",
-      "userId": 113660,
+      "displayName": "varshitha kolupuri",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32868875-kg.jpg?t=2026-09-01-13-44-25",
+      "url": "/varshithakolupuri",
+      "userName": "varshithakolupuri",
+      "tier": "CONTRIBUTOR",
+      "id": 32868875,
+      "profileUrl": "/varshithakolupuri",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 32868875,
       "progressionOptOut": false
      },
      "intro": ""
@@ -622,7 +77,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -662,7 +117,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 728,
+        "competitionRanking": 1073,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -703,7 +158,7 @@
          "totalUpvotes": 4
         },
         "kernelVersion": 0,
-        "competitionRanking": 49,
+        "competitionRanking": 76,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -744,7 +199,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -785,7 +240,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 49,
+        "competitionRanking": 76,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -826,7 +281,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -862,12 +317,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 5,
+         "totalVotes": 6,
          "canUpvote": true,
-         "totalUpvotes": 6
+         "totalUpvotes": 7
         },
         "kernelVersion": 0,
-        "competitionRanking": 99,
+        "competitionRanking": 103,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -881,11 +336,13 @@
            "mattiaangeli",
            "proptiter",
            "cody11null",
+           "masapirika",
+           "quezaltendes",
            "racket529",
            "cfs123",
            "davigbit"
           ],
-          "userCount": 9
+          "userCount": 11
          }
         ],
         "teamUpInfo": {
@@ -923,7 +380,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -959,12 +416,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 4,
+         "totalVotes": 3,
          "canUpvote": true,
          "totalUpvotes": 5
         },
         "kernelVersion": 0,
-        "competitionRanking": 26,
+        "competitionRanking": 24,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -1014,7 +471,7 @@
          "totalUpvotes": 6
         },
         "kernelVersion": 0,
-        "competitionRanking": 19,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -1050,12 +507,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 6,
+         "totalVotes": 7,
          "canUpvote": true,
-         "totalUpvotes": 6
+         "totalUpvotes": 7
         },
         "kernelVersion": 0,
-        "competitionRanking": 877,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -1091,12 +548,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 6,
+         "totalVotes": 8,
          "canUpvote": true,
-         "totalUpvotes": 7
+         "totalUpvotes": 9
         },
         "kernelVersion": 0,
-        "competitionRanking": 10,
+        "competitionRanking": 19,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -1145,6 +602,45 @@
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true
+       },
+       {
+        "id": 3536289,
+        "postDate": "2026-10-10T03:33:44.297Z",
+        "rawMarkdown": "Did you successfully create the LOGIN.GOV account and also the NDA account? Then you can update the NDA account password. The username & password are required for `oai-dl` to download the dataset. 23MB/s for China IP",
+        "content": "<p>Did you successfully create the LOGIN.GOV account and also the NDA account? Then you can update the NDA account password. The username &amp; password are required for <code>oai-dl</code> to download the dataset. 23MB/s for China IP</p>",
+        "parent": {},
+        "author": {
+         "displayName": "william.wu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3563032-kg.png?t=2024-10-16-03-06-20",
+         "url": "/wuwenmin",
+         "tier": "MASTER",
+         "id": 3563032,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1031,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "william.wu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3563032-kg.png?t=2024-10-16-03-06-20",
+          "url": "/wuwenmin",
+          "userName": "wuwenmin",
+          "tier": "MASTER",
+          "id": 3563032,
+          "profileUrl": "/wuwenmin",
+          "performanceTier": "MASTER",
+          "userId": 3563032,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
        }
       ],
       "parent": {},
@@ -1163,7 +659,7 @@
        "totalUpvotes": 2
       },
       "kernelVersion": 0,
-      "competitionRanking": 728,
+      "competitionRanking": 1073,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -1203,7 +699,7 @@
        "totalUpvotes": 6
       },
       "kernelVersion": 0,
-      "competitionRanking": 877,
+      "competitionRanking": 100,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "reactions": [
@@ -1248,7 +744,7 @@
      "totalUpvotes": 7
     },
     "kernelVersion": 0,
-    "competitionRanking": 19,
+    "competitionRanking": 4,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1265,6 +761,127 @@
       "progressionOptOut": false
      },
      "intro": ""
+    }
+   },
+   {
+    "id": 3535771,
+    "postDate": "2026-10-09T07:33:46.803Z",
+    "rawMarkdown": "Thanks for the detailed write-up and for releasing the weights and notebooks. The anatomical mirroring explanation and the “what did not help” table were especially useful.",
+    "content": "<p>Thanks for the detailed write-up and for releasing the weights and notebooks. The anatomical mirroring explanation and the “what did not help” table were especially useful.</p>",
+    "replies": [
+     {
+      "id": 3535921,
+      "postDate": "2026-10-09T12:47:09.967Z",
+      "rawMarkdown": "You are very welcome 🤗",
+      "content": "<p>You are very welcome 🤗</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Danial Zakaria",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+       "url": "/nartaa",
+       "tier": "EXPERT",
+       "id": 4495635,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1073,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Danial Zakaria",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+        "url": "/nartaa",
+        "userName": "nartaa",
+        "tier": "EXPERT",
+        "id": 4495635,
+        "profileUrl": "/nartaa",
+        "performanceTier": "EXPERT",
+        "userId": 4495635,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Eesh saxena",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+     "url": "/eeshsaxena",
+     "tier": "CONTRIBUTOR",
+     "id": 18231426,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 273,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Eesh saxena",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+      "url": "/eeshsaxena",
+      "userName": "eeshsaxena",
+      "tier": "CONTRIBUTOR",
+      "id": 18231426,
+      "profileUrl": "/eeshsaxena",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 18231426,
+      "progressionOptOut": false
+     },
+     "intro": "Hii"
+    }
+   },
+   {
+    "id": 3535081,
+    "postDate": "2026-10-08T09:34:57.393Z",
+    "rawMarkdown": "Haven't seen such detailed and useful work in a long time.",
+    "content": "<p>Haven't seen such detailed and useful work in a long time.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "SpeedSci",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+     "url": "/caoyupeng",
+     "tier": "EXPERT",
+     "id": 26421714,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1026,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Myo Min Htet(wnp)🇲🇲",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+      "url": "/myominhtet",
+      "userName": "myominhtet",
+      "tier": "EXPERT",
+      "id": 4600631,
+      "profileUrl": "/myominhtet",
+      "performanceTier": "EXPERT",
+      "userId": 4600631,
+      "progressionOptOut": false
+     },
+     "intro": "Need some who can support GPU, "
     }
    },
    {
@@ -1288,37 +905,882 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 118,
+    "competitionRanking": 49,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Cà Rốt Production",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
-      "url": "/crtproduction",
-      "userName": "crtproduction",
+      "displayName": "Binh Thanh",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/kain205",
+      "userName": "kain205",
       "tier": "CONTRIBUTOR",
-      "id": 20960131,
-      "profileUrl": "/crtproduction",
+      "id": 13173133,
+      "profileUrl": "/kain205",
       "performanceTier": "CONTRIBUTOR",
-      "userId": 20960131,
+      "userId": 13173133,
       "progressionOptOut": false
      },
      "intro": ""
     }
    },
    {
-    "id": 3535771,
-    "postDate": "2026-10-09T07:33:46.803Z",
-    "rawMarkdown": "Thanks for the detailed write-up and for releasing the weights and notebooks. The anatomical mirroring explanation and the “what did not help” table were especially useful.",
-    "content": "<p>Thanks for the detailed write-up and for releasing the weights and notebooks. The anatomical mirroring explanation and the “what did not help” table were especially useful.</p>",
+    "id": 3535050,
+    "postDate": "2026-10-08T08:40:11.277Z",
+    "rawMarkdown": "i end up using chatgpt to teach me how to download data from OAI ...i cannot imagine how long i would take without agent help ... the signup, login ... what and how to download is pretty complicated!!! Now i understand why several singapore gov projects aim to simplify data access using AI.",
+    "content": "<p>i end up using chatgpt to teach me how to download data from OAI …i cannot imagine how long i would take without agent help … the signup, login … what and how to download is pretty complicated!!! Now i understand why several singapore gov projects aim to simplify data access using AI.</p>",
+    "replies": [
+     {
+      "id": 3535123,
+      "postDate": "2026-10-08T11:05:10.233Z",
+      "rawMarkdown": "As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one",
+      "content": "<p>As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one</p>",
+      "replies": [
+       {
+        "id": 3535172,
+        "postDate": "2026-10-08T12:37:54.590Z",
+        "rawMarkdown": "Any one receiving \"403 Forbidden\" when clicking on \"Sign in\" ?",
+        "content": "<p>Any one receiving \"403 Forbidden\" when clicking on \"Sign in\" ?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Optimo",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+         "url": "/optimo",
+         "tier": "MASTER",
+         "id": 190923,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 29,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Optimo",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+          "url": "/optimo",
+          "userName": "optimo",
+          "tier": "MASTER",
+          "id": 190923,
+          "profileUrl": "/optimo",
+          "performanceTier": "MASTER",
+          "userId": 190923,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535176,
+        "postDate": "2026-10-08T12:40:24.317Z",
+        "rawMarkdown": "After some difficulties with the sign-up process, I am finally able to access it. But I am currently held up at the downloading stage, as it requires a dedicated client and further registration 🫠",
+        "content": "<p>After some difficulties with the sign-up process, I am finally able to access it. But I am currently held up at the downloading stage, as it requires a dedicated client and further registration 🫠</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Quan Vu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+         "url": "/quan0095",
+         "tier": "MASTER",
+         "id": 2832287,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 54,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Quan Vu",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2832287-kg.jpeg?t=2025-02-13-07-47-08",
+          "url": "/quan0095",
+          "userName": "quan0095",
+          "tier": "MASTER",
+          "id": 2832287,
+          "profileUrl": "/quan0095",
+          "performanceTier": "MASTER",
+          "userId": 2832287,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535177,
+        "postDate": "2026-10-08T12:42:09.843Z",
+        "rawMarkdown": "~~i now get \"403 Forbidden\" after https://nda.nih.gov/api/ras/signin?   ~~\n~~Previously it was ok from Singapore.~~\n\n\nok again !!!!\ni look at the data, it  is very good and with labels.\ni think OAI changes the competition!",
+        "content": "<p>\n</p>\n<p>ok again !!!!\ni look at the data, it  is very good and with labels.\ni think OAI changes the competition!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 455,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535178,
+        "postDate": "2026-10-08T12:43:55.353Z",
+        "rawMarkdown": "I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。\n",
+        "content": "<p>I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。</p>",
+        "parent": {},
+        "author": {
+         "displayName": "xun1993",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
+         "url": "/www051586401319",
+         "tier": "EXPERT",
+         "id": 5819194,
+         "progressionOptOut": true
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 103,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "xun1993",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819194-kg.png?t=2026-09-06-07-38-31",
+          "url": "/www051586401319",
+          "userName": "www051586401319",
+          "tier": "EXPERT",
+          "id": 5819194,
+          "profileUrl": "/www051586401319",
+          "performanceTier": "EXPERT",
+          "userId": 5819194,
+          "progressionOptOut": true
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535183,
+        "postDate": "2026-10-08T12:46:46.017Z",
+        "rawMarkdown": "1) make data package ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54970770a5aaf405b3512908cfc23301%2FSelection_5127.png?generation=1791463543543269&alt=media)\"  \n\n2) NDADownloadManager-2.5.2.AppImage\".  (there is also download using python cli : https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?)\n\n3) then ask chatgpt.",
+        "content": "<p>1) make data package <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F54970770a5aaf405b3512908cfc23301%2FSelection_5127.png?generation=1791463543543269&amp;alt=media\" alt=\"\">\"  </p>\n<p>2) NDADownloadManager-2.5.2.AppImage\".  (there is also download using python cli : <a href=\"https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?\" target=\"_blank\">https://nda.nih.gov/nda/tutorials/accessing_files_in_the_cloud?</a>)</p>\n<p>3) then ask chatgpt.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 455,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "quan0095"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535186,
+        "postDate": "2026-10-08T12:51:54.847Z",
+        "rawMarkdown": "I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right @nartaa idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download. ",
+        "content": "<p>I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right <a href=\"/nartaa\" target=\"_blank\">@nartaa</a> idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535274,
+        "postDate": "2026-10-08T15:14:49.870Z",
+        "rawMarkdown": "@cody11null you can download the data without building your own data package using this link:\nhttps://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&type=shared_packages\n\nHonestly, I don't even remember how I (or my claude) found this link in the first place. But when I went back to download the extra 24M data, I spent ages poking around the web trying to find it again with no luck, and in the end I had to dig through my browser history to track it down instead",
+        "content": "<p><a href=\"/cody11null\" target=\"_blank\">@cody11null</a> you can download the data without building your own data package using this link:\n<a href=\"https://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&amp;type=shared_packages\" target=\"_blank\">https://nda.nih.gov/user/dashboard/packages?dataset=Osteoarthritis%20Initiative%20(OAI)&amp;type=shared_packages</a></p>\n<p>Honestly, I don't even remember how I (or my claude) found this link in the first place. But when I went back to download the extra 24M data, I spent ages poking around the web trying to find it again with no luck, and in the end I had to dig through my browser history to track it down instead</p>",
+        "parent": {},
+        "author": {
+         "displayName": "minhtu.mt.mt",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+         "url": "/minhtu123",
+         "tier": "MASTER",
+         "id": 1023686,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 24,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "quan0095"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "minhtu.mt.mt",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+          "url": "/minhtu123",
+          "userName": "minhtu123",
+          "tier": "MASTER",
+          "id": 1023686,
+          "profileUrl": "/minhtu123",
+          "performanceTier": "MASTER",
+          "userId": 1023686,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535309,
+        "postDate": "2026-10-08T15:48:36.717Z",
+        "rawMarkdown": "Thats odd that is pulling this for me, rather than a download. And I assume all of these in full arent needed as well haha  ![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13672938%2F2f5e0ee246baab89fd13de2715f92656%2FScreenshot%202026-10-08%20114751.png?generation=1791474490856795&alt=media)",
+        "content": "<p>Thats odd that is pulling this for me, rather than a download. And I assume all of these in full arent needed as well haha  <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F13672938%2F2f5e0ee246baab89fd13de2715f92656%2FScreenshot%202026-10-08%20114751.png?generation=1791474490856795&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535340,
+        "postDate": "2026-10-08T16:18:19.017Z",
+        "rawMarkdown": "Ah, you should use the nda-tools, give it the ID and it will download the data packages for you",
+        "content": "<p>Ah, you should use the nda-tools, give it the ID and it will download the data packages for you</p>",
+        "parent": {},
+        "author": {
+         "displayName": "minhtu.mt.mt",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+         "url": "/minhtu123",
+         "tier": "MASTER",
+         "id": 1023686,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 24,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "minhtu.mt.mt",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1023686-kg.jpg",
+          "url": "/minhtu123",
+          "userName": "minhtu123",
+          "tier": "MASTER",
+          "id": 1023686,
+          "profileUrl": "/minhtu123",
+          "performanceTier": "MASTER",
+          "userId": 1023686,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535418,
+        "postDate": "2026-10-08T17:38:49.770Z",
+        "rawMarkdown": "It wasnt pretty but I think I got it now. Thank you!",
+        "content": "<p>It wasnt pretty but I think I got it now. Thank you!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535452,
+        "postDate": "2026-10-08T18:16:22.867Z",
+        "rawMarkdown": "if you want it to be fast:  \n1) use python command line (the gui is very slow to sync the files and create  a thread per file for 100 thousands of files?)  \n2) use --verfiy to get all file list  \n3) use python to write a list of file to download (you can skip all visualisation images ,2x2, 1x1 jpgs, xray data, ...  and just download the mri gz files)  \n4) use command line to download with input filelist flag  \n",
+        "content": "<p>if you want it to be fast:<br>\n1) use python command line (the gui is very slow to sync the files and create  a thread per file for 100 thousands of files?)<br>\n2) use --verfiy to get all file list<br>\n3) use python to write a list of file to download (you can skip all visualisation images ,2x2, 1x1 jpgs, xray data, …  and just download the mri gz files)<br>\n4) use command line to download with input filelist flag  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 455,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535966,
+        "postDate": "2026-10-09T14:01:59.373Z",
+        "rawMarkdown": "> I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n> 请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。\n\nI've run into this problem too; have you managed to solve it?",
+        "content": "<blockquote>\n  <p>I've signed up with at least 5 different email addresses, and they all got rejected. I'm completely blocked from accessing the OAI dataset. “”我们无法把你登入你的帐户。\n  请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。</p>\n</blockquote>\n<p>I've run into this problem too; have you managed to solve it?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "fishcat",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24110705-kg.png?t=2026-10-02-15-36-55",
+         "url": "/fishcat37",
+         "tier": "EXPERT",
+         "id": 24110705,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 3554,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "fishcat",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24110705-kg.png?t=2026-10-02-15-36-55",
+          "url": "/fishcat37",
+          "userName": "fishcat37",
+          "tier": "EXPERT",
+          "id": 24110705,
+          "profileUrl": "/fishcat37",
+          "performanceTier": "EXPERT",
+          "userId": 24110705,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535970,
+        "postDate": "2026-10-09T14:06:00.273Z",
+        "rawMarkdown": "The website is a little bit slow you need to wait and follow a clear set of instructions,  it took me around 2hours ",
+        "content": "<p>The website is a little bit slow you need to wait and follow a clear set of instructions,  it took me around 2hours </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Eesh saxena",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+         "url": "/eeshsaxena",
+         "tier": "CONTRIBUTOR",
+         "id": 18231426,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 273,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Eesh saxena",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+          "url": "/eeshsaxena",
+          "userName": "eeshsaxena",
+          "tier": "CONTRIBUTOR",
+          "id": 18231426,
+          "profileUrl": "/eeshsaxena",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 18231426,
+          "progressionOptOut": false
+         },
+         "intro": "Hii"
+        }
+       },
+       {
+        "id": 3535981,
+        "postDate": "2026-10-09T14:28:16.700Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3535998,
+        "postDate": "2026-10-09T15:09:26.223Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "totalUpvotes": 2
+        },
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3536650,
+        "postDate": "2026-10-10T23:18:03.083Z",
+        "rawMarkdown": "Could you please share if any reports or labelling are available for the OAI data?\nBecause there seems to be none in /image03 \n\nAre reports available seprately?",
+        "content": "<p>Could you please share if any reports or labelling are available for the OAI data?\nBecause there seems to be none in /image03 </p>\n<p>Are reports available seprately?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ivan Vybornov",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12596779-kg.jpg?t=2025-02-04-18-32-59",
+         "url": "/ivanvybornov",
+         "tier": "EXPERT",
+         "id": 12596779,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2952,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ivan Vybornov",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12596779-kg.jpg?t=2025-02-04-18-32-59",
+          "url": "/ivanvybornov",
+          "userName": "ivanvybornov",
+          "tier": "EXPERT",
+          "id": 12596779,
+          "profileUrl": "/ivanvybornov",
+          "performanceTier": "EXPERT",
+          "userId": 12596779,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536816,
+        "postDate": "2026-10-11T09:49:37.347Z",
+        "rawMarkdown": "@ivanvybornov there are no free-text radiology reports in OAI. The labels are the semi-quantitative MOAKS reads in the non-imaging tables (`kMRI_SQ_MOAKS_BICL*` and `kMRI_FNIH_SQ_MOAKS_BICL*`), and only a subset of knees has them. We mapped only PF OA, Lateral OA and Synovitis from MOAKS and masked every other finding. 3DReasonKnee (CC BY 4.0) helped us match MOAKS rows to the right MRI series.",
+        "content": "<p><a href=\"/ivanvybornov\" target=\"_blank\">@ivanvybornov</a> there are no free-text radiology reports in OAI. The labels are the semi-quantitative MOAKS reads in the non-imaging tables (<code>kMRI_SQ_MOAKS_BICL*</code> and <code>kMRI_FNIH_SQ_MOAKS_BICL*</code>), and only a subset of knees has them. We mapped only PF OA, Lateral OA and Synovitis from MOAKS and masked every other finding. 3DReasonKnee (CC BY 4.0) helped us match MOAKS rows to the right MRI series.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Danial Zakaria",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+         "url": "/nartaa",
+         "tier": "EXPERT",
+         "id": 4495635,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1073,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Danial Zakaria",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+          "url": "/nartaa",
+          "userName": "nartaa",
+          "tier": "EXPERT",
+          "id": 4495635,
+          "profileUrl": "/nartaa",
+          "performanceTier": "EXPERT",
+          "userId": 4495635,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536817,
+        "postDate": "2026-10-11T09:51:25.413Z",
+        "rawMarkdown": "@cody11null that's roughly the whole package: every visit plus the radiographs. You don't need all of it. We pulled only the MRI series for knees that have a MOAKS read: 182.5 GB across baseline and 12-month, about 140 GB for baseline (00M) alone. The models in this post used just the baseline, 2,399 knees.",
+        "content": "<p><a href=\"/cody11null\" target=\"_blank\">@cody11null</a> that's roughly the whole package: every visit plus the radiographs. You don't need all of it. We pulled only the MRI series for knees that have a MOAKS read: 182.5 GB across baseline and 12-month, about 140 GB for baseline (00M) alone. The models in this post used just the baseline, 2,399 knees.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Danial Zakaria",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+         "url": "/nartaa",
+         "tier": "EXPERT",
+         "id": 4495635,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1073,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Danial Zakaria",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+          "url": "/nartaa",
+          "userName": "nartaa",
+          "tier": "EXPERT",
+          "id": 4495635,
+          "profileUrl": "/nartaa",
+          "performanceTier": "EXPERT",
+          "userId": 4495635,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537360,
+        "postDate": "2026-10-12T12:32:03.677Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 100,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "FUNNY",
+        "featuredUserNames": [
+         "daveconnor",
+         "tuckerarrants"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
     "parent": {},
     "author": {
-     "displayName": "Eesh saxena",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
-     "url": "/eeshsaxena",
-     "tier": "CONTRIBUTOR",
-     "id": 18231426,
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536815,
+    "postDate": "2026-10-11T09:48:35.460Z",
+    "rawMarkdown": "Hi Danial, thanks for the great write-up! Could you share how you turned MOAKS into labels? Which fields and thresholds did you use for PF OA, Lateral OA and Synovitis? Were the targets hard 0/1 or soft? And was the masked loss averaged over the observed cells of each row, or over all 12 cells? Thanks!",
+    "content": "<p>Hi Danial, thanks for the great write-up! Could you share how you turned MOAKS into labels? Which fields and thresholds did you use for PF OA, Lateral OA and Synovitis? Were the targets hard 0/1 or soft? And was the masked loss averaged over the observed cells of each row, or over all 12 cells? Thanks!</p>",
+    "replies": [
+     {
+      "id": 3537858,
+      "postDate": "2026-10-13T07:09:53.390Z",
+      "rawMarkdown": "@seyolax and everyone who asked by message: here is the training side of the 0.949 model in more detail. I'm posting it here rather than answering privately, so everyone has the same information.\n\n**Targets (12 findings, soft labels between 0 and 1)**\n- *blend* = the mean of our own report-derived labels and stevenleehans' llm_labels_v4_blend. Ours come from Gemini 3 Flash with low thinking, prompted with the host's finding definitions. Where v4 is exactly 0.25 we keep ours alone. 0.25 is v4's marker for \"finding not addressed in the report\" and covers about 19% of cells.\n- *blendjev* = the mean of blend and riadmohamed42's JEV HYBRID scores wherever JEV has a value; otherwise blend.\n- JEV HYBRID itself is built from public labels: ACL, MCL and Fracture come from pilkwang's report_labels_v2, the other nine findings from stevenleehans' v4_blend, and JEV's own text-model scores are blended in. That is how pilkwang's labels reach our targets.\n\n**OAI rows (2,399 baseline-visit knees)**\n- Fields: the MOAKS semi-quantitative reads in kMRI_SQ_MOAKS_BICL* and kMRI_FNIH_SQ_MOAKS_BICL*, earliest visit with a valid read. All 2,399 knees used are baseline.\n- PF OA = 1 if full-thickness cartilage loss is ≥ 1 in any patellofemoral subregion (PM, PL, FMA, FLA).\n- Lateral OA = the same rule over the lateral tibiofemoral subregions (FLC, FLP, TLA, TLC, TLP).\n- Synovitis = Hoffa-synovitis (MSYIC) ≥ 1.\n- Targets are hard 0/1. A cut is 1 if any valid subregion meets it, 0 only if every subregion it needs is valid and none meets it, and missing otherwise.\n- Labelled counts: PF OA 2,396 knees, Lateral OA 2,397, Synovitis 1,659 (only two MOAKS reading projects scored Hoffa-synovitis).\n- All other findings, and every missing cell, are masked with zero loss weight.\n- 3DReasonKnee (Sambara et al. 2025, arXiv:2510.20967, CC BY 4.0 for their release) helped us match MOAKS rows to MRI series. The reads and images remain OAI data under NDA's terms.\n- Whether OAI counts as allowed external data for your team depends on the host's condition in discussion 741819.\n\n**Split**\n- All-data model: 4,349 report-labelled training studies plus the 2,399 OAI knees, 6,748 rows, no held-out fold.\n- The 58 gold studies are excluded from gradient training by study ID. They are used for validation after every epoch and for epoch selection.\n- Gold-58 also shaped the targets indirectly. JEV HYBRID was tuned on the gold studies by its author, and we checked our own labeller choice against gold. So gold-58 is not an independent estimate.\n\n**Training**\n- Backbone: timm coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k with ImageNet normalisation, at native 384 with the full field of view, plus a finding-specific attention-pooling head.\n- 12 random three-slice windows per study per step; 24 evenly spaced windows for validation.\n- Augmentation: only that window sampling plus a ±10% intensity jitter per study. No flips, no affine transforms.\n- Batch 1 study, gradient accumulation 16.\n- AdamW, weight decay 0.0588; backbone LR 4.01e-5, head LR 1.95e-3; OneCycle with 15% warm-up over 16 epochs; gradient clipping at norm 3.0; bf16 autocast; no EMA.\n- Loss: BCE-with-logits with pos_weight = (1 − p)/p, where p is RSNA label prevalence over the 4,349 RSNA studies only. p is clipped to 0.03–0.7 and the weight to 1–10, so Effusion gets 1.0.\n- The weighted cell losses are summed and divided by all 12 cells of every study in the batch, masked cells included. Rows with masked cells therefore contribute less.\n- 16 epochs take about 22 hours on an 8 GB laptop GPU.\n\n**Selection**\n- We keep the three best epochs by gold-58 macro AUC (24 windows) and average their weights uniformly. BatchNorm buffers are averaged, not recomputed.\n- For the 0.949 checkpoint that is epochs 14, 11 and 12, counting from 0, so 14 is the second-to-last.\n\n**OOF**\n- The released model has no OOF predictions.\n- Earlier we ran full 5-fold CV (about 870 studies per fold) on older OAI-free recipes to compare label sets. Later screens mostly used fold 0. None of it trains or calibrates the release.\n\nThe OAI-derived label rows will not be published: NDA's terms don't allow it.\n\nData and/or research tools used in the preparation of this manuscript were obtained and analyzed from the controlled access datasets distributed from the Osteoarthritis Initiative (OAI), a data repository housed within the NIMH Data Archive (NDA). OAI is a collaborative informatics system created by the National Institute of Mental Health and the National Institute of Arthritis, Musculoskeletal and Skin Diseases (NIAMS) to provide a worldwide resource to quicken the pace of biomarker identification, scientific investigation and OA drug development. Dataset identifier(s): 10.15154/0hcg-f676.",
+      "content": "<p><a href=\"/seyolax\" target=\"_blank\">@seyolax</a> and everyone who asked by message: here is the training side of the 0.949 model in more detail. I'm posting it here rather than answering privately, so everyone has the same information.</p>\n<p><strong>Targets (12 findings, soft labels between 0 and 1)</strong></p>\n<ul>\n<li><em>blend</em> = the mean of our own report-derived labels and stevenleehans' llm_labels_v4_blend. Ours come from Gemini 3 Flash with low thinking, prompted with the host's finding definitions. Where v4 is exactly 0.25 we keep ours alone. 0.25 is v4's marker for \"finding not addressed in the report\" and covers about 19% of cells.</li>\n<li><em>blendjev</em> = the mean of blend and riadmohamed42's JEV HYBRID scores wherever JEV has a value; otherwise blend.</li>\n<li>JEV HYBRID itself is built from public labels: ACL, MCL and Fracture come from pilkwang's report_labels_v2, the other nine findings from stevenleehans' v4_blend, and JEV's own text-model scores are blended in. That is how pilkwang's labels reach our targets.</li>\n</ul>\n<p><strong>OAI rows (2,399 baseline-visit knees)</strong></p>\n<ul>\n<li>Fields: the MOAKS semi-quantitative reads in kMRI_SQ_MOAKS_BICL* and kMRI_FNIH_SQ_MOAKS_BICL*, earliest visit with a valid read. All 2,399 knees used are baseline.</li>\n<li>PF OA = 1 if full-thickness cartilage loss is ≥ 1 in any patellofemoral subregion (PM, PL, FMA, FLA).</li>\n<li>Lateral OA = the same rule over the lateral tibiofemoral subregions (FLC, FLP, TLA, TLC, TLP).</li>\n<li>Synovitis = Hoffa-synovitis (MSYIC) ≥ 1.</li>\n<li>Targets are hard 0/1. A cut is 1 if any valid subregion meets it, 0 only if every subregion it needs is valid and none meets it, and missing otherwise.</li>\n<li>Labelled counts: PF OA 2,396 knees, Lateral OA 2,397, Synovitis 1,659 (only two MOAKS reading projects scored Hoffa-synovitis).</li>\n<li>All other findings, and every missing cell, are masked with zero loss weight.</li>\n<li>3DReasonKnee (Sambara et al. 2025, arXiv:2510.20967, CC BY 4.0 for their release) helped us match MOAKS rows to MRI series. The reads and images remain OAI data under NDA's terms.</li>\n<li>Whether OAI counts as allowed external data for your team depends on the host's condition in discussion 741819.</li>\n</ul>\n<p><strong>Split</strong></p>\n<ul>\n<li>All-data model: 4,349 report-labelled training studies plus the 2,399 OAI knees, 6,748 rows, no held-out fold.</li>\n<li>The 58 gold studies are excluded from gradient training by study ID. They are used for validation after every epoch and for epoch selection.</li>\n<li>Gold-58 also shaped the targets indirectly. JEV HYBRID was tuned on the gold studies by its author, and we checked our own labeller choice against gold. So gold-58 is not an independent estimate.</li>\n</ul>\n<p><strong>Training</strong></p>\n<ul>\n<li>Backbone: timm coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k with ImageNet normalisation, at native 384 with the full field of view, plus a finding-specific attention-pooling head.</li>\n<li>12 random three-slice windows per study per step; 24 evenly spaced windows for validation.</li>\n<li>Augmentation: only that window sampling plus a ±10% intensity jitter per study. No flips, no affine transforms.</li>\n<li>Batch 1 study, gradient accumulation 16.</li>\n<li>AdamW, weight decay 0.0588; backbone LR 4.01e-5, head LR 1.95e-3; OneCycle with 15% warm-up over 16 epochs; gradient clipping at norm 3.0; bf16 autocast; no EMA.</li>\n<li>Loss: BCE-with-logits with pos_weight = (1 − p)/p, where p is RSNA label prevalence over the 4,349 RSNA studies only. p is clipped to 0.03–0.7 and the weight to 1–10, so Effusion gets 1.0.</li>\n<li>The weighted cell losses are summed and divided by all 12 cells of every study in the batch, masked cells included. Rows with masked cells therefore contribute less.</li>\n<li>16 epochs take about 22 hours on an 8 GB laptop GPU.</li>\n</ul>\n<p><strong>Selection</strong></p>\n<ul>\n<li>We keep the three best epochs by gold-58 macro AUC (24 windows) and average their weights uniformly. BatchNorm buffers are averaged, not recomputed.</li>\n<li>For the 0.949 checkpoint that is epochs 14, 11 and 12, counting from 0, so 14 is the second-to-last.</li>\n</ul>\n<p><strong>OOF</strong></p>\n<ul>\n<li>The released model has no OOF predictions.</li>\n<li>Earlier we ran full 5-fold CV (about 870 studies per fold) on older OAI-free recipes to compare label sets. Later screens mostly used fold 0. None of it trains or calibrates the release.</li>\n</ul>\n<p>The OAI-derived label rows will not be published: NDA's terms don't allow it.</p>\n<p>Data and/or research tools used in the preparation of this manuscript were obtained and analyzed from the controlled access datasets distributed from the Osteoarthritis Initiative (OAI), a data repository housed within the NIMH Data Archive (NDA). OAI is a collaborative informatics system created by the National Institute of Mental Health and the National Institute of Arthritis, Musculoskeletal and Skin Diseases (NIAMS) to provide a worldwide resource to quicken the pace of biomarker identification, scientific investigation and OA drug development. Dataset identifier(s): 10.15154/0hcg-f676.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Danial Zakaria",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+       "url": "/nartaa",
+       "tier": "EXPERT",
+       "id": 4495635,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1073,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Danial Zakaria",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+        "url": "/nartaa",
+        "userName": "nartaa",
+        "tier": "EXPERT",
+        "id": 4495635,
+        "profileUrl": "/nartaa",
+        "performanceTier": "EXPERT",
+        "userId": 4495635,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "seyolax",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15137361-kg.jpg?t=2024-06-24-16-02-52",
+     "url": "/isy640",
+     "tier": "EXPERT",
+     "id": 15137361,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
@@ -1326,24 +1788,354 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 169,
+    "competitionRanking": 1455,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
-     "enabled": true,
      "teamLeader": {
-      "displayName": "Eesh saxena",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
-      "url": "/eeshsaxena",
-      "userName": "eeshsaxena",
-      "tier": "CONTRIBUTOR",
-      "id": 18231426,
-      "profileUrl": "/eeshsaxena",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 18231426,
+      "displayName": "seyolax",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15137361-kg.jpg?t=2024-06-24-16-02-52",
+      "url": "/isy640",
+      "userName": "isy640",
+      "tier": "EXPERT",
+      "id": 15137361,
+      "profileUrl": "/isy640",
+      "performanceTier": "EXPERT",
+      "userId": 15137361,
       "progressionOptOut": false
      },
-     "intro": "Hii"
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536416,
+    "postDate": "2026-10-10T10:41:11.333Z",
+    "rawMarkdown": "我们无法把你登入你的帐户。请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。\nDose any body slove this?",
+    "content": "<p>我们无法把你登入你的帐户。请拨打（844）875-6446 致电我们的联系中心并提供出错代码 LG22。\nDose any body slove this?</p>",
+    "replies": [
+     {
+      "id": 3536422,
+      "postDate": "2026-10-10T10:54:41.080Z",
+      "rawMarkdown": "I am a user from china,I have tried many methods, I still can't login in, always this error.Dose anyone know how to slove this?thanks",
+      "content": "<p>I am a user from china,I have tried many methods, I still can't login in, always this error.Dose anyone know how to slove this?thanks</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Renmq",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+       "url": "/renmingqian",
+       "tier": "EXPERT",
+       "id": 31041949,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1401,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Renmq",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+        "url": "/renmingqian",
+        "userName": "renmingqian",
+        "tier": "EXPERT",
+        "id": 31041949,
+        "profileUrl": "/renmingqian",
+        "performanceTier": "EXPERT",
+        "userId": 31041949,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3536444,
+      "postDate": "2026-10-10T12:15:23.247Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true
+     },
+     {
+      "id": 3536818,
+      "postDate": "2026-10-11T09:51:54.223Z",
+      "rawMarkdown": "@renmingqian LG22 comes from login.gov itself, so there's nothing we can fix from our side; their support line in the error message is the only route. Note that NIH's controlled-access policy restricts some countries (see the link @tuckerarrants posted above), although @wuwenmin reports downloading from a China IP.",
+      "content": "<p><a href=\"/renmingqian\" target=\"_blank\">@renmingqian</a> LG22 comes from login.gov itself, so there's nothing we can fix from our side; their support line in the error message is the only route. Note that NIH's controlled-access policy restricts some countries (see the link <a href=\"/tuckerarrants\" target=\"_blank\">@tuckerarrants</a> posted above), although <a href=\"/wuwenmin\" target=\"_blank\">@wuwenmin</a> reports downloading from a China IP.</p>",
+      "replies": [
+       {
+        "id": 3536822,
+        "postDate": "2026-10-11T10:03:55.180Z",
+        "rawMarkdown": "After I successfully registered a Login.gov account and logined in NDA, I still cannot download the OAI data. It said that \"Not Authorized\nYou are not authorized to view this content\" when I clicked the full download button. Anyone knows how to deal with?\n",
+        "content": "<p>After I successfully registered a Login.gov account and logined in NDA, I still cannot download the OAI data. It said that \"Not Authorized\nYou are not authorized to view this content\" when I clicked the full download button. Anyone knows how to deal with?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Eugen Shio",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/eugenshio",
+         "tier": "CONTRIBUTOR",
+         "id": 29326532,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 200,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Eugen Shio",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/eugenshio",
+          "userName": "eugenshio",
+          "tier": "CONTRIBUTOR",
+          "id": 29326532,
+          "profileUrl": "/eugenshio",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 29326532,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537357,
+        "postDate": "2026-10-12T12:28:02.120Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Danial Zakaria",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+       "url": "/nartaa",
+       "tier": "EXPERT",
+       "id": 4495635,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1073,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Danial Zakaria",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+        "url": "/nartaa",
+        "userName": "nartaa",
+        "tier": "EXPERT",
+        "id": 4495635,
+        "profileUrl": "/nartaa",
+        "performanceTier": "EXPERT",
+        "userId": 4495635,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537843,
+      "postDate": "2026-10-13T06:32:44.073Z",
+      "rawMarkdown": "I’ve already used up all 5 of my email accounts. I tried registering with different browsers, clearing cookies and cache each time, also used a US VPN. On my 5th attempt, I tried setting up an authenticator app and using the recovery codes, and somehow, it finally let me in. So it seems like using two or more verification methods might help.",
+      "content": "<p>I’ve already used up all 5 of my email accounts. I tried registering with different browsers, clearing cookies and cache each time, also used a US VPN. On my 5th attempt, I tried setting up an authenticator app and using the recovery codes, and somehow, it finally let me in. So it seems like using two or more verification methods might help.</p>",
+      "replies": [
+       {
+        "id": 3537923,
+        "postDate": "2026-10-13T10:37:23.907Z",
+        "rawMarkdown": "and the did you download data successfully? I met \"Not Authorized You are not authorized to view this content\" after click the download button.",
+        "content": "<p>and the did you download data successfully? I met \"Not Authorized You are not authorized to view this content\" after click the download button.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Eugen Shio",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/eugenshio",
+         "tier": "CONTRIBUTOR",
+         "id": 29326532,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 200,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Eugen Shio",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/eugenshio",
+          "userName": "eugenshio",
+          "tier": "CONTRIBUTOR",
+          "id": 29326532,
+          "profileUrl": "/eugenshio",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 29326532,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537925,
+        "postDate": "2026-10-13T10:49:25.300Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false
+       },
+       {
+        "id": 3537926,
+        "postDate": "2026-10-13T10:49:36.067Z",
+        "rawMarkdown": "yeah i got the package id and downloaded it through the cli (it's more reliable for me). my password wasn't working for some reason either, so i had to update it in my profile. ",
+        "content": "<p>yeah i got the package id and downloaded it through the cli (it's more reliable for me). my password wasn't working for some reason either, so i had to update it in my profile. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ayan",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/yesnonet",
+         "tier": "CONTRIBUTOR",
+         "id": 16948223,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1774,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ayan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/yesnonet",
+          "userName": "yesnonet",
+          "tier": "CONTRIBUTOR",
+          "id": 16948223,
+          "profileUrl": "/yesnonet",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 16948223,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Ayan",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/yesnonet",
+       "tier": "CONTRIBUTOR",
+       "id": 16948223,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1774,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Ayan",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/yesnonet",
+        "userName": "yesnonet",
+        "tier": "CONTRIBUTOR",
+        "id": 16948223,
+        "profileUrl": "/yesnonet",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 16948223,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Renmq",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+     "url": "/renmingqian",
+     "tier": "EXPERT",
+     "id": 31041949,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1401,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Renmq",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+      "url": "/renmingqian",
+      "userName": "renmingqian",
+      "tier": "EXPERT",
+      "id": 31041949,
+      "profileUrl": "/renmingqian",
+      "performanceTier": "EXPERT",
+      "userId": 31041949,
+      "progressionOptOut": false
+     },
+     "intro": ""
     }
    },
    {
@@ -1382,12 +2174,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 22,
+    "totalVotes": 41,
     "canUpvote": true,
-    "totalUpvotes": 25
+    "totalUpvotes": 44
    },
    "kernelVersion": 0,
-   "competitionRanking": 728,
+   "competitionRanking": 1073,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -1414,9 +2206,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-07T19:34:51.060872100Z",
-  "totalVotes": 22,
+  "totalVotes": 41,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/746792",
-  "totalMessages": 33,
+  "totalMessages": 56,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -1430,19 +2222,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 33,
+  "commentCount": 56,
   "firstForumMessageId": 3534536,
   "id": 746792,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Eesh saxena",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746792#3535771",
-  "lastCommentPostDate": "2026-10-09T07:33:46.803333300Z",
+  "lastCommenterName": "varshitha kolupuri",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746792#3537933",
+  "lastCommentPostDate": "2026-10-13T11:26:46.936666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-07T19:34:51.060872100Z",
   "title": "Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746792",
-  "votes": 22,
+  "votes": 41,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Danial Zakaria",

@@ -1,0 +1,403 @@
+{
+ "forumTopic": {
+  "authorId": 3858775,
+  "authorThumbnailName": "3858775-kg.jpg",
+  "authorUserDisplayName": "colum2131",
+  "authorUserName": "columbia2131",
+  "comments": [
+   {
+    "id": 3537932,
+    "postDate": "2026-10-13T11:25:49.053Z",
+    "rawMarkdown": "Two things I measured that might help here:\n\n- **The public LB is noisier than it looks.** It scores ~30% of ~1,300 studies, about 390. Simulating macro AUC\n  around 0.955 on 390 studies gives a standard deviation of roughly 0.003 for a single submission, so a\n  0.001 public move between two very different models is mostly noise.\n- **But the displayed score hides real differences.** Scores are truncated to 3 decimals, and inside a block of\n  identical displayed scores the rank still follows the unrounded score. Adding one extra model kept my displayed\n  score at 0.954 but moved my rank from 437 to 320, and later from 233 to 156 at 0.956. So for *paired*\n  comparisons (same base, one change), rank movement inside the block is a finer signal than the 3-decimal score.\n\nI made a notebook that shows the current tie blocks and the real score of every public notebook, if it is useful:\nhttps://www.kaggle.com/code/varshithakolupuri/rsna-knee-real-scores-of-every-public-notebook",
+    "content": "<p>Two things I measured that might help here:</p>\n<ul>\n<li><strong>The public LB is noisier than it looks.</strong> It scores ~30% of ~1,300 studies, about 390. Simulating macro AUC\naround 0.955 on 390 studies gives a standard deviation of roughly 0.003 for a single submission, so a\n0.001 public move between two very different models is mostly noise.</li>\n<li><strong>But the displayed score hides real differences.</strong> Scores are truncated to 3 decimals, and inside a block of\nidentical displayed scores the rank still follows the unrounded score. Adding one extra model kept my displayed\nscore at 0.954 but moved my rank from 437 to 320, and later from 233 to 156 at 0.956. So for <em>paired</em>\ncomparisons (same base, one change), rank movement inside the block is a finer signal than the 3-decimal score.</li>\n</ul>\n<p>I made a notebook that shows the current tie blocks and the real score of every public notebook, if it is useful:\n<a href=\"https://www.kaggle.com/code/varshithakolupuri/rsna-knee-real-scores-of-every-public-notebook\" target=\"_blank\">https://www.kaggle.com/code/varshithakolupuri/rsna-knee-real-scores-of-every-public-notebook</a></p>",
+    "parent": {},
+    "author": {
+     "displayName": "varshitha kolupuri",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32868875-kg.jpg?t=2026-09-01-13-44-25",
+     "url": "/varshithakolupuri",
+     "tier": "CONTRIBUTOR",
+     "id": 32868875,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 317,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "varshitha kolupuri",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32868875-kg.jpg?t=2026-09-01-13-44-25",
+      "url": "/varshithakolupuri",
+      "userName": "varshithakolupuri",
+      "tier": "CONTRIBUTOR",
+      "id": 32868875,
+      "profileUrl": "/varshithakolupuri",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 32868875,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536505,
+    "postDate": "2026-10-10T14:55:28.467Z",
+    "rawMarkdown": "I think both tell a story but neither is trustworthy. Extracted labels are .9 at best which isnt terribly representative of the data. Then gold is representative but its so so small that it almost doesnt matter. ",
+    "content": "<p>I think both tell a story but neither is trustworthy. Extracted labels are .9 at best which isnt terribly representative of the data. Then gold is representative but its so so small that it almost doesnt matter. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Cody_Null",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+     "url": "/cody11null",
+     "tier": "GRANDMASTER",
+     "id": 13672938,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 100,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cody_Null",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+      "url": "/cody11null",
+      "userName": "cody11null",
+      "tier": "GRANDMASTER",
+      "id": 13672938,
+      "profileUrl": "/cody11null",
+      "performanceTier": "GRANDMASTER",
+      "userId": 13672938,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536400,
+    "postDate": "2026-10-10T10:16:04.057Z",
+    "rawMarkdown": "for me, i trust cv local.\n\nmy best pb is 0.961 with oof (5 fold) 0.937 and god58: 0.938",
+    "content": "<p>for me, i trust cv local.</p>\n<p>my best pb is 0.961 with oof (5 fold) 0.937 and god58: 0.938</p>",
+    "replies": [
+     {
+      "id": 3536409,
+      "postDate": "2026-10-10T10:27:51.440Z",
+      "rawMarkdown": "Assume: (local cv + local train)/2 = (public lb + private lb)/2",
+      "content": "<p>Assume: (local cv + local train)/2 = (public lb + private lb)/2</p>",
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 455,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "datnt114",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2730329-kg.jpg",
+     "url": "/kingkong153",
+     "tier": "EXPERT",
+     "id": 2730329,
+     "progressionOptOut": true
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 30,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "datnt114",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2730329-kg.jpg",
+      "url": "/kingkong153",
+      "userName": "kingkong153",
+      "tier": "EXPERT",
+      "id": 2730329,
+      "profileUrl": "/kingkong153",
+      "performanceTier": "EXPERT",
+      "userId": 2730329,
+      "progressionOptOut": true
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536380,
+    "postDate": "2026-10-10T08:58:48.670Z",
+    "rawMarkdown": "submit classwise. you should see something\n",
+    "content": "<p>submit classwise. you should see something</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537244,
+    "postDate": "2026-10-12T08:02:42.690Z",
+    "rawMarkdown": "i want to say it depends on your OOF , your fold , the score will be different for everyone , for me up to the scorer , the most trustworthy judge will be the LB, we might be unable to know the test splitting data. but both OOF and gold tell something , some rules you must follow",
+    "content": "<p>i want to say it depends on your OOF , your fold , the score will be different for everyone , for me up to the scorer , the most trustworthy judge will be the LB, we might be unable to know the test splitting data. but both OOF and gold tell something , some rules you must follow</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Cà Rốt Production",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+     "url": "/crtproduction",
+     "tier": "CONTRIBUTOR",
+     "id": 20960131,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 49,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Binh Thanh",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/kain205",
+      "userName": "kain205",
+      "tier": "CONTRIBUTOR",
+      "id": 13173133,
+      "profileUrl": "/kain205",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 13173133,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537173,
+    "postDate": "2026-10-12T04:03:10.757Z",
+    "rawMarkdown": "",
+    "replies": [
+     {
+      "id": 3537184,
+      "postDate": "2026-10-12T04:35:59.873Z",
+      "rawMarkdown": "Copy questions to LLM -> generate answer and paste. Massive skill 👏 🤩 ",
+      "content": "<p>Copy questions to LLM -&gt; generate answer and paste. Massive skill 👏 🤩 </p>",
+      "parent": {},
+      "author": {
+       "displayName": "D Chakraborty",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/spoutop",
+       "tier": "CONTRIBUTOR",
+       "id": 5819143,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 95,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "D Chakraborty",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/spoutop",
+        "userName": "spoutop",
+        "tier": "CONTRIBUTOR",
+        "id": 5819143,
+        "profileUrl": "/spoutop",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 5819143,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1
+    },
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536374,
+   "postDate": "2026-10-10T08:37:48.763Z",
+   "rawMarkdown": "In this competition, the only expert-labelled data available for local validation are the 58 gold training studies. That makes local validation unusually challenging.\n\nI compared two local validation scores against the public LB across 15 of my own submissions, each based on five-fold CV:\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3858775%2Fa49d8034870b2413899e6f01816b9ba9%2F2026-10-10%2017.32.37.png?generation=1791621169971924&alt=media)\n\n* AUC on the 58 gold studies vs. public LB: r = 0.66.\n* AUC on ~4,300 studies with LLM-extracted labels vs. public LB: r = 0.87.\n\nFor my submissions, higher CV scores on the LLM-extracted (weak) labels have generally gone hand in hand with higher public LB scores. AUC on the 58 gold studies tracked the public LB less closely.\n\nMy current thinking:\n\n* The public LB uses ~30% of the test set, which is much larger than 58 studies. It may therefore provide a more reliable signal, though sample size alone doesn't guarantee that.\n* For local validation, evaluating out-of-fold predictions against the LLM-extracted labels across the training set might be the most practical option after all.\n\nI'd love to hear how others are approaching validation here, and whether you've seen similar patterns. I'm also curious how much of a leaderboard shake-up people expect at the end.\n\nSlightly off-topic, but since the metric is AUC: submitting 1 − p instead of p gives you 1 − AUC on the public LB. Because the leaderboard only displays each team's best score, a team could use this to track improvements without revealing its actual performance, then flip the predictions back at the end.\n\nSo there may be some strong teams flying under the radar. It'll be interesting to watch the LB in the final days. \n\n([yu4u](https://www.kaggle.com/ren4yu) and [tattaka](https://www.kaggle.com/tattaka) did very well in past RSNA competitions, yet their team is sitting at just 0.949 on the public LB right now, which feels a little suspicious 👀)",
+   "content": "<p>In this competition, the only expert-labelled data available for local validation are the 58 gold training studies. That makes local validation unusually challenging.</p>\n<p>I compared two local validation scores against the public LB across 15 of my own submissions, each based on five-fold CV:</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3858775%2Fa49d8034870b2413899e6f01816b9ba9%2F2026-10-10%2017.32.37.png?generation=1791621169971924&amp;alt=media\" alt=\"\"></p>\n<ul>\n<li>AUC on the 58 gold studies vs. public LB: r = 0.66.</li>\n<li>AUC on ~4,300 studies with LLM-extracted labels vs. public LB: r = 0.87.</li>\n</ul>\n<p>For my submissions, higher CV scores on the LLM-extracted (weak) labels have generally gone hand in hand with higher public LB scores. AUC on the 58 gold studies tracked the public LB less closely.</p>\n<p>My current thinking:</p>\n<ul>\n<li>The public LB uses ~30% of the test set, which is much larger than 58 studies. It may therefore provide a more reliable signal, though sample size alone doesn't guarantee that.</li>\n<li>For local validation, evaluating out-of-fold predictions against the LLM-extracted labels across the training set might be the most practical option after all.</li>\n</ul>\n<p>I'd love to hear how others are approaching validation here, and whether you've seen similar patterns. I'm also curious how much of a leaderboard shake-up people expect at the end.</p>\n<p>Slightly off-topic, but since the metric is AUC: submitting 1 − p instead of p gives you 1 − AUC on the public LB. Because the leaderboard only displays each team's best score, a team could use this to track improvements without revealing its actual performance, then flip the predictions back at the end.</p>\n<p>So there may be some strong teams flying under the radar. It'll be interesting to watch the LB in the final days. </p>\n<p>(<a href=\"https://www.kaggle.com/ren4yu\" target=\"_blank\">yu4u</a> and <a href=\"https://www.kaggle.com/tattaka\" target=\"_blank\">tattaka</a> did very well in past RSNA competitions, yet their team is sitting at just 0.949 on the public LB right now, which feels a little suspicious 👀)</p>",
+   "parent": {},
+   "author": {
+    "displayName": "colum2131",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+    "url": "/columbia2131",
+    "tier": "MASTER",
+    "id": 3858775,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 12,
+    "canUpvote": true,
+    "totalUpvotes": 12
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 53,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "colum2131",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+     "url": "/columbia2131",
+     "userName": "columbia2131",
+     "tier": "MASTER",
+     "id": 3858775,
+     "profileUrl": "/columbia2131",
+     "performanceTier": "MASTER",
+     "userId": 3858775,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3536374,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748011,
+  "name": "Local CV or Public LB: which one can we trust?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-10T08:37:48.764188100Z",
+  "totalVotes": 12,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748011",
+  "totalMessages": 8,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "colum2131",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+   "url": "/columbia2131",
+   "tier": "MASTER",
+   "id": 3858775,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 8,
+  "firstForumMessageId": 3536374,
+  "id": 748011,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "varshitha kolupuri",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748011#3537932",
+  "lastCommentPostDate": "2026-10-13T11:25:49.053333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-10T08:37:48.764188100Z",
+  "title": "Local CV or Public LB: which one can we trust?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748011",
+  "votes": 12,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "colum2131",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+    "url": "/columbia2131",
+    "userName": "columbia2131",
+    "tier": "MASTER",
+    "id": 3858775,
+    "profileUrl": "/columbia2131",
+    "performanceTier": "MASTER",
+    "userId": 3858775,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

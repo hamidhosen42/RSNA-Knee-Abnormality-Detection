@@ -6,6 +6,93 @@
   "authorUserName": "yosukeyama",
   "comments": [
    {
+    "id": 3538535,
+    "postDate": "2026-10-14T13:18:53.197Z",
+    "rawMarkdown": "Writing on behalf RSNA, thank you for posing this question in such a thoughtful and cogent way. For reasons stated by one of the respondents below, we are not prepared to designate specific datasets as permitted or off limits. Instead we would reiterate the provision of the contest rules that states that external data sets used must be, “either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants.” \n\nDatasets that require only registration and acknowledgement of licensing terms would clearly meet these criteria. Datasets that require an institutional research agreement or limit access to users with institutional affiliations clearly do not. \n\nBeyond that guidance, we would simply advise adhering to the broader “reasonableness” criterion and also providing transparency in disclosing your training methods, including datasets used. In the spirit of the competition, we would greatly prefer that the winning models be distinguished by the ingenuity and rigor of their approach rather than by privileged access to resources.\n\nChristopher Carr\nDirector of Informatics\nRSNA",
+    "content": "<p>Writing on behalf RSNA, thank you for posing this question in such a thoughtful and cogent way. For reasons stated by one of the respondents below, we are not prepared to designate specific datasets as permitted or off limits. Instead we would reiterate the provision of the contest rules that states that external data sets used must be, “either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants.” </p>\n<p>Datasets that require only registration and acknowledgement of licensing terms would clearly meet these criteria. Datasets that require an institutional research agreement or limit access to users with institutional affiliations clearly do not. </p>\n<p>Beyond that guidance, we would simply advise adhering to the broader “reasonableness” criterion and also providing transparency in disclosing your training methods, including datasets used. In the spirit of the competition, we would greatly prefer that the winning models be distinguished by the ingenuity and rigor of their approach rather than by privileged access to resources.</p>\n<p>Christopher Carr\nDirector of Informatics\nRSNA</p>",
+    "replies": [
+     {
+      "id": 3538541,
+      "postDate": "2026-10-14T13:26:37.023Z",
+      "rawMarkdown": "If a dataset meets these requirements in principle, but its website restricts registration from certain geographic regions (for example, registration attempts from those regions consistently return an \"LG22\" error code), would such a dataset still be considered \"publicly available and equally accessible to all Participants\" under the competition rules?\n\nIn this situation, would the use of such a dataset be permitted?",
+      "content": "<p>If a dataset meets these requirements in principle, but its website restricts registration from certain geographic regions (for example, registration attempts from those regions consistently return an \"LG22\" error code), would such a dataset still be considered \"publicly available and equally accessible to all Participants\" under the competition rules?</p>\n<p>In this situation, would the use of such a dataset be permitted?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Driz Lo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/drizlo",
+       "tier": "CONTRIBUTOR",
+       "id": 35931910,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 38,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Driz Lo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/drizlo",
+        "userName": "drizlo",
+        "tier": "CONTRIBUTOR",
+        "id": 35931910,
+        "profileUrl": "/drizlo",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 35931910,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Chris Carr",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/cdcarr",
+     "tier": "CONTRIBUTOR",
+     "id": 1918503,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3537177,
+    "postDate": "2026-10-12T04:13:39.680Z",
+    "rawMarkdown": "Are the external knee MRI datasets safe? @yosukeyama ",
+    "content": "<p>Are the external knee MRI datasets safe? <a href=\"/yosukeyama\" target=\"_blank\">@yosukeyama</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -2,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
     "id": 3535226,
     "postDate": "2026-10-08T13:52:21.413Z",
     "rawMarkdown": "Hope this reply from NDA regarding intended accessibility of OAI dataset helps![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4379159%2Fa2d23bb7a3e71f51b42db249f94db22c%2FScreenshot%202026-10-08%20095205.png?generation=1791467540572386&alt=media)",
@@ -16,6 +103,230 @@
       "postDate": "2026-10-08T14:11:33.263Z",
       "rawMarkdown": "Thank you for sharing this! Based on their response, it seems reasonable to consider OAI permissible for use in this competition.",
       "content": "<p>Thank you for sharing this! Based on their response, it seems reasonable to consider OAI permissible for use in this competition.</p>",
+      "replies": [
+       {
+        "id": 3535787,
+        "postDate": "2026-10-09T08:06:12.993Z",
+        "rawMarkdown": "While it does seem reasonable to use from OAI's end, I would still be careful until the hosts explicitly mention it - access to it seems to be blocked from China, as someone mentioned in another thread, so the hosts might restrict it.",
+        "content": "<p>While it does seem reasonable to use from OAI's end, I would still be careful until the hosts explicitly mention it - access to it seems to be blocked from China, as someone mentioned in another thread, so the hosts might restrict it.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Satwik",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+         "url": "/p4rallax",
+         "tier": "MASTER",
+         "id": 3459992,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 76,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "tingyi",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+          "url": "/chengtingyi",
+          "userName": "chengtingyi",
+          "tier": "CONTRIBUTOR",
+          "id": 8788200,
+          "profileUrl": "/chengtingyi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 8788200,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536012,
+        "postDate": "2026-10-09T15:40:34.463Z",
+        "rawMarkdown": "The challenge is 1) the host is not going to reply, as they have avoided clear answers regarding external dataset usage with the exception of KneeCot, 2) NDA themselves are saying OAI is open sourced and available for everyone, with no country exclusions, so user reported access denial is not *supposed* to happen and 3) a public model trained on OAI has now spread through the code section via blind fork ensembling and the exposure to OAI is rapidly growing, so a flat OAI ban impacts a huge number of submissions. Its an annoyingly grey situation thus far.\n\n-> If it is banned, only those extremely cautious will not get DQ'd (assuming this can even be caught in the first place) and if it isn't banned, those same people are at a potential data disadvantage.  ",
+        "content": "<p>The challenge is 1) the host is not going to reply, as they have avoided clear answers regarding external dataset usage with the exception of KneeCot, 2) NDA themselves are saying OAI is open sourced and available for everyone, with no country exclusions, so user reported access denial is not <em>supposed</em> to happen and 3) a public model trained on OAI has now spread through the code section via blind fork ensembling and the exposure to OAI is rapidly growing, so a flat OAI ban impacts a huge number of submissions. Its an annoyingly grey situation thus far.</p>\n<p>-&gt; If it is banned, only those extremely cautious will not get DQ'd (assuming this can even be caught in the first place) and if it isn't banned, those same people are at a potential data disadvantage.  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 4,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536021,
+        "postDate": "2026-10-09T15:55:11.433Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3536133,
+        "postDate": "2026-10-09T19:36:20.530Z",
+        "rawMarkdown": "Yup, unfortunately that's where we stand right now. The OAI access issue seems to be due to restrictions in China, not from OAI themselves. And I think the public model weights should be fine, as that does not involve direct use of the dataset (the person who shared it, however, might get disqualified). I wonder why the hosts won't respond to any queries at all. The hosts last year were very active in the community. It's a little disappointing honestly.",
+        "content": "<p>Yup, unfortunately that's where we stand right now. The OAI access issue seems to be due to restrictions in China, not from OAI themselves. And I think the public model weights should be fine, as that does not involve direct use of the dataset (the person who shared it, however, might get disqualified). I wonder why the hosts won't respond to any queries at all. The hosts last year were very active in the community. It's a little disappointing honestly.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Satwik",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+         "url": "/p4rallax",
+         "tier": "MASTER",
+         "id": 3459992,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 76,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "tingyi",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+          "url": "/chengtingyi",
+          "userName": "chengtingyi",
+          "tier": "CONTRIBUTOR",
+          "id": 8788200,
+          "profileUrl": "/chengtingyi",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 8788200,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536158,
+        "postDate": "2026-10-09T20:18:11.663Z",
+        "rawMarkdown": "Just a reminder that both Claude and Codex are officially unavailable in China as well.",
+        "content": "<p>Just a reminder that both Claude and Codex are officially unavailable in China as well.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Pavel",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/pavelsavchenkov",
+         "tier": "MASTER",
+         "id": 172360,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 5
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 33,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Pavel",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/pavelsavchenkov",
+          "userName": "pavelsavchenkov",
+          "tier": "MASTER",
+          "id": 172360,
+          "profileUrl": "/pavelsavchenkov",
+          "performanceTier": "MASTER",
+          "userId": 172360,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537170,
+        "postDate": "2026-10-12T03:49:43.220Z",
+        "rawMarkdown": "Since NDA says the OAI dataset is publicly available to everyone with no country restrictions, could someone upload the original, unprocessed dataset to Kaggle? That way, all participants would have equal access to the data, helping ensure a level playing field.",
+        "content": "<p>Since NDA says the OAI dataset is publicly available to everyone with no country restrictions, could someone upload the original, unprocessed dataset to Kaggle? That way, all participants would have equal access to the data, helping ensure a level playing field.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Renmq",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+         "url": "/renmingqian",
+         "tier": "EXPERT",
+         "id": 31041949,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1401,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Renmq",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31041949-kg.jpeg?t=2026-03-29-07-11-17",
+          "url": "/renmingqian",
+          "userName": "renmingqian",
+          "tier": "EXPERT",
+          "id": 31041949,
+          "profileUrl": "/renmingqian",
+          "performanceTier": "EXPERT",
+          "userId": 31041949,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
       "parent": {},
       "author": {
        "displayName": "YYama",
@@ -27,12 +338,12 @@
       },
       "authorType": "TOPIC",
       "votes": {
-       "totalVotes": 2,
+       "totalVotes": 3,
        "canUpvote": true,
-       "totalUpvotes": 2
+       "totalUpvotes": 3
       },
       "kernelVersion": 0,
-      "competitionRanking": 10,
+      "competitionRanking": 19,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -63,12 +374,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 5,
+     "totalVotes": 12,
      "canUpvote": true,
-     "totalUpvotes": 5
+     "totalUpvotes": 12
     },
     "kernelVersion": 0,
-    "competitionRanking": 17,
+    "competitionRanking": 4,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -92,6 +403,49 @@
     "postDate": "2026-10-08T04:04:15.933Z",
     "rawMarkdown": "@javaduke95 Following your Aug 27 guidance (straightforward registration or click-through data-use agreements are generally acceptable; institution-specific approvals are not), could you give a yes/no on two specific points before final selections on Oct 22?\n\n1. OAI through the NIMH Data Archive (login.gov account + click-through data-use terms): is it allowed as external training data? Some participants report that NIH country restrictions block access from their location (e.g. China), which seems relevant to \"reasonably accessible to all\".\n2. Publicly released checkpoints trained partly on OAI (for example the checkpoint behind the public 0.949 notebook, shared under Apache 2.0): may other teams use them in their submissions?\n\nMany teams are now building on public notebooks that use such a checkpoint, so a clear answer would keep the leaderboard fair for everyone. Thank you!",
     "content": "<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> Following your Aug 27 guidance (straightforward registration or click-through data-use agreements are generally acceptable; institution-specific approvals are not), could you give a yes/no on two specific points before final selections on Oct 22?</p>\n<ol>\n<li>OAI through the NIMH Data Archive (login.gov account + click-through data-use terms): is it allowed as external training data? Some participants report that NIH country restrictions block access from their location (e.g. China), which seems relevant to \"reasonably accessible to all\".</li>\n<li>Publicly released checkpoints trained partly on OAI (for example the checkpoint behind the public 0.949 notebook, shared under Apache 2.0): may other teams use them in their submissions?</li>\n</ol>\n<p>Many teams are now building on public notebooks that use such a checkpoint, so a clear answer would keep the leaderboard fair for everyone. Thank you!</p>",
+    "replies": [
+     {
+      "id": 3535775,
+      "postDate": "2026-10-09T07:38:19.080Z",
+      "rawMarkdown": "For reference on accessibility: I applied for OAI on NDA as an individual and was approved immediately, with no institution, signing official or IRB involved (the Data Permissions page lists the Osteoarthritis Initiative group as “Institutional Approval Required: No”). Signup was a Login.gov account with just an email. That seems to match the 09-21 condition in 741819, though I understand access from some countries may still be an issue.",
+      "content": "<p>For reference on accessibility: I applied for OAI on NDA as an individual and was approved immediately, with no institution, signing official or IRB involved (the Data Permissions page lists the Osteoarthritis Initiative group as “Institutional Approval Required: No”). Signup was a Login.gov account with just an email. That seems to match the 09-21 condition in 741819, though I understand access from some countries may still be an issue.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Eesh saxena",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+       "url": "/eeshsaxena",
+       "tier": "CONTRIBUTOR",
+       "id": 18231426,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 3,
+       "canUpvote": true,
+       "totalUpvotes": 3
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 273,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Eesh saxena",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+        "url": "/eeshsaxena",
+        "userName": "eeshsaxena",
+        "tier": "CONTRIBUTOR",
+        "id": 18231426,
+        "profileUrl": "/eeshsaxena",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 18231426,
+        "progressionOptOut": false
+       },
+       "intro": "Hii"
+      }
+     }
+    ],
     "parent": {},
     "author": {
      "displayName": "Taeyang",
@@ -108,7 +462,7 @@
      "totalUpvotes": 5
     },
     "kernelVersion": 0,
-    "competitionRanking": 256,
+    "competitionRanking": 205,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -122,6 +476,46 @@
       "profileUrl": "/taeyangg4",
       "performanceTier": "CONTRIBUTOR",
       "userId": 11932883,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3534071,
+    "postDate": "2026-10-07T09:35:08.100Z",
+    "rawMarkdown": "I would like to follow up on this question, as the status of several commonly used knee MRI datasets is still unclear.\n\n| Resource | Host status | Access / licensing issue |\n|---|---|---|\n| **KneeCoT** | **Prohibited** ([host ruling](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109)) | Download is technically easy, but the dataset card requires a **formal ethical-use agreement with the affiliated hospital** |\n| **Stanford MRNet** | Unclear | Stanford AIMI / Redivis access; subject to research-use terms and dataset-specific access requirements |\n| **Stanford SKM-TEA** | Unclear | Stanford AIMI / Redivis access; registration and dataset-specific access requirements |\n| **NYU fastMRI / fastMRI+** | Unclear | **Application required**, including institutional affiliation and proposed use; Data Sharing Agreement |\n| **OAI** | Unclear | NDA registration / controlled-access process; not simply an unrestricted public download |\n| **KneeMRI** | Unclear | Public download, but **CC BY-NC-ND 4.0**; unclear whether training/releasing model weights is compatible with the NoDerivatives clause |\n| **KneeXNet-2.5D** | Unclear | Publicly released OAI-derived annotations/models; repository says research/educational use, but no explicit repository license identified |\n\nGiven that **KneeCoT is prohibited because of its institutional agreement requirement**, could the hosts clarify whether datasets requiring comparable or more substantial access procedures are also prohibited?\n\nAt minimum, could the **KneeCoT prohibition be pinned**? Although the dataset card explicitly requires a formal ethical-use agreement with the affiliated hospital, the files themselves are relatively easy to access, and this requirement may easily be overlooked in practice. Given the dataset’s large scale and its inclusion of knee MRI examinations, diagnostic reports, labels, VQA data, and reasoning annotations that closely overlap with this competition’s tasks, its use could potentially lead to substantial score gains. A pinned notice would help prevent inadvertent use and ensure that all teams are operating under the same rules.\n\n@javaduke95",
+    "content": "<p>I would like to follow up on this question, as the status of several commonly used knee MRI datasets is still unclear.</p>\n<table>\n<thead>\n<tr>\n<th>Resource</th>\n<th>Host status</th>\n<th>Access / licensing issue</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>KneeCoT</strong></td>\n<td><strong>Prohibited</strong> (<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">host ruling</a>)</td>\n<td>Download is technically easy, but the dataset card requires a <strong>formal ethical-use agreement with the affiliated hospital</strong></td>\n</tr>\n<tr>\n<td><strong>Stanford MRNet</strong></td>\n<td>Unclear</td>\n<td>Stanford AIMI / Redivis access; subject to research-use terms and dataset-specific access requirements</td>\n</tr>\n<tr>\n<td><strong>Stanford SKM-TEA</strong></td>\n<td>Unclear</td>\n<td>Stanford AIMI / Redivis access; registration and dataset-specific access requirements</td>\n</tr>\n<tr>\n<td><strong>NYU fastMRI / fastMRI+</strong></td>\n<td>Unclear</td>\n<td><strong>Application required</strong>, including institutional affiliation and proposed use; Data Sharing Agreement</td>\n</tr>\n<tr>\n<td><strong>OAI</strong></td>\n<td>Unclear</td>\n<td>NDA registration / controlled-access process; not simply an unrestricted public download</td>\n</tr>\n<tr>\n<td><strong>KneeMRI</strong></td>\n<td>Unclear</td>\n<td>Public download, but <strong>CC BY-NC-ND 4.0</strong>; unclear whether training/releasing model weights is compatible with the NoDerivatives clause</td>\n</tr>\n<tr>\n<td><strong>KneeXNet-2.5D</strong></td>\n<td>Unclear</td>\n<td>Publicly released OAI-derived annotations/models; repository says research/educational use, but no explicit repository license identified</td>\n</tr>\n</tbody>\n</table>\n<p>Given that <strong>KneeCoT is prohibited because of its institutional agreement requirement</strong>, could the hosts clarify whether datasets requiring comparable or more substantial access procedures are also prohibited?</p>\n<p>At minimum, could the <strong>KneeCoT prohibition be pinned</strong>? Although the dataset card explicitly requires a formal ethical-use agreement with the affiliated hospital, the files themselves are relatively easy to access, and this requirement may easily be overlooked in practice. Given the dataset’s large scale and its inclusion of knee MRI examinations, diagnostic reports, labels, VQA data, and reasoning annotations that closely overlap with this competition’s tasks, its use could potentially lead to substantial score gains. A pinned notice would help prevent inadvertent use and ensure that all teams are operating under the same rules.</p>\n<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a></p>",
+    "parent": {},
+    "author": {
+     "displayName": "YYama",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+     "url": "/yosukeyama",
+     "tier": "MASTER",
+     "id": 2593251,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 8,
+     "canUpvote": true,
+     "totalUpvotes": 9
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 19,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "YYama",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
+      "url": "/yosukeyama",
+      "userName": "yosukeyama",
+      "tier": "MASTER",
+      "id": 2593251,
+      "profileUrl": "/yosukeyama",
+      "performanceTier": "MASTER",
+      "userId": 2593251,
       "progressionOptOut": false
      },
      "intro": ""
@@ -169,12 +563,12 @@
       },
       "authorType": "TOPIC",
       "votes": {
-       "totalVotes": 3,
+       "totalVotes": 6,
        "canUpvote": true,
-       "totalUpvotes": 3
+       "totalUpvotes": 6
       },
       "kernelVersion": 0,
-      "competitionRanking": 10,
+      "competitionRanking": 19,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -205,11 +599,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
+     "totalVotes": 1,
      "canUpvote": true,
-     "totalUpvotes": 2
+     "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 62,
+    "competitionRanking": 44,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -229,40 +624,82 @@
     }
    },
    {
-    "id": 3534071,
-    "postDate": "2026-10-07T09:35:08.100Z",
-    "rawMarkdown": "I would like to follow up on this question, as the status of several commonly used knee MRI datasets is still unclear.\n\n| Resource | Host status | Access / licensing issue |\n|---|---|---|\n| **KneeCoT** | **Prohibited** ([host ruling](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109)) | Download is technically easy, but the dataset card requires a **formal ethical-use agreement with the affiliated hospital** |\n| **Stanford MRNet** | Unclear | Stanford AIMI / Redivis access; subject to research-use terms and dataset-specific access requirements |\n| **Stanford SKM-TEA** | Unclear | Stanford AIMI / Redivis access; registration and dataset-specific access requirements |\n| **NYU fastMRI / fastMRI+** | Unclear | **Application required**, including institutional affiliation and proposed use; Data Sharing Agreement |\n| **OAI** | Unclear | NDA registration / controlled-access process; not simply an unrestricted public download |\n| **KneeMRI** | Unclear | Public download, but **CC BY-NC-ND 4.0**; unclear whether training/releasing model weights is compatible with the NoDerivatives clause |\n| **KneeXNet-2.5D** | Unclear | Publicly released OAI-derived annotations/models; repository says research/educational use, but no explicit repository license identified |\n\nGiven that **KneeCoT is prohibited because of its institutional agreement requirement**, could the hosts clarify whether datasets requiring comparable or more substantial access procedures are also prohibited?\n\nAt minimum, could the **KneeCoT prohibition be pinned**? Although the dataset card explicitly requires a formal ethical-use agreement with the affiliated hospital, the files themselves are relatively easy to access, and this requirement may easily be overlooked in practice. Given the dataset’s large scale and its inclusion of knee MRI examinations, diagnostic reports, labels, VQA data, and reasoning annotations that closely overlap with this competition’s tasks, its use could potentially lead to substantial score gains. A pinned notice would help prevent inadvertent use and ensure that all teams are operating under the same rules.\n\n@javaduke95",
-    "content": "<p>I would like to follow up on this question, as the status of several commonly used knee MRI datasets is still unclear.</p>\n<table>\n<thead>\n<tr>\n<th>Resource</th>\n<th>Host status</th>\n<th>Access / licensing issue</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>KneeCoT</strong></td>\n<td><strong>Prohibited</strong> (<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">host ruling</a>)</td>\n<td>Download is technically easy, but the dataset card requires a <strong>formal ethical-use agreement with the affiliated hospital</strong></td>\n</tr>\n<tr>\n<td><strong>Stanford MRNet</strong></td>\n<td>Unclear</td>\n<td>Stanford AIMI / Redivis access; subject to research-use terms and dataset-specific access requirements</td>\n</tr>\n<tr>\n<td><strong>Stanford SKM-TEA</strong></td>\n<td>Unclear</td>\n<td>Stanford AIMI / Redivis access; registration and dataset-specific access requirements</td>\n</tr>\n<tr>\n<td><strong>NYU fastMRI / fastMRI+</strong></td>\n<td>Unclear</td>\n<td><strong>Application required</strong>, including institutional affiliation and proposed use; Data Sharing Agreement</td>\n</tr>\n<tr>\n<td><strong>OAI</strong></td>\n<td>Unclear</td>\n<td>NDA registration / controlled-access process; not simply an unrestricted public download</td>\n</tr>\n<tr>\n<td><strong>KneeMRI</strong></td>\n<td>Unclear</td>\n<td>Public download, but <strong>CC BY-NC-ND 4.0</strong>; unclear whether training/releasing model weights is compatible with the NoDerivatives clause</td>\n</tr>\n<tr>\n<td><strong>KneeXNet-2.5D</strong></td>\n<td>Unclear</td>\n<td>Publicly released OAI-derived annotations/models; repository says research/educational use, but no explicit repository license identified</td>\n</tr>\n</tbody>\n</table>\n<p>Given that <strong>KneeCoT is prohibited because of its institutional agreement requirement</strong>, could the hosts clarify whether datasets requiring comparable or more substantial access procedures are also prohibited?</p>\n<p>At minimum, could the <strong>KneeCoT prohibition be pinned</strong>? Although the dataset card explicitly requires a formal ethical-use agreement with the affiliated hospital, the files themselves are relatively easy to access, and this requirement may easily be overlooked in practice. Given the dataset’s large scale and its inclusion of knee MRI examinations, diagnostic reports, labels, VQA data, and reasoning annotations that closely overlap with this competition’s tasks, its use could potentially lead to substantial score gains. A pinned notice would help prevent inadvertent use and ensure that all teams are operating under the same rules.</p>\n<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a></p>",
+    "id": 3530838,
+    "postDate": "2026-09-30T22:59:48.650Z",
+    "rawMarkdown": "I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to \"improve the score\" and that is what it will try to do. \n\nIf people are minimally \"in the loop\" or fully out of it, it is hard to catch. I've had to paste verbatim the host comments and the content of the Rules tab multiple times for LLMs to finally accept that most of these sources do not strictly comply with usage requirements, either from the host's perspective, Kaggle's perspective, or the data owner's perspective...\n\nNot sure what the solution is but the host has no reason to check solutions other than the prize eligible ones, the data providers themselves are unlikely to respond, so what to do? \"Cheat\" and hope you don't place in top 10 but otherwise secure a medal? Play it safe and wonder if the people that placed above you weren't as conservative?",
+    "content": "<p>I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to \"improve the score\" and that is what it will try to do. </p>\n<p>If people are minimally \"in the loop\" or fully out of it, it is hard to catch. I've had to paste verbatim the host comments and the content of the Rules tab multiple times for LLMs to finally accept that most of these sources do not strictly comply with usage requirements, either from the host's perspective, Kaggle's perspective, or the data owner's perspective…</p>\n<p>Not sure what the solution is but the host has no reason to check solutions other than the prize eligible ones, the data providers themselves are unlikely to respond, so what to do? \"Cheat\" and hope you don't place in top 10 but otherwise secure a medal? Play it safe and wonder if the people that placed above you weren't as conservative?</p>",
+    "replies": [
+     {
+      "id": 3530957,
+      "postDate": "2026-10-01T04:40:59.317Z",
+      "rawMarkdown": "We're now at the point where we're basically \"jumping at shadows.\" Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.",
+      "content": "<p>We're now at the point where we're basically \"jumping at shadows.\" Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "pomcho555",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+       "url": "/pompom555",
+       "tier": "EXPERT",
+       "id": 4855941,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 138,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "pomcho555",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
+        "url": "/pompom555",
+        "userName": "pompom555",
+        "tier": "EXPERT",
+        "id": 4855941,
+        "profileUrl": "/pompom555",
+        "performanceTier": "EXPERT",
+        "userId": 4855941,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
     "parent": {},
     "author": {
-     "displayName": "YYama",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
-     "url": "/yosukeyama",
+     "displayName": "Tucker Arrants",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+     "url": "/tuckerarrants",
      "tier": "MASTER",
-     "id": 2593251,
+     "id": 4379159,
      "progressionOptOut": false
     },
-    "authorType": "TOPIC",
+    "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 6,
+     "totalVotes": 5,
      "canUpvote": true,
-     "totalUpvotes": 7
+     "totalUpvotes": 5
     },
     "kernelVersion": 0,
-    "competitionRanking": 10,
+    "competitionRanking": 4,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "YYama",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2593251-kg.jpg",
-      "url": "/yosukeyama",
-      "userName": "yosukeyama",
+      "displayName": "Tony Li",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+      "url": "/tonylica",
+      "userName": "tonylica",
       "tier": "MASTER",
-      "id": 2593251,
-      "profileUrl": "/yosukeyama",
+      "id": 22938014,
+      "profileUrl": "/tonylica",
       "performanceTier": "MASTER",
-      "userId": 2593251,
+      "userId": 22938014,
       "progressionOptOut": false
      },
      "intro": ""
@@ -301,7 +738,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 1291,
+        "competitionRanking": 1402,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -344,7 +781,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 108,
+      "competitionRanking": 138,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -380,7 +817,7 @@
      "totalUpvotes": 5
     },
     "kernelVersion": 0,
-    "competitionRanking": 1291,
+    "competitionRanking": 1402,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -400,82 +837,40 @@
     }
    },
    {
-    "id": 3530838,
-    "postDate": "2026-09-30T22:59:48.650Z",
-    "rawMarkdown": "I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to \"improve the score\" and that is what it will try to do. \n\nIf people are minimally \"in the loop\" or fully out of it, it is hard to catch. I've had to paste verbatim the host comments and the content of the Rules tab multiple times for LLMs to finally accept that most of these sources do not strictly comply with usage requirements, either from the host's perspective, Kaggle's perspective, or the data owner's perspective...\n\nNot sure what the solution is but the host has no reason to check solutions other than the prize eligible ones, the data providers themselves are unlikely to respond, so what to do? \"Cheat\" and hope you don't place in top 10 but otherwise secure a medal? Play it safe and wonder if the people that placed above you weren't as conservative?",
-    "content": "<p>I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to \"improve the score\" and that is what it will try to do. </p>\n<p>If people are minimally \"in the loop\" or fully out of it, it is hard to catch. I've had to paste verbatim the host comments and the content of the Rules tab multiple times for LLMs to finally accept that most of these sources do not strictly comply with usage requirements, either from the host's perspective, Kaggle's perspective, or the data owner's perspective…</p>\n<p>Not sure what the solution is but the host has no reason to check solutions other than the prize eligible ones, the data providers themselves are unlikely to respond, so what to do? \"Cheat\" and hope you don't place in top 10 but otherwise secure a medal? Play it safe and wonder if the people that placed above you weren't as conservative?</p>",
-    "replies": [
-     {
-      "id": 3530957,
-      "postDate": "2026-10-01T04:40:59.317Z",
-      "rawMarkdown": "We're now at the point where we're basically \"jumping at shadows.\" Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.",
-      "content": "<p>We're now at the point where we're basically \"jumping at shadows.\" Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.</p>",
-      "parent": {},
-      "author": {
-       "displayName": "pomcho555",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
-       "url": "/pompom555",
-       "tier": "EXPERT",
-       "id": 4855941,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "totalVotes": 1,
-       "canUpvote": true,
-       "totalUpvotes": 1
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 108,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "pomcho555",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4855941-kg.jpg?t=2024-03-30-23-26-41",
-        "url": "/pompom555",
-        "userName": "pompom555",
-        "tier": "EXPERT",
-        "id": 4855941,
-        "profileUrl": "/pompom555",
-        "performanceTier": "EXPERT",
-        "userId": 4855941,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     }
-    ],
+    "id": 3530459,
+    "postDate": "2026-09-30T08:03:51.747Z",
+    "rawMarkdown": "4 days and still no answer. is that a yes?",
+    "content": "<p>4 days and still no answer. is that a yes?</p>",
     "parent": {},
     "author": {
-     "displayName": "Tucker Arrants",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-     "url": "/tuckerarrants",
-     "tier": "MASTER",
-     "id": 4379159,
+     "displayName": "madmax0404",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+     "url": "/max6296",
+     "tier": "EXPERT",
+     "id": 3273392,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 4,
+     "totalVotes": 3,
      "canUpvote": true,
-     "totalUpvotes": 4
+     "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 17,
+    "competitionRanking": 15,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Tony Li",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
-      "url": "/tonylica",
-      "userName": "tonylica",
-      "tier": "MASTER",
-      "id": 22938014,
-      "profileUrl": "/tonylica",
-      "performanceTier": "MASTER",
-      "userId": 22938014,
+      "displayName": "madmax0404",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+      "url": "/max6296",
+      "userName": "max6296",
+      "tier": "EXPERT",
+      "id": 3273392,
+      "profileUrl": "/max6296",
+      "performanceTier": "EXPERT",
+      "userId": 3273392,
       "progressionOptOut": false
      },
      "intro": ""
@@ -502,20 +897,20 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 851,
+    "competitionRanking": 1262,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Ali Ozan Memetoglu",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-      "url": "/aliozanmemetoglu",
-      "userName": "aliozanmemetoglu",
-      "tier": "EXPERT",
-      "id": 3502073,
-      "profileUrl": "/aliozanmemetoglu",
-      "performanceTier": "EXPERT",
-      "userId": 3502073,
+      "displayName": "Arunodhayan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2101769-kg.jpg",
+      "url": "/arunodhayan",
+      "userName": "arunodhayan",
+      "tier": "MASTER",
+      "id": 2101769,
+      "profileUrl": "/arunodhayan",
+      "performanceTier": "MASTER",
+      "userId": 2101769,
       "progressionOptOut": false
      },
      "intro": ""
@@ -546,7 +941,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 4708,
+      "competitionRanking": 5107,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -590,7 +985,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 49,
+        "competitionRanking": 76,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -630,7 +1025,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 10,
+        "competitionRanking": 19,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -669,7 +1064,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 49,
+        "competitionRanking": 76,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -710,7 +1105,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 10,
+        "competitionRanking": 19,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -751,7 +1146,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 49,
+        "competitionRanking": 76,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -788,7 +1183,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 10,
+      "competitionRanking": 19,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -824,7 +1219,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 36,
+    "competitionRanking": 29,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -838,86 +1233,6 @@
       "profileUrl": "/optimo",
       "performanceTier": "MASTER",
       "userId": 190923,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3530459,
-    "postDate": "2026-09-30T08:03:51.747Z",
-    "rawMarkdown": "4 days and still no answer. is that a yes?",
-    "content": "<p>4 days and still no answer. is that a yes?</p>",
-    "parent": {},
-    "author": {
-     "displayName": "madmax0404",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
-     "url": "/max6296",
-     "tier": "EXPERT",
-     "id": 3273392,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": 3,
-     "canUpvote": true,
-     "totalUpvotes": 3
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 881,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "madmax0404",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
-      "url": "/max6296",
-      "userName": "max6296",
-      "tier": "EXPERT",
-      "id": 3273392,
-      "profileUrl": "/max6296",
-      "performanceTier": "EXPERT",
-      "userId": 3273392,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3530682,
-    "postDate": "2026-09-30T17:25:08.863Z",
-    "rawMarkdown": "++ This is really important, please provide clarification",
-    "content": "<p>++ This is really important, please provide clarification</p>",
-    "parent": {},
-    "author": {
-     "displayName": "Pratham Lahoti",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-     "url": "/prathamlahoti2",
-     "tier": "CONTRIBUTOR",
-     "id": 27733824,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": 2,
-     "canUpvote": true,
-     "totalUpvotes": 2
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 1230,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "Pratham Lahoti",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-      "url": "/prathamlahoti2",
-      "userName": "prathamlahoti2",
-      "tier": "CONTRIBUTOR",
-      "id": 27733824,
-      "profileUrl": "/prathamlahoti2",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 27733824,
       "progressionOptOut": false
      },
      "intro": ""
@@ -945,12 +1260,12 @@
       },
       "authorType": "TOPIC",
       "votes": {
-       "totalVotes": 4,
+       "totalVotes": 5,
        "canUpvote": true,
-       "totalUpvotes": 5
+       "totalUpvotes": 6
       },
       "kernelVersion": 0,
-      "competitionRanking": 10,
+      "competitionRanking": 19,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -981,25 +1296,27 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 6,
+     "totalVotes": 7,
      "canUpvote": true,
-     "totalUpvotes": 6
+     "totalUpvotes": 7
     },
     "kernelVersion": 0,
-    "competitionRanking": 17,
+    "competitionRanking": 4,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
      {
       "emoji": "SURPRISE",
       "featuredUserNames": [
+       "godhand",
+       "dragoshh1984",
        "keakohv",
        "ggayoayogg",
        "ryusajang1",
        "pablolee789",
        "laymond"
       ],
-      "userCount": 5
+      "userCount": 7
      }
     ],
     "teamUpInfo": {
@@ -1044,7 +1361,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 10,
+      "competitionRanking": 19,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -1080,7 +1397,7 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 43,
+    "competitionRanking": 36,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1098,14 +1415,71 @@
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3536285,
+    "postDate": "2026-10-10T03:23:13.330Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3535769,
+    "postDate": "2026-10-09T07:33:14.323Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3530682,
+    "postDate": "2026-09-30T17:25:08.863Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "totalUpvotes": 2
+    },
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
   "firstMessage": {
    "id": 3528387,
    "postDate": "2026-09-26T01:52:06.163Z",
-   "rawMarkdown": "Thank you to the hosts for organizing this challenge and for taking the time to answer questions throughout the competition. I appreciate that assessing third-party datasets individually is difficult, especially when their access requirements and licenses differ.\n\nQuestions about external knee MRI data are spread across several threads. Without a clear answer for commonly used datasets, teams may train under different assumptions about what is permitted, which makes it difficult to ensure a level playing field.\n\nI have read the [original question](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652), the [registration-gated dataset question](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497), and the [institutional-agreement follow-up](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950). There are also separate questions about [pretrained weights](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121) and [research-use agreements](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/738111).\n\nThe host has [explicitly ruled that KneeCoT is not allowed](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109) because its formal institutional agreement may create unequal access. The host has also [explained](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965) that non-commercial terms alone do not exclude a dataset, while straightforward registration and substantial institutional approval may be treated differently. It remains unclear to me how these principles apply to the following resources:\n\n| Resource | Relevant access or licensing issue |\n| --- | --- |\n| [Stanford MRNet](https://aimi.stanford.edu/datasets/mrnet-knee-mris) | Research-use agreement |\n| [Stanford SKM-TEA](https://aimi.stanford.edu/datasets/skm-tea-knee-mri) | Registration and data-use terms |\n| [NYU fastMRI](https://fastmri.med.nyu.edu/) and [fastMRI+](https://github.com/microsoft/fastmri-plus) | Data-sharing agreement for images; separately released annotations |\n| [Osteoarthritis Initiative (OAI)](https://nda.nih.gov/oai) | Data Use Certification and institutional requirements |\n| [KneeMRI](https://zenodo.org/records/14789903) | CC BY-NC-ND 4.0 |\n| [KneeXNet-2.5D](https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D) | Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify |\n\nCould the hosts give a **yes or no for each resource** under this competition's external-data rules? If the answer differs between training on the images and fine-tuning publicly released weights, please state that separately. It would also help to know whether using each resource is compatible with the winner's requirement to release the final model. I understand that teams remain responsible for complying with the original providers' terms.\n\nBecause the same question keeps appearing in different threads, could the hosts **pin the answer in the Discussion** so all teams can find and follow the same guidance?\n\n@javaduke95",
-   "content": "<p>Thank you to the hosts for organizing this challenge and for taking the time to answer questions throughout the competition. I appreciate that assessing third-party datasets individually is difficult, especially when their access requirements and licenses differ.</p>\n<p>Questions about external knee MRI data are spread across several threads. Without a clear answer for commonly used datasets, teams may train under different assumptions about what is permitted, which makes it difficult to ensure a level playing field.</p>\n<p>I have read the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652\" target=\"_blank\">original question</a>, the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497\" target=\"_blank\">registration-gated dataset question</a>, and the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950\" target=\"_blank\">institutional-agreement follow-up</a>. There are also separate questions about <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121\" target=\"_blank\">pretrained weights</a> and <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/738111\" target=\"_blank\">research-use agreements</a>.</p>\n<p>The host has <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">explicitly ruled that KneeCoT is not allowed</a> because its formal institutional agreement may create unequal access. The host has also <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965\" target=\"_blank\">explained</a> that non-commercial terms alone do not exclude a dataset, while straightforward registration and substantial institutional approval may be treated differently. It remains unclear to me how these principles apply to the following resources:</p>\n<table>\n<thead>\n<tr>\n<th>Resource</th>\n<th>Relevant access or licensing issue</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://aimi.stanford.edu/datasets/mrnet-knee-mris\" target=\"_blank\">Stanford MRNet</a></td>\n<td>Research-use agreement</td>\n</tr>\n<tr>\n<td><a href=\"https://aimi.stanford.edu/datasets/skm-tea-knee-mri\" target=\"_blank\">Stanford SKM-TEA</a></td>\n<td>Registration and data-use terms</td>\n</tr>\n<tr>\n<td><a href=\"https://fastmri.med.nyu.edu/\" target=\"_blank\">NYU fastMRI</a> and <a href=\"https://github.com/microsoft/fastmri-plus\" target=\"_blank\">fastMRI+</a></td>\n<td>Data-sharing agreement for images; separately released annotations</td>\n</tr>\n<tr>\n<td><a href=\"https://nda.nih.gov/oai\" target=\"_blank\">Osteoarthritis Initiative (OAI)</a></td>\n<td>Data Use Certification and institutional requirements</td>\n</tr>\n<tr>\n<td><a href=\"https://zenodo.org/records/14789903\" target=\"_blank\">KneeMRI</a></td>\n<td>CC BY-NC-ND 4.0</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D\" target=\"_blank\">KneeXNet-2.5D</a></td>\n<td>Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify</td>\n</tr>\n</tbody>\n</table>\n<p>Could the hosts give a <strong>yes or no for each resource</strong> under this competition's external-data rules? If the answer differs between training on the images and fine-tuning publicly released weights, please state that separately. It would also help to know whether using each resource is compatible with the winner's requirement to release the final model. I understand that teams remain responsible for complying with the original providers' terms.</p>\n<p>Because the same question keeps appearing in different threads, could the hosts <strong>pin the answer in the Discussion</strong> so all teams can find and follow the same guidance?</p>\n<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a></p>",
+   "rawMarkdown": "Thank you to the hosts for organizing this challenge and for taking the time to answer questions throughout the competition. I appreciate that assessing third-party datasets individually is difficult, especially when their access requirements and licenses differ.\n\nQuestions about external knee MRI data are spread across several threads. Without a clear answer for commonly used datasets, teams may train under different assumptions about what is permitted, which makes it difficult to ensure a level playing field.\n\nI have read the [original question](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652), the [registration-gated dataset question](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497), and the [institutional-agreement follow-up](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950). There are also separate questions about [pretrained weights](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121) and [research-use agreements](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/738111).\n\nThe host has [explicitly ruled that KneeCoT is not allowed](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109) because its formal institutional agreement may create unequal access. The host has also [explained](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965) that non-commercial terms alone do not exclude a dataset, while straightforward registration and substantial institutional approval may be treated differently. It remains unclear to me how these principles apply to the following resources:\n\n| Resource | Relevant access or licensing issue |\n| --- | --- |\n| [Stanford MRNet](https://aimi.stanford.edu/datasets/mrnet-knee-mris) | Research-use agreement |\n| [Stanford SKM-TEA](https://aimi.stanford.edu/datasets/skm-tea-knee-mri) | Registration and data-use terms |\n| [NYU fastMRI](https://fastmri.med.nyu.edu/) and [fastMRI+](https://github.com/microsoft/fastmri-plus) | Data-sharing agreement for images; separately released annotations |\n| [Osteoarthritis Initiative (OAI)](https://nda.nih.gov/oai) | Data Use Certification ~~and institutional requirements~~ |\n| [KneeMRI](https://zenodo.org/records/14789903) | CC BY-NC-ND 4.0 |\n| [KneeXNet-2.5D](https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D) | Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify |\n\nCould the hosts give a **yes or no for each resource** under this competition's external-data rules? If the answer differs between training on the images and fine-tuning publicly released weights, please state that separately. It would also help to know whether using each resource is compatible with the winner's requirement to release the final model. I understand that teams remain responsible for complying with the original providers' terms.\n\nBecause the same question keeps appearing in different threads, could the hosts **pin the answer in the Discussion** so all teams can find and follow the same guidance?\n\n@javaduke95",
+   "content": "<p>Thank you to the hosts for organizing this challenge and for taking the time to answer questions throughout the competition. I appreciate that assessing third-party datasets individually is difficult, especially when their access requirements and licenses differ.</p>\n<p>Questions about external knee MRI data are spread across several threads. Without a clear answer for commonly used datasets, teams may train under different assumptions about what is permitted, which makes it difficult to ensure a level playing field.</p>\n<p>I have read the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733652\" target=\"_blank\">original question</a>, the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735497\" target=\"_blank\">registration-gated dataset question</a>, and the <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950\" target=\"_blank\">institutional-agreement follow-up</a>. There are also separate questions about <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/735121\" target=\"_blank\">pretrained weights</a> and <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/738111\" target=\"_blank\">research-use agreements</a>.</p>\n<p>The host has <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">explicitly ruled that KneeCoT is not allowed</a> because its formal institutional agreement may create unequal access. The host has also <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965\" target=\"_blank\">explained</a> that non-commercial terms alone do not exclude a dataset, while straightforward registration and substantial institutional approval may be treated differently. It remains unclear to me how these principles apply to the following resources:</p>\n<table>\n<thead>\n<tr>\n<th>Resource</th>\n<th>Relevant access or licensing issue</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://aimi.stanford.edu/datasets/mrnet-knee-mris\" target=\"_blank\">Stanford MRNet</a></td>\n<td>Research-use agreement</td>\n</tr>\n<tr>\n<td><a href=\"https://aimi.stanford.edu/datasets/skm-tea-knee-mri\" target=\"_blank\">Stanford SKM-TEA</a></td>\n<td>Registration and data-use terms</td>\n</tr>\n<tr>\n<td><a href=\"https://fastmri.med.nyu.edu/\" target=\"_blank\">NYU fastMRI</a> and <a href=\"https://github.com/microsoft/fastmri-plus\" target=\"_blank\">fastMRI+</a></td>\n<td>Data-sharing agreement for images; separately released annotations</td>\n</tr>\n<tr>\n<td><a href=\"https://nda.nih.gov/oai\" target=\"_blank\">Osteoarthritis Initiative (OAI)</a></td>\n<td>Data Use Certification </td>\n</tr>\n<tr>\n<td><a href=\"https://zenodo.org/records/14789903\" target=\"_blank\">KneeMRI</a></td>\n<td>CC BY-NC-ND 4.0</td>\n</tr>\n<tr>\n<td><a href=\"https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D\" target=\"_blank\">KneeXNet-2.5D</a></td>\n<td>Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify</td>\n</tr>\n</tbody>\n</table>\n<p>Could the hosts give a <strong>yes or no for each resource</strong> under this competition's external-data rules? If the answer differs between training on the images and fine-tuning publicly released weights, please state that separately. It would also help to know whether using each resource is compatible with the winner's requirement to release the final model. I understand that teams remain responsible for complying with the original providers' terms.</p>\n<p>Because the same question keeps appearing in different threads, could the hosts <strong>pin the answer in the Discussion</strong> so all teams can find and follow the same guidance?</p>\n<p><a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a></p>",
    "parent": {},
    "author": {
     "displayName": "YYama",
@@ -1117,12 +1491,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 80,
+    "totalVotes": 94,
     "canUpvote": true,
-    "totalUpvotes": 81
+    "totalUpvotes": 95
    },
    "kernelVersion": 0,
-   "competitionRanking": 10,
+   "competitionRanking": 19,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -1149,9 +1523,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-26T01:52:06.163949500Z",
-  "totalVotes": 80,
+  "totalVotes": 94,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743416",
-  "totalMessages": 27,
+  "totalMessages": 39,
   "authorPerformanceTier": "MASTER",
   "authorProgressionOptOut": false
  },
@@ -1165,19 +1539,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 30,
+  "commentCount": 39,
   "firstForumMessageId": 3528387,
   "id": 743416,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Satwik",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416#3535787",
-  "lastCommentPostDate": "2026-10-09T08:06:12.993333300Z",
+  "lastCommenterName": "Driz Lo",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416#3538541",
+  "lastCommentPostDate": "2026-10-14T13:26:37.023333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-26T01:52:06.163949500Z",
   "title": "Please clarify which external knee MRI datasets are allowed",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743416",
-  "votes": 80,
+  "votes": 95,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "YYama",

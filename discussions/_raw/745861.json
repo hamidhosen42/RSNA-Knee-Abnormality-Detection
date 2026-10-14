@@ -6,6 +6,467 @@
   "authorUserName": "hengck23",
   "comments": [
    {
+    "id": 3538281,
+    "postDate": "2026-10-13T23:43:08.117Z",
+    "rawMarkdown": "how commerical CAD actually work\nhttps://orthopred.com/solution/",
+    "content": "<p>how commerical CAD actually work\n<a href=\"https://orthopred.com/solution/\" target=\"_blank\">https://orthopred.com/solution/</a></p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3538366,
+    "postDate": "2026-10-14T03:44:00.240Z",
+    "rawMarkdown": "Thank you for Tricks for the competition @hengck23 ",
+    "content": "<p>Thank you for Tricks for the competition <a href=\"/hengck23\" target=\"_blank\">@hengck23</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -3,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3537612,
+    "postDate": "2026-10-12T20:07:07.407Z",
+    "rawMarkdown": "segmentation label\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F5ad65127d9a0d5f28a65f64ac6583004%2FSelection_5212.png?generation=1791835624580364&alt=media)",
+    "content": "<p>segmentation label\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F5ad65127d9a0d5f28a65f64ac6583004%2FSelection_5212.png?generation=1791835624580364&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537303,
+    "postDate": "2026-10-12T10:46:49.020Z",
+    "rawMarkdown": "I made a mistake in using JEV!\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Feb61b0c47696d4276d7406e1f2bcb9a6%2FSelection_5202.png?generation=1791802007559291&alt=media)",
+    "content": "<p>I made a mistake in using JEV!</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Feb61b0c47696d4276d7406e1f2bcb9a6%2FSelection_5202.png?generation=1791802007559291&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536923,
+    "postDate": "2026-10-11T14:14:48.770Z",
+    "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F79b51131acf859dbb32f1d3b66008635%2FSelection_5192.png?generation=1791728086295814&alt=media)",
+    "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F79b51131acf859dbb32f1d3b66008635%2FSelection_5192.png?generation=1791728086295814&amp;alt=media\" alt=\"\"></p>",
+    "replies": [
+     {
+      "id": 3537126,
+      "postDate": "2026-10-11T23:31:17.087Z",
+      "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F79547bd0a7f30b4204c807e56cacee10%2FSelection_5193.png?generation=1791761088508250&alt=media)\n\nI haven't tried Ortho Foundation model yet, but maybe someone tried it before me. I think I have a solution to 58-shots training.    \n\n\nI have tried many many many many experiments. The onlymethod that works without overfitting and shakeup is:  \n1) use 58 samples to train a model. if this models uses only very little parameters (e.g. only 10), it is unlikely to overfit.  there is a mathematical or probabilistic relationship between parameter size, sample size and overfitting.  \n2) you can use an open-source pretrained model with mostly frozen weights. You can use SSL and finetune, etc ... \n3) basically when there is not enough sample supervision, prior is the key\n\n  \n",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F79547bd0a7f30b4204c807e56cacee10%2FSelection_5193.png?generation=1791761088508250&amp;alt=media\" alt=\"\"></p>\n<p>I haven't tried Ortho Foundation model yet, but maybe someone tried it before me. I think I have a solution to 58-shots training.    </p>\n<p>I have tried many many many many experiments. The onlymethod that works without overfitting and shakeup is:<br>\n1) use 58 samples to train a model. if this models uses only very little parameters (e.g. only 10), it is unlikely to overfit.  there is a mathematical or probabilistic relationship between parameter size, sample size and overfitting.<br>\n2) you can use an open-source pretrained model with mostly frozen weights. You can use SSL and finetune, etc … \n3) basically when there is not enough sample supervision, prior is the key</p>",
+      "replies": [
+       {
+        "id": 3537127,
+        "postDate": "2026-10-11T23:35:10.207Z",
+        "rawMarkdown": "waht is happening at the public notebook? everyone is using other works as prior. It is like BC and RL in simulator competition. The risk is \"is his prior an overfitting one?\"",
+        "content": "<p>waht is happening at the public notebook? everyone is using other works as prior. It is like BC and RL in simulator competition. The risk is \"is his prior an overfitting one?\"</p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 453,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 453,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536367,
+    "postDate": "2026-10-10T08:09:06.137Z",
+    "rawMarkdown": "How to get good training labels? One way to look at this Kaggle competition is to create soft/hard study-level labels to train an image MRI model.  \n \n1) we start with Claude Opus 4.5 labels : https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection  \n2) we use non-gold 4.3k labels to train mri and text models  \n3) we blend them : local cv on gold58 = 0.938   \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fba0c65b0c737533e01fc3ca07a3b4564%2FSelection_5146.png?generation=1791619623246016&alt=media)  ",
+    "content": "<p>How to get good training labels? One way to look at this Kaggle competition is to create soft/hard study-level labels to train an image MRI model.  </p>\n<p>1) we start with Claude Opus 4.5 labels : <a href=\"https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection\" target=\"_blank\">https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection</a><br>\n2) we use non-gold 4.3k labels to train mri and text models<br>\n3) we blend them : local cv on gold58 = 0.938   </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fba0c65b0c737533e01fc3ca07a3b4564%2FSelection_5146.png?generation=1791619623246016&amp;alt=media\" alt=\"\">  </p>",
+    "replies": [
+     {
+      "id": 3537059,
+      "postDate": "2026-10-11T19:21:36.837Z",
+      "rawMarkdown": "i train a mri model on Qwen3.5-2b JEV to mimick his behaviour. then submit this with the other mri model. Ensemble at 50/50 LB is 0.926",
+      "content": "<p>i train a mri model on Qwen3.5-2b JEV to mimick his behaviour. then submit this with the other mri model. Ensemble at 50/50 LB is 0.926</p>",
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 453,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537311,
+      "postDate": "2026-10-12T11:09:18.373Z",
+      "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fad1826c4b56d443ee8567f96539704bd%2FSelection_5203.png?generation=1791803327548434&alt=media)\n\nhyper-parameter search (gold58 cv results)",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fad1826c4b56d443ee8567f96539704bd%2FSelection_5203.png?generation=1791803327548434&amp;alt=media\" alt=\"\"></p>\n<p>hyper-parameter search (gold58 cv results)</p>",
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 453,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536312,
+    "postDate": "2026-10-10T05:00:07.207Z",
+    "rawMarkdown": "if you do use external data, rememer the trick is kaggle annotation(hihest score) >external annotation> negative (least score)",
+    "content": "<p>if you do use external data, rememer the trick is kaggle annotation(hihest score) &gt;external annotation&gt; negative (least score)</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535273,
+    "postDate": "2026-10-08T15:14:18.030Z",
+    "rawMarkdown": "don't only download OAI; search for papers that use it. The quality of the data is very good. when  you have good data, you see results like this:    \n[paper] \"Deep Learning Predicts Total Knee Replacement from Magnetic Resonance Images\"   \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff70d85fc7431aad1f7448b11f337d32a%2FSelection_5129.png?generation=1791472404715137&alt=media)",
+    "content": "<p>don't only download OAI; search for papers that use it. The quality of the data is very good. when  you have good data, you see results like this:<br>\n[paper] \"Deep Learning Predicts Total Knee Replacement from Magnetic Resonance Images\"   </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff70d85fc7431aad1f7448b11f337d32a%2FSelection_5129.png?generation=1791472404715137&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3534604,
     "postDate": "2026-10-07T20:52:27.357Z",
     "rawMarkdown": "```\none of the 58 gold label\n1.2.826.0.1.3680043.8.498.12606657226568558340797193167488111973\n\"In the medial compartment, the meniscus is not torn and there is no focal chondrosis or chondral injury. \n The lateral compartment, there is longitudinal vertical oblique tear at the posterior horn of the lateral meniscus. There is no focal chondrosis or chondral injury. \n The patellofemoral joint, the patellar and trochlear cartilage appears congruent without chondral lesion. The medial patellofemoral ligament is intact.  \n In the intercondylar notch, there is complete tear of the anterior cruciate ligament, at mid substance. The posterior cruciate ligament is intact.  \n There is grade II ligamentous sprain (partial tear) of the medial collateral ligament. The posteromedial oblique ligament is intact. The lateral collateral ligament complexes are intact. The extensor mechanism is normal.  \n No knee effusion is present. The surrounding musculature is normal. There is no fracture or bone contusion. - Longitudinal vertical oblique tear at the posterior horn of the lateral meniscus. \n - Complete tear of the anterior cruciate ligament, at mid substance. \n - Grade II ligamentous sprain (partial tear) of the medial collateral ligament.\"\n\nbut the label is\n\"Effusion\": 1,\n\n\nquote from report \"No knee effusion is present.\"\n```",
@@ -41,217 +502,11 @@
     },
     "authorType": "TOPIC",
     "votes": {
-     "totalVotes": 1,
      "canUpvote": true,
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 740,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "hengck23",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-      "url": "/hengck23",
-      "userName": "hengck23",
-      "tier": "GRANDMASTER",
-      "id": 113660,
-      "profileUrl": "/hengck23",
-      "performanceTier": "GRANDMASTER",
-      "userId": 113660,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3533535,
-    "postDate": "2026-10-06T10:22:35.360Z",
-    "rawMarkdown": "adaptive sampling of slices?   \n\n```\nvolume, slice pos, view --> model --> prob, change slice pos, etc ...\nif prob is confidence, break\nelse apply change and try again\n\n````\n",
-    "content": "<p>adaptive sampling of slices?   </p>\n<pre><code>volume, slice pos, view --&gt; model --&gt; prob, change slice pos, etc ...\nif prob is confidence, break\nelse apply change and try again\n</code></pre>\n<p>`</p>",
-    "parent": {},
-    "author": {
-     "displayName": "hengck23",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-     "url": "/hengck23",
-     "tier": "GRANDMASTER",
-     "id": 113660,
-     "progressionOptOut": false
-    },
-    "authorType": "TOPIC",
-    "votes": {
-     "totalVotes": 1,
-     "canUpvote": true,
-     "totalUpvotes": 1
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 740,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "hengck23",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-      "url": "/hengck23",
-      "userName": "hengck23",
-      "tier": "GRANDMASTER",
-      "id": 113660,
-      "profileUrl": "/hengck23",
-      "performanceTier": "GRANDMASTER",
-      "userId": 113660,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3533430,
-    "postDate": "2026-10-06T04:13:08.527Z",
-    "rawMarkdown": "Can JEV help?\n\nI joined the competition late. I apologize if the information below is repeated (I haven't got time to go through all the posts in the forum yet) \n\n[1] Can Jev Judge Radiology Reports? Evaluating a System One Model for Clinical Factuality  \nhttps://arxiv.org/html/2609.27607v1  \n\n[2] KJD-25K: A 3D Multi-modal Dataset and Benchmark for Knee Joint Diagnosis  \nhttps://papers.miccai.org/miccai-2026/0534-Paper0576.html  \n- text and mri  \n\nthis dataset has everything thing i need\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6bf0995d50bbdba00847d14ad147ed7d%2FSelection_5102.png?generation=1791268719733435&alt=media)\n",
-    "content": "<p>Can JEV help?</p>\n<p>I joined the competition late. I apologize if the information below is repeated (I haven't got time to go through all the posts in the forum yet) </p>\n<p>[1] Can Jev Judge Radiology Reports? Evaluating a System One Model for Clinical Factuality<br>\n<a href=\"https://arxiv.org/html/2609.27607v1\" target=\"_blank\">https://arxiv.org/html/2609.27607v1</a>  </p>\n<p>[2] KJD-25K: A 3D Multi-modal Dataset and Benchmark for Knee Joint Diagnosis<br>\n<a href=\"https://papers.miccai.org/miccai-2026/0534-Paper0576.html\" target=\"_blank\">https://papers.miccai.org/miccai-2026/0534-Paper0576.html</a>  </p>\n<ul>\n<li>text and mri  </li>\n</ul>\n<p>this dataset has everything thing i need\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6bf0995d50bbdba00847d14ad147ed7d%2FSelection_5102.png?generation=1791268719733435&amp;alt=media\" alt=\"\"></p>",
-    "replies": [
-     {
-      "id": 3533530,
-      "postDate": "2026-10-06T10:11:35.287Z",
-      "rawMarkdown": "Another dataset:\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6a39445c08230943175d77297af20746%2FSelection_5103.png?generation=1791281485222075&alt=media)",
-      "content": "<p>Another dataset:\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6a39445c08230943175d77297af20746%2FSelection_5103.png?generation=1791281485222075&amp;alt=media\" alt=\"\"></p>",
-      "parent": {},
-      "author": {
-       "displayName": "hengck23",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-       "url": "/hengck23",
-       "tier": "GRANDMASTER",
-       "id": 113660,
-       "progressionOptOut": false
-      },
-      "authorType": "TOPIC",
-      "votes": {
-       "totalVotes": 1,
-       "canUpvote": true,
-       "totalUpvotes": 1
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 740,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "hengck23",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-        "url": "/hengck23",
-        "userName": "hengck23",
-        "tier": "GRANDMASTER",
-        "id": 113660,
-        "profileUrl": "/hengck23",
-        "performanceTier": "GRANDMASTER",
-        "userId": 113660,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     },
-     {
-      "id": 3533533,
-      "postDate": "2026-10-06T10:18:30.207Z",
-      "rawMarkdown": "Careful with the KneeCoT dataset tho, it has been ruled out - https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109. ",
-      "content": "<p>Careful with the KneeCoT dataset tho, it has been ruled out - <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109</a>. </p>",
-      "replies": [
-       {
-        "id": 3533537,
-        "postDate": "2026-10-06T10:24:56.343Z",
-        "rawMarkdown": "thanks. I missed that post.   \n  \nSo the dataset is NOT for solution submission, but it can be for observation data/results or the design/method can be adopted  ",
-        "content": "<p>thanks. I missed that post.   </p>\n<p>So the dataset is NOT for solution submission, but it can be for observation data/results or the design/method can be adopted  </p>",
-        "parent": {},
-        "author": {
-         "displayName": "hengck23",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-         "url": "/hengck23",
-         "tier": "GRANDMASTER",
-         "id": 113660,
-         "progressionOptOut": false
-        },
-        "authorType": "TOPIC",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 740,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "hengck23",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-          "url": "/hengck23",
-          "userName": "hengck23",
-          "tier": "GRANDMASTER",
-          "id": 113660,
-          "profileUrl": "/hengck23",
-          "performanceTier": "GRANDMASTER",
-          "userId": 113660,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       }
-      ],
-      "parent": {},
-      "author": {
-       "displayName": "Prateek Grover",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-       "url": "/prateekgroverin",
-       "tier": "CONTRIBUTOR",
-       "id": 10604833,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "totalVotes": 1,
-       "canUpvote": true,
-       "totalUpvotes": 1
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 366,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "enabled": true,
-       "teamLeader": {
-        "displayName": "Prateek Grover",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-        "url": "/prateekgroverin",
-        "userName": "prateekgroverin",
-        "tier": "CONTRIBUTOR",
-        "id": 10604833,
-        "profileUrl": "/prateekgroverin",
-        "performanceTier": "CONTRIBUTOR",
-        "userId": 10604833,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     }
-    ],
-    "parent": {},
-    "author": {
-     "displayName": "hengck23",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-     "url": "/hengck23",
-     "tier": "GRANDMASTER",
-     "id": 113660,
-     "progressionOptOut": false
-    },
-    "authorType": "TOPIC",
-    "votes": {
-     "totalVotes": 1,
-     "canUpvote": true,
-     "totalUpvotes": 1
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 740,
+    "competitionRanking": 453,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -292,12 +547,11 @@
       },
       "authorType": "TOPIC",
       "votes": {
-       "totalVotes": 1,
        "canUpvote": true,
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 740,
+      "competitionRanking": 453,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -338,12 +592,12 @@
         },
         "authorType": "TOPIC",
         "votes": {
-         "totalVotes": 2,
+         "totalVotes": 1,
          "canUpvote": true,
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 740,
+        "competitionRanking": 453,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -388,11 +642,10 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 69,
+      "competitionRanking": 166,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
-       "enabled": true,
        "teamLeader": {
         "displayName": "DhawalModi",
         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/860066-kg.jpg?t=2024-01-07-22-04-01",
@@ -425,7 +678,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 88,
+    "competitionRanking": 232,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -437,9 +690,10 @@
        "kingkong153",
        "tuckerarrants",
        "kentorio",
-       "anthonytrevino"
+       "anthonytrevino",
+       "pablolee789"
       ],
-      "userCount": 6
+      "userCount": 7
      }
     ],
     "teamUpInfo": {
@@ -453,6 +707,45 @@
       "profileUrl": "/godhand",
       "performanceTier": "MASTER",
       "userId": 992596,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3533535,
+    "postDate": "2026-10-06T10:22:35.360Z",
+    "rawMarkdown": "adaptive sampling of slices?   \n\n```\nvolume, slice pos, view --> model --> prob, change slice pos, etc ...\nif prob is confidence, break\nelse apply change and try again\n\n````\n",
+    "content": "<p>adaptive sampling of slices?   </p>\n<pre><code>volume, slice pos, view --&gt; model --&gt; prob, change slice pos, etc ...\nif prob is confidence, break\nelse apply change and try again\n</code></pre>\n<p>`</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
       "progressionOptOut": false
      },
      "intro": ""
@@ -480,10 +773,11 @@
       },
       "authorType": "TOPIC",
       "votes": {
+       "totalVotes": -1,
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 740,
+      "competitionRanking": 453,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -514,12 +808,12 @@
     },
     "authorType": "TOPIC",
     "votes": {
-     "totalVotes": 2,
+     "totalVotes": 1,
      "canUpvote": true,
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 740,
+    "competitionRanking": 453,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -539,169 +833,90 @@
     }
    },
    {
-    "id": 3533150,
-    "postDate": "2026-10-05T15:49:06.133Z",
-    "rawMarkdown": "I used Claude to generate the labels, and a single vision model achieved a maximum score of 0.942 on the leaderboard. Then I tried fine-tuning or probing MedGemma, but that didn’t help much either :') I guess I will stick with the Claude labels.",
-    "content": "<p>I used Claude to generate the labels, and a single vision model achieved a maximum score of 0.942 on the leaderboard. Then I tried fine-tuning or probing MedGemma, but that didn’t help much either :') I guess I will stick with the Claude labels.</p>",
+    "id": 3533430,
+    "postDate": "2026-10-06T04:13:08.527Z",
+    "rawMarkdown": "Can JEV help?\n\nI joined the competition late. I apologize if the information below is repeated (I haven't got time to go through all the posts in the forum yet) \n\n[1] Can Jev Judge Radiology Reports? Evaluating a System One Model for Clinical Factuality  \nhttps://arxiv.org/html/2609.27607v1  \n\n[2] KJD-25K: A 3D Multi-modal Dataset and Benchmark for Knee Joint Diagnosis  \nhttps://papers.miccai.org/miccai-2026/0534-Paper0576.html  \n- text and mri  \n\nthis dataset has everything thing i need\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6bf0995d50bbdba00847d14ad147ed7d%2FSelection_5102.png?generation=1791268719733435&alt=media)\n",
+    "content": "<p>Can JEV help?</p>\n<p>I joined the competition late. I apologize if the information below is repeated (I haven't got time to go through all the posts in the forum yet) </p>\n<p>[1] Can Jev Judge Radiology Reports? Evaluating a System One Model for Clinical Factuality<br>\n<a href=\"https://arxiv.org/html/2609.27607v1\" target=\"_blank\">https://arxiv.org/html/2609.27607v1</a>  </p>\n<p>[2] KJD-25K: A 3D Multi-modal Dataset and Benchmark for Knee Joint Diagnosis<br>\n<a href=\"https://papers.miccai.org/miccai-2026/0534-Paper0576.html\" target=\"_blank\">https://papers.miccai.org/miccai-2026/0534-Paper0576.html</a>  </p>\n<ul>\n<li>text and mri  </li>\n</ul>\n<p>this dataset has everything thing i need\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6bf0995d50bbdba00847d14ad147ed7d%2FSelection_5102.png?generation=1791268719733435&amp;alt=media\" alt=\"\"></p>",
     "replies": [
      {
-      "id": 3533422,
-      "postDate": "2026-10-06T03:29:53.437Z",
-      "rawMarkdown": "Great work! Would you mind sharing a bit more about how you generated the labels with Claude? I’m curious about what you provided as input (e.g. individual slices, selected slices, or the whole MRI series), how you prompted Claude to assign the labels, and whether you did any manual filtering/correction afterward.",
-      "content": "<p>Great work! Would you mind sharing a bit more about how you generated the labels with Claude? I’m curious about what you provided as input (e.g. individual slices, selected slices, or the whole MRI series), how you prompted Claude to assign the labels, and whether you did any manual filtering/correction afterward.</p>",
+      "id": 3533530,
+      "postDate": "2026-10-06T10:11:35.287Z",
+      "rawMarkdown": "Another dataset:\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6a39445c08230943175d77297af20746%2FSelection_5103.png?generation=1791281485222075&alt=media)",
+      "content": "<p>Another dataset:\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F6a39445c08230943175d77297af20746%2FSelection_5103.png?generation=1791281485222075&amp;alt=media\" alt=\"\"></p>",
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 453,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3533533,
+      "postDate": "2026-10-06T10:18:30.207Z",
+      "rawMarkdown": "Careful with the KneeCoT dataset tho, it has been ruled out - https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109. ",
+      "content": "<p>Careful with the KneeCoT dataset tho, it has been ruled out - <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109</a>. </p>",
       "replies": [
        {
-        "id": 3533520,
-        "postDate": "2026-10-06T09:49:26.217Z",
-        "rawMarkdown": "At first I included a summary of the labeled examples in the prompt. Then I tried passing the examples themselves, which lowered my local CV score by about 0.004 but raised my public lb score by about 0.002.",
-        "content": "<p>At first I included a summary of the labeled examples in the prompt. Then I tried passing the examples themselves, which lowered my local CV score by about 0.004 but raised my public lb score by about 0.002.</p>",
+        "id": 3533537,
+        "postDate": "2026-10-06T10:24:56.343Z",
+        "rawMarkdown": "thanks. I missed that post.   \n  \nSo the dataset is NOT for solution submission, but it can be for observation data/results or the design/method can be adopted  ",
+        "content": "<p>thanks. I missed that post.   </p>\n<p>So the dataset is NOT for solution submission, but it can be for observation data/results or the design/method can be adopted  </p>",
         "parent": {},
         "author": {
-         "displayName": "Ali Ozan Memetoglu",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-         "url": "/aliozanmemetoglu",
-         "tier": "EXPERT",
-         "id": 3502073,
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
          "progressionOptOut": false
         },
-        "authorType": "COMMENT",
+        "authorType": "TOPIC",
         "votes": {
-         "totalVotes": 1,
          "canUpvote": true,
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 867,
+        "competitionRanking": 453,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
          "teamLeader": {
-          "displayName": "Ali Ozan Memetoglu",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-          "url": "/aliozanmemetoglu",
-          "userName": "aliozanmemetoglu",
-          "tier": "EXPERT",
-          "id": 3502073,
-          "profileUrl": "/aliozanmemetoglu",
-          "performanceTier": "EXPERT",
-          "userId": 3502073,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3533594,
-        "postDate": "2026-10-06T12:59:26.627Z",
-        "rawMarkdown": "Thanks! Did you send both the MRI images and the text labels/examples to Claude together?",
-        "content": "<p>Thanks! Did you send both the MRI images and the text labels/examples to Claude together?</p>",
-        "parent": {},
-        "author": {
-         "displayName": "yzzzh_7",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-         "url": "/yzzzh7",
-         "tier": "EXPERT",
-         "id": 30694842,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 549,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "yzzzh_7",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-          "url": "/yzzzh7",
-          "userName": "yzzzh7",
-          "tier": "EXPERT",
-          "id": 30694842,
-          "profileUrl": "/yzzzh7",
-          "performanceTier": "EXPERT",
-          "userId": 30694842,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3533610,
-        "postDate": "2026-10-06T14:01:12.163Z",
-        "rawMarkdown": "Only the reports and labels but I think I will try adding some slices too",
-        "content": "<p>Only the reports and labels but I think I will try adding some slices too</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Ali Ozan Memetoglu",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-         "url": "/aliozanmemetoglu",
-         "tier": "EXPERT",
-         "id": 3502073,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 867,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Ali Ozan Memetoglu",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-          "url": "/aliozanmemetoglu",
-          "userName": "aliozanmemetoglu",
-          "tier": "EXPERT",
-          "id": 3502073,
-          "profileUrl": "/aliozanmemetoglu",
-          "performanceTier": "EXPERT",
-          "userId": 3502073,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3533934,
-        "postDate": "2026-10-07T03:58:20.803Z",
-        "rawMarkdown": "Thanks, I will try it",
-        "content": "<p>Thanks, I will try it</p>",
-        "parent": {},
-        "author": {
-         "displayName": "yzzzh_7",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-         "url": "/yzzzh7",
-         "tier": "EXPERT",
-         "id": 30694842,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 549,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "yzzzh_7",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-          "url": "/yzzzh7",
-          "userName": "yzzzh7",
-          "tier": "EXPERT",
-          "id": 30694842,
-          "profileUrl": "/yzzzh7",
-          "performanceTier": "EXPERT",
-          "userId": 30694842,
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
           "progressionOptOut": false
          },
          "intro": ""
@@ -710,34 +925,34 @@
       ],
       "parent": {},
       "author": {
-       "displayName": "yzzzh_7",
+       "displayName": "Prateek Grover",
        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-       "url": "/yzzzh7",
-       "tier": "EXPERT",
-       "id": 30694842,
+       "url": "/prateekgroverin",
+       "tier": "CONTRIBUTOR",
+       "id": 10604833,
        "progressionOptOut": false
       },
       "authorType": "COMMENT",
       "votes": {
-       "totalVotes": 1,
        "canUpvote": true,
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 549,
+      "competitionRanking": 1524,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
+       "enabled": true,
        "teamLeader": {
-        "displayName": "yzzzh_7",
+        "displayName": "Prateek Grover",
         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-        "url": "/yzzzh7",
-        "userName": "yzzzh7",
-        "tier": "EXPERT",
-        "id": 30694842,
-        "profileUrl": "/yzzzh7",
-        "performanceTier": "EXPERT",
-        "userId": 30694842,
+        "url": "/prateekgroverin",
+        "userName": "prateekgroverin",
+        "tier": "CONTRIBUTOR",
+        "id": 10604833,
+        "profileUrl": "/prateekgroverin",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 10604833,
         "progressionOptOut": false
        },
        "intro": ""
@@ -746,34 +961,34 @@
     ],
     "parent": {},
     "author": {
-     "displayName": "Ali Ozan Memetoglu",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-     "url": "/aliozanmemetoglu",
-     "tier": "EXPERT",
-     "id": 3502073,
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
      "progressionOptOut": false
     },
-    "authorType": "COMMENT",
+    "authorType": "TOPIC",
     "votes": {
-     "totalVotes": 1,
+     "totalVotes": -1,
      "canUpvote": true,
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 867,
+    "competitionRanking": 453,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Ali Ozan Memetoglu",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
-      "url": "/aliozanmemetoglu",
-      "userName": "aliozanmemetoglu",
-      "tier": "EXPERT",
-      "id": 3502073,
-      "profileUrl": "/aliozanmemetoglu",
-      "performanceTier": "EXPERT",
-      "userId": 3502073,
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
       "progressionOptOut": false
      },
      "intro": ""
@@ -810,7 +1025,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 4716,
+        "competitionRanking": 5106,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -841,12 +1056,12 @@
       },
       "authorType": "TOPIC",
       "votes": {
-       "totalVotes": 3,
+       "totalVotes": 2,
        "canUpvote": true,
        "totalUpvotes": 3
       },
       "kernelVersion": 0,
-      "competitionRanking": 740,
+      "competitionRanking": 453,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -886,7 +1101,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 366,
+      "competitionRanking": 1524,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -923,7 +1138,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 138,
+    "competitionRanking": 193,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -937,6 +1152,247 @@
       "profileUrl": "/cdeotte",
       "performanceTier": "GRANDMASTER",
       "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3533150,
+    "postDate": "2026-10-05T15:49:06.133Z",
+    "rawMarkdown": "I used Claude to generate the labels, and a single vision model achieved a maximum score of 0.942 on the leaderboard. Then I tried fine-tuning or probing MedGemma, but that didn’t help much either :') I guess I will stick with the Claude labels.",
+    "content": "<p>I used Claude to generate the labels, and a single vision model achieved a maximum score of 0.942 on the leaderboard. Then I tried fine-tuning or probing MedGemma, but that didn’t help much either :') I guess I will stick with the Claude labels.</p>",
+    "replies": [
+     {
+      "id": 3533422,
+      "postDate": "2026-10-06T03:29:53.437Z",
+      "rawMarkdown": "Great work! Would you mind sharing a bit more about how you generated the labels with Claude? I’m curious about what you provided as input (e.g. individual slices, selected slices, or the whole MRI series), how you prompted Claude to assign the labels, and whether you did any manual filtering/correction afterward.",
+      "content": "<p>Great work! Would you mind sharing a bit more about how you generated the labels with Claude? I’m curious about what you provided as input (e.g. individual slices, selected slices, or the whole MRI series), how you prompted Claude to assign the labels, and whether you did any manual filtering/correction afterward.</p>",
+      "replies": [
+       {
+        "id": 3533520,
+        "postDate": "2026-10-06T09:49:26.217Z",
+        "rawMarkdown": "At first I included a summary of the labeled examples in the prompt. Then I tried passing the examples themselves, which lowered my local CV score by about 0.004 but raised my public lb score by about 0.002.",
+        "content": "<p>At first I included a summary of the labeled examples in the prompt. Then I tried passing the examples themselves, which lowered my local CV score by about 0.004 but raised my public lb score by about 0.002.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ali Ozan Memetoglu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
+         "url": "/aliozanmemetoglu",
+         "tier": "EXPERT",
+         "id": 3502073,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1261,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Arunodhayan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2101769-kg.jpg",
+          "url": "/arunodhayan",
+          "userName": "arunodhayan",
+          "tier": "MASTER",
+          "id": 2101769,
+          "profileUrl": "/arunodhayan",
+          "performanceTier": "MASTER",
+          "userId": 2101769,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3533594,
+        "postDate": "2026-10-06T12:59:26.627Z",
+        "rawMarkdown": "Thanks! Did you send both the MRI images and the text labels/examples to Claude together?",
+        "content": "<p>Thanks! Did you send both the MRI images and the text labels/examples to Claude together?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "yzzzh_7",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/yzzzh7",
+         "tier": "EXPERT",
+         "id": 30694842,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 894,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "yzzzh_7",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/yzzzh7",
+          "userName": "yzzzh7",
+          "tier": "EXPERT",
+          "id": 30694842,
+          "profileUrl": "/yzzzh7",
+          "performanceTier": "EXPERT",
+          "userId": 30694842,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3533610,
+        "postDate": "2026-10-06T14:01:12.163Z",
+        "rawMarkdown": "Only the reports and labels but I think I will try adding some slices too",
+        "content": "<p>Only the reports and labels but I think I will try adding some slices too</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ali Ozan Memetoglu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
+         "url": "/aliozanmemetoglu",
+         "tier": "EXPERT",
+         "id": 3502073,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1261,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Arunodhayan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2101769-kg.jpg",
+          "url": "/arunodhayan",
+          "userName": "arunodhayan",
+          "tier": "MASTER",
+          "id": 2101769,
+          "profileUrl": "/arunodhayan",
+          "performanceTier": "MASTER",
+          "userId": 2101769,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3533934,
+        "postDate": "2026-10-07T03:58:20.803Z",
+        "rawMarkdown": "Thanks, I will try it",
+        "content": "<p>Thanks, I will try it</p>",
+        "parent": {},
+        "author": {
+         "displayName": "yzzzh_7",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/yzzzh7",
+         "tier": "EXPERT",
+         "id": 30694842,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 894,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "yzzzh_7",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/yzzzh7",
+          "userName": "yzzzh7",
+          "tier": "EXPERT",
+          "id": 30694842,
+          "profileUrl": "/yzzzh7",
+          "performanceTier": "EXPERT",
+          "userId": 30694842,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "yzzzh_7",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/yzzzh7",
+       "tier": "EXPERT",
+       "id": 30694842,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 894,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "yzzzh_7",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/yzzzh7",
+        "userName": "yzzzh7",
+        "tier": "EXPERT",
+        "id": 30694842,
+        "profileUrl": "/yzzzh7",
+        "performanceTier": "EXPERT",
+        "userId": 30694842,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Ali Ozan Memetoglu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3502073-kg.jpg?t=2026-01-10-20-56-20",
+     "url": "/aliozanmemetoglu",
+     "tier": "EXPERT",
+     "id": 3502073,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1261,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Arunodhayan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2101769-kg.jpg",
+      "url": "/arunodhayan",
+      "userName": "arunodhayan",
+      "tier": "MASTER",
+      "id": 2101769,
+      "profileUrl": "/arunodhayan",
+      "performanceTier": "MASTER",
+      "userId": 2101769,
       "progressionOptOut": false
      },
      "intro": ""
@@ -966,44 +1422,6 @@
     "isThankYou": false
    },
    {
-    "id": 3535273,
-    "postDate": "2026-10-08T15:14:18.030Z",
-    "rawMarkdown": "don't only download OAI; search for papers that use it. The quality of the data is very good. when  you have good data, you see results like this:    \n[paper] \"Deep Learning Predicts Total Knee Replacement from Magnetic Resonance Images\"   \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff70d85fc7431aad1f7448b11f337d32a%2FSelection_5129.png?generation=1791472404715137&alt=media)",
-    "content": "<p>don't only download OAI; search for papers that use it. The quality of the data is very good. when  you have good data, you see results like this:<br>\n[paper] \"Deep Learning Predicts Total Knee Replacement from Magnetic Resonance Images\"   </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff70d85fc7431aad1f7448b11f337d32a%2FSelection_5129.png?generation=1791472404715137&amp;alt=media\" alt=\"\"></p>",
-    "parent": {},
-    "author": {
-     "displayName": "hengck23",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-     "url": "/hengck23",
-     "tier": "GRANDMASTER",
-     "id": 113660,
-     "progressionOptOut": false
-    },
-    "authorType": "TOPIC",
-    "votes": {
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 740,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "hengck23",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
-      "url": "/hengck23",
-      "userName": "hengck23",
-      "tier": "GRANDMASTER",
-      "id": 113660,
-      "profileUrl": "/hengck23",
-      "performanceTier": "GRANDMASTER",
-      "userId": 113660,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
     "id": 3532905,
     "postDate": "2026-10-05T03:27:57.837Z",
     "rawMarkdown": "well... haha",
@@ -1019,10 +1437,11 @@
     },
     "authorType": "COMMENT",
     "votes": {
+     "totalVotes": -1,
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 49,
+    "competitionRanking": 76,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -1049,6 +1468,353 @@
       "profileUrl": "/chengtingyi",
       "performanceTier": "CONTRIBUTOR",
       "userId": 8788200,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3538361,
+    "postDate": "2026-10-14T03:33:14.053Z",
+    "rawMarkdown": "model answer!!!\n\nhttps://lamawmouk.github.io/SGMRI-VQA/   \n\"Beyond a Single Frame: Multi-Frame Spatially Grounded Reasoning Across Volumetric MRI\"   \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F25b4f92c5eaa8726f268bd55f702bfd1%2Fknee_volume.gif?generation=1791948788701568&alt=media)",
+    "content": "<p>model answer!!!</p>\n<p><a href=\"https://lamawmouk.github.io/SGMRI-VQA/\" target=\"_blank\">https://lamawmouk.github.io/SGMRI-VQA/</a><br>\n\"Beyond a Single Frame: Multi-Frame Spatially Grounded Reasoning Across Volumetric MRI\"   </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F25b4f92c5eaa8726f268bd55f702bfd1%2Fknee_volume.gif?generation=1791948788701568&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537766,
+    "postDate": "2026-10-13T03:26:58.423Z",
+    "rawMarkdown": "i find that for large train data, train roc cannot reach 100, unless label are correct. validation set cv may not be the only way to estimate public/private LB.   \n\nA LLM labelled GT have 0.89 on golden 58 samples would have 0.95 train auc. 0.92 validation auc (back on gold58), and about 0.930 public LB",
+    "content": "<p>i find that for large train data, train roc cannot reach 100, unless label are correct. validation set cv may not be the only way to estimate public/private LB.   </p>\n<p>A LLM labelled GT have 0.89 on golden 58 samples would have 0.95 train auc. 0.92 validation auc (back on gold58), and about 0.930 public LB</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537757,
+    "postDate": "2026-10-13T03:14:07.047Z",
+    "rawMarkdown": "not all can be used directly. you don't have to use the data to use the data. similiar you don't have to distill LLM to distill knowledge. Human is the best distillation machine. Distill everthing to human(learn to read MRI). Un-distill everything from human (e.g. hand label).\n\nMy relatives had nerve compression the other day and we took a MRI scan of the spine. Previous Kaggle RSNA spine competition made me understand what the radiologist is taking. But i was surprised to hear the specialist doctor said \"MRI is one thing. If the patient says no patient, then no treatment or surgery\" ... so  MRI is not a confirmation for treatment. \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fbf80006e8feb751bfe53e1d36f21c695%2FSelection_5215.png?generation=1791861193056807&alt=media)",
+    "content": "<p>not all can be used directly. you don't have to use the data to use the data. similiar you don't have to distill LLM to distill knowledge. Human is the best distillation machine. Distill everthing to human(learn to read MRI). Un-distill everything from human (e.g. hand label).</p>\n<p>My relatives had nerve compression the other day and we took a MRI scan of the spine. Previous Kaggle RSNA spine competition made me understand what the radiologist is taking. But i was surprised to hear the specialist doctor said \"MRI is one thing. If the patient says no patient, then no treatment or surgery\" … so  MRI is not a confirmation for treatment. </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fbf80006e8feb751bfe53e1d36f21c695%2FSelection_5215.png?generation=1791861193056807&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537534,
+    "postDate": "2026-10-12T18:32:50.130Z",
+    "rawMarkdown": "i miss a very important point when designing LLM prompt to label medical report. the roghts to say \"i don't know\". these will be excluded from training 4.3k mri\n\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fbb76c4baa676020353a676a042629480%2FSelection_5205.png?generation=1791829900480092&alt=media)",
+    "content": "<p>i miss a very important point when designing LLM prompt to label medical report. the roghts to say \"i don't know\". these will be excluded from training 4.3k mri</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fbb76c4baa676020353a676a042629480%2FSelection_5205.png?generation=1791829900480092&amp;alt=media\" alt=\"\"></p>",
+    "replies": [
+     {
+      "id": 3537548,
+      "postDate": "2026-10-12T18:40:54.310Z",
+      "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F3b294e4b65b93716f32a83a3d1a03bce%2FSelection_5207.png?generation=1791830451978446&alt=media)",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F3b294e4b65b93716f32a83a3d1a03bce%2FSelection_5207.png?generation=1791830451978446&amp;alt=media\" alt=\"\"></p>",
+      "replies": [
+       {
+        "id": 3537553,
+        "postDate": "2026-10-12T18:45:07.347Z",
+        "rawMarkdown": "trainability\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ffbd75b3df486c407e3c7bef1cefafbb1%2FSelection_5209.png?generation=1791830693971330&alt=media)",
+        "content": "<p>trainability</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ffbd75b3df486c407e3c7bef1cefafbb1%2FSelection_5209.png?generation=1791830693971330&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 453,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537565,
+        "postDate": "2026-10-12T18:56:04.363Z",
+        "rawMarkdown": "Slight extension of this - I only trained on a particular sample if the agreement between different LLM labellers is high, and it's a strong signal >0.9 or <0.1 for presence or absence of an abnormality otherwise I ignore it. \n\nThis removed about 25% of training samples but improved my results on CV and public LB.",
+        "content": "<p>Slight extension of this - I only trained on a particular sample if the agreement between different LLM labellers is high, and it's a strong signal &gt;0.9 or &lt;0.1 for presence or absence of an abnormality otherwise I ignore it. </p>\n<p>This removed about 25% of training samples but improved my results on CV and public LB.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Prateek Grover",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/prateekgroverin",
+         "tier": "CONTRIBUTOR",
+         "id": 10604833,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1524,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Prateek Grover",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/prateekgroverin",
+          "userName": "prateekgroverin",
+          "tier": "CONTRIBUTOR",
+          "id": 10604833,
+          "profileUrl": "/prateekgroverin",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 10604833,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537621,
+        "postDate": "2026-10-12T20:27:28.263Z",
+        "rawMarkdown": "os it is like trying different pesudo label methods and select the best (probably per class?)   \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff5aa844ae4ad176f215162181d4b11b5%2FSelection_5213.png?generation=1791836796315729&alt=media)",
+        "content": "<p>os it is like trying different pesudo label methods and select the best (probably per class?)   </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Ff5aa844ae4ad176f215162181d4b11b5%2FSelection_5213.png?generation=1791836796315729&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 453,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 453,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537299,
+    "postDate": "2026-10-12T10:26:05.933Z",
+    "rawMarkdown": "let me tell you a trick when i work with X-ray images at work. Sometimes, positive samples are scarce. Hence, during training model will give high score to \"unfamiliar object\" to hack the metric. Hence random images  (definitely negative) helps to suppress FP in the ROC graph. Also, mri from other body parts are also definite negative samples.",
+    "content": "<p>let me tell you a trick when i work with X-ray images at work. Sometimes, positive samples are scarce. Hence, during training model will give high score to \"unfamiliar object\" to hack the metric. Hence random images  (definitely negative) helps to suppress FP in the ROC graph. Also, mri from other body parts are also definite negative samples.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 453,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
       "progressionOptOut": false
      },
      "intro": ""
@@ -1087,7 +1853,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 476,
+        "competitionRanking": 1642,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -1118,12 +1884,11 @@
       },
       "authorType": "TOPIC",
       "votes": {
-       "totalVotes": 1,
        "canUpvote": true,
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 740,
+      "competitionRanking": 453,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -1157,7 +1922,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 4716,
+    "competitionRanking": 5106,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1194,12 +1959,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 23,
+    "totalVotes": 35,
     "canUpvote": true,
-    "totalUpvotes": 23
+    "totalUpvotes": 36
    },
    "kernelVersion": 0,
-   "competitionRanking": 740,
+   "competitionRanking": 453,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -1226,9 +1991,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-04T22:58:11.225325600Z",
-  "totalVotes": 23,
+  "totalVotes": 35,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/745861",
-  "totalMessages": 29,
+  "totalMessages": 49,
   "authorPerformanceTier": "GRANDMASTER",
   "authorProgressionOptOut": false
  },
@@ -1242,19 +2007,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 29,
+  "commentCount": 49,
   "firstForumMessageId": 3532856,
   "id": 745861,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "hengck23",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745861#3535273",
-  "lastCommentPostDate": "2026-10-08T15:14:18.030Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Navneet",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745861#3538366",
+  "lastCommentPostDate": "2026-10-14T03:44:00.240Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-04T22:58:11.225325600Z",
   "title": "Tricks for the competition ",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745861",
-  "votes": 23,
+  "votes": 35,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "hengck23",

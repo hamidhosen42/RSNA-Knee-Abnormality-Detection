@@ -1,0 +1,1216 @@
+{
+ "forumTopic": {
+  "authorId": 35455065,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Kabir_Verma01",
+  "authorUserName": "kabirverma01",
+  "comments": [
+   {
+    "id": 3536890,
+    "postDate": "2026-10-11T13:12:54.563Z",
+    "rawMarkdown": "don't worry, tommorow a new mega hyper super ultra blend at 95.5 will appear in the public section ",
+    "content": "<p>don't worry, tommorow a new mega hyper super ultra blend at 95.5 will appear in the public section </p>",
+    "replies": [
+     {
+      "id": 3537227,
+      "postDate": "2026-10-12T07:17:28.240Z",
+      "rawMarkdown": "It is already published .956 :D and it says it bring \"LUCK TO UPVOTERS\"",
+      "content": "<p>It is already published .956 :D and it says it bring \"LUCK TO UPVOTERS\"</p>",
+      "replies": [
+       {
+        "id": 3537240,
+        "postDate": "2026-10-12T07:57:07.357Z",
+        "rawMarkdown": "it is 0,954 and I dont actually like it much, it just like 1% away from top 1, the competition fetchers just want to have upvoters, Hahahaha",
+        "content": "<p>it is 0,954 and I dont actually like it much, it just like 1% away from top 1, the competition fetchers just want to have upvoters, Hahahaha</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cà Rốt Production",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+         "url": "/crtproduction",
+         "tier": "CONTRIBUTOR",
+         "id": 20960131,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 49,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Binh Thanh",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/kain205",
+          "userName": "kain205",
+          "tier": "CONTRIBUTOR",
+          "id": 13173133,
+          "profileUrl": "/kain205",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 13173133,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537248,
+        "postDate": "2026-10-12T08:08:33.757Z",
+        "rawMarkdown": "no it is .956 ",
+        "content": "<p>no it is .956 </p>",
+        "parent": {},
+        "author": {
+         "displayName": "AK",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+         "url": "/aman1391",
+         "tier": "MASTER",
+         "id": 454169,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 61,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "AK",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+          "url": "/aman1391",
+          "userName": "aman1391",
+          "tier": "MASTER",
+          "id": 454169,
+          "profileUrl": "/aman1391",
+          "performanceTier": "MASTER",
+          "userId": 454169,
+          "progressionOptOut": false
+         },
+         "intro": "Just in case you want to team please "
+        }
+       },
+       {
+        "id": 3537305,
+        "postDate": "2026-10-12T10:58:01.443Z",
+        "rawMarkdown": "It's a clickbait, it was submitted with hidden weights, just to get it first when sorting for best score, what you actually get is 0.954 with the shared weights second version. It's a dirty trick.",
+        "content": "<p>It's a clickbait, it was submitted with hidden weights, just to get it first when sorting for best score, what you actually get is 0.954 with the shared weights second version. It's a dirty trick.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Danial Zakaria",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+         "url": "/nartaa",
+         "tier": "EXPERT",
+         "id": 4495635,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1073,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Danial Zakaria",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+          "url": "/nartaa",
+          "userName": "nartaa",
+          "tier": "EXPERT",
+          "id": 4495635,
+          "profileUrl": "/nartaa",
+          "performanceTier": "EXPERT",
+          "userId": 4495635,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537310,
+        "postDate": "2026-10-12T11:08:38.070Z",
+        "rawMarkdown": "ohh i didn’t try 😅.. some people think this is youtube not kaggle lol",
+        "content": "<p>ohh i didn’t try 😅.. some people think this is youtube not kaggle lol</p>",
+        "parent": {},
+        "author": {
+         "displayName": "AK",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+         "url": "/aman1391",
+         "tier": "MASTER",
+         "id": 454169,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 61,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "AK",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+          "url": "/aman1391",
+          "userName": "aman1391",
+          "tier": "MASTER",
+          "id": 454169,
+          "profileUrl": "/aman1391",
+          "performanceTier": "MASTER",
+          "userId": 454169,
+          "progressionOptOut": false
+         },
+         "intro": "Just in case you want to team please "
+        }
+       },
+       {
+        "id": 3537415,
+        "postDate": "2026-10-12T14:24:39.303Z",
+        "rawMarkdown": "Maybe I should publish a 0.96+ super mega ultra blend with a hidden dataset, so it sits on top of the sort and no genius has a reason to squeeze the LB anymore? 😅",
+        "content": "<p>Maybe I should publish a 0.96+ super mega ultra blend with a hidden dataset, so it sits on top of the sort and no genius has a reason to squeeze the LB anymore? 😅</p>",
+        "parent": {},
+        "author": {
+         "displayName": "azamat1ch",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+         "url": "/azamat1ch",
+         "tier": "CONTRIBUTOR",
+         "id": 26332527,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 7,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "azamat1ch",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+          "url": "/azamat1ch",
+          "userName": "azamat1ch",
+          "tier": "CONTRIBUTOR",
+          "id": 26332527,
+          "profileUrl": "/azamat1ch",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 26332527,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537447,
+        "postDate": "2026-10-12T15:36:08.757Z",
+        "rawMarkdown": "Well you can atleast give a tip or advice on how I can improve my model proportionally to leaderboard what's that thing that top 10 guys knows but other don't ",
+        "content": "<p>Well you can atleast give a tip or advice on how I can improve my model proportionally to leaderboard what's that thing that top 10 guys knows but other don't </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Kabir_Verma01",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/kabirverma01",
+         "tier": "CONTRIBUTOR",
+         "id": 35455065,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1194,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Kabir_Verma01",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/kabirverma01",
+          "userName": "kabirverma01",
+          "tier": "CONTRIBUTOR",
+          "id": 35455065,
+          "profileUrl": "/kabirverma01",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 35455065,
+          "progressionOptOut": false
+         },
+         "intro": "We reached the .940 on a single model and .944 by merging it with the .943 bend the knee model publically available, we have the advantage of h100 gpu we can give time and hardwork just looking for some guidance ."
+        }
+       },
+       {
+        "id": 3537527,
+        "postDate": "2026-10-12T18:24:20.183Z",
+        "rawMarkdown": "I’m sorry that updating my dataset prevented you from reproducing the 0.956 score with one click and caused this confusion. I’ve now made the latest weights for my 0.956 model, along with the dataset, publicly available in a new notebook. This time, you can reproduce the score with one click. I hope this helps.\nThat said, every set of model weights I share represents an investment of my own computing resources, time, and real money. I’m happy to share them with the community for free, but I don’t appreciate having my intentions questioned like this.",
+        "content": "<p>I’m sorry that updating my dataset prevented you from reproducing the 0.956 score with one click and caused this confusion. I’ve now made the latest weights for my 0.956 model, along with the dataset, publicly available in a new notebook. This time, you can reproduce the score with one click. I hope this helps.\nThat said, every set of model weights I share represents an investment of my own computing resources, time, and real money. I’m happy to share them with the community for free, but I don’t appreciate having my intentions questioned like this.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Heliosli",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+         "url": "/heliosli",
+         "tier": "EXPERT",
+         "id": 31141478,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -14,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 234,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "wuhenziguadongnanzhi",
+           "heliosli",
+           "yota101",
+           "abdullahwasee"
+          ],
+          "userCount": 4
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Heliosli",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+          "url": "/heliosli",
+          "userName": "heliosli",
+          "tier": "EXPERT",
+          "id": 31141478,
+          "profileUrl": "/heliosli",
+          "performanceTier": "EXPERT",
+          "userId": 31141478,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537562,
+        "postDate": "2026-10-12T18:53:27.617Z",
+        "rawMarkdown": "hey, can I contact you someway?",
+        "content": "<p>hey, can I contact you someway?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Abdullah Wasee",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/abdullahwasee",
+         "tier": "CONTRIBUTOR",
+         "id": 36326921,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 533,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Abdullah Wasee",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/abdullahwasee",
+          "userName": "abdullahwasee",
+          "tier": "CONTRIBUTOR",
+          "id": 36326921,
+          "profileUrl": "/abdullahwasee",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 36326921,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537706,
+        "postDate": "2026-10-13T00:02:03.477Z",
+        "rawMarkdown": "it is not your  intention that is being questioned..  it is the timing ",
+        "content": "<p>it is not your  intention that is being questioned..  it is the timing </p>",
+        "parent": {},
+        "author": {
+         "displayName": "AK",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+         "url": "/aman1391",
+         "tier": "MASTER",
+         "id": 454169,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 61,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "AK",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+          "url": "/aman1391",
+          "userName": "aman1391",
+          "tier": "MASTER",
+          "id": 454169,
+          "profileUrl": "/aman1391",
+          "performanceTier": "MASTER",
+          "userId": 454169,
+          "progressionOptOut": false
+         },
+         "intro": "Just in case you want to team please "
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "AK",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+       "url": "/aman1391",
+       "tier": "MASTER",
+       "id": 454169,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 61,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "FUNNY",
+        "featuredUserNames": [
+         "noussairmighri"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "AK",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+        "url": "/aman1391",
+        "userName": "aman1391",
+        "tier": "MASTER",
+        "id": 454169,
+        "profileUrl": "/aman1391",
+        "performanceTier": "MASTER",
+        "userId": 454169,
+        "progressionOptOut": false
+       },
+       "intro": "Just in case you want to team please "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Adel Zebiche",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/adelzebiche",
+     "tier": "CONTRIBUTOR",
+     "id": 32302810,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 10,
+     "canUpvote": true,
+     "totalUpvotes": 11
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1065,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "aman1391",
+       "pejophylo",
+       "dragoshh1984",
+       "aliozanmemetoglu",
+       "tuckerarrants",
+       "nischaydnk",
+       "brechtlauwers",
+       "proptiter",
+       "ozermehmet",
+       "mango789",
+       "shivsatyam",
+       "k256net",
+       "kosuke123",
+       "alihasnain34",
+       "pablolee789",
+       "laymond",
+       "yzzzh7",
+       "mikelou1"
+      ],
+      "userCount": 18
+     }
+    ],
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Adel Zebiche",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/adelzebiche",
+      "userName": "adelzebiche",
+      "tier": "CONTRIBUTOR",
+      "id": 32302810,
+      "profileUrl": "/adelzebiche",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 32302810,
+      "progressionOptOut": false
+     },
+     "intro": "Dinov2 (ViT): 95.2 single fold, 224 px without 2.5D"
+    }
+   },
+   {
+    "id": 3537134,
+    "postDate": "2026-10-12T00:38:28.273Z",
+    "rawMarkdown": "Let me share just one of my best-kept secrets: don't use external data. Hope this helps!",
+    "content": "<p>Let me share just one of my best-kept secrets: don't use external data. Hope this helps!</p>",
+    "replies": [
+     {
+      "id": 3537135,
+      "postDate": "2026-10-12T00:43:23.133Z",
+      "rawMarkdown": "I can already hear some of you saying that's not enough, so let me share just one more approach that's uniquely mine: I believe the most effective way to improve your score is to follow the established rules and stop doing anything that causes trouble for the organizers. Hope this helps!",
+      "content": "<p>I can already hear some of you saying that's not enough, so let me share just one more approach that's uniquely mine: I believe the most effective way to improve your score is to follow the established rules and stop doing anything that causes trouble for the organizers. Hope this helps!</p>",
+      "replies": [
+       {
+        "id": 3537201,
+        "postDate": "2026-10-12T05:47:44.243Z",
+        "rawMarkdown": "Can confirm, haven’t used any external datasets so far, only the competition data.",
+        "content": "<p>Can confirm, haven’t used any external datasets so far, only the competition data.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "azamat1ch",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+         "url": "/azamat1ch",
+         "tier": "CONTRIBUTOR",
+         "id": 26332527,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 7,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "YAY",
+          "featuredUserNames": [
+           "kosuke123"
+          ],
+          "userCount": 1
+         },
+         {
+          "emoji": "LOVE",
+          "featuredUserNames": [
+           "kosuke123"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "azamat1ch",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+          "url": "/azamat1ch",
+          "userName": "azamat1ch",
+          "tier": "CONTRIBUTOR",
+          "id": 26332527,
+          "profileUrl": "/azamat1ch",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 26332527,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537298,
+        "postDate": "2026-10-12T10:25:41.903Z",
+        "rawMarkdown": "Let's make this comp a good one, for real.",
+        "content": "<p>Let's make this comp a good one, for real.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "diet1236364",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+         "url": "/kosuke123",
+         "tier": "CONTRIBUTOR",
+         "id": 22231354,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 12,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "SURPRISE",
+          "featuredUserNames": [
+           "azamat1ch",
+           "abdullahwasee"
+          ],
+          "userCount": 2
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "diet1236364",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+          "url": "/kosuke123",
+          "userName": "kosuke123",
+          "tier": "CONTRIBUTOR",
+          "id": 22231354,
+          "profileUrl": "/kosuke123",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 22231354,
+          "progressionOptOut": false
+         },
+         "intro": "tomoon san issyo ni yaritaidesu gokentou yorosikuonegaisimasu , watasi mo kawasaki ni sundemasu"
+        }
+       },
+       {
+        "id": 3537348,
+        "postDate": "2026-10-12T12:14:46.037Z",
+        "rawMarkdown": "genuinely wth are you guys doing that im not",
+        "content": "<p>genuinely wth are you guys doing that im not</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Abdullah Wasee",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/abdullahwasee",
+         "tier": "CONTRIBUTOR",
+         "id": 36326921,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -1,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 533,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Abdullah Wasee",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/abdullahwasee",
+          "userName": "abdullahwasee",
+          "tier": "CONTRIBUTOR",
+          "id": 36326921,
+          "profileUrl": "/abdullahwasee",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 36326921,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "diet1236364",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+       "url": "/kosuke123",
+       "tier": "CONTRIBUTOR",
+       "id": 22231354,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 12,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "diet1236364",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+        "url": "/kosuke123",
+        "userName": "kosuke123",
+        "tier": "CONTRIBUTOR",
+        "id": 22231354,
+        "profileUrl": "/kosuke123",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 22231354,
+        "progressionOptOut": false
+       },
+       "intro": "tomoon san issyo ni yaritaidesu gokentou yorosikuonegaisimasu , watasi mo kawasaki ni sundemasu"
+      }
+     },
+     {
+      "id": 3537350,
+      "postDate": "2026-10-12T12:16:19.247Z",
+      "rawMarkdown": "how are you guys using competition data that allows u guys to get 96+, that we arent doing?",
+      "content": "<p>how are you guys using competition data that allows u guys to get 96+, that we arent doing?</p>",
+      "replies": [
+       {
+        "id": 3537393,
+        "postDate": "2026-10-12T13:35:09.900Z",
+        "rawMarkdown": "What do you want to know? Since the rankings are too high and prize money is involved, giving advice that gets too specific isn’t good for the community as a whole, and it’s not something I can respect.\nAsk a more specific question, and while I can’t promise anything, I might answer depending on the question.",
+        "content": "<p>What do you want to know? Since the rankings are too high and prize money is involved, giving advice that gets too specific isn’t good for the community as a whole, and it’s not something I can respect.\nAsk a more specific question, and while I can’t promise anything, I might answer depending on the question.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "diet1236364",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+         "url": "/kosuke123",
+         "tier": "CONTRIBUTOR",
+         "id": 22231354,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 12,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "diet1236364",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+          "url": "/kosuke123",
+          "userName": "kosuke123",
+          "tier": "CONTRIBUTOR",
+          "id": 22231354,
+          "profileUrl": "/kosuke123",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 22231354,
+          "progressionOptOut": false
+         },
+         "intro": "tomoon san issyo ni yaritaidesu gokentou yorosikuonegaisimasu , watasi mo kawasaki ni sundemasu"
+        }
+       },
+       {
+        "id": 3537412,
+        "postDate": "2026-10-12T14:19:52.070Z",
+        "rawMarkdown": "Short answer is labels",
+        "content": "<p>Short answer is labels</p>",
+        "parent": {},
+        "author": {
+         "displayName": "azamat1ch",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+         "url": "/azamat1ch",
+         "tier": "CONTRIBUTOR",
+         "id": 26332527,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 7,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "azamat1ch",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+          "url": "/azamat1ch",
+          "userName": "azamat1ch",
+          "tier": "CONTRIBUTOR",
+          "id": 26332527,
+          "profileUrl": "/azamat1ch",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 26332527,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537478,
+        "postDate": "2026-10-12T16:40:18.603Z",
+        "rawMarkdown": "Well that's interesting would you like to share anything regarding that like how can we generate labels from reports that are not even there for most of the studies of some disease how did you increased the labels quality ",
+        "content": "<p>Well that's interesting would you like to share anything regarding that like how can we generate labels from reports that are not even there for most of the studies of some disease how did you increased the labels quality </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Kabir_Verma01",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/kabirverma01",
+         "tier": "CONTRIBUTOR",
+         "id": 35455065,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1194,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Kabir_Verma01",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/kabirverma01",
+          "userName": "kabirverma01",
+          "tier": "CONTRIBUTOR",
+          "id": 35455065,
+          "profileUrl": "/kabirverma01",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 35455065,
+          "progressionOptOut": false
+         },
+         "intro": "We reached the .940 on a single model and .944 by merging it with the .943 bend the knee model publically available, we have the advantage of h100 gpu we can give time and hardwork just looking for some guidance ."
+        }
+       },
+       {
+        "id": 3537521,
+        "postDate": "2026-10-12T18:08:25.220Z",
+        "rawMarkdown": "Thanks a lot, that’s fair, and I get why you can’t go too specific. A few narrow questions, answer only what you’re comfortable with:\n\nIs the label gain mostly from how you read the reports (prompt/LLM, following the host’s image-based definitions), or from re-labelling with your own image models (pseudo-labels / OOF predictions)?\nFor findings the report doesn’t mention at all (e.g. synovitis), do you treat them as negative, infer them from related findings (e.g. effusion), or let a model fill them in?\nDo you keep labels soft (e.g. 0.7 for “small” or “possible”) or hard 0/1?\nDid you use the 58 gold studies to tune your label mapping, or keep them only for validation?\nRoughly how big was the label effect on your LB, closer to +0.005 or +0.02?\n\nEven a one-word answer to any of these would help a lot. Thanks, and good luck in the final stretch",
+        "content": "<p>Thanks a lot, that’s fair, and I get why you can’t go too specific. A few narrow questions, answer only what you’re comfortable with:</p>\n<p>Is the label gain mostly from how you read the reports (prompt/LLM, following the host’s image-based definitions), or from re-labelling with your own image models (pseudo-labels / OOF predictions)?\nFor findings the report doesn’t mention at all (e.g. synovitis), do you treat them as negative, infer them from related findings (e.g. effusion), or let a model fill them in?\nDo you keep labels soft (e.g. 0.7 for “small” or “possible”) or hard 0/1?\nDid you use the 58 gold studies to tune your label mapping, or keep them only for validation?\nRoughly how big was the label effect on your LB, closer to +0.005 or +0.02?</p>\n<p>Even a one-word answer to any of these would help a lot. Thanks, and good luck in the final stretch</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Abdullah Wasee",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/abdullahwasee",
+         "tier": "CONTRIBUTOR",
+         "id": 36326921,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 533,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Abdullah Wasee",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/abdullahwasee",
+          "userName": "abdullahwasee",
+          "tier": "CONTRIBUTOR",
+          "id": 36326921,
+          "profileUrl": "/abdullahwasee",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 36326921,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Abdullah Wasee",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/abdullahwasee",
+       "tier": "CONTRIBUTOR",
+       "id": 36326921,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 533,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Abdullah Wasee",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/abdullahwasee",
+        "userName": "abdullahwasee",
+        "tier": "CONTRIBUTOR",
+        "id": 36326921,
+        "profileUrl": "/abdullahwasee",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36326921,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537972,
+      "postDate": "2026-10-13T13:12:40.853Z",
+      "rawMarkdown": "we're really stuck here and I wanted to ask you if u used ai to label or just did it by hand?",
+      "content": "<p>we're really stuck here and I wanted to ask you if u used ai to label or just did it by hand?</p>",
+      "replies": [
+       {
+        "id": 3538032,
+        "postDate": "2026-10-13T15:24:14.747Z",
+        "rawMarkdown": "AI, not by hand. And don’t rely on reports alone.",
+        "content": "<p>AI, not by hand. And don’t rely on reports alone.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "azamat1ch",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+         "url": "/azamat1ch",
+         "tier": "CONTRIBUTOR",
+         "id": 26332527,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 7,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "azamat1ch",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+          "url": "/azamat1ch",
+          "userName": "azamat1ch",
+          "tier": "CONTRIBUTOR",
+          "id": 26332527,
+          "profileUrl": "/azamat1ch",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 26332527,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3538510,
+        "postDate": "2026-10-14T11:33:39.510Z",
+        "rawMarkdown": "im guessing u didnt just go and tell the ai to improve it did you btw what ai did u use for the relabeling?",
+        "content": "<p>im guessing u didnt just go and tell the ai to improve it did you btw what ai did u use for the relabeling?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "kevin park",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/k3v1npark",
+         "tier": "CONTRIBUTOR",
+         "id": 35874797,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 964,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "kevin park",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/k3v1npark",
+          "userName": "k3v1npark",
+          "tier": "CONTRIBUTOR",
+          "id": 35874797,
+          "profileUrl": "/k3v1npark",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 35874797,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "kyle kim93",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/kylekim93",
+       "tier": "CONTRIBUTOR",
+       "id": 36989728,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 964,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "kevin park",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/k3v1npark",
+        "userName": "k3v1npark",
+        "tier": "CONTRIBUTOR",
+        "id": 35874797,
+        "profileUrl": "/k3v1npark",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 35874797,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "diet1236364",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+     "url": "/kosuke123",
+     "tier": "CONTRIBUTOR",
+     "id": 22231354,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 12,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "diet1236364",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22231354-kg.jpg?t=2026-08-22-08-00-12",
+      "url": "/kosuke123",
+      "userName": "kosuke123",
+      "tier": "CONTRIBUTOR",
+      "id": 22231354,
+      "profileUrl": "/kosuke123",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 22231354,
+      "progressionOptOut": false
+     },
+     "intro": "tomoon san issyo ni yaritaidesu gokentou yorosikuonegaisimasu , watasi mo kawasaki ni sundemasu"
+    }
+   },
+   {
+    "id": 3538529,
+    "postDate": "2026-10-14T12:45:22.507Z",
+    "rawMarkdown": "It is a pity that some people place too much emphasis on so-called prize money. We should focus more on enjoying the competition and learning and improving together—I believe that is the true purpose of this public space, rather than fearing being surpassed. Haha.",
+    "content": "<p>It is a pity that some people place too much emphasis on so-called prize money. We should focus more on enjoying the competition and learning and improving together—I believe that is the true purpose of this public space, rather than fearing being surpassed. Haha.</p>",
+    "replies": [
+     {
+      "id": 3538565,
+      "postDate": "2026-10-14T14:05:20.963Z",
+      "rawMarkdown": "True but, a lot of these prize moneys can change peoples life so",
+      "content": "<p>True but, a lot of these prize moneys can change peoples life so</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Abdullah Wasee",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/abdullahwasee",
+       "tier": "CONTRIBUTOR",
+       "id": 36326921,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 533,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Abdullah Wasee",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/abdullahwasee",
+        "userName": "abdullahwasee",
+        "tier": "CONTRIBUTOR",
+        "id": 36326921,
+        "profileUrl": "/abdullahwasee",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36326921,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Jiahui Qu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12160102-kg.jpeg",
+     "url": "/qujiahui",
+     "tier": "EXPERT",
+     "id": 12160102,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 500,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Jiahui Qu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12160102-kg.jpeg",
+      "url": "/qujiahui",
+      "userName": "qujiahui",
+      "tier": "EXPERT",
+      "id": 12160102,
+      "profileUrl": "/qujiahui",
+      "performanceTier": "EXPERT",
+      "userId": 12160102,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536880,
+   "postDate": "2026-10-11T12:56:31.137Z",
+   "rawMarkdown": "Stuck at .954 and the PF OA , lateral OA and Synovitis are showing poor results consistently is there any way to solve it better labels? Or any different architecture is there any way to reach to .964 or further any hidden trick.",
+   "content": "<p>Stuck at .954 and the PF OA , lateral OA and Synovitis are showing poor results consistently is there any way to solve it better labels? Or any different architecture is there any way to reach to .964 or further any hidden trick.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Kabir_Verma01",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/kabirverma01",
+    "tier": "CONTRIBUTOR",
+    "id": 35455065,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -20,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1194,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Kabir_Verma01",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/kabirverma01",
+     "userName": "kabirverma01",
+     "tier": "CONTRIBUTOR",
+     "id": 35455065,
+     "profileUrl": "/kabirverma01",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 35455065,
+     "progressionOptOut": false
+    },
+    "intro": "We reached the .940 on a single model and .944 by merging it with the .943 bend the knee model publically available, we have the advantage of h100 gpu we can give time and hardwork just looking for some guidance ."
+   }
+  },
+  "firstMessageId": 3536880,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748295,
+  "name": "Stuck at .954 is there anyway to bypass it ?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-11T12:56:31.136666100Z",
+  "totalVotes": -21,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748295",
+  "totalMessages": 26,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Kabir_Verma01",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/kabirverma01",
+   "tier": "CONTRIBUTOR",
+   "id": 35455065,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 26,
+  "firstForumMessageId": 3536880,
+  "id": 748295,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Abdullah Wasee",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748295#3538565",
+  "lastCommentPostDate": "2026-10-14T14:05:20.963333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-11T12:56:31.136666100Z",
+  "title": "Stuck at .954 is there anyway to bypass it ?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748295",
+  "votes": -21,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Kabir_Verma01",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/kabirverma01",
+    "userName": "kabirverma01",
+    "tier": "CONTRIBUTOR",
+    "id": 35455065,
+    "profileUrl": "/kabirverma01",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 35455065,
+    "progressionOptOut": false
+   },
+   "intro": "We reached the .940 on a single model and .944 by merging it with the .943 bend the knee model publically available, we have the advantage of h100 gpu we can give time and hardwork just looking for some guidance ."
+  }
+ }
+}

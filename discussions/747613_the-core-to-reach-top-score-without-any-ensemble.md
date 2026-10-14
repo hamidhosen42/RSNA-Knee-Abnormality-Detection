@@ -1,10 +1,10 @@
 # The core to reach top score without any ensemble
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747613
-- **Author:** **Cà Rốt Production** (@crtproduction, Contributor) · _topic author_ · 2026-10-09 05:05 UTC · LB rank 137
-- **Topic votes:** 0 · **Comments/replies:** 0 · **Pinned:** no
-- **Last comment:** 2026-10-09 05:05 UTC by Cà Rốt Production
-- **Cloned:** 2026-10-09 09:47 UTC (topic id 747613, raw JSON `_raw/747613.json`)
+- **Author:** **Cà Rốt Production** (@crtproduction, Contributor) · _topic author_ · 2026-10-09 05:05 UTC · ▲-7 · LB rank 49
+- **Topic votes:** -7 · **Comments/replies:** 4 · **Pinned:** no
+- **Last comment:** 2026-10-12 04:24 UTC by Cà Rốt Production
+- **Cloned:** 2026-10-14 18:23 UTC (topic id 747613, raw JSON `_raw/747613.json`)
 
 ---
 
@@ -13,6 +13,28 @@ By the way, would really like to ask if any suggestion about the training proces
 
 ---
 
-## Comments (0, threaded, oldest first)
+## Comments (4, threaded, oldest first)
 
-_No comments._
+### [1] hengck23
+
+**hengck23** (@hengck23, Grandmaster) · 2026-10-09 10:38 UTC · ▲-1 · LB rank 455
+
+there are some classes that has more error than others. and these classes have external data with eternal label
+
+#### ↳ [1.1] Cà Rốt Production
+
+**Cà Rốt Production** (@crtproduction, Contributor) · _topic author_ · 2026-10-11 15:08 UTC · ▲-1 · LB rank 49
+
+nah dont even try external dataset
+
+##### ↳ ↳ [1.1.1] SpeedSci
+
+**SpeedSci** (@caoyupeng, Expert) · 2026-10-11 19:21 UTC · LB rank 1026
+
+Can you tell me why?
+
+##### ↳ ↳ [1.1.2] Cà Rốt Production
+
+**Cà Rốt Production** (@crtproduction, Contributor) · _topic author_ · 2026-10-12 04:24 UTC · ▲1 · LB rank 49
+
+it will be risky, many top - scorer wont try it, and the rules are not visible to see the "permission of the OAI or external dataset, so it is niche", and trying to finetuning MRI pretrained model will only benefit if u are trying to improve the label, and the blending model in my opinion, I wont even try it because the data blending leakage, the time to train the model, the time to evaluate the config , there are various disadvantages, besides, there are many other great ways to improve the score.

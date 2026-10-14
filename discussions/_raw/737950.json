@@ -32,6 +32,7 @@
        "totalUpvotes": 3
       },
       "kernelVersion": 0,
+      "competitionRanking": 100,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -67,20 +68,20 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 19,
+    "competitionRanking": 4,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Tucker Arrants",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-      "url": "/tuckerarrants",
-      "userName": "tuckerarrants",
+      "displayName": "Tony Li",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+      "url": "/tonylica",
+      "userName": "tonylica",
       "tier": "MASTER",
-      "id": 4379159,
-      "profileUrl": "/tuckerarrants",
+      "id": 22938014,
+      "profileUrl": "/tonylica",
       "performanceTier": "MASTER",
-      "userId": 4379159,
+      "userId": 22938014,
       "progressionOptOut": false
      },
      "intro": ""
@@ -105,7 +106,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1307,
+    "competitionRanking": 245,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -151,7 +152,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 389,
+      "competitionRanking": 172,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -185,23 +186,23 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1067,
+    "competitionRanking": 1027,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "SpeedSci",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
-      "url": "/caoyupeng",
-      "userName": "caoyupeng",
+      "displayName": "Myo Min Htet(wnp)🇲🇲",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+      "url": "/myominhtet",
+      "userName": "myominhtet",
       "tier": "EXPERT",
-      "id": 26421714,
-      "profileUrl": "/caoyupeng",
+      "id": 4600631,
+      "profileUrl": "/myominhtet",
       "performanceTier": "EXPERT",
-      "userId": 26421714,
+      "userId": 4600631,
       "progressionOptOut": false
      },
-     "intro": ""
+     "intro": "Need some who can support GPU, "
     }
    },
    {
@@ -229,7 +230,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 636,
+      "competitionRanking": 2508,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -267,7 +268,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 636,
+      "competitionRanking": 2508,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -305,7 +306,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 530,
+      "competitionRanking": 2386,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -339,7 +340,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2019,
+    "competitionRanking": 3582,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -357,6 +358,24 @@
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3535982,
+    "postDate": "2026-10-09T14:34:54.030Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
@@ -376,12 +395,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 4,
+    "totalVotes": 5,
     "canUpvote": true,
-    "totalUpvotes": 4
+    "totalUpvotes": 5
    },
    "kernelVersion": 0,
-   "competitionRanking": 1980,
+   "competitionRanking": 3542,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -408,9 +427,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-28T10:15:00.209227800Z",
-  "totalVotes": 4,
+  "totalVotes": 5,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/737950",
-  "totalMessages": 9,
+  "totalMessages": 10,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -424,19 +443,18 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 9,
+  "commentCount": 10,
   "firstForumMessageId": 3517828,
   "id": 737950,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Fernando Faria",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737950#3521473",
-  "lastCommentPostDate": "2026-09-06T03:34:04.523333300Z",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737950#3535982",
+  "lastCommentPostDate": "2026-10-09T14:34:54.030Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-28T10:15:00.209227800Z",
   "title": "External data behind an institutional data use agreement - does the KneeCoT ruling generalize?",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/737950",
-  "votes": 4,
+  "votes": 5,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Ercan Gurvit",

@@ -1,0 +1,145 @@
+{
+ "forumTopic": {
+  "authorId": 36581902,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "Yogesh Krishna",
+  "authorUserName": "yogeshkrishna1709",
+  "comments": [
+   {
+    "id": 3536748,
+    "postDate": "2026-10-11T06:24:10.593Z",
+    "rawMarkdown": "In a Kaggle Notebook, attach the competition data under Add Input and check the mount instead of assuming one path:\n\n```python\nfrom pathlib import Path\nfor root in [Path('/kaggle/input/competitions/rsna-knee-abnormality-detection'),\n             Path('/kaggle/input/rsna-knee-abnormality-detection')]:\n    if (root / 'train.csv').exists():\n        print(root)\n```\n\nI encountered both mount layouts while adapting a fork. The Data tab documents individual DICOMs as `train_series/<StudyInstanceUID>/<SeriesInstanceUID>/<SOPInstanceUID>.dcm`; `train_series.csv` maps series to studies. The Data Explorer lets you inspect individual files. For VS Code on your own machine, the Data tab also has a Download all files button, but the full dataset is about 569.76 GB, so check disk space first.\n\nI could not verify any guarantee that competition files will remain downloadable after the deadline. For long-term access, check the competition rules and ask the organizers. Retain only data you are allowed to keep under those rules.",
+    "content": "<p>In a Kaggle Notebook, attach the competition data under Add Input and check the mount instead of assuming one path:</p>\n<pre><code>from pathlib import Path\nfor root in [Path('/kaggle/input/competitions/rsna-knee-abnormality-detection'),\n             Path('/kaggle/input/rsna-knee-abnormality-detection')]:\n    if (root / 'train.csv').exists():\n        print(root)\n</code></pre>\n<p>I encountered both mount layouts while adapting a fork. The Data tab documents individual DICOMs as <code>train_series/&lt;StudyInstanceUID&gt;/&lt;SeriesInstanceUID&gt;/&lt;SOPInstanceUID&gt;.dcm</code>; <code>train_series.csv</code> maps series to studies. The Data Explorer lets you inspect individual files. For VS Code on your own machine, the Data tab also has a Download all files button, but the full dataset is about 569.76 GB, so check disk space first.</p>\n<p>I could not verify any guarantee that competition files will remain downloadable after the deadline. For long-term access, check the competition rules and ask the organizers. Retain only data you are allowed to keep under those rules.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Mingquan Zhuang",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mingquanzhuang",
+     "tier": "CONTRIBUTOR",
+     "id": 36271475,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3192,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "yogeshkrishna1709"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mingquan Zhuang",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mingquanzhuang",
+      "userName": "mingquanzhuang",
+      "tier": "CONTRIBUTOR",
+      "id": 36271475,
+      "profileUrl": "/mingquanzhuang",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36271475,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536126,
+   "postDate": "2026-10-09T19:19:54.800Z",
+   "rawMarkdown": "I am new to Kaggle. Can someone help me out in understanding how to access this data in Kaggle notebook and also externally like VS code IDE on local system.  How to access its individual files? Will this data be available in Kaggle to access even after the competition ends?",
+   "content": "<p>I am new to Kaggle. Can someone help me out in understanding how to access this data in Kaggle notebook and also externally like VS code IDE on local system.  How to access its individual files? Will this data be available in Kaggle to access even after the competition ends?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Yogesh Krishna",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/yogeshkrishna1709",
+    "tier": "CONTRIBUTOR",
+    "id": 36581902,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Yogesh Krishna",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/yogeshkrishna1709",
+     "userName": "yogeshkrishna1709",
+     "tier": "CONTRIBUTOR",
+     "id": 36581902,
+     "profileUrl": "/yogeshkrishna1709",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 36581902,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3536126,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747858,
+  "name": "Dataset Access",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-09T19:19:54.799676900Z",
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747858",
+  "totalMessages": 1,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Yogesh Krishna",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/yogeshkrishna1709",
+   "tier": "CONTRIBUTOR",
+   "id": 36581902,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 1,
+  "firstForumMessageId": 3536126,
+  "id": 747858,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Mingquan Zhuang",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747858#3536748",
+  "lastCommentPostDate": "2026-10-11T06:24:10.593333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-09T19:19:54.799676900Z",
+  "title": "Dataset Access",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747858",
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Yogesh Krishna",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/yogeshkrishna1709",
+    "userName": "yogeshkrishna1709",
+    "tier": "CONTRIBUTOR",
+    "id": 36581902,
+    "profileUrl": "/yogeshkrishna1709",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 36581902,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

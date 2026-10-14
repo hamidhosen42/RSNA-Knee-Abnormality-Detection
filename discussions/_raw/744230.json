@@ -24,7 +24,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 14,
+    "competitionRanking": 54,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -62,7 +62,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 31,
+    "competitionRanking": 104,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -104,20 +104,20 @@
     "totalUpvotes": 2
    },
    "kernelVersion": 0,
-   "competitionRanking": 824,
+   "competitionRanking": 179,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
     "teamLeader": {
-     "displayName": "Md Kishor Morol",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/506080-gp.jpg",
-     "url": "/kishormorol",
-     "userName": "kishormorol",
-     "tier": "CONTRIBUTOR",
-     "id": 506080,
-     "profileUrl": "/kishormorol",
-     "performanceTier": "CONTRIBUTOR",
-     "userId": 506080,
+     "displayName": "Md. Hamid Hosen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6026821-kg.jpg?t=2026-09-28-02-40-38",
+     "url": "/hosen42",
+     "userName": "hosen42",
+     "tier": "EXPERT",
+     "id": 6026821,
+     "profileUrl": "/hosen42",
+     "performanceTier": "EXPERT",
+     "userId": 6026821,
      "progressionOptOut": false
     },
     "intro": ""
@@ -147,30 +147,30 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 2,
+  "commentCount": 3,
   "firstForumMessageId": 3529827,
   "id": 744230,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Quan Vu",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744230#3531176",
-  "lastCommentPostDate": "2026-10-01T12:27:30.753333300Z",
+  "lastCommenterName": "Ayiyeke Olori",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744230#3538689",
+  "lastCommentPostDate": "2026-10-14T17:28:48.863333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-29T02:54:02.310448300Z",
   "title": "PSA: bf16 on Kaggle's T4/P100 silently cost me 0.14 AUC (0.851 → 0.710). How to spot it.",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744230",
-  "votes": 2,
+  "votes": 3,
   "teamUpInfo": {
    "teamLeader": {
-    "displayName": "Md Kishor Morol",
-    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/506080-gp.jpg",
-    "url": "/kishormorol",
-    "userName": "kishormorol",
-    "tier": "CONTRIBUTOR",
-    "id": 506080,
-    "profileUrl": "/kishormorol",
-    "performanceTier": "CONTRIBUTOR",
-    "userId": 506080,
+    "displayName": "Md. Hamid Hosen",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6026821-kg.jpg?t=2026-09-28-02-40-38",
+    "url": "/hosen42",
+    "userName": "hosen42",
+    "tier": "EXPERT",
+    "id": 6026821,
+    "profileUrl": "/hosen42",
+    "performanceTier": "EXPERT",
+    "userId": 6026821,
     "progressionOptOut": false
    },
    "intro": ""

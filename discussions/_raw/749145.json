@@ -1,0 +1,267 @@
+{
+ "forumTopic": {
+  "authorId": 2034058,
+  "authorThumbnailName": "2034058-kg.jpg",
+  "authorUserDisplayName": "Mobassir",
+  "authorUserName": "mobassir",
+  "comments": [
+   {
+    "id": 3538442,
+    "postDate": "2026-10-14T07:36:49.143Z",
+    "rawMarkdown": "This is game-breaking for many teams. I hope organizers address it cleanly asap.\n\nThe implicit assumption would be this is legal, until confirmed otherwise. ",
+    "content": "<p>This is game-breaking for many teams. I hope organizers address it cleanly asap.</p>\n<p>The implicit assumption would be this is legal, until confirmed otherwise. </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Wildata",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11971795-kg.png?t=2025-05-05-07-56-15",
+     "url": "/wildata",
+     "tier": "CONTRIBUTOR",
+     "id": 11971795,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 3724,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Wildata",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11971795-kg.png?t=2025-05-05-07-56-15",
+      "url": "/wildata",
+      "userName": "wildata",
+      "tier": "CONTRIBUTOR",
+      "id": 11971795,
+      "profileUrl": "/wildata",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 11971795,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3538359,
+    "postDate": "2026-10-14T03:22:13.577Z",
+    "rawMarkdown": "It's been discussed a lot for a while and they never gave us an answer. I don't think they will now.",
+    "content": "<p>It's been discussed a lot for a while and they never gave us an answer. I don't think they will now.</p>",
+    "replies": [
+     {
+      "id": 3538360,
+      "postDate": "2026-10-14T03:25:19.490Z",
+      "rawMarkdown": "I agree. The hosts also made a new discussion post today regarding a survey and also replied in another discussion about the survey, while not replying to the dozens of open questions regarding external data use, so we probably are not going to get any answers till the end.",
+      "content": "<p>I agree. The hosts also made a new discussion post today regarding a survey and also replied in another discussion about the survey, while not replying to the dozens of open questions regarding external data use, so we probably are not going to get any answers till the end.</p>",
+      "replies": [
+       {
+        "id": 3538374,
+        "postDate": "2026-10-14T03:57:36.237Z",
+        "rawMarkdown": "I haven't really used the OAI data myself, as it made very little difference in my pipeline, but I can imagine how confusing the situation is for the hosts. Lots of people are reporting issues, and from a fairness standpoint, everyone should have equal access to the data.\n\nThe problem, *in my opinion*, is that the website is a perfect example of government efficiency: somehow costing millions to build and maintain while still making a simple task impressively convoluted. Truly amazing how much taxpayer money it takes to make Walmart brand craigslist for healthcare data. ",
+        "content": "<p>I haven't really used the OAI data myself, as it made very little difference in my pipeline, but I can imagine how confusing the situation is for the hosts. Lots of people are reporting issues, and from a fairness standpoint, everyone should have equal access to the data.</p>\n<p>The problem, <em>in my opinion</em>, is that the website is a perfect example of government efficiency: somehow costing millions to build and maintain while still making a simple task impressively convoluted. Truly amazing how much taxpayer money it takes to make Walmart brand craigslist for healthcare data. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Satwik",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3459992-kg.jpg?t=2025-11-13-11-42-38",
+       "url": "/p4rallax",
+       "tier": "MASTER",
+       "id": 3459992,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 76,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "tingyi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+        "url": "/chengtingyi",
+        "userName": "chengtingyi",
+        "tier": "CONTRIBUTOR",
+        "id": 8788200,
+        "profileUrl": "/chengtingyi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 8788200,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "madmax0404",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+     "url": "/max6296",
+     "tier": "EXPERT",
+     "id": 3273392,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 15,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "madmax0404",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3273392-kg.jpg",
+      "url": "/max6296",
+      "userName": "max6296",
+      "tier": "EXPERT",
+      "id": 3273392,
+      "profileUrl": "/max6296",
+      "performanceTier": "EXPERT",
+      "userId": 3273392,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3538358,
+   "postDate": "2026-10-14T03:08:45.013Z",
+   "rawMarkdown": "Hi @javaduke95, @michelleriopel and @shosys (competition hosts), and @ryanholbrook and @macruzbar (Kaggle team),\n\nWith about one week left before the final submission deadline (October 22), many teams still do not know whether OAI (the Osteoarthritis Initiative, distributed through the NIMH Data Archive, NDA) is allowed. The question has been asked several times without an answer:\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3534883\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748276\nA large part of the leaderboard depends on it, so I would like to ask for a clear, pinned ruling.\n\nWhat the rules say\n\nRule 2.6.a: External Data must be \"publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants\", or meet the Reasonableness criteria of Rule 2.6.b.\n\nRule 2.6.b: \"Because of the potential costs or restrictions (e.g., 'geo restrictions') associated with obtaining rights to use external data ... their use must be 'reasonably accessible to all' and of 'minimal cost'.\"\n\nThe eligibility rules exclude only residents of Crimea, DNR, LNR, Cuba, Iran and North Korea. Participants from China, Russia and Venezuela are eligible.\n\nKneeCoT was ruled out because its access procedure could create unequal access:\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\n\nOn September 21 the host wrote that using OAI \"does not violate the ... rules if it is generally accessible to all participants without an escalated (i.e. institutional) review and sign-off or access to a legal team, and is free of charge\":\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495\n\nThe geo restriction\n\nNIH notice NOT-OD-25-083 restricts access to NIH controlled-access data repositories from \"countries of concern\", effective April 4, 2025: China (including Hong Kong and Macau), Russia, Iran, North Korea, Cuba and Venezuela.\nhttps://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-083.html\n\nNDA's own notice, as quoted in topic 748276, states that NIH prohibits access to \"NDA data by researchers and institutions located in countries of concern, including China\".\nhttps://nda.nih.gov/nda/enhancing-dar-security-measures\n\nParticipants in China report that they cannot register: Login.gov rejects them with error LG22, even after trying several email addresses:\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3535178\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536422\nOne participant reported a successful download from a China IP:\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536289\n\nA participant posted an NDA help-desk reply saying that OAI is open access for everyone and that the countries-of-concern rule does not apply:\nhttps://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3535226\nThis contradicts the reports above, and participants cannot resolve the conflict themselves.\n\nSo OAI is free and needs no institutional sign-off, but for participants in at least one eligible country it appears not to be accessible in practice. This looks like exactly the \"geo restrictions\" case named in Rule 2.6.b.\n\nWhy this affects much of the leaderboard\n\nThe top-scoring public notebooks use a checkpoint trained partly on OAI (the public 0.949 model, released under Apache 2.0), and many teams submit those notebooks or build on them. A ruling on OAI therefore affects not only the teams that downloaded OAI themselves, but potentially a large share of the leaderboard.\n\nQuestions (a yes or no for each would be very helpful)\n\n1. Is OAI allowed as external training data in this competition?\n\n2. Are public checkpoints trained partly on OAI allowed in other teams' submissions, including teams that never accessed OAI themselves?\n\n3. If OAI is not allowed: will every submission that used OAI or an OAI-trained checkpoint be removed from the leaderboard, including the many teams that submitted public notebooks built on it? Or is external-data compliance checked only for prize-eligible teams, during winner verification?\n\n4. Can a team that finishes in the medal zone but outside the prize ranks be removed from the private leaderboard, or lose its medal, for having used OAI? Does the answer differ between gold, silver and bronze?\n\n5. Would a ruling against OAI also cover derived artifacts: labels or pseudo-labels produced by OAI-trained models, and models fine-tuned from OAI-trained weights?\n\n6. Could the answer be posted and pinned before the final submission deadline on October 22, so that every team selects its final submissions under the same rule?\n\nThank you for organizing this competition. A clear answer would help every team, whichever way it goes.\n",
+   "content": "<p>Hi <a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a>, <a href=\"/michelleriopel\" target=\"_blank\">@michelleriopel</a> and <a href=\"/shosys\" target=\"_blank\">@shosys</a> (competition hosts), and <a href=\"/ryanholbrook\" target=\"_blank\">@ryanholbrook</a> and <a href=\"/macruzbar\" target=\"_blank\">@macruzbar</a> (Kaggle team),</p>\n<p>With about one week left before the final submission deadline (October 22), many teams still do not know whether OAI (the Osteoarthritis Initiative, distributed through the NIMH Data Archive, NDA) is allowed. The question has been asked several times without an answer:\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3534883\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3534883</a>\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748276\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748276</a>\nA large part of the leaderboard depends on it, so I would like to ask for a clear, pinned ruling.</p>\n<p>What the rules say</p>\n<p>Rule 2.6.a: External Data must be \"publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants\", or meet the Reasonableness criteria of Rule 2.6.b.</p>\n<p>Rule 2.6.b: \"Because of the potential costs or restrictions (e.g., 'geo restrictions') associated with obtaining rights to use external data … their use must be 'reasonably accessible to all' and of 'minimal cost'.\"</p>\n<p>The eligibility rules exclude only residents of Crimea, DNR, LNR, Cuba, Iran and North Korea. Participants from China, Russia and Venezuela are eligible.</p>\n<p>KneeCoT was ruled out because its access procedure could create unequal access:\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109</a></p>\n<p>On September 21 the host wrote that using OAI \"does not violate the … rules if it is generally accessible to all participants without an escalated (i.e. institutional) review and sign-off or access to a legal team, and is free of charge\":\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495</a></p>\n<p>The geo restriction</p>\n<p>NIH notice NOT-OD-25-083 restricts access to NIH controlled-access data repositories from \"countries of concern\", effective April 4, 2025: China (including Hong Kong and Macau), Russia, Iran, North Korea, Cuba and Venezuela.\n<a href=\"https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-083.html\" target=\"_blank\">https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-083.html</a></p>\n<p>NDA's own notice, as quoted in topic 748276, states that NIH prohibits access to \"NDA data by researchers and institutions located in countries of concern, including China\".\n<a href=\"https://nda.nih.gov/nda/enhancing-dar-security-measures\" target=\"_blank\">https://nda.nih.gov/nda/enhancing-dar-security-measures</a></p>\n<p>Participants in China report that they cannot register: Login.gov rejects them with error LG22, even after trying several email addresses:\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3535178\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3535178</a>\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536422\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536422</a>\nOne participant reported a successful download from a China IP:\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536289\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536289</a></p>\n<p>A participant posted an NDA help-desk reply saying that OAI is open access for everyone and that the countries-of-concern rule does not apply:\n<a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3535226\" target=\"_blank\">https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416#3535226</a>\nThis contradicts the reports above, and participants cannot resolve the conflict themselves.</p>\n<p>So OAI is free and needs no institutional sign-off, but for participants in at least one eligible country it appears not to be accessible in practice. This looks like exactly the \"geo restrictions\" case named in Rule 2.6.b.</p>\n<p>Why this affects much of the leaderboard</p>\n<p>The top-scoring public notebooks use a checkpoint trained partly on OAI (the public 0.949 model, released under Apache 2.0), and many teams submit those notebooks or build on them. A ruling on OAI therefore affects not only the teams that downloaded OAI themselves, but potentially a large share of the leaderboard.</p>\n<p>Questions (a yes or no for each would be very helpful)</p>\n<ol>\n<li><p>Is OAI allowed as external training data in this competition?</p></li>\n<li><p>Are public checkpoints trained partly on OAI allowed in other teams' submissions, including teams that never accessed OAI themselves?</p></li>\n<li><p>If OAI is not allowed: will every submission that used OAI or an OAI-trained checkpoint be removed from the leaderboard, including the many teams that submitted public notebooks built on it? Or is external-data compliance checked only for prize-eligible teams, during winner verification?</p></li>\n<li><p>Can a team that finishes in the medal zone but outside the prize ranks be removed from the private leaderboard, or lose its medal, for having used OAI? Does the answer differ between gold, silver and bronze?</p></li>\n<li><p>Would a ruling against OAI also cover derived artifacts: labels or pseudo-labels produced by OAI-trained models, and models fine-tuned from OAI-trained weights?</p></li>\n<li><p>Could the answer be posted and pinned before the final submission deadline on October 22, so that every team selects its final submissions under the same rule?</p></li>\n</ol>\n<p>Thank you for organizing this competition. A clear answer would help every team, whichever way it goes.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Mobassir",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2034058-kg.jpg",
+    "url": "/mobassir",
+    "tier": "GRANDMASTER",
+    "id": 2034058,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 12,
+    "canUpvote": true,
+    "totalUpvotes": 12
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1061,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Mobassir",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2034058-kg.jpg",
+     "url": "/mobassir",
+     "userName": "mobassir",
+     "tier": "GRANDMASTER",
+     "id": 2034058,
+     "profileUrl": "/mobassir",
+     "performanceTier": "GRANDMASTER",
+     "userId": 2034058,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3538358,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 749145,
+  "name": "OAI and the NIH geo restriction: is OAI allowed under Rule 2.6.b, and what happens to teams and public notebooks that use it?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-14T03:08:45.012773800Z",
+  "totalVotes": 13,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/749145",
+  "totalMessages": 4,
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Mobassir",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2034058-kg.jpg",
+   "url": "/mobassir",
+   "tier": "GRANDMASTER",
+   "id": 2034058,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 4,
+  "firstForumMessageId": 3538358,
+  "id": 749145,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Wildata",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/749145#3538442",
+  "lastCommentPostDate": "2026-10-14T07:36:49.143333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-14T03:08:45.012773800Z",
+  "title": "OAI and the NIH geo restriction: is OAI allowed under Rule 2.6.b, and what happens to teams and public notebooks that use it?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/749145",
+  "votes": 14,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Mobassir",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2034058-kg.jpg",
+    "url": "/mobassir",
+    "userName": "mobassir",
+    "tier": "GRANDMASTER",
+    "id": 2034058,
+    "profileUrl": "/mobassir",
+    "performanceTier": "GRANDMASTER",
+    "userId": 2034058,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

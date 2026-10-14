@@ -1,10 +1,10 @@
 # Knee Abnormality Detection AI Challenge Overview
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733343
-- **Author:** **Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-06 15:54 UTC · ▲97
-- **Topic votes:** 97 · **Comments/replies:** 13 · **Pinned:** yes
-- **Last comment:** 2026-10-07 05:17 UTC by Catrick
-- **Cloned:** 2026-10-09 09:46 UTC (topic id 733343, raw JSON `_raw/733343.json`)
+- **Author:** **Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-06 15:54 UTC · ▲100
+- **Topic votes:** 100 · **Comments/replies:** 17 · **Pinned:** yes
+- **Last comment:** 2026-10-12 05:49 UTC by Abiram Bharathi S.A
+- **Cloned:** 2026-10-14 18:23 UTC (topic id 733343, raw JSON `_raw/733343.json`)
 
 ---
 
@@ -119,7 +119,7 @@ The following annotated examples, drawn from the challenge’s image annotation 
 
 ---
 
-## Comments (13, threaded, oldest first)
+## Comments (17, threaded, oldest first)
 
 ### [1] Mohamed Samir
 
@@ -159,21 +159,27 @@ For the train.csv. It contains only 58 flagged labels. Rest are NaN.
 Those flags do not reflect what is the report. 
 Does the reports are the GT?
 
+#### ↳ [6.1] Ali Yağız CANIGÜROĞLU
+
+**Ali Yağız CANIGÜROĞLU** (@aliyazcanigrolu, Contributor) · 2026-10-10 05:36 UTC · LB rank 1532
+
+Yep. You need to convert them to target features. Methodology is totally up to you, LLM, regex etc...
+
 ### [7] Ragheb haddara
 
-**Ragheb haddara** (@l4r3nn, Contributor) · 2026-08-10 21:41 UTC · ▲4 · LB rank 5386
+**Ragheb haddara** (@l4r3nn, Contributor) · 2026-08-10 21:41 UTC · ▲4 · LB rank 5822
 
 Thanks for the overview! For anyone getting started, the key insight is that this is a multi-label classification problem — each study can have multiple abnormalities present simultaneously. The 12 abnormality categories each need their own probability prediction.
 
 ### [8] Oscar Yáñez Feijóo
 
-**Oscar Yáñez Feijóo** (@oscaryezfeijo, Contributor) · 2026-08-18 09:20 UTC · LB rank 3448
+**Oscar Yáñez Feijóo** (@oscaryezfeijo, Contributor) · 2026-08-18 09:20 UTC · LB rank 3881
 
 Great overview. The combination of multi-label MRI classification, multilingual reports, and clinically adjudicated labels makes this a particularly interesting multimodal challenge. Has anyone found the report text to add a clear advantage over image-only models?
 
 ### [9] cm391
 
-**cm391** (@mccocoful, Master) · 2026-09-03 06:53 UTC · LB rank 3071
+**cm391** (@mccocoful, Master) · 2026-09-03 06:53 UTC · LB rank 3519
 
 Hi @javaduke95 - thank you offering such clear explanation to competitors. can i clarify the below in the label description section: should "the same criteria applied" read medial meniscus rather than lateral meniscus?
 
@@ -183,7 +189,7 @@ Hi @javaduke95 - thank you offering such clear explanation to competitors. can i
 
 ### [10] Marie Victoire IPOUK
 
-**Marie Victoire IPOUK** (@marydata, Contributor) · 2026-09-03 21:34 UTC · LB rank 4088
+**Marie Victoire IPOUK** (@marydata, Contributor) · 2026-09-03 21:34 UTC · LB rank 3995
 
 this details are very important. Thank you
 
@@ -201,6 +207,24 @@ many Thanks !
 
 ### [13] Catrick
 
-**Catrick** (@tachyon34, Contributor) · 2026-10-07 05:17 UTC · LB rank 1441
+**Catrick** (@tachyon34, Contributor) · 2026-10-07 05:17 UTC · LB rank 807
 
 Hi study organizers: can you comment on how to deal with bilateral knee mri's in which both left and right side are within the same studyid? If there is only one label per studyid then how should this be resolved? Just report every positive in either knee? For example if left knee ACL is torn but right knee ACL is normal then how should it be labeled if both studies are within same studyid?
+
+#### ↳ [13.1] Zoltan
+
+**Zoltan** (@zoltanseress, Contributor) · 2026-10-11 08:16 UTC · LB rank 807
+
+Yes, that would be great to know. 7 studies with both knees covered are in the training data, but I wonder if the official test data also contain such studies?
+
+### [14] (unknown)
+
+**(unknown)** · 2026-10-12 05:49 UTC
+
+_(no content — deleted or empty)_
+
+### [15] Abiram Bharathi S.A
+
+**Abiram Bharathi S.A** (@abirambharathisa, Contributor) · 2026-10-12 05:49 UTC · LB rank 4516
+
+When the winner announced

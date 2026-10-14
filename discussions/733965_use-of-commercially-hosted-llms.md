@@ -1,10 +1,10 @@
 # Use of Commercially Hosted LLMs
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965
-- **Author:** **Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-09 09:52 UTC · ▲20
-- **Topic votes:** 20 · **Comments/replies:** 13 · **Pinned:** yes
-- **Last comment:** 2026-09-23 20:31 UTC by Danny Daniel
-- **Cloned:** 2026-10-09 09:46 UTC (topic id 733965, raw JSON `_raw/733965.json`)
+- **Author:** **Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-09 09:52 UTC · ▲26
+- **Topic votes:** 26 · **Comments/replies:** 14 · **Pinned:** yes
+- **Last comment:** 2026-10-13 05:11 UTC by Mahatva Goell
+- **Cloned:** 2026-10-14 18:23 UTC (topic id 733965, raw JSON `_raw/733965.json`)
 
 ---
 
@@ -22,11 +22,11 @@ The Competition Host reserves the right to determine whether a particular servic
 
 ---
 
-## Comments (13, threaded, oldest first)
+## Comments (14, threaded, oldest first)
 
 ### [1] Nicolai Karcher
 
-**Nicolai Karcher** (@pejophylo, Contributor) · 2026-08-09 10:23 UTC · ▲4 · LB rank 784
+**Nicolai Karcher** (@pejophylo, Contributor) · 2026-08-09 10:23 UTC · ▲4 · LB rank 116
 
 "Participants remain responsible for ensuring that any external service complies with all applicable Competition Rules and the service's terms of use, including the requirements for reasonable accessibility and minimal cost.
 
@@ -42,25 +42,25 @@ I understand these restrictions are describing external datasets, so we should p
 
 #### ↳ [1.1] PC Jimmmy
 
-**PC Jimmmy** (@pcjimmmy, Master) · 2026-08-18 15:07 UTC · LB rank 635
+**PC Jimmmy** (@pcjimmmy, Master) · 2026-08-18 15:07 UTC · LB rank 2507
 
 That's a great suggestion - contact the source and ask if they are ok with you using the data in a kaggle competition.  Not sure if they would reply, but also past experience suggest kaggle reluctant to reply to this type of question during the competition.
 
 ### [2] Ragheb haddara
 
-**Ragheb haddara** (@l4r3nn, Contributor) · 2026-08-10 21:45 UTC · ▲1 · LB rank 4224
+**Ragheb haddara** (@l4r3nn, Contributor) · 2026-08-10 21:45 UTC · ▲1 · LB rank 5822
 
 The rules about commercially hosted LLMs are important here. Since knee MRI interpretation requires domain expertise, it's tempting to use an LLM to help with reasoning. But the competition rules likely restrict this to ensure the solutions are based on the image data, not external reasoning. Check the rules page carefully before incorporating any LLM-based features.
 
 ### [3] UGUR OZER
 
-**UGUR OZER** (@aeonairisk, Contributor) · 2026-08-14 21:30 UTC · ▲1 · LB rank 2572
+**UGUR OZER** (@aeonairisk, Contributor) · 2026-08-14 21:30 UTC · ▲3 · LB rank 4089
 
 To make the dataset question above concrete: the Osteoarthritis Initiative (OAI) is free of charge and open to any researcher after a click-through data use agreement, but the agreement limits use to non-commercial research. The same access pattern covers MRNet, fastMRI+ and SKM-TEA, so a ruling on the category would settle it for essentially every public knee-MRI resource. Given the prize money, could the host confirm whether external datasets under research-only agreements are permitted, and if so whether the winners' open-source obligation is affected? Teams need this before committing pretraining work ahead of the entry deadline. Thank you.
 
 #### ↳ [3.1] Po-Hao "Howard" Chen
 
-**Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-27 22:14 UTC · ▲6
+**Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-27 22:14 UTC · ▲8
 
 From the competition’s perspective, use of these datasets would be considered non-commercial; receipt of competition prize money does not, by itself, make their use a commercial sale or commercial exploitation. These datasets would not be excluded by the competition rules solely because their licenses restrict use to non-commercial purposes.
 
@@ -74,7 +74,7 @@ Sorry for the verbose response. I hope it's at least a little helpful...
 
 ### [4] Oscar Yáñez Feijóo
 
-**Oscar Yáñez Feijóo** (@oscaryezfeijo, Contributor) · 2026-08-18 09:26 UTC · LB rank 2335
+**Oscar Yáñez Feijóo** (@oscaryezfeijo, Contributor) · 2026-08-18 09:26 UTC · LB rank 3881
 
 Thanks for clarifying this. Allowing hosted LLMs opens some interesting possibilities for extracting structured labels or features from the reports. Would using LLM-derived labels or embeddings from the report text be fully acceptable as model inputs at both training and inference time? Thanks in advance
 
@@ -96,13 +96,13 @@ Thanks!
 
 #### ↳ [5.1] Po-Hao "Howard" Chen
 
-**Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-27 21:59 UTC · ▲1
+**Po-Hao "Howard" Chen** (@javaduke95, Contributor) · _competition host_ · 2026-08-27 21:59 UTC · ▲2
 
 You can use LLM API, such as those from OpenAI, to read the reports to generate the labels.
 
 ### [6] Sebastian Garcia
 
-**Sebastian Garcia** (@sebgarciavillalobos, Contributor) · 2026-09-05 06:31 UTC
+**Sebastian Garcia** (@sebgarciavillalobos, Contributor) · 2026-09-05 06:31 UTC · LB rank 5066
 
 @javaduke95 Thanks for all the clarifications.
 
@@ -131,3 +131,16 @@ This is a very welcome clarification from the organizers. Allowing the use of co
 Thanks for the clarification! Just one quick question: if LLM-generated labels/embeddings from the reports are allowed, would it also be okay to use an external LLM to extract structured features like findings, laterality, or severity and combine those with MRI features?
 
 And would this be allowed at inference time only if those same features can be generated from the information available at inference?
+
+### [10] Mahatva Goell
+
+**Mahatva Goell** (@mahatvagoell, Contributor) · 2026-10-13 05:11 UTC · LB rank 1314
+
+Thank you for clarifying that research-only restrictions and straightforward click-through access do not, by themselves, exclude an external dataset. Could the host clarify the downstream-checkpoint case under sections 2.5, 2.6 and 2.8?
+
+For publicly released pretrained competition checkpoints trained using OAI under a research-only data-use agreement, does straightforward registration and a click-through agreement satisfy section 2.6 when a downstream team uses only weights, not OAI data? Specifically, may teams use these two public weight datasets for prize-eligible final submissions under section 2.5's upstream-model exception?
+
+https://www.kaggle.com/datasets/nartaa/rsna-knee-publication-swa-weights-20261007
+https://www.kaggle.com/datasets/heliosli/rsna-orthofoundation-fold0-epoch7-20261004
+
+What upstream training code and permissions must a downstream team deliver under section 2.8 when the public inference notebook is Apache-2.0 but its input weights carry separate upstream terms? We understand that a competition ruling cannot waive those upstream terms; we are asking what the competition requires from downstream users. Thank you.

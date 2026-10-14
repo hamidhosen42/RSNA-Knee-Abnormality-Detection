@@ -1,10 +1,10 @@
 # External data behind an institutional data use agreement - does the KneeCoT ruling generalize?
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/737950
-- **Author:** **Ercan Gurvit** (@ercangurvit, Contributor) · _topic author_ · 2026-08-28 10:15 UTC · ▲4 · LB rank 1980
-- **Topic votes:** 4 · **Comments/replies:** 9 · **Pinned:** no
-- **Last comment:** 2026-09-06 03:34 UTC by Fernando Faria
-- **Cloned:** 2026-10-09 09:46 UTC (topic id 737950, raw JSON `_raw/737950.json`)
+- **Author:** **Ercan Gurvit** (@ercangurvit, Contributor) · _topic author_ · 2026-08-28 10:15 UTC · ▲5 · LB rank 3542
+- **Topic votes:** 5 · **Comments/replies:** 10 · **Pinned:** no
+- **Last comment:** 2026-10-09 14:34 UTC
+- **Cloned:** 2026-10-14 18:23 UTC (topic id 737950, raw JSON `_raw/737950.json`)
 
 ---
 
@@ -18,11 +18,11 @@ Asking before investing compute, so the answer is on record for everyone.
 
 ---
 
-## Comments (9, threaded, oldest first)
+## Comments (10, threaded, oldest first)
 
 ### [1] Doublej37
 
-**Doublej37** (@doublej37, Expert) · 2026-09-01 16:59 UTC · LB rank 2019
+**Doublej37** (@doublej37, Expert) · 2026-09-01 16:59 UTC · LB rank 3582
 
 A related edge case I would appreciate clarification on:
 
@@ -38,7 +38,7 @@ A host ruling would be helpful before deciding whether such a model can be inclu
 
 #### ↳ [1.1] PC Jimmmy
 
-**PC Jimmmy** (@pcjimmmy, Master) · 2026-09-01 17:52 UTC · LB rank 636
+**PC Jimmmy** (@pcjimmmy, Master) · 2026-09-01 17:52 UTC · LB rank 2508
 
 Lets take your thought a tiny bit further.  I don't have access to any of the data used to train ChatGPT, Gemini Pro, or Claude.
 For that matter Dino V2 training data is hidden from me.
@@ -49,7 +49,7 @@ Think the answer given in another post - its our job to understand the restricti
 
 #### ↳ [1.2] PC Jimmmy
 
-**PC Jimmmy** (@pcjimmmy, Master) · 2026-09-02 01:28 UTC · LB rank 636
+**PC Jimmmy** (@pcjimmmy, Master) · 2026-09-02 01:28 UTC · LB rank 2508
 
 I myself not worried about this particular rule.  It only comes into play if you are a winner.  
 
@@ -59,7 +59,7 @@ I got  7 day ban from discussion a few months ago for suggesting to someone pret
 
 #### ↳ [1.3] junicus
 
-**junicus** (@junicus, Expert) · 2026-09-03 05:56 UTC · LB rank 530
+**junicus** (@junicus, Expert) · 2026-09-03 05:56 UTC · LB rank 2386
 
 @javaduke95 Could you please provide an official host ruling on comment #3519419? Specifically, is a freely downloadable checkpoint trained on inaccessible private clinical data allowed, and can it satisfy winner-delivery requirements when its repository only declares Apache-2.0 in the README but provides no LICENSE file or checkpoint-specific terms?
 
@@ -67,7 +67,7 @@ We need clarification before using MRI-CORE
 
 ### [2] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-01 18:15 UTC · ▲2 · LB rank 19
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-01 18:15 UTC · ▲2 · LB rank 4
 
 NC licenses are allowed from the host's perspective,[ as mentioned here](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/733965#3517696). ND licenses are a problem. Most external datasets that are relevant here are ND, and training a model on images, then releasing those weights as required by Kaggle winning solutions, would be a derivative and hence prohibited.
 
@@ -75,25 +75,25 @@ MRNet, KneeMRI, etc. all carry a ND license and I would be surpised if they are 
 
 #### ↳ [2.1] Cody_Null
 
-**Cody_Null** (@cody11null, Grandmaster) · 2026-09-01 20:04 UTC · ▲3
+**Cody_Null** (@cody11null, Grandmaster) · 2026-09-01 20:04 UTC · ▲3 · LB rank 100
 
 Yeah I haven’t tried any external data for this reason, would be curious if top teams are using it
 
 ### [3] SpeedSci
 
-**SpeedSci** (@caoyupeng, Expert) · 2026-09-03 12:25 UTC · LB rank 1067
+**SpeedSci** (@caoyupeng, Expert) · 2026-09-03 12:25 UTC · LB rank 1027
 
 Not sure if external data is permitted—but if I do training or label cleaning locally, it's unlikely anyone would be able to tell. Definitely something to think about.
 
 #### ↳ [3.1] Steve421471
 
-**Steve421471** (@steve421471, Contributor) · 2026-09-05 16:03 UTC · ▲1 · LB rank 389
+**Steve421471** (@steve421471, Contributor) · 2026-09-05 16:03 UTC · ▲1 · LB rank 172
 
 Sure, but the competition rules state that your published results have to be replicable. This isn't possible if you don't disclose all of your training data. I suppose it doesn't matter if you're not trying to win, but in that case, why bother?
 
 ### [4] Fernando Faria
 
-**Fernando Faria** (@fernandoadefaria, Contributor) · 2026-09-06 03:34 UTC · LB rank 1307
+**Fernando Faria** (@fernandoadefaria, Contributor) · 2026-09-06 03:34 UTC · LB rank 245
 
 Following up on the KneeCoT ruling above, and on your note in "Use of Commercially Hosted LLMs" distinguishing "straightforward registration or click-through" access from "institution-specific approvals, negotiated written agreements, IRB approval, lengthy credentialing" -- could you confirm which side of that line these fall on:
 
@@ -103,3 +103,9 @@ Following up on the KneeCoT ruling above, and on your note in "Use of Commercial
 - SKM-TEA (Stanford AIMI): same access pattern as MRNet
 
 A ruling per access-pattern (click-through vs. emailed/signed agreement) rather than per dataset would help everyone here, since most of the open questions on this board reduce to the same two patterns. Thanks for the KneeCoT ruling above -- trying to apply it correctly before committing pretraining compute.
+
+### [5] (unknown)
+
+**(unknown)** · 2026-10-09 14:34 UTC
+
+_(no content — deleted or empty)_

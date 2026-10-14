@@ -6,6 +6,30 @@
   "authorUserName": "shals14",
   "comments": [
    {
+    "id": 3538536,
+    "postDate": "2026-10-14T13:20:40.317Z",
+    "rawMarkdown": "Writing on behalf of RSNA, thank you for posing this question, which as you suggest is likely of interest to many competitors. We understand that the practice of using publicly shared weights is common in this and other competitions. As hosts of the competition we do not intend to discourage this practice or exclude competitors using it from receiving awards in the Knee Abnormality Detection Challenge competition. To answer your questions directly, 1) submissions incorporating publicly shared weights are eligible for awards, and 2) challenge participants should include the shared weights and their source datasets in the list of resources included with their submissions.\n\nChristopher Carr\nDirector of Informatics\nRSNA",
+    "content": "<p>Writing on behalf of RSNA, thank you for posing this question, which as you suggest is likely of interest to many competitors. We understand that the practice of using publicly shared weights is common in this and other competitions. As hosts of the competition we do not intend to discourage this practice or exclude competitors using it from receiving awards in the Knee Abnormality Detection Challenge competition. To answer your questions directly, 1) submissions incorporating publicly shared weights are eligible for awards, and 2) challenge participants should include the shared weights and their source datasets in the list of resources included with their submissions.</p>\n<p>Christopher Carr\nDirector of Informatics\nRSNA</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Chris Carr",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/cdcarr",
+     "tier": "CONTRIBUTOR",
+     "id": 1918503,
+     "progressionOptOut": false
+    },
+    "authorType": "HOST",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
     "id": 3531970,
     "postDate": "2026-10-02T23:23:57.887Z",
     "rawMarkdown": "Correction to my comment above: it described distillation into a smaller model of our own. Our submissions do not do that, so here is the accurate case.\n\nOur model is a fine-tuned public checkpoint: the Repair-v1 e12 CoAtNet weights in mattiaangeli/rsna-knee-coatnet-d4-depthzone-swa3-b2 (CC0-1.0; my earlier comment said Apache 2.0, the dataset page states CC0-1.0), which another participant trained on this competition's training data. We fine-tune those weights on the training studies, with soft labels from a public notebook run offline on the training set plus labels extracted from the reports. The submitted notebook runs only our fine-tuned weights, through that dataset's public inference code, adapted to our reduced input.\n\nFor Winner's Obligations (2.8): is it enough to release our fine-tuning code, our weights, and links to the public base weights and inference code? Or is the training code of the base weights also required? We do not have it.\n\nThe licence question for such weights stays as asked in /discussion/739905. Thank you.",
@@ -25,7 +49,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1567,
+    "competitionRanking": 2277,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -64,7 +88,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1567,
+    "competitionRanking": 2277,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -78,6 +102,44 @@
       "profileUrl": "/chrisstevenmueller",
       "performanceTier": "CONTRIBUTOR",
       "userId": 30636212,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536439,
+    "postDate": "2026-10-10T11:49:58.407Z",
+    "rawMarkdown": "Hello competition hosts, could you please clarify a related case involving previously public weights that have since been withdrawn?\n\nThe RSNA Knee Compact v1 dataset (https://www.kaggle.com/datasets/heliosli/rsna-knee-compact-v1) now states that its model files and earlier versions are no longer accessible.\n\nFor participants who downloaded a version while it was publicly available, and assuming the author permits continued use:\n1. May that unchanged version still be used in new submissions, including ensembles, and remain eligible for leaderboard and efficiency prizes?\n2. Does the subsequent withdrawal affect the equal-access requirement?\n3. If such a submission wins, what is required under Section 2.8 for the withdrawn third-party component: the exact checkpoint, its original training code, author permission, or a restored public release?\n\nThis question is separate from the OAI external-data clarification. An explicit ruling would help participants select compliant final submissions. Thank you.",
+    "content": "<p>Hello competition hosts, could you please clarify a related case involving previously public weights that have since been withdrawn?</p>\n<p>The RSNA Knee Compact v1 dataset (<a href=\"https://www.kaggle.com/datasets/heliosli/rsna-knee-compact-v1\" target=\"_blank\">https://www.kaggle.com/datasets/heliosli/rsna-knee-compact-v1</a>) now states that its model files and earlier versions are no longer accessible.</p>\n<p>For participants who downloaded a version while it was publicly available, and assuming the author permits continued use:</p>\n<ol>\n<li>May that unchanged version still be used in new submissions, including ensembles, and remain eligible for leaderboard and efficiency prizes?</li>\n<li>Does the subsequent withdrawal affect the equal-access requirement?</li>\n<li>If such a submission wins, what is required under Section 2.8 for the withdrawn third-party component: the exact checkpoint, its original training code, author permission, or a restored public release?</li>\n</ol>\n<p>This question is separate from the OAI external-data clarification. An explicit ruling would help participants select compliant final submissions. Thank you.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "zhao_hapi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/zhaohapi",
+     "tier": "CONTRIBUTOR",
+     "id": 23384708,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 524,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "zhao_hapi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/zhaohapi",
+      "userName": "zhaohapi",
+      "tier": "CONTRIBUTOR",
+      "id": 23384708,
+      "profileUrl": "/zhaohapi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 23384708,
       "progressionOptOut": false
      },
      "intro": ""
@@ -102,7 +164,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 171,
+    "competitionRanking": 173,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -140,7 +202,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 4475,
+    "competitionRanking": 4493,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -177,11 +239,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
+    "totalVotes": 2,
     "canUpvote": true,
-    "totalUpvotes": 1
+    "totalUpvotes": 3
    },
    "kernelVersion": 0,
-   "competitionRanking": 2959,
+   "competitionRanking": 3420,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -208,8 +271,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-28T13:16:14.267371400Z",
+  "totalVotes": 2,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/744056",
-  "totalMessages": 4,
+  "totalMessages": 6,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -223,18 +287,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 4,
+  "commentCount": 6,
   "firstForumMessageId": 3529543,
   "id": 744056,
-  "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Anh-Vu Mai-Nguyen",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056#3532986",
-  "lastCommentPostDate": "2026-10-05T08:03:22.736666700Z",
+  "lastCommenterType": "HOST",
+  "lastCommenterName": "Chris Carr",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056#3538536",
+  "lastCommentPostDate": "2026-10-14T13:20:40.316666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-28T13:16:14.267371400Z",
   "title": "Prize eligibility when using publicly shared weights trained on the competition data",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/744056",
+  "votes": 2,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Shalini S",

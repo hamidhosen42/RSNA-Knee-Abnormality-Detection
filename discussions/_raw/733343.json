@@ -10,6 +10,46 @@
     "postDate": "2026-08-10T12:14:23.900Z",
     "rawMarkdown": "For the train.csv. It contains only 58 flagged labels. Rest are NaN.\nThose flags do not reflect what is the report. \nDoes the reports are the GT?",
     "content": "<p>For the train.csv. It contains only 58 flagged labels. Rest are NaN.\nThose flags do not reflect what is the report. \nDoes the reports are the GT?</p>",
+    "replies": [
+     {
+      "id": 3536322,
+      "postDate": "2026-10-10T05:36:17.797Z",
+      "rawMarkdown": "Yep. You need to convert them to target features. Methodology is totally up to you, LLM, regex etc...",
+      "content": "<p>Yep. You need to convert them to target features. Methodology is totally up to you, LLM, regex etc…</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Ali Yağız CANIGÜROĞLU",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21951259-kg.jpeg?t=2025-01-19-10-11-53",
+       "url": "/aliyazcanigrolu",
+       "tier": "CONTRIBUTOR",
+       "id": 21951259,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1532,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Ali Yağız CANIGÜROĞLU",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21951259-kg.jpeg?t=2025-01-19-10-11-53",
+        "url": "/aliyazcanigrolu",
+        "userName": "aliyazcanigrolu",
+        "tier": "CONTRIBUTOR",
+        "id": 21951259,
+        "profileUrl": "/aliyazcanigrolu",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 21951259,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
     "parent": {},
     "author": {
      "displayName": "Omar M Kamel",
@@ -65,7 +105,7 @@
      "totalUpvotes": 4
     },
     "kernelVersion": 0,
-    "competitionRanking": 5386,
+    "competitionRanking": 5822,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -85,10 +125,89 @@
     }
    },
    {
+    "id": 3537203,
+    "postDate": "2026-10-12T05:49:54.863Z",
+    "rawMarkdown": "When the winner announced ",
+    "content": "<p>When the winner announced </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Abiram Bharathi S.A",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30242833-kg.jpg?t=2026-05-14-13-32-27",
+     "url": "/abirambharathisa",
+     "tier": "CONTRIBUTOR",
+     "id": 30242833,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 4516,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Abiram Bharathi S.A",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30242833-kg.jpg?t=2026-05-14-13-32-27",
+      "url": "/abirambharathisa",
+      "userName": "abirambharathisa",
+      "tier": "CONTRIBUTOR",
+      "id": 30242833,
+      "profileUrl": "/abirambharathisa",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 30242833,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3533980,
     "postDate": "2026-10-07T05:17:51.717Z",
     "rawMarkdown": "Hi study organizers: can you comment on how to deal with bilateral knee mri's in which both left and right side are within the same studyid? If there is only one label per studyid then how should this be resolved? Just report every positive in either knee? For example if left knee ACL is torn but right knee ACL is normal then how should it be labeled if both studies are within same studyid?",
     "content": "<p>Hi study organizers: can you comment on how to deal with bilateral knee mri's in which both left and right side are within the same studyid? If there is only one label per studyid then how should this be resolved? Just report every positive in either knee? For example if left knee ACL is torn but right knee ACL is normal then how should it be labeled if both studies are within same studyid?</p>",
+    "replies": [
+     {
+      "id": 3536783,
+      "postDate": "2026-10-11T08:16:36.580Z",
+      "rawMarkdown": "Yes, that would be great to know. 7 studies with both knees covered are in the training data, but I wonder if the official test data also contain such studies?",
+      "content": "<p>Yes, that would be great to know. 7 studies with both knees covered are in the training data, but I wonder if the official test data also contain such studies?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Zoltan",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36480253-kg.png?t=2026-09-17-19-05-15",
+       "url": "/zoltanseress",
+       "tier": "CONTRIBUTOR",
+       "id": 36480253,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 807,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Catrick",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36041926-kg.jpg?t=2026-09-17-06-52-56",
+        "url": "/tachyon34",
+        "userName": "tachyon34",
+        "tier": "CONTRIBUTOR",
+        "id": 36041926,
+        "profileUrl": "/tachyon34",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 36041926,
+        "progressionOptOut": false
+       },
+       "intro": "We have high quality 400+ hand labeled cases by the two Radiologists on our team, including MSK fellowship trained sports radiologist. Looking for high scoring models chat w/ me- Marinarentals34@gmail.com"
+      }
+     }
+    ],
     "parent": {},
     "author": {
      "displayName": "Catrick",
@@ -103,7 +222,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1441,
+    "competitionRanking": 807,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -120,7 +239,7 @@
       "userId": 36041926,
       "progressionOptOut": false
      },
-     "intro": "Fellowship trained academic MD msk radiologist with 9 years msk practice experience.  Have background knowledge in Python and pytorch/MONAI tensorflow/keras"
+     "intro": "We have high quality 400+ hand labeled cases by the two Radiologists on our team, including MSK fellowship trained sports radiologist. Looking for high scoring models chat w/ me- Marinarentals34@gmail.com"
     }
    },
    {
@@ -142,7 +261,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 4088,
+    "competitionRanking": 3995,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -180,7 +299,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 3071,
+    "competitionRanking": 3519,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -227,7 +346,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 3448,
+    "competitionRanking": 3881,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -341,6 +460,24 @@
      },
      "intro": ""
     }
+   },
+   {
+    "id": 3537202,
+    "postDate": "2026-10-12T05:49:21.363Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    },
    {
     "id": 3523462,
@@ -493,9 +630,9 @@
    },
    "authorType": "HOST",
    "votes": {
-    "totalVotes": 97,
+    "totalVotes": 100,
     "canUpvote": true,
-    "totalUpvotes": 97
+    "totalUpvotes": 100
    },
    "kernelVersion": 0,
    "feedbackTrackingData": {},
@@ -537,6 +674,7 @@
       "sunandanair",
       "hajrupajuu",
       "bunnywasnothere",
+      "arsgorynich",
       "aurelius15",
       "ilaydacan26",
       "jmmmmy",
@@ -545,7 +683,7 @@
       "wasanaf",
       "tabassumtoishe"
      ],
-     "userCount": 40
+     "userCount": 41
     }
    ]
   },
@@ -558,9 +696,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-06T15:54:27.876255800Z",
-  "totalVotes": 97,
+  "totalVotes": 100,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/733343",
-  "totalMessages": 13,
+  "totalMessages": 17,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -574,19 +712,19 @@
    "progressionOptOut": false
   },
   "authorType": "HOST",
-  "commentCount": 13,
+  "commentCount": 17,
   "firstForumMessageId": 3509546,
   "id": 733343,
   "isSticky": true,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Catrick",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343#3533980",
-  "lastCommentPostDate": "2026-10-07T05:17:51.716666700Z",
+  "lastCommenterName": "Abiram Bharathi S.A",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343#3537203",
+  "lastCommentPostDate": "2026-10-12T05:49:54.863333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-06T15:54:27.876255800Z",
   "title": "Knee Abnormality Detection AI Challenge Overview",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/733343",
-  "votes": 97
+  "votes": 100
  }
 }

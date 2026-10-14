@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 23604057,
+  "authorThumbnailName": "23604057-kg.jpg?t=2026-07-27-17-44-18",
+  "authorUserDisplayName": "Ma'moun Yosef",
+  "authorUserName": "mamounhussam",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3537907,
+   "postDate": "2026-10-13T09:28:32.510Z",
+   "rawMarkdown": "I am 0.943, with access to good GPUs, join me if you want.",
+   "content": "<p>I am 0.943, with access to good GPUs, join me if you want.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Ma'moun Yosef",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23604057-kg.jpg?t=2026-07-27-17-44-18",
+    "url": "/mamounhussam",
+    "tier": "CONTRIBUTOR",
+    "id": 23604057,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -3,
+    "canUpvote": true,
+    "totalUpvotes": 2
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 2050,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Ma'moun Yosef",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23604057-kg.jpg?t=2026-07-27-17-44-18",
+     "url": "/mamounhussam",
+     "userName": "mamounhussam",
+     "tier": "CONTRIBUTOR",
+     "id": 23604057,
+     "profileUrl": "/mamounhussam",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 23604057,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3537907,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748858,
+  "name": "Join my Team",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-13T09:28:32.509186100Z",
+  "totalVotes": -3,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748858",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Ma'moun Yosef",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23604057-kg.jpg?t=2026-07-27-17-44-18",
+   "url": "/mamounhussam",
+   "tier": "CONTRIBUTOR",
+   "id": 23604057,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3537907,
+  "id": 748858,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Ma'moun Yosef",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748858#3537907",
+  "lastCommentPostDate": "2026-10-13T09:28:32.510Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-13T09:28:32.509186100Z",
+  "title": "Join my Team",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748858",
+  "votes": -3,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Ma'moun Yosef",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23604057-kg.jpg?t=2026-07-27-17-44-18",
+    "url": "/mamounhussam",
+    "userName": "mamounhussam",
+    "tier": "CONTRIBUTOR",
+    "id": 23604057,
+    "profileUrl": "/mamounhussam",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 23604057,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

@@ -50,7 +50,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 554,
+      "competitionRanking": 1691,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -94,7 +94,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 276,
+        "competitionRanking": 1357,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -108,6 +108,44 @@
           "profileUrl": "/konohayui",
           "performanceTier": "EXPERT",
           "userId": 1113072,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536731,
+        "postDate": "2026-10-11T05:38:16.563Z",
+        "rawMarkdown": "Ok got it, thx.",
+        "content": "<p>Ok got it, thx.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Arun",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6071249-kg.jpg",
+         "url": "/oldwine357",
+         "tier": "EXPERT",
+         "id": 6071249,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1691,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Arun",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6071249-kg.jpg",
+          "url": "/oldwine357",
+          "userName": "oldwine357",
+          "tier": "EXPERT",
+          "id": 6071249,
+          "profileUrl": "/oldwine357",
+          "performanceTier": "EXPERT",
+          "userId": 6071249,
           "progressionOptOut": false
          },
          "intro": ""
@@ -128,7 +166,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 554,
+      "competitionRanking": 1691,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -159,12 +197,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 2,
+     "totalVotes": 3,
      "canUpvote": true,
-     "totalUpvotes": 2
+     "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 276,
+    "competitionRanking": 1357,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -208,7 +246,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 554,
+      "competitionRanking": 1691,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -244,7 +282,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 848,
+    "competitionRanking": 1502,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -288,7 +326,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 554,
+      "competitionRanking": 1691,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -324,7 +362,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 2706,
+    "competitionRanking": 3189,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -374,7 +412,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 2706,
+        "competitionRanking": 3189,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -409,7 +447,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 554,
+      "competitionRanking": 1691,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -445,7 +483,7 @@
      "totalUpvotes": 2
     },
     "kernelVersion": 0,
-    "competitionRanking": 880,
+    "competitionRanking": 100,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -496,8 +534,8 @@
   "firstMessage": {
    "id": 3533409,
    "postDate": "2026-10-06T02:16:20.150Z",
-   "rawMarkdown": "I just joined the competition and started by building an EfficientNet model from scratch, which currently scores 0.85 (local cv). I know the public notebooks are overfitting, so I am planning a few data augmentation experiments next. (for now submitted what ever is publicly available)\n\nBefore moving on to the current meta (like DinoV2), I wanted to ask: is it realistic to hit a 0.93+ score within the next few days using only Kaggle compute resources? Also, I would highly appreciate any tips, tricks, or advice you might have for bridging this gap!\n\n**Update 1:**\n\n| Model | Local | Public |\n| :--- | :---: | :---: |\n| EfficientNet | 0.89 | 0.88 |\n\n<br>\n\n**Update 2:**\n\n| Model | Local | Public |\n| :--- | :---: | :---: |\n| EfficientNet | 0.91 | 0.91 |",
-   "content": "<p>I just joined the competition and started by building an EfficientNet model from scratch, which currently scores 0.85 (local cv). I know the public notebooks are overfitting, so I am planning a few data augmentation experiments next. (for now submitted what ever is publicly available)</p>\n<p>Before moving on to the current meta (like DinoV2), I wanted to ask: is it realistic to hit a 0.93+ score within the next few days using only Kaggle compute resources? Also, I would highly appreciate any tips, tricks, or advice you might have for bridging this gap!</p>\n<p><strong>Update 1:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Model</th>\n<th>Local</th>\n<th>Public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>EfficientNet</td>\n<td>0.89</td>\n<td>0.88</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<p><strong>Update 2:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Model</th>\n<th>Local</th>\n<th>Public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>EfficientNet</td>\n<td>0.91</td>\n<td>0.91</td>\n</tr>\n</tbody>\n</table>",
+   "rawMarkdown": "I just joined the competition and started by building an EfficientNet model from scratch, which currently scores 0.85 (local cv). I know the public notebooks are overfitting, so I am planning a few data augmentation experiments next. (for now submitted what ever is publicly available)\n\nBefore moving on to the current meta (like DinoV2), I wanted to ask: is it realistic to hit a 0.93+ score within the next few days using only Kaggle compute resources? Also, I would highly appreciate any tips, tricks, or advice you might have for bridging this gap!\n\n**Update 1:**\n\n| Model | Local | Public |\n| :--- | :---: | :---: |\n| EfficientNet | 0.89 | 0.88 |\n\n<br>\n\n**Update 2:**\n\n| Model | Local | Public |\n| :--- | :---: | :---: |\n| EfficientNet | 0.91 | 0.91 |\n\n<br>\n\n**Update 3:**\n\n| Model | Local | Public |\n| :--- | :---: | :---: |\n| EfficientNet | 0.92 | 0.92 |",
+   "content": "<p>I just joined the competition and started by building an EfficientNet model from scratch, which currently scores 0.85 (local cv). I know the public notebooks are overfitting, so I am planning a few data augmentation experiments next. (for now submitted what ever is publicly available)</p>\n<p>Before moving on to the current meta (like DinoV2), I wanted to ask: is it realistic to hit a 0.93+ score within the next few days using only Kaggle compute resources? Also, I would highly appreciate any tips, tricks, or advice you might have for bridging this gap!</p>\n<p><strong>Update 1:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Model</th>\n<th>Local</th>\n<th>Public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>EfficientNet</td>\n<td>0.89</td>\n<td>0.88</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<p><strong>Update 2:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Model</th>\n<th>Local</th>\n<th>Public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>EfficientNet</td>\n<td>0.91</td>\n<td>0.91</td>\n</tr>\n</tbody>\n</table>\n<p><br></p>\n<p><strong>Update 3:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Model</th>\n<th>Local</th>\n<th>Public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>EfficientNet</td>\n<td>0.92</td>\n<td>0.92</td>\n</tr>\n</tbody>\n</table>",
    "parent": {},
    "author": {
     "displayName": "Arun",
@@ -509,12 +547,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 6,
+    "totalVotes": 7,
     "canUpvote": true,
-    "totalUpvotes": 6
+    "totalUpvotes": 7
    },
    "kernelVersion": 0,
-   "competitionRanking": 554,
+   "competitionRanking": 1691,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -541,9 +579,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-06T02:16:20.151604Z",
-  "totalVotes": 6,
+  "totalVotes": 7,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/746124",
-  "totalMessages": 13,
+  "totalMessages": 14,
   "authorPerformanceTier": "EXPERT",
   "authorProgressionOptOut": false
  },
@@ -557,19 +595,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 13,
+  "commentCount": 14,
   "firstForumMessageId": 3533409,
   "id": 746124,
-  "lastCommenterType": "COMMENT",
-  "lastCommenterName": "MengYe",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746124#3534752",
-  "lastCommentPostDate": "2026-10-08T00:20:45.066666700Z",
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Arun",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746124#3536731",
+  "lastCommentPostDate": "2026-10-11T05:38:16.563333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-06T02:16:20.151604Z",
   "title": "Can we reach 0.93+ using only Kaggle resources in a few days? Looking for tips!",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/746124",
-  "votes": 6,
+  "votes": 7,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Arun",

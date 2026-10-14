@@ -6,6 +6,85 @@
   "authorUserName": "kalyang17",
   "comments": [
    {
+    "id": 3536885,
+    "postDate": "2026-10-11T13:04:15.253Z",
+    "rawMarkdown": "Kalyan, Adel, Pand: solo here (0.949 public, but that is the public nartaa notebook as is, so no credit claimed), happy to merge before Oct 15.\n\nWhat I bring that is built differently from the public notebooks: my own LLM-read labels for all 4,407 reports (12 findings, three reads, stored as calibrated probabilities), a 5-fold CoAtNet-2 @384 trained on them (0.937 public alone, OOF ready), and careful validation: one change per submission, gold kept out of every choice, bootstrap check on each new blend member. Plus a rented RTX 4090 for extra seeds/folds.\n\nIf one of you is open to it, send me a team request or reply here and I'll accept the same day.",
+    "content": "<p>Kalyan, Adel, Pand: solo here (0.949 public, but that is the public nartaa notebook as is, so no credit claimed), happy to merge before Oct 15.</p>\n<p>What I bring that is built differently from the public notebooks: my own LLM-read labels for all 4,407 reports (12 findings, three reads, stored as calibrated probabilities), a 5-fold CoAtNet-2 <a href=\"/384\" target=\"_blank\">@384</a> trained on them (0.937 public alone, OOF ready), and careful validation: one change per submission, gold kept out of every choice, bootstrap check on each new blend member. Plus a rented RTX 4090 for extra seeds/folds.</p>\n<p>If one of you is open to it, send me a team request or reply here and I'll accept the same day.</p>",
+    "replies": [
+     {
+      "id": 3537274,
+      "postDate": "2026-10-12T09:14:14.410Z",
+      "rawMarkdown": "I am quite familiar with this competition. I have participated in several similar contests before and achieved decent rankings. To secure high scores, simply submitting open‑source solutions or making trivial tweaks to existing open‑source code will not suffice. My only bottleneck at the moment is computing power. If you have available GPU resources, we can team up to boost our performance. I have studied plenty of relevant solutions and developed many promising ideas and algorithms, so we can work jointly to go for the silver medal.",
+      "content": "<p>I am quite familiar with this competition. I have participated in several similar contests before and achieved decent rankings. To secure high scores, simply submitting open‑source solutions or making trivial tweaks to existing open‑source code will not suffice. My only bottleneck at the moment is computing power. If you have available GPU resources, we can team up to boost our performance. I have studied plenty of relevant solutions and developed many promising ideas and algorithms, so we can work jointly to go for the silver medal.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "kkk",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23170828-kg.jpg?t=2026-09-18-05-54-31",
+       "url": "/kangqinyao",
+       "tier": "CONTRIBUTOR",
+       "id": 23170828,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 823,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "kkk",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23170828-kg.jpg?t=2026-09-18-05-54-31",
+        "url": "/kangqinyao",
+        "userName": "kangqinyao",
+        "tier": "CONTRIBUTOR",
+        "id": 23170828,
+        "profileUrl": "/kangqinyao",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 23170828,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Nikita Ageev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1410857-kg.JPG",
+     "url": "/truenikita",
+     "tier": "CONTRIBUTOR",
+     "id": 1410857,
+     "progressionOptOut": true
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -4,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1756,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nikita Ageev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1410857-kg.JPG",
+      "url": "/truenikita",
+      "userName": "truenikita",
+      "tier": "CONTRIBUTOR",
+      "id": 1410857,
+      "profileUrl": "/truenikita",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 1410857,
+      "progressionOptOut": true
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3533084,
     "postDate": "2026-10-05T12:39:46.380Z",
     "rawMarkdown": "Hey  I currently have a 93.4 ViT small pretrained with DINOv2 and a ResNet-50 w RadImageNet at 92.8, and I'm also looking for a team",
@@ -32,7 +111,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 159,
+      "competitionRanking": 111,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "reactions": [
@@ -76,10 +155,11 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 836,
+    "competitionRanking": 1093,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
+     "enabled": true,
      "teamLeader": {
       "displayName": "Adel Zebiche",
       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
@@ -92,7 +172,7 @@
       "userId": 32302810,
       "progressionOptOut": false
      },
-     "intro": ""
+     "intro": "Dinov2 (ViT): 95.2 single fold, 224 px without 2.5D"
     }
    },
    {
@@ -114,7 +194,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 1851,
+    "competitionRanking": 2457,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -136,23 +216,18 @@
    {
     "id": 3531863,
     "postDate": "2026-10-02T18:01:32.797Z",
-    "rawMarkdown": "Hi. I'd be up for merging. Im currently trying to build models from scratch.\nI have full OOF for all training studies, so we could set blend weights offline.\nPublic LB for the latest version 0.945.\nIve got 4060, extra compute is always a good thing.\nDiscord: p.and; officialpand@gmail.com",
-    "content": "<p>Hi. I'd be up for merging. Im currently trying to build models from scratch.\nI have full OOF for all training studies, so we could set blend weights offline.\nPublic LB for the latest version 0.945.\nIve got 4060, extra compute is always a good thing.\nDiscord: p.and; <a href=\"mailto:officialpand@gmail.com\">officialpand@gmail.com</a></p>",
+    "rawMarkdown": "",
     "parent": {},
     "author": {
-     "displayName": "Pand",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
-     "url": "/pand999",
-     "tier": "CONTRIBUTOR",
-     "id": 33249962,
-     "progressionOptOut": false
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
     },
     "authorType": "COMMENT",
-    "votes": {
-     "canUpvote": true
-    },
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
     "kernelVersion": 0,
-    "competitionRanking": 159,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -163,23 +238,7 @@
       ],
       "userCount": 1
      }
-    ],
-    "teamUpInfo": {
-     "enabled": true,
-     "teamLeader": {
-      "displayName": "Pand",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
-      "url": "/pand999",
-      "userName": "pand999",
-      "tier": "CONTRIBUTOR",
-      "id": 33249962,
-      "profileUrl": "/pand999",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 33249962,
-      "progressionOptOut": false
-     },
-     "intro": "lmk what models u've got :) Discord: p.and, officialpand@gmail.com"
-    }
+    ]
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
@@ -199,12 +258,11 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 1,
     "canUpvote": true,
-    "totalUpvotes": 1
+    "totalUpvotes": 2
    },
    "kernelVersion": 0,
-   "competitionRanking": 1862,
+   "competitionRanking": 2466,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -231,9 +289,8 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-02T07:34:46.417338900Z",
-  "totalVotes": 1,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/745091",
-  "totalMessages": 4,
+  "totalMessages": 6,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -247,19 +304,18 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 4,
+  "commentCount": 6,
   "firstForumMessageId": 3531605,
   "id": 745091,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Pand",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745091#3534008",
-  "lastCommentPostDate": "2026-10-07T06:23:28.486666700Z",
+  "lastCommenterName": "kkk",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745091#3537274",
+  "lastCommentPostDate": "2026-10-12T09:14:14.410Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-02T07:34:46.417338900Z",
   "title": "Looking for teammates: 0.942 solo, own 5-fold models + a GPU to share",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745091",
-  "votes": 1,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "KalyanG17",

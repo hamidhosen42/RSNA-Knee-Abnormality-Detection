@@ -1,0 +1,1960 @@
+{
+ "forumTopic": {
+  "authorId": 13672938,
+  "authorThumbnailName": "13672938-kg.jpeg?t=2024-10-11-01-20-59",
+  "authorUserDisplayName": "Cody_Null",
+  "authorUserName": "cody11null",
+  "comments": [
+   {
+    "id": 3537821,
+    "postDate": "2026-10-13T05:41:08.973Z",
+    "rawMarkdown": "It's more disappointing to see thieves copying other people's work and begging for upvotes on notebooks that aren't even theirs. I’ve received many messages like this on LinkedIn. They even make AI-generated posts with exaggerated claims on social media after successfully stealing a notebook GM. Even few of them get a high-paid job by stealing other's work. I wish Kaggle would either shut down the notebook ranking system or spend more time maintaining notebook quality. tbh I think disucssion GM is much more valuable than Notebook GM. I don't know why Kaggle close it.",
+    "content": "<p>It's more disappointing to see thieves copying other people's work and begging for upvotes on notebooks that aren't even theirs. I’ve received many messages like this on LinkedIn. They even make AI-generated posts with exaggerated claims on social media after successfully stealing a notebook GM. Even few of them get a high-paid job by stealing other's work. I wish Kaggle would either shut down the notebook ranking system or spend more time maintaining notebook quality. tbh I think disucssion GM is much more valuable than Notebook GM. I don't know why Kaggle close it.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tom",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2026-10-05-04-22-09",
+     "url": "/tom99763",
+     "tier": "MASTER",
+     "id": 4310004,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 8,
+     "canUpvote": true,
+     "totalUpvotes": 9
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 76,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "tingyi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+      "url": "/chengtingyi",
+      "userName": "chengtingyi",
+      "tier": "CONTRIBUTOR",
+      "id": 8788200,
+      "profileUrl": "/chengtingyi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 8788200,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537703,
+    "postDate": "2026-10-12T23:47:35.677Z",
+    "rawMarkdown": "There's a reason your post has received so many upvotes. You're pointing out the elephant in the room.\n\nI've never really understood the point of sharing notebooks that anyone can simply copy and submit for a high leaderboard score when a competition is nearing its end. I'm aware of Kaggle's restriction on publishing new notebooks during the final week (although there are ways around it), but I don't think a week is always a realistic amount of time for participants to learn from these solutions and meaningfully build on them. It also makes being available and especially active in the final stretch of the competition disproportionately important, potentially outweighing weeks of work leading up to it.\n\nThere's also something a bit shady about the incentives behind it, whichever way you look at it:\n\n(a) If your notebook is overfitted to the public leaderboard (as often happens), you're potentially misleading other participants and sending them down the wrong path.\n\n(b) If it actually generalizes, you've effectively raised the bar overnight. People who've spent weeks developing their own solutions can suddenly find themselves pushed out of medal range by a flood of copied submissions.\n\nSo whether (a) or (b) turns out to be true, some participants end up paying the price. Notebook medals are supposed to reward contributions that help the community learn, yet the current system incentivizes a practice that can come at the expense of that very same community. That seems to defeat the purpose of rewarding notebook sharing in the first place.\n\nI think this gets even worse in the newer agent competitions. If a public agent gets copied over and over, the opponent pool can become saturated with identical strategies. That can encourage people to optimize specifically against whatever happens to be overrepresented on the ladder, rather than developing agents that perform well against a wider range of opponents. Depending on the nature of the competition and how matchmaking works, this can produce some pretty misleading signals about what actually works.\n\nOf course, experienced competitors will generally know how to recognize signs of overfitting and test how well a solution generalizes. But for less experienced participants, this adds a lot of unnecessary noise and confusion.\n\nAnd don't get me wrong. I'm all for discussions, working notes, and people sharing experiments and what they've learned. I've personally learned far more from discussion posts that offered a few hints and opened up directions I hadn't even considered than from notebooks I could simply copy and submit. I just think the current system needs some rethinking if we want a healthier competitive environment. \n\nParadoxically, public notebooks might lower the barrier to entry, but end up raising the bar for newcomers trying to compete with their own work. Making it easier to copy a strong solution doesn't necessarily make a competition more accessible to those who actually want to learn and develop their own solutions. And that's something Kaggle should seriously address.",
+    "content": "<p>There's a reason your post has received so many upvotes. You're pointing out the elephant in the room.</p>\n<p>I've never really understood the point of sharing notebooks that anyone can simply copy and submit for a high leaderboard score when a competition is nearing its end. I'm aware of Kaggle's restriction on publishing new notebooks during the final week (although there are ways around it), but I don't think a week is always a realistic amount of time for participants to learn from these solutions and meaningfully build on them. It also makes being available and especially active in the final stretch of the competition disproportionately important, potentially outweighing weeks of work leading up to it.</p>\n<p>There's also something a bit shady about the incentives behind it, whichever way you look at it:</p>\n<p>(a) If your notebook is overfitted to the public leaderboard (as often happens), you're potentially misleading other participants and sending them down the wrong path.</p>\n<p>(b) If it actually generalizes, you've effectively raised the bar overnight. People who've spent weeks developing their own solutions can suddenly find themselves pushed out of medal range by a flood of copied submissions.</p>\n<p>So whether (a) or (b) turns out to be true, some participants end up paying the price. Notebook medals are supposed to reward contributions that help the community learn, yet the current system incentivizes a practice that can come at the expense of that very same community. That seems to defeat the purpose of rewarding notebook sharing in the first place.</p>\n<p>I think this gets even worse in the newer agent competitions. If a public agent gets copied over and over, the opponent pool can become saturated with identical strategies. That can encourage people to optimize specifically against whatever happens to be overrepresented on the ladder, rather than developing agents that perform well against a wider range of opponents. Depending on the nature of the competition and how matchmaking works, this can produce some pretty misleading signals about what actually works.</p>\n<p>Of course, experienced competitors will generally know how to recognize signs of overfitting and test how well a solution generalizes. But for less experienced participants, this adds a lot of unnecessary noise and confusion.</p>\n<p>And don't get me wrong. I'm all for discussions, working notes, and people sharing experiments and what they've learned. I've personally learned far more from discussion posts that offered a few hints and opened up directions I hadn't even considered than from notebooks I could simply copy and submit. I just think the current system needs some rethinking if we want a healthier competitive environment. </p>\n<p>Paradoxically, public notebooks might lower the barrier to entry, but end up raising the bar for newcomers trying to compete with their own work. Making it easier to copy a strong solution doesn't necessarily make a competition more accessible to those who actually want to learn and develop their own solutions. And that's something Kaggle should seriously address.</p>",
+    "replies": [
+     {
+      "id": 3537969,
+      "postDate": "2026-10-13T13:08:57.717Z",
+      "rawMarkdown": "How about extending the deadline of high-scoring notebook from 1 week to 1 month?",
+      "content": "<p>How about extending the deadline of high-scoring notebook from 1 week to 1 month?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "ForcewithMe",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7285387-kg.jpg",
+       "url": "/forcewithme",
+       "tier": "GRANDMASTER",
+       "id": 7285387,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 4,
+       "canUpvote": true,
+       "totalUpvotes": 4
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 109,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "SURPRISE",
+        "featuredUserNames": [
+         "davidsarrat"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "ForcewithMe",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7285387-kg.jpg",
+        "url": "/forcewithme",
+        "userName": "forcewithme",
+        "tier": "GRANDMASTER",
+        "id": 7285387,
+        "profileUrl": "/forcewithme",
+        "performanceTier": "GRANDMASTER",
+        "userId": 7285387,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "David Sarrat González",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2382941-kg.jpeg?t=2026-06-01-21-41-36",
+     "url": "/davidsarrat",
+     "tier": "EXPERT",
+     "id": 2382941,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 14,
+     "canUpvote": true,
+     "totalUpvotes": 14
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 28,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "SURPRISE",
+      "featuredUserNames": [
+       "cody11null"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "CoolinLai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+      "url": "/coolinlai",
+      "userName": "coolinlai",
+      "tier": "EXPERT",
+      "id": 31887183,
+      "profileUrl": "/coolinlai",
+      "performanceTier": "EXPERT",
+      "userId": 31887183,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537433,
+    "postDate": "2026-10-12T15:06:05.307Z",
+    "rawMarkdown": "Hi @cody11null,\n\nThank you for sharing your concerns. Seeing low-effort notebooks getting rewarded is indeed frustrating and not something that we want either. We have spent considerable time internally discussing this.\n\nUnfortunately, it's been difficult to come up with a policy that's able to discriminate reliably between low-effort copying or blending and something that meaningfully builds off of the ideas of others. You're right too that the system incentivizes marginal (and often meaningless) improvements to the public leaderboard, because the public leaderboard score is often seen (erroneously) as the best judge of the quality of a notebook. You might take consolation in knowing that low-effort ensembles like this usually suffer from optimism bias from overfitting and tend to drop on the private leaderboard (perhaps because the score is just from a lucky random seed, as you pointed out).\n\nWe do though still have a notebook publishing lock (one week, in this competition) before the submission deadline. And please do report verbatim copies with scrubbed attribution so we can act on them; whatever the case, people should be getting credit for their work. Use **Report** on the notebook and link the original.",
+    "content": "<p>Hi <a href=\"/cody11null\" target=\"_blank\">@cody11null</a>,</p>\n<p>Thank you for sharing your concerns. Seeing low-effort notebooks getting rewarded is indeed frustrating and not something that we want either. We have spent considerable time internally discussing this.</p>\n<p>Unfortunately, it's been difficult to come up with a policy that's able to discriminate reliably between low-effort copying or blending and something that meaningfully builds off of the ideas of others. You're right too that the system incentivizes marginal (and often meaningless) improvements to the public leaderboard, because the public leaderboard score is often seen (erroneously) as the best judge of the quality of a notebook. You might take consolation in knowing that low-effort ensembles like this usually suffer from optimism bias from overfitting and tend to drop on the private leaderboard (perhaps because the score is just from a lucky random seed, as you pointed out).</p>\n<p>We do though still have a notebook publishing lock (one week, in this competition) before the submission deadline. And please do report verbatim copies with scrubbed attribution so we can act on them; whatever the case, people should be getting credit for their work. Use <strong>Report</strong> on the notebook and link the original.</p>",
+    "replies": [
+     {
+      "id": 3537456,
+      "postDate": "2026-10-12T15:54:59.967Z",
+      "rawMarkdown": "Respectfully, I believe there are several ways to address this issue, depending on which approach Kaggle would prefer to take. Below are two relatively low-impact ideas that have been brought up in previous discussions and would allow the community to help address the problem natrually.\n\n1. Separating forks from upvotes again - So that notebooks that are quickly copied and submitted aren't so rewarded, only truly thoughtful work would be. \n\n2. Adding a downvote option - So that the community can start punishing these low effort notebooks on our own. \n\nYes, there is an existing delay preventing new public notebooks with 7 days (which to me personally to me seems too tight, though I know there is reasonable debate), but this system doesnt handle updating existing notebooks which was a massive problem in the last several competitions I have been in. Even competitions without that public LB bias like the last santa competition had high placing code being shared less than an hour before competition end.\n\nThese are just a couple of relatively simple ideas, and I'm sure there are trade-offs to consider with each. The underlying problem, however, is that the current incentives can reward the rapid redistribution of existing solutions over original experimentation, meaningful discussion, and learning.\n\nKaggle is home to some of the brightest minds in the world, both among its competitors and its administrators. Surely, we can find a fair solution that preserves open collaboration while better rewarding genuine contributions to the community.\n\nI do also greatly appreciate your response!",
+      "content": "<p>Respectfully, I believe there are several ways to address this issue, depending on which approach Kaggle would prefer to take. Below are two relatively low-impact ideas that have been brought up in previous discussions and would allow the community to help address the problem natrually.</p>\n<ol>\n<li><p>Separating forks from upvotes again - So that notebooks that are quickly copied and submitted aren't so rewarded, only truly thoughtful work would be. </p></li>\n<li><p>Adding a downvote option - So that the community can start punishing these low effort notebooks on our own. </p></li>\n</ol>\n<p>Yes, there is an existing delay preventing new public notebooks with 7 days (which to me personally to me seems too tight, though I know there is reasonable debate), but this system doesnt handle updating existing notebooks which was a massive problem in the last several competitions I have been in. Even competitions without that public LB bias like the last santa competition had high placing code being shared less than an hour before competition end.</p>\n<p>These are just a couple of relatively simple ideas, and I'm sure there are trade-offs to consider with each. The underlying problem, however, is that the current incentives can reward the rapid redistribution of existing solutions over original experimentation, meaningful discussion, and learning.</p>\n<p>Kaggle is home to some of the brightest minds in the world, both among its competitors and its administrators. Surely, we can find a fair solution that preserves open collaboration while better rewarding genuine contributions to the community.</p>\n<p>I do also greatly appreciate your response!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 7,
+       "canUpvote": true,
+       "totalUpvotes": 7
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 100,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "ivanvybornov",
+         "quezaltendes"
+        ],
+        "userCount": 2
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537511,
+      "postDate": "2026-10-12T17:41:33.820Z",
+      "rawMarkdown": "can we link the low effort notebook to the original notebook so the author get the credits (upvotes)?",
+      "content": "<p>can we link the low effort notebook to the original notebook so the author get the credits (upvotes)?</p>",
+      "replies": [
+       {
+        "id": 3537567,
+        "postDate": "2026-10-12T18:58:44.857Z",
+        "rawMarkdown": "What if 1 low effort notebook is linked to another low effort notebook @konohayui?",
+        "content": "<p>What if 1 low effort notebook is linked to another low effort notebook <a href=\"/konohayui\" target=\"_blank\">@konohayui</a>?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Ravi Ramakrishnan",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+         "url": "/ravi20076",
+         "tier": "GRANDMASTER",
+         "id": 8273630,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 830,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "spoutop"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Ravi Ramakrishnan",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+          "url": "/ravi20076",
+          "userName": "ravi20076",
+          "tier": "GRANDMASTER",
+          "id": 8273630,
+          "profileUrl": "/ravi20076",
+          "performanceTier": "GRANDMASTER",
+          "userId": 8273630,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537808,
+        "postDate": "2026-10-13T05:01:11.100Z",
+        "rawMarkdown": "That's recursive low effort notebook. Keep linking enough notebooks and eventually you'll have artificial intelligence. 😂",
+        "content": "<p>That's recursive low effort notebook. Keep linking enough notebooks and eventually you'll have artificial intelligence. 😂</p>",
+        "parent": {},
+        "author": {
+         "displayName": "D Chakraborty",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/spoutop",
+         "tier": "CONTRIBUTOR",
+         "id": 5819143,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 95,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "konohayui"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "D Chakraborty",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/spoutop",
+          "userName": "spoutop",
+          "tier": "CONTRIBUTOR",
+          "id": 5819143,
+          "profileUrl": "/spoutop",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 5819143,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "MengYe",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+       "url": "/konohayui",
+       "tier": "EXPERT",
+       "id": 1113072,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 5,
+       "canUpvote": true,
+       "totalUpvotes": 5
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1334,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "MengYe",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+        "url": "/konohayui",
+        "userName": "konohayui",
+        "tier": "EXPERT",
+        "id": 1113072,
+        "profileUrl": "/konohayui",
+        "performanceTier": "EXPERT",
+        "userId": 1113072,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537573,
+      "postDate": "2026-10-12T19:04:40.200Z",
+      "rawMarkdown": "To be honest, over the past few days, I’ve seen a lot of discussion about fairness around competition data and code analysis in the discussion forums. I’ve even seen people ask why the top 10 can achieve such high scores when they can’t, and suggest that it’s unfair unless those competitors explain how they did it.\nFirst, we’re taking part in a competition. Differences in performance and rankings are part of what a competition is about, especially when prestigious recognition and prize money are at stake.\nSecond, having such an open, supportive culture of sharing within a competitive environment is genuinely rare. Take the notebooks I’ve shared, for example: every new model and every new set of weights has cost me considerable time, effort, and money, including server and compute costs. A large part of why I’m willing to share them for free is that I hope my contributions can help everyone achieve better scores. I also hope to earn recognition for my work and perhaps become a Notebooks Grandmaster one day. Without incentives like these, I can easily imagine the quality of community contributions declining.\nThat’s why I don’t think there’s anything fundamentally wrong with the system the Kaggle team has designed. If you’ve spent a lot of time on other similar forums, you’ll find that Kaggle is one of the best communities out there.\nEven so, after I updated one of my datasets and some people could no longer reproduce the score with one click, I was accused of misleading people to get upvotes.\nOf course, I understand that any community will have different perspectives and opinions. I’ll continue putting in the work to achieve better results and sharing those results publicly with everyone. I wish everyone in the community and the Kaggle team all the best.",
+      "content": "<p>To be honest, over the past few days, I’ve seen a lot of discussion about fairness around competition data and code analysis in the discussion forums. I’ve even seen people ask why the top 10 can achieve such high scores when they can’t, and suggest that it’s unfair unless those competitors explain how they did it.\nFirst, we’re taking part in a competition. Differences in performance and rankings are part of what a competition is about, especially when prestigious recognition and prize money are at stake.\nSecond, having such an open, supportive culture of sharing within a competitive environment is genuinely rare. Take the notebooks I’ve shared, for example: every new model and every new set of weights has cost me considerable time, effort, and money, including server and compute costs. A large part of why I’m willing to share them for free is that I hope my contributions can help everyone achieve better scores. I also hope to earn recognition for my work and perhaps become a Notebooks Grandmaster one day. Without incentives like these, I can easily imagine the quality of community contributions declining.\nThat’s why I don’t think there’s anything fundamentally wrong with the system the Kaggle team has designed. If you’ve spent a lot of time on other similar forums, you’ll find that Kaggle is one of the best communities out there.\nEven so, after I updated one of my datasets and some people could no longer reproduce the score with one click, I was accused of misleading people to get upvotes.\nOf course, I understand that any community will have different perspectives and opinions. I’ll continue putting in the work to achieve better results and sharing those results publicly with everyone. I wish everyone in the community and the Kaggle team all the best.</p>",
+      "replies": [
+       {
+        "id": 3537791,
+        "postDate": "2026-10-13T04:18:05.120Z",
+        "rawMarkdown": "I think intentions matter, and I appreciate the effort you've put into sharing your work. I've noticed quite a few of your comments getting downvoted, and honestly, some of it feels more like piling on than constructive disagreement. People should be able to express different opinions without being discouraged from participating. Thanks for continuing to share your perspective.",
+        "content": "<p>I think intentions matter, and I appreciate the effort you've put into sharing your work. I've noticed quite a few of your comments getting downvoted, and honestly, some of it feels more like piling on than constructive disagreement. People should be able to express different opinions without being discouraged from participating. Thanks for continuing to share your perspective.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Frank S.",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2295729-kg.jpg?t=2026-09-05-01-39-33",
+         "url": "/franksunp",
+         "tier": "MASTER",
+         "id": 2295729,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 277,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Frank S.",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2295729-kg.jpg?t=2026-09-05-01-39-33",
+          "url": "/franksunp",
+          "userName": "franksunp",
+          "tier": "MASTER",
+          "id": 2295729,
+          "profileUrl": "/franksunp",
+          "performanceTier": "MASTER",
+          "userId": 2295729,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537829,
+        "postDate": "2026-10-13T06:00:14.303Z",
+        "rawMarkdown": "I’m genuinely glad to have your support, and I really appreciate it.\n\nTo be honest, I love Kaggle. When it comes to sharing high-quality code publicly, I think the very thing that makes some people appreciate it is also what makes others resent it. As the saying goes, “Where you stand depends on where you sit.”\n\nI feel that many of the downvotes I’ve received have little to do with the original concern raised in this post about hundreds of nearly identical forks that do nothing to improve scores. Instead, the objection seems to be that sharing strong notebooks changes the competitive landscape.\n\nIn fact, I believe more people support what I’m doing than oppose it. Even some people who withhold their upvotes still choose to incorporate my model weights into their own solutions—and some use the weights, then take the extra step of removing their upvote. To me, those actions speak for themselves about whether the work is useful.\n\nThat is why I believe what I’m doing is worthwhile and beneficial to the community. I value the long-standing tradition in computing of sharing work openly so that everyone can grow together, and I think Kaggle does an excellent job of bringing competition and open discussion together to help people improve.\n\nMore broadly, I believe we are witnessing a profound change in what it means to keep technical knowledge and expertise exclusive. At our company, we are deeply involved in both using and developing a range of models and AI agents, and we see this as an era-defining shift.\n\nMathematics, for example, places great importance on attribution and recognition for individual contributions. I understand the value of that, but I also see a tension between protecting individual recognition and accelerating collective progress. Fermat’s famous remark about having a marvelous proof that would not fit in the margin became part of his enduring legacy, while a complete proof of the theorem was not published until centuries later. That is not the same as saying research stood still during that time, but it does remind me how much the value of an idea depends on others being able to examine, understand, and build upon it.\n\nThe recent debate surrounding OpenAI’s announced solution to the Navier–Stokes Millennium Prize Problem raises similar questions for me. The announcement was accompanied by a dispute involving NYU mathematician Tristan Buckmaster over research priority and the circumstances surrounding the work. Buckmaster raised concerns but explicitly stated that he did not know whether his group’s data had been used; OpenAI denied using their unpublished work or relevant user data. \n\nWhatever one’s position on that dispute, I think it illustrates a difficult tension: a development can represent an enormous step forward for collective knowledge while also raising serious concerns about individual recognition and interests.\n\nI believe we are at a turning point. We are beginning to confront the possibility that, once an individual’s ideas and experience become accessible, some of their value as an exclusive advantage may diminish, because AI can quickly build on them—and potentially take them further than the individual could alone. Yet, from the perspective of humanity as a whole, that can be a good thing: people everywhere can use AI to build on those insights and stand on the shoulders of those who came before them.\n\nAs individuals, we may need time to adjust to that change.\n\nRegardless, I believe that high-quality code, knowledge, deep insights, and meaningful results shared openly deserve respect. There is something genuinely admirable about that generosity. Behind those contributions are real investments of time, effort, money, and resources, offered freely so that others can benefit and the community as a whole can improve.\n\nWhat I share is the research and the results I have earned through my own investment and hard work. Everyone is free to use them. I do not believe that sharing them harms anyone’s interests; I see it as a positive contribution to the community.\n\nI also want to thank everyone who downvoted my work for prompting me to think more deeply about all of this. I’ll keep working to do better.",
+        "content": "<p>I’m genuinely glad to have your support, and I really appreciate it.</p>\n<p>To be honest, I love Kaggle. When it comes to sharing high-quality code publicly, I think the very thing that makes some people appreciate it is also what makes others resent it. As the saying goes, “Where you stand depends on where you sit.”</p>\n<p>I feel that many of the downvotes I’ve received have little to do with the original concern raised in this post about hundreds of nearly identical forks that do nothing to improve scores. Instead, the objection seems to be that sharing strong notebooks changes the competitive landscape.</p>\n<p>In fact, I believe more people support what I’m doing than oppose it. Even some people who withhold their upvotes still choose to incorporate my model weights into their own solutions—and some use the weights, then take the extra step of removing their upvote. To me, those actions speak for themselves about whether the work is useful.</p>\n<p>That is why I believe what I’m doing is worthwhile and beneficial to the community. I value the long-standing tradition in computing of sharing work openly so that everyone can grow together, and I think Kaggle does an excellent job of bringing competition and open discussion together to help people improve.</p>\n<p>More broadly, I believe we are witnessing a profound change in what it means to keep technical knowledge and expertise exclusive. At our company, we are deeply involved in both using and developing a range of models and AI agents, and we see this as an era-defining shift.</p>\n<p>Mathematics, for example, places great importance on attribution and recognition for individual contributions. I understand the value of that, but I also see a tension between protecting individual recognition and accelerating collective progress. Fermat’s famous remark about having a marvelous proof that would not fit in the margin became part of his enduring legacy, while a complete proof of the theorem was not published until centuries later. That is not the same as saying research stood still during that time, but it does remind me how much the value of an idea depends on others being able to examine, understand, and build upon it.</p>\n<p>The recent debate surrounding OpenAI’s announced solution to the Navier–Stokes Millennium Prize Problem raises similar questions for me. The announcement was accompanied by a dispute involving NYU mathematician Tristan Buckmaster over research priority and the circumstances surrounding the work. Buckmaster raised concerns but explicitly stated that he did not know whether his group’s data had been used; OpenAI denied using their unpublished work or relevant user data. </p>\n<p>Whatever one’s position on that dispute, I think it illustrates a difficult tension: a development can represent an enormous step forward for collective knowledge while also raising serious concerns about individual recognition and interests.</p>\n<p>I believe we are at a turning point. We are beginning to confront the possibility that, once an individual’s ideas and experience become accessible, some of their value as an exclusive advantage may diminish, because AI can quickly build on them—and potentially take them further than the individual could alone. Yet, from the perspective of humanity as a whole, that can be a good thing: people everywhere can use AI to build on those insights and stand on the shoulders of those who came before them.</p>\n<p>As individuals, we may need time to adjust to that change.</p>\n<p>Regardless, I believe that high-quality code, knowledge, deep insights, and meaningful results shared openly deserve respect. There is something genuinely admirable about that generosity. Behind those contributions are real investments of time, effort, money, and resources, offered freely so that others can benefit and the community as a whole can improve.</p>\n<p>What I share is the research and the results I have earned through my own investment and hard work. Everyone is free to use them. I do not believe that sharing them harms anyone’s interests; I see it as a positive contribution to the community.</p>\n<p>I also want to thank everyone who downvoted my work for prompting me to think more deeply about all of this. I’ll keep working to do better.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Heliosli",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+         "url": "/heliosli",
+         "tier": "EXPERT",
+         "id": 31141478,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -6,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 234,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "spoutop"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Heliosli",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+          "url": "/heliosli",
+          "userName": "heliosli",
+          "tier": "EXPERT",
+          "id": 31141478,
+          "profileUrl": "/heliosli",
+          "performanceTier": "EXPERT",
+          "userId": 31141478,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537850,
+        "postDate": "2026-10-13T06:49:20.127Z",
+        "rawMarkdown": "From copypaste Kaggle blends to Fermat, Navier Stokes and the future of humanity. Now THAT is a SOTA ensemble of unrelated ideas. 😂",
+        "content": "<p>From copypaste Kaggle blends to Fermat, Navier Stokes and the future of humanity. Now THAT is a SOTA ensemble of unrelated ideas. 😂</p>",
+        "parent": {},
+        "author": {
+         "displayName": "D Chakraborty",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/spoutop",
+         "tier": "CONTRIBUTOR",
+         "id": 5819143,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 95,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "D Chakraborty",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/spoutop",
+          "userName": "spoutop",
+          "tier": "CONTRIBUTOR",
+          "id": 5819143,
+          "profileUrl": "/spoutop",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 5819143,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537927,
+        "postDate": "2026-10-13T10:58:51.937Z",
+        "rawMarkdown": "I say this without any animosity, and for the record, I haven't downvoted you.\n\nBut I believe a lot of the downvotes come from people who see this as mere notebook medal farming, regardless of how you frame it. I'm not questioning the time, effort, or money you've invested in developing your models, but that doesn't automatically make publishing low-effort notebooks a meaningful contribution to the community, especially when doing so can undermine the work of people developing their own solutions.\n\nI also don't think your argument about people using your weights while downvoting you really holds up. Just because you've raised the competitive bar and people have to adapt to the new circumstances doesn't mean they agree with what you've done in the first place. Using your weights to remain competitive is not necessarily an endorsement of the practice. You can disagree with something and still have to deal with its consequences.\n\nSo I think the downvotes you're receiving are genuine feedback, and the overall balance of reactions here seems pretty clearly negative. Ultimately, the current system allows and rewards this kind of notebook sharing, so there's nothing stopping you from continuing. But dismissing that criticism while insisting that more people support you than oppose you seems like a convenient way to disregard that feedback altogether.",
+        "content": "<p>I say this without any animosity, and for the record, I haven't downvoted you.</p>\n<p>But I believe a lot of the downvotes come from people who see this as mere notebook medal farming, regardless of how you frame it. I'm not questioning the time, effort, or money you've invested in developing your models, but that doesn't automatically make publishing low-effort notebooks a meaningful contribution to the community, especially when doing so can undermine the work of people developing their own solutions.</p>\n<p>I also don't think your argument about people using your weights while downvoting you really holds up. Just because you've raised the competitive bar and people have to adapt to the new circumstances doesn't mean they agree with what you've done in the first place. Using your weights to remain competitive is not necessarily an endorsement of the practice. You can disagree with something and still have to deal with its consequences.</p>\n<p>So I think the downvotes you're receiving are genuine feedback, and the overall balance of reactions here seems pretty clearly negative. Ultimately, the current system allows and rewards this kind of notebook sharing, so there's nothing stopping you from continuing. But dismissing that criticism while insisting that more people support you than oppose you seems like a convenient way to disregard that feedback altogether.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "David Sarrat González",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2382941-kg.jpeg?t=2026-06-01-21-41-36",
+         "url": "/davidsarrat",
+         "tier": "EXPERT",
+         "id": 2382941,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 4,
+         "canUpvote": true,
+         "totalUpvotes": 4
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 28,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "CoolinLai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+          "url": "/coolinlai",
+          "userName": "coolinlai",
+          "tier": "EXPERT",
+          "id": 31887183,
+          "profileUrl": "/coolinlai",
+          "performanceTier": "EXPERT",
+          "userId": 31887183,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537940,
+        "postDate": "2026-10-13T11:56:20.567Z",
+        "rawMarkdown": "This is a fair and thoughtful perspective, and I understand the different viewpoints and lines of reasoning involved.\n\nIf we’re talking strictly about competitive fairness, I’ve also seen people argue that absolute fairness would require everyone to use the same data, the same GPU models for the same amount of time, and even the same tools. That would make it more like China’s gaokao—a standardized national university entrance exam. But clearly, that is not the kind of platform Kaggle is.\n\nI think this discussion ultimately comes from different understandings of what Kaggle is supposed to be, with people approaching it from many different positions and perspectives. Some value the medals and prize money; others value the open exchange of ideas and the opportunity to improve together. As Kaggle describes itself, it is “the world’s AI proving ground.” We are, first and foremost, a community that brings together some of the world’s best machine learning engineers and data scientists. Kaggle also hosts challenges from companies and organizations that address real-world problems and research questions. To me, our purpose goes beyond leaderboard scores: it is to develop better solutions to the challenging, unresolved problems facing humanity.\n\nFirst, the people using my notebooks are not coming into this thread to vote on these comments; they are showing their support by upvoting the notebooks themselves. Second, the downvotes here reflect a mixture of different objections and frustrations, including both complaints about low-quality notebooks that simply copy high-scoring weights and a desire for an absolutely level competitive playing field.\n\nMy concern is that people seeking an absolutely level playing field are using the frustration behind cody_null’s criticism of nearly identical forks to justify downvoting and attacking my work. This conflates two fundamentally different things: flooding the community with repetitive copies that bury genuinely useful notebooks, and sharing newly trained models and weights that help everyone improve.\n\nBut we are an open community. Computing would not be where it is today without the open-source ethos and platforms like GitHub. You also acknowledge the effort I have put into helping raise the community’s overall level.\nWhat I strongly disagree with is the idea that sharing my work undermines other developers’ contributions. The models and weights I publish are ones I have trained myself. Where my work incorporates other people’s designs, those come from people who, like me, are happy to share their models publicly because doing so helps others. I have not stolen anyone’s private model weights.\n\nEveryone can use the methods I share to pursue a better score. So I do not agree that this raises barriers for other competitors. On the contrary, it helps us develop stronger solutions for competition hosts, allowing them to put those solutions into practice and better address the real-world challenges our society faces. Our ability as a species to keep advancing is rooted in what we inherit from those before us, both genetically and through knowledge.\n\nIn other words, this is not a problem with Kaggle’s rules; it is a question of whether we are willing to look at the bigger picture. I am committed to helping everyone improve together. And even if winning or losing is someone’s only concern, whether open-source reference code is available is actually one of the least significant factors.\n\nCompetitive outcomes are often shaped by unequal advantages across many dimensions. For example, your background at ISGlobal gives you specialized insight into this competition and a competitive advantage that has helped you reach 0.962. Even if I open-sourced a solution scoring 0.961, that would not erase your advantage.\n\nTo sum up, flooding the community with low-quality notebooks that merely copy high-scoring weights, without even citing or crediting the original work, does damage the quality of discussion. But that has nothing to do with my reason for sharing: helping everyone improve together and build better solutions.\n\nThe sacrifices I make by sharing are my own: the time, effort, and money I have invested, along with the competitive advantage I could otherwise have kept to myself in pursuit of a higher rank or a medal. Sharing that work helps create better solutions and serves the community’s interests. That is why I believe I am doing the right thing, and why I do not think I should be targeted in a pile-on that lumps all these different grievances together.",
+        "content": "<p>This is a fair and thoughtful perspective, and I understand the different viewpoints and lines of reasoning involved.</p>\n<p>If we’re talking strictly about competitive fairness, I’ve also seen people argue that absolute fairness would require everyone to use the same data, the same GPU models for the same amount of time, and even the same tools. That would make it more like China’s gaokao—a standardized national university entrance exam. But clearly, that is not the kind of platform Kaggle is.</p>\n<p>I think this discussion ultimately comes from different understandings of what Kaggle is supposed to be, with people approaching it from many different positions and perspectives. Some value the medals and prize money; others value the open exchange of ideas and the opportunity to improve together. As Kaggle describes itself, it is “the world’s AI proving ground.” We are, first and foremost, a community that brings together some of the world’s best machine learning engineers and data scientists. Kaggle also hosts challenges from companies and organizations that address real-world problems and research questions. To me, our purpose goes beyond leaderboard scores: it is to develop better solutions to the challenging, unresolved problems facing humanity.</p>\n<p>First, the people using my notebooks are not coming into this thread to vote on these comments; they are showing their support by upvoting the notebooks themselves. Second, the downvotes here reflect a mixture of different objections and frustrations, including both complaints about low-quality notebooks that simply copy high-scoring weights and a desire for an absolutely level competitive playing field.</p>\n<p>My concern is that people seeking an absolutely level playing field are using the frustration behind cody_null’s criticism of nearly identical forks to justify downvoting and attacking my work. This conflates two fundamentally different things: flooding the community with repetitive copies that bury genuinely useful notebooks, and sharing newly trained models and weights that help everyone improve.</p>\n<p>But we are an open community. Computing would not be where it is today without the open-source ethos and platforms like GitHub. You also acknowledge the effort I have put into helping raise the community’s overall level.\nWhat I strongly disagree with is the idea that sharing my work undermines other developers’ contributions. The models and weights I publish are ones I have trained myself. Where my work incorporates other people’s designs, those come from people who, like me, are happy to share their models publicly because doing so helps others. I have not stolen anyone’s private model weights.</p>\n<p>Everyone can use the methods I share to pursue a better score. So I do not agree that this raises barriers for other competitors. On the contrary, it helps us develop stronger solutions for competition hosts, allowing them to put those solutions into practice and better address the real-world challenges our society faces. Our ability as a species to keep advancing is rooted in what we inherit from those before us, both genetically and through knowledge.</p>\n<p>In other words, this is not a problem with Kaggle’s rules; it is a question of whether we are willing to look at the bigger picture. I am committed to helping everyone improve together. And even if winning or losing is someone’s only concern, whether open-source reference code is available is actually one of the least significant factors.</p>\n<p>Competitive outcomes are often shaped by unequal advantages across many dimensions. For example, your background at ISGlobal gives you specialized insight into this competition and a competitive advantage that has helped you reach 0.962. Even if I open-sourced a solution scoring 0.961, that would not erase your advantage.</p>\n<p>To sum up, flooding the community with low-quality notebooks that merely copy high-scoring weights, without even citing or crediting the original work, does damage the quality of discussion. But that has nothing to do with my reason for sharing: helping everyone improve together and build better solutions.</p>\n<p>The sacrifices I make by sharing are my own: the time, effort, and money I have invested, along with the competitive advantage I could otherwise have kept to myself in pursuit of a higher rank or a medal. Sharing that work helps create better solutions and serves the community’s interests. That is why I believe I am doing the right thing, and why I do not think I should be targeted in a pile-on that lumps all these different grievances together.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Heliosli",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+         "url": "/heliosli",
+         "tier": "EXPERT",
+         "id": 31141478,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": -6,
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 234,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "heliosli"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Heliosli",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+          "url": "/heliosli",
+          "userName": "heliosli",
+          "tier": "EXPERT",
+          "id": 31141478,
+          "profileUrl": "/heliosli",
+          "performanceTier": "EXPERT",
+          "userId": 31141478,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537971,
+        "postDate": "2026-10-13T13:10:50.083Z",
+        "rawMarkdown": "Wondering if anyone is actually reading through the LLM generated wall of text or summarizing in <30 words?",
+        "content": "<p>Wondering if anyone is actually reading through the LLM generated wall of text or summarizing in &lt;30 words?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "D Chakraborty",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/spoutop",
+         "tier": "CONTRIBUTOR",
+         "id": 5819143,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 95,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "welshonionman"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "D Chakraborty",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/spoutop",
+          "userName": "spoutop",
+          "tier": "CONTRIBUTOR",
+          "id": 5819143,
+          "profileUrl": "/spoutop",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 5819143,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537985,
+        "postDate": "2026-10-13T13:40:52.800Z",
+        "rawMarkdown": "If your ideals are really that noble, you should have no grounds to complain if someone tells you to delete the notebook you used to earn a gold medal in this competition and give up the medal to prove your commitment to those ideals.\n\nI didn’t read the entire post because it was too long, but personally, I find it simply frustrating when high-scoring notebooks are released close to the competition deadline, as it makes all the effort people put in up to that point feel meaningless.",
+        "content": "<p>If your ideals are really that noble, you should have no grounds to complain if someone tells you to delete the notebook you used to earn a gold medal in this competition and give up the medal to prove your commitment to those ideals.</p>\n<p>I didn’t read the entire post because it was too long, but personally, I find it simply frustrating when high-scoring notebooks are released close to the competition deadline, as it makes all the effort people put in up to that point feel meaningless.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Bull",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4472591-kg.jpg",
+         "url": "/welshonionman",
+         "tier": "EXPERT",
+         "id": 4472591,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 115,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Bull",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4472591-kg.jpg",
+          "url": "/welshonionman",
+          "userName": "welshonionman",
+          "tier": "EXPERT",
+          "id": 4472591,
+          "profileUrl": "/welshonionman",
+          "performanceTier": "EXPERT",
+          "userId": 4472591,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537989,
+        "postDate": "2026-10-13T13:47:06.783Z",
+        "rawMarkdown": "@spoutop Bro's AI went full T-800 and even tracked down my workplace. Starting to feel like I'm getting the Sarah Connor treatment here. 💀",
+        "content": "<p><a href=\"/spoutop\" target=\"_blank\">@spoutop</a> Bro's AI went full T-800 and even tracked down my workplace. Starting to feel like I'm getting the Sarah Connor treatment here. 💀</p>",
+        "parent": {},
+        "author": {
+         "displayName": "David Sarrat González",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2382941-kg.jpeg?t=2026-06-01-21-41-36",
+         "url": "/davidsarrat",
+         "tier": "EXPERT",
+         "id": 2382941,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 28,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "tuckerarrants",
+           "spoutop"
+          ],
+          "userCount": 2
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "CoolinLai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+          "url": "/coolinlai",
+          "userName": "coolinlai",
+          "tier": "EXPERT",
+          "id": 31887183,
+          "profileUrl": "/coolinlai",
+          "performanceTier": "EXPERT",
+          "userId": 31887183,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537990,
+        "postDate": "2026-10-13T13:53:26.483Z",
+        "rawMarkdown": "@davidsarrat DO NOT UNDERESTIMATE HIM! IT'S 🚨🤯🔥 HYPER MEGA ULTRA-BLEND 🚨🤯🔥",
+        "content": "<p><a href=\"/davidsarrat\" target=\"_blank\">@davidsarrat</a> DO NOT UNDERESTIMATE HIM! IT'S 🚨🤯🔥 HYPER MEGA ULTRA-BLEND 🚨🤯🔥</p>",
+        "parent": {},
+        "author": {
+         "displayName": "D Chakraborty",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/spoutop",
+         "tier": "CONTRIBUTOR",
+         "id": 5819143,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 95,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "davidsarrat",
+           "mikelou1"
+          ],
+          "userCount": 2
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "D Chakraborty",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/spoutop",
+          "userName": "spoutop",
+          "tier": "CONTRIBUTOR",
+          "id": 5819143,
+          "profileUrl": "/spoutop",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 5819143,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3537994,
+        "postDate": "2026-10-13T14:11:06.983Z",
+        "rawMarkdown": "IF IT CAN BLEND, IT CAN BEND. 😭\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2382941%2F25a84e2a5501c5c2a73c82e442ad815b%2F8169.gif?generation=1791900307280237&alt=media)",
+        "content": "<p>IF IT CAN BLEND, IT CAN BEND. 😭\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2382941%2F25a84e2a5501c5c2a73c82e442ad815b%2F8169.gif?generation=1791900307280237&amp;alt=media\" alt=\"\"></p>",
+        "parent": {},
+        "author": {
+         "displayName": "David Sarrat González",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2382941-kg.jpeg?t=2026-06-01-21-41-36",
+         "url": "/davidsarrat",
+         "tier": "EXPERT",
+         "id": 2382941,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 28,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "FUNNY",
+          "featuredUserNames": [
+           "spoutop"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "CoolinLai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+          "url": "/coolinlai",
+          "userName": "coolinlai",
+          "tier": "EXPERT",
+          "id": 31887183,
+          "profileUrl": "/coolinlai",
+          "performanceTier": "EXPERT",
+          "userId": 31887183,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3538370,
+        "postDate": "2026-10-14T03:49:14.533Z",
+        "rawMarkdown": "",
+        "parent": {},
+        "author": {
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/"
+        },
+        "authorType": "COMMENT",
+        "votes": {},
+        "canDelete": true,
+        "isUserAuthor": true,
+        "isDeleted": true,
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true
+       },
+       {
+        "id": 3538550,
+        "postDate": "2026-10-14T13:41:59.967Z",
+        "rawMarkdown": "Not sure if YOU actually wrote this, or if this was a crafted AI response.\nI did read the wall of text & from what I can decipher, the overall attitude & tone here is very negative.\n\nThe core problem is people like myself, spend months working on a solution, understanding the problem & designing the solution for it. Then someone comes in, snags a bunch of datasets that were already public, makes a decent enough score & releases it for the 4,000 AI in the competition taking away from the people who put time & effort into their work.\n\nI have personally been in RSNA since the 2-3 week, never saw your name in one discussion, one code post, not a single model not a word so you appeared from thin air towards the end of the competition.\n\nAs someone with time & effort into this competition, its extremely obnoxious to watch people releasing code end of comp for quick easy medals when some of us EARNED them.\n\nBefore you \"Craft\" another wall of text written by AI, maybe put some of your own actual thoughts & reasoning into your reply.\n\nRespectfully, someone who spent months working on a solution.",
+        "content": "<p>Not sure if YOU actually wrote this, or if this was a crafted AI response.\nI did read the wall of text &amp; from what I can decipher, the overall attitude &amp; tone here is very negative.</p>\n<p>The core problem is people like myself, spend months working on a solution, understanding the problem &amp; designing the solution for it. Then someone comes in, snags a bunch of datasets that were already public, makes a decent enough score &amp; releases it for the 4,000 AI in the competition taking away from the people who put time &amp; effort into their work.</p>\n<p>I have personally been in RSNA since the 2-3 week, never saw your name in one discussion, one code post, not a single model not a word so you appeared from thin air towards the end of the competition.</p>\n<p>As someone with time &amp; effort into this competition, its extremely obnoxious to watch people releasing code end of comp for quick easy medals when some of us EARNED them.</p>\n<p>Before you \"Craft\" another wall of text written by AI, maybe put some of your own actual thoughts &amp; reasoning into your reply.</p>\n<p>Respectfully, someone who spent months working on a solution.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Dread Development",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+         "url": "/dreaddevelopment",
+         "tier": "EXPERT",
+         "id": 35987882,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1465,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Dread Development",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+          "url": "/dreaddevelopment",
+          "userName": "dreaddevelopment",
+          "tier": "EXPERT",
+          "id": 35987882,
+          "profileUrl": "/dreaddevelopment",
+          "performanceTier": "EXPERT",
+          "userId": 35987882,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Heliosli",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+       "url": "/heliosli",
+       "tier": "EXPERT",
+       "id": 31141478,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": -11,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 234,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "reactions": [
+       {
+        "emoji": "THANK_YOU",
+        "featuredUserNames": [
+         "franksunp",
+         "intoxicatinglips",
+         "biancy12",
+         "zhuowamg",
+         "heliosli"
+        ],
+        "userCount": 5
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Heliosli",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31141478-kg.png?t=2026-09-06-22-29-39",
+        "url": "/heliosli",
+        "userName": "heliosli",
+        "tier": "EXPERT",
+        "id": 31141478,
+        "profileUrl": "/heliosli",
+        "performanceTier": "EXPERT",
+        "userId": 31141478,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537930,
+      "postDate": "2026-10-13T11:19:59.847Z",
+      "rawMarkdown": "hello there good sir\n\nThe notebook publishing lock will indeed be in effect in 3 days. However, the lock for updating notebooks is in fact never implemented. I saw this in kaggriculture and to be frank I feel it was a main reason why I dropped several places on the leaderboard. Literally 2.5 hours before the competition ended there were new things on the notebook arena that when detected and forked gave a #600-#700 rank \n\nWhile yes that is not silver or gold, I feel it really de-values the bronze medal that so many of us have put insane effort to achieve\n\nThank you.",
+      "content": "<p>hello there good sir</p>\n<p>The notebook publishing lock will indeed be in effect in 3 days. However, the lock for updating notebooks is in fact never implemented. I saw this in kaggriculture and to be frank I feel it was a main reason why I dropped several places on the leaderboard. Literally 2.5 hours before the competition ended there were new things on the notebook arena that when detected and forked gave a #600-#700 rank </p>\n<p>While yes that is not silver or gold, I feel it really de-values the bronze medal that so many of us have put insane effort to achieve</p>\n<p>Thank you.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Raagav Anand",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/raagavanand",
+       "tier": "CONTRIBUTOR",
+       "id": 21025927,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 3,
+       "canUpvote": true,
+       "totalUpvotes": 3
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 677,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Raagav Anand",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/raagavanand",
+        "userName": "raagavanand",
+        "tier": "CONTRIBUTOR",
+        "id": 21025927,
+        "profileUrl": "/raagavanand",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 21025927,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Ryan Holbrook",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2003505-kg.jpg",
+     "url": "/ryanholbrook",
+     "tier": "STAFF",
+     "id": 2003505,
+     "progressionOptOut": false
+    },
+    "authorType": "ADMIN",
+    "votes": {
+     "totalVotes": 11,
+     "canUpvote": true,
+     "totalUpvotes": 12
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "nartaa",
+       "tomokihirose",
+       "cody11null",
+       "k256net"
+      ],
+      "userCount": 4
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ryan Holbrook",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2003505-kg.jpg",
+      "url": "/ryanholbrook",
+      "userName": "ryanholbrook",
+      "tier": "STAFF",
+      "id": 2003505,
+      "profileUrl": "/ryanholbrook",
+      "performanceTier": "STAFF",
+      "userId": 2003505,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536805,
+    "postDate": "2026-10-11T09:25:02.810Z",
+    "rawMarkdown": "I think a better approach would be to freeze all notebook achievements as of a certain date. All achievements earned before that cutoff would be retained—medals, titles, the fancy GM profile frames—but no new notebook achievements would be added after that date. This change should be implemented in a way that makes players who have genuinely contributed to Kaggle's open-source ecosystem feel respected.\nFive years ago, earning a Notebook GM title carried real weight, but today it's worth re-examining. Kaggle has already removed the discussion achievements and titles, yet nowadays, some widely recognized contributions—insightful comments, healthy commentary that guides the direction of competitions—are actually more valuable than AI-generated code, or code that farms scores and undermines leaderboard fairness.",
+    "content": "<p>I think a better approach would be to freeze all notebook achievements as of a certain date. All achievements earned before that cutoff would be retained—medals, titles, the fancy GM profile frames—but no new notebook achievements would be added after that date. This change should be implemented in a way that makes players who have genuinely contributed to Kaggle's open-source ecosystem feel respected.\nFive years ago, earning a Notebook GM title carried real weight, but today it's worth re-examining. Kaggle has already removed the discussion achievements and titles, yet nowadays, some widely recognized contributions—insightful comments, healthy commentary that guides the direction of competitions—are actually more valuable than AI-generated code, or code that farms scores and undermines leaderboard fairness.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "ForcewithMe",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7285387-kg.jpg",
+     "url": "/forcewithme",
+     "tier": "GRANDMASTER",
+     "id": 7285387,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 14,
+     "canUpvote": true,
+     "totalUpvotes": 16
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 109,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "ForcewithMe",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/7285387-kg.jpg",
+      "url": "/forcewithme",
+      "userName": "forcewithme",
+      "tier": "GRANDMASTER",
+      "id": 7285387,
+      "profileUrl": "/forcewithme",
+      "performanceTier": "GRANDMASTER",
+      "userId": 7285387,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536908,
+    "postDate": "2026-10-11T13:44:51.900Z",
+    "rawMarkdown": "dw i'll be releasing '🚨🤯🔥 [ORIGINAL] NOVEL HYPER MEGA ULTRA-BLEND (DUAL GRANDMASTER SOTA BLEND) MULTI-EXPERT QUANTUM  NEURO SYNTHESIS ⭐⭐⭐⭐⭐✅✅👍' tomorrow that (hopefully) scores 0.956",
+    "content": "<p>dw i'll be releasing '🚨🤯🔥 [ORIGINAL] NOVEL HYPER MEGA ULTRA-BLEND (DUAL GRANDMASTER SOTA BLEND) MULTI-EXPERT QUANTUM  NEURO SYNTHESIS ⭐⭐⭐⭐⭐✅✅👍' tomorrow that (hopefully) scores 0.956</p>",
+    "replies": [
+     {
+      "id": 3537085,
+      "postDate": "2026-10-11T20:22:33.530Z",
+      "rawMarkdown": "I have to admit, this is a funny response 🤣",
+      "content": "<p>I have to admit, this is a funny response 🤣</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Danial Zakaria",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+       "url": "/nartaa",
+       "tier": "EXPERT",
+       "id": 4495635,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1076,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Danial Zakaria",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+        "url": "/nartaa",
+        "userName": "nartaa",
+        "tier": "EXPERT",
+        "id": 4495635,
+        "profileUrl": "/nartaa",
+        "performanceTier": "EXPERT",
+        "userId": 4495635,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537166,
+      "postDate": "2026-10-12T03:21:54.463Z",
+      "rawMarkdown": "This was great ",
+      "content": "<p>This was great </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1465,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "mikelou1",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/mikelou1",
+     "tier": "EXPERT",
+     "id": 32181963,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 8,
+     "canUpvote": true,
+     "totalUpvotes": 8
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1408,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "aman1391",
+       "davidsarrat",
+       "dragoshh1984",
+       "p4rallax",
+       "tuckerarrants",
+       "nartaa",
+       "fautei",
+       "ravi20076",
+       "cody11null",
+       "hikarukai",
+       "tushhaaarrrr",
+       "nathanaelrk",
+       "k256net",
+       "bbruijnis",
+       "goodpjw2008",
+       "chikonzeroselemani",
+       "willhirsch",
+       "daoviet"
+      ],
+      "userCount": 18
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "mikelou1",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mikelou1",
+      "userName": "mikelou1",
+      "tier": "EXPERT",
+      "id": 32181963,
+      "profileUrl": "/mikelou1",
+      "performanceTier": "EXPERT",
+      "userId": 32181963,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536956,
+    "postDate": "2026-10-11T15:02:40.343Z",
+    "rawMarkdown": "It is genuinely sad to think about how the vast majority of hardworking participants’ work suddenly means nothing.",
+    "content": "<p>It is genuinely sad to think about how the vast majority of hardworking participants’ work suddenly means nothing.</p>",
+    "replies": [
+     {
+      "id": 3536958,
+      "postDate": "2026-10-11T15:04:21.857Z",
+      "rawMarkdown": "still private lb will be our saviour my friend .. 😀",
+      "content": "<p>still private lb will be our saviour my friend .. 😀</p>",
+      "replies": [
+       {
+        "id": 3536960,
+        "postDate": "2026-10-11T15:09:47.750Z",
+        "rawMarkdown": "Or imagine the public blends actually outperforming us on private. That’ll be the real nightmare 😨",
+        "content": "<p>Or imagine the public blends actually outperforming us on private. That’ll be the real nightmare 😨</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Raymond Yuen",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+         "url": "/laymond",
+         "tier": "CONTRIBUTOR",
+         "id": 28874055,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 45,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tanuki_boosting",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/miyamotodaiya",
+          "userName": "miyamotodaiya",
+          "tier": "EXPERT",
+          "id": 11621780,
+          "profileUrl": "/miyamotodaiya",
+          "performanceTier": "EXPERT",
+          "userId": 11621780,
+          "progressionOptOut": false
+         },
+         "intro": "I’m looking to merge with someone who has achieved a score of 0.955+ with a single model.\n\n"
+        }
+       },
+       {
+        "id": 3536974,
+        "postDate": "2026-10-11T15:54:49.753Z",
+        "rawMarkdown": "Totally agree. The fact that in 12 hours we can collect 50 upvotes on a post like this you would think would get us a response from Kaggle. ",
+        "content": "<p>Totally agree. The fact that in 12 hours we can collect 50 upvotes on a post like this you would think would get us a response from Kaggle. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 5,
+         "canUpvote": true,
+         "totalUpvotes": 5
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "AK",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+       "url": "/aman1391",
+       "tier": "MASTER",
+       "id": 454169,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 61,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "LOVE",
+        "featuredUserNames": [
+         "laymond"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "AK",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+        "url": "/aman1391",
+        "userName": "aman1391",
+        "tier": "MASTER",
+        "id": 454169,
+        "profileUrl": "/aman1391",
+        "performanceTier": "MASTER",
+        "userId": 454169,
+        "progressionOptOut": false
+       },
+       "intro": "Just in case you want to team please "
+      }
+     },
+     {
+      "id": 3537165,
+      "postDate": "2026-10-12T03:21:30.137Z",
+      "rawMarkdown": "Honestly just waiting to see the private board at this point.\nThe teams that didn't put effort into & don't understand will do far worse than those of us that have spent months working away.\nA large portion of the board is just forked versions of my 0.924 weights as well as other solid datasets & unfortunately as much as I wanted to release my 0.945 weights I haven't because of this.",
+      "content": "<p>Honestly just waiting to see the private board at this point.\nThe teams that didn't put effort into &amp; don't understand will do far worse than those of us that have spent months working away.\nA large portion of the board is just forked versions of my 0.924 weights as well as other solid datasets &amp; unfortunately as much as I wanted to release my 0.945 weights I haven't because of this.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Dread Development",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+       "url": "/dreaddevelopment",
+       "tier": "EXPERT",
+       "id": 35987882,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 5,
+       "canUpvote": true,
+       "totalUpvotes": 5
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1465,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Dread Development",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35987882-kg.png?t=2026-08-08-01-35-22",
+        "url": "/dreaddevelopment",
+        "userName": "dreaddevelopment",
+        "tier": "EXPERT",
+        "id": 35987882,
+        "profileUrl": "/dreaddevelopment",
+        "performanceTier": "EXPERT",
+        "userId": 35987882,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Raymond Yuen",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28874055-kg.jpg?t=2026-08-02-03-35-19",
+     "url": "/laymond",
+     "tier": "CONTRIBUTOR",
+     "id": 28874055,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 5,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 45,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Tanuki_boosting",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/miyamotodaiya",
+      "userName": "miyamotodaiya",
+      "tier": "EXPERT",
+      "id": 11621780,
+      "profileUrl": "/miyamotodaiya",
+      "performanceTier": "EXPERT",
+      "userId": 11621780,
+      "progressionOptOut": false
+     },
+     "intro": "I’m looking to merge with someone who has achieved a score of 0.955+ with a single model.\n\n"
+    }
+   },
+   {
+    "id": 3536702,
+    "postDate": "2026-10-11T03:50:56.317Z",
+    "rawMarkdown": "people posting high public notebook at the final leg of competition is ALWAYS the worst, it kills the soul of the competition :'(\n\nwith this speed i think soon we will see .960 notebook :p",
+    "content": "<p>people posting high public notebook at the final leg of competition is ALWAYS the worst, it kills the soul of the competition :'(</p>\n<p>with this speed i think soon we will see .960 notebook :p</p>",
+    "replies": [
+     {
+      "id": 3536753,
+      "postDate": "2026-10-11T06:36:56.467Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "AK",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+     "url": "/aman1391",
+     "tier": "MASTER",
+     "id": 454169,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 10,
+     "canUpvote": true,
+     "totalUpvotes": 10
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 61,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "AK",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+      "url": "/aman1391",
+      "userName": "aman1391",
+      "tier": "MASTER",
+      "id": 454169,
+      "profileUrl": "/aman1391",
+      "performanceTier": "MASTER",
+      "userId": 454169,
+      "progressionOptOut": false
+     },
+     "intro": "Just in case you want to team please "
+    }
+   },
+   {
+    "id": 3536773,
+    "postDate": "2026-10-11T07:57:44.060Z",
+    "rawMarkdown": "With almost 100% code being generated with coding agents lately, are notebook medals still relevant @cody11null? I think Kaggle could simply scrap off datasets and kernels tiers and resort to competitions only, like older times. If anyone wishes to share code, he/ she could do it in good faith and such public sharing could be put to rest (people deliberately sharing code like this are doing it just for votes and have no interest in competing anyway. With no votes and medals, these bad actors will naturally move off).",
+    "content": "<p>With almost 100% code being generated with coding agents lately, are notebook medals still relevant <a href=\"/cody11null\" target=\"_blank\">@cody11null</a>? I think Kaggle could simply scrap off datasets and kernels tiers and resort to competitions only, like older times. If anyone wishes to share code, he/ she could do it in good faith and such public sharing could be put to rest (people deliberately sharing code like this are doing it just for votes and have no interest in competing anyway. With no votes and medals, these bad actors will naturally move off).</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ravi Ramakrishnan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+     "url": "/ravi20076",
+     "tier": "GRANDMASTER",
+     "id": 8273630,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 7,
+     "canUpvote": true,
+     "totalUpvotes": 8
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 830,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ravi Ramakrishnan",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+      "url": "/ravi20076",
+      "userName": "ravi20076",
+      "tier": "GRANDMASTER",
+      "id": 8273630,
+      "profileUrl": "/ravi20076",
+      "performanceTier": "GRANDMASTER",
+      "userId": 8273630,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536709,
+    "postDate": "2026-10-11T04:27:17.713Z",
+    "rawMarkdown": "With the advancement of coding agents, the current rules are no longer as appropriate as they used to be.",
+    "content": "<p>With the advancement of coding agents, the current rules are no longer as appropriate as they used to be.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Bull",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4472591-kg.jpg",
+     "url": "/welshonionman",
+     "tier": "EXPERT",
+     "id": 4472591,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 115,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Bull",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4472591-kg.jpg",
+      "url": "/welshonionman",
+      "userName": "welshonionman",
+      "tier": "EXPERT",
+      "id": 4472591,
+      "profileUrl": "/welshonionman",
+      "performanceTier": "EXPERT",
+      "userId": 4472591,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537087,
+    "postDate": "2026-10-11T20:35:24.570Z",
+    "rawMarkdown": "Personally, I don't see a problem with sharing, even this late. I shared my best single model (0.949) because I was stuck and hoped to get new ideas from others once they adapted it, and that's exactly what happened. And of course, I was also hoping for some votes.\n\nDid I lose my rank on the leaderboard? Yes. By the next day I was already down by 500, and others combined it with ensembles and picked up most of the votes. But I was so stuck that I was willing to sacrifice that just to find out how on earth everyone else was climbing so high. I honestly didn't expect an ensemble to give such a big boost.",
+    "content": "<p>Personally, I don't see a problem with sharing, even this late. I shared my best single model (0.949) because I was stuck and hoped to get new ideas from others once they adapted it, and that's exactly what happened. And of course, I was also hoping for some votes.</p>\n<p>Did I lose my rank on the leaderboard? Yes. By the next day I was already down by 500, and others combined it with ensembles and picked up most of the votes. But I was so stuck that I was willing to sacrifice that just to find out how on earth everyone else was climbing so high. I honestly didn't expect an ensemble to give such a big boost.</p>",
+    "replies": [
+     {
+      "id": 3537090,
+      "postDate": "2026-10-11T20:40:48.187Z",
+      "rawMarkdown": "I personally consider your work to be different. Your work and the work of @dreaddevelopment would be the people I think should be getting more credit, not less. I personally don’t love the timing but it is great for the hosts and for learning so I can’t complain too too much! In most instances if people were already above your score then your sharing should only help I would think!",
+      "content": "<p>I personally consider your work to be different. Your work and the work of <a href=\"/dreaddevelopment\" target=\"_blank\">@dreaddevelopment</a> would be the people I think should be getting more credit, not less. I personally don’t love the timing but it is great for the hosts and for learning so I can’t complain too too much! In most instances if people were already above your score then your sharing should only help I would think!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 2,
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 100,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Danial Zakaria",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+     "url": "/nartaa",
+     "tier": "EXPERT",
+     "id": 4495635,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1076,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Danial Zakaria",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+      "url": "/nartaa",
+      "userName": "nartaa",
+      "tier": "EXPERT",
+      "id": 4495635,
+      "profileUrl": "/nartaa",
+      "performanceTier": "EXPERT",
+      "userId": 4495635,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536905,
+    "postDate": "2026-10-11T13:36:42.197Z",
+    "rawMarkdown": "I saw a suggestion to add downvotes to notebooks -- but if that happens, bots\nwill just end up downvoting every notebook LOL.",
+    "content": "<p>I saw a suggestion to add downvotes to notebooks -- but if that happens, bots\nwill just end up downvoting every notebook LOL.</p>",
+    "replies": [
+     {
+      "id": 3536906,
+      "postDate": "2026-10-11T13:40:26.467Z",
+      "rawMarkdown": "What will a downvote do anyway? Bad actors will share such junk and net upvotes will outweigh downvotes @k256net ",
+      "content": "<p>What will a downvote do anyway? Bad actors will share such junk and net upvotes will outweigh downvotes <a href=\"/k256net\" target=\"_blank\">@k256net</a> </p>",
+      "replies": [
+       {
+        "id": 3536936,
+        "postDate": "2026-10-11T14:26:30.317Z",
+        "rawMarkdown": "Idk I would imagine the same volume of people that upvote this would downvote the copies, but I do fear it would still be outnumbered by forks",
+        "content": "<p>Idk I would imagine the same volume of people that upvote this would downvote the copies, but I do fear it would still be outnumbered by forks</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Ravi Ramakrishnan",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+       "url": "/ravi20076",
+       "tier": "GRANDMASTER",
+       "id": 8273630,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true,
+       "totalUpvotes": 2
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 830,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Ravi Ramakrishnan",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+        "url": "/ravi20076",
+        "userName": "ravi20076",
+        "tier": "GRANDMASTER",
+        "id": 8273630,
+        "profileUrl": "/ravi20076",
+        "performanceTier": "GRANDMASTER",
+        "userId": 8273630,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1431,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537118,
+    "postDate": "2026-10-11T22:49:14.773Z",
+    "rawMarkdown": "yep. so fair.",
+    "content": "<p>yep. so fair.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Pand",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
+     "url": "/pand999",
+     "tier": "CONTRIBUTOR",
+     "id": 33249962,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 111,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Pand",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33249962-kg.JPG?t=2026-08-13-18-53-47",
+      "url": "/pand999",
+      "userName": "pand999",
+      "tier": "CONTRIBUTOR",
+      "id": 33249962,
+      "profileUrl": "/pand999",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 33249962,
+      "progressionOptOut": false
+     },
+     "intro": "lmk what models u've got :) Discord: p.and, officialpand@gmail.com"
+    }
+   },
+   {
+    "id": 3538362,
+    "postDate": "2026-10-14T03:37:35.830Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3537091,
+    "postDate": "2026-10-11T20:42:26.217Z",
+    "rawMarkdown": "",
+    "replies": [
+     {
+      "id": 3537094,
+      "postDate": "2026-10-11T20:56:58.647Z",
+      "rawMarkdown": "I would argue that the hundreds of forks that are nearly identical are not just not making scores better, but that they are actively making scores worse by making it harder to see actually helpful notebooks. ",
+      "content": "<p>I would argue that the hundreds of forks that are nearly identical are not just not making scores better, but that they are actively making scores worse by making it harder to see actually helpful notebooks. </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 7,
+       "canUpvote": true,
+       "totalUpvotes": 7
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 100,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1
+    },
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536678,
+   "postDate": "2026-10-11T02:15:53.030Z",
+   "rawMarkdown": "Yet again, we have another competition where low-effort public ensembles are being released with less than two weeks remaining, potentially allowing participants to secure medals through copy-paste submissions rather than their own work or understanding.\n\nI fully expect this to continue as the deadline approaches and based on the past year or more, I expect that Kaggle will do absolutely nothing to address it.\n\nPersonally, I expect to be fine. My concern is for the participants who may end up hundreds of places below where they otherwise would have finished, despite putting in significantly more work and developing their own solutions. I am equally concerned about those who have shared genuinely valuable notebooks and helped others learn, only to see that work receive little recognition because the current code-tier structure disproportionately rewards marginal leaderboard improvements, often effectively meaningless (or outright duplicates), driven by a random seed rather than a meaningful contribution.\n\nWhat I find most frustrating is not simply that this problem persists, but that it continues despite repeated forum discussions and substantial community support highlighting the issue. **Why have we received so little meaningful explanation from Kaggle about why this remains unresolved, what trade-offs are preventing a solution, or whether there is any concrete plan to address it?**\n\nNo system will be perfect, and I recognize that solutions involve trade-offs. But leaving participants without meaningful explanation while the same concerns recur competition after competition is difficult to justify.\n\nKaggle should be a place where competitive performance, original work, and meaningful contributions are rewarded. Right now, the incentives are increasingly misaligned with those goals, and I would genuinely like to understand why.",
+   "content": "<p>Yet again, we have another competition where low-effort public ensembles are being released with less than two weeks remaining, potentially allowing participants to secure medals through copy-paste submissions rather than their own work or understanding.</p>\n<p>I fully expect this to continue as the deadline approaches and based on the past year or more, I expect that Kaggle will do absolutely nothing to address it.</p>\n<p>Personally, I expect to be fine. My concern is for the participants who may end up hundreds of places below where they otherwise would have finished, despite putting in significantly more work and developing their own solutions. I am equally concerned about those who have shared genuinely valuable notebooks and helped others learn, only to see that work receive little recognition because the current code-tier structure disproportionately rewards marginal leaderboard improvements, often effectively meaningless (or outright duplicates), driven by a random seed rather than a meaningful contribution.</p>\n<p>What I find most frustrating is not simply that this problem persists, but that it continues despite repeated forum discussions and substantial community support highlighting the issue. <strong>Why have we received so little meaningful explanation from Kaggle about why this remains unresolved, what trade-offs are preventing a solution, or whether there is any concrete plan to address it?</strong></p>\n<p>No system will be perfect, and I recognize that solutions involve trade-offs. But leaving participants without meaningful explanation while the same concerns recur competition after competition is difficult to justify.</p>\n<p>Kaggle should be a place where competitive performance, original work, and meaningful contributions are rewarded. Right now, the incentives are increasingly misaligned with those goals, and I would genuinely like to understand why.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Cody_Null",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+    "url": "/cody11null",
+    "tier": "GRANDMASTER",
+    "id": 13672938,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 100,
+    "canUpvote": true,
+    "totalUpvotes": 102
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 100,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Cody_Null",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+     "url": "/cody11null",
+     "userName": "cody11null",
+     "tier": "GRANDMASTER",
+     "id": 13672938,
+     "profileUrl": "/cody11null",
+     "performanceTier": "GRANDMASTER",
+     "userId": 13672938,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3536678,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748181,
+  "name": "Kaggle could we please start doing something about the public notebooks? ",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-11T02:15:53.028667700Z",
+  "totalVotes": 100,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748181",
+  "totalMessages": 44,
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Cody_Null",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+   "url": "/cody11null",
+   "tier": "GRANDMASTER",
+   "id": 13672938,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 47,
+  "firstForumMessageId": 3536678,
+  "id": 748181,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Cody_Null",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748181#3538723",
+  "lastCommentPostDate": "2026-10-14T18:14:04.483333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-11T02:15:53.028667700Z",
+  "title": "Kaggle could we please start doing something about the public notebooks? ",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748181",
+  "votes": 101,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Cody_Null",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+    "url": "/cody11null",
+    "userName": "cody11null",
+    "tier": "GRANDMASTER",
+    "id": 13672938,
+    "profileUrl": "/cody11null",
+    "performanceTier": "GRANDMASTER",
+    "userId": 13672938,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

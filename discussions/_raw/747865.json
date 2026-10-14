@@ -1,0 +1,101 @@
+{
+ "forumTopic": {
+  "authorId": 18231426,
+  "authorThumbnailName": "18231426-kg.png?t=2026-07-26-18-05-30",
+  "authorUserDisplayName": "Eesh saxena",
+  "authorUserName": "eeshsaxena",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536136,
+   "postDate": "2026-10-09T19:38:46.910Z",
+   "rawMarkdown": "Hi all,\n\nI put together an EDA notebook for this competition that might help anyone getting started: https://www.kaggle.com/code/eeshsaxena/rsna-knee-eda-labels-and-mri-views\n\nA few things that stood out to me:\n\nOnly 58 training studies come with labels. Effusion is the most common finding (about 60%) and MCL the rarest (about 16%). With so few studies the 95% intervals span roughly 20 to 25 percentage points, so local validation will be noisy.\nNone of the labelled studies is completely normal. A study has about four positive findings on average, and 54 of the 58 studies have a label combination of their own, so there is no small set of typical patterns.\nThe data is big and varied: 24,371 series and about 819k DICOM files, with a real mix of scanners, field strengths, slice thicknesses and planes.\nThe data page lists JPEG Lossless and JPEG 2000 transfer syntaxes. The files I sampled were uncompressed, but the default Kaggle image cannot decode the compressed ones without pylibjpeg or gdcm, so it is worth guarding for that in a submission notebook.\n\nIt runs on CPU in about two minutes and uses only the official files. If you spot anything wrong or want another plot added, let me know in the comments.",
+   "content": "<p>Hi all,</p>\n<p>I put together an EDA notebook for this competition that might help anyone getting started: <a href=\"https://www.kaggle.com/code/eeshsaxena/rsna-knee-eda-labels-and-mri-views\" target=\"_blank\">https://www.kaggle.com/code/eeshsaxena/rsna-knee-eda-labels-and-mri-views</a></p>\n<p>A few things that stood out to me:</p>\n<p>Only 58 training studies come with labels. Effusion is the most common finding (about 60%) and MCL the rarest (about 16%). With so few studies the 95% intervals span roughly 20 to 25 percentage points, so local validation will be noisy.\nNone of the labelled studies is completely normal. A study has about four positive findings on average, and 54 of the 58 studies have a label combination of their own, so there is no small set of typical patterns.\nThe data is big and varied: 24,371 series and about 819k DICOM files, with a real mix of scanners, field strengths, slice thicknesses and planes.\nThe data page lists JPEG Lossless and JPEG 2000 transfer syntaxes. The files I sampled were uncompressed, but the default Kaggle image cannot decode the compressed ones without pylibjpeg or gdcm, so it is worth guarding for that in a submission notebook.</p>\n<p>It runs on CPU in about two minutes and uses only the official files. If you spot anything wrong or want another plot added, let me know in the comments.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Eesh saxena",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+    "url": "/eeshsaxena",
+    "tier": "CONTRIBUTOR",
+    "id": 18231426,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 286,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "Eesh saxena",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+     "url": "/eeshsaxena",
+     "userName": "eeshsaxena",
+     "tier": "CONTRIBUTOR",
+     "id": 18231426,
+     "profileUrl": "/eeshsaxena",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 18231426,
+     "progressionOptOut": false
+    },
+    "intro": "Hii"
+   }
+  },
+  "firstMessageId": 3536136,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 747865,
+  "name": "EDA: labels, co-occurrence and MRI views (official data only)",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-09T19:38:46.911119100Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/747865",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Eesh saxena",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+   "url": "/eeshsaxena",
+   "tier": "CONTRIBUTOR",
+   "id": 18231426,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3536136,
+  "id": 747865,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Eesh saxena",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747865#3536136",
+  "lastCommentPostDate": "2026-10-09T19:38:46.910Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-09T19:38:46.911119100Z",
+  "title": "EDA: labels, co-occurrence and MRI views (official data only)",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747865",
+  "votes": 1,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "Eesh saxena",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18231426-kg.png?t=2026-07-26-18-05-30",
+    "url": "/eeshsaxena",
+    "userName": "eeshsaxena",
+    "tier": "CONTRIBUTOR",
+    "id": 18231426,
+    "profileUrl": "/eeshsaxena",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 18231426,
+    "progressionOptOut": false
+   },
+   "intro": "Hii"
+  }
+ }
+}

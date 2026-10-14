@@ -24,6 +24,9 @@ OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")),
 # round 3 (2026-10-13, hosen42): --cache-owner=hosen42 --teacher-dataset=hosen42/rsna-knee-mirror-teacher-train
 CACHE_OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--cache-owner=")), "esfersami50")
 TEACHER_DS = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-dataset=")), "")
+# round 4 (2026-10-15, final): ensemble teacher = the 0.956 blend's own weights over Mirror384 / M224 / R7 train predictions;
+# --ens-kernels = kernels whose outputs hold m224_train_raw.csv and r7_train_shard*.csv
+ENS_KERNELS = [k for k in next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--ens-kernels=")), "").split(",") if k]
 TV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--teacher-version=")), "1")
 PV = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--pseudo-version=")), "1")
 # round 2 (2026-10-12): --arms=C2,C3 --slug=rsna-knee-gpjw-student2
@@ -51,13 +54,45 @@ sub('''def train_arm(arm):
            "C3": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher", tw=0.75),
            # round 3 (hosen42): the two Colab arms on Kaggle T4 - a new backbone with C3's targets, and C3 with seed 1
            "S75": dict(backbone="convnext_small", targets="0.25 v0 + 0.75 Mirror teacher", tw=0.75),
-           "T75s1": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher, seed 1", tw=0.75, seed=1)}
+           "T75s1": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 Mirror teacher, seed 1", tw=0.75, seed=1),
+           # round 4 (final): students of the 0.956-level ensemble teacher, C3's target mix, two backbones
+           "E75t": dict(backbone="convnext_tiny", targets="0.25 v0 + 0.75 ensemble teacher (Mirror384/M224/R7)", tw=0.75, teacher="ens"),
+           "E75s": dict(backbone="convnext_small", targets="0.25 v0 + 0.75 ensemble teacher (Mirror384/M224/R7)", tw=0.75, teacher="ens")}
+
+# the 0.956 blend: Raptor 0.5 = 0.65 x Mirror384 + 0.35 x M224 (with mirror), R7 0.5 -> probability weights
+ENS_WEIGHTS = {"mirror384": 0.325, "m224": 0.175, "r7": 0.5}
 
 
-def build_targets_C(tw=0.5):
+def _teacher_frame(paths):
+    d = pd.concat([pd.read_csv(p, dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS] for p in paths])
+    d = d[~d.index.duplicated()]
+    return d[~(d == 0.5).all(axis=1)]          # a Raptor study that failed or was not reached stays 0.5 everywhere
+
+
+def ensemble_teacher(index):
+    """Per-study weighted mean of the members that scored the study (weights renormalised); NaN if none did."""
+    members = {"mirror384": [find("mirror_train_raw.csv")], "m224": [find("m224_train_raw.csv")],
+               "r7": sorted(glob.glob("/kaggle/input/**/r7_train_shard*.csv", recursive=True))}
+    num, den = 0.0, 0.0
+    for name, paths in members.items():
+        assert paths, "no files for teacher member " + name
+        d = _teacher_frame(paths).reindex(index)
+        ok = d.notna().all(axis=1).values[:, None]
+        cover = float(ok.mean())
+        say("targets", f"ensemble member {name}: {len(paths)} file(s), covers {cover:.3f} of the train studies")
+        assert cover > 0.9, f"teacher member {name} covers only {cover:.3f}"
+        num = num + ENS_WEIGHTS[name] * np.nan_to_num(d.values) * ok
+        den = den + ENS_WEIGHTS[name] * ok
+    return pd.DataFrame(np.where(den > 0, num / np.maximum(den, 1e-9), np.nan), index=index, columns=LABELS)
+
+
+def build_targets_C(tw=0.5, teacher="mirror"):
     lab = build_labels()
-    m = pd.read_csv(find("mirror_train_raw.csv"), dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS]
-    m = m.reindex(lab.index.astype(str))
+    if teacher == "ens":
+        m = ensemble_teacher(lab.index.astype(str))
+    else:
+        m = pd.read_csv(find("mirror_train_raw.csv"), dtype={"StudyInstanceUID": str}).set_index("StudyInstanceUID")[LABELS]
+        m = m.reindex(lab.index.astype(str))
     m.index = lab.index
     ok = m.notna().all(axis=1) & ~(m == 0.5).all(axis=1)
     weak = lab.is_gold == 0
@@ -74,14 +109,14 @@ def build_targets_C(tw=0.5):
     new = ((1 - tw) * lab.loc[idx, LABELS].values + tw * m.loc[idx].values).clip(0.01, 0.99)
     say("targets", f"mean |C - v0| {np.abs(new - lab.loc[idx, LABELS].values).mean():.4f}")
     lab.loc[idx, LABELS] = new
-    lab.to_csv(f"{OUT}/labels_C_tw{tw}.csv")
+    lab.to_csv(f"{OUT}/labels_C_tw{tw}_{teacher}.csv")
     return lab
 
 
 def train_arm(arm):
     a = dict(ARGS, arm=arm, **ARM_CFG[arm])''')
 sub('''    lab = pd.read_csv(f"{OUT}/labels_pl.csv", index_col=0) if arm == "B" else build_labels()''',
-    '''    lab = build_targets_C(a["tw"]) if "tw" in a else pd.read_csv(find("labels_pl.csv"), index_col=0)''')
+    '''    lab = build_targets_C(a["tw"], a.get("teacher", "mirror")) if "tw" in a else pd.read_csv(find("labels_pl.csv"), index_col=0)''')
 sub('''    print(f"gpus {torch.cuda.device_count()} | script {script_path()} | probe {PROBE} | alpha {ALPHA}", flush=True)
     codes = run_parallel([("GPJW_OOF", "0,2,4"), ("GPJW_OOF", "1,3")])
     print("oof exit codes:", codes, flush=True)
@@ -107,5 +142,6 @@ meta = {"id": f"{OWNER}/{SLUG}", "title": SLUG, "code_file": "gpjwstudent.py",
         "model_sources": []}
 if TEACHER_DS:
     meta["dataset_sources"] = meta["dataset_sources"] + [TEACHER_DS]
+meta["kernel_sources"] = meta["kernel_sources"] + ENS_KERNELS
 json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
 print("wrote", d)

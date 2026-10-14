@@ -1,10 +1,10 @@
 # PSA: bf16 on Kaggle's T4/P100 silently cost me 0.14 AUC (0.851 → 0.710). How to spot it.
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/744230
-- **Author:** **Md Kishor Morol** (@kishormorol, Contributor) · _topic author_ · 2026-09-29 02:54 UTC · ▲2 · LB rank 824
+- **Author:** **Md Kishor Morol** (@kishormorol, Contributor) · _topic author_ · 2026-09-29 02:54 UTC · ▲2 · LB rank 179
 - **Topic votes:** 2 · **Comments/replies:** 2 · **Pinned:** no
-- **Last comment:** 2026-10-01 12:27 UTC by Quan Vu
-- **Cloned:** 2026-10-09 09:46 UTC (topic id 744230, raw JSON `_raw/744230.json`)
+- **Last comment:** 2026-10-14 17:28 UTC by Ayiyeke Olori
+- **Cloned:** 2026-10-14 18:23 UTC (topic id 744230, raw JSON `_raw/744230.json`)
 
 ---
 
@@ -35,12 +35,12 @@ Separately: I have an **independent arm** (DINOv2 ViT-S, 6 series x 16 slices ov
 
 ### [1] Roman Vuskov
 
-**Roman Vuskov** (@romanvuskov, Contributor) · 2026-10-01 11:32 UTC · LB rank 31
+**Roman Vuskov** (@romanvuskov, Contributor) · 2026-10-01 11:32 UTC · LB rank 104
 
 Good catch! You need to use `torch.cuda.is_bf16_supported(including_emulation=False)` though as the default may still output `true` depending on torch version.
 
 ### [2] Quan Vu
 
-**Quan Vu** (@quan0095, Master) · 2026-10-01 12:27 UTC · LB rank 14
+**Quan Vu** (@quan0095, Master) · 2026-10-01 12:27 UTC · LB rank 54
 
 As far as I understand, the P100 and T4 GPUs do not support bfloat16.

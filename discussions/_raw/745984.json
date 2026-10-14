@@ -36,21 +36,21 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 160,
+        "competitionRanking": 364,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
          "enabled": true,
          "teamLeader": {
-          "displayName": "zhuo wamg",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
-          "url": "/zhuowamg",
-          "userName": "zhuowamg",
-          "tier": "CONTRIBUTOR",
-          "id": 30816763,
-          "profileUrl": "/zhuowamg",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 30816763,
+          "displayName": "Marwan Ashref",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22041362-kg.jpeg?t=2026-09-08-21-44-46",
+          "url": "/marwanashref",
+          "userName": "marwanashref",
+          "tier": "EXPERT",
+          "id": 22041362,
+          "profileUrl": "/marwanashref",
+          "performanceTier": "EXPERT",
+          "userId": 22041362,
           "progressionOptOut": false
          },
          "intro": ""
@@ -71,7 +71,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1011,
+      "competitionRanking": 1951,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -107,21 +107,21 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 160,
+    "competitionRanking": 364,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "enabled": true,
      "teamLeader": {
-      "displayName": "zhuo wamg",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
-      "url": "/zhuowamg",
-      "userName": "zhuowamg",
-      "tier": "CONTRIBUTOR",
-      "id": 30816763,
-      "profileUrl": "/zhuowamg",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 30816763,
+      "displayName": "Marwan Ashref",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22041362-kg.jpeg?t=2026-09-08-21-44-46",
+      "url": "/marwanashref",
+      "userName": "marwanashref",
+      "tier": "EXPERT",
+      "id": 22041362,
+      "profileUrl": "/marwanashref",
+      "performanceTier": "EXPERT",
+      "userId": 22041362,
       "progressionOptOut": false
      },
      "intro": ""
@@ -158,7 +158,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 2712,
+        "competitionRanking": 3190,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -196,7 +196,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1011,
+        "competitionRanking": 1951,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -210,6 +210,45 @@
           "profileUrl": "/stringyixuxi",
           "performanceTier": "CONTRIBUTOR",
           "userId": 17555594,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536764,
+        "postDate": "2026-10-11T07:26:27.087Z",
+        "rawMarkdown": "我已经解决了这个问题，告诉你的codex or claude 具体情况和评分失败，然后让他们自己去对照之前评分成功的版本进行修改，经过这样我的修复版终于成功了",
+        "content": "<p>我已经解决了这个问题，告诉你的codex or claude 具体情况和评分失败，然后让他们自己去对照之前评分成功的版本进行修改，经过这样我的修复版终于成功了</p>",
+        "parent": {},
+        "author": {
+         "displayName": "zhuo wamg",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30816763-kg.png?t=2026-07-04-06-44-23",
+         "url": "/zhuowamg",
+         "tier": "CONTRIBUTOR",
+         "id": 30816763,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 364,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "enabled": true,
+         "teamLeader": {
+          "displayName": "Marwan Ashref",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22041362-kg.jpeg?t=2026-09-08-21-44-46",
+          "url": "/marwanashref",
+          "userName": "marwanashref",
+          "tier": "EXPERT",
+          "id": 22041362,
+          "profileUrl": "/marwanashref",
+          "performanceTier": "EXPERT",
+          "userId": 22041362,
           "progressionOptOut": false
          },
          "intro": ""
@@ -230,7 +269,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1011,
+      "competitionRanking": 1951,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -264,7 +303,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2712,
+    "competitionRanking": 3190,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -284,6 +323,24 @@
     }
    },
    {
+    "id": 3537719,
+    "postDate": "2026-10-13T00:34:35.440Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
     "id": 3535725,
     "postDate": "2026-10-09T05:22:00.440Z",
     "rawMarkdown": "Thank you for Exception @stringyixuxi ",
@@ -299,7 +356,7 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": -1,
+     "totalVotes": -2,
      "canUpvote": true
     },
     "kernelVersion": 0,
@@ -324,12 +381,11 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 2,
     "canUpvote": true,
     "totalUpvotes": 2
    },
    "kernelVersion": 0,
-   "competitionRanking": 1011,
+   "competitionRanking": 1951,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -356,9 +412,8 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-05T16:36:12.413062800Z",
-  "totalVotes": 2,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/745984",
-  "totalMessages": 8,
+  "totalMessages": 10,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -372,19 +427,17 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 8,
+  "commentCount": 10,
   "firstForumMessageId": 3533165,
   "id": 745984,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Navneet",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745984#3535725",
-  "lastCommentPostDate": "2026-10-09T05:22:00.440Z",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745984#3537719",
+  "lastCommentPostDate": "2026-10-13T00:34:35.440Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-05T16:36:12.413062800Z",
   "title": "Notebook Threw Exception",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/745984",
-  "votes": 2,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Serendipity",

@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 2497971,
+  "authorThumbnailName": "2497971-kg.jpeg",
+  "authorUserDisplayName": "dragoshh1984",
+  "authorUserName": "dragoshh1984",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536841,
+   "postDate": "2026-10-11T10:31:46.743Z",
+   "rawMarkdown": "In [this topic thread](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819) it was stated that ` OAI is fine as long as it's \"generally accessible to all participants\" without institutional sign-off and free of charge`.\n\nBut several people in [this topic thread](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792) say they can't register at all from China.\n\nThere is also an [NDA notice](https://nda.nih.gov/nda/enhancing-dar-security-measures) which clearly states that since Aprlil 4 2025, NIH prohibits access to \"NDA data by researchers and institutions located in countries of concern, including China (including Hong Kong and Macau), Russia, Iran, North Korea, Cuba, and Venezuela\".\n\nOAI is hosted on NDA.\n\nChina isn't on the competition's excluded list (Rule 3.1), and Rule 2.6.b mentions \"geo restrictions\" as something that can make external data not \"reasonably accessible to all\". That sounds a lot like the uneven-access reason KneeCoT was ruled out for in [this topic thread](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109)\n\nIs OAI allowed, given that participants in some eligible countries can't access it?",
+   "content": "<p>In <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819\" target=\"_blank\">this topic thread</a> it was stated that <code>OAI is fine as long as it's \"generally accessible to all participants\" without institutional sign-off and free of charge</code>.</p>\n<p>But several people in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792\" target=\"_blank\">this topic thread</a> say they can't register at all from China.</p>\n<p>There is also an <a href=\"https://nda.nih.gov/nda/enhancing-dar-security-measures\" target=\"_blank\">NDA notice</a> which clearly states that since Aprlil 4 2025, NIH prohibits access to \"NDA data by researchers and institutions located in countries of concern, including China (including Hong Kong and Macau), Russia, Iran, North Korea, Cuba, and Venezuela\".</p>\n<p>OAI is hosted on NDA.</p>\n<p>China isn't on the competition's excluded list (Rule 3.1), and Rule 2.6.b mentions \"geo restrictions\" as something that can make external data not \"reasonably accessible to all\". That sounds a lot like the uneven-access reason KneeCoT was ruled out for in <a href=\"https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/734109\" target=\"_blank\">this topic thread</a></p>\n<p>Is OAI allowed, given that participants in some eligible countries can't access it?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "dragoshh1984",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2497971-kg.jpeg",
+    "url": "/dragoshh1984",
+    "tier": "EXPERT",
+    "id": 2497971,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 15,
+    "canUpvote": true,
+    "totalUpvotes": 17
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 1050,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "dragoshh1984",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2497971-kg.jpeg",
+     "url": "/dragoshh1984",
+     "userName": "dragoshh1984",
+     "tier": "EXPERT",
+     "id": 2497971,
+     "profileUrl": "/dragoshh1984",
+     "performanceTier": "EXPERT",
+     "userId": 2497971,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3536841,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748276,
+  "name": "Clarification on eligibility of OAI dataset",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-11T10:31:46.742266100Z",
+  "totalVotes": 15,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748276",
+  "authorPerformanceTier": "EXPERT",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "dragoshh1984",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2497971-kg.jpeg",
+   "url": "/dragoshh1984",
+   "tier": "EXPERT",
+   "id": 2497971,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3536841,
+  "id": 748276,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "dragoshh1984",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748276#3536841",
+  "lastCommentPostDate": "2026-10-11T10:31:46.743333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-11T10:31:46.742266100Z",
+  "title": "Clarification on eligibility of OAI dataset",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748276",
+  "votes": 15,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "dragoshh1984",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2497971-kg.jpeg",
+    "url": "/dragoshh1984",
+    "userName": "dragoshh1984",
+    "tier": "EXPERT",
+    "id": 2497971,
+    "profileUrl": "/dragoshh1984",
+    "performanceTier": "EXPERT",
+    "userId": 2497971,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

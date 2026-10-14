@@ -6,6 +6,432 @@
   "authorUserName": "phamgianguyen",
   "comments": [
    {
+    "id": 3536511,
+    "postDate": "2026-10-10T15:08:57.977Z",
+    "rawMarkdown": "LB0.945 no fold\n\nonly LLM labels. (no pseudo)",
+    "content": "<p>LB0.945 no fold</p>\n<p>only LLM labels. (no pseudo)</p>",
+    "replies": [
+     {
+      "id": 3536765,
+      "postDate": "2026-10-11T07:27:35.290Z",
+      "rawMarkdown": "update: fold-0 0.947\n\nonly LLM labels.",
+      "content": "<p>update: fold-0 0.947</p>\n<p>only LLM labels.</p>",
+      "parent": {},
+      "author": {
+       "displayName": "k256.dev",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+       "url": "/k256net",
+       "tier": "MASTER",
+       "id": 17784323,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 5,
+       "canUpvote": true,
+       "totalUpvotes": 5
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1430,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "k256.dev",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+        "url": "/k256net",
+        "userName": "k256net",
+        "tier": "MASTER",
+        "id": 17784323,
+        "profileUrl": "/k256net",
+        "performanceTier": "MASTER",
+        "userId": 17784323,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 8,
+     "canUpvote": true,
+     "totalUpvotes": 8
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1430,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536584,
+    "postDate": "2026-10-10T18:11:43.847Z",
+    "rawMarkdown": "single fold Dinov2 (ViT) : 94.3. Best ensemble 95.1",
+    "content": "<p>single fold Dinov2 (ViT) : 94.3. Best ensemble 95.1</p>",
+    "replies": [
+     {
+      "id": 3536732,
+      "postDate": "2026-10-11T05:40:23.160Z",
+      "rawMarkdown": "update ; single fold Dinov2(ViT), 224px : 95.2",
+      "content": "<p>update ; single fold Dinov2(ViT), 224px : 95.2</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Adel Zebiche",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/adelzebiche",
+       "tier": "CONTRIBUTOR",
+       "id": 32302810,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1065,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "enabled": true,
+       "teamLeader": {
+        "displayName": "Adel Zebiche",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/adelzebiche",
+        "userName": "adelzebiche",
+        "tier": "CONTRIBUTOR",
+        "id": 32302810,
+        "profileUrl": "/adelzebiche",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 32302810,
+        "progressionOptOut": false
+       },
+       "intro": "Dinov2 (ViT): 95.2 single fold, 224 px without 2.5D"
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Adel Zebiche",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/adelzebiche",
+     "tier": "CONTRIBUTOR",
+     "id": 32302810,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1065,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "enabled": true,
+     "teamLeader": {
+      "displayName": "Adel Zebiche",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/adelzebiche",
+      "userName": "adelzebiche",
+      "tier": "CONTRIBUTOR",
+      "id": 32302810,
+      "profileUrl": "/adelzebiche",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 32302810,
+      "progressionOptOut": false
+     },
+     "intro": "Dinov2 (ViT): 95.2 single fold, 224 px without 2.5D"
+    }
+   },
+   {
+    "id": 3535687,
+    "postDate": "2026-10-09T03:49:23.203Z",
+    "rawMarkdown": "My public scores:\n\n- ConvNeXt-T (2.5D), single model: 0.953\n- DINOv2 ViT-S (2.5D), single model: 0.951\n- Ensemble of the two: 0.955\n\nBoth single models are trained with pseudo labels, so they are not pure report-label single models. No external data used yet, though.",
+    "content": "<p>My public scores:</p>\n<ul>\n<li>ConvNeXt-T (2.5D), single model: 0.953</li>\n<li>DINOv2 ViT-S (2.5D), single model: 0.951</li>\n<li>Ensemble of the two: 0.955</li>\n</ul>\n<p>Both single models are trained with pseudo labels, so they are not pure report-label single models. No external data used yet, though.</p>",
+    "replies": [
+     {
+      "id": 3535812,
+      "postDate": "2026-10-09T09:09:43.787Z",
+      "rawMarkdown": "Are the two models using exact same pipeline? Is the difference just backbone?",
+      "content": "<p>Are the two models using exact same pipeline? Is the difference just backbone?</p>",
+      "replies": [
+       {
+        "id": 3535841,
+        "postDate": "2026-10-09T10:19:58.563Z",
+        "rawMarkdown": "Mostly yes. Same preprocessing, same 2.5D input and aggregation head, same augmentation and pseudo-labels.\n\nThe only other difference is that I tuned a few backbone-specific hyperparameters for the ViT (e.g., lr, number of epochs).",
+        "content": "<p>Mostly yes. Same preprocessing, same 2.5D input and aggregation head, same augmentation and pseudo-labels.</p>\n<p>The only other difference is that I tuned a few backbone-specific hyperparameters for the ViT (e.g., lr, number of epochs).</p>",
+        "parent": {},
+        "author": {
+         "displayName": "colum2131",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+         "url": "/columbia2131",
+         "tier": "MASTER",
+         "id": 3858775,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 53,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "aman1391",
+           "hikarukai",
+           "jaxa623"
+          ],
+          "userCount": 3
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "colum2131",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+          "url": "/columbia2131",
+          "userName": "columbia2131",
+          "tier": "MASTER",
+          "id": 3858775,
+          "profileUrl": "/columbia2131",
+          "performanceTier": "MASTER",
+          "userId": 3858775,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "hikaggler",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15306749-kg.png?t=2025-12-27-02-08-57",
+       "url": "/hikarukai",
+       "tier": "EXPERT",
+       "id": 15306749,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 122,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hikaggler",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15306749-kg.png?t=2025-12-27-02-08-57",
+        "url": "/hikarukai",
+        "userName": "hikarukai",
+        "tier": "EXPERT",
+        "id": 15306749,
+        "profileUrl": "/hikarukai",
+        "performanceTier": "EXPERT",
+        "userId": 15306749,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3536715,
+      "postDate": "2026-10-11T04:47:07.210Z",
+      "rawMarkdown": "how did you prepare your labels ?\n",
+      "content": "<p>how did you prepare your labels ?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "MJ121212",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/mj121212",
+       "tier": "CONTRIBUTOR",
+       "id": 32583154,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 1851,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "MJ121212",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/mj121212",
+        "userName": "mj121212",
+        "tier": "CONTRIBUTOR",
+        "id": 32583154,
+        "profileUrl": "/mj121212",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 32583154,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "colum2131",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+     "url": "/columbia2131",
+     "tier": "MASTER",
+     "id": 3858775,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 9,
+     "canUpvote": true,
+     "totalUpvotes": 9
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 53,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "THANK_YOU",
+      "featuredUserNames": [
+       "hikarukai"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "colum2131",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
+      "url": "/columbia2131",
+      "userName": "columbia2131",
+      "tier": "MASTER",
+      "id": 3858775,
+      "profileUrl": "/columbia2131",
+      "performanceTier": "MASTER",
+      "userId": 3858775,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535698,
+    "postDate": "2026-10-09T04:07:21.933Z",
+    "rawMarkdown": "model is not the key. it is your labels.",
+    "content": "<p>model is not the key. it is your labels.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 7
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535836,
+    "postDate": "2026-10-09T10:06:32.027Z",
+    "rawMarkdown": "All single architectures, 5-fold (public LB):\n- ConvNeXt-T: 0.959\n- EfficientNetV2-S: 0.956\n- CoAtNet: 0.952",
+    "content": "<p>All single architectures, 5-fold (public LB):</p>\n<ul>\n<li>ConvNeXt-T: 0.959</li>\n<li>EfficientNetV2-S: 0.956</li>\n<li>CoAtNet: 0.952</li>\n</ul>",
+    "parent": {},
+    "author": {
+     "displayName": "azamat1ch",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+     "url": "/azamat1ch",
+     "tier": "CONTRIBUTOR",
+     "id": 26332527,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 5
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 7,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "azamat1ch",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26332527-kg.png?t=2026-10-05-13-11-58",
+      "url": "/azamat1ch",
+      "userName": "azamat1ch",
+      "tier": "CONTRIBUTOR",
+      "id": 26332527,
+      "profileUrl": "/azamat1ch",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 26332527,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3533599,
     "postDate": "2026-10-06T13:09:54.187Z",
     "rawMarkdown": "I achieved 0.955 with a single model using 5-fold CV.\n\n(We are looking for teammates who have achieved 0.950+ with a single model.)",
@@ -21,16 +447,15 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 1,
+     "totalVotes": 4,
      "canUpvote": true,
-     "totalUpvotes": 2
+     "totalUpvotes": 5
     },
     "kernelVersion": 0,
-    "competitionRanking": 43,
+    "competitionRanking": 45,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
-     "enabled": true,
      "teamLeader": {
       "displayName": "Tanuki_boosting",
       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
@@ -47,160 +472,80 @@
     }
    },
    {
-    "id": 3529410,
-    "postDate": "2026-09-28T07:03:05.220Z",
-    "rawMarkdown": "A five-fold ResNet with a resolution of 224px     . 0.954",
-    "content": "<p>A five-fold ResNet with a resolution of 224px     . 0.954</p>",
-    "replies": [
-     {
-      "id": 3529440,
-      "postDate": "2026-09-28T09:12:32.253Z",
-      "rawMarkdown": "What was the score on gold ? Also did you focus on better labeling ?",
-      "content": "<p>What was the score on gold ? Also did you focus on better labeling ?</p>",
-      "parent": {},
-      "author": {
-       "displayName": "Musa Tur Farazi",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
-       "url": "/musaturfarazi",
-       "tier": "CONTRIBUTOR",
-       "id": 17726805,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 79,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Musa Tur Farazi",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
-        "url": "/musaturfarazi",
-        "userName": "musaturfarazi",
-        "tier": "CONTRIBUTOR",
-        "id": 17726805,
-        "profileUrl": "/musaturfarazi",
-        "performanceTier": "CONTRIBUTOR",
-        "userId": 17726805,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     },
-     {
-      "id": 3529530,
-      "postDate": "2026-09-28T12:55:31.040Z",
-      "rawMarkdown": "Are you using resnet 18? ",
-      "content": "<p>Are you using resnet 18? </p>",
-      "replies": [
-       {
-        "id": 3531642,
-        "postDate": "2026-10-02T09:59:23.557Z",
-        "rawMarkdown": "just resnet 50",
-        "content": "<p>just resnet 50</p>",
-        "parent": {},
-        "author": {
-         "displayName": "CoolinLai",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-05-12-20-25",
-         "url": "/coolinlai",
-         "tier": "EXPERT",
-         "id": 31887183,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 21,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "CoolinLai",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-05-12-20-25",
-          "url": "/coolinlai",
-          "userName": "coolinlai",
-          "tier": "EXPERT",
-          "id": 31887183,
-          "profileUrl": "/coolinlai",
-          "performanceTier": "EXPERT",
-          "userId": 31887183,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       }
-      ],
-      "parent": {},
-      "author": {
-       "displayName": "Cody_Null",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-       "url": "/cody11null",
-       "tier": "GRANDMASTER",
-       "id": 13672938,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 838,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Cody_Null",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-        "url": "/cody11null",
-        "userName": "cody11null",
-        "tier": "GRANDMASTER",
-        "id": 13672938,
-        "profileUrl": "/cody11null",
-        "performanceTier": "GRANDMASTER",
-        "userId": 13672938,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     }
-    ],
+    "id": 3533725,
+    "postDate": "2026-10-06T17:32:56.003Z",
+    "rawMarkdown": "I got 0.952 with 224px single model.\n\nUpdate : 0.956 single model single fold",
+    "content": "<p>I got 0.952 with 224px single model.</p>\n<p>Update : 0.956 single model single fold</p>",
     "parent": {},
     "author": {
-     "displayName": "CoolinLai",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-05-12-20-25",
-     "url": "/coolinlai",
-     "tier": "EXPERT",
-     "id": 31887183,
+     "displayName": "Musa Tur Farazi",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
+     "url": "/musaturfarazi",
+     "tier": "CONTRIBUTOR",
+     "id": 17726805,
      "progressionOptOut": false
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 8,
+     "totalVotes": 1,
      "canUpvote": true,
-     "totalUpvotes": 8
+     "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 21,
+    "competitionRanking": 106,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "CoolinLai",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-05-12-20-25",
-      "url": "/coolinlai",
-      "userName": "coolinlai",
+      "displayName": "Musa Tur Farazi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
+      "url": "/musaturfarazi",
+      "userName": "musaturfarazi",
+      "tier": "CONTRIBUTOR",
+      "id": 17726805,
+      "profileUrl": "/musaturfarazi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 17726805,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3532794,
+    "postDate": "2026-10-04T18:15:48.033Z",
+    "rawMarkdown": "5 fold coatnet 0.932 plb, training on kaggle notebook with public labels.",
+    "content": "<p>5 fold coatnet 0.932 plb, training on kaggle notebook with public labels.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "MengYe",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+     "url": "/konohayui",
+     "tier": "EXPERT",
+     "id": 1113072,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1333,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "MengYe",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
+      "url": "/konohayui",
+      "userName": "konohayui",
       "tier": "EXPERT",
-      "id": 31887183,
-      "profileUrl": "/coolinlai",
+      "id": 1113072,
+      "profileUrl": "/konohayui",
       "performanceTier": "EXPERT",
-      "userId": 31887183,
+      "userId": 1113072,
       "progressionOptOut": false
      },
      "intro": ""
@@ -228,12 +573,12 @@
       },
       "authorType": "COMMENT",
       "votes": {
-       "totalVotes": 7,
+       "totalVotes": 8,
        "canUpvote": true,
-       "totalUpvotes": 7
+       "totalUpvotes": 8
       },
       "kernelVersion": 0,
-      "competitionRanking": 41,
+      "competitionRanking": 54,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "reactions": [
@@ -276,12 +621,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 14,
+     "totalVotes": 17,
      "canUpvote": true,
-     "totalUpvotes": 14
+     "totalUpvotes": 17
     },
     "kernelVersion": 0,
-    "competitionRanking": 131,
+    "competitionRanking": 194,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -295,6 +640,204 @@
       "profileUrl": "/cdeotte",
       "performanceTier": "GRANDMASTER",
       "userId": 1723677,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3529410,
+    "postDate": "2026-09-28T07:03:05.220Z",
+    "rawMarkdown": "A five-fold ResNet with a resolution of 224px     . 0.954",
+    "content": "<p>A five-fold ResNet with a resolution of 224px     . 0.954</p>",
+    "replies": [
+     {
+      "id": 3529440,
+      "postDate": "2026-09-28T09:12:32.253Z",
+      "rawMarkdown": "What was the score on gold ? Also did you focus on better labeling ?",
+      "content": "<p>What was the score on gold ? Also did you focus on better labeling ?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Musa Tur Farazi",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
+       "url": "/musaturfarazi",
+       "tier": "CONTRIBUTOR",
+       "id": 17726805,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 106,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Musa Tur Farazi",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
+        "url": "/musaturfarazi",
+        "userName": "musaturfarazi",
+        "tier": "CONTRIBUTOR",
+        "id": 17726805,
+        "profileUrl": "/musaturfarazi",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 17726805,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3529530,
+      "postDate": "2026-09-28T12:55:31.040Z",
+      "rawMarkdown": "Are you using resnet 18? ",
+      "content": "<p>Are you using resnet 18? </p>",
+      "replies": [
+       {
+        "id": 3531642,
+        "postDate": "2026-10-02T09:59:23.557Z",
+        "rawMarkdown": "just resnet 50",
+        "content": "<p>just resnet 50</p>",
+        "parent": {},
+        "author": {
+         "displayName": "CoolinLai",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+         "url": "/coolinlai",
+         "tier": "EXPERT",
+         "id": 31887183,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 27,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "CoolinLai",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+          "url": "/coolinlai",
+          "userName": "coolinlai",
+          "tier": "EXPERT",
+          "id": 31887183,
+          "profileUrl": "/coolinlai",
+          "performanceTier": "EXPERT",
+          "userId": 31887183,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3536720,
+        "postDate": "2026-10-11T05:01:18.807Z",
+        "rawMarkdown": "Did you modify encoder ? use ImageNet  or RadImageNet ?",
+        "content": "<p>Did you modify encoder ? use ImageNet  or RadImageNet ?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "LP",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30595592-kg.jpg?t=2026-06-06-08-34-54",
+         "url": "/lihu6666",
+         "tier": "EXPERT",
+         "id": 30595592,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 8,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "LP",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30595592-kg.jpg?t=2026-06-06-08-34-54",
+          "url": "/lihu6666",
+          "userName": "lihu6666",
+          "tier": "EXPERT",
+          "id": 30595592,
+          "profileUrl": "/lihu6666",
+          "performanceTier": "EXPERT",
+          "userId": 30595592,
+          "progressionOptOut": false
+         },
+         "intro": "Looking for 1 teammate for RSNA competition.   (we have many single 96+models now)\nRequirements :\nBase: single model 0.960+"
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Cody_Null",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+       "url": "/cody11null",
+       "tier": "GRANDMASTER",
+       "id": 13672938,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 100,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Cody_Null",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+        "url": "/cody11null",
+        "userName": "cody11null",
+        "tier": "GRANDMASTER",
+        "id": 13672938,
+        "profileUrl": "/cody11null",
+        "performanceTier": "GRANDMASTER",
+        "userId": 13672938,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "CoolinLai",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+     "url": "/coolinlai",
+     "tier": "EXPERT",
+     "id": 31887183,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 7,
+     "canUpvote": true,
+     "totalUpvotes": 8
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 27,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "CoolinLai",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31887183-kg.jpg?t=2026-10-14-03-32-41",
+      "url": "/coolinlai",
+      "userName": "coolinlai",
+      "tier": "EXPERT",
+      "id": 31887183,
+      "profileUrl": "/coolinlai",
+      "performanceTier": "EXPERT",
+      "userId": 31887183,
       "progressionOptOut": false
      },
      "intro": ""
@@ -328,22 +871,23 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 7,
+         "totalVotes": 8,
          "canUpvote": true,
-         "totalUpvotes": 7
+         "totalUpvotes": 8
         },
         "kernelVersion": 0,
-        "competitionRanking": 61,
+        "competitionRanking": 44,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
          {
           "emoji": "LOVE",
           "featuredUserNames": [
+           "aliozanmemetoglu",
            "samson8",
            "phngbqun"
           ],
-          "userCount": 2
+          "userCount": 3
          }
         ],
         "teamUpInfo": {
@@ -381,7 +925,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 116,
+        "competitionRanking": 1026,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -420,7 +964,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 568,
+        "competitionRanking": 1005,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -455,7 +999,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 114,
+      "competitionRanking": 1427,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -496,10 +1040,12 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "canUpvote": true
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 645,
+        "competitionRanking": 364,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -534,7 +1080,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1107,
+      "competitionRanking": 2002,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -565,12 +1111,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 24,
+     "totalVotes": 27,
      "canUpvote": true,
-     "totalUpvotes": 24
+     "totalUpvotes": 27
     },
     "kernelVersion": 0,
-    "competitionRanking": 61,
+    "competitionRanking": 44,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -586,6 +1132,7 @@
        "pompom555",
        "thnhtonvng",
        "brechtlauwers",
+       "paritoshtripathi5",
        "nikoro256",
        "samson8",
        "ggayoayogg",
@@ -595,7 +1142,7 @@
        "ektarr",
        "dumdumbeams"
       ],
-      "userCount": 17
+      "userCount": 18
      },
      {
       "emoji": "FUNNY",
@@ -658,7 +1205,7 @@
          "totalUpvotes": 5
         },
         "kernelVersion": 0,
-        "competitionRanking": 80,
+        "competitionRanking": 218,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -711,7 +1258,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 721,
+        "competitionRanking": 1487,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -752,7 +1299,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 127,
+        "competitionRanking": 164,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -793,7 +1340,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 80,
+        "competitionRanking": 218,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -843,7 +1390,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 80,
+        "competitionRanking": 218,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -884,7 +1431,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 127,
+        "competitionRanking": 164,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -925,7 +1472,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 80,
+        "competitionRanking": 218,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -964,7 +1511,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 1897,
+        "competitionRanking": 116,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -1001,7 +1548,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 44,
+      "competitionRanking": 90,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -1055,7 +1602,7 @@
      "totalUpvotes": 7
     },
     "kernelVersion": 0,
-    "competitionRanking": 80,
+    "competitionRanking": 218,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1069,68 +1616,6 @@
       "profileUrl": "/architkonde",
       "performanceTier": "CONTRIBUTOR",
       "userId": 7079381,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3528480,
-    "postDate": "2026-09-26T05:34:32.593Z",
-    "rawMarkdown": "Thank you for the single-model score @phamgianguyen ",
-    "content": "<p>Thank you for the single-model score <a href=\"/phamgianguyen\" target=\"_blank\">@phamgianguyen</a> </p>",
-    "parent": {},
-    "author": {
-     "displayName": "Navneet",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
-     "url": "/navneetbende",
-     "tier": "CONTRIBUTOR",
-     "id": 15692441,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": -4,
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "feedbackTrackingData": {},
-    "isThankYou": false
-   },
-   {
-    "id": 3528431,
-    "postDate": "2026-09-26T04:23:38.427Z",
-    "rawMarkdown": "I was thinking a CNN would work best",
-    "content": "<p>I was thinking a CNN would work best</p>",
-    "parent": {},
-    "author": {
-     "displayName": "OmerZalman",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-     "url": "/omerzalman",
-     "tier": "CONTRIBUTOR",
-     "id": 29641607,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": -3,
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 4700,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "OmerZalman",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-      "url": "/omerzalman",
-      "userName": "omerzalman",
-      "tier": "CONTRIBUTOR",
-      "id": 29641607,
-      "profileUrl": "/omerzalman",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 29641607,
       "progressionOptOut": false
      },
      "intro": ""
@@ -1156,7 +1641,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 3064,
+    "competitionRanking": 1371,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1226,11 +1711,10 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 43,
+        "competitionRanking": 45,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
-         "enabled": true,
          "teamLeader": {
           "displayName": "Tanuki_boosting",
           "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
@@ -1262,16 +1746,15 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": 2,
+         "totalVotes": 3,
          "canUpvote": true,
-         "totalUpvotes": 2
+         "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 43,
+        "competitionRanking": 45,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
-         "enabled": true,
          "teamLeader": {
           "displayName": "Tanuki_boosting",
           "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
@@ -1306,7 +1789,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 4700,
+        "competitionRanking": 5107,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -1340,7 +1823,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 114,
+      "competitionRanking": 1427,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -1376,11 +1859,10 @@
      "totalUpvotes": 4
     },
     "kernelVersion": 0,
-    "competitionRanking": 43,
+    "competitionRanking": 45,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
-     "enabled": true,
      "teamLeader": {
       "displayName": "Tanuki_boosting",
       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
@@ -1395,6 +1877,29 @@
      },
      "intro": "I’m looking to merge with someone who has achieved a score of 0.955+ with a single model.\n\n"
     }
+   },
+   {
+    "id": 3528480,
+    "postDate": "2026-09-26T05:34:32.593Z",
+    "rawMarkdown": "Thank you for the single-model score @phamgianguyen ",
+    "content": "<p>Thank you for the single-model score <a href=\"/phamgianguyen\" target=\"_blank\">@phamgianguyen</a> </p>",
+    "parent": {},
+    "author": {
+     "displayName": "Navneet",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+     "url": "/navneetbende",
+     "tier": "CONTRIBUTOR",
+     "id": 15692441,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -4,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
    },
    {
     "id": 3524183,
@@ -1417,7 +1922,7 @@
      "totalUpvotes": 4
     },
     "kernelVersion": 0,
-    "competitionRanking": 181,
+    "competitionRanking": 71,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1469,7 +1974,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 133,
+        "competitionRanking": 1027,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -1509,7 +2014,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 721,
+        "competitionRanking": 1487,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -1563,7 +2068,7 @@
        "totalUpvotes": 1
       },
       "kernelVersion": 0,
-      "competitionRanking": 721,
+      "competitionRanking": 1487,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -1617,7 +2122,7 @@
      "totalUpvotes": 6
     },
     "kernelVersion": 0,
-    "competitionRanking": 133,
+    "competitionRanking": 1027,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -1661,12 +2166,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 3,
+     "totalVotes": 4,
      "canUpvote": true,
-     "totalUpvotes": 3
+     "totalUpvotes": 4
     },
     "kernelVersion": 0,
-    "competitionRanking": 184,
+    "competitionRanking": 261,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -1680,591 +2185,6 @@
       "profileUrl": "/jackvd",
       "performanceTier": "MASTER",
       "userId": 21922722,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3520511,
-    "postDate": "2026-09-03T15:13:03.147Z",
-    "rawMarkdown": "So far 0.942 raw, 0.943 with TTA at 288x288. OOF pseudo-labels have been pretty well correlated with LB. ",
-    "content": "<p>So far 0.942 raw, 0.943 with TTA at 288x288. OOF pseudo-labels have been pretty well correlated with LB. </p>",
-    "replies": [
-     {
-      "id": 3520560,
-      "postDate": "2026-09-03T16:54:13.597Z",
-      "rawMarkdown": "That's really high! At just 288x288 resolution. If resolution was just 288x288 to get such high scores, I wonder what are the core drivers of such a high score then. If you would be willing to share any hints... Great job regardless!",
-      "content": "<p>That's really high! At just 288x288 resolution. If resolution was just 288x288 to get such high scores, I wonder what are the core drivers of such a high score then. If you would be willing to share any hints… Great job regardless!</p>",
-      "replies": [
-       {
-        "id": 3520564,
-        "postDate": "2026-09-03T17:00:32.597Z",
-        "rawMarkdown": "Just a lot of incremental improvements. I have my own labels but they are not measurably better than the public ones. I'm not sure resolution is such a big driver.",
-        "content": "<p>Just a lot of incremental improvements. I have my own labels but they are not measurably better than the public ones. I'm not sure resolution is such a big driver.</p>",
-        "parent": {},
-        "author": {
-         "displayName": "tennogh",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
-         "url": "/tennogh",
-         "tier": "MASTER",
-         "id": 3991745,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 2,
-         "canUpvote": true,
-         "totalUpvotes": 2
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 8,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "syamoji141",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
-          "url": "/syamoji141chan",
-          "userName": "syamoji141chan",
-          "tier": "EXPERT",
-          "id": 5570066,
-          "profileUrl": "/syamoji141chan",
-          "performanceTier": "EXPERT",
-          "userId": 5570066,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3520567,
-        "postDate": "2026-09-03T17:09:59.857Z",
-        "rawMarkdown": "Agreed with resolution not being that important. I'm sure its backbone dependent and I've only tried ResNets and EffNets, but 224 / 288 is the sweet spot so far. ",
-        "content": "<p>Agreed with resolution not being that important. I'm sure its backbone dependent and I've only tried ResNets and EffNets, but 224 / 288 is the sweet spot so far. </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Tucker Arrants",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-         "url": "/tuckerarrants",
-         "tier": "MASTER",
-         "id": 4379159,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 3,
-         "canUpvote": true,
-         "totalUpvotes": 3
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 17,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Tony Li",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
-          "url": "/tonylica",
-          "userName": "tonylica",
-          "tier": "MASTER",
-          "id": 22938014,
-          "profileUrl": "/tonylica",
-          "performanceTier": "MASTER",
-          "userId": 22938014,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3520569,
-        "postDate": "2026-09-03T17:16:33.747Z",
-        "rawMarkdown": "Wow, that's really interesting and worring at the same time. I gotta be finding the missing peice staying low-res. Thankyou @tennogh @tuckerarrants ",
-        "content": "<p>Wow, that's really interesting and worring at the same time. I gotta be finding the missing peice staying low-res. Thankyou <a href=\"https://www.kaggle.com/tennogh\" target=\"_blank\">@tennogh</a> <a href=\"https://www.kaggle.com/tuckerarrants\" target=\"_blank\">@tuckerarrants</a> </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Komil Parmar",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
-         "url": "/komilparmar",
-         "tier": "EXPERT",
-         "id": 11351811,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 51,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Komil Parmar",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
-          "url": "/komilparmar",
-          "userName": "komilparmar",
-          "tier": "EXPERT",
-          "id": 11351811,
-          "profileUrl": "/komilparmar",
-          "performanceTier": "EXPERT",
-          "userId": 11351811,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3520743,
-        "postDate": "2026-09-04T03:32:02.427Z",
-        "rawMarkdown": "Thanks for sharing! I'm planning to start training with public labels. Do you think it's better to start with hard (0/1) or soft labels?",
-        "content": "<p>Thanks for sharing! I'm planning to start training with public labels. Do you think it's better to start with hard (0/1) or soft labels?</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Shuolin Liu",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2727680-kg.jpg",
-         "url": "/lsl000ud",
-         "tier": "MASTER",
-         "id": 2727680,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Shuolin Liu",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2727680-kg.jpg",
-          "url": "/lsl000ud",
-          "userName": "lsl000ud",
-          "tier": "MASTER",
-          "id": 2727680,
-          "profileUrl": "/lsl000ud",
-          "performanceTier": "MASTER",
-          "userId": 2727680,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3520745,
-        "postDate": "2026-09-04T03:35:34.647Z",
-        "rawMarkdown": "Start with soft but worth trying both so you can measure the value of the soft labels. The delta between the two is itself insightful.",
-        "content": "<p>Start with soft but worth trying both so you can measure the value of the soft labels. The delta between the two is itself insightful.</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Tucker Arrants",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
-         "url": "/tuckerarrants",
-         "tier": "MASTER",
-         "id": 4379159,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 17,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "reactions": [
-         {
-          "emoji": "THANK_YOU",
-          "featuredUserNames": [
-           "lsl000ud"
-          ],
-          "userCount": 1
-         }
-        ],
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Tony Li",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
-          "url": "/tonylica",
-          "userName": "tonylica",
-          "tier": "MASTER",
-          "id": 22938014,
-          "profileUrl": "/tonylica",
-          "performanceTier": "MASTER",
-          "userId": 22938014,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3523155,
-        "postDate": "2026-09-10T17:54:44.050Z",
-        "rawMarkdown": "Have you found any magic slices/windows for 224 res? I am trying it now with 0.446 mm/px on 64 slices 62 windows but my model scores struggle. Cant make out if my data is the problem or I have just busted something in my pipeline hahaha ",
-        "content": "<p>Have you found any magic slices/windows for 224 res? I am trying it now with 0.446 mm/px on 64 slices 62 windows but my model scores struggle. Cant make out if my data is the problem or I have just busted something in my pipeline hahaha </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 838,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3523270,
-        "postDate": "2026-09-11T00:06:07.497Z",
-        "rawMarkdown": "At 100mm Field of View you may be losing some useful information. My sweet spot is 140mm to 160mm FOV. \n\nUPDATE: I was wrong about the 140-160 comment. Different models do well with different FOVs. ",
-        "content": "<p>At 100mm Field of View you may be losing some useful information. My sweet spot is 140mm to 160mm FOV. </p>\n<p>UPDATE: I was wrong about the 140-160 comment. Different models do well with different FOVs. </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Parag",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/396939-kg.png?t=2026-07-24-17-16-31",
-         "url": "/paragkale",
-         "tier": "MASTER",
-         "id": 396939,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 33,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "reactions": [
-         {
-          "emoji": "SURPRISE",
-          "featuredUserNames": [
-           "osakanateishoku"
-          ],
-          "userCount": 1
-         }
-        ],
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Parag",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/396939-kg.png?t=2026-07-24-17-16-31",
-          "url": "/paragkale",
-          "userName": "paragkale",
-          "tier": "MASTER",
-          "id": 396939,
-          "profileUrl": "/paragkale",
-          "performanceTier": "MASTER",
-          "userId": 396939,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3523293,
-        "postDate": "2026-09-11T03:03:11.693Z",
-        "rawMarkdown": "Ill have a think about that one! Thanks!",
-        "content": "<p>Ill have a think about that one! Thanks!</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 838,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3530662,
-        "postDate": "2026-09-30T16:49:59.830Z",
-        "rawMarkdown": "The switch to 140 helped a ton and I tried 160 and it was similar but not better. Would be curious what you found now? I was previously using 100 and it was obviously cutting things off. I also do tissue centering even tho it makes no difference on scores. I am just so confused about my scores as I am sitting at 0.9 val and 0.92-0.93 gold and best single model is still at 0.931. Many are reporting this massive 0.02 positive jump from cv to lb and it makes me wonder if I am missing something big ",
-        "content": "<p>The switch to 140 helped a ton and I tried 160 and it was similar but not better. Would be curious what you found now? I was previously using 100 and it was obviously cutting things off. I also do tissue centering even tho it makes no difference on scores. I am just so confused about my scores as I am sitting at 0.9 val and 0.92-0.93 gold and best single model is still at 0.931. Many are reporting this massive 0.02 positive jump from cv to lb and it makes me wonder if I am missing something big </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 838,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3530670,
-        "postDate": "2026-09-30T17:05:12.290Z",
-        "rawMarkdown": "I validate OOF on extracted labels, and this is where I see the jump between local CV and LB (which makes sense, since the extracted labels are noisy, but the LB GT is not). Since you see 0.9 val (I assume on ex. labels) and LB of 0.931, don't you observe the same jump?",
-        "content": "<p>I validate OOF on extracted labels, and this is where I see the jump between local CV and LB (which makes sense, since the extracted labels are noisy, but the LB GT is not). Since you see 0.9 val (I assume on ex. labels) and LB of 0.931, don't you observe the same jump?</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Nicolai Karcher",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-         "url": "/pejophylo",
-         "tier": "CONTRIBUTOR",
-         "id": 2084214,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 1897,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Nicolai Karcher",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-          "url": "/pejophylo",
-          "userName": "pejophylo",
-          "tier": "CONTRIBUTOR",
-          "id": 2084214,
-          "profileUrl": "/pejophylo",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 2084214,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3530685,
-        "postDate": "2026-09-30T17:31:49.200Z",
-        "rawMarkdown": "Correct, I get a small jump between val. Gold has been weridly correlated and close to my LB despite only 58 sample (means nothing because of this but still odd). I think it may be because my extracted labels is like .91 as I found a few tricks to get better. As of now I think I have modeling work to do",
-        "content": "<p>Correct, I get a small jump between val. Gold has been weridly correlated and close to my LB despite only 58 sample (means nothing because of this but still odd). I think it may be because my extracted labels is like .91 as I found a few tricks to get better. As of now I think I have modeling work to do</p>",
-        "parent": {},
-        "author": {
-         "displayName": "Cody_Null",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-         "url": "/cody11null",
-         "tier": "GRANDMASTER",
-         "id": 13672938,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "totalVotes": 1,
-         "canUpvote": true,
-         "totalUpvotes": 1
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 838,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Cody_Null",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
-          "url": "/cody11null",
-          "userName": "cody11null",
-          "tier": "GRANDMASTER",
-          "id": 13672938,
-          "profileUrl": "/cody11null",
-          "performanceTier": "GRANDMASTER",
-          "userId": 13672938,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       },
-       {
-        "id": 3530723,
-        "postDate": "2026-09-30T19:06:35.953Z",
-        "rawMarkdown": "0.91 is better than anything I ever achieved - did the label improvement translate to LB imrpvement? if so, care to give some hints on what you did to achieve these label improvements? ",
-        "content": "<p>0.91 is better than anything I ever achieved - did the label improvement translate to LB imrpvement? if so, care to give some hints on what you did to achieve these label improvements? </p>",
-        "parent": {},
-        "author": {
-         "displayName": "Nicolai Karcher",
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-         "url": "/pejophylo",
-         "tier": "CONTRIBUTOR",
-         "id": 2084214,
-         "progressionOptOut": false
-        },
-        "authorType": "COMMENT",
-        "votes": {
-         "canUpvote": true
-        },
-        "kernelVersion": 0,
-        "competitionRanking": 1897,
-        "feedbackTrackingData": {},
-        "isThankYou": false,
-        "isCollapsed": true,
-        "teamUpInfo": {
-         "teamLeader": {
-          "displayName": "Nicolai Karcher",
-          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-          "url": "/pejophylo",
-          "userName": "pejophylo",
-          "tier": "CONTRIBUTOR",
-          "id": 2084214,
-          "profileUrl": "/pejophylo",
-          "performanceTier": "CONTRIBUTOR",
-          "userId": 2084214,
-          "progressionOptOut": false
-         },
-         "intro": ""
-        }
-       }
-      ],
-      "parent": {},
-      "author": {
-       "displayName": "Komil Parmar",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
-       "url": "/komilparmar",
-       "tier": "EXPERT",
-       "id": 11351811,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 51,
-      "feedbackTrackingData": {},
-      "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Komil Parmar",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
-        "url": "/komilparmar",
-        "userName": "komilparmar",
-        "tier": "EXPERT",
-        "id": 11351811,
-        "profileUrl": "/komilparmar",
-        "performanceTier": "EXPERT",
-        "userId": 11351811,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
-     }
-    ],
-    "parent": {},
-    "author": {
-     "displayName": "tennogh",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
-     "url": "/tennogh",
-     "tier": "MASTER",
-     "id": 3991745,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": 2,
-     "canUpvote": true,
-     "totalUpvotes": 2
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 8,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "reactions": [
-     {
-      "emoji": "LOVE",
-      "featuredUserNames": [
-       "uddipanb"
-      ],
-      "userCount": 1
-     }
-    ],
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "syamoji141",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
-      "url": "/syamoji141chan",
-      "userName": "syamoji141chan",
-      "tier": "EXPERT",
-      "id": 5570066,
-      "profileUrl": "/syamoji141chan",
-      "performanceTier": "EXPERT",
-      "userId": 5570066,
       "progressionOptOut": false
      },
      "intro": ""
@@ -2303,7 +2223,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 29,
+        "competitionRanking": 59,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -2356,7 +2276,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 2373,
+        "competitionRanking": 2907,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -2404,7 +2324,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 906,
+        "competitionRanking": 1397,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -2446,7 +2366,7 @@
          "totalUpvotes": 8
         },
         "kernelVersion": 0,
-        "competitionRanking": 29,
+        "competitionRanking": 59,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -2522,7 +2442,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 838,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -2595,7 +2515,7 @@
          "totalUpvotes": 5
         },
         "kernelVersion": 0,
-        "competitionRanking": 29,
+        "competitionRanking": 59,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -2639,7 +2559,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 127,
+      "competitionRanking": 164,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -2683,7 +2603,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 948,
+        "competitionRanking": 1851,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -2721,7 +2641,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 29,
+        "competitionRanking": 59,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -2761,7 +2681,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 35,
+        "competitionRanking": 29,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -2795,7 +2715,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 44,
+      "competitionRanking": 90,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "reactions": [
@@ -2840,11 +2760,11 @@
       },
       "authorType": "COMMENT",
       "votes": {
-       "totalVotes": -10,
+       "totalVotes": -11,
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 568,
+      "competitionRanking": 1005,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -2876,12 +2796,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 6,
+     "totalVotes": 7,
      "canUpvote": true,
-     "totalUpvotes": 6
+     "totalUpvotes": 7
     },
     "kernelVersion": 0,
-    "competitionRanking": 29,
+    "competitionRanking": 59,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -2911,6 +2831,592 @@
     }
    },
    {
+    "id": 3520511,
+    "postDate": "2026-09-03T15:13:03.147Z",
+    "rawMarkdown": "So far 0.942 raw, 0.943 with TTA at 288x288. OOF pseudo-labels have been pretty well correlated with LB. ",
+    "content": "<p>So far 0.942 raw, 0.943 with TTA at 288x288. OOF pseudo-labels have been pretty well correlated with LB. </p>",
+    "replies": [
+     {
+      "id": 3520560,
+      "postDate": "2026-09-03T16:54:13.597Z",
+      "rawMarkdown": "That's really high! At just 288x288 resolution. If resolution was just 288x288 to get such high scores, I wonder what are the core drivers of such a high score then. If you would be willing to share any hints... Great job regardless!",
+      "content": "<p>That's really high! At just 288x288 resolution. If resolution was just 288x288 to get such high scores, I wonder what are the core drivers of such a high score then. If you would be willing to share any hints… Great job regardless!</p>",
+      "replies": [
+       {
+        "id": 3520564,
+        "postDate": "2026-09-03T17:00:32.597Z",
+        "rawMarkdown": "Just a lot of incremental improvements. I have my own labels but they are not measurably better than the public ones. I'm not sure resolution is such a big driver.",
+        "content": "<p>Just a lot of incremental improvements. I have my own labels but they are not measurably better than the public ones. I'm not sure resolution is such a big driver.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "tennogh",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+         "url": "/tennogh",
+         "tier": "MASTER",
+         "id": 3991745,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 16,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "syamoji141",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+          "url": "/syamoji141chan",
+          "userName": "syamoji141chan",
+          "tier": "EXPERT",
+          "id": 5570066,
+          "profileUrl": "/syamoji141chan",
+          "performanceTier": "EXPERT",
+          "userId": 5570066,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520567,
+        "postDate": "2026-09-03T17:09:59.857Z",
+        "rawMarkdown": "Agreed with resolution not being that important. I'm sure its backbone dependent and I've only tried ResNets and EffNets, but 224 / 288 is the sweet spot so far. ",
+        "content": "<p>Agreed with resolution not being that important. I'm sure its backbone dependent and I've only tried ResNets and EffNets, but 224 / 288 is the sweet spot so far. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 3,
+         "canUpvote": true,
+         "totalUpvotes": 3
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 4,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520569,
+        "postDate": "2026-09-03T17:16:33.747Z",
+        "rawMarkdown": "Wow, that's really interesting and worring at the same time. I gotta be finding the missing peice staying low-res. Thankyou @tennogh @tuckerarrants ",
+        "content": "<p>Wow, that's really interesting and worring at the same time. I gotta be finding the missing peice staying low-res. Thankyou <a href=\"https://www.kaggle.com/tennogh\" target=\"_blank\">@tennogh</a> <a href=\"https://www.kaggle.com/tuckerarrants\" target=\"_blank\">@tuckerarrants</a> </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Komil Parmar",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+         "url": "/komilparmar",
+         "tier": "EXPERT",
+         "id": 11351811,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 42,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Komil Parmar",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+          "url": "/komilparmar",
+          "userName": "komilparmar",
+          "tier": "EXPERT",
+          "id": 11351811,
+          "profileUrl": "/komilparmar",
+          "performanceTier": "EXPERT",
+          "userId": 11351811,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520743,
+        "postDate": "2026-09-04T03:32:02.427Z",
+        "rawMarkdown": "Thanks for sharing! I'm planning to start training with public labels. Do you think it's better to start with hard (0/1) or soft labels?",
+        "content": "<p>Thanks for sharing! I'm planning to start training with public labels. Do you think it's better to start with hard (0/1) or soft labels?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Shuolin Liu",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2727680-kg.jpg",
+         "url": "/lsl000ud",
+         "tier": "MASTER",
+         "id": 2727680,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 4178,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Xu QQ",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/siegeweb",
+          "userName": "siegeweb",
+          "tier": "CONTRIBUTOR",
+          "id": 2348075,
+          "profileUrl": "/siegeweb",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2348075,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3520745,
+        "postDate": "2026-09-04T03:35:34.647Z",
+        "rawMarkdown": "Start with soft but worth trying both so you can measure the value of the soft labels. The delta between the two is itself insightful.",
+        "content": "<p>Start with soft but worth trying both so you can measure the value of the soft labels. The delta between the two is itself insightful.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Tucker Arrants",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4379159-kg.png?t=2026-03-24-04-22-03",
+         "url": "/tuckerarrants",
+         "tier": "MASTER",
+         "id": 4379159,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 4,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "THANK_YOU",
+          "featuredUserNames": [
+           "lsl000ud"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Tony Li",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22938014-kg.png?t=2024-10-15-22-21-41",
+          "url": "/tonylica",
+          "userName": "tonylica",
+          "tier": "MASTER",
+          "id": 22938014,
+          "profileUrl": "/tonylica",
+          "performanceTier": "MASTER",
+          "userId": 22938014,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523155,
+        "postDate": "2026-09-10T17:54:44.050Z",
+        "rawMarkdown": "Have you found any magic slices/windows for 224 res? I am trying it now with 0.446 mm/px on 64 slices 62 windows but my model scores struggle. Cant make out if my data is the problem or I have just busted something in my pipeline hahaha ",
+        "content": "<p>Have you found any magic slices/windows for 224 res? I am trying it now with 0.446 mm/px on 64 slices 62 windows but my model scores struggle. Cant make out if my data is the problem or I have just busted something in my pipeline hahaha </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523270,
+        "postDate": "2026-09-11T00:06:07.497Z",
+        "rawMarkdown": "At 100mm Field of View you may be losing some useful information. My sweet spot is 140mm to 160mm FOV. \n\nUPDATE: I was wrong about the 140-160 comment. Different models do well with different FOVs. ",
+        "content": "<p>At 100mm Field of View you may be losing some useful information. My sweet spot is 140mm to 160mm FOV. </p>\n<p>UPDATE: I was wrong about the 140-160 comment. Different models do well with different FOVs. </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Parag",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/396939-kg.png?t=2026-07-24-17-16-31",
+         "url": "/paragkale",
+         "tier": "MASTER",
+         "id": 396939,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 75,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "reactions": [
+         {
+          "emoji": "SURPRISE",
+          "featuredUserNames": [
+           "osakanateishoku"
+          ],
+          "userCount": 1
+         }
+        ],
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Parag",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/396939-kg.png?t=2026-07-24-17-16-31",
+          "url": "/paragkale",
+          "userName": "paragkale",
+          "tier": "MASTER",
+          "id": 396939,
+          "profileUrl": "/paragkale",
+          "performanceTier": "MASTER",
+          "userId": 396939,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3523293,
+        "postDate": "2026-09-11T03:03:11.693Z",
+        "rawMarkdown": "Ill have a think about that one! Thanks!",
+        "content": "<p>Ill have a think about that one! Thanks!</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3530662,
+        "postDate": "2026-09-30T16:49:59.830Z",
+        "rawMarkdown": "The switch to 140 helped a ton and I tried 160 and it was similar but not better. Would be curious what you found now? I was previously using 100 and it was obviously cutting things off. I also do tissue centering even tho it makes no difference on scores. I am just so confused about my scores as I am sitting at 0.9 val and 0.92-0.93 gold and best single model is still at 0.931. Many are reporting this massive 0.02 positive jump from cv to lb and it makes me wonder if I am missing something big ",
+        "content": "<p>The switch to 140 helped a ton and I tried 160 and it was similar but not better. Would be curious what you found now? I was previously using 100 and it was obviously cutting things off. I also do tissue centering even tho it makes no difference on scores. I am just so confused about my scores as I am sitting at 0.9 val and 0.92-0.93 gold and best single model is still at 0.931. Many are reporting this massive 0.02 positive jump from cv to lb and it makes me wonder if I am missing something big </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3530670,
+        "postDate": "2026-09-30T17:05:12.290Z",
+        "rawMarkdown": "I validate OOF on extracted labels, and this is where I see the jump between local CV and LB (which makes sense, since the extracted labels are noisy, but the LB GT is not). Since you see 0.9 val (I assume on ex. labels) and LB of 0.931, don't you observe the same jump?",
+        "content": "<p>I validate OOF on extracted labels, and this is where I see the jump between local CV and LB (which makes sense, since the extracted labels are noisy, but the LB GT is not). Since you see 0.9 val (I assume on ex. labels) and LB of 0.931, don't you observe the same jump?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Nicolai Karcher",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/pejophylo",
+         "tier": "CONTRIBUTOR",
+         "id": 2084214,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 116,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Nicolai Karcher",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/pejophylo",
+          "userName": "pejophylo",
+          "tier": "CONTRIBUTOR",
+          "id": 2084214,
+          "profileUrl": "/pejophylo",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2084214,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3530685,
+        "postDate": "2026-09-30T17:31:49.200Z",
+        "rawMarkdown": "Correct, I get a small jump between val. Gold has been weridly correlated and close to my LB despite only 58 sample (means nothing because of this but still odd). I think it may be because my extracted labels is like .91 as I found a few tricks to get better. As of now I think I have modeling work to do",
+        "content": "<p>Correct, I get a small jump between val. Gold has been weridly correlated and close to my LB despite only 58 sample (means nothing because of this but still odd). I think it may be because my extracted labels is like .91 as I found a few tricks to get better. As of now I think I have modeling work to do</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cody_Null",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+         "url": "/cody11null",
+         "tier": "GRANDMASTER",
+         "id": 13672938,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 100,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Cody_Null",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+          "url": "/cody11null",
+          "userName": "cody11null",
+          "tier": "GRANDMASTER",
+          "id": 13672938,
+          "profileUrl": "/cody11null",
+          "performanceTier": "GRANDMASTER",
+          "userId": 13672938,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3530723,
+        "postDate": "2026-09-30T19:06:35.953Z",
+        "rawMarkdown": "0.91 is better than anything I ever achieved - did the label improvement translate to LB imrpvement? if so, care to give some hints on what you did to achieve these label improvements? ",
+        "content": "<p>0.91 is better than anything I ever achieved - did the label improvement translate to LB imrpvement? if so, care to give some hints on what you did to achieve these label improvements? </p>",
+        "parent": {},
+        "author": {
+         "displayName": "Nicolai Karcher",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+         "url": "/pejophylo",
+         "tier": "CONTRIBUTOR",
+         "id": 2084214,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 116,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "isCollapsed": true,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Nicolai Karcher",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/pejophylo",
+          "userName": "pejophylo",
+          "tier": "CONTRIBUTOR",
+          "id": 2084214,
+          "profileUrl": "/pejophylo",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 2084214,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Komil Parmar",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+       "url": "/komilparmar",
+       "tier": "EXPERT",
+       "id": 11351811,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 42,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Komil Parmar",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11351811-kg.jpg?t=2025-07-02-06-16-19",
+        "url": "/komilparmar",
+        "userName": "komilparmar",
+        "tier": "EXPERT",
+        "id": 11351811,
+        "profileUrl": "/komilparmar",
+        "performanceTier": "EXPERT",
+        "userId": 11351811,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "tennogh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3991745-kg.jpg?t=2025-03-27-17-14-19",
+     "url": "/tennogh",
+     "tier": "MASTER",
+     "id": 3991745,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 16,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "LOVE",
+      "featuredUserNames": [
+       "uddipanb"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "syamoji141",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5570066-kg.jpeg?t=2023-09-23-14-41-05",
+      "url": "/syamoji141chan",
+      "userName": "syamoji141chan",
+      "tier": "EXPERT",
+      "id": 5570066,
+      "profileUrl": "/syamoji141chan",
+      "performanceTier": "EXPERT",
+      "userId": 5570066,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3513019,
     "postDate": "2026-08-15T01:32:37.950Z",
     "rawMarkdown": "In my option - 9 days into a competition is a very silly time to be wasting efforts refining ensemble models.  ",
@@ -2926,12 +3432,12 @@
     },
     "authorType": "COMMENT",
     "votes": {
-     "totalVotes": 9,
+     "totalVotes": 10,
      "canUpvote": true,
-     "totalUpvotes": 9
+     "totalUpvotes": 10
     },
     "kernelVersion": 0,
-    "competitionRanking": 1901,
+    "competitionRanking": 2507,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "reactions": [
@@ -2993,7 +3499,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -3064,7 +3570,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 127,
+        "competitionRanking": 164,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3103,7 +3609,7 @@
          "canUpvote": true
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3153,7 +3659,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 838,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3194,7 +3700,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3244,7 +3750,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 838,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3285,7 +3791,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3326,7 +3832,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 838,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3367,7 +3873,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3408,7 +3914,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 838,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3449,7 +3955,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3490,7 +3996,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 838,
+        "competitionRanking": 100,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3531,7 +4037,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 8,
+        "competitionRanking": 16,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3572,7 +4078,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 721,
+        "competitionRanking": 1487,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3613,7 +4119,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3682,7 +4188,7 @@
          "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 17,
+        "competitionRanking": 4,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "isCollapsed": true,
@@ -3745,7 +4251,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 64,
+      "competitionRanking": 221,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -3802,7 +4308,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1212,
+      "competitionRanking": 930,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -3838,7 +4344,7 @@
      "totalUpvotes": 6
     },
     "kernelVersion": 0,
-    "competitionRanking": 17,
+    "competitionRanking": 4,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -3852,66 +4358,6 @@
       "profileUrl": "/tonylica",
       "performanceTier": "MASTER",
       "userId": 22938014,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3515050,
-    "postDate": "2026-08-20T16:49:30.603Z",
-    "rawMarkdown": "single(5-fold) model 0.926 @ 336px\n\nLLM output labels only",
-    "content": "<p>single(5-fold) model 0.926 @ 336px</p>\n<p>LLM output labels only</p>",
-    "replies": [
-     {
-      "id": 3515696,
-      "postDate": "2026-08-22T09:22:52.693Z",
-      "rawMarkdown": "",
-      "parent": {},
-      "author": {
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-       "url": "/"
-      },
-      "authorType": "COMMENT",
-      "votes": {},
-      "canDelete": true,
-      "isUserAuthor": true,
-      "isDeleted": true,
-      "kernelVersion": 0,
-      "feedbackTrackingData": {},
-      "isThankYou": false
-     }
-    ],
-    "parent": {},
-    "author": {
-     "displayName": "k256.dev",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
-     "url": "/k256net",
-     "tier": "MASTER",
-     "id": 17784323,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "totalVotes": 4,
-     "canUpvote": true,
-     "totalUpvotes": 4
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 3044,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "k256.dev",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
-      "url": "/k256net",
-      "userName": "k256net",
-      "tier": "MASTER",
-      "id": 17784323,
-      "profileUrl": "/k256net",
-      "performanceTier": "MASTER",
-      "userId": 17784323,
       "progressionOptOut": false
      },
      "intro": ""
@@ -3950,7 +4396,7 @@
          "totalUpvotes": 2
         },
         "kernelVersion": 0,
-        "competitionRanking": 2331,
+        "competitionRanking": 2876,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -4001,7 +4447,7 @@
          "totalUpvotes": 3
         },
         "kernelVersion": 0,
-        "competitionRanking": 127,
+        "competitionRanking": 164,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "teamUpInfo": {
@@ -4035,7 +4481,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 2373,
+      "competitionRanking": 2907,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -4071,7 +4517,7 @@
      "totalUpvotes": 5
     },
     "kernelVersion": 0,
-    "competitionRanking": 127,
+    "competitionRanking": 164,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -4085,6 +4531,66 @@
       "profileUrl": "/taindow",
       "performanceTier": "MASTER",
       "userId": 921947,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3515050,
+    "postDate": "2026-08-20T16:49:30.603Z",
+    "rawMarkdown": "single(5-fold) model 0.926 @ 336px\n\nLLM output labels only",
+    "content": "<p>single(5-fold) model 0.926 @ 336px</p>\n<p>LLM output labels only</p>",
+    "replies": [
+     {
+      "id": 3515696,
+      "postDate": "2026-08-22T09:22:52.693Z",
+      "rawMarkdown": "",
+      "parent": {},
+      "author": {
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/"
+      },
+      "authorType": "COMMENT",
+      "votes": {},
+      "canDelete": true,
+      "isUserAuthor": true,
+      "isDeleted": true,
+      "kernelVersion": 0,
+      "feedbackTrackingData": {},
+      "isThankYou": false
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "k256.dev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+     "url": "/k256net",
+     "tier": "MASTER",
+     "id": 17784323,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 4,
+     "canUpvote": true,
+     "totalUpvotes": 4
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1430,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "k256.dev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17784323-kg.png?t=2026-06-14-17-48-40",
+      "url": "/k256net",
+      "userName": "k256net",
+      "tier": "MASTER",
+      "id": 17784323,
+      "profileUrl": "/k256net",
+      "performanceTier": "MASTER",
+      "userId": 17784323,
       "progressionOptOut": false
      },
      "intro": ""
@@ -4116,7 +4622,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 906,
+      "competitionRanking": 1397,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -4153,7 +4659,7 @@
      "totalUpvotes": 6
     },
     "kernelVersion": 0,
-    "competitionRanking": 64,
+    "competitionRanking": 221,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -4193,7 +4699,7 @@
      "totalUpvotes": 3
     },
     "kernelVersion": 0,
-    "competitionRanking": 2331,
+    "competitionRanking": 2876,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -4207,120 +4713,6 @@
       "profileUrl": "/timkrige",
       "performanceTier": "EXPERT",
       "userId": 3326547,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3535687,
-    "postDate": "2026-10-09T03:49:23.203Z",
-    "rawMarkdown": "My public scores:\n\n- ConvNeXt-T (2.5D), single model: 0.953\n- DINOv2 ViT-S (2.5D), single model: 0.951\n- Ensemble of the two: 0.955\n\nBoth single models are trained with pseudo labels, so they are not pure report-label single models. No external data used yet, though.",
-    "content": "<p>My public scores:</p>\n<ul>\n<li>ConvNeXt-T (2.5D), single model: 0.953</li>\n<li>DINOv2 ViT-S (2.5D), single model: 0.951</li>\n<li>Ensemble of the two: 0.955</li>\n</ul>\n<p>Both single models are trained with pseudo labels, so they are not pure report-label single models. No external data used yet, though.</p>",
-    "parent": {},
-    "author": {
-     "displayName": "colum2131",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
-     "url": "/columbia2131",
-     "tier": "MASTER",
-     "id": 3858775,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 63,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "colum2131",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3858775-kg.jpg",
-      "url": "/columbia2131",
-      "userName": "columbia2131",
-      "tier": "MASTER",
-      "id": 3858775,
-      "profileUrl": "/columbia2131",
-      "performanceTier": "MASTER",
-      "userId": 3858775,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3533725,
-    "postDate": "2026-10-06T17:32:56.003Z",
-    "rawMarkdown": "I got 0.952 with 224px single model.",
-    "content": "<p>I got 0.952 with 224px single model.</p>",
-    "parent": {},
-    "author": {
-     "displayName": "Musa Tur Farazi",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
-     "url": "/musaturfarazi",
-     "tier": "CONTRIBUTOR",
-     "id": 17726805,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 79,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "Musa Tur Farazi",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17726805-kg.jpg?t=2026-04-25-19-18-10",
-      "url": "/musaturfarazi",
-      "userName": "musaturfarazi",
-      "tier": "CONTRIBUTOR",
-      "id": 17726805,
-      "profileUrl": "/musaturfarazi",
-      "performanceTier": "CONTRIBUTOR",
-      "userId": 17726805,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
-   },
-   {
-    "id": 3532794,
-    "postDate": "2026-10-04T18:15:48.033Z",
-    "rawMarkdown": "5 fold coatnet 0.932 plb, training on kaggle notebook with public labels.",
-    "content": "<p>5 fold coatnet 0.932 plb, training on kaggle notebook with public labels.</p>",
-    "parent": {},
-    "author": {
-     "displayName": "MengYe",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
-     "url": "/konohayui",
-     "tier": "EXPERT",
-     "id": 1113072,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 258,
-    "feedbackTrackingData": {},
-    "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "MengYe",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1113072-gp.jpg",
-      "url": "/konohayui",
-      "userName": "konohayui",
-      "tier": "EXPERT",
-      "id": 1113072,
-      "profileUrl": "/konohayui",
-      "performanceTier": "EXPERT",
-      "userId": 1113072,
       "progressionOptOut": false
      },
      "intro": ""
@@ -4351,7 +4743,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 116,
+      "competitionRanking": 1026,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -4385,7 +4777,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 116,
+    "competitionRanking": 1026,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -4415,6 +4807,46 @@
       "postDate": "2026-10-05T07:18:18.500Z",
       "rawMarkdown": "Through model improvements and training on the full dataset, the score was updated to 0.940, with a computation time of 1.5 hours. I’m currently achieving a 0.940 score with this single model using the publicly available weak labels.\nIf you’re confident in improving the weak labels and are already achieving 0.94+ with a single model, I’d be happy to merge teams. ",
       "content": "<p>Through model improvements and training on the full dataset, the score was updated to 0.940, with a computation time of 1.5 hours. I’m currently achieving a 0.940 score with this single model using the publicly available weak labels.\nIf you’re confident in improving the weak labels and are already achieving 0.94+ with a single model, I’d be happy to merge teams. </p>",
+      "replies": [
+       {
+        "id": 3536502,
+        "postDate": "2026-10-10T14:53:56.743Z",
+        "rawMarkdown": "可以问一下您使用的是什么样的算力吗，我也是CoAtNet模型，但是单折的训练时间就比您长很多",
+        "content": "<p>可以问一下您使用的是什么样的算力吗，我也是CoAtNet模型，但是单折的训练时间就比您长很多</p>",
+        "parent": {},
+        "author": {
+         "displayName": "辛弃疾lhx",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25571904-kg.jpg?t=2025-03-11-06-53-01",
+         "url": "/hsnononolhx",
+         "tier": "CONTRIBUTOR",
+         "id": 25571904,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 2478,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "辛弃疾lhx",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25571904-kg.jpg?t=2025-03-11-06-53-01",
+          "url": "/hsnononolhx",
+          "userName": "hsnononolhx",
+          "tier": "CONTRIBUTOR",
+          "id": 25571904,
+          "profileUrl": "/hsnononolhx",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 25571904,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
       "parent": {},
       "author": {
        "displayName": "kmn",
@@ -4429,7 +4861,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 2332,
+      "competitionRanking": 1760,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -4464,7 +4896,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 2332,
+    "competitionRanking": 1760,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -4512,11 +4944,11 @@
         },
         "authorType": "COMMENT",
         "votes": {
-         "totalVotes": -1,
-         "canUpvote": true
+         "canUpvote": true,
+         "totalUpvotes": 1
         },
         "kernelVersion": 0,
-        "competitionRanking": 50,
+        "competitionRanking": 12,
         "feedbackTrackingData": {},
         "isThankYou": false,
         "reactions": [
@@ -4542,7 +4974,7 @@
           "userId": 22231354,
           "progressionOptOut": false
          },
-         "intro": "winable"
+         "intro": "tomoon san issyo ni yaritaidesu gokentou yorosikuonegaisimasu , watasi mo kawasaki ni sundemasu"
         }
        }
       ],
@@ -4560,7 +4992,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 1954,
+      "competitionRanking": 2550,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "reactions": [
@@ -4603,7 +5035,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 50,
+    "competitionRanking": 12,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -4619,268 +5051,93 @@
       "userId": 22231354,
       "progressionOptOut": false
      },
-     "intro": "winable"
+     "intro": "tomoon san issyo ni yaritaidesu gokentou yorosikuonegaisimasu , watasi mo kawasaki ni sundemasu"
     }
    },
    {
     "id": 3513661,
     "postDate": "2026-08-17T09:09:42.770Z",
-    "rawMarkdown": "I’d like to ask how long it usually takes to train a model using DINOv2. Also, roughly how much computational resources are required for this competition?\n",
-    "content": "<p>I’d like to ask how long it usually takes to train a model using DINOv2. Also, roughly how much computational resources are required for this competition?</p>",
     "replies": [
      {
       "id": 3513671,
       "postDate": "2026-08-17T09:44:32.100Z",
-      "rawMarkdown": "This is a hard question to answer. Dino has a variety of sizes, small to huge. Within a size there are layers, with larger sized having more layers. In some competitions there have been amazing results from the pretrained dino weights and only finetuned heads. Others require unfreezing a few of the last layers, and still other competitions benefit from a full backbone unfreeze. The more of the backbone you unfreeze the more VRAM and GPU speed  you need. I am finding strong correlations between number of layers unfrozen and score, but I only have limited vram so I am typically training the smallest dino's.\n\nI am on a 3070 and a 5070ti for most of my training. Models take a day or so to train 5 folds. \n\nA good technique on a tiny model is better than just throwing data at a large model and hoping compute can solve it, typically. You would also learn more like this.\n\nI hope this helps. ",
-      "content": "<p>This is a hard question to answer. Dino has a variety of sizes, small to huge. Within a size there are layers, with larger sized having more layers. In some competitions there have been amazing results from the pretrained dino weights and only finetuned heads. Others require unfreezing a few of the last layers, and still other competitions benefit from a full backbone unfreeze. The more of the backbone you unfreeze the more VRAM and GPU speed  you need. I am finding strong correlations between number of layers unfrozen and score, but I only have limited vram so I am typically training the smallest dino's.</p>\n<p>I am on a 3070 and a 5070ti for most of my training. Models take a day or so to train 5 folds. </p>\n<p>A good technique on a tiny model is better than just throwing data at a large model and hoping compute can solve it, typically. You would also learn more like this.</p>\n<p>I hope this helps. </p>",
-      "parent": {},
-      "author": {
-       "displayName": "Tim Krige",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
-       "url": "/timkrige",
-       "tier": "EXPERT",
-       "id": 3326547,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
       "votes": {
        "totalVotes": 2,
-       "canUpvote": true,
        "totalUpvotes": 2
       },
-      "kernelVersion": 0,
-      "competitionRanking": 2331,
-      "feedbackTrackingData": {},
       "isThankYou": false,
-      "reactions": [
-       {
-        "emoji": "LOVE",
-        "featuredUserNames": [
-         "ajisamudra",
-         "enaimaan",
-         "komilparmar",
-         "mattagar",
-         "kentorio"
-        ],
-        "userCount": 5
-       }
-      ],
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Tim Krige",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3326547-kg.png?t=2025-11-07-16-37-02",
-        "url": "/timkrige",
-        "userName": "timkrige",
-        "tier": "EXPERT",
-        "id": 3326547,
-        "profileUrl": "/timkrige",
-        "performanceTier": "EXPERT",
-        "userId": 3326547,
-        "progressionOptOut": false
-       },
-       "intro": ""
-      }
+      "isPartial": true
      }
     ],
-    "parent": {},
-    "author": {
-     "displayName": "Aic",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23193939-kg.jpg?t=2026-08-14-06-54-39",
-     "url": "/gunianxue",
-     "tier": "EXPERT",
-     "id": 23193939,
-     "progressionOptOut": false
-    },
-    "authorType": "COMMENT",
-    "votes": {
-     "canUpvote": true
-    },
-    "kernelVersion": 0,
-    "competitionRanking": 239,
-    "feedbackTrackingData": {},
+    "votes": {},
     "isThankYou": false,
-    "teamUpInfo": {
-     "teamLeader": {
-      "displayName": "Aic",
-      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23193939-kg.jpg?t=2026-08-14-06-54-39",
-      "url": "/gunianxue",
-      "userName": "gunianxue",
-      "tier": "EXPERT",
-      "id": 23193939,
-      "profileUrl": "/gunianxue",
-      "performanceTier": "EXPERT",
-      "userId": 23193939,
-      "progressionOptOut": false
-     },
-     "intro": ""
-    }
+    "isPartial": true
+   },
+   {
+    "id": 3528431,
+    "postDate": "2026-09-26T04:23:38.427Z",
+    "votes": {
+     "totalVotes": -3
+    },
+    "isDeleted": true,
+    "isThankYou": false,
+    "isPartial": true
    },
    {
     "id": 3527217,
     "postDate": "2026-09-23T07:06:59.967Z",
-    "rawMarkdown": "",
-    "parent": {},
-    "author": {
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-     "url": "/"
-    },
-    "authorType": "COMMENT",
     "votes": {},
-    "canDelete": true,
-    "isUserAuthor": true,
     "isDeleted": true,
-    "kernelVersion": 0,
-    "feedbackTrackingData": {},
-    "isThankYou": false
+    "isThankYou": false,
+    "isPartial": true
    },
    {
     "id": 3521115,
     "postDate": "2026-09-04T22:42:46.270Z",
-    "rawMarkdown": "",
     "replies": [
      {
       "id": 3521218,
       "postDate": "2026-09-05T08:15:52.937Z",
-      "rawMarkdown": "I think different architectures can still complement each other, so I’m not fully convinced that ensembling is just averaging the same label noise. Right now, the most promising direction to me feels like: good labels + a strong single model + a few truly complementary models blended together.",
-      "content": "<p>I think different architectures can still complement each other, so I’m not fully convinced that ensembling is just averaging the same label noise. Right now, the most promising direction to me feels like: good labels + a strong single model + a few truly complementary models blended together.</p>",
       "replies": [
        {
         "id": 3521436,
         "postDate": "2026-09-05T22:06:23.003Z",
-        "rawMarkdown": "",
-        "parent": {},
-        "author": {
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-         "url": "/"
-        },
-        "authorType": "COMMENT",
         "votes": {
          "totalVotes": -1
         },
-        "canDelete": true,
-        "isUserAuthor": true,
         "isDeleted": true,
-        "kernelVersion": 0,
-        "feedbackTrackingData": {},
-        "isThankYou": false
+        "isThankYou": false,
+        "isPartial": true
        }
       ],
-      "parent": {},
-      "author": {
-       "displayName": "SpeedSci",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
-       "url": "/caoyupeng",
-       "tier": "EXPERT",
-       "id": 26421714,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 116,
-      "feedbackTrackingData": {},
+      "votes": {},
       "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Myo Min Htet(wnp)🇲🇲",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
-        "url": "/myominhtet",
-        "userName": "myominhtet",
-        "tier": "EXPERT",
-        "id": 4600631,
-        "profileUrl": "/myominhtet",
-        "performanceTier": "EXPERT",
-        "userId": 4600631,
-        "progressionOptOut": false
-       },
-       "intro": "Need some who can support GPU, "
-      }
+      "isPartial": true
      },
      {
       "id": 3521219,
       "postDate": "2026-09-05T08:20:15.810Z",
-      "rawMarkdown": "I’m a bit confused about something and wanted to ask: in my experiments, v10 labels + DINOv2 outperformed v9 labels + DINOv2 — but when I switched to ConvNeXt, v9 labels + ConvNeXt actually did better than v10 labels + ConvNeXt.\n\nIt seems like different architectures have different \"ability\" to benefit from label improvements. Has anyone else run into something similar?",
-      "content": "<p>I’m a bit confused about something and wanted to ask: in my experiments, v10 labels + DINOv2 outperformed v9 labels + DINOv2 — but when I switched to ConvNeXt, v9 labels + ConvNeXt actually did better than v10 labels + ConvNeXt.</p>\n<p>It seems like different architectures have different \"ability\" to benefit from label improvements. Has anyone else run into something similar?</p>",
       "replies": [
        {
         "id": 3521431,
         "postDate": "2026-09-05T21:55:27.987Z",
-        "rawMarkdown": "",
-        "parent": {},
-        "author": {
-         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-         "url": "/"
-        },
-        "authorType": "COMMENT",
         "votes": {},
-        "canDelete": true,
-        "isUserAuthor": true,
         "isDeleted": true,
-        "kernelVersion": 0,
-        "feedbackTrackingData": {},
         "isThankYou": false,
-        "reactions": [
-         {
-          "emoji": "THANK_YOU",
-          "featuredUserNames": [
-           "caoyupeng"
-          ],
-          "userCount": 1
-         }
-        ]
+        "isPartial": true
        }
       ],
-      "parent": {},
-      "author": {
-       "displayName": "SpeedSci",
-       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
-       "url": "/caoyupeng",
-       "tier": "EXPERT",
-       "id": 26421714,
-       "progressionOptOut": false
-      },
-      "authorType": "COMMENT",
-      "votes": {
-       "canUpvote": true
-      },
-      "kernelVersion": 0,
-      "competitionRanking": 116,
-      "feedbackTrackingData": {},
+      "votes": {},
       "isThankYou": false,
-      "teamUpInfo": {
-       "teamLeader": {
-        "displayName": "Myo Min Htet(wnp)🇲🇲",
-        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
-        "url": "/myominhtet",
-        "userName": "myominhtet",
-        "tier": "EXPERT",
-        "id": 4600631,
-        "profileUrl": "/myominhtet",
-        "performanceTier": "EXPERT",
-        "userId": 4600631,
-        "progressionOptOut": false
-       },
-       "intro": "Need some who can support GPU, "
-      }
+      "isPartial": true
      }
     ],
-    "parent": {},
-    "author": {
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
-     "url": "/"
-    },
-    "authorType": "COMMENT",
     "votes": {
      "totalVotes": -3
     },
-    "canDelete": true,
-    "isUserAuthor": true,
     "isDeleted": true,
-    "kernelVersion": 0,
-    "feedbackTrackingData": {},
-    "isThankYou": false
+    "isThankYou": false,
+    "isPartial": true
    }
   ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
@@ -4900,12 +5157,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 78,
+    "totalVotes": 81,
     "canUpvote": true,
-    "totalUpvotes": 78
+    "totalUpvotes": 81
    },
    "kernelVersion": 0,
-   "competitionRanking": 3568,
+   "competitionRanking": 3992,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -4932,9 +5189,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-08-14T23:38:09.839930500Z",
-  "totalVotes": 78,
+  "totalVotes": 81,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/735304",
-  "totalMessages": 121,
+  "totalMessages": 132,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -4948,19 +5205,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 123,
+  "commentCount": 132,
   "firstForumMessageId": 3513000,
   "id": 735304,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "hikaggler",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735304#3535812",
-  "lastCommentPostDate": "2026-10-09T09:09:43.786666700Z",
+  "lastCommenterName": "k256.dev",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735304#3536765",
+  "lastCommentPostDate": "2026-10-11T07:27:35.290Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-08-14T23:38:09.839930500Z",
   "title": "Best single-model score",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/735304",
-  "votes": 79,
+  "votes": 81,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "roy214",

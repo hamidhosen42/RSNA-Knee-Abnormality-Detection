@@ -1,0 +1,99 @@
+{
+ "forumTopic": {
+  "authorId": 677378,
+  "authorThumbnailName": "677378-gp.jpg",
+  "authorUserDisplayName": "MackLiu",
+  "authorUserName": "mackliu",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3537373,
+   "postDate": "2026-10-12T12:56:43.433Z",
+   "rawMarkdown": "Hi @aastikrajan15 — your `knee-s75-w50` notebook/comments look unavailable on my side. I’m MackLiu (solo, Public ~0.954). Would love to team before the merge deadline (Oct 16). Happy to share what’s working on my end and combine. DM me if easier — thanks!",
+   "content": "<p>Hi <a href=\"/aastikrajan15\" target=\"_blank\">@aastikrajan15</a> — your <code>knee-s75-w50</code> notebook/comments look unavailable on my side. I’m MackLiu (solo, Public ~0.954). Would love to team before the merge deadline (Oct 16). Happy to share what’s working on my end and combine. DM me if easier — thanks!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "MackLiu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/677378-gp.jpg",
+    "url": "/mackliu",
+    "tier": "CONTRIBUTOR",
+    "id": 677378,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -10,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 647,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "MackLiu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/677378-gp.jpg",
+     "url": "/mackliu",
+     "userName": "mackliu",
+     "tier": "CONTRIBUTOR",
+     "id": 677378,
+     "profileUrl": "/mackliu",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 677378,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3537373,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748536,
+  "name": "Team invite — MackLiu (~0.954) looking for aastikrajan15",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-12T12:56:43.433208Z",
+  "totalVotes": -10,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748536",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "MackLiu",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/677378-gp.jpg",
+   "url": "/mackliu",
+   "tier": "CONTRIBUTOR",
+   "id": 677378,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3537373,
+  "id": 748536,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "MackLiu",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748536#3537373",
+  "lastCommentPostDate": "2026-10-12T12:56:43.433333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-12T12:56:43.433208Z",
+  "title": "Team invite — MackLiu (~0.954) looking for aastikrajan15",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748536",
+  "votes": -10,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "MackLiu",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/677378-gp.jpg",
+    "url": "/mackliu",
+    "userName": "mackliu",
+    "tier": "CONTRIBUTOR",
+    "id": 677378,
+    "profileUrl": "/mackliu",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 677378,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

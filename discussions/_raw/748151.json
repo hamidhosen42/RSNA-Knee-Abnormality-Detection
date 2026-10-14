@@ -1,0 +1,180 @@
+{
+ "forumTopic": {
+  "authorId": 29641607,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "OmerZalman",
+  "authorUserName": "omerzalman",
+  "comments": [
+   {
+    "id": 3536640,
+    "postDate": "2026-10-10T22:23:00.803Z",
+    "rawMarkdown": "Ya I think you should publish it...the community would definitely find a 60% coverage pseudolabeled dataset useful  either for pre-training or as features for Level-2 stacking models..but I think you should be careful relying on the standard 'accuracy.' because medical datasets usually have huge class imbalances since most scans are normal the 97% accuracy you have might actually result in a poor leaderboard score if it's missing the minority positive cases and I think you should test the pseudolabels against the competition's official ROC AUC metric first.",
+    "content": "<p>Ya I think you should publish it…the community would definitely find a 60% coverage pseudolabeled dataset useful  either for pre-training or as features for Level-2 stacking models..but I think you should be careful relying on the standard 'accuracy.' because medical datasets usually have huge class imbalances since most scans are normal the 97% accuracy you have might actually result in a poor leaderboard score if it's missing the minority positive cases and I think you should test the pseudolabels against the competition's official ROC AUC metric first.</p>",
+    "replies": [
+     {
+      "id": 3536642,
+      "postDate": "2026-10-10T22:28:29.063Z",
+      "rawMarkdown": "Ok i will try this",
+      "content": "<p>Ok i will try this</p>",
+      "parent": {},
+      "author": {
+       "displayName": "OmerZalman",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/omerzalman",
+       "tier": "CONTRIBUTOR",
+       "id": 29641607,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 5107,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "OmerZalman",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/omerzalman",
+        "userName": "omerzalman",
+        "tier": "CONTRIBUTOR",
+        "id": 29641607,
+        "profileUrl": "/omerzalman",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 29641607,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Siem Mebrahtu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35703844-kg.jpg?t=2026-10-12-00-58-48",
+     "url": "/siemmebrahtu",
+     "tier": "CONTRIBUTOR",
+     "id": 35703844,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1776,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Siem Mebrahtu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35703844-kg.jpg?t=2026-10-12-00-58-48",
+      "url": "/siemmebrahtu",
+      "userName": "siemmebrahtu",
+      "tier": "CONTRIBUTOR",
+      "id": 35703844,
+      "profileUrl": "/siemmebrahtu",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 35703844,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536623,
+   "postDate": "2026-10-10T21:11:18.710Z",
+   "rawMarkdown": "would anyone want a dataset that covers around 60% of the rsna labels (pseudolabelling) and I tested it on expert labels to be around 97.2% accuracy (I didnt train a model yet, my last submission is 2 weeks ago)",
+   "content": "<p>would anyone want a dataset that covers around 60% of the rsna labels (pseudolabelling) and I tested it on expert labels to be around 97.2% accuracy (I didnt train a model yet, my last submission is 2 weeks ago)</p>",
+   "parent": {},
+   "author": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -6,
+    "canUpvote": true
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 5107,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "OmerZalman",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/omerzalman",
+     "userName": "omerzalman",
+     "tier": "CONTRIBUTOR",
+     "id": 29641607,
+     "profileUrl": "/omerzalman",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 29641607,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3536623,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748151,
+  "name": "97.2% accuracy on 60% coverage",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-10T21:11:18.709571300Z",
+  "totalVotes": -6,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748151",
+  "totalMessages": 2,
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "OmerZalman",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/omerzalman",
+   "tier": "CONTRIBUTOR",
+   "id": 29641607,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 2,
+  "firstForumMessageId": 3536623,
+  "id": 748151,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "OmerZalman",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748151#3536642",
+  "lastCommentPostDate": "2026-10-10T22:28:29.063333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-10T21:11:18.709571300Z",
+  "title": "97.2% accuracy on 60% coverage",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748151",
+  "votes": -6,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "OmerZalman",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/omerzalman",
+    "userName": "omerzalman",
+    "tier": "CONTRIBUTOR",
+    "id": 29641607,
+    "profileUrl": "/omerzalman",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 29641607,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

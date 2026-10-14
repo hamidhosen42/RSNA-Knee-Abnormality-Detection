@@ -1,0 +1,101 @@
+{
+ "forumTopic": {
+  "authorId": 30661269,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "守银摄金难铜",
+  "authorUserName": "wocenmma",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536914,
+   "postDate": "2026-10-11T13:52:53.487Z",
+   "rawMarkdown": "I used to think that if your score matches a public notebook, you can make your own notebook public too. Then you could sort the public notebooks by score to see which one actually ranks higher.\n\nBut now something seems off. My submission with modified weights clearly ranks higher on the leaderboard than a submission using the original public notebook without any changes. However, my published notebook actually ranks lower in the public notebook rankings.\n\nSo I'm wondering: is it because public notebooks with the same displayed score aren't necessarily ranked by their actual underlying scores, or could this be caused by floating-point variations in GPU computations?",
+   "content": "<p>I used to think that if your score matches a public notebook, you can make your own notebook public too. Then you could sort the public notebooks by score to see which one actually ranks higher.</p>\n<p>But now something seems off. My submission with modified weights clearly ranks higher on the leaderboard than a submission using the original public notebook without any changes. However, my published notebook actually ranks lower in the public notebook rankings.</p>\n<p>So I'm wondering: is it because public notebooks with the same displayed score aren't necessarily ranked by their actual underlying scores, or could this be caused by floating-point variations in GPU computations?</p>",
+   "parent": {},
+   "author": {
+    "displayName": "守银摄金难铜",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/wocenmma",
+    "tier": "CONTRIBUTOR",
+    "id": 30661269,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 2,
+    "canUpvote": true,
+    "totalUpvotes": 5
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 407,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "守银摄金难铜",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/wocenmma",
+     "userName": "wocenmma",
+     "tier": "CONTRIBUTOR",
+     "id": 30661269,
+     "profileUrl": "/wocenmma",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 30661269,
+     "progressionOptOut": false
+    },
+    "intro": "How am I supposed to compete without copying public notebooks? I've even forgotten how CNNs work.I'll be here with ChatGPT Plus and some free GPU credits, just adding to the vibes.By the way, anyone got a spare GPU they could lend me? Man, if only I had an A800, life would be so much better."
+   }
+  },
+  "firstMessageId": 3536914,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748310,
+  "name": "Could you display a few more decimal places for the scores?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-11T13:52:53.488081500Z",
+  "totalVotes": 2,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748310",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "守银摄金难铜",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/wocenmma",
+   "tier": "CONTRIBUTOR",
+   "id": 30661269,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3536914,
+  "id": 748310,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "守银摄金难铜",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748310#3536914",
+  "lastCommentPostDate": "2026-10-11T13:52:53.486666700Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-11T13:52:53.488081500Z",
+  "title": "Could you display a few more decimal places for the scores?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748310",
+  "votes": 2,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "守银摄金难铜",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/wocenmma",
+    "userName": "wocenmma",
+    "tier": "CONTRIBUTOR",
+    "id": 30661269,
+    "profileUrl": "/wocenmma",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 30661269,
+    "progressionOptOut": false
+   },
+   "intro": "How am I supposed to compete without copying public notebooks? I've even forgotten how CNNs work.I'll be here with ChatGPT Plus and some free GPU credits, just adding to the vibes.By the way, anyone got a spare GPU they could lend me? Man, if only I had an A800, life would be so much better."
+  }
+ }
+}

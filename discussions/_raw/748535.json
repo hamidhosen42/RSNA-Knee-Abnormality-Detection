@@ -1,0 +1,101 @@
+{
+ "forumTopic": {
+  "authorId": 30661269,
+  "authorThumbnailName": "default-thumb.png",
+  "authorUserDisplayName": "守银摄金难铜",
+  "authorUserName": "wocenmma",
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3537372,
+   "postDate": "2026-10-12T12:54:17.090Z",
+   "rawMarkdown": "A bunch of geniuses are using private datasets in public notebooks. To find the highest-scoring one that's actually fully public, I have to check the leaderboard rankings one ID at a time.",
+   "content": "<p>A bunch of geniuses are using private datasets in public notebooks. To find the highest-scoring one that's actually fully public, I have to check the leaderboard rankings one ID at a time.</p>",
+   "parent": {},
+   "author": {
+    "displayName": "守银摄金难铜",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/wocenmma",
+    "tier": "CONTRIBUTOR",
+    "id": 30661269,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": -5,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 407,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "enabled": true,
+    "teamLeader": {
+     "displayName": "守银摄金难铜",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/wocenmma",
+     "userName": "wocenmma",
+     "tier": "CONTRIBUTOR",
+     "id": 30661269,
+     "profileUrl": "/wocenmma",
+     "performanceTier": "CONTRIBUTOR",
+     "userId": 30661269,
+     "progressionOptOut": false
+    },
+    "intro": "How am I supposed to compete without copying public notebooks? I've even forgotten how CNNs work.I'll be here with ChatGPT Plus and some free GPU credits, just adding to the vibes.By the way, anyone got a spare GPU they could lend me? Man, if only I had an A800, life would be so much better."
+   }
+  },
+  "firstMessageId": 3537372,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748535,
+  "name": "Why are people even upvoting public notebooks that use private datasets?",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-12T12:54:17.090927300Z",
+  "totalVotes": -5,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748535",
+  "authorPerformanceTier": "CONTRIBUTOR",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "守银摄金难铜",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+   "url": "/wocenmma",
+   "tier": "CONTRIBUTOR",
+   "id": 30661269,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "firstForumMessageId": 3537372,
+  "id": 748535,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "守银摄金难铜",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748535#3537372",
+  "lastCommentPostDate": "2026-10-12T12:54:17.090Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-12T12:54:17.090927300Z",
+  "title": "Why are people even upvoting public notebooks that use private datasets?",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748535",
+  "votes": -5,
+  "teamUpInfo": {
+   "enabled": true,
+   "teamLeader": {
+    "displayName": "守银摄金难铜",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/wocenmma",
+    "userName": "wocenmma",
+    "tier": "CONTRIBUTOR",
+    "id": 30661269,
+    "profileUrl": "/wocenmma",
+    "performanceTier": "CONTRIBUTOR",
+    "userId": 30661269,
+    "progressionOptOut": false
+   },
+   "intro": "How am I supposed to compete without copying public notebooks? I've even forgotten how CNNs work.I'll be here with ChatGPT Plus and some free GPU credits, just adding to the vibes.By the way, anyone got a spare GPU they could lend me? Man, if only I had an A800, life would be so much better."
+  }
+ }
+}

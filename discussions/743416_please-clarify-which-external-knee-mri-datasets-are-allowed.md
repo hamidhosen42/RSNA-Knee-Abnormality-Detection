@@ -1,10 +1,10 @@
 # Please clarify which external knee MRI datasets are allowed
 
 - **URL:** https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/743416
-- **Author:** **YYama** (@yosukeyama, Master) · _topic author_ · 2026-09-26 01:52 UTC · ▲80 · LB rank 10
-- **Topic votes:** 80 · **Comments/replies:** 27 · **Pinned:** no
-- **Last comment:** 2026-10-09 08:06 UTC by Satwik
-- **Cloned:** 2026-10-09 09:46 UTC (topic id 743416, raw JSON `_raw/743416.json`)
+- **Author:** **YYama** (@yosukeyama, Master) · _topic author_ · 2026-09-26 01:52 UTC · ▲94 · LB rank 19
+- **Topic votes:** 94 · **Comments/replies:** 39 · **Pinned:** no
+- **Last comment:** 2026-10-14 13:26 UTC by Driz Lo
+- **Cloned:** 2026-10-14 18:23 UTC (topic id 743416, raw JSON `_raw/743416.json`)
 
 ---
 
@@ -21,7 +21,7 @@ The host has [explicitly ruled that KneeCoT is not allowed](https://www.kaggle.c
 | [Stanford MRNet](https://aimi.stanford.edu/datasets/mrnet-knee-mris) | Research-use agreement |
 | [Stanford SKM-TEA](https://aimi.stanford.edu/datasets/skm-tea-knee-mri) | Registration and data-use terms |
 | [NYU fastMRI](https://fastmri.med.nyu.edu/) and [fastMRI+](https://github.com/microsoft/fastmri-plus) | Data-sharing agreement for images; separately released annotations |
-| [Osteoarthritis Initiative (OAI)](https://nda.nih.gov/oai) | Data Use Certification and institutional requirements |
+| [Osteoarthritis Initiative (OAI)](https://nda.nih.gov/oai) | Data Use Certification ~~and institutional requirements~~ |
 | [KneeMRI](https://zenodo.org/records/14789903) | CC BY-NC-ND 4.0 |
 | [KneeXNet-2.5D](https://github.com/pitthexai/Knee_MRI_Segmentation_2.5D) | Public OAI-derived annotated images and pretrained weights; no explicit repository license that I could identify |
 
@@ -33,17 +33,17 @@ Because the same question keeps appearing in different threads, could the hosts 
 
 ---
 
-## Comments (27, threaded, oldest first)
+## Comments (39, threaded, oldest first)
 
 ### [1] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-26 03:25 UTC · ▲6 · LB rank 17
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-26 03:25 UTC · ▲7 · LB rank 4
 
 This is quite pressing and could really throw off the leaderboard. I could be wrong, but it's only the winning solutions (top 10) that would be audited thoroughly enough that training on external data sources that are not allowed would even get "caught" and disqualified. Basically everyone else could probably get away with it. This is a problem as it can totally reshape the final non top 10 rankings. I think external data, even small amounts of it, can substantially increase score in this competition so the impact of this could be extreme.
 
 #### ↳ [1.1] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-09-26 05:50 UTC · ▲4 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-09-26 05:50 UTC · ▲5 · LB rank 19
 
 I couldn't agree more. I worry that detailed review may naturally focus on prize-eligible teams, while the effects of unclear external-data rules could extend across the entire leaderboard.
 
@@ -51,44 +51,44 @@ What particularly concerns me is that relevant external knee MRI data could allo
 
 ### [2] Cemal Atas
 
-**Cemal Atas** (@cemalata, Contributor) · 2026-09-27 11:19 UTC · ▲2 · LB rank 43
+**Cemal Atas** (@cemalata, Contributor) · 2026-09-27 11:19 UTC · ▲2 · LB rank 36
 
 This is really important. I have a similar question for the hosts. Can we use publicly released pretrained models (MIT license and all) that were trained on OAI-derived data?
 
 #### ↳ [2.1] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-09-28 11:22 UTC · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-09-28 11:22 UTC · LB rank 19
 
 I agree. Clear guidance on this point is important to ensure a level playing field for all participants.
 
 ### [3] madmax0404
 
-**madmax0404** (@max6296, Expert) · 2026-09-30 08:03 UTC · ▲3 · LB rank 881
+**madmax0404** (@max6296, Expert) · 2026-09-30 08:03 UTC · ▲3 · LB rank 15
 
 4 days and still no answer. is that a yes?
 
-### [4] Pratham Lahoti
+### [4] (unknown)
 
-**Pratham Lahoti** (@prathamlahoti2, Contributor) · 2026-09-30 17:25 UTC · ▲2 · LB rank 1230
+**(unknown)** · 2026-09-30 17:25 UTC · ▲2
 
-++ This is really important, please provide clarification
+_(no content — deleted or empty)_
 
 ### [5] Ali Ozan Memetoglu
 
-**Ali Ozan Memetoglu** (@aliozanmemetoglu, Expert) · 2026-09-30 19:08 UTC · ▲2 · LB rank 851
+**Ali Ozan Memetoglu** (@aliozanmemetoglu, Expert) · 2026-09-30 19:08 UTC · ▲2 · LB rank 1262
 
 MRNet’s user agreement says we’re not allowed to modify, reverse engineer, decompile, or create derivative works from the dataset, so that might be an issue too.
 
 ### [6] Eugene Khvedchenya
 
-**Eugene Khvedchenya** (@bloodaxe, Grandmaster) · 2026-09-30 19:10 UTC · ▲5 · LB rank 1291
+**Eugene Khvedchenya** (@bloodaxe, Grandmaster) · 2026-09-30 19:10 UTC · ▲5 · LB rank 1402
 
 Based on all my past kaggle experience, the most 'safe' action of host is to ignore the dataset clearance questions competely. 
 Since to do it "the right way" requires involvement of legal department and I imagine it's tedious process.  I would be happy to proven wrong and get clear answer. But before that the best course of action is to use common sense: public registration is ok, non-commerial/research license is ok; gated dataset _requiring_ academia email - probably less ok, but if top 10 solutions will end up using it - also ok ;)
 
 #### ↳ [6.1] pomcho555
 
-**pomcho555** (@pompom555, Expert) · 2026-10-01 04:46 UTC · LB rank 108
+**pomcho555** (@pompom555, Expert) · 2026-10-01 04:46 UTC · LB rank 138
 
 @bloodaxe 
 
@@ -98,7 +98,7 @@ I'm gonna also do my analysis once I scraped write-ups in the previous competiti
 
 ##### ↳ ↳ [6.1.1] Eugene Khvedchenya
 
-**Eugene Khvedchenya** (@bloodaxe, Grandmaster) · 2026-10-03 16:53 UTC · ▲1 · LB rank 1291
+**Eugene Khvedchenya** (@bloodaxe, Grandmaster) · 2026-10-03 16:53 UTC · ▲1 · LB rank 1402
 
 In Deep Fake challenge two teams from prize places were removed - https://www.kaggle.com/competitions/deepfake-detection-challenge/discussion/157925
 
@@ -109,7 +109,7 @@ Some teams took the risk and paid the price.
 
 ### [7] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-30 22:59 UTC · ▲4 · LB rank 17
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-09-30 22:59 UTC · ▲5 · LB rank 4
 
 I also think this is only going to get worse, largely due to the widespread adoption/use of LLM agents. They insist on finding and using external data, basically ignoring the fine print, to improve CV/LB score. I guess it's their reward training - you tell a LLM to "improve the score" and that is what it will try to do. 
 
@@ -119,25 +119,25 @@ Not sure what the solution is but the host has no reason to check solutions othe
 
 #### ↳ [7.1] pomcho555
 
-**pomcho555** (@pompom555, Expert) · 2026-10-01 04:40 UTC · ▲1 · LB rank 108
+**pomcho555** (@pompom555, Expert) · 2026-10-01 04:40 UTC · ▲1 · LB rank 138
 
 We're now at the point where we're basically "jumping at shadows." Whether some users get banned could depend on the host, while some cheaters might still manage to get ahead of the pack. We're literally just rolling the dice.
 
 ### [8] Optimo
 
-**Optimo** (@optimo, Master) · 2026-10-01 07:56 UTC · ▲1 · LB rank 36
+**Optimo** (@optimo, Master) · 2026-10-01 07:56 UTC · ▲1 · LB rank 29
 
 Have you seen improvements by using external data? I haven't tried yet but this discussion makes me want to give it a try...
 
 #### ↳ [8.1] OmerZalman
 
-**OmerZalman** (@omerzalman, Contributor) · 2026-10-04 17:57 UTC · LB rank 4708
+**OmerZalman** (@omerzalman, Contributor) · 2026-10-04 17:57 UTC · LB rank 5107
 
 Not really
 
 #### ↳ [8.2] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 11:40 UTC · ▲1 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 11:40 UTC · ▲1 · LB rank 19
 
 Maybe this one?  
 https://www.kaggle.com/competitions/rsna-breast-cancer-detection/writeups/mr-robot-1st-place-solution
@@ -151,37 +151,37 @@ https://www.kaggle.com/competitions/rsna-intracranial-aneurysm-detection/writeup
 
 ##### ↳ ↳ [8.2.1] Satwik
 
-**Satwik** (@p4rallax, Master) · 2026-10-07 12:33 UTC · LB rank 49
+**Satwik** (@p4rallax, Master) · 2026-10-07 12:33 UTC · LB rank 76
 
 @yosukeyama if I may ask, does your current LB score have any use of external data?
 
 ##### ↳ ↳ [8.2.2] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 12:40 UTC · ▲1 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 12:40 UTC · ▲1 · LB rank 19
 
 Of course, I haven’t used any of them. Since the rules are not clearly specified, I’m assuming for now that any external dataset could potentially be prohibited.
 
 ##### ↳ ↳ [8.2.3] Satwik
 
-**Satwik** (@p4rallax, Master) · 2026-10-07 12:47 UTC · LB rank 49
+**Satwik** (@p4rallax, Master) · 2026-10-07 12:47 UTC · LB rank 76
 
 Thank you, that's what I thought too. Do your gains mainly come from labels/labelling strategies then, or is it other things?
 
 ##### ↳ ↳ [8.2.4] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 13:00 UTC · ▲2 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 13:00 UTC · ▲2 · LB rank 19
 
 Sorry, since I'm teamed up and this goes beyond the external data question, I can't really share details about our approach for now. We'll be happy to share more after the competition ends. Good luck!
 
 ##### ↳ ↳ [8.2.5] Satwik
 
-**Satwik** (@p4rallax, Master) · 2026-10-07 13:18 UTC · ▲2 · LB rank 49
+**Satwik** (@p4rallax, Master) · 2026-10-07 13:18 UTC · ▲2 · LB rank 76
 
 No problem, I understand. Thank you, and all the best!
 
 ### [9] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 09:35 UTC · ▲6 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-07 09:35 UTC · ▲8 · LB rank 19
 
 I would like to follow up on this question, as the status of several commonly used knee MRI datasets is still unclear.
 
@@ -203,7 +203,7 @@ At minimum, could the **KneeCoT prohibition be pinned**? Although the dataset ca
 
 ### [10] Taeyang
 
-**Taeyang** (@taeyangg4, Contributor) · 2026-10-08 04:04 UTC · ▲4 · LB rank 256
+**Taeyang** (@taeyangg4, Contributor) · 2026-10-08 04:04 UTC · ▲4 · LB rank 205
 
 @javaduke95 Following your Aug 27 guidance (straightforward registration or click-through data-use agreements are generally acceptable; institution-specific approvals are not), could you give a yes/no on two specific points before final selections on Oct 22?
 
@@ -212,9 +212,15 @@ At minimum, could the **KneeCoT prohibition be pinned**? Although the dataset ca
 
 Many teams are now building on public notebooks that use such a checkpoint, so a clear answer would keep the leaderboard fair for everyone. Thank you!
 
+#### ↳ [10.1] Eesh saxena
+
+**Eesh saxena** (@eeshsaxena, Contributor) · 2026-10-09 07:38 UTC · ▲3 · LB rank 273
+
+For reference on accessibility: I applied for OAI on NDA as an individual and was approved immediately, with no institution, signing official or IRB involved (the Data Permissions page lists the Osteoarthritis Initiative group as “Institutional Approval Required: No”). Signup was a Login.gov account with just an email. That seems to match the 09-21 condition in 741819, though I understand access from some countries may still be an issue.
+
 ### [11] NguyenThanhNhan
 
-**NguyenThanhNhan** (@andy2709, Grandmaster) · 2026-10-08 04:42 UTC · LB rank 62
+**NguyenThanhNhan** (@andy2709, Grandmaster) · 2026-10-08 04:42 UTC · ▲1 · LB rank 44
 
 I find the calls for a strict external-data ban in the name of “fairness” pretty LAUGHABLE 😀. How exactly is this supposed to be enforced, and what level playing field are we pretending exists?
 
@@ -236,7 +242,7 @@ _(no content — deleted or empty)_
 
 #### ↳ [11.2] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-08 05:16 UTC · ▲3 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-08 05:16 UTC · ▲6 · LB rank 19
 
 I don’t have much to add, but personally, I’m not asking for external data to be banned. I just want the rules to be clear.
 
@@ -244,12 +250,90 @@ If external data is allowed, I’d love to use all of it too!
 
 ### [12] Tucker Arrants
 
-**Tucker Arrants** (@tuckerarrants, Master) · 2026-10-08 13:52 UTC · ▲5 · LB rank 17
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-10-08 13:52 UTC · ▲12 · LB rank 4
 
 Hope this reply from NDA regarding intended accessibility of OAI dataset helps![](_assets/7e256242b04a2825.png)
 
 #### ↳ [12.1] YYama
 
-**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-08 14:11 UTC · ▲2 · LB rank 10
+**YYama** (@yosukeyama, Master) · _topic author_ · 2026-10-08 14:11 UTC · ▲3 · LB rank 19
 
 Thank you for sharing this! Based on their response, it seems reasonable to consider OAI permissible for use in this competition.
+
+##### ↳ ↳ [12.1.1] Satwik
+
+**Satwik** (@p4rallax, Master) · 2026-10-09 08:06 UTC · ▲2 · LB rank 76
+
+While it does seem reasonable to use from OAI's end, I would still be careful until the hosts explicitly mention it - access to it seems to be blocked from China, as someone mentioned in another thread, so the hosts might restrict it.
+
+##### ↳ ↳ [12.1.2] Tucker Arrants
+
+**Tucker Arrants** (@tuckerarrants, Master) · 2026-10-09 15:40 UTC · ▲3 · LB rank 4
+
+The challenge is 1) the host is not going to reply, as they have avoided clear answers regarding external dataset usage with the exception of KneeCot, 2) NDA themselves are saying OAI is open sourced and available for everyone, with no country exclusions, so user reported access denial is not *supposed* to happen and 3) a public model trained on OAI has now spread through the code section via blind fork ensembling and the exposure to OAI is rapidly growing, so a flat OAI ban impacts a huge number of submissions. Its an annoyingly grey situation thus far.
+
+-> If it is banned, only those extremely cautious will not get DQ'd (assuming this can even be caught in the first place) and if it isn't banned, those same people are at a potential data disadvantage.
+
+##### ↳ ↳ [12.1.3] (unknown)
+
+**(unknown)** · 2026-10-09 15:55 UTC
+
+_(no content — deleted or empty)_
+
+##### ↳ ↳ [12.1.4] Satwik
+
+**Satwik** (@p4rallax, Master) · 2026-10-09 19:36 UTC · LB rank 76
+
+Yup, unfortunately that's where we stand right now. The OAI access issue seems to be due to restrictions in China, not from OAI themselves. And I think the public model weights should be fine, as that does not involve direct use of the dataset (the person who shared it, however, might get disqualified). I wonder why the hosts won't respond to any queries at all. The hosts last year were very active in the community. It's a little disappointing honestly.
+
+##### ↳ ↳ [12.1.5] Pavel
+
+**Pavel** (@pavelsavchenkov, Master) · 2026-10-09 20:18 UTC · ▲5 · LB rank 33
+
+Just a reminder that both Claude and Codex are officially unavailable in China as well.
+
+##### ↳ ↳ [12.1.6] Renmq
+
+**Renmq** (@renmingqian, Expert) · 2026-10-12 03:49 UTC · ▲1 · LB rank 1401
+
+Since NDA says the OAI dataset is publicly available to everyone with no country restrictions, could someone upload the original, unprocessed dataset to Kaggle? That way, all participants would have equal access to the data, helping ensure a level playing field.
+
+### [13] (unknown)
+
+**(unknown)** · 2026-10-09 07:33 UTC
+
+_(no content — deleted or empty)_
+
+### [14] (unknown)
+
+**(unknown)** · 2026-10-10 03:23 UTC
+
+_(no content — deleted or empty)_
+
+### [15] Navneet
+
+**Navneet** (@navneetbende, Contributor) · 2026-10-12 04:13 UTC · ▲-2
+
+Are the external knee MRI datasets safe? @yosukeyama
+
+### [16] Chris Carr
+
+**Chris Carr** (@cdcarr, Contributor) · _competition host_ · 2026-10-14 13:18 UTC · ▲2
+
+Writing on behalf RSNA, thank you for posing this question in such a thoughtful and cogent way. For reasons stated by one of the respondents below, we are not prepared to designate specific datasets as permitted or off limits. Instead we would reiterate the provision of the contest rules that states that external data sets used must be, “either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants.” 
+
+Datasets that require only registration and acknowledgement of licensing terms would clearly meet these criteria. Datasets that require an institutional research agreement or limit access to users with institutional affiliations clearly do not. 
+
+Beyond that guidance, we would simply advise adhering to the broader “reasonableness” criterion and also providing transparency in disclosing your training methods, including datasets used. In the spirit of the competition, we would greatly prefer that the winning models be distinguished by the ingenuity and rigor of their approach rather than by privileged access to resources.
+
+Christopher Carr
+Director of Informatics
+RSNA
+
+#### ↳ [16.1] Driz Lo
+
+**Driz Lo** (@drizlo, Contributor) · 2026-10-14 13:26 UTC · LB rank 38
+
+If a dataset meets these requirements in principle, but its website restricts registration from certain geographic regions (for example, registration attempts from those regions consistently return an "LG22" error code), would such a dataset still be considered "publicly available and equally accessible to all Participants" under the competition rules?
+
+In this situation, would the use of such a dataset be permitted?

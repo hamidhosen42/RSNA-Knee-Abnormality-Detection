@@ -4,6 +4,169 @@
   "authorThumbnailName": "20960131-kg.jpg?t=2026-09-18-09-17-55",
   "authorUserDisplayName": "Cà Rốt Production",
   "authorUserName": "crtproduction",
+  "comments": [
+   {
+    "id": 3535850,
+    "postDate": "2026-10-09T10:38:52.640Z",
+    "rawMarkdown": "there are some classes that has more error than others. and these classes have external data with eternal label",
+    "content": "<p>there are some classes that has more error than others. and these classes have external data with eternal label</p>",
+    "replies": [
+     {
+      "id": 3536959,
+      "postDate": "2026-10-11T15:08:20.203Z",
+      "rawMarkdown": "nah dont even try external dataset",
+      "content": "<p>nah dont even try external dataset</p>",
+      "replies": [
+       {
+        "id": 3537061,
+        "postDate": "2026-10-11T19:21:53.267Z",
+        "rawMarkdown": "Can you tell me why?",
+        "content": "<p>Can you tell me why?</p>",
+        "parent": {},
+        "author": {
+         "displayName": "SpeedSci",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26421714-kg.jpg?t=2026-03-21-03-20-15",
+         "url": "/caoyupeng",
+         "tier": "EXPERT",
+         "id": 26421714,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 1026,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Myo Min Htet(wnp)🇲🇲",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4600631-kg.jpg",
+          "url": "/myominhtet",
+          "userName": "myominhtet",
+          "tier": "EXPERT",
+          "id": 4600631,
+          "profileUrl": "/myominhtet",
+          "performanceTier": "EXPERT",
+          "userId": 4600631,
+          "progressionOptOut": false
+         },
+         "intro": "Need some who can support GPU, "
+        }
+       },
+       {
+        "id": 3537181,
+        "postDate": "2026-10-12T04:24:38.870Z",
+        "rawMarkdown": "it will be risky, many top - scorer wont try it, and the rules are not visible to see the \"permission of the OAI or external dataset, so it is niche\", and trying to finetuning MRI pretrained model will only benefit if u are trying to improve the label, and the blending model in my opinion, I wont even try it because the data blending leakage, the time to train the model, the time to evaluate the config , there are various disadvantages, besides, there are many other great ways to improve the score.",
+        "content": "<p>it will be risky, many top - scorer wont try it, and the rules are not visible to see the \"permission of the OAI or external dataset, so it is niche\", and trying to finetuning MRI pretrained model will only benefit if u are trying to improve the label, and the blending model in my opinion, I wont even try it because the data blending leakage, the time to train the model, the time to evaluate the config , there are various disadvantages, besides, there are many other great ways to improve the score.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Cà Rốt Production",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+         "url": "/crtproduction",
+         "tier": "CONTRIBUTOR",
+         "id": 20960131,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 49,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Binh Thanh",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+          "url": "/kain205",
+          "userName": "kain205",
+          "tier": "CONTRIBUTOR",
+          "id": 13173133,
+          "profileUrl": "/kain205",
+          "performanceTier": "CONTRIBUTOR",
+          "userId": 13173133,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Cà Rốt Production",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
+       "url": "/crtproduction",
+       "tier": "CONTRIBUTOR",
+       "id": 20960131,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": -1,
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 49,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Binh Thanh",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/kain205",
+        "userName": "kain205",
+        "tier": "CONTRIBUTOR",
+        "id": 13173133,
+        "profileUrl": "/kain205",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 13173133,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
   "firstMessage": {
    "id": 3535717,
@@ -21,23 +184,24 @@
    },
    "authorType": "TOPIC",
    "votes": {
+    "totalVotes": -7,
     "canUpvote": true
    },
    "kernelVersion": 0,
-   "competitionRanking": 137,
+   "competitionRanking": 49,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
     "teamLeader": {
-     "displayName": "Cà Rốt Production",
-     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
-     "url": "/crtproduction",
-     "userName": "crtproduction",
+     "displayName": "Binh Thanh",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/kain205",
+     "userName": "kain205",
      "tier": "CONTRIBUTOR",
-     "id": 20960131,
-     "profileUrl": "/crtproduction",
+     "id": 13173133,
+     "profileUrl": "/kain205",
      "performanceTier": "CONTRIBUTOR",
-     "userId": 20960131,
+     "userId": 13173133,
      "progressionOptOut": false
     },
     "intro": ""
@@ -51,7 +215,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-09T05:05:07.318867100Z",
+  "totalVotes": -7,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/747613",
+  "totalMessages": 4,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -65,29 +231,30 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
+  "commentCount": 4,
   "firstForumMessageId": 3535717,
   "id": 747613,
   "lastCommenterType": "TOPIC",
   "lastCommenterName": "Cà Rốt Production",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747613#3535717",
-  "lastCommentPostDate": "2026-10-09T05:05:07.320Z",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747613#3537181",
+  "lastCommentPostDate": "2026-10-12T04:24:38.870Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-09T05:05:07.318867100Z",
   "title": "The core to reach top score without any ensemble",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747613",
-  "votes": -2,
+  "votes": -7,
   "teamUpInfo": {
    "teamLeader": {
-    "displayName": "Cà Rốt Production",
-    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-09-18-09-17-55",
-    "url": "/crtproduction",
-    "userName": "crtproduction",
+    "displayName": "Binh Thanh",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+    "url": "/kain205",
+    "userName": "kain205",
     "tier": "CONTRIBUTOR",
-    "id": 20960131,
-    "profileUrl": "/crtproduction",
+    "id": 13173133,
+    "profileUrl": "/kain205",
     "performanceTier": "CONTRIBUTOR",
-    "userId": 20960131,
+    "userId": 13173133,
     "progressionOptOut": false
    },
    "intro": ""

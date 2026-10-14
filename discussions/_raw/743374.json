@@ -6,6 +6,45 @@
   "authorUserName": "prateekgroverin",
   "comments": [
    {
+    "id": 3536438,
+    "postDate": "2026-10-10T11:48:16.370Z",
+    "rawMarkdown": "Solo, 0.949 public (that is nartaa's public notebook run as is, no credit claimed). Looking to team up before Oct 15.\n\nWhat I can bring:\n- LLM-read labels for all 4,407 training reports (12 findings, three independent reads, stored as probabilities), plus an honest A/B on held-out gold: the triple-read labels did NOT beat a simpler single-read mix. Useful negative result, happy to share.\n- A 5-fold CoAtNet-2 384 leg: 0.935 public alone, 0.948 in a rank blend with the public 0.949. Weights and OOF predictions ready to share.\n- Careful bookkeeping: one change per submission, a registry with gold-set deltas and bootstrap CIs.\n- Background: credit-risk modelling lead, comfortable with validation design and calibration. Small GPU budget.\n\nLooking for someone with a stronger single model or a different backbone/view strategy who wants a careful validation partner. DM or reply here.",
+    "content": "<p>Solo, 0.949 public (that is nartaa's public notebook run as is, no credit claimed). Looking to team up before Oct 15.</p>\n<p>What I can bring:</p>\n<ul>\n<li>LLM-read labels for all 4,407 training reports (12 findings, three independent reads, stored as probabilities), plus an honest A/B on held-out gold: the triple-read labels did NOT beat a simpler single-read mix. Useful negative result, happy to share.</li>\n<li>A 5-fold CoAtNet-2 384 leg: 0.935 public alone, 0.948 in a rank blend with the public 0.949. Weights and OOF predictions ready to share.</li>\n<li>Careful bookkeeping: one change per submission, a registry with gold-set deltas and bootstrap CIs.</li>\n<li>Background: credit-risk modelling lead, comfortable with validation design and calibration. Small GPU budget.</li>\n</ul>\n<p>Looking for someone with a stronger single model or a different backbone/view strategy who wants a careful validation partner. DM or reply here.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Nikita Ageev",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1410857-kg.JPG",
+     "url": "/truenikita",
+     "tier": "CONTRIBUTOR",
+     "id": 1410857,
+     "progressionOptOut": true
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -2,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1743,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Nikita Ageev",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1410857-kg.JPG",
+      "url": "/truenikita",
+      "userName": "truenikita",
+      "tier": "CONTRIBUTOR",
+      "id": 1410857,
+      "profileUrl": "/truenikita",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 1410857,
+      "progressionOptOut": true
+     },
+     "intro": ""
+    }
+   },
+   {
     "id": 3528356,
     "postDate": "2026-09-25T23:51:52.850Z",
     "rawMarkdown": "Nice optimization, good work!",
@@ -25,7 +64,7 @@
      "totalUpvotes": 1
     },
     "kernelVersion": 0,
-    "competitionRanking": 138,
+    "competitionRanking": 194,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -70,7 +109,7 @@
        "canUpvote": true
       },
       "kernelVersion": 0,
-      "competitionRanking": 602,
+      "competitionRanking": 1006,
       "feedbackTrackingData": {},
       "isThankYou": false,
       "teamUpInfo": {
@@ -106,7 +145,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 602,
+    "competitionRanking": 1006,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -145,7 +184,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 695,
+    "competitionRanking": 1743,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -183,7 +222,7 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
-    "competitionRanking": 11,
+    "competitionRanking": 32,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
@@ -238,12 +277,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 10,
+    "totalVotes": 11,
     "canUpvote": true,
-    "totalUpvotes": 10
+    "totalUpvotes": 11
    },
    "kernelVersion": 0,
-   "competitionRanking": 367,
+   "competitionRanking": 1526,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -271,9 +310,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-09-25T19:18:57.669583500Z",
-  "totalVotes": 10,
+  "totalVotes": 11,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
-  "totalMessages": 6,
+  "totalMessages": 7,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -287,19 +326,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 6,
+  "commentCount": 7,
   "firstForumMessageId": 3528293,
   "id": 743374,
   "lastCommenterType": "COMMENT",
   "lastCommenterName": "Nikita Ageev",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3532758",
-  "lastCommentPostDate": "2026-10-04T16:14:35.060Z",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374#3536438",
+  "lastCommentPostDate": "2026-10-10T11:48:16.370Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-25T19:18:57.669583500Z",
   "title": "Optimizations for blazingly fast submissions (<10 minutes!) + Looking for teammates :)",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/743374",
-  "votes": 10,
+  "votes": 11,
   "teamUpInfo": {
    "enabled": true,
    "teamLeader": {

@@ -1,0 +1,199 @@
+{
+ "forumTopic": {
+  "authorId": 1690820,
+  "authorThumbnailName": "1690820-kg.jpg",
+  "authorUserDisplayName": "Volodymyr",
+  "authorUserName": "vladimirsydor",
+  "comments": [
+   {
+    "id": 3537095,
+    "postDate": "2026-10-11T21:01:32.180Z",
+    "rawMarkdown": "From your screenshot, it doesn't seem it reached scoring, this looks like your notebook is stuck so you can just cancel it.",
+    "content": "<p>From your screenshot, it doesn't seem it reached scoring, this looks like your notebook is stuck so you can just cancel it.</p>",
+    "replies": [
+     {
+      "id": 3537252,
+      "postDate": "2026-10-12T08:26:34.113Z",
+      "rawMarkdown": "Unfortunately, it is not at the notebook execution level; it is already submitting. I can not cancel it ",
+      "content": "<p>Unfortunately, it is not at the notebook execution level; it is already submitting. I can not cancel it </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Volodymyr",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1690820-kg.jpg",
+       "url": "/vladimirsydor",
+       "tier": "GRANDMASTER",
+       "id": 1690820,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 159,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Volodymyr",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1690820-kg.jpg",
+        "url": "/vladimirsydor",
+        "userName": "vladimirsydor",
+        "tier": "GRANDMASTER",
+        "id": 1690820,
+        "profileUrl": "/vladimirsydor",
+        "performanceTier": "GRANDMASTER",
+        "userId": 1690820,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Danial Zakaria",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+     "url": "/nartaa",
+     "tier": "EXPERT",
+     "id": 4495635,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1098,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Danial Zakaria",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4495635-kg.jpeg?t=2024-01-22-16-52-06",
+      "url": "/nartaa",
+      "userName": "nartaa",
+      "tier": "EXPERT",
+      "id": 4495635,
+      "profileUrl": "/nartaa",
+      "performanceTier": "EXPERT",
+      "userId": 4495635,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537088,
+    "postDate": "2026-10-11T20:40:04.413Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3537083,
+   "postDate": "2026-10-11T20:11:52.430Z",
+   "rawMarkdown": "Hi Kaggle Team!\n\nOne of our submissions has been stuck in a running state for over 24 hours. It seems to be a bug.\n\nCould you please look into this and terminate the stuck submission?\n\nThanks in advance for your help!\n\nFYI @macruzbar\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1690820%2F55a978a9b9acc076e2a63275a266e8de%2FScreenshot%20from%202026-10-11%2023-05-32.png?generation=1791749379034785&alt=media)",
+   "content": "<p>Hi Kaggle Team!</p>\n<p>One of our submissions has been stuck in a running state for over 24 hours. It seems to be a bug.</p>\n<p>Could you please look into this and terminate the stuck submission?</p>\n<p>Thanks in advance for your help!</p>\n<p>FYI <a href=\"/macruzbar\" target=\"_blank\">@macruzbar</a></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1690820%2F55a978a9b9acc076e2a63275a266e8de%2FScreenshot%20from%202026-10-11%2023-05-32.png?generation=1791749379034785&amp;alt=media\" alt=\"\"></p>",
+   "parent": {},
+   "author": {
+    "displayName": "Volodymyr",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1690820-kg.jpg",
+    "url": "/vladimirsydor",
+    "tier": "GRANDMASTER",
+    "id": 1690820,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 1,
+    "canUpvote": true,
+    "totalUpvotes": 1
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 159,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Volodymyr",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1690820-kg.jpg",
+     "url": "/vladimirsydor",
+     "userName": "vladimirsydor",
+     "tier": "GRANDMASTER",
+     "id": 1690820,
+     "profileUrl": "/vladimirsydor",
+     "performanceTier": "GRANDMASTER",
+     "userId": 1690820,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3537083,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748403,
+  "name": "Submission Stuck for Over 24 Hours",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-11T20:11:52.428764200Z",
+  "totalVotes": 1,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748403",
+  "totalMessages": 3,
+  "authorPerformanceTier": "GRANDMASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Volodymyr",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1690820-kg.jpg",
+   "url": "/vladimirsydor",
+   "tier": "GRANDMASTER",
+   "id": 1690820,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 3,
+  "firstForumMessageId": 3537083,
+  "id": 748403,
+  "lastCommenterType": "TOPIC",
+  "lastCommenterName": "Volodymyr",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748403#3537252",
+  "lastCommentPostDate": "2026-10-12T08:26:34.113333300Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-11T20:11:52.428764200Z",
+  "title": "Submission Stuck for Over 24 Hours",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748403",
+  "votes": 1,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Volodymyr",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1690820-kg.jpg",
+    "url": "/vladimirsydor",
+    "userName": "vladimirsydor",
+    "tier": "GRANDMASTER",
+    "id": 1690820,
+    "profileUrl": "/vladimirsydor",
+    "performanceTier": "GRANDMASTER",
+    "userId": 1690820,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}

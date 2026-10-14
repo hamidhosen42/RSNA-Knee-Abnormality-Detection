@@ -12,7 +12,7 @@
     "content": "<p>Hello competition hosts, could you please clarify the winner-license requirement raised above? The rules specify CC BY-NC 4.0, but Section 2.5 also describes an OSI-approved license that does not limit commercial use. Which requirement governs the original solution code and trained model weights? Please also confirm whether publicly available Apache-2.0 pretrained weights may be fine-tuned, with their original license and notices preserved, and which license should cover the resulting weights. An official clarification would help us choose compliant dependencies and plan the required release. Thank you.</p>",
     "parent": {},
     "author": {
-     "displayName": "Akhil",
+     "displayName": "crestrly",
      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
      "url": "/akhils009",
      "tier": "CONTRIBUTOR",
@@ -24,11 +24,12 @@
      "canUpvote": true
     },
     "kernelVersion": 0,
+    "competitionRanking": 4547,
     "feedbackTrackingData": {},
     "isThankYou": false,
     "teamUpInfo": {
      "teamLeader": {
-      "displayName": "Akhil",
+      "displayName": "crestrly",
       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
       "url": "/akhils009",
       "userName": "akhils009",
@@ -65,7 +66,7 @@
     "totalUpvotes": 1
    },
    "kernelVersion": 0,
-   "competitionRanking": 3034,
+   "competitionRanking": 3414,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -108,13 +109,13 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
-  "commentCount": 1,
+  "commentCount": 2,
   "firstForumMessageId": 3521761,
   "id": 739905,
   "lastCommenterType": "COMMENT",
-  "lastCommenterName": "Akhil",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739905#3534825",
-  "lastCommentPostDate": "2026-10-08T02:43:22.650Z",
+  "lastCommenterName": "RealEclypso",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/739905#3538699",
+  "lastCommentPostDate": "2026-10-14T17:37:52.800Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-09-07T05:26:53.201143100Z",

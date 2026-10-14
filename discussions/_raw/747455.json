@@ -4,6 +4,84 @@
   "authorThumbnailName": "default-thumb.png",
   "authorUserDisplayName": "Anay Chauhan",
   "authorUserName": "anaychauhan",
+  "comments": [
+   {
+    "id": 3538052,
+    "postDate": "2026-10-13T16:09:26.747Z",
+    "rawMarkdown": "@macruzbar @javaduke95 - could we get a ruling on this before the notebook lock? Many top public notebooks (0.954-0.956) use nartaa/rsna-knee-publication-swa-weights-20261007, whose description says the models used 2,399 baseline OAI knees (NIMH Data Archive, Shared NDA Study 3407) for external supervision. OAI access requires an NDA data-use application, which per earlier guidance is not the same as click-through registration. Specifically:\n1) Are public weights trained on OAI data allowed for leaderboard/medal eligibility?\n2) Are they allowed for prize eligibility?\nA clear answer would help a lot of teams choose their final submissions. Thanks!",
+    "content": "<p><a href=\"/macruzbar\" target=\"_blank\">@macruzbar</a> <a href=\"/javaduke95\" target=\"_blank\">@javaduke95</a> - could we get a ruling on this before the notebook lock? Many top public notebooks (0.954-0.956) use nartaa/rsna-knee-publication-swa-weights-20261007, whose description says the models used 2,399 baseline OAI knees (NIMH Data Archive, Shared NDA Study 3407) for external supervision. OAI access requires an NDA data-use application, which per earlier guidance is not the same as click-through registration. Specifically:\n1) Are public weights trained on OAI data allowed for leaderboard/medal eligibility?\n2) Are they allowed for prize eligibility?\nA clear answer would help a lot of teams choose their final submissions. Thanks!</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Arihant Jain",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/arihanttjainn",
+     "tier": "CONTRIBUTOR",
+     "id": 29758479,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1314,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Mahatva Goell",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/mahatvagoell",
+      "userName": "mahatvagoell",
+      "tier": "CONTRIBUTOR",
+      "id": 36766860,
+      "profileUrl": "/mahatvagoell",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36766860,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536023,
+    "postDate": "2026-10-09T15:56:54.533Z",
+    "rawMarkdown": "I think the safest approach is to avoid using this external data,\nit offers limited benefits but carries high risks.",
+    "content": "<p>I think the safest approach is to avoid using this external data,\nit offers limited benefits but carries high risks.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Civitasmass",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+     "url": "/godhand",
+     "tier": "MASTER",
+     "id": 992596,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 233,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Civitasmass",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+      "url": "/godhand",
+      "userName": "godhand",
+      "tier": "MASTER",
+      "id": 992596,
+      "profileUrl": "/godhand",
+      "performanceTier": "MASTER",
+      "userId": 992596,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   }
+  ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
   "firstMessage": {
    "id": 3535495,
@@ -21,12 +99,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 6,
+    "totalVotes": 10,
     "canUpvote": true,
-    "totalUpvotes": 7
+    "totalUpvotes": 11
    },
    "kernelVersion": 0,
-   "competitionRanking": 214,
+   "competitionRanking": 603,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -53,8 +131,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-08T19:16:00.316923700Z",
-  "totalVotes": 6,
+  "totalVotes": 10,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/747455",
+  "totalMessages": 2,
   "authorPerformanceTier": "CONTRIBUTOR",
   "authorProgressionOptOut": false
  },
@@ -68,18 +147,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
+  "commentCount": 2,
   "firstForumMessageId": 3535495,
   "id": 747455,
-  "lastCommenterType": "TOPIC",
-  "lastCommenterName": "Anay Chauhan",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747455#3535495",
-  "lastCommentPostDate": "2026-10-08T19:16:00.316666700Z",
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Arihant Jain",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747455#3538052",
+  "lastCommentPostDate": "2026-10-13T16:09:26.746666700Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-08T19:16:00.316923700Z",
   "title": "are public weights trained on OAI knee MRI allowed?",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747455",
-  "votes": 6,
+  "votes": 10,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Anay Chauhan",

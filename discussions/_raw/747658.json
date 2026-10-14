@@ -4,12 +4,590 @@
   "authorThumbnailName": "3924325-kg.jpg",
   "authorUserDisplayName": "Kirderf",
   "authorUserName": "kirderf",
+  "comments": [
+   {
+    "id": 3538217,
+    "postDate": "2026-10-13T21:16:15.357Z",
+    "rawMarkdown": "Trying a vision LLM benchmark as well - Instead of feeding the radiology REPORT to an LLM, render each gold study's MRI to a single annotated mosaic JPEG and ask a vision LLM to score the same 12 findings directly from the images.\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F4481974bfe1e3b6377e829ca88e4b01c%2FSkrmbild%202026-10-13%20231217.png?generation=1791925997758910&alt=media)\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F24df6c52183958be7f26e74481290611%2F1.2.826.0.1.3680043.8.498.10095687747295410396510538520594649149%20(1).jpg?generation=1791925981224204&alt=media)\n",
+    "content": "<p>Trying a vision LLM benchmark as well - Instead of feeding the radiology REPORT to an LLM, render each gold study's MRI to a single annotated mosaic JPEG and ask a vision LLM to score the same 12 findings directly from the images.\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F4481974bfe1e3b6377e829ca88e4b01c%2FSkrmbild%202026-10-13%20231217.png?generation=1791925997758910&amp;alt=media\" alt=\"\">\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F24df6c52183958be7f26e74481290611%2F1.2.826.0.1.3680043.8.498.10095687747295410396510538520594649149%20(1).jpg?generation=1791925981224204&amp;alt=media\" alt=\"\"></p>",
+    "replies": [
+     {
+      "id": 3538252,
+      "postDate": "2026-10-13T22:27:59.113Z",
+      "rawMarkdown": "This is awesome!",
+      "content": "<p>This is awesome!</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Jack",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+       "url": "/jackvd",
+       "tier": "MASTER",
+       "id": 21922722,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 261,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Jack",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+        "url": "/jackvd",
+        "userName": "jackvd",
+        "tier": "MASTER",
+        "id": 21922722,
+        "profileUrl": "/jackvd",
+        "performanceTier": "MASTER",
+        "userId": 21922722,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3538278,
+      "postDate": "2026-10-13T23:26:02.527Z",
+      "rawMarkdown": "thanks a lot! there is one medical MLLM that can take in 3d nii file directly: https://huggingface.co/ZJU-AI4H/Hulu-Med-14B.\ncheck this work as well: https://github.com/lamawmouk/SGMRI-VQA",
+      "content": "<p>thanks a lot! there is one medical MLLM that can take in 3d nii file directly: <a href=\"https://huggingface.co/ZJU-AI4H/Hulu-Med-14B\" target=\"_blank\">https://huggingface.co/ZJU-AI4H/Hulu-Med-14B</a>.\ncheck this work as well: <a href=\"https://github.com/lamawmouk/SGMRI-VQA\" target=\"_blank\">https://github.com/lamawmouk/SGMRI-VQA</a></p>",
+      "parent": {},
+      "author": {
+       "displayName": "hengck23",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+       "url": "/hengck23",
+       "tier": "GRANDMASTER",
+       "id": 113660,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 455,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "hengck23",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+        "url": "/hengck23",
+        "userName": "hengck23",
+        "tier": "GRANDMASTER",
+        "id": 113660,
+        "profileUrl": "/hengck23",
+        "performanceTier": "GRANDMASTER",
+        "userId": 113660,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3538424,
+      "postDate": "2026-10-14T06:59:54.100Z",
+      "rawMarkdown": "Checking the logs and not all finished with the 58 golden studies, I'll create two new benchmarks, one that only pick out those finished with complete 58/58 results and one benchmark that use only 1 study, the hardest.\n\n1 model(s): ['google/gemini-3.1-pro-preview']\nvision single: 47/58 ok\n\n1 model(s): ['google/gemini-3.8-flash']\nvision single: 58/58 ok\n\n1 model(s): ['google/gemini-4-argon']\nvision single: 6/58 ok\n\n1 model(s): ['anthropic/claude-opus-5-5@default']\nvision single: 11/58 ok\n\n1 model(s): ['openai/gpt-5.6-terra']\nvision single: 2/58 ok\n\n1 model(s): ['qwen/qwen3-next-80b-a3b-thinking']\nvision single: 58/58 ok\n\n1 model(s): ['openai/gpt-6-luna']\nvision single: 58/58 ok\n\n1 model(s): ['anthropic/claude-sonnet-5-5@default']\nvision single: 58/58 ok\n\n1 model(s): ['google/gemma-4-31b']\nvision single: 58/58 ok",
+      "content": "<p>Checking the logs and not all finished with the 58 golden studies, I'll create two new benchmarks, one that only pick out those finished with complete 58/58 results and one benchmark that use only 1 study, the hardest.</p>\n<p>1 model(s): ['google/gemini-3.1-pro-preview']\nvision single: 47/58 ok</p>\n<p>1 model(s): ['google/gemini-3.8-flash']\nvision single: 58/58 ok</p>\n<p>1 model(s): ['google/gemini-4-argon']\nvision single: 6/58 ok</p>\n<p>1 model(s): ['anthropic/claude-opus-5-5@default']\nvision single: 11/58 ok</p>\n<p>1 model(s): ['openai/gpt-5.6-terra']\nvision single: 2/58 ok</p>\n<p>1 model(s): ['qwen/qwen3-next-80b-a3b-thinking']\nvision single: 58/58 ok</p>\n<p>1 model(s): ['openai/gpt-6-luna']\nvision single: 58/58 ok</p>\n<p>1 model(s): ['anthropic/claude-sonnet-5-5@default']\nvision single: 58/58 ok</p>\n<p>1 model(s): ['google/gemma-4-31b']\nvision single: 58/58 ok</p>",
+      "replies": [
+       {
+        "id": 3538540,
+        "postDate": "2026-10-14T13:23:48.517Z",
+        "rawMarkdown": "Could you share the 3.8 flash prompt and settings? I'd like to play around with this myself",
+        "content": "<p>Could you share the 3.8 flash prompt and settings? I'd like to play around with this myself</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Jack",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+         "url": "/jackvd",
+         "tier": "MASTER",
+         "id": 21922722,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 261,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Jack",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+          "url": "/jackvd",
+          "userName": "jackvd",
+          "tier": "MASTER",
+          "id": 21922722,
+          "profileUrl": "/jackvd",
+          "performanceTier": "MASTER",
+          "userId": 21922722,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Kirderf",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+       "url": "/kirderf",
+       "tier": "GRANDMASTER",
+       "id": 3924325,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 663,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Kirderf",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+        "url": "/kirderf",
+        "userName": "kirderf",
+        "tier": "GRANDMASTER",
+        "id": 3924325,
+        "profileUrl": "/kirderf",
+        "performanceTier": "GRANDMASTER",
+        "userId": 3924325,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3538431,
+      "postDate": "2026-10-14T07:11:53.277Z",
+      "rawMarkdown": "Also did a local test on kaggle 2xT4 + **qwen3-8-27b-swift-1-5-w4a16** no-think+768 tokens (minimal custom inference setup) on 10 studies\n\nGOLD EVAL {'tag': 'native', 'macro_auc': 0.6064, 'n': 10, 'n_auc_labels': 12, 'ACL': 0.5, 'MCL': 0.9444, 'Medial Meniscus': 0.6905, 'Lateral Meniscus': 0.4583, 'Medial OA': 0.5938, 'Lateral OA': 0.6562, 'PF OA': 0.6, 'Effusion': 0.375, 'Synovitis': 0.625, \"Baker's\": 0.3333, 'Contusion': 0.5, 'Fracture': 1.0}\n[eng] gold eval in 3571s -> gold_preds.csv | macro_auc=0.6064",
+      "content": "<p>Also did a local test on kaggle 2xT4 + <strong>qwen3-8-27b-swift-1-5-w4a16</strong> no-think+768 tokens (minimal custom inference setup) on 10 studies</p>\n<p>GOLD EVAL {'tag': 'native', 'macro_auc': 0.6064, 'n': 10, 'n_auc_labels': 12, 'ACL': 0.5, 'MCL': 0.9444, 'Medial Meniscus': 0.6905, 'Lateral Meniscus': 0.4583, 'Medial OA': 0.5938, 'Lateral OA': 0.6562, 'PF OA': 0.6, 'Effusion': 0.375, 'Synovitis': 0.625, \"Baker's\": 0.3333, 'Contusion': 0.5, 'Fracture': 1.0}\n[eng] gold eval in 3571s -&gt; gold_preds.csv | macro_auc=0.6064</p>",
+      "replies": [
+       {
+        "id": 3538434,
+        "postDate": "2026-10-14T07:20:48.133Z",
+        "rawMarkdown": "on my local PC (unsloth  qwen3.8-27b) medical text: AUC 0.87",
+        "content": "<p>on my local PC (unsloth  qwen3.8-27b) medical text: AUC 0.87</p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 455,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3538438,
+        "postDate": "2026-10-14T07:27:28.310Z",
+        "rawMarkdown": "The benchmark I did was on minimal settings, I'll try with more tokens, thinking and also the pure unsloth qwen3.8-27b, doing the testing with kaggle T4s and for it to work a custom inference setup.",
+        "content": "<p>The benchmark I did was on minimal settings, I'll try with more tokens, thinking and also the pure unsloth qwen3.8-27b, doing the testing with kaggle T4s and for it to work a custom inference setup.</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Kirderf",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+         "url": "/kirderf",
+         "tier": "GRANDMASTER",
+         "id": 3924325,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 663,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Kirderf",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+          "url": "/kirderf",
+          "userName": "kirderf",
+          "tier": "GRANDMASTER",
+          "id": 3924325,
+          "profileUrl": "/kirderf",
+          "performanceTier": "GRANDMASTER",
+          "userId": 3924325,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Kirderf",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+       "url": "/kirderf",
+       "tier": "GRANDMASTER",
+       "id": 3924325,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 663,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "isCollapsed": true,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Kirderf",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+        "url": "/kirderf",
+        "userName": "kirderf",
+        "tier": "GRANDMASTER",
+        "id": 3924325,
+        "profileUrl": "/kirderf",
+        "performanceTier": "GRANDMASTER",
+        "userId": 3924325,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "Kirderf",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+     "url": "/kirderf",
+     "tier": "GRANDMASTER",
+     "id": 3924325,
+     "progressionOptOut": false
+    },
+    "authorType": "TOPIC",
+    "votes": {
+     "totalVotes": 7,
+     "canUpvote": true,
+     "totalUpvotes": 8
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 663,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Kirderf",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+      "url": "/kirderf",
+      "userName": "kirderf",
+      "tier": "GRANDMASTER",
+      "id": 3924325,
+      "profileUrl": "/kirderf",
+      "performanceTier": "GRANDMASTER",
+      "userId": 3924325,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536263,
+    "postDate": "2026-10-10T02:46:30.283Z",
+    "rawMarkdown": "for your reference, complete reproducible results for Claude4.5 (auc 0.891895) is found at: https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection. It has prompt, labels, etc.\n\nFull credits go to the author @NTejas-1 and thanks for his hard work",
+    "content": "<p>for your reference, complete reproducible results for Claude4.5 (auc 0.891895) is found at: <a href=\"https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection\" target=\"_blank\">https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection</a>. It has prompt, labels, etc.</p>\n<p>Full credits go to the author <a href=\"/NTejas-1\" target=\"_blank\">@NTejas-1</a> and thanks for his hard work</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535845,
+    "postDate": "2026-10-09T10:32:30.470Z",
+    "rawMarkdown": "note that the GT labels may be created by radiologist/doctors without looking at the report. Hence, the report and label are independent, and a discrepancy exists. That explains the upper limit of 0.90 in teh results.",
+    "content": "<p>note that the GT labels may be created by radiologist/doctors without looking at the report. Hence, the report and label are independent, and a discrepancy exists. That explains the upper limit of 0.90 in teh results.</p>",
+    "replies": [
+     {
+      "id": 3535853,
+      "postDate": "2026-10-09T10:41:47.383Z",
+      "rawMarkdown": "Thanks, great to underscore, I add to the information text.",
+      "content": "<p>Thanks, great to underscore, I add to the information text.</p>",
+      "replies": [
+       {
+        "id": 3535854,
+        "postDate": "2026-10-09T10:47:08.127Z",
+        "rawMarkdown": "check one of the 58 gold label stduy id:   \n1.2.826.0.1.3680043.8.498.12606657226568558340797193167488111973  \n\nlabel is \"Effusion\": 1,  \n\nquote from medical report \"No knee effusion is present.\"  ",
+        "content": "<p>check one of the 58 gold label stduy id:<br>\n1.2.826.0.1.3680043.8.498.12606657226568558340797193167488111973  </p>\n<p>label is \"Effusion\": 1,  </p>\n<p>quote from medical report \"No knee effusion is present.\"  </p>",
+        "parent": {},
+        "author": {
+         "displayName": "hengck23",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+         "url": "/hengck23",
+         "tier": "GRANDMASTER",
+         "id": 113660,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 2,
+         "canUpvote": true,
+         "totalUpvotes": 2
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 455,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "hengck23",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+          "url": "/hengck23",
+          "userName": "hengck23",
+          "tier": "GRANDMASTER",
+          "id": 113660,
+          "profileUrl": "/hengck23",
+          "performanceTier": "GRANDMASTER",
+          "userId": 113660,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       },
+       {
+        "id": 3535878,
+        "postDate": "2026-10-09T11:42:01.613Z",
+        "rawMarkdown": "Yes working with image vs report is the objective, one of the experiments lately:\n- Read every report several independent times.\n- Fuse the readers into one probability per cell.\nCombine the per-reader probabilities into a single fused probability per\n(study, finding) cell — use a weighted mean over the reader pool.\nKeep, per cell: the fused probability, the number of readers that\nanswered (__nsrc), their disagreement (__spread = max−min), and a\nconfidence (__conf).\n- Find the cells most likely to be wrong.\n- Re-read the actual report text per cell.\n- Apply verdicts onto the fused table.\n- Fill the silent cells with measured priors, not zero.",
+        "content": "<p>Yes working with image vs report is the objective, one of the experiments lately:</p>\n<ul>\n<li>Read every report several independent times.</li>\n<li>Fuse the readers into one probability per cell.\nCombine the per-reader probabilities into a single fused probability per\n(study, finding) cell — use a weighted mean over the reader pool.\nKeep, per cell: the fused probability, the number of readers that\nanswered (__nsrc), their disagreement (__spread = max−min), and a\nconfidence (__conf).</li>\n<li>Find the cells most likely to be wrong.</li>\n<li>Re-read the actual report text per cell.</li>\n<li>Apply verdicts onto the fused table.</li>\n<li>Fill the silent cells with measured priors, not zero.</li>\n</ul>",
+        "parent": {},
+        "author": {
+         "displayName": "Kirderf",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+         "url": "/kirderf",
+         "tier": "GRANDMASTER",
+         "id": 3924325,
+         "progressionOptOut": false
+        },
+        "authorType": "TOPIC",
+        "votes": {
+         "canUpvote": true
+        },
+        "kernelVersion": 0,
+        "competitionRanking": 663,
+        "feedbackTrackingData": {},
+        "isThankYou": false,
+        "teamUpInfo": {
+         "teamLeader": {
+          "displayName": "Kirderf",
+          "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+          "url": "/kirderf",
+          "userName": "kirderf",
+          "tier": "GRANDMASTER",
+          "id": 3924325,
+          "profileUrl": "/kirderf",
+          "performanceTier": "GRANDMASTER",
+          "userId": 3924325,
+          "progressionOptOut": false
+         },
+         "intro": ""
+        }
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Kirderf",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+       "url": "/kirderf",
+       "tier": "GRANDMASTER",
+       "id": 3924325,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 663,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Kirderf",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3924325-kg.jpg",
+        "url": "/kirderf",
+        "userName": "kirderf",
+        "tier": "GRANDMASTER",
+        "id": 3924325,
+        "profileUrl": "/kirderf",
+        "performanceTier": "GRANDMASTER",
+        "userId": 3924325,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 3,
+     "canUpvote": true,
+     "totalUpvotes": 3
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3535842,
+    "postDate": "2026-10-09T10:20:54.560Z",
+    "rawMarkdown": "i have a wild experiment:  \n1) lets define llm label and GT label (the golden 58)    \n2) my multi mri image predictor trains very fast in hr.    \n3) llm label is close to GT label. e.g. hamming distance per class is less than 3. some class are more likely to be wrong. some class has only FP but zero FN, etc ... in short, they are not random.   \n4) assume we want to denoise the noisy 4300 study llm labels, we only allow minimal changes. it turns out that the number of pausible cleaned labels is small (maybe 100) and can be ranked  \n5) we train mri models using most probable clean labels, measure auc performance on gold58 set, backed by public LB (5 per day).  \n6) will brute force denoising gives good results?  \n\n----  \n\n",
+    "content": "<p>i have a wild experiment:<br>\n1) lets define llm label and GT label (the golden 58)<br>\n2) my multi mri image predictor trains very fast in hr.<br>\n3) llm label is close to GT label. e.g. hamming distance per class is less than 3. some class are more likely to be wrong. some class has only FP but zero FN, etc … in short, they are not random.<br>\n4) assume we want to denoise the noisy 4300 study llm labels, we only allow minimal changes. it turns out that the number of pausible cleaned labels is small (maybe 100) and can be ranked<br>\n5) we train mri models using most probable clean labels, measure auc performance on gold58 set, backed by public LB (5 per day).<br>\n6) will brute force denoising gives good results?  </p>\n<hr>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537977,
+    "postDate": "2026-10-13T13:21:33.767Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
   "commentSort": "COMMENT_LIST_SORT_BY_HOT",
   "firstMessage": {
    "id": 3535785,
    "postDate": "2026-10-09T08:02:00.503Z",
-   "rawMarkdown": "Trying the new Kaggle Benchmark format -- work in progress --\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F5ea13f45e0c0a11f20855af1d2f0df2f%2FSkrmbild%202026-10-09%20095759.png?generation=1791532710655575&alt=media)\nhttps://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark",
-   "content": "<p>Trying the new Kaggle Benchmark format -- work in progress --\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F5ea13f45e0c0a11f20855af1d2f0df2f%2FSkrmbild%202026-10-09%20095759.png?generation=1791532710655575&amp;alt=media\" alt=\"\">\n<a href=\"https://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark\" target=\"_blank\">https://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark</a></p>",
+   "rawMarkdown": "Trying the Kaggle Benchmark format -- work in progress --\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F5ea13f45e0c0a11f20855af1d2f0df2f%2FSkrmbild%202026-10-09%20095759.png?generation=1791532710655575&alt=media)\nhttps://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark",
+   "content": "<p>Trying the Kaggle Benchmark format -- work in progress --\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3924325%2F5ea13f45e0c0a11f20855af1d2f0df2f%2FSkrmbild%202026-10-09%20095759.png?generation=1791532710655575&amp;alt=media\" alt=\"\">\n<a href=\"https://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark\" target=\"_blank\">https://www.kaggle.com/benchmarks/kirderf/rsna-knee-llm-label-extraction-benchmark</a></p>",
    "parent": {},
    "author": {
     "displayName": "Kirderf",
@@ -21,12 +599,12 @@
    },
    "authorType": "TOPIC",
    "votes": {
-    "totalVotes": 1,
+    "totalVotes": 20,
     "canUpvote": true,
-    "totalUpvotes": 1
+    "totalUpvotes": 20
    },
    "kernelVersion": 0,
-   "competitionRanking": 528,
+   "competitionRanking": 663,
    "feedbackTrackingData": {},
    "isThankYou": false,
    "teamUpInfo": {
@@ -53,8 +631,9 @@
   "parentName": "rsna-knee-abnormality-detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection",
   "postDate": "2026-10-09T08:02:00.503009500Z",
-  "totalVotes": 1,
+  "totalVotes": 20,
   "url": "/competitions/rsna-knee-abnormality-detection/discussion/747658",
+  "totalMessages": 15,
   "authorPerformanceTier": "GRANDMASTER",
   "authorProgressionOptOut": false
  },
@@ -68,18 +647,19 @@
    "progressionOptOut": false
   },
   "authorType": "TOPIC",
+  "commentCount": 17,
   "firstForumMessageId": 3535785,
   "id": 747658,
   "lastCommenterType": "TOPIC",
   "lastCommenterName": "Kirderf",
-  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747658#3535785",
-  "lastCommentPostDate": "2026-10-09T08:02:00.503333300Z",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747658#3538664",
+  "lastCommentPostDate": "2026-10-14T16:51:03.753333300Z",
   "parentName": "RSNA Knee Abnormality Detection",
   "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
   "postDate": "2026-10-09T08:02:00.503009500Z",
   "title": "RSNA Knee MRI reports — LLM label-extraction benchmark ",
   "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/747658",
-  "votes": 2,
+  "votes": 20,
   "teamUpInfo": {
    "teamLeader": {
     "displayName": "Kirderf",

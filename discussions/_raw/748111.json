@@ -1,0 +1,732 @@
+{
+ "forumTopic": {
+  "authorId": 190923,
+  "authorThumbnailName": "190923-kg.JPG",
+  "authorUserDisplayName": "Optimo",
+  "authorUserName": "optimo",
+  "comments": [
+   {
+    "id": 3537837,
+    "postDate": "2026-10-13T06:12:13.113Z",
+    "rawMarkdown": "Imaging seeing this guy appear again\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4310004%2F63040d177a6d0e507e98acb45116352a%2F123.png?generation=1791871929497844&alt=media)",
+    "content": "<p>Imaging seeing this guy appear again</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F4310004%2F63040d177a6d0e507e98acb45116352a%2F123.png?generation=1791871929497844&amp;alt=media\" alt=\"\"></p>",
+    "parent": {},
+    "author": {
+     "displayName": "Tom",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4310004-kg.png?t=2026-10-05-04-22-09",
+     "url": "/tom99763",
+     "tier": "MASTER",
+     "id": 4310004,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 7,
+     "canUpvote": true,
+     "totalUpvotes": 7
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 76,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "dragoshh1984",
+       "wadakoki",
+       "ggayoayogg",
+       "laymond",
+       "lilustudent",
+       "salemali7"
+      ],
+      "userCount": 6
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "tingyi",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-03-27-07-43-22",
+      "url": "/chengtingyi",
+      "userName": "chengtingyi",
+      "tier": "CONTRIBUTOR",
+      "id": 8788200,
+      "profileUrl": "/chengtingyi",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 8788200,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3537269,
+    "postDate": "2026-10-12T09:06:57.357Z",
+    "rawMarkdown": "He posted on Rednote and said this sub is basically a single model.",
+    "content": "<p>He posted on Rednote and said this sub is basically a single model.</p>",
+    "replies": [
+     {
+      "id": 3537278,
+      "postDate": "2026-10-12T09:27:02.717Z",
+      "rawMarkdown": "what is Rednote?",
+      "content": "<p>what is Rednote?</p>",
+      "replies": [
+       {
+        "id": 3537296,
+        "postDate": "2026-10-12T10:22:08.677Z",
+        "rawMarkdown": "a Chinese social media, like instagram",
+        "content": "<p>a Chinese social media, like instagram</p>",
+        "parent": {},
+        "author": {
+         "displayName": "Timmy Juicehouse",
+         "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18538441-kg.png?t=2026-09-11-01-57-36",
+         "url": "/sweetyheehee",
+         "tier": "EXPERT",
+         "id": 18538441,
+         "progressionOptOut": false
+        },
+        "authorType": "COMMENT",
+        "votes": {
+         "totalVotes": 1,
+         "canUpvote": true,
+         "totalUpvotes": 1
+        },
+        "kernelVersion": 0,
+        "feedbackTrackingData": {},
+        "isThankYou": false
+       }
+      ],
+      "parent": {},
+      "author": {
+       "displayName": "Optimo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+       "url": "/optimo",
+       "tier": "MASTER",
+       "id": 190923,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 29,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Optimo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+        "url": "/optimo",
+        "userName": "optimo",
+        "tier": "MASTER",
+        "id": 190923,
+        "profileUrl": "/optimo",
+        "performanceTier": "MASTER",
+        "userId": 190923,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3538407,
+      "postDate": "2026-10-14T06:19:15.920Z",
+      "rawMarkdown": "can u give the post link?",
+      "content": "<p>can u give the post link?</p>",
+      "parent": {},
+      "author": {
+       "displayName": "Raagav Anand",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+       "url": "/raagavanand",
+       "tier": "CONTRIBUTOR",
+       "id": 21025927,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 675,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Raagav Anand",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+        "url": "/raagavanand",
+        "userName": "raagavanand",
+        "tier": "CONTRIBUTOR",
+        "id": 21025927,
+        "profileUrl": "/raagavanand",
+        "performanceTier": "CONTRIBUTOR",
+        "userId": 21025927,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "william.wu",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3563032-kg.png?t=2024-10-16-03-06-20",
+     "url": "/wuwenmin",
+     "tier": "MASTER",
+     "id": 3563032,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 1031,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "william.wu",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3563032-kg.png?t=2024-10-16-03-06-20",
+      "url": "/wuwenmin",
+      "userName": "wuwenmin",
+      "tier": "MASTER",
+      "id": 3563032,
+      "profileUrl": "/wuwenmin",
+      "performanceTier": "MASTER",
+      "userId": 3563032,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536591,
+    "postDate": "2026-10-10T18:29:40.183Z",
+    "rawMarkdown": "one-shot learning",
+    "content": "<p>one-shot learning</p>",
+    "parent": {},
+    "author": {
+     "displayName": "hengck23",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+     "url": "/hengck23",
+     "tier": "GRANDMASTER",
+     "id": 113660,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 6,
+     "canUpvote": true,
+     "totalUpvotes": 6
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 455,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "davidsarrat",
+       "mitubant",
+       "dragoshh1984",
+       "aliozanmemetoglu",
+       "spoutop",
+       "paritoshtripathi5",
+       "kain205",
+       "ggayoayogg",
+       "ozermehmet",
+       "goodpjw2008",
+       "laymond",
+       "yinhwe",
+       "pand999"
+      ],
+      "userCount": 13
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "hengck23",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+      "url": "/hengck23",
+      "userName": "hengck23",
+      "tier": "GRANDMASTER",
+      "id": 113660,
+      "profileUrl": "/hengck23",
+      "performanceTier": "GRANDMASTER",
+      "userId": 113660,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536578,
+    "postDate": "2026-10-10T18:00:30.663Z",
+    "rawMarkdown": "Perhaps there is a gold labels secret thread somewhere?",
+    "content": "<p>Perhaps there is a gold labels secret thread somewhere?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Ángel Jacinto Sánchez Ruiz",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8722753-kg.jpg?t=2023-11-29-13-04-43",
+     "url": "/sacuscreed",
+     "tier": "EXPERT",
+     "id": 8722753,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 1,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 657,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "dragoshh1984"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Ángel Jacinto Sánchez Ruiz",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8722753-kg.jpg?t=2023-11-29-13-04-43",
+      "url": "/sacuscreed",
+      "userName": "sacuscreed",
+      "tier": "EXPERT",
+      "id": 8722753,
+      "profileUrl": "/sacuscreed",
+      "performanceTier": "EXPERT",
+      "userId": 8722753,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536730,
+    "postDate": "2026-10-11T05:33:44.027Z",
+    "rawMarkdown": "what's your approach?\n",
+    "content": "<p>what's your approach?</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Debojit Ray",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/debojitray",
+     "tier": "CONTRIBUTOR",
+     "id": 28901480,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -3,
+     "canUpvote": true,
+     "totalUpvotes": 1
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 2203,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Debojit Ray",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+      "url": "/debojitray",
+      "userName": "debojitray",
+      "tier": "CONTRIBUTOR",
+      "id": 28901480,
+      "profileUrl": "/debojitray",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 28901480,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536577,
+    "postDate": "2026-10-10T17:58:25.763Z",
+    "rawMarkdown": "The writeups for this competition are going to be insane",
+    "content": "<p>The writeups for this competition are going to be insane</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Cody_Null",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+     "url": "/cody11null",
+     "tier": "GRANDMASTER",
+     "id": 13672938,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": 2,
+     "canUpvote": true,
+     "totalUpvotes": 2
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 100,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "dragoshh1984",
+       "tushhaaarrrr",
+       "ozermehmet",
+       "goodjane",
+       "laymond",
+       "boiooooo"
+      ],
+      "userCount": 6
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "Cody_Null",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13672938-kg.jpeg?t=2024-10-11-01-20-59",
+      "url": "/cody11null",
+      "userName": "cody11null",
+      "tier": "GRANDMASTER",
+      "id": 13672938,
+      "profileUrl": "/cody11null",
+      "performanceTier": "GRANDMASTER",
+      "userId": 13672938,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536576,
+    "postDate": "2026-10-10T17:56:02.720Z",
+    "rawMarkdown": "tanks mr for the comment.",
+    "content": "<p>tanks mr for the comment.</p>",
+    "parent": {},
+    "author": {
+     "displayName": "Dr Ehsan",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36373473-kg.png?t=2026-08-29-17-39-02",
+     "url": "/drehsan",
+     "tier": "CONTRIBUTOR",
+     "id": 36373473,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "totalVotes": -3,
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   },
+   {
+    "id": 3537854,
+    "postDate": "2026-10-13T06:56:50.580Z",
+    "rawMarkdown": "what is the secret :) .. maybe after the competition end we will get to know :)",
+    "content": "<p>what is the secret :) .. maybe after the competition end we will get to know :)</p>",
+    "parent": {},
+    "author": {
+     "displayName": "AK",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+     "url": "/aman1391",
+     "tier": "MASTER",
+     "id": 454169,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 61,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "AK",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+      "url": "/aman1391",
+      "userName": "aman1391",
+      "tier": "MASTER",
+      "id": 454169,
+      "profileUrl": "/aman1391",
+      "performanceTier": "MASTER",
+      "userId": 454169,
+      "progressionOptOut": false
+     },
+     "intro": "Just in case you want to team please "
+    }
+   },
+   {
+    "id": 3536575,
+    "postDate": "2026-10-10T17:53:35.250Z",
+    "rawMarkdown": "AWA\nDidn't see that coming either.",
+    "content": "<p>AWA\nDidn't see that coming either.</p>",
+    "replies": [
+     {
+      "id": 3536585,
+      "postDate": "2026-10-10T18:12:32.380Z",
+      "rawMarkdown": "Looking forward to that second sub! ",
+      "content": "<p>Looking forward to that second sub! </p>",
+      "parent": {},
+      "author": {
+       "displayName": "Optimo",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+       "url": "/optimo",
+       "tier": "MASTER",
+       "id": 190923,
+       "progressionOptOut": false
+      },
+      "authorType": "TOPIC",
+      "votes": {
+       "totalVotes": 1,
+       "canUpvote": true,
+       "totalUpvotes": 1
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 29,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "Optimo",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+        "url": "/optimo",
+        "userName": "optimo",
+        "tier": "MASTER",
+        "id": 190923,
+        "profileUrl": "/optimo",
+        "performanceTier": "MASTER",
+        "userId": 190923,
+        "progressionOptOut": false
+       },
+       "intro": ""
+      }
+     },
+     {
+      "id": 3537855,
+      "postDate": "2026-10-13T06:57:27.450Z",
+      "rawMarkdown": "good job .. atleast now you don't have to burn 100s of gpu hours :p\n",
+      "content": "<p>good job .. atleast now you don't have to burn 100s of gpu hours :p</p>",
+      "parent": {},
+      "author": {
+       "displayName": "AK",
+       "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+       "url": "/aman1391",
+       "tier": "MASTER",
+       "id": 454169,
+       "progressionOptOut": false
+      },
+      "authorType": "COMMENT",
+      "votes": {
+       "canUpvote": true
+      },
+      "kernelVersion": 0,
+      "competitionRanking": 61,
+      "feedbackTrackingData": {},
+      "isThankYou": false,
+      "reactions": [
+       {
+        "emoji": "FUNNY",
+        "featuredUserNames": [
+         "dragoshh1984"
+        ],
+        "userCount": 1
+       }
+      ],
+      "teamUpInfo": {
+       "teamLeader": {
+        "displayName": "AK",
+        "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/454169-kg.jpg?t=2025-09-11-13-30-28",
+        "url": "/aman1391",
+        "userName": "aman1391",
+        "tier": "MASTER",
+        "id": 454169,
+        "profileUrl": "/aman1391",
+        "performanceTier": "MASTER",
+        "userId": 454169,
+        "progressionOptOut": false
+       },
+       "intro": "Just in case you want to team please "
+      }
+     }
+    ],
+    "parent": {},
+    "author": {
+     "displayName": "醇久",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36551765-kg.jpg?t=2026-09-11-15-30-23",
+     "url": "/deepios",
+     "tier": "CONTRIBUTOR",
+     "id": 36551765,
+     "progressionOptOut": false
+    },
+    "authorType": "COMMENT",
+    "votes": {
+     "canUpvote": true
+    },
+    "kernelVersion": 0,
+    "competitionRanking": 35,
+    "feedbackTrackingData": {},
+    "isThankYou": false,
+    "reactions": [
+     {
+      "emoji": "FUNNY",
+      "featuredUserNames": [
+       "optimo",
+       "aman1391",
+       "dragoshh1984",
+       "tuckerarrants",
+       "paritoshtripathi5",
+       "salemali7"
+      ],
+      "userCount": 6
+     },
+     {
+      "emoji": "YAY",
+      "featuredUserNames": [
+       "salemali7"
+      ],
+      "userCount": 1
+     }
+    ],
+    "teamUpInfo": {
+     "teamLeader": {
+      "displayName": "醇久",
+      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36551765-kg.jpg?t=2026-09-11-15-30-23",
+      "url": "/deepios",
+      "userName": "deepios",
+      "tier": "CONTRIBUTOR",
+      "id": 36551765,
+      "profileUrl": "/deepios",
+      "performanceTier": "CONTRIBUTOR",
+      "userId": 36551765,
+      "progressionOptOut": false
+     },
+     "intro": ""
+    }
+   },
+   {
+    "id": 3536570,
+    "postDate": "2026-10-10T17:35:25.747Z",
+    "rawMarkdown": "",
+    "parent": {},
+    "author": {
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+     "url": "/"
+    },
+    "authorType": "COMMENT",
+    "votes": {},
+    "canDelete": true,
+    "isUserAuthor": true,
+    "isDeleted": true,
+    "kernelVersion": 0,
+    "feedbackTrackingData": {},
+    "isThankYou": false
+   }
+  ],
+  "commentSort": "COMMENT_LIST_SORT_BY_HOT",
+  "firstMessage": {
+   "id": 3536559,
+   "postDate": "2026-10-10T17:05:56.933Z",
+   "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F190923%2F61347552e70ba1e07fc4637cac6db5d5%2FScreenshot%20from%202026-10-10%2019-00-49.png?generation=1791651721987761&alt=media)\n\nHats off!",
+   "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F190923%2F61347552e70ba1e07fc4637cac6db5d5%2FScreenshot%20from%202026-10-10%2019-00-49.png?generation=1791651721987761&amp;alt=media\" alt=\"\"></p>\n<p>Hats off!</p>",
+   "parent": {},
+   "author": {
+    "displayName": "Optimo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+    "url": "/optimo",
+    "tier": "MASTER",
+    "id": 190923,
+    "progressionOptOut": false
+   },
+   "authorType": "TOPIC",
+   "votes": {
+    "totalVotes": 20,
+    "canUpvote": true,
+    "totalUpvotes": 20
+   },
+   "kernelVersion": 0,
+   "competitionRanking": 29,
+   "feedbackTrackingData": {},
+   "isThankYou": false,
+   "teamUpInfo": {
+    "teamLeader": {
+     "displayName": "Optimo",
+     "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+     "url": "/optimo",
+     "userName": "optimo",
+     "tier": "MASTER",
+     "id": 190923,
+     "profileUrl": "/optimo",
+     "performanceTier": "MASTER",
+     "userId": 190923,
+     "progressionOptOut": false
+    },
+    "intro": ""
+   }
+  },
+  "firstMessageId": 3536559,
+  "forumId": 12044884,
+  "forumName": "RSNA Knee Abnormality Detection",
+  "id": 748111,
+  "name": "Single sub 0.960! Wow!",
+  "parentName": "rsna-knee-abnormality-detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection",
+  "postDate": "2026-10-10T17:05:56.933988100Z",
+  "totalVotes": 20,
+  "url": "/competitions/rsna-knee-abnormality-detection/discussion/748111",
+  "totalMessages": 15,
+  "authorPerformanceTier": "MASTER",
+  "authorProgressionOptOut": false
+ },
+ "_listing": {
+  "authorUser": {
+   "displayName": "Optimo",
+   "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+   "url": "/optimo",
+   "tier": "MASTER",
+   "id": 190923,
+   "progressionOptOut": false
+  },
+  "authorType": "TOPIC",
+  "commentCount": 15,
+  "firstForumMessageId": 3536559,
+  "id": 748111,
+  "lastCommenterType": "COMMENT",
+  "lastCommenterName": "Raagav Anand",
+  "lastCommenterUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748111#3538407",
+  "lastCommentPostDate": "2026-10-14T06:19:15.920Z",
+  "parentName": "RSNA Knee Abnormality Detection",
+  "parentUrl": "/competitions/rsna-knee-abnormality-detection/discussion",
+  "postDate": "2026-10-10T17:05:56.933988100Z",
+  "title": "Single sub 0.960! Wow!",
+  "topicUrl": "/competitions/rsna-knee-abnormality-detection/discussion/748111",
+  "votes": 20,
+  "teamUpInfo": {
+   "teamLeader": {
+    "displayName": "Optimo",
+    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/190923-kg.JPG",
+    "url": "/optimo",
+    "userName": "optimo",
+    "tier": "MASTER",
+    "id": 190923,
+    "profileUrl": "/optimo",
+    "performanceTier": "MASTER",
+    "userId": 190923,
+    "progressionOptOut": false
+   },
+   "intro": ""
+  }
+ }
+}
