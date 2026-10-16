@@ -2,8 +2,8 @@
 ONE change each, so every submission reads as a one-variable test against 0.958 (audit/17_research_0958_to_0959.md).
 
   --students   E1 (H960):  + our 5 Mirror students after the R6 stage; last cell = 0.8 x rank(0.958 file) + 0.2 x
-               rank(students) -- the add-on that lifted 0.954 -> 0.955 (H955C) and 0.956 -> 0.957 (H957); weight fixed
-               before any run.  Reader cells and final cell from student_leg.py (H957x5's cells + R1-R3 / R5-R6).
+               rank(students) -- a student leg at 0.2 lifted 0.954 -> 0.955 (1 student, H955C) and 0.956 -> 0.957 (3 students,
+               H957); 5 students (H957x5) left the displayed 0.957 unchanged; weight fixed before any run.  Reader cells and final cell from student_leg.py (H957x5's cells + R1-R3 / R5-R6).
   --mirror224  E2 (H958M): nartaa's anatomical mirror view for the 224 model (the [s9] lines of varshithakolupuri's
                one-free-flip 224 cell, copied from our scored H958b), and that stage's timeout 2 h -> 2.5 h (the mirror
                doubles the 224 inference).  Unlike H958b / one-free-flip / goodpjw v26, whose 224+mirror stage was guarded
@@ -85,8 +85,13 @@ slug = "rsna-knee-" + base.replace("submission_", "")
 md = lambda t: {"cell_type": "markdown", "metadata": {}, "source": t.splitlines(keepends=True)}
 changes = []
 if a.students:
-    changes.append("our 5 Mirror-student readers after the R6 stage, blended last as 0.8 x rank(the 0.958 notebook's file) + "
-                   "0.2 x rank(students) (weight fixed before any run; the same add-on lifted 0.954 -> 0.955 and 0.956 -> 0.957)")
+    if a.robust:   # wording corrected after the 10-17 reviews (the pushed H960 keeps its original title text)
+        changes.append("our 5 Mirror-student readers (H957x5) after the parent notebook, blended last as 0.8 x rank(parent file) + "
+                       "0.2 x rank(students) (weight fixed before any run; a student leg at 0.2 lifted 0.954 -> 0.955 with 1 student "
+                       "and 0.956 -> 0.957 with 3 students; 5 students left the displayed 0.957 unchanged)")
+    else:
+        changes.append("our 5 Mirror-student readers after the R6 stage, blended last as 0.8 x rank(the 0.958 notebook's file) + "
+                       "0.2 x rank(students) (weight fixed before any run; the same add-on lifted 0.954 -> 0.955 and 0.956 -> 0.957)")
 if a.mirror224:
     changes.append("nartaa's anatomical mirror view for the 224 model (as in one-free-flip), with that stage's timeout 2 h -> 2.5 h")
 cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: the public 0.958 notebook + {' + '.join(['students'] * a.students + ['224 mirror'] * a.mirror224)}\n\n"
@@ -96,7 +101,7 @@ cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: the publi
 nb_cells = cells
 if a.students:
     st = json.load(open(inp(a.student_nb)))["cells"]
-    reader, final, WP, WR = student_cells(st, parent_name="the 0.958 notebook")
+    reader, final, WP, WR = student_cells(st, parent_name="the parent notebook (see PARENT_LABEL)" if a.robust else "the 0.958 notebook")
     assert (WP, WR) == (0.8, 0.2), (WP, WR)
     if a.robust:   # baseline first: c0-c8 run unchanged and contiguous, then the snapshot, then the optional student stage
         _plabel = ("the 0.958 notebook's cells + nartaa's 224 anatomical mirror (the H958M parent, NOT the scored 0.958 file)"

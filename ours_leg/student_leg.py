@@ -12,7 +12,7 @@ cell reads WORK / 'submission.csv' written by the parent's last cell.
 import json
 import re
 
-READERS = "hosen42/rsna-knee-student-readers"   # the 5 LB-validated students (private, hosen42); never re-versioned
+READERS = "hosen42/rsna-knee-student-readers"   # the 5 students of H957x5 (public 0.957; 1 and 3 students lifted 0.954/0.956 parents); never re-versioned
 READER_CKPTS = ["cnxt_plC2_full.pt", "cnxt_plC3_full.pt", "cnxt_plC_full.pt", "cnxt_plS75_full.pt", "cnxt_plT75s1_full.pt"]
 SCORED = {"submission_h957x5": "H957x5", "submission_h957x5w30": "H957x5-w30", "submission_h957x5w40": "H957x5-w40"}
 READER_ASSETS = "goodpjw2008/rsna-knee-2-5d-convnext-reader"   # decoder wheels + cnxt_v0_fold0.pt marker the reader cell looks for
@@ -201,7 +201,7 @@ def harden(reader, final, parent_label):
          'READER_INFO["data"] = _data\n'),
         ('print("reader ckpts", _ck, flush=True)\n',
          'print("reader ckpts", _ck, flush=True)\n'
-         '# [h960r] the 5 checkpoints must be the exact files the LB-validated students were scored with (sha256)\n'
+         '# [h960r] the 5 checkpoints must be the exact files our H957x5 students (public 0.957) were scored with (sha256)\n'
          'import hashlib as _rh\n'
          f'_SHA = {CKPT_SHA256!r}\n'
          'def _sha256(p):\n'
@@ -221,6 +221,8 @@ def harden(reader, final, parent_label):
         ('_t0 = time.time()\n',
          'if 9 * 3600 - (time.time() - NB_T0) < 45 * 60:   # [h960r] check again right before inference\n'
          '    raise RuntimeError("only %.0f min left before the 9 h limit" % ((9 * 3600 - (time.time() - NB_T0)) / 60))\n'
+         'if os.path.exists("/kaggle/working/reader_sub.csv"):   # [h960r] never accept a stale file from an earlier run\n'
+         '    os.remove("/kaggle/working/reader_sub.csv")\n'
          '_t0 = time.time()\n'),
         ('READER_OK = rc == 0 and os.path.isfile("/kaggle/working/reader_sub.csv")\n',
          'READER_OK = rc == 0 and os.path.isfile("/kaggle/working/reader_sub.csv")\n'
@@ -254,7 +256,11 @@ def harden(reader, final, parent_label):
          "_ids = _par['StudyInstanceUID'].tolist()\n"
          "try:\n",
          "_hw = WORK\n"
+         "import hashlib as _fh, os as _fo\n"
+         "_snap_sha = lambda: _fh.sha256((_hw / '_baseline_submission.csv').read_bytes()).hexdigest()\n"
          "try:\n"
+         "    if _snap_sha() != BASELINE_SHA256:   # [h960r] the snapshot must still be the parent's file\n"
+         "        raise RuntimeError('E1_INVALID: the parent snapshot changed after it was taken')\n"
          "    _hs.copyfile(_hw / '_baseline_submission.csv', _hw / '_r7_submission.csv')   # [h960r] the parent = the snapshot\n"
          "    _par = _hp.read_csv(_hw / '_r7_submission.csv', dtype={'StudyInstanceUID': str})\n"
          "    _cols = list(_par.columns)\n"
@@ -280,12 +286,27 @@ def harden(reader, final, parent_label):
         ("        if _bad.any():   # [h958 R5] linear fit of the student rank on the parent rank over the scored studies\n"
          "            _r[_bad] = (_hn.clip(_hn.polyval(_hn.polyfit(_p0[~_bad], _r[~_bad], 1), _p0[_bad]), 0, 1)\n"
          "                        if (~_bad).sum() >= 3 else _p0[_bad])\n", ""),
+        ("    _out[_cols].to_csv(_hw / 'submission.csv', index=False)\n"
+         "    _rep = {'status': 'blended', 'weights': {'r7_notebook': W_PARENT, 'students': W_READER}, 'rows': len(_ids),\n"
+         "            'reader_failed_rows': int(_bad.sum()), 'spearman_r7_vs_students': _rho}\n",
+         "    _out[_cols].to_csv(_hw / '_h960_candidate.csv', index=False)   # [h960r] write, re-read and check, then replace atomically\n"
+         "    _chk = _hp.read_csv(_hw / '_h960_candidate.csv', dtype={'StudyInstanceUID': str})\n"
+         "    assert list(_chk.columns) == _cols and _chk['StudyInstanceUID'].tolist() == _ids and _hn.isfinite(_chk[_labs].values).all()\n"
+         "    _fo.replace(_hw / '_h960_candidate.csv', _hw / 'submission.csv')\n"
+         "    _rep = {'status': 'blended', 'weights': {'parent': W_PARENT, 'students': W_READER}, 'rows': len(_ids),\n"
+         "            'reader_failed_rows': int(_bad.sum()), 'spearman_parent_vs_students': _rho}\n"),
         ("    _hs.copyfile(_hw / '_r7_submission.csv', _hw / 'submission.csv')\n"
          "    _rep = {'status': f'R7 FILE KEPT: {type(_e).__name__}: {str(_e)[:300]}'}\n",
-         "    _hs.copyfile(_hw / '_baseline_submission.csv', _hw / 'submission.csv')   # [h960r] the immutable parent snapshot\n"
-         "    import hashlib as _fh\n"
-         "    assert _fh.sha256((_hw / 'submission.csv').read_bytes()).hexdigest() == BASELINE_SHA256\n"
-         "    _rep = {'status': f'E1 INVALID - parent snapshot kept: {type(_e).__name__}: {str(_e)[:300]}'}\n"),
+         "    try:   # [h960r] restore the immutable parent snapshot (copy, verify, replace); never raise from here\n"
+         "        if _snap_sha() == BASELINE_SHA256:\n"
+         "            _hs.copyfile(_hw / '_baseline_submission.csv', _hw / '_h960_restore.csv')\n"
+         "            _fo.replace(_hw / '_h960_restore.csv', _hw / 'submission.csv')\n"
+         "            _kept = 'parent snapshot kept'\n"
+         "        else:   # the snapshot itself changed: leave the parent's own submission.csv (no optional stage writes it)\n"
+         "            _kept = 'snapshot changed - the parent\\'s own submission.csv left in place'\n"
+         "    except Exception as _re2:\n"
+         "        _kept = 'restore failed (%s) - submission.csv left as the parent wrote it' % type(_re2).__name__\n"
+         "    _rep = {'status': f'E1 INVALID - {_kept}: {type(_e).__name__}: {str(_e)[:300]}'}\n"),
         ("(_hw / 'h957_receipt.json').write_text(_hj.dumps(_rep, indent=1))\nprint('H957_FINAL', _hj.dumps(_rep), flush=True)\n",
          "_rep.update(parent=PARENT_LABEL, reader_info=globals().get('READER_INFO', {}), parent_sha256=BASELINE_SHA256)\n"
          "try:   # [h960r] the receipt is diagnostic only: a failure here must not fail the notebook\n"
