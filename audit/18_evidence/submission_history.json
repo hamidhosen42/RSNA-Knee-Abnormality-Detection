@@ -1,0 +1,152 @@
+[
+  {
+    "ref": 57252502,
+    "date": "2026-10-16T02:57:40.447Z",
+    "submittedBy": "kishormorol",
+    "publicScore": "0.958",
+    "privateScore": "",
+    "status": "complete",
+    "description": "Fork of heliosli/blend-mine-in-private-lb-luck-to-all-upvoters (Raptor 384+224 + R6 ConvNeXt, per-finding rank blend), unchanged",
+    "url": "/code/kishormorol/rsna-knee-helios-blend-fork?scriptVersionId=358866294"
+  },
+  {
+    "ref": 57252333,
+    "date": "2026-10-16T02:50:43.343Z",
+    "submittedBy": "foysalemonshanto",
+    "publicScore": "0.958",
+    "privateScore": "",
+    "status": "complete",
+    "description": "Notebook Blend mine in—private LB luck to all upvote 4c509a | Version 1",
+    "url": "/code/foysalemonshanto/blend-mine-in-private-lb-luck-to-all-upvote-4c509a?scriptVersionId=358866931"
+  },
+  {
+    "ref": 57213895,
+    "date": "2026-10-15T02:58:28.83Z",
+    "submittedBy": "foysalemonshanto",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H958: one-free-flip parent (224+mirror, no R7 flip) + 5 Mirror students 0.8/0.2",
+    "url": "/code/foysalemonshanto/rsna-knee-h958?scriptVersionId=358523225"
+  },
+  {
+    "ref": 57213404,
+    "date": "2026-10-15T02:40:48.893Z",
+    "submittedBy": "foysalemonshanto",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H958B-W40: H958B parent + 5 Mirror students 0.6/0.4 (w40 final cell)",
+    "url": "/code/foysalemonshanto/rsna-knee-h958bw40?scriptVersionId=358478265"
+  },
+  {
+    "ref": 57213403,
+    "date": "2026-10-15T02:40:46.673Z",
+    "submittedBy": "foysalemonshanto",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H958B: one-free-flip parent (R7 flip TTA, 224+mirror) + 5 Mirror students 0.8/0.2",
+    "url": "/code/foysalemonshanto/rsna-knee-h958b?scriptVersionId=358478237"
+  },
+  {
+    "ref": 57168474,
+    "date": "2026-10-14T05:27:17.237Z",
+    "submittedBy": "hosen42",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H957x5-w40: R7 notebook x 0.6 + 5 Mirror students x 0.4 (LB probe)",
+    "url": "/code/hosen42/rsna-knee-h957x5w40?scriptVersionId=358219074"
+  },
+  {
+    "ref": 57168472,
+    "date": "2026-10-14T05:27:13.183Z",
+    "submittedBy": "hosen42",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H957x5-w30: R7 notebook x 0.7 + 5 Mirror students x 0.3 (LB probe)",
+    "url": "/code/hosen42/rsna-knee-h957x5w30?scriptVersionId=358219058"
+  },
+  {
+    "ref": 57151640,
+    "date": "2026-10-13T17:35:32.243Z",
+    "submittedBy": "hosen42",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H957x5: R7+Raptor (0.956) x 0.8 + 5 Mirror students (C,C2,C3,S75,T75s1) x 0.2",
+    "url": "/code/hosen42/rsna-knee-h957x5?scriptVersionId=358075166"
+  },
+  {
+    "ref": 57128358,
+    "date": "2026-10-13T02:59:44.57Z",
+    "submittedBy": "hosen42",
+    "publicScore": "0.957",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H957: R7+Raptor notebook (0.956) x 0.8 + Mirror-student ensemble C/C2/C3 x 0.2 (rank)",
+    "url": "/code/hosen42/rsna-knee-h957?scriptVersionId=357847341"
+  },
+  {
+    "ref": 57103459,
+    "date": "2026-10-12T09:55:15.757Z",
+    "submittedBy": "esfersami50",
+    "publicScore": "0.949",
+    "privateScore": "",
+    "status": "complete",
+    "description": "R4 arm C3: Mirror-student reader, 0.25 v0 + 0.75 teacher, leg alone",
+    "url": "/code/esfersami50/rsna-knee-plc3?scriptVersionId=357617129"
+  },
+  {
+    "ref": 57103457,
+    "date": "2026-10-12T09:55:12.847Z",
+    "submittedBy": "esfersami50",
+    "publicScore": "0.948",
+    "privateScore": "",
+    "status": "complete",
+    "description": "R4 arm C2: Mirror-student reader, seed 1 (C replicate), leg alone",
+    "url": "/code/esfersami50/rsna-knee-plc2?scriptVersionId=357617108"
+  },
+  {
+    "ref": 57098012,
+    "date": "2026-10-12T06:24:54.25Z",
+    "submittedBy": "esfersami50",
+    "publicScore": "0.954",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H956-S6: 0.956 blend cell (Mirror 0.5 / compact 0.5, own-row ranks) on the available S6 compact (R6 deleted)",
+    "url": "/code/esfersami50/rsna-knee-h956s6?scriptVersionId=357563781"
+  },
+  {
+    "ref": 57082452,
+    "date": "2026-10-11T18:23:14.66Z",
+    "submittedBy": "esfersami50",
+    "publicScore": "0.955",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H955C: 0.8 x rank(0.954 Mirror+S6) + 0.2 x rank(Mirror-student reader C, leg 0.948)",
+    "url": "/code/esfersami50/rsna-knee-h955c?scriptVersionId=357425259"
+  },
+  {
+    "ref": 57081442,
+    "date": "2026-10-11T17:39:28.05Z",
+    "submittedBy": "esfersami50",
+    "publicScore": "0.948",
+    "privateScore": "",
+    "status": "complete",
+    "description": "R3 arm C: full-data reader, 0.5 v0 + 0.5 Mirror-teacher targets (student), leg alone",
+    "url": "/code/esfersami50/rsna-knee-plc?scriptVersionId=357413111"
+  },
+  {
+    "ref": 57060625,
+    "date": "2026-10-11T03:17:46.45Z",
+    "submittedBy": "esfersami50",
+    "publicScore": "0.954",
+    "privateScore": "",
+    "status": "complete",
+    "description": "H954R-B: 0.954 (Mirror+S6) + pseudo-label reader B, rank 0.5/0.25/0.25 (blend3 weights)",
+    "url": "/code/esfersami50/rsna-knee-h954rb?scriptVersionId=357218696"
+  }
+]

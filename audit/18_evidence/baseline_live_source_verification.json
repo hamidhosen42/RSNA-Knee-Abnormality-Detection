@@ -1,0 +1,73 @@
+{
+  "captured_client_date": "2026-10-17",
+  "archive_file_sha256": "00ca614beec23736346df921e3305742bf8533b7cfd69a208880022f899fa1d7",
+  "kernel": "kishormorol/rsna-knee-helios-blend-fork",
+  "current_version_number": 1,
+  "api_source_utf8_sha256": "ad0b97aca3361f16e32b0836655dd68bc2a37ff0cc5a44f6d6f4de07880d986d",
+  "cells": [
+    {
+      "cell": 0,
+      "type": "markdown",
+      "archive_source_sha256": "553ed37b7dc65cb8d58294c2db3203ba705cabea71e40eca94966b17b6078889",
+      "live_source_sha256": "553ed37b7dc65cb8d58294c2db3203ba705cabea71e40eca94966b17b6078889",
+      "source_identical": true
+    },
+    {
+      "cell": 1,
+      "type": "markdown",
+      "archive_source_sha256": "945fdd76ab13685d2c665ea27b385e1c8a20ae0dcdc74af2bb3742165663ce63",
+      "live_source_sha256": "945fdd76ab13685d2c665ea27b385e1c8a20ae0dcdc74af2bb3742165663ce63",
+      "source_identical": true
+    },
+    {
+      "cell": 2,
+      "type": "code",
+      "archive_source_sha256": "3858126b82681ba469934c84a79f360eb199df59c16159b7a168df94e415cb37",
+      "live_source_sha256": "3858126b82681ba469934c84a79f360eb199df59c16159b7a168df94e415cb37",
+      "source_identical": true
+    },
+    {
+      "cell": 3,
+      "type": "code",
+      "archive_source_sha256": "d08db7bd194a78dac8c923a50048d098dd297223cc971e0fec40ba996d840e78",
+      "live_source_sha256": "d08db7bd194a78dac8c923a50048d098dd297223cc971e0fec40ba996d840e78",
+      "source_identical": true
+    },
+    {
+      "cell": 4,
+      "type": "code",
+      "archive_source_sha256": "0b0545b46407a46d5a4ebd6a1a941b24103e62844feffda96d6fc37a48cff090",
+      "live_source_sha256": "0b0545b46407a46d5a4ebd6a1a941b24103e62844feffda96d6fc37a48cff090",
+      "source_identical": true
+    },
+    {
+      "cell": 5,
+      "type": "code",
+      "archive_source_sha256": "10e20e388df7fed2aaecc900cfdebb294735eea8965924748d31d4db28d6d823",
+      "live_source_sha256": "10e20e388df7fed2aaecc900cfdebb294735eea8965924748d31d4db28d6d823",
+      "source_identical": true
+    },
+    {
+      "cell": 6,
+      "type": "code",
+      "archive_source_sha256": "4a192853d770eb17aa95721f36b986aa7bb5e7d3fb8d2f43bca28b3c4d530e32",
+      "live_source_sha256": "4a192853d770eb17aa95721f36b986aa7bb5e7d3fb8d2f43bca28b3c4d530e32",
+      "source_identical": true
+    },
+    {
+      "cell": 7,
+      "type": "code",
+      "archive_source_sha256": "68f70dd31cc3544cb5734313d06538355a34b122ff430a32820756175c9c9dd9",
+      "live_source_sha256": "68f70dd31cc3544cb5734313d06538355a34b122ff430a32820756175c9c9dd9",
+      "source_identical": true
+    },
+    {
+      "cell": 8,
+      "type": "code",
+      "archive_source_sha256": "7a37c213396bf9ff054dc8d34281bc5501b1de4914df9a97d9d74043d401e5d8",
+      "live_source_sha256": "7a37c213396bf9ff054dc8d34281bc5501b1de4914df9a97d9d74043d401e5d8",
+      "source_identical": true
+    }
+  ],
+  "all_cell_sources_identical": true
+}

@@ -46,9 +46,7 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
-READERS = "hosen42/rsna-knee-student-readers"   # the 5 LB-validated students (private, hosen42); never re-versioned
-READER_CKPTS = ["cnxt_plC2_full.pt", "cnxt_plC3_full.pt", "cnxt_plC_full.pt", "cnxt_plS75_full.pt", "cnxt_plT75s1_full.pt"]
-SCORED = {"submission_h957x5": "H957x5", "submission_h957x5w30": "H957x5-w30", "submission_h957x5w40": "H957x5-w40"}
+from student_leg import READERS, SCORED, patch, src, student_cells  # noqa: E402  (our 5-student leg, R1-R3 / R5-R6)
 ap = argparse.ArgumentParser()
 ap.add_argument("--parent", default="public_notebooks/0.956_7v_varshithakolupuri__rsna-0-956-one-free-flip-68-ranks-up.ipynb")
 ap.add_argument("--r7", default="public_notebooks/0.956_heliosli__0-957-latest-dataset-score-in-one-click.ipynb")
@@ -67,7 +65,6 @@ if bool(a.extra_readers) != bool(extra):
 if a.extra_readers and not a.out:
     ap.error("an H959 build needs an explicit --out (e.g. submission_h959b)")
 
-src = lambda c: "".join(c["source"])
 P = json.load(open(inp(a.parent)))
 pc = P["cells"]
 r7 = [src(c) for c in json.load(open(inp(a.r7)))["cells"] if c["cell_type"] == "code"]
@@ -82,83 +79,10 @@ for i, j in ((3, 0), (4, 1), (6, 2), (7, 3)):          # Raptor 384 write + run,
 assert src(pc[9]).startswith("%%writefile /tmp/raptor224_run.py") and "c08_r224_swa.pt" in src(pc[9])
 assert src(pc[10]).startswith("# Stage 2b [s5]") and "R224_OK" in src(pc[10])
 assert "A224 = 0.35" in src(pc[12]) and "sub.to_csv(WORK / 'submission.csv', index=False)" in src(pc[12])
-# --- our parts: the scored notebook's reader cells (7-11) and final cell (12)
-assert len(st) == 13
-reader, final = [json.loads(json.dumps(c)) for c in st[7:12]], json.loads(json.dumps(st[12]))
-assert src(reader[0]).startswith("os.makedirs('/kaggle/working/own_src'")
-assert src(reader[3]).startswith("%%writefile /kaggle/working/own_src/infer.py")
-assert "cnxt_pl*_full.pt" in src(reader[4]) and "assert len(_ck) == 5" in src(reader[4])
-assert src(final).startswith("# [h957] final:")
-_w = re.findall(r"^W_PARENT, W_READER = ([0-9.]+), ([0-9.]+)$", src(final), flags=re.M)
-assert len(_w) == 1, _w
-WP, WR = (float(x) for x in _w[0])
-assert abs(WP + WR - 1) < 1e-9, (WP, WR)
+# --- our parts: the scored notebook's reader cells (7-11) and final cell (12), patched R1-R3 / R5-R6 (student_leg.py)
+reader, final, WP, WR = student_cells(st, a.extra_readers, extra)
 cells = [json.loads(json.dumps(c)) for c in pc]
 
-
-def patch(cell, pairs):
-    s = src(cell)
-    for old, new in pairs:
-        assert s.count(old) == 1, (old[:90], s.count(old))
-        s = s.replace(old, new)
-    cell["source"] = s.splitlines(keepends=True)
-    compile("\n".join(l for l in s.splitlines() if not l.startswith(("%%", "!"))), "patched", "exec")
-
-
-# R1 + R2: reader checkpoints by name, cheap lookup first; time guard on the reader run
-_lookup = ('# [h958 R1] checkpoints by NAME: other files in a dataset are ignored, so adding files can never break this\n'
-           '# run; the two known mount layouts first, the slow recursive walk over /kaggle/input (the DICOM tree) only as a fallback\n'
-           'def _ckpts(slug, names):\n'
-           '    def _all(d):\n'
-           '        return [os.path.join(d, n) for n in names] if all(os.path.isfile(os.path.join(d, n)) for n in names) else None\n'
-           '    for d in sorted(glob.glob("/kaggle/input/datasets/*/" + slug)) + ["/kaggle/input/" + slug]:\n'
-           '        if _all(d):\n'
-           '            return _all(d)\n'
-           '    for p in glob.glob("/kaggle/input/**/" + slug + "/" + names[0], recursive=True):\n'
-           '        if _all(os.path.dirname(p)):\n'
-           '            return _all(os.path.dirname(p))\n'
-           '    raise FileNotFoundError("%s: %s" % (slug, names))\n'
-           f'_ck = _ckpts("{READERS.split("/")[1]}", {READER_CKPTS!r})\n')
-if extra:
-    xslug = a.extra_readers.split("/")[-1]
-    assert a.extra_readers.count("/") == 1 and xslug != READERS.split("/")[1] and re.fullmatch(r"[a-z0-9-]+", xslug), a.extra_readers
-    assert len(set(extra)) == len(extra) and all(re.fullmatch(r"cnxt_pl\w+_full\.pt", x) for x in extra), extra
-    _lookup += f'_ck += _ckpts("{xslug}", {extra!r})   # [h959] the new students, from their own dataset {a.extra_readers}\n'
-patch(reader[4], [
-    ('_ck = sorted(glob.glob("/kaggle/input/**/rsna-knee-student-readers/cnxt_pl*_full.pt", recursive=True))\n'
-     'assert len(_ck) == 5, _ck; print("reader ckpts", _ck, flush=True)\n',
-     _lookup + 'print("reader ckpts", _ck, flush=True)\n'),
-    ('rc = subprocess.run([sys.executable, "/kaggle/working/own_src/infer.py", _data, "test", "/kaggle/working/reader_sub.csv"] + _ck,\n'
-     '                    env=_env).returncode\n',
-     'try:   # [h958 R2] time guard: the readers never push the session past 9 h; a timeout only drops the student leg\n'
-     '    rc = subprocess.run([sys.executable, "/kaggle/working/own_src/infer.py", _data, "test", "/kaggle/working/reader_sub.csv"] + _ck,\n'
-     '                        env=_env, timeout=max(60, 9 * 3600 - (time.time() - NB_T0) - 20 * 60)).returncode\n'
-     'except subprocess.TimeoutExpired:\n'
-     '    rc = -9\n'
-     '    print("READER_TIMEOUT after %.0f s - the final cell keeps the notebook\'s own blend" % (time.time() - _t0), flush=True)\n')])
-
-# R3: infer.py counts a series' slices as training did when the series has fewer than 3 files
-patch(reader[3], [
-    ('@torch.no_grad()\ndef run(',
-     'def _n_slices(d):\n'
-     '    """[h958 R3] slice count as in training (decoded frames, capped at MAX_SLICES).  Counting files is the same except\n'
-     '    for a series stored in fewer than 3 files (e.g. one multi-frame DICOM): its frames are read from the headers."""\n'
-     '    if not os.path.isdir(d):\n'
-     '        return 0\n'
-     '    files = os.listdir(d)\n'
-     '    if len(files) >= 3:\n'
-     '        return min(len(files), MAX_SLICES)\n'
-     '    import pydicom\n'
-     '    n = 0\n'
-     '    for fn in files:\n'
-     '        try:\n'
-     '            n += int(pydicom.dcmread(os.path.join(d, fn), stop_before_pixels=True).get("NumberOfFrames") or 1)\n'
-     '        except Exception:\n'
-     '            pass\n'
-     '    return min(n, MAX_SLICES)\n\n\n'
-     '@torch.no_grad()\ndef run('),
-    ('        n_files[sr] = min(len(os.listdir(d)), MAX_SLICES) if os.path.isdir(d) else 0\n',
-     '        n_files[sr] = _n_slices(d)\n')])
 
 # R4: the 224 stage lists the studies it could not score; the blend gives them the 384 rank alone
 patch(cells[9], [
@@ -178,26 +102,6 @@ patch(cells[12], [
     ("        rr = (1.0 - A224) * rr + A224 * pct_on(r224[c].values, ~rap_fail)\n",
      "        _ok224 = ~rap_fail & ~fail224   # [h958 R4] the 224 rank only over the studies both Raptor models scored\n"
      "        rr = np.where(_ok224, (1.0 - A224) * rr + A224 * pct_on(r224[c].values, _ok224), rr)\n")])
-
-# R5 + R6: the final cell
-_head_old = ("# [h957] final: 0.8 x rank(the R7 notebook's own submission.csv) + 0.2 x rank(our Mirror-student ensemble), per\n"
-             "# finding, weights fixed before any run (public 0.955 notebook / our H955C).  A failed reader leaves the R7 file as is;\n"
-             "# a study the reader could not score keeps its R7 rank.\n")
-if (WP, WR) == (0.8, 0.2):
-    _head_new = ("# [h957] final: 0.8 x rank(the R7 notebook's own submission.csv) + 0.2 x rank(our Mirror-student ensemble), per\n"
-                 "# finding, weights fixed before any run (public 0.955 notebook / our H955C).  A failed reader leaves the R7 file as is;\n")
-else:   # R6: say what the code really does
-    _head_new = ("# [h957] final: %g x rank(the notebook's own submission.csv) + %g x rank(our Mirror-student ensemble), per\n"
-                 "# finding.  The %g student weight was chosen after the 0.957 LB probes (H957x5-w30 / -w40), not before any run.\n"
-                 "# A failed reader leaves the notebook's file as is;\n" % (WP, WR, WR))
-_head_new += "# [h958 R5] a study the reader could not score gets its expected student rank given its parent rank.\n"
-patch(final, [
-    (_head_old, _head_new),
-    ("        _out[_c] = _hn.where(_bad, _p0, W_PARENT * _p0 + W_READER * _hn.nan_to_num(_r)).astype(_hn.float32)\n",
-     "        if _bad.any():   # [h958 R5] linear fit of the student rank on the parent rank over the scored studies\n"
-     "            _r[_bad] = (_hn.clip(_hn.polyval(_hn.polyfit(_p0[~_bad], _r[~_bad], 1), _p0[_bad]), 0, 1)\n"
-     "                        if (~_bad).sum() >= 3 else _p0[_bad])\n"
-     "        _out[_c] = (W_PARENT * _p0 + W_READER * _r).astype(_hn.float32)\n")])
 
 if a.flip_r7:
     s = src(cells[6])

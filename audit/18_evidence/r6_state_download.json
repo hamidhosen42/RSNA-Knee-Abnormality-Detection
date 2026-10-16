@@ -1,0 +1,1045 @@
+{
+ "kind": "state_stacker_v1",
+ "version": 1,
+ "created": "2026-10-11 15:43:57",
+ "script": "/root/autodl-tmp/rsna_align_s0/analysis/fit_state_stacker.py",
+ "script_md5": "21bbab233ae5641c6f1304d103622c0f",
+ "rule": "ADOPT iff cross-fitted AUC gain >= +0.001 on the explicit-only ruler AND >= 0 on the corrected ruler vs z; a class the fluid json adopts: the joint model must also pass the rule vs the fluid-only stacker (pre-registered 10-11 02:15)",
+ "feature": {
+  "lines": [
+   {
+    "seeds": [
+     0
+    ],
+    "runs": [
+     {
+      "run": "/root/autodl-tmp/rsna_align_s0/runs/cnx_r6fm",
+      "seed": 0,
+      "oof": "oof_E_lrprior_s0.npy",
+      "oof_md5": "3624908a1df3c0a296550c17828c9456",
+      "state_oof": "oof_state_E_lrprior_s0.npy",
+      "state_oof_md5": "8458ad3cdc783f62d89e872413058643",
+      "state_sidecar_md5": "27978d2ac808893160f91c45ee84f8ae",
+      "state_spec": "/root/autodl-tmp/rsna_align_s0/targets/state_spec_opusv11b_rr6.json",
+      "state_spec_md5": "11bb0a4ab08d61807a3f068cc9d417e6",
+      "fold_models": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "pool": 4344,
+      "config_crop": 352
+     }
+    ]
+   }
+  ],
+  "weights": [
+   1.0
+  ],
+  "arm": "E_lrprior",
+  "z": "the line's out-of-fold class logit (two seeds: their mean); deployed: the group mean over all fold models",
+  "states": "the line's state read-out (two seeds: the arithmetic mean of their probability vectors); deployed: the arithmetic mean over all fold models of compact_train_v97.state_probs",
+  "formula": "z_out = b0 + coef . x, x = the class's features in the order of 'features' (lv = log1p(mL), 0 when missing; miss = 1 when missing)"
+ },
+ "layout": {
+  "columns": [
+   {
+    "class": "ACL",
+    "categories": [
+     "normal",
+     "signal_or_degeneration",
+     "low_grade_sprain_or_partial",
+     "partial_tear_unspecified",
+     "tear_unspecified",
+     "complete_tear"
+    ],
+    "start": 0,
+    "stop": 6
+   },
+   {
+    "class": "MCL",
+    "categories": [
+     "normal",
+     "periligamentous_edema_or_grade1",
+     "partial_tear_or_grade2",
+     "chronic_or_healed_change",
+     "high_grade_partial_tear",
+     "complete_tear"
+    ],
+    "start": 6,
+    "stop": 12
+   },
+   {
+    "class": "Medial Meniscus",
+    "categories": [
+     "normal",
+     "degeneration_no_tear",
+     "abnormal_tear_status_unstated",
+     "tear",
+     "macerated_or_destroyed"
+    ],
+    "start": 12,
+    "stop": 17
+   },
+   {
+    "class": "Lateral Meniscus",
+    "categories": [
+     "normal",
+     "degeneration_no_tear",
+     "abnormal_tear_status_unstated",
+     "tear",
+     "macerated_or_destroyed"
+    ],
+    "start": 17,
+    "stop": 22
+   },
+   {
+    "class": "Medial OA",
+    "categories": [
+     "normal",
+     "low_grade_chondral",
+     "chondral_unspecified",
+     "high_grade_size_unstated",
+     "high_grade_large",
+     "no_cartilage_detail"
+    ],
+    "start": 22,
+    "stop": 28
+   },
+   {
+    "class": "Lateral OA",
+    "categories": [
+     "normal",
+     "low_grade_chondral",
+     "chondral_unspecified",
+     "high_grade_size_unstated",
+     "high_grade_large",
+     "no_cartilage_detail"
+    ],
+    "start": 28,
+    "stop": 34
+   },
+   {
+    "class": "PF OA",
+    "categories": [
+     "normal",
+     "low_grade_chondral",
+     "chondral_unspecified",
+     "high_grade_size_unstated",
+     "high_grade_large",
+     "no_cartilage_detail"
+    ],
+    "start": 34,
+    "stop": 40
+   },
+   {
+    "class": "Effusion",
+    "categories": [
+     "none_or_trace",
+     "small",
+     "small_to_moderate",
+     "present_unspecified",
+     "moderate",
+     "large"
+    ],
+    "start": 40,
+    "stop": 46
+   },
+   {
+    "class": "Synovitis",
+    "categories": [
+     "none",
+     "other_synovial_finding",
+     "fat_pad_inflammation",
+     "synovitis",
+     "synovial_thickening"
+    ],
+    "start": 46,
+    "stop": 51
+   },
+   {
+    "class": "Baker's",
+    "categories": [
+     "none",
+     "small",
+     "present_unspecified",
+     "moderate",
+     "large",
+     "ruptured_or_leaking"
+    ],
+    "start": 51,
+    "stop": 57
+   },
+   {
+    "class": "Contusion",
+    "categories": [
+     "none",
+     "degenerative_or_reactive_edema",
+     "nonspecific_marrow_edema",
+     "fracture_associated_edema_only",
+     "traumatic_marrow_edema",
+     "contusion_or_bruise"
+    ],
+    "start": 57,
+    "stop": 63
+   },
+   {
+    "class": "Fracture",
+    "categories": [
+     "none",
+     "trabecular_microfracture_only",
+     "insufficiency_or_stress_fracture",
+     "avulsion_fracture",
+     "impaction_or_osteochondral_fracture",
+     "fracture_age_unstated",
+     "acute_fracture",
+     "old_or_healed_fracture"
+    ],
+    "start": 63,
+    "stop": 71
+   },
+   {
+    "binary": "sign_osteophytes",
+    "class": "Medial OA",
+    "column": 71
+   },
+   {
+    "binary": "sign_osteophytes",
+    "class": "Lateral OA",
+    "column": 72
+   },
+   {
+    "binary": "sign_osteophytes",
+    "class": "PF OA",
+    "column": 73
+   },
+   {
+    "binary": "sign_subchondral_marrow",
+    "class": "Medial OA",
+    "column": 74
+   },
+   {
+    "binary": "sign_subchondral_marrow",
+    "class": "Lateral OA",
+    "column": 75
+   },
+   {
+    "binary": "sign_subchondral_marrow",
+    "class": "PF OA",
+    "column": 76
+   },
+   {
+    "binary": "sign_bone_on_bone",
+    "class": "Medial OA",
+    "column": 77
+   },
+   {
+    "binary": "sign_bone_on_bone",
+    "class": "Lateral OA",
+    "column": 78
+   },
+   {
+    "binary": "sign_bone_on_bone",
+    "class": "PF OA",
+    "column": 79
+   },
+   {
+    "binary": "acute",
+    "class": "MCL",
+    "column": 80
+   },
+   {
+    "binary": "acute",
+    "class": "Fracture",
+    "column": 81
+   },
+   {
+    "binary": "acute",
+    "class": "Contusion",
+    "column": 82
+   },
+   {
+    "binary": "acute",
+    "class": "ACL",
+    "column": 83
+   }
+  ],
+  "width": 84
+ },
+ "state_spec_md5": "11bb0a4ab08d61807a3f068cc9d417e6",
+ "fluid": {
+  "json": "/root/autodl-tmp/rsna_align_s0/post_r6/fluid_stacker_r6.json",
+  "md5": "910ce9aa91342f3dce08b9d2a2fa45bc",
+  "adopted": [
+   "Effusion"
+  ],
+  "volume_file": "/root/autodl-tmp/rsna_align_s0/scratch_fluid_stack/volumes_all.csv",
+  "volume_md5": "7c89fb9d2936adf73a0898b3629d5aac"
+ },
+ "fit_cells": {
+  "targets": "r6_inputs/v4/probe_targets_opusv11b_rr6.csv",
+  "targets_md5": "4f6d49ee3de5a9914c1101192e97cf4a",
+  "mask": "r6_inputs/v4/silent_mask_opusv11b_rr6.json",
+  "mask_md5": "5066b97d4b2406d08d917c1be17ae7f5",
+  "lo": 0.15,
+  "hi": 0.6
+ },
+ "rulers": {
+  "explicit": [
+   "/root/autodl-tmp/rsna_align_s0/targets/probe_targets_opusv11b.csv",
+   "d37e062351158cd0a856e288c1639222",
+   "/root/autodl-tmp/rsna_align_s0/targets/silent_mask_opusv11b_orig.json",
+   "35d3f607029a1e8d2570b904093d914f"
+  ],
+  "corrected": [
+   "r6_inputs/v4/probe_targets_opusv11b_rr6.csv",
+   "4f6d49ee3de5a9914c1101192e97cf4a",
+   "r6_inputs/v4/silent_mask_opusv11b_rr6.json",
+   "5066b97d4b2406d08d917c1be17ae7f5"
+  ]
+ },
+ "l2": 0.001,
+ "folds": 4,
+ "sd_min": 0.01,
+ "test_cv_salt": null,
+ "partial": false,
+ "rows": 4344,
+ "bootstrap": {
+  "resamples": 2000,
+  "seed": 0,
+  "interval": 0.9
+ },
+ "classes": {
+  "ACL": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:signal_or_degeneration",
+    "state:low_grade_sprain_or_partial",
+    "state:partial_tear_unspecified",
+    "state:tear_unspecified",
+    "state:complete_tear",
+    "bin:acute"
+   ],
+   "dropped": [],
+   "b0": -1.2633614994859772,
+   "coef": [
+    0.29369418131162706,
+    -0.9152460483611758,
+    0.4398343022187251,
+    -0.803893223612203,
+    0.6060425908289211,
+    1.6691053909806133,
+    1.6155662714563983,
+    0.1487878629125952
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 3749,
+   "fit_pos": 447,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 3810,
+      "pos": 451,
+      "auc_baseline": 0.9866810481685698,
+      "auc_stacker": 0.9844426298873398,
+      "gain": -0.002238418281230059,
+      "gain_ci90": [
+       -0.0032279258956018075,
+       -0.0012871993147851818
+      ],
+      "boot_frac_gain_below_0": 1.0
+     },
+     "corrected": {
+      "cells": 3749,
+      "pos": 447,
+      "auc_baseline": 0.9917337062345782,
+      "auc_stacker": 0.989386813225528,
+      "gain": -0.0023468930090502216,
+      "gain_ci90": [
+       -0.00323757006020946,
+       -0.001523962941805779
+      ],
+      "boot_frac_gain_below_0": 1.0
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0022 < +0.001, corrected gain -0.0023 < 0)"
+  },
+  "MCL": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:periligamentous_edema_or_grade1",
+    "state:partial_tear_or_grade2",
+    "state:chronic_or_healed_change",
+    "state:high_grade_partial_tear",
+    "state:complete_tear",
+    "bin:acute"
+   ],
+   "dropped": [],
+   "b0": -4.471266308400117,
+   "coef": [
+    0.2084355874122446,
+    -0.8062216539540347,
+    -0.6823292296502543,
+    2.7137422388842065,
+    12.907903139656478,
+    1.3536584151984785,
+    5.358982437081825,
+    1.1174945109261687
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 3616,
+   "fit_pos": 90,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 3713,
+      "pos": 28,
+      "auc_baseline": 0.9733475479744137,
+      "auc_stacker": 0.9772436518705175,
+      "gain": 0.003896103896103842,
+      "gain_ci90": [
+       -0.0014278314898739097,
+       0.011119763607651881
+      ],
+      "boot_frac_gain_below_0": 0.174
+     },
+     "corrected": {
+      "cells": 3616,
+      "pos": 90,
+      "auc_baseline": 0.9545282662128947,
+      "auc_stacker": 0.9496029495178673,
+      "gain": -0.004925316695027382,
+      "gain_ci90": [
+       -0.009633429069966355,
+       -0.00041910146306272674
+      ],
+      "boot_frac_gain_below_0": 0.967
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain +0.0039 >= +0.001, corrected gain -0.0049 < 0)"
+  },
+  "Medial Meniscus": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:degeneration_no_tear",
+    "state:abnormal_tear_status_unstated",
+    "state:tear",
+    "state:macerated_or_destroyed"
+   ],
+   "dropped": [],
+   "b0": -0.0322445838732215,
+   "coef": [
+    0.2828225170948031,
+    -0.6227976171384544,
+    -0.07187374612035394,
+    -1.4330421314119857,
+    0.4298467181518173,
+    7.235496734687716
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 3717,
+   "fit_pos": 1629,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 3810,
+      "pos": 1638,
+      "auc_baseline": 0.9607120933087784,
+      "auc_stacker": 0.9601690513292723,
+      "gain": -0.0005430419795060537,
+      "gain_ci90": [
+       -0.001221075454092596,
+       8.698526597182283e-05
+      ],
+      "boot_frac_gain_below_0": 0.9205
+     },
+     "corrected": {
+      "cells": 3717,
+      "pos": 1629,
+      "auc_baseline": 0.9748220707530417,
+      "auc_stacker": 0.973816294226531,
+      "gain": -0.0010057765265106822,
+      "gain_ci90": [
+       -0.0014889780019548492,
+       -0.0005147282654120957
+      ],
+      "boot_frac_gain_below_0": 0.9995
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0005 < +0.001, corrected gain -0.0010 < 0)"
+  },
+  "Lateral Meniscus": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:degeneration_no_tear",
+    "state:abnormal_tear_status_unstated",
+    "state:tear",
+    "state:macerated_or_destroyed"
+   ],
+   "dropped": [],
+   "b0": -0.6548809498346655,
+   "coef": [
+    0.23261743584002198,
+    -0.951875483222674,
+    0.2928511724716813,
+    -1.2291896600471819,
+    1.1569088851085567,
+    6.685012323473908
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 3549,
+   "fit_pos": 574,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 3678,
+      "pos": 581,
+      "auc_baseline": 0.9402628272210573,
+      "auc_stacker": 0.9404551181338667,
+      "gain": 0.00019229091280947852,
+      "gain_ci90": [
+       -0.0012253986401138007,
+       0.001731151700996436
+      ],
+      "boot_frac_gain_below_0": 0.4275
+     },
+     "corrected": {
+      "cells": 3549,
+      "pos": 574,
+      "auc_baseline": 0.9560647673703628,
+      "auc_stacker": 0.9560518841683014,
+      "gain": -1.2883202061386712e-05,
+      "gain_ci90": [
+       -0.0015316022836313781,
+       0.0014743019988944339
+      ],
+      "boot_frac_gain_below_0": 0.518
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain +0.0002 < +0.001, corrected gain -0.0000 < 0)"
+  },
+  "Medial OA": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:low_grade_chondral",
+    "state:chondral_unspecified",
+    "state:high_grade_size_unstated",
+    "state:high_grade_large",
+    "state:no_cartilage_detail",
+    "bin:sign_osteophytes",
+    "bin:sign_subchondral_marrow",
+    "bin:sign_bone_on_bone"
+   ],
+   "dropped": [],
+   "b0": -1.110296113065,
+   "coef": [
+    0.16785809883782715,
+    -1.4553781938196542,
+    -0.7926492097904371,
+    0.45565464401697886,
+    1.6610282767030564,
+    4.373406611168081,
+    3.4753727453323546,
+    0.32292963721359985,
+    0.7401620881995737,
+    1.0022227824980752
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 2444,
+   "fit_pos": 674,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 2848,
+      "pos": 514,
+      "auc_baseline": 0.9610311450758371,
+      "auc_stacker": 0.9586321640176181,
+      "gain": -0.0023989810582190074,
+      "gain_ci90": [
+       -0.004208006649960255,
+       -0.0006504217882411345
+      ],
+      "boot_frac_gain_below_0": 0.99
+     },
+     "corrected": {
+      "cells": 2444,
+      "pos": 674,
+      "auc_baseline": 0.9812779761605391,
+      "auc_stacker": 0.9806551660547537,
+      "gain": -0.0006228101057854651,
+      "gain_ci90": [
+       -0.002454408514136752,
+       0.001272226687870825
+      ],
+      "boot_frac_gain_below_0": 0.6975
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0024 < +0.001, corrected gain -0.0006 < 0)"
+  },
+  "Lateral OA": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:low_grade_chondral",
+    "state:chondral_unspecified",
+    "state:high_grade_size_unstated",
+    "state:high_grade_large",
+    "state:no_cartilage_detail",
+    "bin:sign_osteophytes",
+    "bin:sign_subchondral_marrow",
+    "bin:sign_bone_on_bone"
+   ],
+   "dropped": [],
+   "b0": -1.1877721398915124,
+   "coef": [
+    0.15407081219849109,
+    -1.1420851933758014,
+    -0.4808493842695819,
+    0.5240063379004862,
+    1.5647900728291737,
+    0.6400523381023066,
+    3.7494647436703885,
+    0.13456673723861953,
+    -0.2786812317142075,
+    1.8211021601692159
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 2461,
+   "fit_pos": 492,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 2760,
+      "pos": 288,
+      "auc_baseline": 0.9236658913160734,
+      "auc_stacker": 0.9163239392304926,
+      "gain": -0.00734195208558075,
+      "gain_ci90": [
+       -0.009736928345166696,
+       -0.004946092662968394
+      ],
+      "boot_frac_gain_below_0": 1.0
+     },
+     "corrected": {
+      "cells": 2461,
+      "pos": 492,
+      "auc_baseline": 0.9504814461552437,
+      "auc_stacker": 0.9545031318774335,
+      "gain": 0.0040216857221898605,
+      "gain_ci90": [
+       0.0013309771026392136,
+       0.006893470420603748
+      ],
+      "boot_frac_gain_below_0": 0.0075
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0073 < +0.001, corrected gain +0.0040 >= 0)"
+  },
+  "PF OA": {
+   "features": [
+    "z",
+    "state:normal",
+    "state:low_grade_chondral",
+    "state:chondral_unspecified",
+    "state:high_grade_size_unstated",
+    "state:high_grade_large",
+    "state:no_cartilage_detail",
+    "bin:sign_osteophytes",
+    "bin:sign_subchondral_marrow",
+    "bin:sign_bone_on_bone"
+   ],
+   "dropped": [],
+   "b0": -0.6658759400708122,
+   "coef": [
+    0.18255000255112036,
+    -1.1362856378655108,
+    0.7479123940134761,
+    -0.008346543316983314,
+    0.5370212373779413,
+    4.357693814286773,
+    2.701079862472151,
+    0.6842212931887182,
+    0.014306484818473839,
+    0.8098987160869693
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 2515,
+   "fit_pos": 979,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 2957,
+      "pos": 792,
+      "auc_baseline": 0.9396476310448597,
+      "auc_stacker": 0.9347032682483029,
+      "gain": -0.004944362796556856,
+      "gain_ci90": [
+       -0.0065212695983348,
+       -0.0033647489074209447
+      ],
+      "boot_frac_gain_below_0": 1.0
+     },
+     "corrected": {
+      "cells": 2515,
+      "pos": 979,
+      "auc_baseline": 0.9742289911048689,
+      "auc_stacker": 0.9729734582482125,
+      "gain": -0.0012555328566564716,
+      "gain_ci90": [
+       -0.0023256876127557835,
+       -0.00026388596306939376
+      ],
+      "boot_frac_gain_below_0": 0.981
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0049 < +0.001, corrected gain -0.0013 < 0)"
+  },
+  "Effusion": {
+   "features": [
+    "z",
+    "state:none_or_trace",
+    "state:small",
+    "state:small_to_moderate",
+    "state:present_unspecified",
+    "state:moderate",
+    "state:large",
+    "lv",
+    "miss"
+   ],
+   "dropped": [],
+   "b0": -0.9095041639578821,
+   "coef": [
+    0.2795468280151823,
+    -0.6088184837430075,
+    -1.496666285178697,
+    3.0723813178659674,
+    1.215031569905546,
+    0.7670462121282612,
+    1.1392765988689784,
+    0.2943594322349753,
+    0.5543550580318477
+   ],
+   "volume_column": "eff_sag_p99_open",
+   "joint_with_fluid": true,
+   "fit_cells": 2769,
+   "fit_pos": 1088,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 2321,
+      "pos": 580,
+      "auc_baseline": 0.9823585335419597,
+      "auc_stacker": 0.9797421220463863,
+      "gain": -0.0026164114955733453,
+      "gain_ci90": [
+       -0.003871003022667313,
+       -0.0013407580955528747
+      ],
+      "boot_frac_gain_below_0": 0.9995
+     },
+     "corrected": {
+      "cells": 2769,
+      "pos": 1088,
+      "auc_baseline": 0.9723756211288799,
+      "auc_stacker": 0.97455175928194,
+      "gain": 0.0021761381530601698,
+      "gain_ci90": [
+       0.0008625629151612302,
+       0.003526897324053269
+      ],
+      "boot_frac_gain_below_0": 0.002
+     }
+    },
+    "fluid_only": {
+     "explicit": {
+      "cells": 2321,
+      "pos": 580,
+      "auc_baseline": 0.9821416546178375,
+      "auc_stacker": 0.9797421220463863,
+      "gain": -0.0023995325714512017,
+      "gain_ci90": [
+       -0.003462187026484931,
+       -0.0013898545579123457
+      ],
+      "boot_frac_gain_below_0": 1.0
+     },
+     "corrected": {
+      "cells": 2769,
+      "pos": 1088,
+      "auc_baseline": 0.9720606825419044,
+      "auc_stacker": 0.97455175928194,
+      "gain": 0.0024910767400356804,
+      "gain_ci90": [
+       0.0013862800267601838,
+       0.0036635246564146176
+      ],
+      "boot_frac_gain_below_0": 0.0
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0026 < +0.001, corrected gain +0.0022 >= 0; vs fluid_only: explicit-only gain -0.0024 < +0.001, corrected gain +0.0025 >= 0)"
+  },
+  "Synovitis": {
+   "features": [
+    "z",
+    "state:none",
+    "state:other_synovial_finding",
+    "state:fat_pad_inflammation",
+    "state:synovitis",
+    "state:synovial_thickening"
+   ],
+   "dropped": [],
+   "b0": 1.3525604487136302,
+   "coef": [
+    0.2405907779762135,
+    -20.55968001465985,
+    0.9082213308261551,
+    1.397791590404129,
+    -0.1901632605708529,
+    -0.26530856549660425
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 602,
+   "fit_pos": 507,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 607,
+      "pos": 508,
+      "auc_baseline": 0.9509067048437128,
+      "auc_stacker": 0.9367692674779289,
+      "gain": -0.014137437365783878,
+      "gain_ci90": [
+       -0.031103028848205518,
+       9.41513200013709e-07
+      ],
+      "boot_frac_gain_below_0": 0.949
+     },
+     "corrected": {
+      "cells": 602,
+      "pos": 507,
+      "auc_baseline": 0.9577494030935326,
+      "auc_stacker": 0.9464341326689505,
+      "gain": -0.011315270424582136,
+      "gain_ci90": [
+       -0.02927628277682793,
+       0.0029270989243423656
+      ],
+      "boot_frac_gain_below_0": 0.897
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0141 < +0.001, corrected gain -0.0113 < 0)"
+  },
+  "Baker's": {
+   "features": [
+    "z",
+    "state:none",
+    "state:small",
+    "state:present_unspecified",
+    "state:moderate",
+    "state:large",
+    "state:ruptured_or_leaking"
+   ],
+   "dropped": [],
+   "b0": -0.9588267177781442,
+   "coef": [
+    0.1399073173891516,
+    -2.3143573068072123,
+    -0.9528361741659589,
+    1.2873001822356585,
+    5.081805658956268,
+    2.5787738995356038,
+    5.327499559801054
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 1485,
+   "fit_pos": 361,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 2024,
+      "pos": 365,
+      "auc_baseline": 0.897021642019041,
+      "auc_stacker": 0.9349467825972074,
+      "gain": 0.03792514057816643,
+      "gain_ci90": [
+       0.030853196791494515,
+       0.044992758632137815
+      ],
+      "boot_frac_gain_below_0": 0.0
+     },
+     "corrected": {
+      "cells": 1485,
+      "pos": 361,
+      "auc_baseline": 0.977435159353713,
+      "auc_stacker": 0.9850997131337428,
+      "gain": 0.007664553780029837,
+      "gain_ci90": [
+       0.0038127601081762107,
+       0.012690549717774518
+      ],
+      "boot_frac_gain_below_0": 0.0005
+     }
+    }
+   },
+   "adopt": true,
+   "decision": "ADOPT (vs z: explicit-only gain +0.0379 >= +0.001, corrected gain +0.0077 >= 0)"
+  },
+  "Contusion": {
+   "features": [
+    "z",
+    "state:none",
+    "state:degenerative_or_reactive_edema",
+    "state:nonspecific_marrow_edema",
+    "state:fracture_associated_edema_only",
+    "state:traumatic_marrow_edema",
+    "state:contusion_or_bruise",
+    "bin:acute"
+   ],
+   "dropped": [],
+   "b0": -1.25465230520592,
+   "coef": [
+    0.26182335726620454,
+    -0.47556351199844643,
+    -0.13781273649553352,
+    -0.10813562297848527,
+    -0.21051155900646237,
+    5.068263607850051,
+    1.6266326116992147,
+    -0.24718816839257263
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 3003,
+   "fit_pos": 476,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 3015,
+      "pos": 481,
+      "auc_baseline": 0.9575642365697614,
+      "auc_stacker": 0.9567774319155534,
+      "gain": -0.0007868046542079954,
+      "gain_ci90": [
+       -0.0018374366861727332,
+       0.0002489846069478885
+      ],
+      "boot_frac_gain_below_0": 0.9005
+     },
+     "corrected": {
+      "cells": 3003,
+      "pos": 476,
+      "auc_baseline": 0.9654587596811578,
+      "auc_stacker": 0.964289871073083,
+      "gain": -0.0011688886080748473,
+      "gain_ci90": [
+       -0.00220353294956156,
+       -0.00023002291659425801
+      ],
+      "boot_frac_gain_below_0": 0.974
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0008 < +0.001, corrected gain -0.0012 < 0)"
+  },
+  "Fracture": {
+   "features": [
+    "z",
+    "state:none",
+    "state:trabecular_microfracture_only",
+    "state:insufficiency_or_stress_fracture",
+    "state:avulsion_fracture",
+    "state:impaction_or_osteochondral_fracture",
+    "state:fracture_age_unstated",
+    "state:acute_fracture",
+    "state:old_or_healed_fracture",
+    "bin:acute"
+   ],
+   "dropped": [],
+   "b0": -1.7262345492927835,
+   "coef": [
+    0.22042101775090833,
+    -0.6620548708617818,
+    3.0130717618291567,
+    -0.043349129134874924,
+    4.941645135877723,
+    1.3303444365188777,
+    0.7201507836843317,
+    -3.5564196528824517,
+    -2.4550992440841872,
+    0.07695398534444262
+   ],
+   "volume_column": null,
+   "joint_with_fluid": false,
+   "fit_cells": 2307,
+   "fit_pos": 153,
+   "eval": {
+    "z": {
+     "explicit": {
+      "cells": 1587,
+      "pos": 140,
+      "auc_baseline": 0.968298943627209,
+      "auc_stacker": 0.9581794846480403,
+      "gain": -0.010119458979168772,
+      "gain_ci90": [
+       -0.023784642693591495,
+       -0.0010328848376469758
+      ],
+      "boot_frac_gain_below_0": 0.983
+     },
+     "corrected": {
+      "cells": 2307,
+      "pos": 153,
+      "auc_baseline": 0.9684399293607879,
+      "auc_stacker": 0.9582263731862289,
+      "gain": -0.010213556174558991,
+      "gain_ci90": [
+       -0.022146373961194225,
+       -0.0013675905198431537
+      ],
+      "boot_frac_gain_below_0": 0.9895
+     }
+    }
+   },
+   "adopt": false,
+   "decision": "DROP (vs z: explicit-only gain -0.0101 < +0.001, corrected gain -0.0102 < 0)"
+  }
+ },
+ "adopted": [
+  "Baker's"
+ ],
+ "seconds": 33.3
+}

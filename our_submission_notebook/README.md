@@ -1,6 +1,6 @@
 # Our own notebooks (team Hack2Publish)
 
-This folder holds only notebooks we built, trained or submitted ourselves. Public notebooks, including verbatim forks of them that teammates submitted, stay in `../public_notebooks/`.
+This folder holds only notebooks we pushed, trained or submitted ourselves. Drafts that are built and tested but not pushed yet live in `../candidate_notebook/`, and move here once pushed. Public notebooks, including verbatim forks of them that teammates submitted, stay in `../public_notebooks/`.
 
 - **`submission_*/`**: one folder per submission notebook, holding the `.ipynb` plus the `kernel-metadata.json` that was pushed.
 - **`training/`**: our training, teacher and cache kernels, each with its script and metadata. Examples:

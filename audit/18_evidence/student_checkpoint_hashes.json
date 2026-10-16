@@ -1,0 +1,27 @@
+[
+  {
+    "path": "students_upload/cnxt_plC2_full.pt",
+    "size_bytes": 123051987,
+    "sha256": "07968a382f1e7c724feaa989c31eb4857bb439fb5e9991d36e05e5f0c848bce7"
+  },
+  {
+    "path": "students_upload/cnxt_plC3_full.pt",
+    "size_bytes": 123051987,
+    "sha256": "e96f9ad922d0aa3cb7edcfacee34e426bb40ea8ccd5992be3cb4444b57d6cf5d"
+  },
+  {
+    "path": "students_upload/cnxt_plC_full.pt",
+    "size_bytes": 123051698,
+    "sha256": "524e3beaaaa3ad9a263f6ba4df4be6806ebfd25e9575d800368adcd8110b20f8"
+  },
+  {
+    "path": "students_upload/cnxt_plS75_full.pt",
+    "size_bytes": 209656486,
+    "sha256": "f1866ceddc77f968a7e8b00f2eacb758f0af09882215ad0311dedc7b7693081d"
+  },
+  {
+    "path": "students_upload/cnxt_plT75s1_full.pt",
+    "size_bytes": 123052662,
+    "sha256": "1b526073ec72a20a0aea6a18442a79df1f6900f1e17d4bd56651f5cdf823c955"
+  }
+]

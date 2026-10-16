@@ -23,6 +23,8 @@ submission_h957x5w40,submission notebook,rsna-knee-h957x5w40.ipynb,hosen42/rsna-
 submission_h958,submission notebook,rsna-knee-h958.ipynb,foysalemonshanto/rsna-knee-h958,foysalemonshanto,57213895,0.957,2026-10-15,"H958: one-free-flip parent (224+mirror, no R7 flip) + 5 Mirror students 0.8/0.2"
 submission_h958b,submission notebook,rsna-knee-h958b.ipynb,foysalemonshanto/rsna-knee-h958b,foysalemonshanto,57213403,0.957,2026-10-15,"H958B: one-free-flip parent (R7 flip TTA, 224+mirror) + 5 Mirror students 0.8/0.2"
 submission_h958bw40,submission notebook,rsna-knee-h958bw40.ipynb,foysalemonshanto/rsna-knee-h958bw40,foysalemonshanto,57213404,0.957,2026-10-15,H958B-W40: H958B parent + 5 Mirror students 0.6/0.4 (w40 final cell)
+submission_h958m,submission notebook,rsna-knee-h958m.ipynb,kishormorol/rsna-knee-h958m,kishormorol,57281543,error,2026-10-16,H958M: public 0.958 notebook + nartaa anatomical mirror on the 224 model (224 timeout 2.5 h)
+submission_h960,submission notebook,rsna-knee-h960.ipynb,kishormorol/rsna-knee-h960,kishormorol,57281541,error,2026-10-16,"H960: public 0.958 notebook (heliosli blend-mine v1) + our 5 Mirror students, 0.8/0.2 (weight fixed before run)"
 submission_m73,submission notebook,rsna-knee-m73.ipynb,esfersami50/rsna-knee-m73,esfersami50,57032728,0.949,2026-10-10,M73: Mirror Raptor 0.7 + our stack (E20 stages1-3 + 7ckpt reader) 0.3
 submission_plA,submission notebook,rsna-knee-pla.ipynb,esfersami50/rsna-knee-pla,esfersami50,57053758,0.933,2026-10-10,"R2 arm A: full-data reader, v0 labels (control), leg alone"
 submission_plB,submission notebook,rsna-knee-plb.ipynb,esfersami50/rsna-knee-plb,esfersami50,57053761,0.939,2026-10-10,"R2 arm B: full-data reader, 0.5 v0 + 0.5 OOF pseudo-labels, leg alone"

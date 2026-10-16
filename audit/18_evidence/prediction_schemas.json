@@ -1,0 +1,110 @@
+[
+  {
+    "path": "ours_leg/results/gpjw_f34_small_v1/oof_fold3.csv",
+    "rows": 928,
+    "columns": [
+      "",
+      "set",
+      "ACL",
+      "MCL",
+      "Medial Meniscus",
+      "Lateral Meniscus",
+      "Medial OA",
+      "Lateral OA",
+      "PF OA",
+      "Effusion",
+      "Synovitis",
+      "Baker's",
+      "Contusion",
+      "Fracture"
+    ],
+    "id_column": "",
+    "set_counts": {
+      "gold": 58,
+      "val": 870
+    },
+    "duplicate_ids": 0,
+    "note": "gold rows are repeated across fold files; exclude gold before OOF concatenation; not current student checkpoints"
+  },
+  {
+    "path": "ours_leg/results/gpjw_f34_small_v1/oof_fold4.csv",
+    "rows": 927,
+    "columns": [
+      "",
+      "set",
+      "ACL",
+      "MCL",
+      "Medial Meniscus",
+      "Lateral Meniscus",
+      "Medial OA",
+      "Lateral OA",
+      "PF OA",
+      "Effusion",
+      "Synovitis",
+      "Baker's",
+      "Contusion",
+      "Fracture"
+    ],
+    "id_column": "",
+    "set_counts": {
+      "gold": 58,
+      "val": 869
+    },
+    "duplicate_ids": 0,
+    "note": "gold rows are repeated across fold files; exclude gold before OOF concatenation; not current student checkpoints"
+  },
+  {
+    "path": "ours_leg/results/gpjw_f34_v1/oof_fold3.csv",
+    "rows": 928,
+    "columns": [
+      "",
+      "set",
+      "ACL",
+      "MCL",
+      "Medial Meniscus",
+      "Lateral Meniscus",
+      "Medial OA",
+      "Lateral OA",
+      "PF OA",
+      "Effusion",
+      "Synovitis",
+      "Baker's",
+      "Contusion",
+      "Fracture"
+    ],
+    "id_column": "",
+    "set_counts": {
+      "gold": 58,
+      "val": 870
+    },
+    "duplicate_ids": 0,
+    "note": "gold rows are repeated across fold files; exclude gold before OOF concatenation; not current student checkpoints"
+  },
+  {
+    "path": "ours_leg/results/gpjw_f34_v1/oof_fold4.csv",
+    "rows": 927,
+    "columns": [
+      "",
+      "set",
+      "ACL",
+      "MCL",
+      "Medial Meniscus",
+      "Lateral Meniscus",
+      "Medial OA",
+      "Lateral OA",
+      "PF OA",
+      "Effusion",
+      "Synovitis",
+      "Baker's",
+      "Contusion",
+      "Fracture"
+    ],
+    "id_column": "",
+    "set_counts": {
+      "gold": 58,
+      "val": 869
+    },
+    "duplicate_ids": 0,
+    "note": "gold rows are repeated across fold files; exclude gold before OOF concatenation; not current student checkpoints"
+  }
+]

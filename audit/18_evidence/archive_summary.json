@@ -1,0 +1,48 @@
+[
+  {
+    "archive": "our_base_notebook.zip",
+    "sha256": "99394246314f0c0786964b7cdb8047d6f04987d1e799846b116a92d7f138a43e",
+    "zip_entries": 6,
+    "files_including_macos": 5,
+    "main_files": 2,
+    "macos_files": 3,
+    "main_uncompressed_bytes": 1260214,
+    "file_types": {
+      ".ipynb": 2
+    },
+    "disk_matches": 2
+  },
+  {
+    "archive": "our_submission_notebook.zip",
+    "sha256": "c46411bf915d5d9584c5eb92f9c94c4185d8ffeb47c54ecb421f9d6b3ff72536",
+    "zip_entries": 364,
+    "files_including_macos": 303,
+    "main_files": 121,
+    "macos_files": 182,
+    "main_uncompressed_bytes": 12028121,
+    "file_types": {
+      ".csv": 1,
+      ".md": 3,
+      ".ipynb": 33,
+      ".json": 58,
+      ".py": 25,
+      ".log": 1
+    },
+    "disk_matches": 121
+  },
+  {
+    "archive": "public_notebooks.zip",
+    "sha256": "71e6d66a61977cba2a97262efb71d1afc607096b7ba72c69bf9733456e076bed",
+    "zip_entries": 304,
+    "files_including_macos": 302,
+    "main_files": 150,
+    "macos_files": 152,
+    "main_uncompressed_bytes": 41788015,
+    "file_types": {
+      ".ipynb": 114,
+      ".csv": 2,
+      ".json": 34
+    },
+    "disk_matches": 150
+  }
+]

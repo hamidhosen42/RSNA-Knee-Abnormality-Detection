@@ -1,0 +1,1488 @@
+[
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f0_swa_k24.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f0_swa_k32.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f0_swa_k42.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f0_swa_k64.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f1_swa_k24.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f1_swa_k32.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f1_swa_k42.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/gold_effv2s_cons_f1_swa_k64.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f0_swa_k24.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f0_swa_k32.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f0_swa_k42.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f0_swa_k64.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f1_swa_k24.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f1_swa_k32.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f1_swa_k42.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_evalk_v1/oof_effv2s_cons_f1_swa_k64.npz",
+    "bytes": 306982,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/gold_effv2s_cons_f0_best.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/gold_effv2s_cons_f0_swa.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/gold_effv2s_cons_f1_best.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/gold_effv2s_cons_f1_swa.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/oof_effv2s_cons_f0_best.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/oof_effv2s_cons_f0_swa.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/oof_effv2s_cons_f1_best.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e03b_train_v1/oof_effv2s_cons_f1_swa.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/gold_e13r34_f0_best.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/gold_e13r34_f0_swa.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/gold_e13r34_f1_best.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/gold_e13r34_f1_swa.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/oof_e13r34_f0_best.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/oof_e13r34_f0_swa.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/oof_e13r34_f1_best.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/e13_train_v1/oof_e13r34_f1_swa.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/gold_effv2s_f0_best.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/gold_effv2s_f0_swa.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/gold_effv2s_f1_best.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/gold_effv2s_f1_swa.npz",
+    "bytes": 21158,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/oof_effv2s_f0_best.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/oof_effv2s_f0_swa.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/oof_effv2s_f1_best.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "ours_leg/results/train_v3/oof_effv2s_f1_swa.npz",
+    "bytes": 307230,
+    "type": ".npz",
+    "arrays": {
+      "pred": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "truth": {
+        "shape": [
+          870,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "ids": {
+        "shape": [
+          870
+        ],
+        "dtype": "<U64"
+      },
+      "fold": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "students_upload/cnxt_plC2_full.pt",
+    "bytes": 123051987,
+    "type": ".pt",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "students_upload/cnxt_plC3_full.pt",
+    "bytes": 123051987,
+    "type": ".pt",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "students_upload/cnxt_plC_full.pt",
+    "bytes": 123051698,
+    "type": ".pt",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "students_upload/cnxt_plS75_full.pt",
+    "bytes": 209656486,
+    "type": ".pt",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "students_upload/cnxt_plT75s1_full.pt",
+    "bytes": 123052662,
+    "type": ".pt",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/fx-02-train-small/fx1_effb2_cv_fold0_preds.npz",
+    "bytes": 290422,
+    "type": ".npz",
+    "arrays": {
+      "gold_pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "gold_ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      },
+      "oof_pred": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "oof_ids": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/fx-02-train-small/fx1_r34_cv_fold0_preds.npz",
+    "bytes": 290422,
+    "type": ".npz",
+    "arrays": {
+      "gold_pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "gold_ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      },
+      "oof_pred": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "oof_ids": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-nx2-coatnet224-ckpts/gold_ids.npy",
+    "bytes": 14976,
+    "type": ".npy",
+    "arrays": {
+      "data": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-nx2-coatnet224-ckpts/gold_pred.npy",
+    "bytes": 2912,
+    "type": ".npy",
+    "arrays": {
+      "data": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-nx2-coatnet224-ckpts/oof_ids.npy",
+    "bytes": 228992,
+    "type": ".npy",
+    "arrays": {
+      "data": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-nx2-coatnet224-ckpts/oof_pred.npy",
+    "bytes": 43040,
+    "type": ".npy",
+    "arrays": {
+      "data": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-sprint-train-resnet34-effnetb2-2-5d-mil/fx2_effb2_cv_fold0_preds.npz",
+    "bytes": 290422,
+    "type": ".npz",
+    "arrays": {
+      "gold_pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "gold_ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      },
+      "oof_pred": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "oof_ids": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-sprint-train-resnet34-effnetb2-2-5d-mil/fx2_r34_cv_fold0_preds.npz",
+    "bytes": 290422,
+    "type": ".npz",
+    "arrays": {
+      "gold_pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "gold_ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      },
+      "oof_pred": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "oof_ids": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-sprint-train-resnet34-effnetb2-2-5d-mil-256/fx3_effb2_cv_fold0_preds.npz",
+    "bytes": 290422,
+    "type": ".npz",
+    "arrays": {
+      "gold_pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "gold_ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      },
+      "oof_pred": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "oof_ids": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/knee-sprint-train-resnet34-effnetb2-2-5d-mil-256/fx3_r34_cv_fold0_preds.npz",
+    "bytes": 290422,
+    "type": ".npz",
+    "arrays": {
+      "gold_pred": {
+        "shape": [
+          58,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "gold_ids": {
+        "shape": [
+          58
+        ],
+        "dtype": "<U64"
+      },
+      "oof_pred": {
+        "shape": [
+          894,
+          12
+        ],
+        "dtype": "float32"
+      },
+      "oof_ids": {
+        "shape": [
+          894
+        ],
+        "dtype": "<U64"
+      }
+    },
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/nx1-01-consensus-labels/labels_best_single.parquet",
+    "bytes": 451539,
+    "type": ".parquet",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/nx1-01-consensus-labels/labels_consensus.parquet",
+    "bytes": 447490,
+    "type": ".parquet",
+    "arrays": {},
+    "metric_evaluated": false
+  },
+  {
+    "path": "team_shared/esfersami50/nx1-01-consensus-labels/labels_v1.parquet",
+    "bytes": 447490,
+    "type": ".parquet",
+    "arrays": {},
+    "metric_evaluated": false
+  }
+]

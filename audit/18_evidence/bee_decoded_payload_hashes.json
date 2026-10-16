@@ -1,0 +1,42 @@
+[
+  {
+    "name": "@config",
+    "bytes": 110549,
+    "sha256": "c33c5c9949adcee5d397ced97467d52ae434b2032dee063b8a52f8be3fa0256e"
+  },
+  {
+    "name": "R6_FROZEN_V1_MANIFEST.json",
+    "bytes": 4120,
+    "sha256": "6508ce6921eda986c885b2226fa55dd4d2aa8e5fc570b4c007c9a60c05bfc648"
+  },
+  {
+    "name": "blend55_control.source.py",
+    "bytes": 6084,
+    "sha256": "1e7d472bb44b87fd5318e90452c970e504affb0ff8f0c4dd93f39b2d8689761e"
+  },
+  {
+    "name": "blend55_patch.py",
+    "bytes": 4992,
+    "sha256": "7ad2126ce436ac9e0efbdf171ec45ddb3504653814fe2dba53abf1d0dba577c3"
+  },
+  {
+    "name": "owned_process_precision.source.py",
+    "bytes": 11430,
+    "sha256": "675cb35e790334f58d27a573ae4f119b891cc05892158ce5ea6a001f60632a75"
+  },
+  {
+    "name": "runner.source.py",
+    "bytes": 17700,
+    "sha256": "9fb46bab55f927f29b6b434aa67b792bb5ce7b87da6c8184237779a5cc93f883"
+  },
+  {
+    "name": "supervisor.source.py",
+    "bytes": 26677,
+    "sha256": "c9c147c9f2ec80452ef079453e1976c21960729bfc49b363685062b9273c7748"
+  },
+  {
+    "name": "upstream.source.json",
+    "bytes": 615840,
+    "sha256": "16a9d953972d9d82717f279f75e57e798d3902f93d1071c30f3caa67326e3601"
+  }
+]

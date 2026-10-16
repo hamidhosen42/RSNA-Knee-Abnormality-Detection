@@ -1,0 +1,49 @@
+{
+  "languageNullable": "python",
+  "kernelTypeNullable": "notebook",
+  "isPrivateNullable": true,
+  "enableGpuNullable": true,
+  "enableTpuNullable": false,
+  "enableInternetNullable": false,
+  "currentVersionNumberNullable": 1,
+  "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "machineShapeNullable": "NvidiaTeslaT4",
+  "id": 138954889,
+  "ref": "kishormorol/rsna-knee-helios-blend-fork",
+  "title": "rsna-knee-helios-blend-fork",
+  "author": "Md Kishor Morol",
+  "slug": "rsna-knee-helios-blend-fork",
+  "lastRunTime": "2026-10-13T19:18:47.8765372Z",
+  "language": "python",
+  "hasLanguage": true,
+  "kernelType": "notebook",
+  "hasKernelType": true,
+  "isPrivate": true,
+  "hasIsPrivate": true,
+  "enableGpu": true,
+  "hasEnableGpu": true,
+  "enableTpu": false,
+  "hasEnableTpu": true,
+  "enableInternet": false,
+  "hasEnableInternet": true,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "heliosli/rsna-knee-r6-frozen-fe055406-w1",
+    "nartaa/rsna-knee-publication-swa-weights-20261007",
+    "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"
+  ],
+  "kernelDataSources": [],
+  "competitionDataSources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "modelDataSources": [],
+  "totalVotes": 0,
+  "currentVersionNumber": 1,
+  "hasCurrentVersionNumber": true,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
+  "hasDockerImage": true,
+  "machineShape": "NvidiaTeslaT4",
+  "hasMachineShape": true
+}

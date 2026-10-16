@@ -1,0 +1,50 @@
+[
+  {
+    "file": "native_cache.py",
+    "expected_sha256": "c53ce8985406b3b918d9e821d43518479e89d9f946daebd817f378e3949718b9",
+    "observed_sha256": "c53ce8985406b3b918d9e821d43518479e89d9f946daebd817f378e3949718b9",
+    "matches": true
+  },
+  {
+    "file": "native_data.py",
+    "expected_sha256": "f59afe205c8e193369fa3ccd22edcce8df3b293205fc48ddb1dd45169ee43b36",
+    "observed_sha256": "f59afe205c8e193369fa3ccd22edcce8df3b293205fc48ddb1dd45169ee43b36",
+    "matches": true
+  },
+  {
+    "file": "input_provenance.py",
+    "expected_sha256": "b3a22500c7f976f6ee040239ada5cacecf2326861cb49af1c7d8cfdeeb55fcda",
+    "observed_sha256": "b3a22500c7f976f6ee040239ada5cacecf2326861cb49af1c7d8cfdeeb55fcda",
+    "matches": true
+  },
+  {
+    "file": "intensity_mapping.py",
+    "expected_sha256": "19be2d8cbd6f8971c1288d7512a8cca41d143470c2ba6e9b9096fde035fa9d41",
+    "observed_sha256": "19be2d8cbd6f8971c1288d7512a8cca41d143470c2ba6e9b9096fde035fa9d41",
+    "matches": true
+  },
+  {
+    "file": "coronal_views.py",
+    "expected_sha256": "841f216d2682ae2c0f8afd82fc902b9fa74924d7145b952069dea8b0bbd03c40",
+    "observed_sha256": "841f216d2682ae2c0f8afd82fc902b9fa74924d7145b952069dea8b0bbd03c40",
+    "matches": true
+  },
+  {
+    "file": "exact_duplicates.py",
+    "expected_sha256": "51b38db21ce9c5fe2b6278a835983414756b61ac6af81aba380b44b41b075897",
+    "observed_sha256": "51b38db21ce9c5fe2b6278a835983414756b61ac6af81aba380b44b41b075897",
+    "matches": true
+  },
+  {
+    "file": "dicom_geometry.py",
+    "expected_sha256": "12aa501f9704aef15b7a3bbd560951acb6d95b89b7de0141d6cf89fc3f051ab1",
+    "observed_sha256": "12aa501f9704aef15b7a3bbd560951acb6d95b89b7de0141d6cf89fc3f051ab1",
+    "matches": true
+  },
+  {
+    "file": "common.py",
+    "expected_sha256": "8283fa1f8e7ef8cfacbba52df1715636be3c9ad688e39912814e7d5bcf57105f",
+    "observed_sha256": "8283fa1f8e7ef8cfacbba52df1715636be3c9ad688e39912814e7d5bcf57105f",
+    "matches": true
+  }
+]

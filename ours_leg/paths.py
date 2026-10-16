@@ -4,6 +4,7 @@ ROOT      the repository
 NB        our_submission_notebook/            our own notebooks, as pushed / submitted (an archive)
 TRAINING  our_submission_notebook/training/   our training, teacher and cache kernels
 PUBLIC    public_notebooks/                   public notebooks (never ours)
+CANDIDATES candidate_notebook/               our drafts: built and tested, not pushed / submitted yet
 
 One rule for every path argument of every builder:
   inp(p)      an absolute path is used as is; a path that starts with our_submission_notebook/ or public_notebooks/,
@@ -24,7 +25,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NB = os.path.join(ROOT, "our_submission_notebook")
 TRAINING = os.path.join(NB, "training")
 PUBLIC = os.path.join(ROOT, "public_notebooks")
-_ROOT_PREFIXES = ("our_submission_notebook/", "public_notebooks/")
+CANDIDATES = os.path.join(ROOT, "candidate_notebook")   # built but not yet pushed / submitted (drafts)
+_ROOT_PREFIXES = ("our_submission_notebook/", "public_notebooks/", "candidate_notebook/")
 
 
 def inp(p, base=NB):

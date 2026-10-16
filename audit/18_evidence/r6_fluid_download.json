@@ -1,0 +1,150 @@
+{
+ "version": 1,
+ "created": "2026-10-11 15:42:05",
+ "script": "/root/autodl-tmp/rsna_align_s0/analysis/fit_fluid_stacker.py",
+ "script_md5": "a3a1b51273e0cbb0987782a20a51bcfa",
+ "rule": "ADOPT iff cross-fitted AUC gain >= +0.003 on the explicit-only ruler AND >= 0 on the corrected ruler",
+ "feature": {
+  "combine": "logit",
+  "lines": [
+   {
+    "run": "/root/autodl-tmp/rsna_align_s0/runs/cnx_r6fm",
+    "oof": "oof_E_lrprior_s0.npy",
+    "oof_md5": "3624908a1df3c0a296550c17828c9456",
+    "pool": 4344,
+    "config_crop": 352
+   }
+  ],
+  "weights": [
+   1.0
+  ],
+  "arm": "E_lrprior",
+  "seed": 0,
+  "formula": "z_out = b0 + b_z * z + b_lv * lv + b_miss * miss; z = equal-weight mean of the lines' logits; lv = log1p(volume mL), 0 when missing; miss = 1 when missing"
+ },
+ "volume": {
+  "definition": "D2 sag_p99_open (scratch_fluid_1009/fluid_measure.py): best fluid-sensitive sagittal series (META fluid == 1, lowest median of the full-field foreground u > 10); region view rows u >= 229 (series p99); per-slice opening with a 1.5 mm-radius disk; sum(mask * pixel_mm^2) * slice spacing / 1000 -> mL",
+  "file": "/root/autodl-tmp/rsna_align_s0/scratch_fluid_stack/volumes_all.csv",
+  "md5": "7c89fb9d2936adf73a0898b3629d5aac"
+ },
+ "fit_cells": {
+  "targets": "/root/autodl-tmp/rsna_align_s0/r4e_inputs/probe_targets_opusv11b_rr4e.csv",
+  "targets_md5": "315bc5b702253d9a94a6e2bf998424c2",
+  "mask": "/root/autodl-tmp/rsna_align_s0/r4e_inputs/silent_mask_opusv11b_rr4e.json",
+  "mask_md5": "20437c38363529bfe3e04f15e3f5fa57",
+  "lo": 0.15,
+  "hi": 0.6
+ },
+ "rulers": {
+  "explicit": [
+   "/root/autodl-tmp/rsna_align_s0/targets/probe_targets_opusv11b.csv",
+   "/root/autodl-tmp/rsna_align_s0/targets/silent_mask_opusv11b_orig.json"
+  ],
+  "corrected": [
+   "/root/autodl-tmp/rsna_align_s0/r4e_inputs/probe_targets_opusv11b_rr4e.csv",
+   "/root/autodl-tmp/rsna_align_s0/r4e_inputs/silent_mask_opusv11b_rr4e.json"
+  ]
+ },
+ "l2": 0.001,
+ "folds": 4,
+ "bootstrap": {
+  "resamples": 2000,
+  "seed": 0,
+  "interval": 0.9
+ },
+ "classes": {
+  "Effusion": {
+   "volume_column": "eff_sag_p99_open",
+   "view_id": 4,
+   "b0": -3.7717628528495424,
+   "b_z": 0.3298462654573529,
+   "b_lv": 0.6397309153574466,
+   "b_miss": 2.297714582104971,
+   "fold_coefficients[b0,b_z,b_lv,b_miss]": [
+    [
+     -3.77704,
+     0.34065,
+     0.59954,
+     2.26363
+    ],
+    [
+     -3.72692,
+     0.32923,
+     0.61666,
+     2.11366
+    ],
+    [
+     -3.8557,
+     0.32429,
+     0.67933,
+     2.60235
+    ],
+    [
+     -3.72656,
+     0.32653,
+     0.66009,
+     2.19219
+    ]
+   ],
+   "fit_cells": 2312,
+   "fit_pos": 576,
+   "fit_cells_missing_volume": 119,
+   "pool_missing_volume": 255,
+   "eval": {
+    "explicit": {
+     "cells": 2321,
+     "pos": 580,
+     "cells_missing_volume": 119,
+     "auc_model": 0.9823585335419597,
+     "auc_stacker": 0.983123056507358,
+     "gain": 0.0007645229653983066,
+     "gain_ci90": [
+      -1.803448735053226e-05,
+      0.0015756685966470674
+     ],
+     "boot_frac_gain_below_0": 0.0555,
+     "auc_volume_alone_on_cells_with_volume": 0.8962245142115934,
+     "auc_model_on_cells_with_volume": 0.981514109701801,
+     "auc_stacker_on_cells_with_volume": 0.982199874753428
+    },
+    "corrected": {
+     "cells": 2312,
+     "pos": 576,
+     "cells_missing_volume": 119,
+     "auc_model": 0.9834599414362519,
+     "auc_stacker": 0.9843679995519713,
+     "gain": 0.0009080581157193679,
+     "gain_ci90": [
+      0.00011197228225102717,
+      0.0016860787165759227
+     ],
+     "boot_frac_gain_below_0": 0.0295,
+     "auc_volume_alone_on_cells_with_volume": 0.9004055914924147,
+     "auc_model_on_cells_with_volume": 0.9826399898168184,
+     "auc_stacker_on_cells_with_volume": 0.9835240751241076
+    }
+   },
+   "adopt": true,
+   "decision": "ADOPT by user override (\"keep Effusion; drop Baker's\"), regardless of the pre-registered rule, which said: DROP (explicit-only gain +0.0008 < +0.003; corrected gain +0.0009 >= 0)",
+   "rule_adopt": false,
+   "rule_decision": "DROP (explicit-only gain +0.0008 < +0.003; corrected gain +0.0009 >= 0)",
+   "override": {
+    "by": "user decision (10-11)",
+    "quote": "keep Effusion; drop Baker's",
+    "adopt_set_to": true,
+    "regardless_of": "ADOPT iff cross-fitted AUC gain >= +0.003 on the explicit-only ruler AND >= 0 on the corrected ruler",
+    "rule_adopt": false,
+    "rule_decision": "DROP (explicit-only gain +0.0008 < +0.003; corrected gain +0.0009 >= 0)"
+   }
+  }
+ },
+ "seconds": 2.2,
+ "override": {
+  "what": "classes.Effusion.adopt = true by user decision (\"keep Effusion; drop Baker's\"), regardless of the pre-registered +0.003 rule; Baker's not fitted (dropped)",
+  "rule_said": "DROP (explicit-only gain +0.0008 < +0.003; corrected gain +0.0009 >= 0)",
+  "fit_raw": "/root/autodl-tmp/rsna_align_s0/post_r6/fluid_stacker_r6_fit_raw.json",
+  "fit_raw_md5": "feb88ec9af057497f1820610dc237a80",
+  "applied": "2026-10-11 15:42:08",
+  "by_script": "post_r6/refit_fluid_stacker_r6.sh (= post_r5/refit_fluid_stacker_r5.sh's override)"
+ }
+}
