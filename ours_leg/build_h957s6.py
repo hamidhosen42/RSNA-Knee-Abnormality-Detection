@@ -18,8 +18,11 @@ Pre-registered: keep if LB > 0.957 (H957x5), neutral if equal, reject below.
 import argparse
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 ap = argparse.ArgumentParser()
 ap.add_argument("--base", default="submission_h957x5/rsna-knee-h957x5.ipynb")
 ap.add_argument("--s6", default="submission_h954/rsna-knee-h954.ipynb")
@@ -30,11 +33,11 @@ a = ap.parse_args()
 WP, WS6, WST = (float(x) for x in a.w.split(","))
 assert abs(WP + WS6 + WST - 1) < 1e-9
 
-base = json.load(open(os.path.join(ROOT, a.base)))
+base = json.load(open(inp(a.base)))
 cells = base["cells"]
 src = lambda c: "".join(c["source"])
 assert len(cells) == 13 and src(cells[12]).startswith("# [h957] final:") and "cnxt_pl*_full.pt" in src(cells[11])
-h954 = json.load(open(os.path.join(ROOT, a.s6)))["cells"]
+h954 = json.load(open(inp(a.s6)))["cells"]
 s4, s5 = src(h954[4]), src(h954[5])
 assert "BUNDLE_ID = '209a32c8b50a6b1c'" in s4 and "C_SLUG = 'rsna-knee-compact-v1'" in s4
 
@@ -154,12 +157,12 @@ base["cells"] = cells[:12] + [code(S6_CELL), code(FINAL)]
 for c in base["cells"]:
     if c["cell_type"] == "code":
         c["outputs"], c["execution_count"] = [], None
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(base, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
-meta = json.load(open(os.path.join(ROOT, os.path.dirname(a.base), "kernel-metadata.json")))
+write_json(os.path.join(out, slug + ".ipynb"), base, indent=1)
+meta = json.load(open(os.path.join(os.path.dirname(inp(a.base)), "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 meta["dataset_sources"] = meta["dataset_sources"] + ["heliosli/rsna-knee-compact-v1"]
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 print("wrote", out, "| cells", len(base["cells"]), "| sources", meta["dataset_sources"])

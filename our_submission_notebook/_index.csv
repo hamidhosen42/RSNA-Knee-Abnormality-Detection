@@ -1,0 +1,59 @@
+folder,kind,files,kaggle_kernel,run_by,submission_ids,public_score,submitted,description
+submission_anchor944,submission notebook,rsna-knee-anchor944.ipynb,hosen42/rsna-knee-anchor944,esfersami50,56859275,0.944,2026-10-05,"Anchor 0.944: E02 anchor (Jiwei v11 + Fracture flip) + public goodpjw2008 2.5D ConvNeXt reader v1, rank 0.70/0.30 (verbatim fork of goodpjw2008 v2)"
+submission_anchor944_5f,submission notebook,rsna-knee-anchor944-5f.ipynb,esfersami50/rsna-knee-anchor944-5f,esfersami50,56868075,0.944,2026-10-06,"E16: anchor 0.944 + reader 5 folds (author f0-2 + our f3-4 trained with author's code), rank 0.70/0.30 unchanged"
+submission_apexb,submission notebook,rsna-knee-apexb.ipynb,esfersami50/rsna-knee-apexb,esfersami50,57054406,0.950,2026-10-10,APEX-B: Apex (Mirror + reader) with reader = pseudo-label reader B
+submission_blendgold,submission notebook,rsna-knee-blend-gold.ipynb,hosen42/rsna-knee-blend-gold,,,not submitted,,
+submission_e03b_alone,submission notebook,rsna-knee-e03b-alone.ipynb,esfersami50/rsna-knee-e03b-alone,esfersami50,56773062,0.899,2026-10-02,"E03b alone (label ablation): EffNetV2-S@384 f0+f1 SWA trained on team consensus labels, no blend, CPU; compare to E11a 0.896"
+submission_e11,submission notebook,rsna-knee-base-plus-ours.ipynb,hosen42/rsna-knee-base-plus-ours,hosen42,56611110,0.935,2026-09-27,"E11: 0.943 base + ours EffNetV2-S@384 (folds 0+1 SWA, public corpus+labels), rank blend w=0.30"
+submission_e11_alone,submission notebook,rsna-knee-e11-alone.ipynb,hosen42/rsna-knee-e11-alone,hosen42,56764382,0.896,2026-10-02,"E11 alone (calibration): ours EffNetV2-S@384 f0+f1 SWA, no public pipeline, no blend, CPU"
+submission_e18,submission notebook,rsna-knee-e18.ipynb,hosen42/rsna-knee-e18,esfersami50,56898477,0.945,2026-10-07,E18: tri-specialist 0.945 verbatim + reader 7 ckpts (author tiny f0-2 + ours tiny f3-4 + ours small f3-4)
+submission_e19,submission notebook,rsna-knee-e19.ipynb,hosen42/rsna-knee-e19,hosen42,56912673,0.945,2026-10-07,"E19: E18 (tri 0.945 + reader 7 ckpts) + public Fine Spacing v9 Raptor view (maxspan 0.30 / v9 0.30, 4.5h gate)"
+submission_e20,submission notebook,rsna-knee-e20.ipynb,hosen42/rsna-knee-e20,hosen42,57005245,0.945,2026-10-09,E20: E19 + A5 stage fp16 instead of emulated bf16 on T4 (runtime headroom; per-batch fp32 retry kept)
+submission_e21,submission notebook,rsna-knee-e21.ipynb,esfersami50/rsna-knee-e21,esfersami50,57054401,0.946,2026-10-10,E21: E20 stack with reader leg = pseudo-label reader B (rule-clean)
+submission_e22,submission notebook,rsna-knee-e22.ipynb,esfersami50/rsna-knee-e22,,,not submitted,,
+submission_h954,submission notebook,rsna-knee-h954.ipynb,hosen42/rsna-knee-h954,,,not submitted,,
+submission_h954rb,submission notebook,rsna-knee-h954rb.ipynb,esfersami50/rsna-knee-h954rb,esfersami50,57060625,0.954,2026-10-11,"H954R-B: 0.954 (Mirror+S6) + pseudo-label reader B, rank 0.5/0.25/0.25 (blend3 weights)"
+submission_h955c,submission notebook,rsna-knee-h955c.ipynb,esfersami50/rsna-knee-h955c,esfersami50,57082452,0.955,2026-10-11,"H955C: 0.8 x rank(0.954 Mirror+S6) + 0.2 x rank(Mirror-student reader C, leg 0.948)"
+submission_h956s6,submission notebook,rsna-knee-h956s6.ipynb,esfersami50/rsna-knee-h956s6,esfersami50,57098012,0.954,2026-10-12,"H956-S6: 0.956 blend cell (Mirror 0.5 / compact 0.5, own-row ranks) on the available S6 compact (R6 deleted)"
+submission_h957,submission notebook,rsna-knee-h957.ipynb,hosen42/rsna-knee-h957,hosen42,57128358,0.957,2026-10-13,H957: R7+Raptor notebook (0.956) x 0.8 + Mirror-student ensemble C/C2/C3 x 0.2 (rank)
+submission_h957s6,submission notebook,rsna-knee-h957s6.ipynb,hosen42/rsna-knee-h957s6,,,not submitted,,
+submission_h957x5,submission notebook,rsna-knee-h957x5.ipynb,hosen42/rsna-knee-h957x5,hosen42,57151640,0.957,2026-10-13,"H957x5: R7+Raptor (0.956) x 0.8 + 5 Mirror students (C,C2,C3,S75,T75s1) x 0.2"
+submission_h957x5w30,submission notebook,rsna-knee-h957x5w30.ipynb,hosen42/rsna-knee-h957x5w30,hosen42,57168472,0.957,2026-10-14,H957x5-w30: R7 notebook x 0.7 + 5 Mirror students x 0.3 (LB probe)
+submission_h957x5w40,submission notebook,rsna-knee-h957x5w40.ipynb,hosen42/rsna-knee-h957x5w40,hosen42,57168474,0.957,2026-10-14,H957x5-w40: R7 notebook x 0.6 + 5 Mirror students x 0.4 (LB probe)
+submission_h958,submission notebook,rsna-knee-h958.ipynb,foysalemonshanto/rsna-knee-h958,foysalemonshanto,57213895,0.957,2026-10-15,"H958: one-free-flip parent (224+mirror, no R7 flip) + 5 Mirror students 0.8/0.2"
+submission_h958b,submission notebook,rsna-knee-h958b.ipynb,foysalemonshanto/rsna-knee-h958b,foysalemonshanto,57213403,0.957,2026-10-15,"H958B: one-free-flip parent (R7 flip TTA, 224+mirror) + 5 Mirror students 0.8/0.2"
+submission_h958bw40,submission notebook,rsna-knee-h958bw40.ipynb,foysalemonshanto/rsna-knee-h958bw40,foysalemonshanto,57213404,0.957,2026-10-15,H958B-W40: H958B parent + 5 Mirror students 0.6/0.4 (w40 final cell)
+submission_m73,submission notebook,rsna-knee-m73.ipynb,esfersami50/rsna-knee-m73,esfersami50,57032728,0.949,2026-10-10,M73: Mirror Raptor 0.7 + our stack (E20 stages1-3 + 7ckpt reader) 0.3
+submission_plA,submission notebook,rsna-knee-pla.ipynb,esfersami50/rsna-knee-pla,esfersami50,57053758,0.933,2026-10-10,"R2 arm A: full-data reader, v0 labels (control), leg alone"
+submission_plB,submission notebook,rsna-knee-plb.ipynb,esfersami50/rsna-knee-plb,esfersami50,57053761,0.939,2026-10-10,"R2 arm B: full-data reader, 0.5 v0 + 0.5 OOF pseudo-labels, leg alone"
+submission_plB2,submission notebook,rsna-knee-plb2.ipynb,esfersami50/rsna-knee-plb2,esfersami50,57081523,0.938,2026-10-11,"R3 arm B2: reader B targets + convnext_tiny.fb_in22k_ft_in1k backbone, leg alone"
+submission_plC,submission notebook,rsna-knee-plc.ipynb,esfersami50/rsna-knee-plc,esfersami50,57081442,0.948,2026-10-11,"R3 arm C: full-data reader, 0.5 v0 + 0.5 Mirror-teacher targets (student), leg alone"
+submission_plC2,submission notebook,rsna-knee-plc2.ipynb,esfersami50/rsna-knee-plc2,esfersami50,57103457,0.948,2026-10-12,"R4 arm C2: Mirror-student reader, seed 1 (C replicate), leg alone"
+submission_plC3,submission notebook,rsna-knee-plc3.ipynb,esfersami50/rsna-knee-plc3,esfersami50,57103459,0.949,2026-10-12,"R4 arm C3: Mirror-student reader, 0.25 v0 + 0.75 teacher, leg alone"
+submission_tri945,submission notebook,rsna-knee-tri945.ipynb,hosen42/rsna-knee-tri945,,,not submitted,,
+training/colab,colab training notebook (not used),RSNA_Colab_MirrorStudents.ipynb,,,,,,
+training/gpjwcache_0,training / teacher / cache kernel,gpjwcache.py,esfersami50/rsna-knee-gpjw-cache-0,esfersami50,,,,
+training/gpjwcache_1,training / teacher / cache kernel,gpjwcache.py,esfersami50/rsna-knee-gpjw-cache-1,esfersami50,,,,
+training/gpjwcache_2,training / teacher / cache kernel,gpjwcache.py,esfersami50/rsna-knee-gpjw-cache-2,esfersami50,,,,
+training/gpjwcache_3,training / teacher / cache kernel,gpjwcache.py,esfersami50/rsna-knee-gpjw-cache-3,esfersami50,,,,
+training/gpjwcache_4,training / teacher / cache kernel,gpjwcache.py,esfersami50/rsna-knee-gpjw-cache-4,esfersami50,,,,
+training/gpjwcache_hosen42_0,training / teacher / cache kernel,gpjwcache.py,hosen42/rsna-knee-gpjw-cache-0,hosen42,,,,
+training/gpjwcache_hosen42_1,training / teacher / cache kernel,gpjwcache.py,hosen42/rsna-knee-gpjw-cache-1,hosen42,,,,
+training/gpjwcache_hosen42_2,training / teacher / cache kernel,gpjwcache.py,hosen42/rsna-knee-gpjw-cache-2,hosen42,,,,
+training/gpjwcache_hosen42_3,training / teacher / cache kernel,gpjwcache.py,hosen42/rsna-knee-gpjw-cache-3,hosen42,,,,
+training/gpjwcache_hosen42_4,training / teacher / cache kernel,gpjwcache.py,hosen42/rsna-knee-gpjw-cache-4,hosen42,,,,
+training/gpjwgold,training / teacher / cache kernel,gpjwgold.py,esfersami50/rsna-knee-gpjw-gold-eval,esfersami50,,,,
+training/gpjwpseudo,training / teacher / cache kernel,gpjwpseudo.py,esfersami50/rsna-knee-gpjw-pseudo,esfersami50,,,,
+training/gpjwstudent,training / teacher / cache kernel,gpjwstudent.py,esfersami50/rsna-knee-gpjw-student,esfersami50,,,,
+training/gpjwstudent2,training / teacher / cache kernel,gpjwstudent.py,esfersami50/rsna-knee-gpjw-student2,esfersami50,,,,
+training/gpjwstudent3_hosen42,training / teacher / cache kernel,gpjwstudent.py,hosen42/rsna-knee-gpjw-student3,hosen42,,,,
+training/gpjwstudent4_hosen42,training / teacher / cache kernel,gpjwstudent.py,hosen42/rsna-knee-gpjw-student4,hosen42,,,,
+training/gpjwtrain,training / teacher / cache kernel,gpjwtrain.py,esfersami50/rsna-knee-gpjw-train-f34,esfersami50,,,,
+training/gpjwtrain_probe,training / teacher / cache kernel,gpjwtrain.py,esfersami50/rsna-knee-gpjw-train-probe,esfersami50,,,,
+training/gpjwtrain_probe_small,training / teacher / cache kernel,gpjwtrain.py,esfersami50/rsna-knee-gpjw-train-probe-small,esfersami50,,,,
+training/gpjwtrain_small,training / teacher / cache kernel,gpjwtrain.py,esfersami50/rsna-knee-gpjw-train-f34-small,esfersami50,,,,
+training/gpjwtrain_small_hosen42,training / teacher / cache kernel,gpjwtrain.py,hosen42/rsna-knee-gpjw-train-f34-small,hosen42,,,,
+training/mirrorteacher,training / teacher / cache kernel,mirror_teacher.py,esfersami50/rsna-knee-mirror-teacher,esfersami50,,,,
+training/r7teacher_0,training / teacher / cache kernel,r7_teacher.py,hosen42/rsna-knee-r7-teacher-0,hosen42,,,,
+training/r7teacher_1,training / teacher / cache kernel,r7_teacher.py,hosen42/rsna-knee-r7-teacher-1,hosen42,,,,
+training/raptorteacher_m224,training / teacher / cache kernel,raptor_teacher.py,hosen42/rsna-knee-m224-teacher,hosen42,,,,

@@ -31,7 +31,7 @@ D4-এর মডেলের সেটিং (384px, ৯৬ slice, MAX_WIN 36) R
 | `train_ours_leg.py` | Kaggle GPU training script। কী কী বদলানো হয়েছে তা script-এর শুরুতে লেখা |
 | `infer_kernel.py` | test DICOM থেকে হুবহু corpus-এর নিয়মে 44-slice stack বানায়, তারপর সব checkpoint দিয়ে predict করে `submission.csv` লেখে |
 | `build_submission_notebook.py` | `../rsna-knee-d4-blend_patched.ipynb` থেকে (মূল ফাইলে হাত না দিয়ে) নতুন নোটবুক বানায় |
-| `submission/rsna-knee-base-plus-ours.ipynb` | cell 0–30 হুবহু আগের মতো (0.943 বেইস), তার পরে আমাদের মডেল আর blend |
+| `our_submission_notebook/submission_e11/rsna-knee-base-plus-ours.ipynb` | cell 0–30 হুবহু আগের মতো (0.943 বেইস), তার পরে আমাদের মডেল আর blend |
 | `kaggle/*.kernel-metadata.json`, `kaggle/push.sh` | Kaggle-এ push করার জন্য। সব dataset/kernel বেইসের হুবহু version-এ আটকানো, একই Docker image, T4×2 |
 
 **recipe থেকে বদলগুলো, কারণসহ:**
@@ -139,7 +139,7 @@ D4-এর মডেলের সেটিং (384px, ৯৬ slice, MAX_WIN 36) R
   - dd label দিয়ে মাপলে দুটো মডেল প্রায় সমান।
   - consensus label দিয়ে মাপলে E03b +0.020 এগিয়ে। তবে E03b ঠিক এই label-এই train হয়েছে, তাই ফলটা নিজের পক্ষে ঝুঁকে থাকার কথা।
   - gold-58-এ E03b −0.017 পিছিয়ে। তবে সেখানে মাত্র ৫৮টা স্টাডি, তাই সংখ্যাটা অনেক নড়বড়ে।
-- ঠিক এই কারণেই নিয়ম ছিল সিদ্ধান্ত LB দিয়ে নেওয়া। পরের ধাপ `submission/e03b-alone` দিয়ে leg-এর একক LB মাপা: E03b ≥ 0.899 পেলে consensus label রাখা হবে।
+- ঠিক এই কারণেই নিয়ম ছিল সিদ্ধান্ত LB দিয়ে নেওয়া। পরের ধাপ `our_submission_notebook/submission_e03b_alone` দিয়ে leg-এর একক LB মাপা: E03b ≥ 0.899 পেলে consensus label রাখা হবে।
 
 ### E03b-এর LB ফল: **0.899** (সাবমিশন 56773062)
 

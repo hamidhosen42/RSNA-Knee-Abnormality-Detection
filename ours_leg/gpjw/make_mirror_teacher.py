@@ -9,7 +9,7 @@ checkpoint raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt, anatomical L/R TT
 The teacher was trained on all train studies, so these are in-sample predictions: they carry the teacher's own label
 blend and its OAI-pretrained features (rule note: a student of this teacher is OAI-derived, a public-LB candidate only).
 
-    python make_mirror_teacher.py [--owner=esfersami50]  ->  kaggle/mirrorteacher/
+    python make_mirror_teacher.py [--owner=esfersami50]  ->  our_submission_notebook/training/mirrorteacher/
 """
 import json
 import os
@@ -17,11 +17,14 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 STOP_H = 10.5
 
-h954 = json.load(open(os.path.join(ROOT, "submission_h954", "rsna-knee-h954.ipynb")))
-h954_meta = json.load(open(os.path.join(ROOT, "submission_h954", "kernel-metadata.json")))
+h954 = json.load(open(os.path.join(NB, "submission_h954", "rsna-knee-h954.ipynb")))
+h954_meta = json.load(open(os.path.join(NB, "submission_h954", "kernel-metadata.json")))
 cell = "".join(h954["cells"][2]["source"])
 assert cell.startswith("%%writefile /tmp/raptor_run.py\n")
 s = cell.split("\n", 1)[1]
@@ -64,14 +67,14 @@ sub('''    with mp.get_context("fork").Pool(nproc, initializer=_pre_init) as poo
 s = s.replace("__STOP_H__", repr(STOP_H))
 compile(s, "mirror_teacher.py", "exec")
 
-d = os.path.join(HERE, "..", "kaggle", "mirrorteacher" + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
+d = os.path.join(TRAINING, "mirrorteacher" + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
-open(os.path.join(d, "mirror_teacher.py"), "w").write(s)
+write_text(os.path.join(d, "mirror_teacher.py"), s)
 meta = {"id": f"{OWNER}/rsna-knee-mirror-teacher", "title": "rsna-knee-mirror-teacher", "code_file": "mirror_teacher.py",
         "language": "python", "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False,
         "enable_internet": False, "machine_shape": "NvidiaTeslaT4", "docker_image": h954_meta["docker_image"],
         "docker_image_pinning_type": "original",
         "dataset_sources": ["nartaa/rsna-knee-publication-swa-weights-20261007"],
         "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [], "model_sources": []}
-json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
 print("wrote", d)

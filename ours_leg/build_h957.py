@@ -16,8 +16,11 @@ Pre-registered: keep if LB > the R7 notebook's own score (0.956), neutral if equ
 import argparse
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 ap = argparse.ArgumentParser()
 ap.add_argument("--parent", default="public_notebooks/0.956_heliosli__0-957-latest-dataset-score-in-one-click.ipynb")
 ap.add_argument("--blend3", default="public_notebooks/0.951_2v_samanyu1808__rsna-knee-blend3-please-upvote-if-useful.ipynb")
@@ -30,14 +33,14 @@ ap.add_argument("--w-reader", type=float, default=0.2,
 ap.add_argument("--out", default="submission_h957")
 a = ap.parse_args()
 
-nb = json.load(open(os.path.join(ROOT, a.parent)))
+nb = json.load(open(inp(a.parent)))
 cells = nb["cells"]
 src = lambda c: "".join(c["source"])
 assert len(cells) == 7 and "BUNDLE_ID = '8c7b666e27dc0e8f'" in src(cells[4]) and "C_SLUG = 'rsna-knee-compact-r7cnxfsss'" in src(cells[4])
 assert src(cells[6]).startswith("# Stage 3: per-finding rank blend with weights fixed before any run: Raptor 0.5, ours 0.5.")
 assert "sub.to_csv(WORK / 'submission.csv', index=False)" in src(cells[6])
 
-b3 = json.load(open(os.path.join(ROOT, a.blend3)))["cells"]
+b3 = json.load(open(inp(a.blend3)))["cells"]
 assert src(b3[9]).startswith("# Stage 2b: goodpjw2008 ConvNeXt 2.5D reader")
 reader = [json.loads(json.dumps(b3[i])) for i in (5, 6, 7, 8, 9)]
 r = src(reader[-1])
@@ -106,10 +109,10 @@ for c in nb["cells"]:
     if c["cell_type"] == "code":
         c["outputs"], c["execution_count"] = [], None
 
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
 meta = {"id": f"{a.owner}/{slug}", "title": slug, "code_file": slug + ".ipynb", "language": "python", "kernel_type": "notebook",
         "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": False, "machine_shape": "NvidiaTeslaT4",
         "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
@@ -118,5 +121,5 @@ meta = {"id": f"{a.owner}/{slug}", "title": slug, "code_file": slug + ".ipynb", 
                             "heliosli/rsna-orthofoundation-fold0-epoch7-20261004", "goodpjw2008/rsna-knee-2-5d-convnext-reader",
                             f"{a.owner}/{a.readers}"],
         "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [], "model_sources": []}
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 print("wrote", out, "| cells", len(nb["cells"]))

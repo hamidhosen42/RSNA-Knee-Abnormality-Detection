@@ -56,7 +56,7 @@ EOF
     cp "$HERE/evalk.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
   submission)
     "$PY" "$LEG/build_submission_notebook.py"
-    cp "$LEG/submission/rsna-knee-base-plus-ours.ipynb" "$DIR/"
+    cp "${LEG:h}/our_submission_notebook/submission_e11/rsna-knee-base-plus-ours.ipynb" "$DIR/"
     cp "$HERE/submission.kernel-metadata.json" "$DIR/kernel-metadata.json" ;;
   verify)
     # CPU check that infer_kernel.py's DICOM rebuild matches the training corpus (E11 diagnosis).

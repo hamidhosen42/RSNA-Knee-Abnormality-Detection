@@ -13,13 +13,17 @@ folds 3 and 4 run in parallel, one per GPU.
 Output: cnxt_v0_fold{3,4}.pt ({"model": ema state_dict, "args": ...}, the format infer.py loads),
 oof_fold{k}.csv, log_fold{k}.txt.
 
-    python make_train_kernel.py [--probe]   ->  kaggle/gpjwtrain[_probe]/
+    python make_train_kernel.py [--probe]   ->  our_submission_notebook/training/gpjwtrain[_probe]/
 """
 import json
 import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 PROBE = "--probe" in sys.argv
 # E17: --backbone convnext_small (default convnext_tiny = the author's reader, E16)
 BACKBONE = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--backbone=")), "convnext_tiny")
@@ -278,10 +282,10 @@ if __name__ == "__main__":
 src = knee + (MAIN.replace("__PROBE__", "True" if PROBE else "False").replace("__BACKBONE__", BACKBONE)
                .replace("__CKPT_PREFIX__", "cnxt_v0" if not TAG else "cnxt" + TAG.replace("-", "_")))
 compile(src, "gpjwtrain.py", "exec")
-d = os.path.join(HERE, "..", "kaggle", ("gpjwtrain_probe" if PROBE else "gpjwtrain") + TAG.replace("-", "_")
+d = os.path.join(TRAINING, ("gpjwtrain_probe" if PROBE else "gpjwtrain") + TAG.replace("-", "_")
                  + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
-open(os.path.join(d, "gpjwtrain.py"), "w").write(src)
+write_text(os.path.join(d, "gpjwtrain.py"), src)
 slug = ("rsna-knee-gpjw-train-probe" if PROBE else "rsna-knee-gpjw-train-f34") + TAG
 meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "gpjwtrain.py", "language": "python",
         "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": True,
@@ -291,5 +295,5 @@ meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "gpjwtrain.py", "la
                             "laymond/rsna-knee-abnormality-qwen3-8b-weak-labels/2"],
         "competition_sources": ["rsna-knee-abnormality-detection"],
         "kernel_sources": [f"{CACHE_OWNER}/rsna-knee-gpjw-cache-{i}/1" for i in range(N_SHARDS)], "model_sources": []}
-json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
 print("wrote", d)

@@ -10,8 +10,11 @@ unchanged.  Pre-registered: keep if LB > 0.945 (E18-E20), neutral at 0.945, reje
 import argparse
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 ap = argparse.ArgumentParser()
 ap.add_argument("--parent", default="submission_e20")
 ap.add_argument("--out", default="submission_e21")
@@ -19,7 +22,7 @@ ap.add_argument("--owner", default="esfersami50")
 ap.add_argument("--ckpt", default="cnxt_plB_full.pt")
 ap.add_argument("--ckpt-kernel", default="esfersami50/rsna-knee-gpjw-pseudo/1")
 a = ap.parse_args()
-par = os.path.join(ROOT, a.parent)
+par = inp(a.parent)
 nb_name = next(f for f in os.listdir(par) if f.endswith(".ipynb"))
 nb = json.load(open(os.path.join(par, nb_name)))
 cells = nb["cells"]
@@ -46,12 +49,12 @@ for c in cells:
     if c["cell_type"] == "code":
         c["outputs"], c["execution_count"] = [], None
 
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
 meta = json.load(open(os.path.join(par, "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 meta["kernel_sources"] = [k for k in meta["kernel_sources"] if "gpjw-train-f34" not in k] + [a.ckpt_kernel]
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 print("wrote", out, "| kernels", meta["kernel_sources"])

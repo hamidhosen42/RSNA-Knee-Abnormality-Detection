@@ -1,7 +1,7 @@
 """Build the submission notebook: our 0.943 base + our own leg, rank-blended the way D4 does it.
 
 Reads ../rsna-knee-d4-blend_patched.ipynb (never modified) and writes
-submission/rsna-knee-base-plus-ours.ipynb:
+our_submission_notebook/submission_e11/rsna-knee-base-plus-ours.ipynb:
   cells 0-30  unchanged: the public pipeline (Jiwei v11 + Fracture token) and the stash of its output
   new         markdown note, then infer_kernel.py written to /kaggle/tmp/ours_leg/ (%%writefile)
   new 2/3     run our leg from the attached training-kernel output; soft-fail to public
@@ -10,11 +10,14 @@ submission/rsna-knee-base-plus-ours.ipynb:
     python build_submission_notebook.py
 """
 import json
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BASE = HERE.parent / "rsna-knee-d4-blend_patched.ipynb"
-OUT = HERE / "submission" / "rsna-knee-base-plus-ours.ipynb"
+sys.path.insert(0, str(HERE))
+from paths import NB, write_text  # noqa: E402
+OUT = Path(NB) / "submission_e11" / "rsna-knee-base-plus-ours.ipynb"
 N_KEEP = 31   # cells 0..30; cell 30 stashes the public submission as _public_probe22.csv
 
 MARKDOWN = """## Our leg (replaces D4's private student fleet)
@@ -159,7 +162,7 @@ def main():
         code_cell(BLEND),
     ]
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(nb, indent=1, ensure_ascii=False))
+    write_text(str(OUT), json.dumps(nb, indent=1, ensure_ascii=False))
     print(f"wrote {OUT.relative_to(HERE.parent)} ({len(nb['cells'])} cells)")
 
 

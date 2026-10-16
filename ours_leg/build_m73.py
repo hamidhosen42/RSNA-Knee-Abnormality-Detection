@@ -15,8 +15,11 @@ non-Raptor stack in the place of heliosli's retired compact model.
 import argparse
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 ap = argparse.ArgumentParser()
 ap.add_argument("--e20", default="submission_e20")
 ap.add_argument("--h954", default="submission_h954")
@@ -26,8 +29,8 @@ a = ap.parse_args()
 
 
 def load(d):
-    name = next(f for f in os.listdir(os.path.join(ROOT, d)) if f.endswith(".ipynb"))
-    return json.load(open(os.path.join(ROOT, d, name))), json.load(open(os.path.join(ROOT, d, "kernel-metadata.json")))
+    name = next(f for f in os.listdir(inp(d)) if f.endswith(".ipynb"))
+    return json.load(open(os.path.join(inp(d), name))), json.load(open(os.path.join(inp(d), "kernel-metadata.json")))
 
 
 e20, e20_meta = load(a.e20)
@@ -153,14 +156,14 @@ for t in (FINAL_CHECKS, FINAL_BLEND):
 
 nb = dict(e20)
 nb["cells"] = cells
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
 meta = dict(e20_meta)
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 mirror_src = "nartaa/rsna-knee-publication-swa-weights-20261007"
 assert mirror_src in h954_meta["dataset_sources"]
 meta["dataset_sources"] = meta["dataset_sources"] + [mirror_src]
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 print("wrote", out, "| cells", len(cells), "| sources", len(meta["dataset_sources"]), "| kernels", meta["kernel_sources"])

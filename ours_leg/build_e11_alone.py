@@ -7,13 +7,13 @@ submit something that is not the measurement.
 
     Runs on CPU (fp32): the weekly GPU quota was exhausted on 2026-10-02; ~1300 studies fit in 9 h.
 
-    python build_e11_alone.py   ->  submission/e11-alone/rsna-knee-e11-alone.ipynb + kernel-metadata.json
+    python build_e11_alone.py   ->  our_submission_notebook/submission_e11_alone/rsna-knee-e11-alone.ipynb + kernel-metadata.json
 
 The same notebook measures any later leg alone, with only the checkpoints swapped (E03b):
     python build_e11_alone.py --name e03b-alone --owner esfersami50 \
         --source esfersami50/rsna-knee-ours-leg-train-effv2s-cons/1 --label "E03b alone (consensus labels)"
 """
-import argparse, json
+import argparse, json, sys
 from pathlib import Path
 
 ap = argparse.ArgumentParser()
@@ -24,7 +24,9 @@ ap.add_argument("--label", default="E11 alone (calibration)")
 args = ap.parse_args()
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / "submission" / args.name
+sys.path.insert(0, str(HERE))
+from paths import NB, write_text  # noqa: E402
+OUT = Path(NB) / ("submission_" + args.name.replace("-", "_"))
 SLUG = f"rsna-knee-{args.name}"
 
 RUN = r'''import glob, os, subprocess, sys, time
@@ -79,7 +81,7 @@ meta = {"id": f"{args.owner}/{SLUG}", "title": SLUG, "code_file": f"{SLUG}.ipynb
         "competition_sources": ["rsna-knee-abnormality-detection"],
         "kernel_sources": [args.source], "model_sources": []}
 OUT.mkdir(parents=True, exist_ok=True)
-(OUT / f"{SLUG}.ipynb").write_text(json.dumps(nb, indent=1))
-(OUT / "kernel-metadata.json").write_text(json.dumps(meta, indent=1))
+write_text(str(OUT / f"{SLUG}.ipynb"), json.dumps(nb, indent=1))
+write_text(str(OUT / "kernel-metadata.json"), json.dumps(meta, indent=1))
 compile(RUN, "run", "exec")
 print("wrote", OUT)

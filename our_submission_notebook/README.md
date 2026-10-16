@@ -1,0 +1,40 @@
+# Our own notebooks (team Hack2Publish)
+
+This folder holds only notebooks we built, trained or submitted ourselves. Public notebooks, including verbatim forks of them that teammates submitted, stay in `../public_notebooks/`.
+
+- **`submission_*/`**: one folder per submission notebook, holding the `.ipynb` plus the `kernel-metadata.json` that was pushed.
+- **`training/`**: our training, teacher and cache kernels, each with its script and metadata. Examples:
+  - `gpjwstudent*`: the Mirror-student readers;
+  - `mirrorteacher`, `raptorteacher_m224`, `r7teacher_*`: teachers on the train split;
+  - `gpjwcache_*`: DICOM caches;
+  - `training/colab/`: the Colab notebook, prepared but never used.
+- **`_index.csv`**: one row per folder, giving:
+  - the Kaggle kernel and the account that ran it;
+  - the submission ids and public score;
+  - the date and the submission description.
+
+Every builder in `../ours_leg/` takes its paths from `ours_leg/paths.py`. Path arguments follow one rule:
+- an absolute path is used as is;
+- `our_submission_notebook/...` and `public_notebooks/...` are relative to the repo;
+- a bare `submission_x/...` is relative to this folder.
+
+For `--out`, a bare folder name goes into this folder, and any other relative path is relative to the current directory.
+
+A builder never replaces an archived file with different content unless you set `OVERWRITE=1` (or pass `--overwrite` to build_h958). This matters because several builders evolved after their pushes. After adding a folder, run `python ours_leg/update_our_index.py`. For example:
+
+```
+python ours_leg/build_h958.py --flip-r7 --out submission_h958b_r   # the patched (R1-R6) H958b, as a new folder
+python ours_leg/build_h958.py --owner foysalemonshanto --flip-r7 --out /abs/scratch/submission_h958b   # another account: build at push time
+```
+
+## Best of our own notebooks (2026-10-16)
+
+| Notebook | Public | Note |
+|---|---|---|
+| `submission_h958b` | 0.957 | R7 + Raptor 384/224 (mirror) + R7 flip + 5 Mirror students; it was the team best on 10-15. This is the exact notebook foysal submitted (before the R1–R6 patches). A copy is in `../our_base_notebook/`. |
+| `submission_h957x5w40`, `submission_h957x5`, `submission_h957`, `submission_h958`, `submission_h958bw40` | 0.957 | |
+| `submission_e21` | 0.946 | rule-clean (no OAI / fastMRI weights) |
+
+## Team submissions of public notebooks (not stored here)
+
+On 2026-10-16, foysalemonshanto (57252333) and kishormorol (57252502) submitted forks of `heliosli/blend-mine-in-private-lb-luck-to-all-upvoters` and scored **0.958**. 57252502 is the team best now, at rank 282 of 6,098, inside a 0.958 block of 435 teams. The notebook itself is `../public_notebooks/0.958_157v_heliosli__blend-mine-in-private-lb-luck-to-all-upvoters.ipynb`.

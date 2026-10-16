@@ -10,13 +10,17 @@ exactly what the author trained on; only the container differs.
 Per series: cache384/<series>.npz with `data` (concatenated PNG bytes) and `off` (n+1 offsets).
 Per shard:  cache384_meta.csv (study, series, n, n_raw, n_bad, plane, slice_gap, error, bytes).
 
-    python make_cache_kernels.py [n_shards=5]  ->  kaggle/gpjwcache_<i>/  (push each with the kaggle CLI)
+    python make_cache_kernels.py [n_shards=5]  ->  our_submission_notebook/training/gpjwcache_<i>/  (push each with the kaggle CLI)
 """
 import json
 import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 N = next((int(a) for a in sys.argv[1:] if a.isdigit()), 5)
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 DOCKER = "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
@@ -104,15 +108,15 @@ if __name__ == "__main__":
 '''
 
 for i in range(N):
-    d = os.path.join(HERE, "..", "kaggle", f"gpjwcache_{i}" if OWNER == "esfersami50" else f"gpjwcache_{OWNER}_{i}")
+    d = os.path.join(TRAINING, f"gpjwcache_{i}" if OWNER == "esfersami50" else f"gpjwcache_{OWNER}_{i}")
     os.makedirs(d, exist_ok=True)
     src = prep + MAIN.replace("__SHARD__", str(i)).replace("__NSHARDS__", str(N))
     compile(src, "gpjwcache.py", "exec")
-    open(os.path.join(d, "gpjwcache.py"), "w").write(src)
+    write_text(os.path.join(d, "gpjwcache.py"), src)
     meta = {"id": f"{OWNER}/rsna-knee-gpjw-cache-{i}", "title": f"rsna-knee-gpjw-cache-{i}", "code_file": "gpjwcache.py",
             "language": "python", "kernel_type": "script", "is_private": True, "enable_gpu": False, "enable_tpu": False,
             "enable_internet": False, "docker_image": DOCKER, "docker_image_pinning_type": "original",
             "dataset_sources": ["goodpjw2008/rsna-knee-2-5d-convnext-reader/1"],
             "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [], "model_sources": []}
-    json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+    write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
 print(f"wrote {N} shard kernels")

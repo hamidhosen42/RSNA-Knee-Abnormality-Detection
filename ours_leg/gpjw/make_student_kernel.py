@@ -20,6 +20,10 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 # round 3 (2026-10-13, hosen42): --cache-owner=hosen42 --teacher-dataset=hosen42/rsna-knee-mirror-teacher-train
 CACHE_OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--cache-owner=")), "esfersami50")
@@ -106,9 +110,9 @@ sub('''    print(f"gpus {torch.cuda.device_count()} | script {script_path()} | p
     codes = run_parallel([("GPJW_ARM", x) for x in __ARMS__])''')
 src = knee + MAIN.replace("__PROBE__", "False").replace("__ALPHA__", "0.5").replace("__ARMS__", repr(ARMS))
 compile(src, "gpjwstudent.py", "exec")
-d = os.path.join(HERE, "..", "kaggle", SLUG.replace("rsna-knee-gpjw-", "gpjw") + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
+d = os.path.join(TRAINING, SLUG.replace("rsna-knee-gpjw-", "gpjw") + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
-open(os.path.join(d, "gpjwstudent.py"), "w").write(src)
+write_text(os.path.join(d, "gpjwstudent.py"), src)
 meta = {"id": f"{OWNER}/{SLUG}", "title": SLUG, "code_file": "gpjwstudent.py",
         "language": "python", "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False,
         "enable_internet": True, "machine_shape": "NvidiaTeslaT4", "docker_image": DOCKER, "docker_image_pinning_type": "original",
@@ -121,5 +125,5 @@ meta = {"id": f"{OWNER}/{SLUG}", "title": SLUG, "code_file": "gpjwstudent.py",
         "model_sources": []}
 if TEACHER_DS:
     meta["dataset_sources"] = meta["dataset_sources"] + [TEACHER_DS]
-json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
 print("wrote", d)

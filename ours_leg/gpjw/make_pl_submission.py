@@ -12,6 +12,9 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 TRAIN_VERSION = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--train-version=")), "1")
 TRAIN_KERNEL = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--train-kernel=")), "esfersami50/rsna-knee-gpjw-pseudo")
@@ -22,8 +25,8 @@ WHAT = {"A": "v0 labels (control)", "B": "0.5 v0 + 0.5 out-of-fold reader target
         "C2": "C recipe with seed 1 (0.5 v0 + 0.5 Mirror teacher)",
         "C3": "0.25 v0 + 0.75 Mirror teacher targets"}
 
-e20 = json.load(open(os.path.join(ROOT, "submission_e20", "rsna-knee-e20.ipynb")))["cells"]
-e20_meta = json.load(open(os.path.join(ROOT, "submission_e20", "kernel-metadata.json")))
+e20 = json.load(open(os.path.join(NB, "submission_e20", "rsna-knee-e20.ipynb")))["cells"]
+e20_meta = json.load(open(os.path.join(NB, "submission_e20", "kernel-metadata.json")))
 src = lambda c: "".join(c["source"])
 assert src(e20[34]).startswith("import os") and "own_src" in src(e20[34])
 for i, name in ((35, "preprocess.py"), (36, "knee.py"), (37, "infer.py")):
@@ -98,15 +101,15 @@ for arm in ARMS:
     compile(RUN.replace("__ARM__", arm).replace("display(", "print("), "run", "exec")
     nb = {"cells": cells, "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
                                        "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 5}
-    out = os.path.join(ROOT, f"submission_pl{arm}")
+    out = os.path.join(NB, f"submission_pl{arm}")
     os.makedirs(out, exist_ok=True)
     slug = f"rsna-knee-pl{arm.lower()}"
-    json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+    write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
     meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": slug + ".ipynb", "language": "python",
             "kernel_type": "notebook", "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": False,
             "machine_shape": "NvidiaTeslaT4", "docker_image": e20_meta["docker_image"], "docker_image_pinning_type": "original",
             "dataset_sources": ["goodpjw2008/rsna-knee-2-5d-convnext-reader/1"],
             "competition_sources": ["rsna-knee-abnormality-detection"],
             "kernel_sources": [f"{TRAIN_KERNEL}/{TRAIN_VERSION}"], "model_sources": []}
-    json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+    write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
     print("wrote", out)

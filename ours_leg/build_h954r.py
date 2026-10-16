@@ -14,8 +14,11 @@ as a whole leaves exactly the parent's 2-way blend, and that is printed.
 import argparse
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 ap = argparse.ArgumentParser()
 ap.add_argument("--parent", default="submission_h954")
 ap.add_argument("--blend3", default="public_notebooks/0.951_2v_samanyu1808__rsna-knee-blend3-please-upvote-if-useful.ipynb")
@@ -32,10 +35,10 @@ ap.add_argument("--blend", choices=["blend3", "nested"], default="blend3",
                      "0.8 x rank(the 0.954 notebook's 0.7/0.3 blend) + 0.2 x rank(reader)")
 a = ap.parse_args()
 
-par = os.path.join(ROOT, a.parent)
+par = inp(a.parent)
 nb_name = next(f for f in os.listdir(par) if f.endswith(".ipynb"))
 nb = json.load(open(os.path.join(par, nb_name)))
-b3 = json.load(open(os.path.join(ROOT, a.blend3)))["cells"]
+b3 = json.load(open(inp(a.blend3)))["cells"]
 cells = nb["cells"]
 assert len(cells) == 7 and "W_RAPTOR, W_OURS = 0.7, 0.3" in "".join(cells[6]["source"])
 assert "".join(b3[9]["source"]).startswith("# Stage 2b: goodpjw2008 ConvNeXt 2.5D reader")
@@ -150,10 +153,10 @@ for c in nb["cells"]:
         c["outputs"], c["execution_count"] = [], None
 compile(s, "blend_cell", "exec")
 
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
 meta = json.load(open(os.path.join(par, "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 if "goodpjw2008/rsna-knee-2-5d-convnext-reader" not in meta["dataset_sources"]:
@@ -162,5 +165,5 @@ if MULTI:
     meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + sorted({k for k, _ in MULTI})
 elif READER_CKPT:
     meta["kernel_sources"] = list(meta.get("kernel_sources") or []) + [READER_CKPT[0]]
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 print("wrote", out, "| cells", len(nb["cells"]), "| sources", meta["dataset_sources"])

@@ -9,7 +9,7 @@ before the deadline) are dropped from the output, never filled.
 
 Output: /kaggle/working/r7_train_shard<k>.csv (probabilities of the scored studies) + worker logs.
 
-    python make_r7_teacher.py [--shards=2] [--owner=hosen42]  ->  kaggle/r7teacher_<k>[_owner]/
+    python make_r7_teacher.py [--shards=2] [--owner=hosen42]  ->  our_submission_notebook/training/r7teacher_<k>[_owner]/
 """
 import json
 import os
@@ -17,6 +17,9 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "hosen42")
 N = int(next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--shards=")), "2"))
 DEADLINE_H = 11.0
@@ -93,9 +96,9 @@ for k in range(N):
     src = "import time\nNB_T0 = time.time()   # [r7-teacher] heliosli's setup counts its deadline from here\n\n" + setup + \
           RUN.replace("__SHARD__", str(k)).replace("__N__", str(N)).replace("__DEADLINE_H__", repr(DEADLINE_H))
     compile(src, "r7_teacher.py", "exec")
-    d = os.path.join(HERE, "..", "kaggle", f"r7teacher_{k}" + ("" if OWNER == "hosen42" else f"_{OWNER}"))
+    d = os.path.join(TRAINING, f"r7teacher_{k}" + ("" if OWNER == "hosen42" else f"_{OWNER}"))
     os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, "r7_teacher.py"), "w").write(src)
+    write_text(os.path.join(d, "r7_teacher.py"), src)
     slug = f"rsna-knee-r7-teacher-{k}"
     meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "r7_teacher.py", "language": "python", "kernel_type": "script",
             "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": False, "machine_shape": "NvidiaTeslaT4",
@@ -103,5 +106,5 @@ for k in range(N):
             "docker_image_pinning_type": "original",
             "dataset_sources": ["heliosli/rsna-knee-compact-r7cnxfsss", "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"],
             "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [], "model_sources": []}
-    json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+    write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
     print("wrote", d)

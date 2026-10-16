@@ -40,9 +40,12 @@ An existing output that would change is never overwritten without --overwrite.
 import argparse
 import json
 import os
+import sys
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 READERS = "hosen42/rsna-knee-student-readers"   # the 5 LB-validated students (private, hosen42); never re-versioned
 READER_CKPTS = ["cnxt_plC2_full.pt", "cnxt_plC3_full.pt", "cnxt_plC_full.pt", "cnxt_plS75_full.pt", "cnxt_plT75s1_full.pt"]
 SCORED = {"submission_h957x5": "H957x5", "submission_h957x5w30": "H957x5-w30", "submission_h957x5w40": "H957x5-w40"}
@@ -65,12 +68,12 @@ if a.extra_readers and not a.out:
     ap.error("an H959 build needs an explicit --out (e.g. submission_h959b)")
 
 src = lambda c: "".join(c["source"])
-P = json.load(open(os.path.join(ROOT, a.parent)))
+P = json.load(open(inp(a.parent)))
 pc = P["cells"]
-r7 = [src(c) for c in json.load(open(os.path.join(ROOT, a.r7)))["cells"] if c["cell_type"] == "code"]
-st_name = os.path.basename(os.path.dirname(os.path.join(ROOT, a.students)))
+r7 = [src(c) for c in json.load(open(inp(a.r7)))["cells"] if c["cell_type"] == "code"]
+st_name = os.path.basename(os.path.dirname(inp(a.students)))
 assert st_name in SCORED, ("--students must be a scored H957x5-family notebook", st_name)
-st = json.load(open(os.path.join(ROOT, a.students)))["cells"]
+st = json.load(open(inp(a.students)))["cells"]
 
 # --- the parent must be exactly what we analysed
 assert len(pc) == 13
@@ -231,7 +234,7 @@ for c in nb_cells:
         c["outputs"], c["execution_count"] = [], None
         compile("\n".join(l for l in src(c).splitlines() if not l.startswith(("%%", "!"))), "cell", "exec")
 P["cells"] = nb_cells
-out = os.path.join(ROOT, out_name)
+out = out_dir(out_name)
 slug = "rsna-knee-" + base.replace("submission_", "")
 sources = ["heliosli/rsna-knee-compact-r7cnxfsss", "nartaa/rsna-knee-publication-swa-weights-20261007",
            "heliosli/rsna-orthofoundation-fold0-epoch7-20261004", "goodpjw2008/rsna-knee-2-5d-convnext-reader", READERS]

@@ -17,6 +17,7 @@ Single change against the parent notebook (E18 by default):
 import argparse
 import json
 import os
+import sys
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--parent", default="submission_e18")
@@ -25,7 +26,9 @@ ap.add_argument("--owner", default="hosen42")
 ap.add_argument("--gate_h", type=float, default=4.5)
 a = ap.parse_args()
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-par = os.path.join(ROOT, a.parent)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
+par = inp(a.parent)
 nb_name = next(f for f in os.listdir(par) if f.endswith(".ipynb"))
 nb = json.load(open(os.path.join(par, nb_name)))
 cells = nb["cells"]
@@ -116,14 +119,14 @@ sub(30, '''        del model
 
     def gpu_zero():''')
 
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
 meta = json.load(open(os.path.join(par, "kernel-metadata.json")))
 meta.update(id=f"{a.owner}/{slug}", title=slug, code_file=slug + ".ipynb")
 if "dreaddevelopment/raptor-knee-finespacing/1" not in meta["dataset_sources"]:
     meta["dataset_sources"] = meta["dataset_sources"] + ["dreaddevelopment/raptor-knee-finespacing/1"]
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 compile("".join(cells[30]["source"]).split("_KE_SRC = r'''")[0], "cell30_head", "exec")
 print("wrote", out, "| sources", len(meta["dataset_sources"]), "| kernels", meta["kernel_sources"])

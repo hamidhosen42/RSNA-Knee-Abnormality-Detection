@@ -13,7 +13,7 @@ The notebook then
     averages their probabilities), pushes it as <user>/rsna-knee-h955ens, waits for the commit, checks its log and
     submits it when AUTO_SUBMIT is on.
 
-    python make_colab_students.py   ->  colab/RSNA_Colab_MirrorStudents.ipynb
+    python make_colab_students.py   ->  our_submission_notebook/training/colab/RSNA_Colab_MirrorStudents.ipynb
 """
 import json
 import os
@@ -628,7 +628,10 @@ for t in (CONFIG, SETUP.replace("from google.colab import drive", "").replace('d
 nb = {"cells": cells, "metadata": {"accelerator": "GPU", "colab": {"gpuType": "A100", "machine_shape": "hm", "provenance": []},
                                    "kernelspec": {"display_name": "Python 3", "name": "python3"},
                                    "language_info": {"name": "python"}}, "nbformat": 4, "nbformat_minor": 0}
-out = os.path.join(ROOT, "colab")
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import TRAINING, write_json  # noqa: E402
+out = os.path.join(TRAINING, "colab")
 os.makedirs(out, exist_ok=True)
-json.dump(nb, open(os.path.join(out, "RSNA_Colab_MirrorStudents.ipynb"), "w"), indent=1)
+write_json(os.path.join(out, "RSNA_Colab_MirrorStudents.ipynb"), nb, indent=1)
 print("wrote", os.path.join(out, "RSNA_Colab_MirrorStudents.ipynb"))

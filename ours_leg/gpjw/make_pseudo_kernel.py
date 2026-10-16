@@ -14,13 +14,17 @@ One T4x2 GPU kernel, three phases:
 Output: cnxt_plA_full.pt, cnxt_plB_full.pt (infer.py format), labels_pl.csv, oofck_fold{k}.csv, gold_arm{A,B}.csv, logs.
 Pre-registered: adopt B only if LB(B) - LB(A) >= +0.003 (each leg alone) and B's gold-58 is not more than 0.01 below A's.
 
-    python make_pseudo_kernel.py [--owner=esfersami50] [--probe]  ->  kaggle/gpjwpseudo[_probe]/
+    python make_pseudo_kernel.py [--owner=esfersami50] [--probe]  ->  our_submission_notebook/training/gpjwpseudo[_probe]/
 """
 import json
 import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 PROBE = "--probe" in sys.argv
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "esfersami50")
 CACHE_OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--cache-owner=")), "esfersami50")
@@ -326,9 +330,9 @@ if __name__ == "__main__":
 
 src = knee + MAIN.replace("__PROBE__", "True" if PROBE else "False").replace("__ALPHA__", repr(ALPHA))
 compile(src, "gpjwpseudo.py", "exec")
-d = os.path.join(HERE, "..", "kaggle", "gpjwpseudo" + ("_probe" if PROBE else "") + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
+d = os.path.join(TRAINING, "gpjwpseudo" + ("_probe" if PROBE else "") + ("" if OWNER == "esfersami50" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
-open(os.path.join(d, "gpjwpseudo.py"), "w").write(src)
+write_text(os.path.join(d, "gpjwpseudo.py"), src)
 slug = "rsna-knee-gpjw-pseudo" + ("-probe" if PROBE else "")
 meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "gpjwpseudo.py", "language": "python",
         "kernel_type": "script", "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": True,
@@ -340,5 +344,5 @@ meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "gpjwpseudo.py", "l
         "competition_sources": ["rsna-knee-abnormality-detection"],
         "kernel_sources": [f"{CACHE_OWNER}/rsna-knee-gpjw-cache-{i}/1" for i in range(N_SHARDS)]
                           + ["esfersami50/rsna-knee-gpjw-train-f34/1"], "model_sources": []}
-json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
 print("wrote", d)

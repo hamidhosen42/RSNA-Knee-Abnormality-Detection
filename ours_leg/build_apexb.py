@@ -10,14 +10,17 @@ Pre-registered: keep if LB > 0.950, neutral at 0.950, reject below.
 import argparse
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paths import NB, inp, out_dir, write_json  # noqa: E402  (one place for every path: ours_leg/paths.py)
 ap = argparse.ArgumentParser()
 ap.add_argument("--src", default="public_notebooks/0.950_129v_sujanmajhisuzan__rsna-knee-apex-grandmaster-stack.ipynb")
 ap.add_argument("--out", default="submission_apexb")
 ap.add_argument("--owner", default="esfersami50")
 a = ap.parse_args()
-nb = json.load(open(os.path.join(ROOT, a.src)))
+nb = json.load(open(inp(a.src)))
 cells = nb["cells"]
 s = "".join(cells[9]["source"])
 OLD = '''    _o_ck = sorted(_o_glob.glob(_o_assets + "/cnxt_v0_fold*.pt"))
@@ -36,10 +39,10 @@ cells[0]["source"] = ("".join(cells[0]["source"]) + "\n\n**APEX-B (ours):** iden
 for c in cells:
     if c["cell_type"] == "code":
         c["outputs"], c["execution_count"] = [], None
-out = os.path.join(ROOT, a.out)
+out = out_dir(a.out)
 os.makedirs(out, exist_ok=True)
 slug = "rsna-knee-" + a.out.replace("submission_", "")
-json.dump(nb, open(os.path.join(out, slug + ".ipynb"), "w"), indent=1)
+write_json(os.path.join(out, slug + ".ipynb"), nb, indent=1)
 meta = {"id": f"{a.owner}/{slug}", "title": slug, "code_file": slug + ".ipynb", "language": "python",
         "kernel_type": "notebook", "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": False,
         "machine_shape": "NvidiaTeslaT4",
@@ -48,5 +51,5 @@ meta = {"id": f"{a.owner}/{slug}", "title": slug, "code_file": slug + ".ipynb", 
         "dataset_sources": ["goodpjw2008/rsna-knee-2-5d-convnext-reader", "nartaa/rsna-knee-publication-swa-weights-20261007"],
         "competition_sources": ["rsna-knee-abnormality-detection"],
         "kernel_sources": ["esfersami50/rsna-knee-gpjw-pseudo/1"], "model_sources": []}
-json.dump(meta, open(os.path.join(out, "kernel-metadata.json"), "w"), indent=2)
+write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)
 print("wrote", out)

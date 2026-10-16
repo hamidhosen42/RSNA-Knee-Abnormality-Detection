@@ -11,7 +11,7 @@ in blocks of 96 studies (v1 of the Mirror teacher was OOM-killed when imap_unord
 pool workers; dump raw probabilities every 400 studies and at the end; stop feeding at STOP_H hours.
 A study that failed or was not reached stays at 0.5 in every column (read as "missing" by the student builder).
 
-    python make_raptor_teacher.py --source=m224 [--owner=hosen42]  ->  kaggle/raptorteacher_m224[_owner]/
+    python make_raptor_teacher.py --source=m224 [--owner=hosen42]  ->  our_submission_notebook/training/raptorteacher_m224[_owner]/
 """
 import json
 import os
@@ -19,12 +19,15 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(HERE))   # ours_leg/: paths.py is the one place for every path
+from paths import NB, TRAINING, write_text, write_json  # noqa: E402
 OWNER = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--owner=")), "hosen42")
 SOURCE = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--source=")), "m224")
 STOP_H = 10.5
 
 if SOURCE == "mirror384":
-    cell = "".join(json.load(open(os.path.join(ROOT, "submission_h954", "rsna-knee-h954.ipynb")))["cells"][2]["source"])
+    cell = "".join(json.load(open(os.path.join(NB, "submission_h954", "rsna-knee-h954.ipynb")))["cells"][2]["source"])
     RAW, SUB = "mirror_train_raw.csv", "mirror_train_sub.csv"
 elif SOURCE == "m224":
     nb = json.load(open(os.path.join(ROOT, "public_notebooks", "0.956_7v_varshithakolupuri__rsna-0-956-one-free-flip-68-ranks-up.ipynb")))
@@ -82,14 +85,14 @@ else:
         f'''    out = "/kaggle/working/{SUB}"   # [teacher] rank file (diagnostic only)''')
 compile(s, "raptor_teacher.py", "exec")
 
-d = os.path.join(HERE, "..", "kaggle", f"raptorteacher_{SOURCE}" + ("" if OWNER == "hosen42" else f"_{OWNER}"))
+d = os.path.join(TRAINING, f"raptorteacher_{SOURCE}" + ("" if OWNER == "hosen42" else f"_{OWNER}"))
 os.makedirs(d, exist_ok=True)
-open(os.path.join(d, "raptor_teacher.py"), "w").write(s)
+write_text(os.path.join(d, "raptor_teacher.py"), s)
 slug = f"rsna-knee-{SOURCE}-teacher"
 meta = {"id": f"{OWNER}/{slug}", "title": slug, "code_file": "raptor_teacher.py", "language": "python", "kernel_type": "script",
         "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": False, "machine_shape": "NvidiaTeslaT4",
         "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f",
         "docker_image_pinning_type": "original", "dataset_sources": ["nartaa/rsna-knee-publication-swa-weights-20261007"],
         "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [], "model_sources": []}
-json.dump(meta, open(os.path.join(d, "kernel-metadata.json"), "w"), indent=1)
+write_json(os.path.join(d, "kernel-metadata.json"), meta, indent=1)
 print("wrote", d, "| raw ->", RAW)
