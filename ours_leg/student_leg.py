@@ -136,9 +136,13 @@ def snapshot_cell(parent_label):
             "# Keep an immutable snapshot and its sha256; every later stage is optional and can replace the file only through the\n"
             "# final cell's strict checks.  If the students are not accepted, THIS parent file is the submission.\n"
             "import hashlib as _sh, shutil as _ss\n"
-            "_ss.copyfile(WORK / 'submission.csv', WORK / '_baseline_submission.csv')\n"
-            "BASELINE_SHA256 = _sh.sha256((WORK / '_baseline_submission.csv').read_bytes()).hexdigest()\n"
             "PARENT_LABEL = %r\n"
+            "BASELINE_SHA256 = None\n"
+            "try:   # [h960r] a failed snapshot only disables the optional stage; the parent's submission.csv stays\n"
+            "    _ss.copyfile(WORK / 'submission.csv', WORK / '_baseline_submission.csv')\n"
+            "    BASELINE_SHA256 = _sh.sha256((WORK / '_baseline_submission.csv').read_bytes()).hexdigest()\n"
+            "except Exception as _se:\n"
+            "    print('PARENT_SNAPSHOT_FAILED', type(_se).__name__, str(_se)[:200], flush=True)\n"
             "print('PARENT_SNAPSHOT sha256 %%s | %%s' %% (BASELINE_SHA256, PARENT_LABEL), flush=True)\n" % (parent_label, parent_label))
 
 
@@ -172,6 +176,8 @@ def harden(reader, final, parent_label):
               "READER_SRC_OK = False\n"
               f"_SOURCES = {files!r}\n"
               "try:\n"
+              "    if BASELINE_SHA256 is None:\n"
+              "        raise RuntimeError('no parent snapshot: the optional student stage is skipped')\n"
               "    _wo.makedirs('/kaggle/working/own_src', exist_ok=True)\n"
               "    for _n, _s in _SOURCES.items():\n"
               "        with open('/kaggle/working/own_src/' + _n, 'w') as _fh:\n"
