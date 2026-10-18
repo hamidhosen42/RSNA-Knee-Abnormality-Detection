@@ -27,6 +27,17 @@ python ours_leg/build_h958.py --flip-r7 --out submission_h958b_r   # the patched
 python ours_leg/build_h958.py --owner foysalemonshanto --flip-r7 --out /abs/scratch/submission_h958b   # another account: build at push time
 ```
 
+## Latest submissions (2026-10-17, archived 2026-10-18)
+
+| Folder | Kernel (archived version) | Sub | Public | Note |
+|---|---|---|---|---|
+| `submission_c2` | foysalemonshanto/rsna-knee-sub-c2 v2 | 57315983 | 0.958 | **team best** (rank 254, silver, 10-18): the 0.958 notebook + nartaa S6fall-B at 1/3 rank. A copy is in `../our_base_notebook/`. |
+| `submission_c2_noflip` | foysalemonshanto/rsna-knee-sub-c2-noflip v2 | 57315976 | 0.958 | C2 with R6 flip off |
+| `submission_c2_syn0` | foysalemonshanto/rsna-knee-sub-c2-syn0 v4 (= v3) | 57320843 | 0.958 | no description |
+| `submission_c3` | foysalemonshanto/rsna-knee-sub-c3 v3 | 57307392 | 0.954 | OAI-free. Scored version unverified: v1 lacks the 10-17 review fixes; v2 and v3 have identical code. |
+| `submission_h960` | kishormorol/rsna-knee-h960 v1 | 57281541 | 0.958 | 0.958 notebook + 5 students. Team best until C2. A copy is in `../our_base_notebook/`. |
+| `submission_h958m`, `submission_h960rm` | kishormorol v1 | 57281543, 57292960 | 0.958 | 224 mirror: no gain over 0.958 |
+
 ## Best of our own notebooks (2026-10-16)
 
 | Notebook | Public | Note |
