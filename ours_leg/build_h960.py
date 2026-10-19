@@ -14,6 +14,11 @@ ONE change each, so every submission reads as a one-variable test against 0.958 
   --parent c2  H961: the same hardened student leg (--students --robust) on foysal's C2 v2 instead of the 0.958 notebook.  C2 =
                the 0.958 notebook + nartaa S6fall-B at 1/3 rank (sub 57315983, public 0.958, the team best since 10-17); its 13
                cells run unchanged (only the title markdown differs), then the snapshot, the guarded students, 0.8 / 0.2.
+  --v2         heliosli's V2 per-finding Raptor weights (public notebook "this-is-best-public-dataset-new-version-0-9586" v6,
+               scored 0.958 displayed, titled 0.9586): Lateral OA 0.20 -> 0.15, PF OA 0.60 -> 0.65, Synovitis 0.80 -> 0.85,
+               Baker's 0.35 -> 0.30 (Medial OA 0.50 and every other finding unchanged).  The weights were chosen on the public LB
+               by heliosli, not by us.  That notebook's tiny goodpjw-reader leg (weights 0.003-0.035) is not taken.
+               --parent c2 --v2 = H963; --parent c2 --students --robust --v2 = H964.
 
 The baseline file is checked by sha256; its nine cells stay byte-identical apart from the marked changes.
 
@@ -21,6 +26,8 @@ The baseline file is checked by sha256; its nine cells stay byte-identical apart
     python ours_leg/build_h960.py --students --robust --mirror224 -> candidate_notebook/submission_h960rm/   ones are moved to our_submission_notebook/)
     python ours_leg/build_h960.py --students --owner kishormorol --out /abs/scratch/submission_h960   (other account)
     python ours_leg/build_h960.py --parent c2 --students --robust --owner kishormorol -> candidate_notebook/submission_h961/
+    python ours_leg/build_h960.py --parent c2 --v2                                   -> candidate_notebook/submission_h963/
+    python ours_leg/build_h960.py --parent c2 --students --robust --v2               -> candidate_notebook/submission_h964/
 """
 import argparse
 import hashlib
@@ -42,23 +49,28 @@ C2 = "submission_c2/rsna-knee-sub-c2.ipynb"   # foysalemonshanto/rsna-knee-sub-c
 C2_SHA = "148eb4387de1aac2ccd374a8e052cdf759a0962f52c40ac06e6abe13af2942d7"
 C2_SOURCES = ["heliosli/rsna-knee-r6-frozen-fe055406-w1", "nartaa/rsna-knee-s6fall-weights",
               "nartaa/rsna-knee-publication-swa-weights-20261007", "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"]
+W_RAPTOR_C_OLD = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovitis': 0.8, \"Baker's\": 0.35}"
+W_RAPTOR_C_V2 = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.15, 'PF OA': 0.65, 'Synovitis': 0.85, \"Baker's\": 0.30}"
 ap = argparse.ArgumentParser()
 ap.add_argument("--parent", choices=["helios", "c2"], default="helios", help="helios = the scored 0.958 notebook (H960 family); "
                 "c2 = foysal's C2 v2 (H961, needs --students --robust)")
 ap.add_argument("--students", action="store_true")
 ap.add_argument("--mirror224", action="store_true")
+ap.add_argument("--v2", action="store_true", help="heliosli's V2 per-finding Raptor weights (LB-chosen by heliosli); parent c2 only")
 ap.add_argument("--robust", action="store_true", help="H960r: baseline first + snapshot, guarded student stage, checkpoint sha256, "
                 "strict acceptance (independent review 10-17); requires --students")
 ap.add_argument("--student-nb", default="submission_h957x5/rsna-knee-h957x5.ipynb", help="scored 0.8/0.2 student notebook (H957x5)")
 ap.add_argument("--owner", default="hosen42")
 ap.add_argument("--out", default=None)
 a = ap.parse_args()
-if not (a.students or a.mirror224):
-    ap.error("choose --students and/or --mirror224")
+if not (a.students or a.mirror224 or a.v2):
+    ap.error("choose --students, --mirror224 and/or --v2")
 if a.robust and not a.students:
     ap.error("--robust hardens the student stage: use it with --students")
-if a.parent == "c2" and (not (a.students and a.robust) or a.mirror224):
-    ap.error("--parent c2 (H961) takes --students --robust and no --mirror224")
+if a.v2 and a.parent != "c2":
+    ap.error("--v2 is built on --parent c2 only")
+if a.parent == "c2" and (a.mirror224 or (a.students and not a.robust)):
+    ap.error("--parent c2 takes --students only with --robust, and no --mirror224")
 
 if a.parent == "c2":   # H961: C2's 13 cells stay byte-identical apart from the title markdown (cell 0)
     raw = open(inp(C2), "rb").read()
@@ -73,6 +85,9 @@ if a.parent == "c2":   # H961: C2's 13 cells stay byte-identical apart from the 
     assert "W_S6F = 1.0 / 3.0" in src(cells[12])
     assert "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovitis': 0.8, \"Baker's\": 0.35}" in src(cells[12])
     assert "sub.to_csv(WORK / 'submission.csv', index=False)" in src(cells[12])
+    if a.v2:   # the one-line weight change, in C2's final blend cell
+        assert src(cells[12]).count(W_RAPTOR_C_OLD) == 1
+        patch(cells[12], [(W_RAPTOR_C_OLD, W_RAPTOR_C_V2)])
 else:
     raw = open(inp(BASE), "rb").read()
     assert hashlib.sha256(raw).hexdigest() == BASE_SHA, "the frozen 0.958 baseline changed"
@@ -103,7 +118,7 @@ if a.mirror224:   # E2: the [s9] lines, taken verbatim from the scored H958b 224
                       "rc = subprocess.run([sys.executable, '-u', '/tmp/raptor224_run.py'], timeout=int(2.5 * 3600)).returncode"
                       "   # [h958m] the mirror view doubles the 224 inference\n")])
 
-name = "h961" if a.parent == "c2" else ("h960r" if a.robust else "h960") if a.students else "h958m"
+name = ("h964" if a.students else "h963") if a.v2 else "h961" if a.parent == "c2" else ("h960r" if a.robust else "h960") if a.students else "h958m"
 name += "m" if (a.students and a.mirror224) else ""
 out_name = a.out or f"submission_{name}"
 base = os.path.basename(os.path.normpath(out_name))
@@ -119,14 +134,23 @@ if a.students:
     else:
         changes.append("our 5 Mirror-student readers after the R6 stage, blended last as 0.8 x rank(the 0.958 notebook's file) + "
                        "0.2 x rank(students) (weight fixed before any run; the same add-on lifted 0.954 -> 0.955 and 0.956 -> 0.957)")
+if a.v2:
+    changes.insert(0, "heliosli's V2 per-finding Raptor weights in the final blend (Lateral OA 0.15, PF OA 0.65, Synovitis 0.85, "
+                      "Baker's 0.30; chosen on the public LB by heliosli)")
 if a.mirror224:
     changes.append("nartaa's anatomical mirror view for the 224 model (as in one-free-flip), with that stage's timeout 2 h -> 2.5 h")
 if a.parent == "c2":
-    cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: C2 (the 0.958 notebook + S6fall-B 1/3) + our 5 students\n\n"
+    cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: C2 (the 0.958 notebook + S6fall-B 1/3) + "
+                  f"{' + '.join(['V2 weights'] * a.v2 + ['our 5 students'] * a.students)}\n\n"
                   "Frozen parent: foysal's C2 v2 (`foysalemonshanto/rsna-knee-sub-c2`, sub 57315983, public 0.958, the team best since "
                   "10-17) = heliosli's public blend-mine 0.958 notebook (Raptor 384 + 224 + compact R6 with flip TTA, per-finding Raptor "
-                  "weights) + nartaa's S6fall model B at 1/3 rank.  Cells 1-12 run unchanged (this title cell is the only edit).  Then: "
-                  + "; ".join(changes) + ".  If the student stage fails, runs late or is not accepted, the C2 snapshot is the submission.\n")
+                  "weights) + nartaa's S6fall model B at 1/3 rank.  "
+                  + ("Cells 1-12 run unchanged (this title cell is the only edit).  Then: " + "; ".join(changes)   # H961 text as pushed
+                     + ".  If the student stage fails, runs late or is not accepted, the C2 snapshot is the submission.\n" if not a.v2 else
+                     "Cells 1-12 run unchanged apart from this title cell and the W_RAPTOR_C line of cell 12.  Changes: "
+                     + "; ".join(changes) + "."
+                     + ("  If the student stage fails, runs late or is not accepted, the parent snapshot is the submission." if a.students else "")
+                     + "\n"))
 else:
     cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: the public 0.958 notebook + {' + '.join(['students'] * a.students + ['224 mirror'] * a.mirror224)}\n\n"
                   "Frozen base: heliosli's public *Blend mine in - private LB luck to all upvoters* v1 (public LB 0.958): Raptor 384 + "
@@ -138,7 +162,9 @@ if a.students:
     reader, final, WP, WR = student_cells(st, parent_name="the parent notebook (see PARENT_LABEL)" if a.robust else "the 0.958 notebook")
     assert (WP, WR) == (0.8, 0.2), (WP, WR)
     if a.robust:   # baseline first: c0-c8 run unchanged and contiguous, then the snapshot, then the optional student stage
-        _plabel = ("foysal's C2 v2 cells (the 0.958 notebook + nartaa S6fall-B 1/3, sub 57315983), unchanged" if a.parent == "c2" else
+        _plabel = ("foysal's C2 v2 cells (the 0.958 notebook + nartaa S6fall-B 1/3, sub 57315983) with heliosli's V2 per-finding "
+                   "Raptor weights (Lateral OA 0.15, PF OA 0.65, Synovitis 0.85, Baker's 0.30)" if a.parent == "c2" and a.v2 else
+                   "foysal's C2 v2 cells (the 0.958 notebook + nartaa S6fall-B 1/3, sub 57315983), unchanged" if a.parent == "c2" else
                    "the 0.958 notebook's cells + nartaa's 224 anatomical mirror (the H958M parent, NOT the scored 0.958 file)"
                    if a.mirror224 else "the scored 0.958 notebook's cells, unchanged")
         snap, reader, final = harden(reader, final, _plabel)
@@ -152,8 +178,11 @@ for c in nb_cells:
     if c["cell_type"] == "code":
         c["outputs"], c["execution_count"] = [], None
         compile("\n".join(l for l in src(c).splitlines() if not l.startswith(("%%", "!"))), "cell", "exec")
-if a.parent == "c2":   # the parent's code and markdown after the title, unchanged and in order
-    assert [src(c) for c in nb_cells[1:NP]] == [src(c) for c in json.loads(raw)["cells"][1:NP]]
+if a.parent == "c2":   # the parent's code and markdown after the title, unchanged and in order (cell 12: only the V2 line)
+    _orig = [src(c) for c in json.loads(raw)["cells"]]
+    if a.v2:
+        _orig[12] = _orig[12].replace(W_RAPTOR_C_OLD, W_RAPTOR_C_V2)
+    assert [src(c) for c in nb_cells[1:NP]] == _orig[1:NP]
 P["cells"] = nb_cells
 sources = (C2_SOURCES if a.parent == "c2" else BASE_SOURCES) + ([READER_ASSETS, READERS] if a.students else [])
 meta = {"id": f"{a.owner}/{slug}", "title": slug, "code_file": slug + ".ipynb", "language": "python", "kernel_type": "notebook",

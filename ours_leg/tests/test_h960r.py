@@ -15,7 +15,7 @@ def pick(cond):
     m = [src(c) for c in cells if c["cell_type"] == "code" and cond(src(c))]
     assert len(m) == 1, len(m)
     return m[0]
-blend = pick(lambda t: "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2" in t and t.startswith(("# Stage 3", "# [C2 10-17] final")))
+blend = pick(lambda t: "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': " in t and t.startswith(("# Stage 3", "# [C2 10-17] final")))   # 0.2, or 0.15 (V2)
 C2 = blend.startswith("# [C2 10-17] final")   # H961: the parent blend also reads nartaa's S6fall-B file
 
 

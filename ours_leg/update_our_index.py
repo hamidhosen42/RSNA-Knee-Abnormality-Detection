@@ -38,7 +38,8 @@ for d in sorted(glob.glob(os.path.join(NB, "submission_*"))):
     rows.append({"folder": os.path.relpath(d, NB), "kind": "submission notebook",
                  "files": ";".join(sorted(os.path.basename(x) for x in glob.glob(d + "/*.ipynb"))), "kaggle_kernel": k,
                  "run_by": ";".join(sorted({s["submittedBy"] for s in ss})), "submission_ids": ";".join(str(s["ref"]) for s in ss),
-                 "public_score": ";".join(sorted({s["publicScore"] for s in scored}, reverse=True)) or ("error" if ss else "not submitted"),
+                 "public_score": ";".join(sorted({s["publicScore"] for s in scored}, reverse=True))
+                                 or ("pending" if any("pending" in str(s.get("status", "")).lower() for s in ss) else "error" if ss else "not submitted"),
                  "submitted": ss[0]["date"][:10] if ss else "", "description": ss[-1]["description"][:150] if ss else ""})
 for d in sorted(glob.glob(os.path.join(TRAINING, "*"))):
     k = kernel_id(d)
