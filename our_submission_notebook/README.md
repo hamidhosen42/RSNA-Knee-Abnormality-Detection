@@ -27,6 +27,20 @@ python ours_leg/build_h958.py --flip-r7 --out submission_h958b_r   # the patched
 python ours_leg/build_h958.py --owner foysalemonshanto --flip-r7 --out /abs/scratch/submission_h958b   # another account: build at push time
 ```
 
+## C2-family experiments (10-18 / 10-19, hosen42; each smoke-tested on Kaggle before submitting)
+
+Built with `ours_leg/build_h960.py --parent c2 ...`. Tests are in `ours_leg/tests/`: `test_c2_family_build`, `test_h960r`, `test_v2_blend`, `test_mavit_leg`, `test_student_tta`, `test_partb`, and `tta/`.
+
+| Folder | Change vs its parent | Sub | Public |
+|---|---|---|---|
+| `submission_h961` | C2 + our 5 students 0.8/0.2 | 57369206 | 0.958 |
+| `submission_h963` | C2 + heliosli V2 per-finding Raptor weights (LB-chosen by heliosli) | 57369271 | 0.958 |
+| `submission_h964` | C2 + V2 + students | 57369477 | 0.958, **team best** (beat C2, H961 and H963) |
+| `submission_h967` | H964 + hengck23 MaViT leg after the final cell, 0.9/0.1 rank | 57406594 | pending |
+| `submission_h968` | H964 + anatomical L/R mirror TTA for the students (2 GPUs, guarded) | 57409126 | pending |
+
+Built but not submitted: `../candidate_notebook/submission_h965` (H964 + heliosli Part B, effect expected about 0) and `submission_h966` (students at 0.3; rejected as LB tuning).
+
 ## Latest submissions (2026-10-17, archived 2026-10-18)
 
 | Folder | Kernel (archived version) | Sub | Public | Note |

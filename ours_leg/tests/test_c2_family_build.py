@@ -22,7 +22,11 @@ OLD = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovit
 V2 = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.15, 'PF OA': 0.65, 'Synovitis': 0.85, \"Baker's\": 0.30}"
 C2_SOURCES = ["heliosli/rsna-knee-r6-frozen-fe055406-w1", "nartaa/rsna-knee-s6fall-weights",
               "nartaa/rsna-knee-publication-swa-weights-20261007", "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"]
-VARIANTS = {"h961": dict(v2=False, students=True), "h963": dict(v2=True, students=False), "h964": dict(v2=True, students=True)}
+VARIANTS = {"h961": dict(v2=False, students=True), "h963": dict(v2=True, students=False), "h964": dict(v2=True, students=True),
+            "h965": dict(v2=True, students=True, partb=True), "h966": dict(v2=True, students=True, ws=0.3),
+            "h967": dict(v2=True, students=True, mavit=0.1), "h968": dict(v2=True, students=True, tta=True)}
+PARTB_SRC = os.path.join(ROOT, "public_notebooks", "0.958_159v_heliosli__this-is-best-public-dataset-new-version-0-9586.ipynb")
+PARTB_SHA = "cb0e1eac33a00f96b7d1bcc0e9914f7eb045af2bc9cd01bc290b2213e7f17ddd"
 
 raw = open(C2P, "rb").read()
 assert hashlib.sha256(raw).hexdigest() == C2_SHA
@@ -36,7 +40,7 @@ for d in sys.argv[1:] or [os.path.join(ROOT, "candidate_notebook", "submission_h
     nb = json.load(open(os.path.join(d, "rsna-knee-%s.ipynb" % name)))["cells"]
     meta = json.load(open(os.path.join(d, "kernel-metadata.json")))
 
-    assert len(nb) == (19 if v["students"] else 13), len(nb)
+    assert len(nb) == (19 if v["students"] else 13) + (4 if v.get("partb") or v.get("mavit") else 0), len(nb)
     assert src(nb[0]).startswith("# RSNA Knee %s: C2" % name.upper()) and "57315983" in src(nb[0])
     want = [src(c) for c in c2]
     if v["v2"]:
@@ -61,20 +65,55 @@ for d in sys.argv[1:] or [os.path.join(ROOT, "candidate_notebook", "submission_h
         assert ("V2 per-finding" in snap) == v["v2"]
         assert writer.startswith("# [h960r] the student sources") and run.startswith("# [h960r] the whole optional")
         assert final.startswith("# [h957] final:") and "E1_INVALID" in final
-        assert [c["cell_type"] for c in nb[13:]] == ["code", "markdown", "code", "code", "markdown", "code"]
+        assert [c["cell_type"] for c in nb[13:19]] == ["code", "markdown", "code", "code", "markdown", "code"]
         ok("after C2: snapshot (PARENT_LABEL says what the parent is) -> writer -> guarded run -> strict final")
         assert "if 9 * 3600 - (time.time() - NB_T0) < 50 * 60:" in run and "if 9 * 3600 - (time.time() - NB_T0) < 45 * 60:" in run
         assert "timeout=max(60, 9 * 3600 - (time.time() - NB_T0) - 20 * 60)" in run
         for k, h in CKPT_SHA256.items():
             assert run.count(h) == 1 and k in run, k
-        assert "W_PARENT, W_READER = 0.8, 0.2" in final
+        ws = v.get("ws", 0.2)
+        assert re.search(r"^W_PARENT, W_READER = %g, %g(\s|$)" % (round(1 - ws, 4), ws), final, re.M), "student weight"
+        assert ("# [h957] final: %g x rank(" % round(1 - ws, 4)) in final and (") + %g x rank(our Mirror-student ensemble)" % ws) in final
         assert "_snap_sha() != BASELINE_SHA256" in final and "_fo.replace(_hw / '_h960_candidate.csv', _hw / 'submission.csv')" in final
         assert re.findall(r"copyfile\(([^)]*)\)", snap) == ["WORK / 'submission.csv', WORK / '_baseline_submission.csv'"]
-        writes = [i for i, c in enumerate(nb[14:], 14) if c["cell_type"] == "code" and "submission.csv'" in src(c).replace("_submission.csv'", "")]
+        writes = [i for i, c in enumerate(nb[14:19], 14) if c["cell_type"] == "code" and "submission.csv'" in src(c).replace("_submission.csv'", "")]
         assert writes == [18], writes
+        if v.get("partb"):   # Part B after our final cell: backup, heliosli's cell 9 + the timeout patch only, verify
+            raw_pb = open(PARTB_SRC, "rb").read()
+            assert hashlib.sha256(raw_pb).hexdigest() == PARTB_SHA
+            pb0 = src(json.loads(raw_pb)["cells"][9])
+            backup, pb, verify = src(nb[20]), src(nb[21]), src(nb[22])
+            assert nb[19]["cell_type"] == "markdown" and backup.startswith("# [h965] backup") and verify.startswith("# [h965] verify")
+            old_run = ('                  check=True, env=_o_env)\n')
+            new_run = ('                  check=True, env=_o_env,   # [h965] never past 9 h: a timeout lands in the except below (file restored)\n'
+                       '                  timeout=max(60, int(9 * 3600 - (_o_time.time() - globals().get("NB_T0", _o_time.time())) - 15 * 60)))\n')
+            assert pb0.count(old_run) == 1 and pb == pb0.replace(old_run, new_run)
+            assert "_h965_pre_partb.csv" in backup and "_kv_os.replace('/kaggle/working/_h965_restore.csv', '/kaggle/working/submission.csv')" in verify
+            ok("Part B = heliosli v6 cell 9 + one timeout patch, after our final cell, between backup and verify cells")
+        if v.get("mavit"):   # the MaViT leg after our final cell = exactly mavit_leg.mavit_cells(W)
+            from mavit_leg import mavit_cells, CKPT_SHA
+            want_cells, script = mavit_cells(v["mavit"])
+            assert [src(c) for c in nb[19:23]] == [src(c) for c in want_cells] and [c["cell_type"] for c in nb[19:23]] == ["markdown"] + ["code"] * 3
+            assert CKPT_SHA in src(nb[20]) and "W_MAVIT = %r" % v["mavit"] in src(nb[22]) and "_mr_left < 70 * 60" in src(nb[21])
+            ok("MaViT leg = mavit_cells(%g) after our final cell: writer (backup + script with checkpoint sha256), runner, blend" % v["mavit"])
         ok("time guards on C2's NB_T0, 5 checkpoint sha256, 0.8/0.2, snapshot check, only the final cell replaces submission.csv")
+        h964 = json.load(open(os.path.join(ROOT, "our_submission_notebook", "submission_h964", "rsna-knee-h964.ipynb")))["cells"]
+        if v.get("tta"):   # H968: the writer also writes ours_leg/infer_tta.py; the run cell's reader block runs it, plain fallback
+            import ast
+            line = next(l for l in writer.splitlines() if l.startswith("_SOURCES = "))
+            files = ast.literal_eval(line[len("_SOURCES = "):])
+            assert sorted(files) == ["infer.py", "infer_tta.py", "knee.py", "preprocess.py"]
+            assert files["infer_tta.py"] == open(os.path.join(ROOT, "ours_leg", "infer_tta.py")).read()
+            line0 = next(l for l in src(h964[15]).splitlines() if l.startswith("_SOURCES = "))
+            files0 = ast.literal_eval(line0[len("_SOURCES = "):])
+            assert all(files[k] == files0[k] for k in files0) and writer.replace(line, line0) == src(h964[15])
+            assert 'rc = _run_reader("infer_tta.py")' in run and 'rc = _run_reader("infer.py")' in run and "len(_P) < 200" in run
+            assert run.count("_rsh.copyfile(\"/kaggle/working/reader_sub_plain.csv\", \"/kaggle/working/reader_sub.csv\")") == 1
+            ok("student TTA: writer = H964's + infer_tta.py (repo file); reader block = TTA with plain fallback and the >= 200-study guard")
+        elif v.get("v2"):
+            assert writer == src(h964[15]) and run == src(h964[16]), "student cells differ from H964"
 
-    want_sources = C2_SOURCES + ([READER_ASSETS, READERS] if v["students"] else [])
+    want_sources = C2_SOURCES + ([READER_ASSETS, READERS] if v["students"] else []) + (["hengck23/hengck23-rnsa-knee"] if v.get("mavit") else [])
     assert meta["dataset_sources"] == want_sources, meta["dataset_sources"]
     assert meta["competition_sources"] == ["rsna-knee-abnormality-detection"] and meta["id"].endswith("/rsna-knee-" + name)
     assert meta["enable_gpu"] is True and meta["enable_internet"] is False and meta["machine_shape"] == "NvidiaTeslaT4"

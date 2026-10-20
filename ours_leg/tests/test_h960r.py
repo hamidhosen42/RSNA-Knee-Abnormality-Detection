@@ -28,6 +28,8 @@ writer = pick(lambda t: t.startswith("# [h960r] the student sources"))
 run_cell = pick(lambda t: t.startswith("# [h960r] the whole optional"))
 final = pick(lambda t: t.startswith("# [h957] final:"))
 assert "E1_INVALID" in final and "PARENT_LABEL" in snap
+WP, WR = map(float, re.search(r"^W_PARENT, W_READER = ([0-9.]+), ([0-9.]+)", final, re.M).groups())   # 0.8/0.2, or e.g. 0.7/0.3 (H966)
+assert abs(WP + WR - 1) < 1e-9, (WP, WR)
 order = [i for i, c in enumerate(cells) if c["cell_type"] == "code" and src(c) in (blend, snap, writer, run_cell, final)]
 assert [src(cells[i]) for i in order] == [blend, snap, writer, run_cell, final], "cell order"
 labs = ["ACL","MCL","Medial Meniscus","Lateral Meniscus","Medial OA","Lateral OA","PF OA","Effusion","Synovitis","Baker's","Contusion","Fracture"]
@@ -90,9 +92,9 @@ for case, kw in cases.items():
     if case == "normal":
         par = pd.read_csv(WORK / "_baseline_submission.csv", dtype={"StudyInstanceUID": str})
         for j, c in enumerate(labs):
-            assert np.allclose(out[c].values, 0.8 * pct(par[c].values) + 0.2 * pct(st[:, j]), atol=1e-6), c
+            assert np.allclose(out[c].values, WP * pct(par[c].values) + WR * pct(st[:, j]), atol=1e-6), c
         assert rec["status"] == "blended"
-        print(f"A {case:10s} OK | 0.8 x rank(snapshot) + 0.2 x rank(students) | receipt parent_sha {rec['parent_sha256'][:12]}")
+        print(f"A {case:10s} OK | {WP:g} x rank(snapshot) + {WR:g} x rank(students) | receipt parent_sha {rec['parent_sha256'][:12]}")
     else:
         assert (WORK / "submission.csv").read_bytes() == base_bytes, case   # the snapshot, byte for byte
         assert rec["status"].startswith("E1 INVALID - parent snapshot kept"), rec["status"]
@@ -105,7 +107,11 @@ def fake_run(args, **kw):
     calls.append((list(args), kw))
     if "pip" in args: return subprocess.CompletedProcess(args, 1)       # pip fails, as in the real logs
     if MODE["m"] == "timeout": raise subprocess.TimeoutExpired(args, kw.get("timeout"))
-    Path(args[4]).write_text("StudyInstanceUID,ACL\n1.2.3,0.5\n"); return subprocess.CompletedProcess(args, 0)
+    Path(args[4]).write_text("StudyInstanceUID,ACL\n1.2.3,0.5\n")
+    if str(args[1]).endswith("infer_tta.py"):   # H968: the TTA script also writes its plain and mirror passes
+        for _sfx in ("_plain", "_mirror"):
+            Path(str(args[4])[:-4] + _sfx + ".csv").write_text("StudyInstanceUID,ACL\n1.2.3,0.5\n")
+    return subprocess.CompletedProcess(args, 0)
 subprocess.run = fake_run
 kw_writer_fail = {"writerfail": True}
 OLD = ["cnxt_plC2_full.pt", "cnxt_plC3_full.pt", "cnxt_plC_full.pt", "cnxt_plS75_full.pt", "cnxt_plT75s1_full.pt"]
@@ -167,7 +173,11 @@ def runC(case, bad_reader=None):
         if bad_reader == "missing": d = d.iloc[2:]
         if bad_reader == "nan": d.iloc[5, 3] = np.nan
         if bad_reader == "nowrite": return subprocess.CompletedProcess(args, 0)     # rc 0 but no fresh file
-        d.to_csv(args[4], index=False); return subprocess.CompletedProcess(args, 0)
+        d.to_csv(args[4], index=False)
+        if str(args[1]).endswith("infer_tta.py"):   # H968: plain = mirror = the reader file, so 0.5 x (plain + mirror) = it
+            for _sfx in ("_plain", "_mirror"):
+                d.to_csv(str(args[4])[:-4] + _sfx + ".csv", index=False)
+        return subprocess.CompletedProcess(args, 0)
     subprocess.run = reader_run
     g = {"DATA": DATA, "WORK": WORK, "pred": pred, "NB_T0": time.time(), "RAPTOR_SECONDS": 1.0, "RAPTOR224_SECONDS": 1.0, "S6F_SECONDS": 1.0, "time": time,
          "json": json, "display": lambda *a, **k: None}
@@ -182,9 +192,9 @@ g, rec, out, base_bytes, st, WORK = runC("full")
 par = pd.read_csv(WORK / "_baseline_submission.csv", dtype={"StudyInstanceUID": str})
 assert rec["status"] == "blended" and g["READER_OK"] and rec["reader_info"]["n_ckpt"] == 5 and "parent" in rec["weights"], rec
 for j, c in enumerate(labs):
-    assert np.allclose(out[c].values, 0.8 * pct(par[c].values) + 0.2 * pct(st[:, j]), atol=1e-6), c
+    assert np.allclose(out[c].values, WP * pct(par[c].values) + WR * pct(st[:, j]), atol=1e-6), c
 assert not (WORK / "_h960_candidate.csv").exists()
-print("C full        OK | writer -> run -> 12-target reader file -> strict final = 0.8/0.2 blend; stale file removed; atomic replace")
+print("C full        OK | writer -> run -> 12-target reader file -> strict final = WP/WR blend; stale file removed; atomic replace")
 for case in ("missing", "nan", "nowrite"):
     g, rec, out, base_bytes, st, WORK = runC(case, bad_reader=case)
     assert (WORK / "submission.csv").read_bytes() == base_bytes and rec["status"].startswith("E1 INVALID - parent snapshot kept"), (case, rec["status"])
