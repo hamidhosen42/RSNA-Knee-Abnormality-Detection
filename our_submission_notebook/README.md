@@ -36,8 +36,13 @@ Built with `ours_leg/build_h960.py --parent c2 ...`. Tests are in `ours_leg/test
 | `submission_h961` | C2 + our 5 students 0.8/0.2 | 57369206 | 0.958 |
 | `submission_h963` | C2 + heliosli V2 per-finding Raptor weights (LB-chosen by heliosli) | 57369271 | 0.958 |
 | `submission_h964` | C2 + V2 + students | 57369477 | 0.958, **team best** (beat C2, H961 and H963) |
-| `submission_h967` | H964 + hengck23 MaViT leg after the final cell, 0.9/0.1 rank | 57406594 | pending |
-| `submission_h968` | H964 + anatomical L/R mirror TTA for the students (2 GPUs, guarded) | 57409126 | pending |
+| `submission_h967` | H964 + hengck23 MaViT leg after the final cell, 0.9/0.1 rank | 57406594 | **0.957** (MaViT hurt) |
+| `submission_h968` | H964 + anatomical L/R mirror TTA for the students (2 GPUs, guarded) | 57409126 | 0.958 (order vs H964 unknown) |
+| `submission_h969` | H964 + foysal's BK (Baker's from the R6 plain fold mean, state stacker off) = H961BK + V2 | 57447421 | pending |
+| `submission_h970` | H969 + the student mirror TTA | 57447461 | pending |
+
+foysal's H961BK (57417566, H961 + BK) has been team best since 10-20. His H961S3 (students 0.3) and H961SB (S3 + BK) scored below it, so student weight 0.3 hurts.
+Reading rule, fixed before the results: if the team best moves to H970, keep the TTA; if it moves to H969, drop the TTA; if it stays on H961BK, V2 on top of BK has not been shown.
 
 Built but not submitted: `../candidate_notebook/submission_h965` (H964 + heliosli Part B, effect expected about 0) and `submission_h966` (students at 0.3; rejected as LB tuning).
 

@@ -24,7 +24,13 @@ C2_SOURCES = ["heliosli/rsna-knee-r6-frozen-fe055406-w1", "nartaa/rsna-knee-s6fa
               "nartaa/rsna-knee-publication-swa-weights-20261007", "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"]
 VARIANTS = {"h961": dict(v2=False, students=True), "h963": dict(v2=True, students=False), "h964": dict(v2=True, students=True),
             "h965": dict(v2=True, students=True, partb=True), "h966": dict(v2=True, students=True, ws=0.3),
-            "h967": dict(v2=True, students=True, mavit=0.1), "h968": dict(v2=True, students=True, tta=True)}
+            "h967": dict(v2=True, students=True, mavit=0.1), "h968": dict(v2=True, students=True, tta=True),
+            "h969": dict(v2=True, students=True, bk=True), "h970": dict(v2=True, students=True, bk=True, tta=True),
+            "h971": dict(v2=True, students=True, bk=True, fk=True), "h972": dict(v2=True, students=True, bk=True, fk=True, tta=True),
+            "h973": dict(v2=False, students=True, bk=True, tta=True), "h974": dict(v2=False, students=True, bk=True, fk=True)}
+# R6 switches in C2 cell 9.  BK = foysal's lines, cut by r6_switches.bk_new() from HIS archived notebook (sha256-checked),
+# so the check is independent of the candidate; FK = the same pattern for the fluid stacker.
+from r6_switches import BK_CELL9_SHA, BK_OLD, FK_NEW, FK_OLD, bk_new  # noqa: E402
 PARTB_SRC = os.path.join(ROOT, "public_notebooks", "0.958_159v_heliosli__this-is-best-public-dataset-new-version-0-9586.ipynb")
 PARTB_SHA = "cb0e1eac33a00f96b7d1bcc0e9914f7eb045af2bc9cd01bc290b2213e7f17ddd"
 
@@ -47,9 +53,18 @@ for d in sys.argv[1:] or [os.path.join(ROOT, "candidate_notebook", "submission_h
         assert want[12].count(OLD) == 1
         want[12] = want[12].replace(OLD, V2)
         assert src(nb[12]).count(V2) == 1 and OLD not in src(nb[12])
+    if v.get("bk"):   # cell 9: exactly one line replaced by foysal's 4 lines (from his notebook); the stacker adopts Baker's only
+        assert want[9].count(BK_OLD) == 1 and BK_OLD not in src(nb[9]) and 'assert _sst_adopted == ["Baker\'s"]' in src(nb[9])
+        want[9] = want[9].replace(BK_OLD, bk_new())
+        if not v.get("fk"):   # BK alone: cell 9 is foysal's scored cell 9, byte for byte
+            assert hashlib.sha256(src(nb[9]).encode()).hexdigest() == BK_CELL9_SHA
+    if v.get("fk"):   # cell 9: the fluid-stacker line replaced by FK_NEW; the fluid stacker adopts Effusion only
+        assert want[9].count(FK_OLD) == 1 and FK_OLD not in src(nb[9]) and 'assert _fst_adopted == ["Effusion"]' in src(nb[9])
+        want[9] = want[9].replace(FK_OLD, FK_NEW)
     assert [src(c) for c in nb[1:13]] == want[1:13]
     assert [c["cell_type"] for c in nb[:13]] == [c["cell_type"] for c in c2]
-    ok("cells 1-12 = C2's cells 1-12%s, same order and type" % (" (cell 12: only W_RAPTOR_C -> V2)" if v["v2"] else ""))
+    ok("cells 1-12 = C2's cells 1-12%s, same order and type" % "".join(t for t, f in (
+        (" (cell 9: foysal's BK lines)", v.get("bk")), (" (cell 9: FK lines)", v.get("fk")), (" (cell 12: only W_RAPTOR_C -> V2)", v["v2"])) if f))
 
     for i, c in enumerate(nb):
         if c["cell_type"] == "code":

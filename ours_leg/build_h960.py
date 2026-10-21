@@ -25,6 +25,11 @@ ONE change each, so every submission reads as a one-variable test against 0.958 
                his per-finding weights 0.003-0.035), appended AFTER our final cell ("end" mode, as heliosli runs it), so the
                student leg keeps its time; [h965] patches add a subprocess timeout (9 h - elapsed - 15 min) and a backup /
                verify pair around it (any problem restores the pre-Part-B file).  Needs --name.
+  --bk         foysal's H961BK change (sub 57417566, team best 10-20): the R6 worker gets no --state-stacker, so Baker's is the
+               plain fold mean (+ flip) instead of the state stacker (which adopts only Baker's; asserted).  His exact 4 lines
+               replace one line of C2 cell 9.  Parent c2 only.
+  --fk         the same pattern for R6's fluid stacker (ours_leg/r6_switches.py): no --fluid-stacker, so Effusion is the plain
+               fold mean (+ flip); R6's fluid_stacker.json says Effusion was kept by a user override of its own DROP rule.
   --student-tta  anatomical left-right mirror TTA for the 5 students (ours_leg/infer_tta.py, drafted and tested by the 10-19
                research workflow): each study decoded once, plain pass on cuda:0 = H964's exact computation, mirror pass on
                cuda:1 (sagittal: slice order reversed, pos -> 1 - pos; coronal / axial: image columns flipped; no label swap,
@@ -47,6 +52,10 @@ The baseline file is checked by sha256; its nine cells stay byte-identical apart
     python ours_leg/build_h960.py --parent c2 --students --robust --v2 --student-weight 0.3 --name h966
     python ours_leg/build_h960.py --parent c2 --students --robust --v2 --mavit 0.1 --name h967
     python ours_leg/build_h960.py --parent c2 --students --robust --v2 --student-tta --name h968
+    python ours_leg/build_h960.py --parent c2 --students --robust --v2 --bk --name h969
+    python ours_leg/build_h960.py --parent c2 --students --robust --v2 --bk --student-tta --name h970
+    python ours_leg/build_h960.py --parent c2 --students --robust --v2 --bk --fk --name h971          (+ --student-tta: h972)
+    python ours_leg/build_h960.py --parent c2 --students --robust --bk --student-tta --name h973       (V2-free hedge)
 """
 import argparse
 import hashlib
@@ -58,6 +67,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths import CANDIDATES, inp, out_dir, write_json, write_text  # noqa: E402
 from student_leg import READERS, READER_ASSETS, harden, patch, src, student_cells  # noqa: E402
 from mavit_leg import MAVIT_DATASET, mavit_cells  # noqa: E402
+from r6_switches import BK_OLD, FK_NEW, FK_OLD, bk_new  # noqa: E402
 
 BASE = "our_base_notebook/0.958_kishormorol__rsna-knee-helios-blend-fork.ipynb"
 BASE_SHA = "00ca614beec23736346df921e3305742bf8533b7cfd69a208880022f899fa1d7"   # full sha256 of the scored 0.958 notebook
@@ -71,6 +81,7 @@ C2_SOURCES = ["heliosli/rsna-knee-r6-frozen-fe055406-w1", "nartaa/rsna-knee-s6fa
               "nartaa/rsna-knee-publication-swa-weights-20261007", "heliosli/rsna-orthofoundation-fold0-epoch7-20261004"]
 W_RAPTOR_C_OLD = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovitis': 0.8, \"Baker's\": 0.35}"
 W_RAPTOR_C_V2 = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.15, 'PF OA': 0.65, 'Synovitis': 0.85, \"Baker's\": 0.30}"
+BK_NEW = bk_new()   # foysal's H961BK cell-9 lines, read from his archived notebook (sha256-checked)
 TTA_SRC = "ours_leg/infer_tta.py"   # plain + anatomical mirror pass for the students (the draft's sha256 below)
 TTA_SHA = "604fd196536ec9059b2d43513ede4737e618b1e1c1fa5d3fcb9e536d08886cb8"
 TTA_OLD = (  # H964 cell 16: the reader-run block inside its try (replaced as a whole by --student-tta)
@@ -150,6 +161,8 @@ ap.add_argument("--robust", action="store_true", help="H960r: baseline first + s
 ap.add_argument("--student-nb", default="submission_h957x5/rsna-knee-h957x5.ipynb", help="scored 0.8/0.2 student notebook (H957x5)")
 ap.add_argument("--student-weight", type=float, default=0.2, help="student share of the final blend (default 0.2)")
 ap.add_argument("--partb", action="store_true", help="append heliosli's Part B goodpjw-reader leg after the final cell")
+ap.add_argument("--bk", action="store_true", help="foysal's H961BK: Baker's from the R6 plain fold mean (state stacker off)")
+ap.add_argument("--fk", action="store_true", help="R6 fluid stacker off: Effusion from the R6 plain fold mean (r6_switches.py)")
 ap.add_argument("--student-tta", action="store_true", help="plain + anatomical mirror TTA for the students (ours_leg/infer_tta.py)")
 ap.add_argument("--mavit", type=float, default=0.0, help="weight of hengck23's MaViT leg after the final cell (0 = off)")
 ap.add_argument("--name", default=None, help="experiment name (submission_<name>, rsna-knee-<name>) for --student-weight / --partb")
@@ -160,6 +173,8 @@ if not (a.students or a.mirror224 or a.v2):
     ap.error("choose --students, --mirror224 and/or --v2")
 if a.robust and not a.students:
     ap.error("--robust hardens the student stage: use it with --students")
+if (a.bk or a.fk) and not (a.parent == "c2" and a.name):
+    ap.error("--bk / --fk need --parent c2 and --name")
 if a.v2 and a.parent != "c2":
     ap.error("--v2 is built on --parent c2 only")
 if a.parent == "c2" and (a.mirror224 or (a.students and not a.robust)):
@@ -186,6 +201,10 @@ if a.parent == "c2":   # H961: C2's 13 cells stay byte-identical apart from the 
     assert "W_S6F = 1.0 / 3.0" in src(cells[12])
     assert "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovitis': 0.8, \"Baker's\": 0.35}" in src(cells[12])
     assert "sub.to_csv(WORK / 'submission.csv', index=False)" in src(cells[12])
+    if a.bk:   # foysal's H961BK: the R6 worker runs without the state stacker (Baker's = plain fold mean + flip)
+        patch(cells[9], [(BK_OLD, BK_NEW)])
+    if a.fk:   # the R6 worker runs without the fluid stacker (Effusion = plain fold mean + flip)
+        patch(cells[9], [(FK_OLD, FK_NEW)])
     if a.v2:   # the one-line weight change, in C2's final blend cell
         assert src(cells[12]).count(W_RAPTOR_C_OLD) == 1
         patch(cells[12], [(W_RAPTOR_C_OLD, W_RAPTOR_C_V2)])
@@ -244,6 +263,11 @@ if a.students and WS != 0.2:   # [h966] only the weight words change; the 0.2 te
 if a.partb:
     changes.append("heliosli's Part B (goodpjw2008's 2.5D ConvNeXt reader, 3 folds, per-finding weights 0.003-0.035, his notebook "
                    "cell 9 unchanged apart from a subprocess timeout), run after our final cell with a backup / verify guard")
+if a.bk:
+    changes.insert(0, "foysal's H961BK change: Baker's from the R6 plain fold mean, state stacker off (cell 9, his exact lines)")
+if a.fk:
+    changes.insert(1 if a.bk else 0, "R6 fluid stacker off: Effusion from the R6 plain fold mean (+ flip), as R6's own pre-registered "
+                   "rule said (its json records a user override); cell 9, one line")
 if a.student_tta:
     changes.append("anatomical left-right mirror TTA for the 5 students (each study decoded once, mirror pass on the second T4, "
                    "reader file = 0.5 x (plain + mirror); a label-free guard on >= 200 studies falls back to the plain pass)")
@@ -255,15 +279,18 @@ if a.v2:
                       "Baker's 0.30; chosen on the public LB by heliosli)")
 if a.mirror224:
     changes.append("nartaa's anatomical mirror view for the 224 model (as in one-free-flip), with that stage's timeout 2 h -> 2.5 h")
+EDITS = (["the state-stacker line of cell 9"] * a.bk + ["the fluid-stacker line of cell 9"] * a.fk
+         + ["the W_RAPTOR_C line of cell 12"] * a.v2)
 if a.parent == "c2":
     cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: C2 (the 0.958 notebook + S6fall-B 1/3) + "
-                  f"{' + '.join(['V2 weights'] * a.v2 + ['our 5 students' + ('' if WS == 0.2 else ' at %g' % WS)] * a.students + ['Part B reader'] * a.partb + ['MaViT %g' % a.mavit] * bool(a.mavit) + ['student mirror TTA'] * a.student_tta)}\n\n"
+                  f"{' + '.join(['BK Baker'] * a.bk + ['FK Effusion'] * a.fk + ['V2 weights'] * a.v2 + ['our 5 students' + ('' if WS == 0.2 else ' at %g' % WS)] * a.students + ['Part B reader'] * a.partb + ['MaViT %g' % a.mavit] * bool(a.mavit) + ['student mirror TTA'] * a.student_tta)}\n\n"
                   "Frozen parent: foysal's C2 v2 (`foysalemonshanto/rsna-knee-sub-c2`, sub 57315983, public 0.958, the team best since "
                   "10-17) = heliosli's public blend-mine 0.958 notebook (Raptor 384 + 224 + compact R6 with flip TTA, per-finding Raptor "
                   "weights) + nartaa's S6fall model B at 1/3 rank.  "
                   + ("Cells 1-12 run unchanged (this title cell is the only edit).  Then: " + "; ".join(changes)   # H961 text as pushed
-                     + ".  If the student stage fails, runs late or is not accepted, the C2 snapshot is the submission.\n" if not a.v2 else
-                     "Cells 1-12 run unchanged apart from this title cell and the W_RAPTOR_C line of cell 12.  Changes: "
+                     + ".  If the student stage fails, runs late or is not accepted, the C2 snapshot is the submission.\n" if not EDITS else
+                     "Cells 1-12 run unchanged apart from this title cell" + "".join(", " + e for e in EDITS[:-1]) + " and " + EDITS[-1]
+                     + ".  Changes: "
                      + "; ".join(changes) + "."
                      + ("  If the student stage fails, runs late or is not accepted, the parent snapshot is the submission." if a.students else "")
                      + "\n"))
@@ -278,9 +305,12 @@ if a.students:
     reader, final, WP, WR = student_cells(st, parent_name="the parent notebook (see PARENT_LABEL)" if a.robust else "the 0.958 notebook")
     assert (WP, WR) == (0.8, 0.2), (WP, WR)
     if a.robust:   # baseline first: c0-c8 run unchanged and contiguous, then the snapshot, then the optional student stage
-        _plabel = ("foysal's C2 v2 cells (the 0.958 notebook + nartaa S6fall-B 1/3, sub 57315983) with heliosli's V2 per-finding "
-                   "Raptor weights (Lateral OA 0.15, PF OA 0.65, Synovitis 0.85, Baker's 0.30)" if a.parent == "c2" and a.v2 else
-                   "foysal's C2 v2 cells (the 0.958 notebook + nartaa S6fall-B 1/3, sub 57315983), unchanged" if a.parent == "c2" else
+        _mods = (["foysal's H961BK Baker's change (R6 state stacker off)"] * a.bk
+                 + ["the R6 fluid stacker off (Effusion = plain fold mean + flip)"] * a.fk
+                 + ["heliosli's V2 per-finding Raptor weights (Lateral OA 0.15, PF OA 0.65, Synovitis 0.85, Baker's 0.30)"] * a.v2)
+        _c2 = "foysal's C2 v2 cells (the 0.958 notebook + nartaa S6fall-B 1/3, sub 57315983)"
+        _plabel = ((_c2 + ", unchanged" if not _mods else _c2 + " with " + "".join(m + ", " for m in _mods[:-2])
+                    + (_mods[-2] + " and " if len(_mods) > 1 else "") + _mods[-1]) if a.parent == "c2" else
                    "the 0.958 notebook's cells + nartaa's 224 anatomical mirror (the H958M parent, NOT the scored 0.958 file)"
                    if a.mirror224 else "the scored 0.958 notebook's cells, unchanged")
         snap, reader, final = harden(reader, final, _plabel)
@@ -361,6 +391,10 @@ if a.parent == "c2":   # the parent's code and markdown after the title, unchang
     _orig = [src(c) for c in json.loads(raw)["cells"]]
     if a.v2:
         _orig[12] = _orig[12].replace(W_RAPTOR_C_OLD, W_RAPTOR_C_V2)
+    if a.bk:
+        _orig[9] = _orig[9].replace(BK_OLD, BK_NEW)
+    if a.fk:
+        _orig[9] = _orig[9].replace(FK_OLD, FK_NEW)
     assert [src(c) for c in nb_cells[1:NP]] == _orig[1:NP]
 P["cells"] = nb_cells
 if a.mavit:   # hengck23's MaViT after our final cell (writer / runner / blend cells, none raises)
