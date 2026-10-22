@@ -30,7 +30,8 @@ VARIANTS = {"h961": dict(v2=False, students=True), "h963": dict(v2=True, student
             "h973": dict(v2=False, students=True, bk=True, tta=True), "h974": dict(v2=False, students=True, bk=True, fk=True),
             "h975": dict(v2=True, students=True, bk=True, partb=True), "h976": dict(v2=True, students=True, bk=True, s1=True),
             "h977": dict(v2=True, students=True, bk=True, partb=True, s1=True), "h978": dict(v2=True, students=True, bk=True, fk=True, partb=True, s1=True),
-            "h979": dict(v2=True, students=True, bk=True, fk=True, partb=True)}
+            "h979": dict(v2=True, students=True, bk=True, fk=True, partb=True),
+            "h980": dict(v2=True, students=True, bk=True, fk=True, s1=True), "h981": dict(v2=False, students=True, bk=True, fk=True, s1=True)}
 S1_SHA = {"cnxt_plE75s_full.pt": "9efa571b1a1f9c64fe1a837950b270c7530db5e565a4129f07a2c5f836c559a3",   # hosen42/rsna-knee-gpjw-student5 output,
           "cnxt_plE75t_full.pt": "6e55ab9126a3409fc14b91c191507de91a825a4b400720d0607ac321c4ec0439"}   # computed from the downloaded files
 # R6 switches in C2 cell 9.  BK = foysal's lines, cut by r6_switches.bk_new() from HIS archived notebook (sha256-checked),
