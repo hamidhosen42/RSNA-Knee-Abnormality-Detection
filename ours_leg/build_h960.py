@@ -30,6 +30,10 @@ ONE change each, so every submission reads as a one-variable test against 0.958 
                replace one line of C2 cell 9.  Parent c2 only.
   --fk         the same pattern for R6's fluid stacker (ours_leg/r6_switches.py): no --fluid-stacker, so Effusion is the plain
                fold mean (+ flip); R6's fluid_stacker.json says Effusion was kept by a user override of its own DROP rule.
+  --s1         + the two S1 students (hosen42/rsna-knee-gpjw-student5 output, mounted as a kernel source): cnxt_plE75t_full.pt
+               (convnext_tiny) and cnxt_plE75s_full.pt (convnext_small), gold-58 0.9264 / 0.9239, teacher = R6-OOF + S6fall-B, targets
+               0.25 v0 + 0.75 teacher.  The reader is the probability mean of 7 checkpoints instead of 5 (sha256-pinned, n_ckpt == 7
+               asserted in the run and final cells); the 0.8 / 0.2 blend is unchanged.  Needs --name.
   --student-tta  anatomical left-right mirror TTA for the 5 students (ours_leg/infer_tta.py, drafted and tested by the 10-19
                research workflow): each study decoded once, plain pass on cuda:0 = H964's exact computation, mirror pass on
                cuda:1 (sagittal: slice order reversed, pos -> 1 - pos; coronal / axial: image columns flipped; no label swap,
@@ -82,6 +86,8 @@ C2_SOURCES = ["heliosli/rsna-knee-r6-frozen-fe055406-w1", "nartaa/rsna-knee-s6fa
 W_RAPTOR_C_OLD = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovitis': 0.8, \"Baker's\": 0.35}"
 W_RAPTOR_C_V2 = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.15, 'PF OA': 0.65, 'Synovitis': 0.85, \"Baker's\": 0.30}"
 BK_NEW = bk_new()   # foysal's H961BK cell-9 lines, read from his archived notebook (sha256-checked)
+S1_KERNEL = "hosen42/rsna-knee-gpjw-student5"   # v2 output, trained 10-19 16:59 UTC (STUDENTS_COMPLETE)
+S1_SHA = {"cnxt_plE75s_full.pt": "9efa571b1a1f9c64fe1a837950b270c7530db5e565a4129f07a2c5f836c559a3", "cnxt_plE75t_full.pt": "6e55ab9126a3409fc14b91c191507de91a825a4b400720d0607ac321c4ec0439"}
 TTA_SRC = "ours_leg/infer_tta.py"   # plain + anatomical mirror pass for the students (the draft's sha256 below)
 TTA_SHA = "604fd196536ec9059b2d43513ede4737e618b1e1c1fa5d3fcb9e536d08886cb8"
 TTA_OLD = (  # H964 cell 16: the reader-run block inside its try (replaced as a whole by --student-tta)
@@ -163,6 +169,7 @@ ap.add_argument("--student-weight", type=float, default=0.2, help="student share
 ap.add_argument("--partb", action="store_true", help="append heliosli's Part B goodpjw-reader leg after the final cell")
 ap.add_argument("--bk", action="store_true", help="foysal's H961BK: Baker's from the R6 plain fold mean (state stacker off)")
 ap.add_argument("--fk", action="store_true", help="R6 fluid stacker off: Effusion from the R6 plain fold mean (r6_switches.py)")
+ap.add_argument("--s1", action="store_true", help="+ the two S1 students as a kernel source (7-checkpoint student mean)")
 ap.add_argument("--student-tta", action="store_true", help="plain + anatomical mirror TTA for the students (ours_leg/infer_tta.py)")
 ap.add_argument("--mavit", type=float, default=0.0, help="weight of hengck23's MaViT leg after the final cell (0 = off)")
 ap.add_argument("--name", default=None, help="experiment name (submission_<name>, rsna-knee-<name>) for --student-weight / --partb")
@@ -183,6 +190,8 @@ if (a.partb or a.student_weight != 0.2) and not (a.parent == "c2" and a.students
     ap.error("--partb / --student-weight need --parent c2 --students --robust and --name")
 if a.mavit and (a.partb or not (a.parent == "c2" and a.students and a.robust and a.name) or not 0.0 < a.mavit <= 0.3):
     ap.error("--mavit W (0 < W <= 0.3) needs --parent c2 --students --robust and --name, and is not combined with --partb")
+if a.s1 and (a.student_tta or not (a.parent == "c2" and a.students and a.robust and a.name)):
+    ap.error("--s1 needs --parent c2 --students --robust and --name (not with --student-tta)")
 if a.student_tta and (a.partb or a.mavit or not (a.parent == "c2" and a.students and a.robust and a.name)):
     ap.error("--student-tta needs --parent c2 --students --robust and --name (not combined with --partb / --mavit yet)")
 if not 0.05 <= a.student_weight <= 0.5:
@@ -271,6 +280,9 @@ if a.fk:
 if a.student_tta:
     changes.append("anatomical left-right mirror TTA for the 5 students (each study decoded once, mirror pass on the second T4, "
                    "reader file = 0.5 x (plain + mirror); a label-free guard on >= 200 studies falls back to the plain pass)")
+if a.s1:
+    changes.append("+ the two S1 students (hosen42/rsna-knee-gpjw-student5: E75t convnext_tiny, E75s convnext_small; teacher R6-OOF + "
+                   "S6fall-B) in the student mean: 7 checkpoints instead of 5, sha256-pinned; the 0.8 / 0.2 blend unchanged")
 if a.mavit:
     changes.append("hengck23's MaViT (MIT, public 0.935; foysal's C3 script) after our final cell at weight %g, rank-blended, "
                    "start guard 70 min, every failure keeps the file before it" % a.mavit)
@@ -283,7 +295,7 @@ EDITS = (["the state-stacker line of cell 9"] * a.bk + ["the fluid-stacker line 
          + ["the W_RAPTOR_C line of cell 12"] * a.v2)
 if a.parent == "c2":
     cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: C2 (the 0.958 notebook + S6fall-B 1/3) + "
-                  f"{' + '.join(['BK Baker'] * a.bk + ['FK Effusion'] * a.fk + ['V2 weights'] * a.v2 + ['our 5 students' + ('' if WS == 0.2 else ' at %g' % WS)] * a.students + ['Part B reader'] * a.partb + ['MaViT %g' % a.mavit] * bool(a.mavit) + ['student mirror TTA'] * a.student_tta)}\n\n"
+                  f"{' + '.join(['BK Baker'] * a.bk + ['FK Effusion'] * a.fk + ['V2 weights'] * a.v2 + ['our 5 students' + ('' if WS == 0.2 else ' at %g' % WS)] * a.students + ['Part B reader'] * a.partb + ['MaViT %g' % a.mavit] * bool(a.mavit) + ['student mirror TTA'] * a.student_tta + ['S1 students'] * a.s1)}\n\n"
                   "Frozen parent: foysal's C2 v2 (`foysalemonshanto/rsna-knee-sub-c2`, sub 57315983, public 0.958, the team best since "
                   "10-17) = heliosli's public blend-mine 0.958 notebook (Raptor 384 + 224 + compact R6 with flip TTA, per-finding Raptor "
                   "weights) + nartaa's S6fall model B at 1/3 rank.  "
@@ -314,6 +326,26 @@ if a.students:
                    "the 0.958 notebook's cells + nartaa's 224 anatomical mirror (the H958M parent, NOT the scored 0.958 file)"
                    if a.mirror224 else "the scored 0.958 notebook's cells, unchanged")
         snap, reader, final = harden(reader, final, _plabel)
+        if a.s1:   # [s1] two more checkpoints from the student5 kernel output; every 5 becomes 7
+            assert all(len(v) == 64 for v in S1_SHA.values()), "S1 sha256 not filled in"
+            _look = ('    _ck = _ckpts("rsna-knee-student-readers", ' + repr(["cnxt_plC2_full.pt", "cnxt_plC3_full.pt", "cnxt_plC_full.pt",
+                     "cnxt_plS75_full.pt", "cnxt_plT75s1_full.pt"]) + ')\n')
+            _s1 = ('    def _s1_ckpts(names):   # [s1] the S1 students (hosen42/rsna-knee-gpjw-student5 output, a kernel source): known mount\n'
+                   '        # layouts first, then a shallow glob (never the DICOM tree)\n'
+                   '        _c = (sorted(glob.glob("/kaggle/input/notebooks/*/rsna-knee-gpjw-student5")) + ["/kaggle/input/rsna-knee-gpjw-student5"]\n'
+                   '              + sorted(glob.glob("/kaggle/input/*/rsna-knee-gpjw-student5")) + sorted(glob.glob("/kaggle/input/*/*/rsna-knee-gpjw-student5")))\n'
+                   '        for d in _c:\n'
+                   '            if all(os.path.isfile(os.path.join(d, n)) for n in names):\n'
+                   '                return [os.path.join(d, n) for n in names]\n'
+                   '        raise FileNotFoundError("rsna-knee-gpjw-student5: %s" % names)\n'
+                   '    _ck += _s1_ckpts(' + repr(sorted(S1_SHA)) + ')\n'
+                   '    print("S1 students", _ck[-2:], flush=True)\n')
+            _sha_line = next(l for l in src(reader[1]).splitlines() if l.startswith("    _SHA = {"))
+            _sha_new = _sha_line[:-1] + ", " + ", ".join("%r: %r" % (k, v) for k, v in sorted(S1_SHA.items())) + "}"
+            patch(reader[1], [(_look, _look + _s1), (_sha_line + "\n", _sha_new + "   # [s1] + the 2 S1 students\n"),
+                              ("    if len(_ck) != 5 or _bad_ck:\n", "    if len(_ck) != 7 or _bad_ck:   # [s1] 5 Mirror + 2 S1 students\n")])
+            patch(final, [("    if _ri.get('n_ckpt') != 5 or not _ri.get('ckpt_sha_ok'):\n",
+                           "    if _ri.get('n_ckpt') != 7 or not _ri.get('ckpt_sha_ok'):   # [s1] 5 Mirror + 2 S1 students\n")])
         if a.student_tta:   # [h968] the writer also writes infer_tta.py; the run cell's reader block runs it (plain fallback)
             import ast
             _tta_raw = open(inp(TTA_SRC), "rb").read()
@@ -407,7 +439,7 @@ sources = (C2_SOURCES if a.parent == "c2" else BASE_SOURCES) + ([READER_ASSETS, 
 meta = {"id": f"{a.owner}/{slug}", "title": slug, "code_file": slug + ".ipynb", "language": "python", "kernel_type": "notebook",
         "is_private": True, "enable_gpu": True, "enable_tpu": False, "enable_internet": False, "machine_shape": "NvidiaTeslaT4",
         "docker_image": DOCKER, "docker_image_pinning_type": "original", "dataset_sources": sources,
-        "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [], "model_sources": []}
+        "competition_sources": ["rsna-knee-abnormality-detection"], "kernel_sources": [S1_KERNEL] if a.s1 else [], "model_sources": []}
 out = out_dir(out_name, base=CANDIDATES)   # drafts go to candidate_notebook/; move to our_submission_notebook/ once pushed
 write_text(os.path.join(out, slug + ".ipynb"), json.dumps(P, indent=1))
 write_json(os.path.join(out, "kernel-metadata.json"), meta, indent=2)

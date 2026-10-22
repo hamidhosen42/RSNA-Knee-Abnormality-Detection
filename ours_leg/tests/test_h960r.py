@@ -37,9 +37,12 @@ WC = {'Medial OA': 0.5, 'Lateral OA': 0.2, 'PF OA': 0.6, 'Synovitis': 0.8, "Bake
 n = 120; ids = [f"1.2.{i}" for i in range(n)]; rng = np.random.default_rng(5)
 def frame(v, idl=None): d = pd.DataFrame(v, columns=labs); d.insert(0, "StudyInstanceUID", idl or ids); return d
 def pct(v): return pd.Series(np.asarray(v, float)).rank(method="average", pct=True).values
-GOOD = {"n_ckpt": 5, "ckpt_sha_ok": True}
+N_CK = int(re.search(r"_ri.get\('n_ckpt'\) != (\d+)", final).group(1))   # 5, or 7 with the S1 students (H976)
+S1 = "_s1_ckpts(" in run_cell
+assert (N_CK == 7) == S1, (N_CK, S1)
+GOOD = {"n_ckpt": N_CK, "ckpt_sha_ok": True}
 cases = {"snapfail": {"snapfail": True}, "snapchanged": {"snapchg": True}, "receiptfail": {"receipt": True}, "normal": {}, "readerfail": {"ok": False}, "nanrow": {"nan": True}, "dupuid": {"dup": True}, "missinguid": {"miss": True},
-         "constcol": {"const": True}, "outofrange": {"oor": True}, "badckpt": {"info": {"n_ckpt": 4, "ckpt_sha_ok": True}}, "noinfo": {"info": {}}}
+         "constcol": {"const": True}, "outofrange": {"oor": True}, "badckpt": {"info": {"n_ckpt": N_CK - 1, "ckpt_sha_ok": True}}, "noinfo": {"info": {}}}
 for case, kw in cases.items():
     root = tmp / "A" / case; shutil.rmtree(root, ignore_errors=True)
     DATA, WORK, pred = root / "data", root / "work", root / "pred"
@@ -115,6 +118,15 @@ def fake_run(args, **kw):
 subprocess.run = fake_run
 kw_writer_fail = {"writerfail": True}
 OLD = ["cnxt_plC2_full.pt", "cnxt_plC3_full.pt", "cnxt_plC_full.pt", "cnxt_plS75_full.pt", "cnxt_plT75s1_full.pt"]
+S1_NAMES = ["cnxt_plE75s_full.pt", "cnxt_plE75t_full.pt"]
+
+
+def s1_files(inp, fake_sha, drop=None):   # H976: the S1 students, mounted like a kernel source
+    if S1:
+        d = inp / "notebooks/hosen42/rsna-knee-gpjw-student5"; d.mkdir(parents=True)
+        for k in S1_NAMES:
+            if k != drop:
+                (d / k).write_bytes(k.encode()); fake_sha[k] = hashlib.sha256(k.encode()).hexdigest()
 def runB(case, good_sha=True, drop=None, test_ids=None, elapsed_h=4.0, mode="ok"):
     root = tmp / "B" / case; shutil.rmtree(root, ignore_errors=True)
     inp, work = root / "input", root / "working"; (work / "own_src").mkdir(parents=True)
@@ -126,6 +138,7 @@ def runB(case, good_sha=True, drop=None, test_ids=None, elapsed_h=4.0, mode="ok"
     for k in OLD:
         if k != drop:
             (o / k).write_bytes(k.encode()); fake_sha[k] = hashlib.sha256(k.encode()).hexdigest()
+    s1_files(inp, fake_sha, drop)
     wcode = writer.replace("/kaggle/working", str(work))
     if kw_writer_fail.get(case): shutil.rmtree(work / "own_src"); (work / "own_src").write_text("x")   # makedirs/open will fail
     code = run_cell.replace("/kaggle/input", str(inp)).replace("/kaggle/working", str(work))
@@ -135,9 +148,9 @@ def runB(case, good_sha=True, drop=None, test_ids=None, elapsed_h=4.0, mode="ok"
     with contextlib.redirect_stdout(io.StringIO()) as buf:
         exec(wcode, g); exec(code, g)    # must never raise
     return g["READER_OK"], g["READER_INFO"], buf.getvalue()
-ok, info, log = runB("normal"); assert ok and info["n_ckpt"] == 5 and info["ckpt_sha_ok"] and info["pip_rc"] == 1 and info["reader_rc"] == 0, info
-print("B normal      OK | 5 checkpoints sha-verified, data identity ok, pip rc recorded (non-fatal), READER_OK True")
-for case, kw, want in (("realsha", {"good_sha": False}, "differ from the validated"), ("missingckpt", {"drop": "cnxt_plS75_full.pt"}, "FileNotFoundError"),
+ok, info, log = runB("normal"); assert ok and info["n_ckpt"] == N_CK and info["ckpt_sha_ok"] and info["pip_rc"] == 1 and info["reader_rc"] == 0, info
+print(f"B normal      OK | {N_CK} checkpoints sha-verified, data identity ok, pip rc recorded (non-fatal), READER_OK True")
+for case, kw, want in ((("s1missing", {"drop": "cnxt_plE75t_full.pt"}, "FileNotFoundError"),) if S1 else ()) + (("realsha", {"good_sha": False}, "differ from the validated"), ("missingckpt", {"drop": "cnxt_plS75_full.pt"}, "FileNotFoundError"),
                        ("wrongdata", {"test_ids": ["9.9.9"]}, "does not hold the submitted studies"), ("late", {"elapsed_h": 8.5}, "min left"),
                        ("timeout", {"mode": "timeout"}, "READER_TIMEOUT"), ("writerfail", {}, "student sources were not written"),
                        ("latestart", {"elapsed_h": 8.2}, "at the start of the student stage")):
@@ -164,6 +177,7 @@ def runC(case, bad_reader=None):
     o = inp / "datasets/hosen42/rsna-knee-student-readers"; o.mkdir(parents=True); fake_sha = {}
     for k in OLD:
         (o / k).write_bytes(k.encode()); fake_sha[k] = hashlib.sha256(k.encode()).hexdigest()
+    s1_files(inp, fake_sha)
     st = rng.random((n, 12))
     (WORK / "reader_sub.csv").write_text("stale file from an earlier run\n")        # N1: must be removed before the run
     def reader_run(args, **kw):
@@ -190,7 +204,7 @@ def runC(case, bad_reader=None):
     return g, rec, out, base_bytes, st, WORK
 g, rec, out, base_bytes, st, WORK = runC("full")
 par = pd.read_csv(WORK / "_baseline_submission.csv", dtype={"StudyInstanceUID": str})
-assert rec["status"] == "blended" and g["READER_OK"] and rec["reader_info"]["n_ckpt"] == 5 and "parent" in rec["weights"], rec
+assert rec["status"] == "blended" and g["READER_OK"] and rec["reader_info"]["n_ckpt"] == N_CK and "parent" in rec["weights"], rec
 for j, c in enumerate(labs):
     assert np.allclose(out[c].values, WP * pct(par[c].values) + WR * pct(st[:, j]), atol=1e-6), c
 assert not (WORK / "_h960_candidate.csv").exists()

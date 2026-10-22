@@ -27,7 +27,12 @@ VARIANTS = {"h961": dict(v2=False, students=True), "h963": dict(v2=True, student
             "h967": dict(v2=True, students=True, mavit=0.1), "h968": dict(v2=True, students=True, tta=True),
             "h969": dict(v2=True, students=True, bk=True), "h970": dict(v2=True, students=True, bk=True, tta=True),
             "h971": dict(v2=True, students=True, bk=True, fk=True), "h972": dict(v2=True, students=True, bk=True, fk=True, tta=True),
-            "h973": dict(v2=False, students=True, bk=True, tta=True), "h974": dict(v2=False, students=True, bk=True, fk=True)}
+            "h973": dict(v2=False, students=True, bk=True, tta=True), "h974": dict(v2=False, students=True, bk=True, fk=True),
+            "h975": dict(v2=True, students=True, bk=True, partb=True), "h976": dict(v2=True, students=True, bk=True, s1=True),
+            "h977": dict(v2=True, students=True, bk=True, partb=True, s1=True), "h978": dict(v2=True, students=True, bk=True, fk=True, partb=True, s1=True),
+            "h979": dict(v2=True, students=True, bk=True, fk=True, partb=True)}
+S1_SHA = {"cnxt_plE75s_full.pt": "9efa571b1a1f9c64fe1a837950b270c7530db5e565a4129f07a2c5f836c559a3",   # hosen42/rsna-knee-gpjw-student5 output,
+          "cnxt_plE75t_full.pt": "6e55ab9126a3409fc14b91c191507de91a825a4b400720d0607ac321c4ec0439"}   # computed from the downloaded files
 # R6 switches in C2 cell 9.  BK = foysal's lines, cut by r6_switches.bk_new() from HIS archived notebook (sha256-checked),
 # so the check is independent of the candidate; FK = the same pattern for the fluid stacker.
 from r6_switches import BK_CELL9_SHA, BK_OLD, FK_NEW, FK_OLD, bk_new  # noqa: E402
@@ -125,6 +130,17 @@ for d in sys.argv[1:] or [os.path.join(ROOT, "candidate_notebook", "submission_h
             assert 'rc = _run_reader("infer_tta.py")' in run and 'rc = _run_reader("infer.py")' in run and "len(_P) < 200" in run
             assert run.count("_rsh.copyfile(\"/kaggle/working/reader_sub_plain.csv\", \"/kaggle/working/reader_sub.csv\")") == 1
             ok("student TTA: writer = H964's + infer_tta.py (repo file); reader block = TTA with plain fallback and the >= 200-study guard")
+        elif v.get("s1"):   # H976: H964's student cells + the S1 lookup, 2 more sha256 pins, 7 instead of 5 checkpoints
+            assert writer == src(h964[15])
+            assert "_ck += _s1_ckpts(['cnxt_plE75s_full.pt', 'cnxt_plE75t_full.pt'])" in run and "    if len(_ck) != 7 or _bad_ck:" in run
+            assert all(run.count(h) == 1 for h in S1_SHA.values()) and "    if len(_ck) != 5 or _bad_ck:" not in run
+            assert "    if _ri.get('n_ckpt') != 7 or not _ri.get('ckpt_sha_ok'):" in final and "n_ckpt') != 5" not in final
+            r0 = run[:run.index("    def _s1_ckpts(names):")] + run[run.index('    print("S1 students", _ck[-2:], flush=True)\n') + len('    print("S1 students", _ck[-2:], flush=True)\n'):]
+            r0 = r0.replace("    if len(_ck) != 7 or _bad_ck:   # [s1] 5 Mirror + 2 S1 students\n", "    if len(_ck) != 5 or _bad_ck:\n")
+            r0 = re.sub(r", 'cnxt_plE75s_full.pt': '[0-9a-f]{64}', 'cnxt_plE75t_full.pt': '[0-9a-f]{64}'\}   # \[s1\] \+ the 2 S1 students", "}", r0)
+            assert r0 == src(h964[16]), "student run cell differs from H964 beyond the S1 lines"
+            assert meta["kernel_sources"] == ["hosen42/rsna-knee-gpjw-student5"]
+            ok("S1: H964's student cells + the S1 lookup (kernel source), 2 sha256 pins, 7 checkpoints in the run and final cells")
         elif v.get("v2"):
             assert writer == src(h964[15]) and run == src(h964[16]), "student cells differ from H964"
 

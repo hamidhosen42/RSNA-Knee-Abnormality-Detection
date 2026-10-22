@@ -38,8 +38,15 @@ Built with `ours_leg/build_h960.py --parent c2 ...`. Tests are in `ours_leg/test
 | `submission_h964` | C2 + V2 + students | 57369477 | 0.958, **team best** (beat C2, H961 and H963) |
 | `submission_h967` | H964 + hengck23 MaViT leg after the final cell, 0.9/0.1 rank | 57406594 | **0.957** (MaViT hurt) |
 | `submission_h968` | H964 + anatomical L/R mirror TTA for the students (2 GPUs, guarded) | 57409126 | 0.958 (order vs H964 unknown) |
-| `submission_h969` | H964 + foysal's BK (Baker's from the R6 plain fold mean, state stacker off) = H961BK + V2 | 57447421 | pending |
-| `submission_h970` | H969 + the student mirror TTA | 57447461 | pending |
+| `submission_h969` | H964 + foysal's BK (Baker's from the R6 plain fold mean, state stacker off) = H961BK + V2 | 57447421 | 0.958, **team best** (10-21) |
+| `submission_h970` | H969 + the student mirror TTA | 57447461 | 0.958, below H969 (TTA hurt) |
+| `submission_h971` | H969 + FK (R6 fluid stacker off: Effusion from the plain fold mean) | 57497099 | pending |
+| `submission_h975` | H969 + heliosli's Part B (goodpjw 3-fold reader, per-finding weights 0.003-0.035) | 57497097 | pending |
+| `submission_h976` | H969 + the 2 S1 students (E75t, E75s; 7-checkpoint student mean) | 57497105 | pending |
+| `submission_h979` | H969 + FK + Part B | 57497464 | pending |
+| `submission_h974` | H961BK + FK (V2-free hedge) | 57497108 | pending |
+
+Reading: GET .../competitions/submissions/list/rsna-knee-abnormality-detection?page=1&sortBy=publicScore lists our submissions in unrounded public-score order (verified 10-21). Use it to read each experiment's sign against its parent. Identical forks (57252502 vs 57252333) did not sit together, so expect some run-to-run noise at about 1e-4.
 
 foysal's H961BK (57417566, H961 + BK) has been team best since 10-20. His H961S3 (students 0.3) and H961SB (S3 + BK) scored below it, so student weight 0.3 hurts.
 Reading rule, fixed before the results: if the team best moves to H970, keep the TTA; if it moves to H969, drop the TTA; if it stays on H961BK, V2 on top of BK has not been shown.
