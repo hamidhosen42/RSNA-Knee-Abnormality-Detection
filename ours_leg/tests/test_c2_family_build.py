@@ -31,7 +31,9 @@ VARIANTS = {"h961": dict(v2=False, students=True), "h963": dict(v2=True, student
             "h975": dict(v2=True, students=True, bk=True, partb=True), "h976": dict(v2=True, students=True, bk=True, s1=True),
             "h977": dict(v2=True, students=True, bk=True, partb=True, s1=True), "h978": dict(v2=True, students=True, bk=True, fk=True, partb=True, s1=True),
             "h979": dict(v2=True, students=True, bk=True, fk=True, partb=True),
-            "h980": dict(v2=True, students=True, bk=True, fk=True, s1=True), "h981": dict(v2=False, students=True, bk=True, fk=True, s1=True)}
+            "h980": dict(v2=True, students=True, bk=True, fk=True, s1=True), "h981": dict(v2=False, students=True, bk=True, fk=True, s1=True),
+            "h982": dict(v2=True, students=True, bk=True, fk=True, s1=True, fam=True), "h983": dict(v2=False, students=True, bk=True, fk=True, s1=True, fam=True),
+            "h984": dict(v2=True, students=True, bk=True, s1=True, fam=True)}
 S1_SHA = {"cnxt_plE75s_full.pt": "9efa571b1a1f9c64fe1a837950b270c7530db5e565a4129f07a2c5f836c559a3",   # hosen42/rsna-knee-gpjw-student5 output,
           "cnxt_plE75t_full.pt": "6e55ab9126a3409fc14b91c191507de91a825a4b400720d0607ac321c4ec0439"}   # computed from the downloaded files
 # R6 switches in C2 cell 9.  BK = foysal's lines, cut by r6_switches.bk_new() from HIS archived notebook (sha256-checked),
@@ -132,6 +134,21 @@ for d in sys.argv[1:] or [os.path.join(ROOT, "candidate_notebook", "submission_h
             assert run.count("_rsh.copyfile(\"/kaggle/working/reader_sub_plain.csv\", \"/kaggle/working/reader_sub.csv\")") == 1
             ok("student TTA: writer = H964's + infer_tta.py (repo file); reader block = TTA with plain fallback and the >= 200-study guard")
         elif v.get("s1"):   # H976: H964's student cells + the S1 lookup, 2 more sha256 pins, 7 instead of 5 checkpoints
+            if v.get("fam"):   # H982: + infer_fam.py in the writer; its reader block (infer.py rerun on failure) replaces H964's
+                import ast
+                line = next(l for l in writer.splitlines() if l.startswith("_SOURCES = "))
+                files = ast.literal_eval(line[len("_SOURCES = "):])
+                assert sorted(files) == ["infer.py", "infer_fam.py", "knee.py", "preprocess.py"]
+                assert files["infer_fam.py"] == open(os.path.join(ROOT, "ours_leg", "infer_fam.py")).read()
+                line0 = next(l for l in src(h964[15]).splitlines() if l.startswith("_SOURCES = "))
+                files0 = ast.literal_eval(line0[len("_SOURCES = "):])
+                assert all(files[k] == files0[k] for k in files0)
+                blk = lambda t: t[t.index('    if os.path.exists("/kaggle/working/reader_sub.csv"):   # [h960r] never accept'):t.index('    READER_INFO["reader_rc"] = rc\n')]
+                fam_blk, blk0 = blk(run), blk(src(h964[16]))
+                assert 'rc = _run_reader("infer_fam.py")' in fam_blk and 'rc = _run_reader("infer.py")' in fam_blk and "> 45 * 60" in fam_blk
+                assert 'return "timeout"' in fam_blk and 'READER_INFO["fam"] = "family-balanced" if rc == 0 else "timeout"' in fam_blk
+                writer, run = writer.replace(line, line0), run.replace(fam_blk, blk0)   # back to H976's cells for the S1 checks below
+                ok("fam: writer = H964's + infer_fam.py (repo file); reader block = infer_fam.py, infer.py rerun on failure, timeout sentinel")
             assert writer == src(h964[15])
             assert "_ck += _s1_ckpts(['cnxt_plE75s_full.pt', 'cnxt_plE75t_full.pt'])" in run and "    if len(_ck) != 7 or _bad_ck:" in run
             assert all(run.count(h) == 1 for h in S1_SHA.values()) and "    if len(_ck) != 5 or _bad_ck:" not in run

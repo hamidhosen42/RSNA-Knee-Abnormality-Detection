@@ -34,6 +34,9 @@ ONE change each, so every submission reads as a one-variable test against 0.958 
                (convnext_tiny) and cnxt_plE75s_full.pt (convnext_small), gold-58 0.9264 / 0.9239, teacher = R6-OOF + S6fall-B, targets
                0.25 v0 + 0.75 teacher.  The reader is the probability mean of 7 checkpoints instead of 5 (sha256-pinned, n_ckpt == 7
                asserted in the run and final cells); the 0.8 / 0.2 blend is unchanged.  Needs --name.
+  --fam        with --s1: the student leg is 0.5 x mean(5 Mirror) + 0.5 x mean(2 S1) instead of the equal 7-checkpoint mean
+               (ours_leg/infer_fam.py: infer.py's run() with only the model average changed, one decode pass); if the script
+               fails, H976's equal mean (infer.py) is rerun when >= 45 min are left; a timeout has its own sentinel.  Needs --name.
   --student-tta  anatomical left-right mirror TTA for the 5 students (ours_leg/infer_tta.py, drafted and tested by the 10-19
                research workflow): each study decoded once, plain pass on cuda:0 = H964's exact computation, mirror pass on
                cuda:1 (sagittal: slice order reversed, pos -> 1 - pos; coronal / axial: image columns flipped; no label swap,
@@ -88,6 +91,8 @@ W_RAPTOR_C_V2 = "W_RAPTOR_C = {'Medial OA': 0.5, 'Lateral OA': 0.15, 'PF OA': 0.
 BK_NEW = bk_new()   # foysal's H961BK cell-9 lines, read from his archived notebook (sha256-checked)
 S1_KERNEL = "hosen42/rsna-knee-gpjw-student5"   # v2 output, trained 10-19 16:59 UTC (STUDENTS_COMPLETE)
 S1_SHA = {"cnxt_plE75s_full.pt": "9efa571b1a1f9c64fe1a837950b270c7530db5e565a4129f07a2c5f836c559a3", "cnxt_plE75t_full.pt": "6e55ab9126a3409fc14b91c191507de91a825a4b400720d0607ac321c4ec0439"}
+FAM_SRC = "ours_leg/infer_fam.py"
+FAM_SHA = "2bc29d9d4c0a692069f501b23beb7d97bb0ad4606c7146f81e09fc1890693a94"
 TTA_SRC = "ours_leg/infer_tta.py"   # plain + anatomical mirror pass for the students (the draft's sha256 below)
 TTA_SHA = "604fd196536ec9059b2d43513ede4737e618b1e1c1fa5d3fcb9e536d08886cb8"
 TTA_OLD = (  # H964 cell 16: the reader-run block inside its try (replaced as a whole by --student-tta)
@@ -154,6 +159,28 @@ TTA_NEW = (
     '        READER_INFO["tta"] = _tta\n'
     '    READER_OK = rc == 0 and os.path.isfile("/kaggle/working/reader_sub.csv")\n'
     '    READER_INFO["reader_rc"] = rc\n')
+FAM_NEW = (
+    '    if os.path.exists("/kaggle/working/reader_sub.csv"):   # [h960r] never accept a stale file from an earlier run\n'
+    '        os.remove("/kaggle/working/reader_sub.csv")\n'
+    '    _t0 = time.time()\n'
+    '    def _run_reader(script):   # [h958 R2] time guard: the readers never push the session past 9 h; [fam] a timeout has its own sentinel\n'
+    '        try:\n'
+    '            return subprocess.run([sys.executable, "/kaggle/working/own_src/" + script, _data, "test", "/kaggle/working/reader_sub.csv"] + _ck,\n'
+    '                                  env=_env, timeout=max(60, 9 * 3600 - (time.time() - NB_T0) - 20 * 60)).returncode\n'
+    '        except subprocess.TimeoutExpired:\n'
+    '            print("READER_TIMEOUT after %.0f s - the final cell keeps the notebook\'s own blend" % (time.time() - _t0), flush=True)\n'
+    '            return "timeout"\n'
+    '    rc = _run_reader("infer_fam.py")   # [fam] 0.5 x mean(5 Mirror) + 0.5 x mean(2 S1 students), one decode pass\n'
+    '    READER_INFO["fam_rc"] = rc\n'
+    '    if rc not in (0, "timeout") and 9 * 3600 - (time.time() - NB_T0) > 45 * 60:\n'
+    '        if os.path.exists("/kaggle/working/reader_sub.csv"):\n'
+    '            os.remove("/kaggle/working/reader_sub.csv")\n'
+    '        rc = _run_reader("infer.py")   # [fam] the family script failed or was killed: H976\'s equal 7-checkpoint mean\n'
+    '        READER_INFO["fam"] = "infer_fam.py failed (rc %s) - equal 7-checkpoint mean rerun, rc %s" % (READER_INFO["fam_rc"], rc)\n'
+    '    else:\n'
+    '        READER_INFO["fam"] = "family-balanced" if rc == 0 else "timeout"\n'
+    '    READER_OK = rc == 0 and os.path.isfile("/kaggle/working/reader_sub.csv")\n'
+    '    READER_INFO["reader_rc"] = rc\n')
 PARTB_SRC = "public_notebooks/0.958_159v_heliosli__this-is-best-public-dataset-new-version-0-9586.ipynb"   # v6, its cell 9
 PARTB_SHA = "cb0e1eac33a00f96b7d1bcc0e9914f7eb045af2bc9cd01bc290b2213e7f17ddd"
 ap = argparse.ArgumentParser()
@@ -170,6 +197,7 @@ ap.add_argument("--partb", action="store_true", help="append heliosli's Part B g
 ap.add_argument("--bk", action="store_true", help="foysal's H961BK: Baker's from the R6 plain fold mean (state stacker off)")
 ap.add_argument("--fk", action="store_true", help="R6 fluid stacker off: Effusion from the R6 plain fold mean (r6_switches.py)")
 ap.add_argument("--s1", action="store_true", help="+ the two S1 students as a kernel source (7-checkpoint student mean)")
+ap.add_argument("--fam", action="store_true", help="with --s1: family-balanced student mean (ours_leg/infer_fam.py)")
 ap.add_argument("--student-tta", action="store_true", help="plain + anatomical mirror TTA for the students (ours_leg/infer_tta.py)")
 ap.add_argument("--mavit", type=float, default=0.0, help="weight of hengck23's MaViT leg after the final cell (0 = off)")
 ap.add_argument("--name", default=None, help="experiment name (submission_<name>, rsna-knee-<name>) for --student-weight / --partb")
@@ -192,6 +220,8 @@ if a.mavit and (a.partb or not (a.parent == "c2" and a.students and a.robust and
     ap.error("--mavit W (0 < W <= 0.3) needs --parent c2 --students --robust and --name, and is not combined with --partb")
 if a.s1 and (a.student_tta or not (a.parent == "c2" and a.students and a.robust and a.name)):
     ap.error("--s1 needs --parent c2 --students --robust and --name (not with --student-tta)")
+if a.fam and not (a.s1 and a.name) or a.fam and a.student_tta:
+    ap.error("--fam needs --s1 and --name (not with --student-tta)")
 if a.student_tta and (a.partb or a.mavit or not (a.parent == "c2" and a.students and a.robust and a.name)):
     ap.error("--student-tta needs --parent c2 --students --robust and --name (not combined with --partb / --mavit yet)")
 if not 0.05 <= a.student_weight <= 0.5:
@@ -283,6 +313,9 @@ if a.student_tta:
 if a.s1:
     changes.append("+ the two S1 students (hosen42/rsna-knee-gpjw-student5: E75t convnext_tiny, E75s convnext_small; teacher R6-OOF + "
                    "S6fall-B) in the student mean: 7 checkpoints instead of 5, sha256-pinned; the 0.8 / 0.2 blend unchanged")
+if a.fam:
+    changes.append("family-balanced student leg: 0.5 x mean(5 Mirror students) + 0.5 x mean(2 S1 students) instead of the equal "
+                   "7-checkpoint mean (one decode pass; the equal mean reruns if the script fails)")
 if a.mavit:
     changes.append("hengck23's MaViT (MIT, public 0.935; foysal's C3 script) after our final cell at weight %g, rank-blended, "
                    "start guard 70 min, every failure keeps the file before it" % a.mavit)
@@ -295,7 +328,7 @@ EDITS = (["the state-stacker line of cell 9"] * a.bk + ["the fluid-stacker line 
          + ["the W_RAPTOR_C line of cell 12"] * a.v2)
 if a.parent == "c2":
     cells[0] = md(f"# RSNA Knee {base.replace('submission_', '').upper()}: C2 (the 0.958 notebook + S6fall-B 1/3) + "
-                  f"{' + '.join(['BK Baker'] * a.bk + ['FK Effusion'] * a.fk + ['V2 weights'] * a.v2 + ['our 5 students' + ('' if WS == 0.2 else ' at %g' % WS)] * a.students + ['Part B reader'] * a.partb + ['MaViT %g' % a.mavit] * bool(a.mavit) + ['student mirror TTA'] * a.student_tta + ['S1 students'] * a.s1)}\n\n"
+                  f"{' + '.join(['BK Baker'] * a.bk + ['FK Effusion'] * a.fk + ['V2 weights'] * a.v2 + ['our 5 students' + ('' if WS == 0.2 else ' at %g' % WS)] * a.students + ['Part B reader'] * a.partb + ['MaViT %g' % a.mavit] * bool(a.mavit) + ['student mirror TTA'] * a.student_tta + ['S1 students'] * a.s1 + ['family-balanced'] * a.fam)}\n\n"
                   "Frozen parent: foysal's C2 v2 (`foysalemonshanto/rsna-knee-sub-c2`, sub 57315983, public 0.958, the team best since "
                   "10-17) = heliosli's public blend-mine 0.958 notebook (Raptor 384 + 224 + compact R6 with flip TTA, per-finding Raptor "
                   "weights) + nartaa's S6fall model B at 1/3 rank.  "
@@ -346,6 +379,16 @@ if a.students:
                               ("    if len(_ck) != 5 or _bad_ck:\n", "    if len(_ck) != 7 or _bad_ck:   # [s1] 5 Mirror + 2 S1 students\n")])
             patch(final, [("    if _ri.get('n_ckpt') != 5 or not _ri.get('ckpt_sha_ok'):\n",
                            "    if _ri.get('n_ckpt') != 7 or not _ri.get('ckpt_sha_ok'):   # [s1] 5 Mirror + 2 S1 students\n")])
+        if a.fam:   # [fam] the writer also writes infer_fam.py; the reader block runs it, with infer.py as the fallback
+            import ast as _ast
+            _fam_raw = open(inp(FAM_SRC), "rb").read()
+            assert hashlib.sha256(_fam_raw).hexdigest() == FAM_SHA, "ours_leg/infer_fam.py changed"
+            _wline = next(l for l in src(reader[0]).splitlines() if l.startswith("_SOURCES = "))
+            _files = _ast.literal_eval(_wline[len("_SOURCES = "):])
+            assert sorted(_files) == ["infer.py", "knee.py", "preprocess.py"], sorted(_files)
+            _files["infer_fam.py"] = _fam_raw.decode()
+            patch(reader[0], [(_wline + "\n", "_SOURCES = " + repr(_files) + "\n")])
+            patch(reader[1], [(TTA_OLD, FAM_NEW)])
         if a.student_tta:   # [h968] the writer also writes infer_tta.py; the run cell's reader block runs it (plain fallback)
             import ast
             _tta_raw = open(inp(TTA_SRC), "rb").read()

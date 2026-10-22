@@ -40,11 +40,18 @@ Built with `ours_leg/build_h960.py --parent c2 ...`. Tests are in `ours_leg/test
 | `submission_h968` | H964 + anatomical L/R mirror TTA for the students (2 GPUs, guarded) | 57409126 | 0.958 (order vs H964 unknown) |
 | `submission_h969` | H964 + foysal's BK (Baker's from the R6 plain fold mean, state stacker off) = H961BK + V2 | 57447421 | 0.958, **team best** (10-21) |
 | `submission_h970` | H969 + the student mirror TTA | 57447461 | 0.958, below H969 (TTA hurt) |
-| `submission_h971` | H969 + FK (R6 fluid stacker off: Effusion from the plain fold mean) | 57497099 | pending |
-| `submission_h975` | H969 + heliosli's Part B (goodpjw 3-fold reader, per-finding weights 0.003-0.035) | 57497097 | pending |
-| `submission_h976` | H969 + the 2 S1 students (E75t, E75s; 7-checkpoint student mean) | 57497105 | pending |
-| `submission_h979` | H969 + FK + Part B | 57497464 | pending |
-| `submission_h974` | H961BK + FK (V2-free hedge) | 57497108 | pending |
+| `submission_h971` | H969 + FK (R6 fluid stacker off: Effusion from the plain fold mean) | 57497099 | 0.958, 2nd (above H969: FK helped) |
+| `submission_h975` | H969 + heliosli's Part B (goodpjw 3-fold reader, per-finding weights 0.003-0.035) | 57497097 | 0.958, below H969 (Part B hurt) |
+| `submission_h976` | H969 + the 2 S1 students (E75t, E75s; 7-checkpoint student mean) | 57497105 | 0.958, **team best** (10-22, rank 294 silver; S1 helped) |
+| `submission_h979` | H969 + FK + Part B | 57497464 | 0.958, below H971 (Part B hurt again) |
+| `submission_h974` | H961BK + FK (V2-free hedge) | 57497108 | 0.958, above H961BK (FK helped on both parents) |
+| `submission_h980` | H976 + FK (= H969 + FK + S1), 10-22 | 57514952 | pending |
+| `submission_h981` | H974 + S1 (= H961BK + FK + S1, V2-free hedge), 10-22 | 57514954 | pending |
+| `submission_h983` | H981 + family-balanced student mean (0.5 x mean 5 Mirror + 0.5 x mean 2 S1; `ours_leg/infer_fam.py`), 10-22 | 57515697 | pending |
+| `submission_h984` | H976 + family-balanced student mean (one change vs the scored best), 10-22 | 57516010 | pending |
+| `submission_h980` (again) | exact re-submit of rsna-knee-h980 v1 (insurance + run-to-run noise read), 10-22 08:41 | 57517364 | pending |
+
+H982 (H980 + family-balanced students, `../candidate_notebook/submission_h982`, tested) never ran on Kaggle. Its smoke on hosen42 was queued and then cancelAcknowledged 4 times (v1-v3 and slug rsna-knee-h982b, 07:30-08:41 UTC 10-22), while H983/H984 ran normally before that. Most likely the hosen42 GPU quota ran out. Slot 5 went to the judge's pre-registered fallback (the H980 duplicate).
 
 Reading: GET .../competitions/submissions/list/rsna-knee-abnormality-detection?page=1&sortBy=publicScore lists our submissions in unrounded public-score order (verified 10-21). Use it to read each experiment's sign against its parent. Identical forks (57252502 vs 57252333) did not sit together, so expect some run-to-run noise at about 1e-4.
 
