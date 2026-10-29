@@ -1,6 +1,15 @@
 # RSNA Knee Abnormality Detection (Kaggle 2026): team Hack2Publish
 
-This is the working repository of team **Hack2Publish** (Kaggle users `hosen42`, `esfersami50`, `foysalemonshanto`, `kishormorol`) for the [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection) code competition.
+This is the working repository of team **Hack2Publish** for the [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection) code competition.
+
+## Team: Hack2Publish
+
+- **Md. Hamid Hosen**: [hosen42](https://www.kaggle.com/hosen42)
+- [esfersami50](https://www.kaggle.com/esfersami50)
+- [foysalemonshanto](https://www.kaggle.com/foysalemonshanto)
+- [kishormorol](https://www.kaggle.com/kishormorol)
+
+## Competition
 
 - **Task:** predict 12 findings per knee MRI study: ACL, MCL, Medial / Lateral Meniscus, Medial / Lateral / PF OA, Effusion, Synovitis, Baker's, Contusion, Fracture.
 - **Metric:** macro ROC AUC.
@@ -142,3 +151,16 @@ All of them call the Kaggle API read-only with `~/.kaggle/access_token`.
 - Every notebook was smoke-tested on Kaggle before submission.
 - **External data:** most 0.949+ public weights (nartaa's publication-SWA Raptor, Mirror) were trained with OAI knees. The host allowed OAI only without institutional sign-off, and each team is responsible for its own compliance. Our best rule-clean submissions are E21 (0.946) and C3 (0.954, OAI-free but uses R6).
 - **Secrets:** Kaggle tokens are never committed (`.gitignore`: `token*.txt`, `*token*.txt`, `access_token`, `kaggle.json`, `.env`). The git history was checked on 2026-10-29 and holds no tokens.
+
+## Copyright
+
+Copyright © 2026 Team Hack2Publish: Md. Hamid Hosen (hosen42), esfersami50, foysalemonshanto and kishormorol. All rights reserved.
+
+This covers the team's own work in this repository: our code in `ours_leg/`, the notebooks we built in `our_submission_notebook/` and `candidate_notebook/`, our trained student checkpoints, and our research notes in `audit/`.
+
+Third-party material keeps its original copyright and licence and is stored here only for reference:
+- the public notebooks in `public_notebooks/` and `our_base_notebook/`;
+- the forum posts in `discussions/`;
+- the components of other authors embedded in our notebooks: heliosli's blend and R6 bundle, nartaa's weights, the Raptor models, goodpjw's reader and hengck23's MaViT.
+
+The competition data belongs to RSNA and may be used only under the competition rules.
