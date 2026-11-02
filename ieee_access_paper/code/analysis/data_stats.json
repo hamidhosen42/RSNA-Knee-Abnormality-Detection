@@ -1,0 +1,102 @@
+{
+ "n_studies": 4349,
+ "positive_rate_ge_0.7": {
+  "ACL": 0.1731,
+  "MCL": 0.117,
+  "Medial Meniscus": 0.3762,
+  "Lateral Meniscus": 0.1357,
+  "Medial OA": 0.341,
+  "Lateral OA": 0.2352,
+  "PF OA": 0.4403,
+  "Effusion": 0.5836,
+  "Synovitis": 0.1216,
+  "Baker's": 0.2442,
+  "Contusion": 0.1403,
+  "Fracture": 0.0497
+ },
+ "uncertain_rate_0.25_0.7": {
+  "ACL": 0.1299,
+  "MCL": 0.1003,
+  "Medial Meniscus": 0.1782,
+  "Lateral Meniscus": 0.1593,
+  "Medial OA": 0.0402,
+  "Lateral OA": 0.1734,
+  "PF OA": 0.1315,
+  "Effusion": 0.0717,
+  "Synovitis": 0.4856,
+  "Baker's": 0.2051,
+  "Contusion": 0.2028,
+  "Fracture": 0.2099
+ },
+ "corr_top_pairs": [
+  [
+   0.67,
+   "Effusion",
+   "Synovitis"
+  ],
+  [
+   0.607,
+   "Medial OA",
+   "Lateral OA"
+  ],
+  [
+   0.569,
+   "Medial OA",
+   "PF OA"
+  ],
+  [
+   0.568,
+   "Lateral OA",
+   "PF OA"
+  ],
+  [
+   0.503,
+   "Contusion",
+   "Fracture"
+  ],
+  [
+   0.471,
+   "Medial Meniscus",
+   "Medial OA"
+  ]
+ ],
+ "corr_min_pair": [
+  -0.077,
+  "ACL",
+  "PF OA"
+ ],
+ "positives_per_study_report_mean": 2.9579213612324673,
+ "positives_per_study_report_zero_share": 0.14440101172683376,
+ "positives_per_study_gold_mean": 4.137931034482759,
+ "positives_per_study_gold_zero_share": 0.0,
+ "gold_copy_tables": [
+  "rsna-knee-2026-calibrated-soft-targets/train_targets_hard",
+  "rsna-knee-llm-labels-4-source-merged/report_labels_v5",
+  "rsna-knee-2026-calibrated-soft-targets/train_targets_soft"
+ ],
+ "benchmark_sources": 12,
+ "benchmark_macro_range": [
+  0.8119911599931772,
+  0.9123509863338645
+ ],
+ "benchmark_per_finding_median": {
+  "ACL": 0.976,
+  "MCL": 0.966,
+  "Medial Meniscus": 0.945,
+  "Lateral Meniscus": 0.862,
+  "Medial OA": 0.931,
+  "Lateral OA": 0.833,
+  "PF OA": 0.896,
+  "Effusion": 0.842,
+  "Synovitis": 0.71,
+  "Baker's": 0.929,
+  "Contusion": 0.831,
+  "Fracture": 0.817
+ },
+ "v0_sources_macro": {
+  "rsna-knee-llm-report-labels/llm_labels_v4_blend": 0.8927073353343263,
+  "rsna-knee-llm-labels/report_labels_v2": 0.8700395897324982,
+  "rsna-knee-llm-report-labels-sol56/labels_llm_gpt56sol": 0.8351939306701702,
+  "rsna-knee-abnormality-qwen3-8b-weak-labels/qwen_knee_weak_labels": 0.8179072729246831
+ }
+}

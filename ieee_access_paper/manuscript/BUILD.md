@@ -17,7 +17,7 @@ Fig. 1 is `figures/overview.pdf`, compiled from `figures/overview.tex` (`pdflate
 uv run --no-project --with numpy --with matplotlib python -I ieee_access_paper/code/analysis/make_figures.py   # figures
 cd ieee_access_paper/manuscript && pdflatex main && bibtex main && pdflatex main && pdflatex main
 pdflatex supplement && pdflatex supplement          # Supplementary Material
-(cd figures && pdflatex overview)                    # Fig. 1, only after editing overview.tex
+(cd figures && for f in overview dataflow architecture; do pdflatex $f; done)   # Figs. 1-3, only after editing their .tex
 ```
 
 On **Overleaf**, upload `ieee_access_overleaf.zip` and set the compiler to pdfLaTeX.

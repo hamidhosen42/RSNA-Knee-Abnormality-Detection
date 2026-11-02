@@ -31,11 +31,14 @@
 \title{Report-Supervised Distillation for Multi-Label Knee MRI Classification: An Evaluation Under Limited Expert Annotation}
 
 \author{\uppercase{Md. Hamid Hosen}\authorrefmark{1},
-\uppercase{\TODO{Author 2 full name}}\authorrefmark{1},
-\uppercase{\TODO{Author 3 full name}}\authorrefmark{1}, and
-\uppercase{\TODO{Author 4 full name}}\authorrefmark{1}}
+\uppercase{Md. Foysal Emon Shanto}\authorrefmark{2},
+\uppercase{Md Esfer Abdus Sami}\authorrefmark{3}, and
+\uppercase{\TODO{Author 4 full name (Kaggle: kishormorol)}}\authorrefmark{4}}
 
-\address[1]{\TODO{Department, University, City, Country} (e-mail: mdhamidhosen4@gmail.com)}
+\address[1]{Department of Computer Science and Engineering, East Delta University, Chattogram, Bangladesh (e-mail: mdhamidhosen4@gmail.com)}
+\address[2]{Department of Computer Science and Engineering, Jashore University of Science and Technology, Jashore, Bangladesh (e-mail: foyshalsk348@gmail.com)}
+\address[3]{Department of Computer Science and Engineering, North South University, Dhaka, Bangladesh (e-mail: esfer.sami.me@gmail.com)}
+\address[4]{\TODO{Department, University, City, Country} (e-mail: \TODO{e-mail})}
 
 \tfootnote{\TODO{Funding statement, or ``This work did not receive external funding.''}}
 
@@ -105,6 +108,15 @@ publicly by another author~\cite{goodpjw2026reader}; the report label tables~\ci
 models~\cite{nartaa2026mirror,heliosli2026blend} and the ensembles used for fusion~\cite{heliosli2026blend,goodpjw2026stack}
 are likewise public. Our work is the experimental design, the target and teacher comparisons, the fusion experiments,
 the analyses, and implementation changes needed to run them (Fig.~\ref{fig:overview}).
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/overview.pdf}
+\caption{Overview. Green: reused public components (report labels, preprocessing and reader architecture); blue: external
+teachers and ensembles; orange: components of this work (target construction and comparison, fusion, evaluation). The
+dashed arrow denotes self-distillation, in which the teacher is the reader's own out-of-fold prediction.}
+\label{fig:overview}
+\end{figure*}
 
 % =====================================================================================================
 \section{Related Work}
@@ -234,6 +246,68 @@ Macro & 0.933 & 0.61 & & \\
 \end{tabular}
 \end{table}
 
+\subsection{Exploratory analysis of the labels}
+\label{sec:data-eda}
+We analysed the labels that were available locally (no images): the four-source consensus of the 4,349 report-labelled
+studies (set B of Table~\ref{tab:labels}), the expert labels of \gold, and a benchmark of public report-label tables
+against \gold{} computed by our label pipeline~\cite{hack2publish2026repo}. Thresholds are stated in each figure; the
+consensus was built from sources selected on \gold, so its agreement with \gold{} is not reported here.
+
+\paragraph*{Label composition} Fig.~\ref{fig:shares} shows, for each finding, the share of studies whose consensus label
+is negative ($<0.25$), uncertain (0.25--0.7) or positive ($\geq0.7$). Positive shares range from 5\% (fracture) to 58\%
+(effusion). Synovitis is the most ambiguous finding: 49\% of studies fall in the uncertain band, compared with 4--21\% for
+the other findings, in line with its low inter-source agreement (Table~\ref{tab:labels}).
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{figures/label_shares.pdf}
+\caption{Composition of the consensus report labels of the 4,349 report-labelled studies, by finding. Right: positive share.}
+\label{fig:shares}
+\end{figure}
+
+\paragraph*{Co-occurrence} Findings co-occur in clinically expected patterns (Fig.~\ref{fig:cooc}): effusion and synovitis
+($r=0.67$), the three OA compartments (0.57--0.61), contusion and fracture (0.50), and medial meniscus with medial OA (0.47);
+ACL is most associated with contusion (0.43) and MCL (0.33). These dependencies are one reason why a shared study
+representation with per-finding attention, rather than 12 independent models, is a natural design.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.92\columnwidth]{figures/label_cooccurrence.pdf}
+\caption{Pearson correlation between the consensus soft labels of the 12 findings (4,349 studies).}
+\label{fig:cooc}
+\end{figure}
+
+\paragraph*{Findings per study} With a positive threshold of 0.7, report-labelled studies carry 2.96 positive findings on
+average and 14\% carry none, whereas every \gold{} study has at least one expert-positive finding (mean 4.14;
+Fig.~\ref{fig:perstudy}). The two populations and label types differ, so the comparison illustrates that \gold{} is
+enriched, not that reports under-call findings.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{figures/positives_per_study.pdf}
+\caption{Number of positive findings per study: consensus report labels ($\geq0.7$) of the 4,349 report-labelled studies
+(left) and expert labels of the 58 reference studies (right). Dashed: mean.}
+\label{fig:perstudy}
+\end{figure}
+
+\paragraph*{Report labellers versus expert labels} Fig.~\ref{fig:labellers} compares 12 public report-label tables with
+the expert labels of \gold. Three further tables reproduced the expert labels exactly (AUC 1.0); they contain the
+released reference labels rather than report-derived labels and were excluded, since using them for training or
+selection would leak \gold. Macro AUCs of the remaining tables range from 0.81 to 0.91. Agreement is high for ACL, MCL,
+medial meniscus and Baker's cyst (median 0.93--0.98) and lowest for synovitis (median 0.71), fracture (0.82), contusion
+(0.83) and lateral OA (0.83), the findings for which reports are most often silent or hedged. The four tables averaged
+into the reader's targets (Eq.~\ref{eq:v0}, marked $*$) span 0.82--0.89. With 58 studies, differences of a few hundredths
+between tables are within sampling noise (Section~\ref{sec:res-yard}).
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/labeller_vs_expert.pdf}
+\caption{Per-finding ROC AUC of public report-label tables against the expert labels of the 58 reference studies, sorted by
+macro AUC (right column). $*$: the four tables averaged into the reader's targets. Three tables that reproduce the expert
+labels are excluded; duplicate tables are shown once. Descriptive; $n=58$.}
+\label{fig:labellers}
+\end{figure*}
+
 \subsection{Development and final-test partitions}
 \label{sec:data-partitions}
 Test labels are not released. A model is submitted as an offline inference program limited to 9~h on two NVIDIA T4 GPUs,
@@ -242,7 +316,16 @@ AUC). Scores on a fixed 30\% partition (about 385 studies, displayed at three de
 development; we call this the \emph{development partition}. More than 60 configurations were scored on it, and its scores
 informed which changes were kept, so it is not an independent test. Scores on the remaining 70\% (about 899 studies)
 became visible only after all model and final-selection decisions had been made; we call this the \emph{final-test
-partition} and treat it as the only unbiased evaluation. When two development scores display the same value, we used the
+partition} and treat it as the only unbiased evaluation. Fig.~\ref{fig:dataflow} summarises how each part of the data was used.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.82\textwidth]{figures/dataflow.pdf}
+\caption{Use of the data. Left: the training set; every reader is trained on the 4,349 report-labelled studies, and the
+58 expert-labelled studies serve as a development diagnostic. Right: the hidden test set; the development partition
+informed model development, and the final-test partition was seen only after all decisions.}
+\label{fig:dataflow}
+\end{figure*} When two development scores display the same value, we used the
 server's unrounded ordering of our own submissions; such orderings are ordinal and exploratory.
 
 % =====================================================================================================
@@ -254,14 +337,7 @@ $\mathcal{D}=\{(X_i,R_i)\}_{i=1}^{N}$ be the training studies with image series 
 $\mathcal{C}$ the 12 findings. The goal is a scoring function $f:X\mapsto[0,1]^{12}$ whose per-finding rankings
 maximise the macro AUC on unseen studies.
 
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=\textwidth]{figures/overview.pdf}
-\caption{Overview. Green: reused public components (report labels, preprocessing and reader architecture); blue: external
-teachers and ensembles; orange: components of this work (target construction and comparison, fusion, evaluation). The
-dashed arrow denotes self-distillation, in which the teacher is the reader's own out-of-fold prediction.}
-\label{fig:overview}
-\end{figure*}
+
 
 \subsection{Report-consensus targets}
 \label{sec:method-labels}
@@ -332,7 +408,17 @@ pooling~\cite{ilse2018attention}:
 a_{c,n}&=\operatorname*{softmax}_n\big(\mathbf{u}_c^{\top}\tanh(V\mathbf{h}_n)\big),\\
 z_c&=\mathbf{w}_c^{\top}\textstyle\sum_n a_{c,n}\mathbf{h}_n+b_c .
 \end{align}
-Algorithm~\ref{alg:reader} gives the forward pass.
+Fig.~\ref{fig:arch} shows the architecture and Algorithm~\ref{alg:reader} the forward pass.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/architecture.pdf}
+\caption{The reused 2.5D multi-slot reader~\cite{goodpjw2026reader}. Each available plane/fat-suppression slot contributes
+$K$ three-slice windows; a shared ConvNeXt encodes each window, slot and slice-position embeddings are added, a two-layer
+transformer mixes all tokens of the study, and one attention pooling per finding produces 12 logits. Missing slots are
+masked.}
+\label{fig:arch}
+\end{figure*}
 
 \begin{algorithm}[!t]
 \caption{Forward pass of the 2.5D multi-slot reader (reused)}
@@ -801,7 +887,7 @@ remains to be isolated with teacher-only and external-data-matched controls.
 % =====================================================================================================
 \section*{Data and Code Availability}
 The dataset is available from the RSNA under its terms of use~\cite{rsna2026knee}. Code, executed training and inference
-scripts, fold assignments, the experiment log and the scripts that regenerate Figs.~\ref{fig:leg}--\ref{fig:noise} are at
+scripts, fold assignments, the experiment log and the scripts that regenerate all figures are at
 \url{https://github.com/hamidhosen42/RSNA-Knee-Abnormality-Detection} (folder \texttt{ieee\_access\_paper},
 \TODO{tag a release and cite its version/DOI}). \TODO{State where trained checkpoints (with SHA-256) can be obtained.}
 Published components remain under their authors' licences.
@@ -825,15 +911,15 @@ heliosli (compact ConvNeXt bundles and ensembles), hengck23 (MaViT), and stevenl
 \TODO{Biography (about 100 words) and photo.}
 \end{IEEEbiographynophoto}
 
-\begin{IEEEbiographynophoto}{\TODO{Author 2}}
+\begin{IEEEbiographynophoto}{Md. Foysal Emon Shanto}
 \TODO{Biography and photo.}
 \end{IEEEbiographynophoto}
 
-\begin{IEEEbiographynophoto}{\TODO{Author 3}}
+\begin{IEEEbiographynophoto}{Md Esfer Abdus Sami}
 \TODO{Biography and photo.}
 \end{IEEEbiographynophoto}
 
-\begin{IEEEbiographynophoto}{\TODO{Author 4}}
+\begin{IEEEbiographynophoto}{\TODO{Author 4 (kishormorol)}}
 \TODO{Biography and photo.}
 \end{IEEEbiographynophoto}
 

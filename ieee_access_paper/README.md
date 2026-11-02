@@ -25,7 +25,12 @@ The files in `code/` are **copies**. The originals stay where they were (`ours_l
 | Ensemble-teacher gate | `code/distillation/gate_ens_teacher.py` | Sanity checks (coverage, spread, correlation, AUC vs report labels) before a teacher file is used. |
 | Eq. 5 + Supplementary Alg. S1, rank fusion and fall-back | `code/fusion/final_system_h976.ipynb`, `code/fusion/student_leg.py`, `code/fusion/r6_switches.py` | The final fused system, as run. `student_leg.py` holds the hardening patches (checkpoint lookup, time guard, rank imputation). `r6_switches.py` holds the BK/FK switches (Supplementary Table S1). |
 | §VI-E, EfficientNetV2-S negative results (Tables 9–10) | `code/efficientnet_baseline/` | `train_ours_leg.py` (E11/E03b), `infer_kernel.py`, `folds.py` + `folds_v1.json`, `verify_corpus_rebuild.py` (the DICOM-vs-corpus check), and `e13/` (the ResNet-34 multi-view model). |
-| §VI-F, yardstick illustration, Figs. 2–3 | `code/analysis/make_figures.py`, `code/analysis/data/*.npz`, `code/analysis/stats.json` | Bootstrap CIs on gold-58, the 385-study illustration, per-finding OOF, and both plots. It runs standalone (numpy + matplotlib). If `gold_arm{A,B,C,C3}.csv` from the training outputs are placed in `data/`, it also writes paired gold-58 CIs for B−A, C−B and C3−A. |
+| §VI-F, yardstick illustration, Figs. 8–9 | `code/analysis/make_figures.py`, `code/analysis/data/*.npz`, `code/analysis/stats.json` | Bootstrap CIs on gold-58, the 385-study illustration, per-finding OOF, and both plots. It runs standalone (numpy + matplotlib). If `gold_arm{A,B,C,C3}.csv` from the training outputs are placed in `data/`, it also writes paired gold-58 CIs for B−A, C−B and C3−A. |
+
+| §III-E, label analysis, Figs. 2–5 | `code/analysis/make_data_figures.py`, `code/analysis/data/labels_consensus.parquet`, `code/analysis/data/label_benchmark.csv`, `code/analysis/data_stats.json` | Label composition, co-occurrence, positives per study, and report-labeller vs expert AUC. The two data files are copies of the team's label pipeline output (`team_shared/esfersami50/nx1-01-consensus-labels/`). Run with numpy, pandas, pyarrow and matplotlib. |
+| Optional example-input figure (MRI slices) | `code/analysis/make_input_figure.py` | Renders the 6 slots × 5 evaluation windows of one **training** study with the paper's own preprocessing. It needs the competition DICOMs (run it on Kaggle) plus torch/timm (imported by `knee.py`). It is not in the paper yet: first check that the dataset terms allow publishing images. |
+
+Figures 1, 6 and 7 (overview, data use, architecture) are TikZ sources in `manuscript/figures/*.tex`. Compile each with `pdflatex`.
 
 Reproduce the statistics and figures from the repository root:
 

@@ -1,0 +1,40 @@
+% standalone source of the data and evaluation-flow figure (pdflatex dataflow.tex); included as figures/dataflow.pdf.
+\documentclass[border=3pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc}
+\begin{document}
+\begin{tikzpicture}[
+  font=\scriptsize,
+  arr/.style={-{Stealth[length=1.8mm]}, semithick},
+  box/.style={draw, rounded corners=2pt, align=center, inner sep=3pt, text width=37mm, minimum height=11mm, fill=white},
+  dat/.style={box, fill=gray!10},
+  dev/.style={box, fill=orange!15},
+  fin/.style={box, fill=green!15, line width=0.9pt},
+  note/.style={align=center, font=\tiny, text width=40mm}]
+
+% training side
+\node[dat] (all) at (2.45,0) {RSNA training set\\4,407 studies, 24,371 series,\\one report per study};
+\node[dat] (weak) at (0,-1.9) {4,349 studies\\report labels only};
+\node[dat] (gold) at (4.9,-1.9) {58 studies ($\mathcal{G}_{58}$)\\expert labels + report};
+\node[box] (train) at (0,-3.8) {Training of every reader:\\5 report-grouped folds (OOF)\\or full data (students)};
+\node[box] (diag) at (4.9,-3.8) {Never in gradient updates;\\diagnostic for every model;\\used in some adoption rules};
+\node[note, text=red!60!black] at (4.9,-4.95) {also used by the external teacher's\\authors for model selection};
+\draw[arr] (all) -- (weak);
+\draw[arr] (all) -- (gold);
+\draw[arr] (weak) -- (train);
+\draw[arr] (gold) -- (diag);
+
+% test side
+\node[dat] (test) at (10.0,0) {Hidden test set\\$\approx$1,284 studies\\(labels never released)};
+\node[dev] (dev) at (10.0,-1.9) {Development partition\\30\%, $\approx$385 studies\\$>$60 configurations scored};
+\node[fin] (final) at (10.0,-3.8) {Final-test partition\\70\%, $\approx$899 studies\\visible after all decisions};
+\node[note] at (10.0,-2.75) {informed which changes were kept $\Rightarrow$ exploratory};
+\node[note, text=green!35!black] at (10.0,-4.75) {only unbiased estimate};
+\draw[arr] (test) -- (dev);
+\draw[arr] (test.east) -- ++(3mm,0) |- (final.east);
+
+% models are scored on the test partitions
+\draw[arr, dashed] (train.south) -- ++(0,-1.25) -| node[pos=0.25, below, font=\tiny] {submitted inference programs} ($(final.south)+(0,0)$);
+\end{tikzpicture}
+\end{document}
