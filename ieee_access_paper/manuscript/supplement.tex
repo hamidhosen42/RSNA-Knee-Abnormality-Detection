@@ -92,24 +92,24 @@ Topic & Status & Where / note\\
 \endhead
 Title, abstract & Yes & Title; abstract states the cohort, partitions and that development results are exploratory.\\
 Background, objectives, hypothesis & Yes & Section I (central question and hypothesis).\\
-Study design (retrospective, exploratory) & Yes & Sections III-D, V; development vs final-test partitions.\\
-Data sources & Partial & Section III-A; institutions and acquisition period unavailable.\\
+Study design (retrospective, exploratory) & Yes & Sections III-E, V; development vs final-test partitions.\\
+Data sources & Partial & Section III-A (international, multilingual); institutions and acquisition period unavailable.\\
 Eligibility criteria, cohort flow & Unavailable & Not released by the data provider.\\
 Demographics, scanners, field strength & Unavailable & Not released.\\
 Patient-level identifiers, repeat examinations & Unavailable & Not released; report grouping only (Section III-A).\\
 Data preprocessing & Yes & Section IV-B, Algorithm 2 (including orientation and percentile limitations).\\
 Missing data & Partial & Missing series slots are masked (Section IV-C); decoding errors 0; per-slot missing counts \TODO{add}.\\
-Reference standard: definitions & Unavailable & Exact positive definitions and thresholds not released.\\
-Reference standard: annotators, process & Unavailable & Organisers state image-based labelling; details not released.\\
-Selection of the 58 reference studies & Unavailable & Enriched (Table 1); selection procedure not released.\\
+Reference standard: definitions & Yes & Table 1 (organisers' rubric; borderline findings negative).\\
+Reference standard: annotators, process & Yes & Section III-A: two subspecialty MSK radiologists, third adjudicates; same for test set.\\
+Selection of the 58 reference studies & Unavailable & Enriched (Table 2, Fig. 5); selection procedure not released.\\
 Use of reference studies during development & Yes & Section III-B (diagnostic, adoption rules, teacher selection).\\
-Data partitions & Yes & Section III-D; folds in Algorithm 1; release includes fold assignments.\\
-Model description & Yes & Section IV-C, Algorithm 3, Table 3; reused code identified.\\
-Training details, initialisation & Yes & Section IV-D, Table 3, Algorithm 4.\\
-Teacher / external data provenance & Partial & Table 4; some entries unverified.\\
+Data partitions & Yes & Section III-E, Fig. 7; folds in Algorithm 1; release includes fold assignments.\\
+Model description & Yes & Section IV-C, Fig. 8, Algorithm 3, Table 4; reused code identified.\\
+Training details, initialisation & Yes & Section IV-D, Table 4, Algorithm 4.\\
+Teacher / external data provenance & Partial & Table 5; some entries unverified.\\
 Model selection & Yes & Section V (prospectively logged rules); EMA of last epoch.\\
-Ensembling & Yes & Section IV-F, Eq.~5, Table 8, Supplementary S1--S2.\\
-Performance metrics & Yes & Macro ROC AUC; per-finding AUC on report labels (Table 10).\\
+Ensembling & Yes & Section IV-F, Eq.~5, Table 9, Supplementary S1--S2.\\
+Performance metrics & Yes & Macro ROC AUC; per-finding AUC on report labels (Table 11); label analysis (Section III-D, Figs. 3--6).\\
 Statistical methods, uncertainty & Partial & Bootstrap on \gold{} (Section V); test-set intervals impossible (labels hidden).\\
 Robustness, subgroup analysis & No & Not performed (Section VIII).\\
 External testing & No & Not performed (Section VIII).\\

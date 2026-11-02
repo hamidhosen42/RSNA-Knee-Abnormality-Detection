@@ -167,21 +167,65 @@ Supplementary Material.
 \section{Data}
 \label{sec:data}
 
-\subsection{Cohort and what is known about it}
-The RSNA Knee Abnormality dataset~\cite{rsna2026knee} contains 4,407 de-identified training studies (24,371 DICOM series)
-with the free-text report of each study, and a hidden test set of about 1,284 studies. For each study, 12 binary findings
-are scored under the organisers' names: ACL, MCL, medial meniscus, lateral meniscus, medial OA, lateral OA,
+\subsection{Cohort, reference standard and label definitions}
+The RSNA Knee Abnormality dataset~\cite{rsna2026knee} is an international, multilingual collection of knee MRI
+examinations, each paired with its original radiology report~\cite{chen2026overview}. It contains 4,407 de-identified
+training studies (24,371 DICOM series) and a hidden test set of about 1,284 studies. Twelve binary findings are scored
+per study under the organisers' names: ACL, MCL, medial meniscus, lateral meniscus, medial OA, lateral OA,
 patellofemoral (PF) OA, effusion, synovitis, Baker's cyst, contusion and fracture. Each series carries its plane and a
-fat-suppression flag.
+fat-suppression (FS) flag; Fig.~\ref{fig:illus} illustrates the planes and sequence types with openly licensed images,
+because the dataset's terms forbid publishing its images.
 
-The materials available to us do \emph{not} report the contributing institutions, acquisition period, demographics,
-scanner vendors and field strengths, inclusion and exclusion criteria, patient identifiers, repeated or bilateral
-examinations, the exact positive-label definitions and severity thresholds, the qualifications and reading process of
-the reference annotators, or how the 58 reference studies were chosen. We mark these items as unavailable in the CLAIM
-checklist rather than infer them. In particular, the clinical scope of each finding (for example, whether ``OA'' means a
-grade threshold, or ``MCL'' any injury or only a high-grade tear) is defined by the organisers and may be narrower than the
-clinical term. Grouping studies with identical reports (Section~\ref{sec:method-labels}) removes duplicated reports but does
-not establish patient-level separation.
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{figures/illustrative_mri.pdf}
+\caption{Illustration of knee anatomy and of the MRI planes and sequences that map to the reader's slots
+(Section~\ref{sec:method-reader}). \emph{These images are not from the RSNA dataset}, whose terms forbid publishing it.
+(a)~Blausen.com staff, ``Medical gallery of Blausen Medical 2014,'' \emph{WikiJournal of Medicine}, 2014,
+doi:10.15347/wjm/2014.010, CC~BY~3.0. (b)--(e)~Knee MRI, Siemens MAGNETOM Aera 1.5\,T, by Ptrump16 via Wikimedia Commons,
+CC~BY-SA~4.0; (d) and (e) are middle frames of the published coronal and axial series. Cropped and arranged; this figure
+is licensed CC~BY-SA~4.0.}
+\label{fig:illus}
+\end{figure*}
+
+\paragraph*{Reference standard} According to the organisers~\cite{chen2026overview}, every study in the reference set was
+labelled independently by two subspecialty-trained musculoskeletal radiologists against a written annotation rubric,
+with disagreements adjudicated by a third radiologist; labels apply to the whole examination of a single knee, and the
+same process was used for the test set. Borderline findings were graded negative to favour specificity.
+Table~\ref{tab:defs} summarises the rubric. Several definitions are narrower than the clinical terms: the ``ACL'' and
+``MCL'' targets are high-grade tears, ``OA'' requires high-grade cartilage loss over about 1~cm or more, and effusion and
+Baker's cyst must be at least moderate. Reports describe milder grades, which is one source of the report--reference gap
+(Section~\ref{sec:data-eda}).
+
+\begin{table}[!t]
+\centering
+\caption{Positive definitions of the reference labels, summarised from the organisers' annotation rubric~\cite{chen2026overview}.
+Borderline findings are negative.}
+\label{tab:defs}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{1.9cm}p{6.0cm}}
+\toprule
+Finding & Positive if\\
+\midrule
+ACL & high-grade partial ($>$50\% of fibres) or complete tear; signal change or thickening alone is negative\\
+MCL & high-grade partial or complete acute tear with fibre disruption and edema; low-grade sprain or chronic change is negative\\
+Medial / lateral meniscus & signal definitely reaching the meniscal surface on $\geq$2 images, or a truncated, diminutive or displaced fragment; intrasubstance degeneration is negative\\
+Medial / lateral / PF OA & moderate or large area ($\gtrsim$1~cm) of cartilage loss $>$50\% of thickness in that compartment\\
+Effusion & moderate or large joint fluid distending the joint\\
+Synovitis & inflammation and thickening of the synovial lining\\
+Baker's cyst & moderate or large fluid collection in the popliteal location\\
+Contusion & bone-marrow edema-like signal from impact without a fracture line\\
+Fracture & acute cortical break or fracture line\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph*{What is not reported} The materials available to us do \emph{not} report the contributing institutions,
+acquisition period, demographics, scanner vendors and field strengths, inclusion and exclusion criteria, patient
+identifiers, repeated or bilateral examinations, or how the 58 reference studies were chosen. We mark these items as
+unavailable in the CLAIM checklist rather than infer them. Grouping studies with identical reports
+(Section~\ref{sec:method-labels}) removes duplicated reports but does not establish patient-level separation.
 
 \subsection{The 58 expert-labelled studies}
 \label{sec:data-gold}

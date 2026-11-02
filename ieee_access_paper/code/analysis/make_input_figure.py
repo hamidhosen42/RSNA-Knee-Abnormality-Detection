@@ -7,8 +7,8 @@ Needs the competition DICOMs, so run it where the data are (a Kaggle notebook wi
 Each row is one plane/fat-suppression slot (Algorithm 2 preprocessing, reader/preprocess.py); the columns are the centre
 slices of K = 5 evaluation windows (reader/knee.py window_centres).  Missing slots are drawn empty.
 
-Before putting the output in the paper, check that the dataset's terms allow publishing images, and pick a study from
-the training split (never the test split).  The figure shows no text from the DICOM header.
+For internal checks only: competition rule 2.4.b forbids publishing competition data, so the output must not go into the
+paper or any public place.  Use a training study (never the test split).  The figure shows no text from the DICOM header.
 """
 import os
 import sys
