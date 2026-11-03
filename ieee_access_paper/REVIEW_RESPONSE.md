@@ -7,7 +7,7 @@
 
 **FIXED (structure).**
 - The 30% partition is now called the *development partition* everywhere. It is stated that more than 60 configurations were scored on it and that it informed decisions (§III-D).
-- The 70% partition is the *final-test partition* and is described as the only unbiased evaluation. Results open with it: §VI-A, Table 5, with a development and a final-test column.
+- The 70% partition is the *final-test partition*: a held-out evaluation not used for development or selection (round 2 softened "unbiased"). Results open with it: §VI-A, Table 5, with a development and a final-test column.
 - All model and final-selection decisions were made before any final-test score was visible (§III-D, §VI-A).
 - The abstract, every table caption, the discussion and the conclusion now label development results as exploratory.
 
@@ -169,3 +169,20 @@ The reviewer says IEEE's January 2026 title list places IEEE Access in **Q2 by J
 - `manuscript/supplement.pdf`: 3 pages.
 - `manuscript/ieee_access_overleaf.zip`: now includes `supplement.tex`.
 - Previous manuscript versions are in the session scratchpad (temporary): `main_before_review.tex`, `main_v2_before_rewrite.tex`.
+
+---
+
+# Round 2 (second external review, 2026-11-03)
+
+| # | Point | Status |
+|---|---|---|
+| 1 | Label analysis used a different consensus than the reader's targets | **FIXED (disclosed).** The four v0 source tables (steven, pilkwang, lixin73, laymond) are not stored locally, so the figures could not be rebuilt from v0. §III-D now says that Figs. 3–5 use **set T**: the team consensus of mri-balanced-labels-public, jev HYBRID_labels_scores, hybrid report_labels_v4hybrid and steven llm_labels_v4_blend. It also says those sources were accepted by gold-58 AUC (within 0.03 of the best), that a medial-OA silence cap was kept because it raised gold-58 AUC (from `labels_v1_report.json`), that set T shares one source with v0, and that set T trained only E03b. The captions say "set T; not the reader's targets v0". §IV-A now names the four v0 sources. Table 3 names its sets: **D** = dreaddevelopment `labels_llm_soft`, **T** = team consensus. **AUTHOR (optional):** download the four v0 tables and rerun `make_data_figures.py` on v0. That would make the figures describe the actual targets. |
+| 2 | Final-test results missing | **AUTHOR.** The Kaggle token still returns 401. Table 6 is now laid out so that every row is a single-change comparison, with submission IDs (see 3). |
+| 3 | Final comparison mixes students and switches | **FIXED.** Table 6 now has **four matched pairs** with submission IDs: P0 vs P0+5 students (57252502 / 57281541), C2 vs C2+5 (57315983 / 57369206), C2+V2 vs +5 (57369271 / 57369477), and H969 vs +2 S1 (57447421 / 57497105). C2 vs H976 is labelled "system level only" and is not used as evidence for the students. |
+| 4 | "AUC 1.0 means copied labels" is unsupported | **FIXED.** The text now says the three tables were flagged by a heuristic (macro AUC > 0.995 or "gold" in the name), that cell equality was not verified, and that they were "potentially reference-contaminated, conservatively excluded". |
+| 5 | Teacher runtime misread | **FIXED.** The write-up (discussions/746792, line 44) says submit-to-score turnaround, including queueing, "not official inference runtimes". The Cost paragraph now says that no measured runtime exists for either the teacher or the students, and the "same order" claim is removed. |
+| 6 | Counting error in the fusion paragraph | **FIXED.** The paragraph now says three displayed changes (0.954→0.955 once, 0.956→0.957 twice) and five unchanged. |
+| 7 | Limitations contradict Table 1; test-set procedure needs a source | **FIXED.** Limitation (v) now lists only what is missing. The test-set statement now cites the host's own reply in discussion 733491 ("The same process was used for the testing set"), added to the bibliography as `chen2026clarification`. |
+| 8 | Paired CIs for A/B/C3 are "optional"; "unbiased" too strong | **FIXED (wording)**, **AUTHOR (data).** The TODO now says the paired CIs are required and names the files (`gold_arm{A,B,C,C3}.csv` from the training kernels); the script already computes them. "Unbiased" is replaced by "held-out evaluation not used for development or selection", with no claim about patient overlap or representativeness. |
+| 9 | Availability statement overstates reproducibility | **FIXED (wording).** The statement now excludes the S1 students' script and points to the missing kernel. **AUTHOR:** add the `student5` script, the checkpoint location and hashes, a release tag, and the CLAIM item numbers. |
+| Fig. | A paired-difference plot of the main results would beat more EDA | **AUTHOR.** It needs the final-test scores. A TODO in §VI-A says what to plot (final minus development, per matched pair). |

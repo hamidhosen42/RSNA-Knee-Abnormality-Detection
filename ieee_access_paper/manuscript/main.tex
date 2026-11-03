@@ -58,8 +58,8 @@ whose training used report labels and, for three findings, expert MRI grades fro
 development partition of the hidden test set, which also informed model development, the three targets gave macro ROC
 AUCs of 0.933, 0.939 and 0.948--0.949; the teacher displayed 0.949. Changes of backbone, pre-training and seed showed no
 clear benefit in the configurations evaluated. Rank fusion of the students with public ensembles ranked above the
-unchanged parent in eight of eight development comparisons. On the untouched 70\% final-test partition, the fused system
-scored \TODO{x.xxx} and its unchanged parent \TODO{x.xxx}. Bootstrap intervals on the 58 expert-labelled studies were
+unchanged parent in eight of eight development comparisons. On the held-out 70\% final-test partition, matched parents
+with and without students scored \TODO{x.xxx--x.xxx vs. x.xxx--x.xxx}, and the readers A, B and C3 scored \TODO{}. Bootstrap intervals on the 58 expert-labelled studies were
 about 0.05 wide, and a simulation illustrates that a partition of this size can mis-order models whose AUCs differ by
 about 0.001. Development comparisons are therefore exploratory. Code and experiment logs are released.
 \end{abstract}
@@ -98,7 +98,7 @@ than the backbone, limits a report-supervised reader. The contributions are:
 self-distillation, and an external image-input teacher at two mixing weights---with every change logged prospectively as
 a single variable against a scored parent (Sections~\ref{sec:method-distill} and~\ref{sec:res-distill}).
 \item An evaluation of whether such students add information to strong existing ensembles, on the development partition
-and on the untouched final-test partition (Sections~\ref{sec:res-final} and~\ref{sec:res-ens}).
+and on the held-out final-test partition (Sections~\ref{sec:res-final} and~\ref{sec:res-ens}).
 \item An analysis of what the available evaluation data can resolve, with negative results on models whose
 out-of-fold performance did not translate into ensemble benefit (Sections~\ref{sec:res-own} and~\ref{sec:res-yard}).
 \end{enumerate}
@@ -190,8 +190,8 @@ is licensed CC~BY-SA~4.0.}
 
 \paragraph*{Reference standard} According to the organisers~\cite{chen2026overview}, every study in the reference set was
 labelled independently by two subspecialty-trained musculoskeletal radiologists against a written annotation rubric,
-with disagreements adjudicated by a third radiologist; labels apply to the whole examination of a single knee, and the
-same process was used for the test set. Borderline findings were graded negative to favour specificity.
+with disagreements adjudicated by a third radiologist; labels apply to the whole examination of a single knee. The
+organisers stated separately that the same process was used for the test set~\cite{chen2026clarification}. Borderline findings were graded negative to favour specificity.
 Table~\ref{tab:defs} summarises the rubric. Several definitions are narrower than the clinical terms: the ``ACL'' and
 ``MCL'' targets are high-grade tears, ``OA'' requires high-grade cartilage loss over about 1~cm or more, and effusion and
 Baker's cyst must be at least moderate. Reports describe milder grades, which is one source of the report--reference gap
@@ -256,8 +256,11 @@ Lat. meniscus & 23 & Effusion & 35 & Fracture & 18\\
 
 \subsection{Report-derived labels}
 Several groups released LLM-extracted labels for all training studies~\cite{labels2026public}; for example, the number
-of fracture-positive studies ranges from 159 to 336 across five tables. Table~\ref{tab:labels} compares two such sets on
-the 4,349 studies outside \gold. It measures agreement between label sources, not accuracy against expert labels. The
+of fracture-positive studies ranges from 159 to 336 across five tables. Table~\ref{tab:labels} compares two label sets on
+the 4,349 studies outside \gold: \emph{set~D}, the soft labels \texttt{labels\_llm\_soft} of
+dreaddevelopment~\cite{dread2026raptor}, used by our EfficientNetV2-S models (Section~\ref{sec:res-own}); and \emph{set~T}, a
+team consensus of four public tables (Section~\ref{sec:data-eda}). Neither is the reader's target v0
+(Section~\ref{sec:method-labels}). The table measures agreement between label sources, not accuracy against expert labels. The
 two sets order studies similarly for 11 findings (AUC 0.89--0.99) but not for synovitis (0.62), because one imputes
 synovitis from effusion when the report is silent. For effusion the disagreement is a threshold: ``small effusion'' is
 about 0.2 in one set and 0.85 in the other, which flips 34\% of studies at 0.5 while preserving their order.
@@ -265,12 +268,12 @@ about 0.2 in one set and 0.85 in the other, which flips 34\% of studies at 0.5 w
 \begin{table}[!t]
 \centering
 \caption{Agreement between two report-derived label sets on 4,349 training studies (inter-source agreement, not accuracy):
-AUC of one soft label against the other binarised at 0.5, Cohen's $\kappa$ at 0.5, and positive rates (A, B).}
+AUC of set~D against set~T binarised at 0.5, Cohen's $\kappa$ at 0.5, and positive rates ($\geq0.5$) of each set.}
 \label{tab:labels}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lcccc}
 \toprule
-Finding & AUC & $\kappa$ & A pos. & B pos.\\
+Finding & AUC & $\kappa$ & D pos. & T pos.\\
 \midrule
 ACL & 0.950 & 0.70 & 0.13 & 0.21\\
 MCL & 0.983 & 0.44 & 0.05 & 0.15\\
@@ -292,12 +295,17 @@ Macro & 0.933 & 0.61 & & \\
 
 \subsection{Exploratory analysis of the labels}
 \label{sec:data-eda}
-We analysed the labels that were available locally (no images): the four-source consensus of the 4,349 report-labelled
-studies (set B of Table~\ref{tab:labels}), the expert labels of \gold, and a benchmark of public report-label tables
-against \gold{} computed by our label pipeline~\cite{hack2publish2026repo}. Thresholds are stated in each figure; the
-consensus was built from sources selected on \gold, so its agreement with \gold{} is not reported here.
+We analysed the labels that were available locally (no images). The source tables of the reader's target v0 are not
+stored in our repository, so Figs.~\ref{fig:shares}--\ref{fig:perstudy} use a \emph{different} construction: set~T, a
+team consensus of four public tables (mri-balanced-labels-public, jev-knee-labels \texttt{HYBRID\_labels\_scores},
+hybrid-report-labels \texttt{report\_labels\_v4hybrid} and stevenleehans \texttt{llm\_labels\_v4\_blend}), which were
+accepted because their \gold{} macro AUC was within 0.03 of the best table; one post-processing rule (a cap on medial OA
+when the report is silent) was also kept because it raised \gold{} AUC~\cite{hack2publish2026repo}. Set~T shares one
+source with v0 and was used for training only by the E03b model. These figures therefore describe report-derived labels
+in this cohort, not the reader's training targets, and set~T's agreement with \gold{} is not reported because \gold{}
+shaped it. Fig.~\ref{fig:labellers} uses a benchmark of public tables against \gold{} computed by the same pipeline.
 
-\paragraph*{Label composition} Fig.~\ref{fig:shares} shows, for each finding, the share of studies whose consensus label
+\paragraph*{Label composition} Fig.~\ref{fig:shares} shows, for each finding, the share of studies whose set-T label
 is negative ($<0.25$), uncertain (0.25--0.7) or positive ($\geq0.7$). Positive shares range from 5\% (fracture) to 58\%
 (effusion). Synovitis is the most ambiguous finding: 49\% of studies fall in the uncertain band, compared with 4--21\% for
 the other findings, in line with its low inter-source agreement (Table~\ref{tab:labels}).
@@ -305,7 +313,7 @@ the other findings, in line with its low inter-source agreement (Table~\ref{tab:
 \begin{figure}[!t]
 \centering
 \includegraphics[width=\columnwidth]{figures/label_shares.pdf}
-\caption{Composition of the consensus report labels of the 4,349 report-labelled studies, by finding. Right: positive share.}
+\caption{Composition of the team-consensus labels (set~T; not the reader's targets v0) of the 4,349 report-labelled studies, by finding. Right: positive share.}
 \label{fig:shares}
 \end{figure}
 
@@ -317,11 +325,11 @@ representation with per-finding attention, rather than 12 independent models, is
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.92\columnwidth]{figures/label_cooccurrence.pdf}
-\caption{Pearson correlation between the consensus soft labels of the 12 findings (4,349 studies).}
+\caption{Pearson correlation between the team-consensus soft labels (set~T) of the 12 findings (4,349 studies).}
 \label{fig:cooc}
 \end{figure}
 
-\paragraph*{Findings per study} With a positive threshold of 0.7, report-labelled studies carry 2.96 positive findings on
+\paragraph*{Findings per study} With a positive threshold of 0.7 on set~T, report-labelled studies carry 2.96 positive findings on
 average and 14\% carry none, whereas every \gold{} study has at least one expert-positive finding (mean 4.14;
 Fig.~\ref{fig:perstudy}). The two populations and label types differ, so the comparison illustrates that \gold{} is
 enriched, not that reports under-call findings.
@@ -329,15 +337,16 @@ enriched, not that reports under-call findings.
 \begin{figure}[!t]
 \centering
 \includegraphics[width=\columnwidth]{figures/positives_per_study.pdf}
-\caption{Number of positive findings per study: consensus report labels ($\geq0.7$) of the 4,349 report-labelled studies
+\caption{Number of positive findings per study: team-consensus labels (set~T, $\geq0.7$) of the 4,349 report-labelled studies
 (left) and expert labels of the 58 reference studies (right). Dashed: mean.}
 \label{fig:perstudy}
 \end{figure}
 
 \paragraph*{Report labellers versus expert labels} Fig.~\ref{fig:labellers} compares 12 public report-label tables with
-the expert labels of \gold. Three further tables reproduced the expert labels exactly (AUC 1.0); they contain the
-released reference labels rather than report-derived labels and were excluded, since using them for training or
-selection would leak \gold. Macro AUCs of the remaining tables range from 0.81 to 0.91. Agreement is high for ACL, MCL,
+the expert labels of \gold. Three further tables were flagged by the pipeline's heuristic (\gold{} macro AUC
+$>0.995$, or ``gold'' in the source name; all three reached AUC 1.0). Perfect ranking does not prove that a table
+contains the released reference labels, and we did not verify cell-by-cell equality; we treat them as potentially
+reference-contaminated and conservatively excluded them. Macro AUCs of the remaining tables range from 0.81 to 0.91. Agreement is high for ACL, MCL,
 medial meniscus and Baker's cyst (median 0.93--0.98) and lowest for synovitis (median 0.71), fracture (0.82), contusion
 (0.83) and lateral OA (0.83), the findings for which reports are most often silent or hedged. The four tables averaged
 into the reader's targets (Eq.~\ref{eq:v0}, marked $*$) span 0.82--0.89. With 58 studies, differences of a few hundredths
@@ -347,8 +356,8 @@ between tables are within sampling noise (Section~\ref{sec:res-yard}).
 \centering
 \includegraphics[width=0.92\textwidth]{figures/labeller_vs_expert.pdf}
 \caption{Per-finding ROC AUC of public report-label tables against the expert labels of the 58 reference studies, sorted by
-macro AUC (right column). $*$: the four tables averaged into the reader's targets. Three tables that reproduce the expert
-labels are excluded; duplicate tables are shown once. Descriptive; $n=58$.}
+macro AUC (right column). $*$: the four tables averaged into the reader's targets v0. Three tables flagged as potentially
+reference-contaminated are excluded; duplicate tables are shown once. Descriptive; $n=58$.}
 \label{fig:labellers}
 \end{figure*}
 
@@ -360,7 +369,9 @@ AUC). Scores on a fixed 30\% partition (about 385 studies, displayed at three de
 development; we call this the \emph{development partition}. More than 60 configurations were scored on it, and its scores
 informed which changes were kept, so it is not an independent test. Scores on the remaining 70\% (about 899 studies)
 became visible only after all model and final-selection decisions had been made; we call this the \emph{final-test
-partition} and treat it as the only unbiased evaluation. Fig.~\ref{fig:dataflow} summarises how each part of the data was used.
+partition}. It is a held-out evaluation not used for model development or final selection; we make no claim about
+patient overlap with the training set or about the representativeness of the partition, which the organisers do not
+report. Fig.~\ref{fig:dataflow} summarises how each part of the data was used.
 
 \begin{figure*}[!t]
 \centering
@@ -385,7 +396,9 @@ maximise the macro AUC on unseen studies.
 
 \subsection{Report-consensus targets}
 \label{sec:method-labels}
-We adopted the consensus construction of the public reader~\cite{goodpjw2026reader}. With $y^{(s)}_{ic}\in[0,1]$ the label
+We adopted the consensus construction of the public reader~\cite{goodpjw2026reader}, which averages four public LLM
+label tables~\cite{labels2026public}: stevenleehans \texttt{llm\_labels\_v4\_blend}, pilkwang \texttt{report\_labels\_v2},
+lixin73 \texttt{labels\_llm\_gpt56sol} and laymond \texttt{qwen\_knee\_weak\_labels}. We call the result \emph{v0}. With $y^{(s)}_{ic}\in[0,1]$ the label
 of source $s$ for study $i$ and finding $c$, and $S_{ic}$ the sources that define it,
 \begin{equation}
 y^{\mathrm{rep}}_{ic}=\operatorname{clip}\!\Big(\tfrac{1}{|S_{ic}|}\textstyle\sum_{s\in S_{ic}} y^{(s)}_{ic},\;0.01,\;0.99\Big).
@@ -628,33 +641,52 @@ are computed on the same resamples. We do not interpret overlapping intervals or
 
 \subsection{Final-test partition}
 \label{sec:res-final}
-Table~\ref{tab:final} lists the systems for which final-test scores are available. All model and selection decisions were
-made before any final-test score was visible. The two final systems were the fused system with the highest unrounded
-development score among 23 configurations displayed at 0.958 (which makes its development score optimistically biased),
-and its unchanged parent ensemble without any student or development-informed change.
+Table~\ref{tab:final} lists the comparisons that the final-test partition can answer. All model and selection decisions
+were made before any final-test score was visible. The rows are grouped so that each comparison changes one thing:
+stand-alone readers that differ only in the training target, and \emph{matched} ensemble pairs in which the same parent
+was submitted with and without students. The two submitted final systems (the unchanged parent C2 and the fused system
+H976, which adds students \emph{and} other switches) differ in several components, so their comparison is reported as a
+system-level result and is not used as evidence for the students. H976 was the best of 23 configurations displayed at
+0.958, so its development score is optimistically biased.
 
 \begin{table}[!t]
 \centering
-\caption{Development (30\%) and final-test (70\%) macro AUC. Only the final-test column is an unbiased estimate.}
+\caption{Development (30\%) and final-test (70\%) macro AUC. The final-test partition was not used for development or
+selection. ID: submission identifier.}
 \label{tab:final}
 \footnotesize
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{lcc}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{llcc}
 \toprule
-System & Development & Final test\\
+System & ID & Dev. & Final test\\
 \midrule
-Reader, report targets (A) & 0.933 & \TODO{}\\
-Reader, self-distilled (B) & 0.939 & \TODO{}\\
-Reader, image-input teacher (C3) & 0.949 & \TODO{}\\
-Image-input teacher alone~\cite{nartaa2026mirror} & 0.949 & \TODO{}\\
-Parent ensemble (unchanged) & 0.958 & \TODO{}\\
-Parent + 7 students and switches (final) & 0.958 & \TODO{}\\
+\multicolumn{4}{l}{\emph{Stand-alone readers (target is the only change)}}\\
+A: report targets & 57053758 & 0.933 & \TODO{}\\
+B: self-distilled & 57053761 & 0.939 & \TODO{}\\
+C: image-input teacher, $\tau=0.5$ & 57081442 & 0.948 & \TODO{}\\
+C3: image-input teacher, $\tau=0.75$ & 57103459 & 0.949 & \TODO{}\\
+Teacher alone~\cite{nartaa2026mirror} & -- & 0.949 & \TODO{}\\
+\midrule
+\multicolumn{4}{l}{\emph{Matched pairs (students are the only change)}}\\
+P0: public CoAtNet + R6 blend & 57252502 & 0.958 & \TODO{}\\
+\quad P0 + 5 Mirror students & 57281541 & 0.958 & \TODO{}\\
+P1 = C2 (P0 + S6fall-B) & 57315983 & 0.958 & \TODO{}\\
+\quad P1 + 5 Mirror students & 57369206 & 0.958 & \TODO{}\\
+P1 + V2 weights & 57369271 & 0.958 & \TODO{}\\
+\quad + 5 Mirror students & 57369477 & 0.958 & \TODO{}\\
+P1 + V2 + BK + 5 students & 57447421 & 0.958 & \TODO{}\\
+\quad + 2 S1 students & 57497105 & 0.958 & \TODO{}\\
+\midrule
+\multicolumn{4}{l}{\emph{Submitted final systems (several changes; system level only)}}\\
+C2 (unchanged parent P1) & 57315983 & 0.958 & \TODO{}\\
+H976 (P1 + V2 + BK + 7 students) & 57497105 & 0.958 & \TODO{}\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\TODO{Insert the final-test scores (Kaggle submission list, privateScore) and describe them here. If scores for A, B and
-C3 are unavailable, state so; the target comparison of Section~\ref{sec:res-distill} then remains exploratory.}
+\TODO{Fill the final-test column from the Kaggle submission list (field privateScore) and describe the four matched pairs
+and the A/B/C/C3 comparison here. If a row has no final-test score, say so; the corresponding development comparison then
+remains exploratory. If a paired-difference figure is added, plot final-test minus development differences per pair.}
 
 \subsection{Training targets (development partition)}
 \label{sec:res-distill}
@@ -713,9 +745,10 @@ learned by the teacher, external data (OAI with expert grades for three findings
 teacher and reader. A teacher-only target ($\tau=1$) and a teacher matched in architecture but without external data were
 not run.
 
-\paragraph*{Cost} We make no claim about inference cost: the teacher's authors report about 26~min for the hidden test set,
-and the student is of the same order. \TODO{Add measured per-study decode time, model time, peak memory and fallback
-counts for a single student and for the seven-student stage.}
+\paragraph*{Cost} We make no claim about inference cost: measured runtimes are not available for either the teacher or
+the students. (The teacher's authors report submit-to-score turnaround, which includes queueing and is explicitly not
+an inference runtime~\cite{nartaa2026mirror}.) \TODO{Add measured per-study decode time, model time, peak memory and
+fallback counts for a single student and for the seven-student stage, from the inference logs.}
 
 \subsection{Comparison with published methods (development partition)}
 \label{sec:res-compare}
@@ -760,9 +793,9 @@ Final fused system$^\dagger$ & 0.958\\
 
 \subsection{Fusion with existing ensembles (development partition)}
 \label{sec:res-ens}
-Table~\ref{tab:ens} lists every comparison in which the students were the only change to an existing ensemble. Two
-comparisons changed the displayed score (0.954$\to$0.955, 0.956$\to$0.957); in the other six the displayed score was
-unchanged and the unrounded ordering placed the fused variant above its parent. These are eight ordinal, non-independent
+Table~\ref{tab:ens} lists every comparison in which the students were the only change to an existing ensemble. Three
+comparisons changed the displayed score (0.954$\to$0.955 once, 0.956$\to$0.957 twice, with three and with five students on
+the same parent); in the remaining five the displayed score was unchanged and the unrounded ordering placed the fused variant above its parent. These are eight ordinal, non-independent
 comparisons on the same partition---they share parents and students---so we report them as consistent with a small benefit
 that requires final-test confirmation, not as an established improvement. Further single-change switches inside the
 ensembles are reported in Supplementary Table~S1.
@@ -850,8 +883,9 @@ Lateral OA & 0.832 & 11 & Fracture & 0.896 & 18\\
 \paragraph*{\gold} For E11, the \gold{} macro AUC of 0.900 has a 95\% bootstrap interval of [0.872, 0.924]; for E03b,
 0.883 has [0.846, 0.915]; their paired difference of $-0.017$ has [$-0.042$, $+0.003$]. These intervals describe E11 and
 E03b, whose \gold{} predictions are stored; the predictions of A, B and C3 on \gold{} were not retained locally, so paired
-intervals for the principal comparisons are not reported. \TODO{Optional: download the \gold{} prediction files of arms A,
-B, C, C3 from the training outputs and run the paired bootstrap in the released script.}
+intervals for the principal comparisons are not reported. \TODO{Required before submission: download
+\texttt{gold\_arm\{A,B,C,C3\}.csv} from the training-kernel outputs and report the paired intervals for B$-$A, C$-$B and
+C3$-$A computed by the released script; they remain descriptive because \gold{} was used in development.}
 
 \paragraph*{Development partition (illustration)} To illustrate how much a 385-study partition can resolve, we used
 E11's OOF predictions (1,740 studies, report labels binarised at 0.5) as a stand-in population. Under these assumptions,
@@ -914,7 +948,9 @@ are exploratory. (ii) \gold{} is small and enriched, was used in adoption rules,
 selection. (iii) External teachers were applied in-sample, and their provenance is partly unverified
 (Table~\ref{tab:provenance}). (iv) Ablations needed to explain the main gain were not run: teacher-only targets ($\tau=1$), a
 teacher without external data, at least three seeds of A, B and C3, and individual label sources versus their consensus.
-(v) Dataset characteristics, label definitions and patient identifiers were unavailable. (vi) No external testing,
+(v) Institutions, acquisition period, demographics, scanners, inclusion criteria, patient identifiers and the
+selection of \gold{} were not reported by the organisers (label definitions and the reading procedure were;
+Table~\ref{tab:defs}). (vi) No external testing,
 calibration or reader study was performed. (vii) The fused system depends on published models whose training we could
 only partly audit.
 
@@ -930,8 +966,9 @@ remains to be isolated with teacher-only and external-data-matched controls.
 
 % =====================================================================================================
 \section*{Data and Code Availability}
-The dataset is available from the RSNA under its terms of use~\cite{rsna2026knee}. Code, executed training and inference
-scripts, fold assignments, the experiment log and the scripts that regenerate all figures are at
+The dataset is available from the RSNA under its terms of use~\cite{rsna2026knee}. Code, the executed training scripts of all
+readers except the two S1 students (\TODO{add the script of Kaggle kernel \texttt{hosen42/rsna-knee-gpjw-student5}}),
+inference scripts, fold assignments, the experiment log and the scripts that regenerate all figures are at
 \url{https://github.com/hamidhosen42/RSNA-Knee-Abnormality-Detection} (folder \texttt{ieee\_access\_paper},
 \TODO{tag a release and cite its version/DOI}). \TODO{State where trained checkpoints (with SHA-256) can be obtained.}
 Published components remain under their authors' licences.
